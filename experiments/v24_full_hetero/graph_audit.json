@@ -1,0 +1,1407 @@
+{
+  "version": "v24-full-hetero-audit-1",
+  "design": "disjoint complete per-order heterogeneous graphs",
+  "train": {
+    "root": "D:\\zgyidong\\train",
+    "totals": {
+      "orders": 1634,
+      "nodes": 279836,
+      "edges": 490685,
+      "alarms": 9334,
+      "roots": 3046,
+      "missing_endpoints": 4350,
+      "self_loops": 0
+    },
+    "maxima": {
+      "nodes": 1707,
+      "edges": 2996,
+      "alarms": 139
+    },
+    "node_classes": {
+      "TransCircuitRoute": 107843,
+      "RiPort": 32029,
+      "NTransPort": 31141,
+      "TransBoard": 27974,
+      "Board": 16741,
+      "RRU": 15185,
+      "Room": 11655,
+      "Cell": 10694,
+      "TransDevice": 10135,
+      "Alarm": 9334,
+      "BaseStation": 2069,
+      "BBU": 1820,
+      "TransCircuit": 1488,
+      "UTransZPort": 998,
+      "UTransAPort": 730
+    },
+    "edge_classes": {
+      "dependOn": 478555,
+      "generate": 9334,
+      "causedBy": 2796
+    },
+    "node_keys": {
+      "@rid": 279836,
+      "@class": 279836,
+      "in_dependOn": 270339,
+      "out_dependOn": 237855,
+      "zh_label": 194033,
+      "vendor_name": 78538,
+      "ldn": 65775,
+      "related_respoint_zh_label": 10147,
+      "service_level": 10135,
+      "title": 9334,
+      "device": 9334,
+      "location": 9334,
+      "time": 9334,
+      "reason": 9334,
+      "timeLists": 9334,
+      "addInfo": 9334,
+      "vendor": 9334,
+      "room": 9334,
+      "position": 5284,
+      "label": 3330,
+      "device_type": 2069
+    },
+    "edge_keys": {
+      "@rid": 490685,
+      "@class": 490685,
+      "in": 490685,
+      "out": 490685,
+      "@type": 478555,
+      "@version": 478555,
+      "modified_time": 478555,
+      "@fieldTypes": 478555
+    },
+    "cross_order_rid_collisions": 100,
+    "cross_order_rid_collision_examples": [
+      {
+        "rid": "#161:56",
+        "first_order": "000ddb44-dcb0-4acd-8b75-0c675615dbce",
+        "second_order": "0120f8b0-a806-47ed-86c7-9b996c4bb1ad"
+      },
+      {
+        "rid": "#169:0",
+        "first_order": "01012db7-d093-4134-b80f-784e18e3ca62",
+        "second_order": "0120f8b0-a806-47ed-86c7-9b996c4bb1ad"
+      },
+      {
+        "rid": "#162:1",
+        "first_order": "01012db7-d093-4134-b80f-784e18e3ca62",
+        "second_order": "0120f8b0-a806-47ed-86c7-9b996c4bb1ad"
+      },
+      {
+        "rid": "#159:1",
+        "first_order": "01012db7-d093-4134-b80f-784e18e3ca62",
+        "second_order": "0120f8b0-a806-47ed-86c7-9b996c4bb1ad"
+      },
+      {
+        "rid": "#165:0",
+        "first_order": "01012db7-d093-4134-b80f-784e18e3ca62",
+        "second_order": "0120f8b0-a806-47ed-86c7-9b996c4bb1ad"
+      },
+      {
+        "rid": "#86:1269",
+        "first_order": "01012db7-d093-4134-b80f-784e18e3ca62",
+        "second_order": "0120f8b0-a806-47ed-86c7-9b996c4bb1ad"
+      },
+      {
+        "rid": "#85:1269",
+        "first_order": "01012db7-d093-4134-b80f-784e18e3ca62",
+        "second_order": "0120f8b0-a806-47ed-86c7-9b996c4bb1ad"
+      },
+      {
+        "rid": "#84:1586",
+        "first_order": "000ddb44-dcb0-4acd-8b75-0c675615dbce",
+        "second_order": "015fdca4-2b7a-4365-97ae-01dc07801f11"
+      },
+      {
+        "rid": "#81:1586",
+        "first_order": "000ddb44-dcb0-4acd-8b75-0c675615dbce",
+        "second_order": "015fdca4-2b7a-4365-97ae-01dc07801f11"
+      },
+      {
+        "rid": "#85:1585",
+        "first_order": "000ddb44-dcb0-4acd-8b75-0c675615dbce",
+        "second_order": "015fdca4-2b7a-4365-97ae-01dc07801f11"
+      },
+      {
+        "rid": "#150:51",
+        "first_order": "002ee415-4ac6-4420-8d52-6b7f484e0d7a",
+        "second_order": "0163d827-da40-4802-834b-3e08f36cab63"
+      },
+      {
+        "rid": "#161:39",
+        "first_order": "002ee415-4ac6-4420-8d52-6b7f484e0d7a",
+        "second_order": "0163d827-da40-4802-834b-3e08f36cab63"
+      },
+      {
+        "rid": "#167:6",
+        "first_order": "002ee415-4ac6-4420-8d52-6b7f484e0d7a",
+        "second_order": "0163d827-da40-4802-834b-3e08f36cab63"
+      },
+      {
+        "rid": "#147:50",
+        "first_order": "002ee415-4ac6-4420-8d52-6b7f484e0d7a",
+        "second_order": "0163d827-da40-4802-834b-3e08f36cab63"
+      },
+      {
+        "rid": "#164:37",
+        "first_order": "002ee415-4ac6-4420-8d52-6b7f484e0d7a",
+        "second_order": "0163d827-da40-4802-834b-3e08f36cab63"
+      },
+      {
+        "rid": "#168:6",
+        "first_order": "002ee415-4ac6-4420-8d52-6b7f484e0d7a",
+        "second_order": "0163d827-da40-4802-834b-3e08f36cab63"
+      },
+      {
+        "rid": "#161:20",
+        "first_order": "002ee415-4ac6-4420-8d52-6b7f484e0d7a",
+        "second_order": "0163d827-da40-4802-834b-3e08f36cab63"
+      },
+      {
+        "rid": "#166:5",
+        "first_order": "002ee415-4ac6-4420-8d52-6b7f484e0d7a",
+        "second_order": "0163d827-da40-4802-834b-3e08f36cab63"
+      },
+      {
+        "rid": "#150:27",
+        "first_order": "002ee415-4ac6-4420-8d52-6b7f484e0d7a",
+        "second_order": "0163d827-da40-4802-834b-3e08f36cab63"
+      },
+      {
+        "rid": "#159:21",
+        "first_order": "002ee415-4ac6-4420-8d52-6b7f484e0d7a",
+        "second_order": "0163d827-da40-4802-834b-3e08f36cab63"
+      },
+      {
+        "rid": "#150:26",
+        "first_order": "002ee415-4ac6-4420-8d52-6b7f484e0d7a",
+        "second_order": "0163d827-da40-4802-834b-3e08f36cab63"
+      },
+      {
+        "rid": "#162:18",
+        "first_order": "002ee415-4ac6-4420-8d52-6b7f484e0d7a",
+        "second_order": "0163d827-da40-4802-834b-3e08f36cab63"
+      },
+      {
+        "rid": "#151:20",
+        "first_order": "002ee415-4ac6-4420-8d52-6b7f484e0d7a",
+        "second_order": "0163d827-da40-4802-834b-3e08f36cab63"
+      },
+      {
+        "rid": "#149:27",
+        "first_order": "002ee415-4ac6-4420-8d52-6b7f484e0d7a",
+        "second_order": "0163d827-da40-4802-834b-3e08f36cab63"
+      },
+      {
+        "rid": "#164:20",
+        "first_order": "002ee415-4ac6-4420-8d52-6b7f484e0d7a",
+        "second_order": "0163d827-da40-4802-834b-3e08f36cab63"
+      },
+      {
+        "rid": "#152:48",
+        "first_order": "002ee415-4ac6-4420-8d52-6b7f484e0d7a",
+        "second_order": "0163d827-da40-4802-834b-3e08f36cab63"
+      },
+      {
+        "rid": "#148:20",
+        "first_order": "002ee415-4ac6-4420-8d52-6b7f484e0d7a",
+        "second_order": "0163d827-da40-4802-834b-3e08f36cab63"
+      },
+      {
+        "rid": "#164:15",
+        "first_order": "002ee415-4ac6-4420-8d52-6b7f484e0d7a",
+        "second_order": "0163d827-da40-4802-834b-3e08f36cab63"
+      },
+      {
+        "rid": "#148:22",
+        "first_order": "002ee415-4ac6-4420-8d52-6b7f484e0d7a",
+        "second_order": "0163d827-da40-4802-834b-3e08f36cab63"
+      },
+      {
+        "rid": "#162:16",
+        "first_order": "002ee415-4ac6-4420-8d52-6b7f484e0d7a",
+        "second_order": "0163d827-da40-4802-834b-3e08f36cab63"
+      },
+      {
+        "rid": "#168:5",
+        "first_order": "002ee415-4ac6-4420-8d52-6b7f484e0d7a",
+        "second_order": "0163d827-da40-4802-834b-3e08f36cab63"
+      },
+      {
+        "rid": "#147:20",
+        "first_order": "002ee415-4ac6-4420-8d52-6b7f484e0d7a",
+        "second_order": "0163d827-da40-4802-834b-3e08f36cab63"
+      },
+      {
+        "rid": "#163:15",
+        "first_order": "002ee415-4ac6-4420-8d52-6b7f484e0d7a",
+        "second_order": "0163d827-da40-4802-834b-3e08f36cab63"
+      },
+      {
+        "rid": "#169:5",
+        "first_order": "002ee415-4ac6-4420-8d52-6b7f484e0d7a",
+        "second_order": "0163d827-da40-4802-834b-3e08f36cab63"
+      },
+      {
+        "rid": "#152:20",
+        "first_order": "002ee415-4ac6-4420-8d52-6b7f484e0d7a",
+        "second_order": "0163d827-da40-4802-834b-3e08f36cab63"
+      },
+      {
+        "rid": "#161:15",
+        "first_order": "002ee415-4ac6-4420-8d52-6b7f484e0d7a",
+        "second_order": "0163d827-da40-4802-834b-3e08f36cab63"
+      },
+      {
+        "rid": "#152:23",
+        "first_order": "002ee415-4ac6-4420-8d52-6b7f484e0d7a",
+        "second_order": "0163d827-da40-4802-834b-3e08f36cab63"
+      },
+      {
+        "rid": "#160:18",
+        "first_order": "002ee415-4ac6-4420-8d52-6b7f484e0d7a",
+        "second_order": "0163d827-da40-4802-834b-3e08f36cab63"
+      },
+      {
+        "rid": "#147:22",
+        "first_order": "002ee415-4ac6-4420-8d52-6b7f484e0d7a",
+        "second_order": "0163d827-da40-4802-834b-3e08f36cab63"
+      },
+      {
+        "rid": "#161:17",
+        "first_order": "002ee415-4ac6-4420-8d52-6b7f484e0d7a",
+        "second_order": "0163d827-da40-4802-834b-3e08f36cab63"
+      },
+      {
+        "rid": "#148:24",
+        "first_order": "002ee415-4ac6-4420-8d52-6b7f484e0d7a",
+        "second_order": "0163d827-da40-4802-834b-3e08f36cab63"
+      },
+      {
+        "rid": "#160:19",
+        "first_order": "002ee415-4ac6-4420-8d52-6b7f484e0d7a",
+        "second_order": "0163d827-da40-4802-834b-3e08f36cab63"
+      },
+      {
+        "rid": "#148:52",
+        "first_order": "002ee415-4ac6-4420-8d52-6b7f484e0d7a",
+        "second_order": "0163d827-da40-4802-834b-3e08f36cab63"
+      },
+      {
+        "rid": "#170:5",
+        "first_order": "002ee415-4ac6-4420-8d52-6b7f484e0d7a",
+        "second_order": "0163d827-da40-4802-834b-3e08f36cab63"
+      },
+      {
+        "rid": "#163:19",
+        "first_order": "002ee415-4ac6-4420-8d52-6b7f484e0d7a",
+        "second_order": "0163d827-da40-4802-834b-3e08f36cab63"
+      },
+      {
+        "rid": "#149:22",
+        "first_order": "002ee415-4ac6-4420-8d52-6b7f484e0d7a",
+        "second_order": "0163d827-da40-4802-834b-3e08f36cab63"
+      },
+      {
+        "rid": "#147:24",
+        "first_order": "002ee415-4ac6-4420-8d52-6b7f484e0d7a",
+        "second_order": "0163d827-da40-4802-834b-3e08f36cab63"
+      },
+      {
+        "rid": "#159:19",
+        "first_order": "002ee415-4ac6-4420-8d52-6b7f484e0d7a",
+        "second_order": "0163d827-da40-4802-834b-3e08f36cab63"
+      },
+      {
+        "rid": "#152:25",
+        "first_order": "002ee415-4ac6-4420-8d52-6b7f484e0d7a",
+        "second_order": "0163d827-da40-4802-834b-3e08f36cab63"
+      },
+      {
+        "rid": "#164:18",
+        "first_order": "002ee415-4ac6-4420-8d52-6b7f484e0d7a",
+        "second_order": "0163d827-da40-4802-834b-3e08f36cab63"
+      },
+      {
+        "rid": "#151:22",
+        "first_order": "002ee415-4ac6-4420-8d52-6b7f484e0d7a",
+        "second_order": "0163d827-da40-4802-834b-3e08f36cab63"
+      },
+      {
+        "rid": "#151:23",
+        "first_order": "002ee415-4ac6-4420-8d52-6b7f484e0d7a",
+        "second_order": "0163d827-da40-4802-834b-3e08f36cab63"
+      },
+      {
+        "rid": "#159:18",
+        "first_order": "002ee415-4ac6-4420-8d52-6b7f484e0d7a",
+        "second_order": "0163d827-da40-4802-834b-3e08f36cab63"
+      },
+      {
+        "rid": "#83:1271",
+        "first_order": "002ee415-4ac6-4420-8d52-6b7f484e0d7a",
+        "second_order": "0163d827-da40-4802-834b-3e08f36cab63"
+      },
+      {
+        "rid": "#86:1270",
+        "first_order": "002ee415-4ac6-4420-8d52-6b7f484e0d7a",
+        "second_order": "0163d827-da40-4802-834b-3e08f36cab63"
+      },
+      {
+        "rid": "#84:1271",
+        "first_order": "002ee415-4ac6-4420-8d52-6b7f484e0d7a",
+        "second_order": "0163d827-da40-4802-834b-3e08f36cab63"
+      },
+      {
+        "rid": "#81:1271",
+        "first_order": "002ee415-4ac6-4420-8d52-6b7f484e0d7a",
+        "second_order": "0163d827-da40-4802-834b-3e08f36cab63"
+      },
+      {
+        "rid": "#85:1271",
+        "first_order": "002ee415-4ac6-4420-8d52-6b7f484e0d7a",
+        "second_order": "0163d827-da40-4802-834b-3e08f36cab63"
+      },
+      {
+        "rid": "#82:1271",
+        "first_order": "002ee415-4ac6-4420-8d52-6b7f484e0d7a",
+        "second_order": "0163d827-da40-4802-834b-3e08f36cab63"
+      },
+      {
+        "rid": "#161:2",
+        "first_order": "01012db7-d093-4134-b80f-784e18e3ca62",
+        "second_order": "0217ca7a-e377-4b28-84c8-cbd7d12e0757"
+      },
+      {
+        "rid": "#169:0",
+        "first_order": "01012db7-d093-4134-b80f-784e18e3ca62",
+        "second_order": "0217ca7a-e377-4b28-84c8-cbd7d12e0757"
+      },
+      {
+        "rid": "#160:1",
+        "first_order": "01012db7-d093-4134-b80f-784e18e3ca62",
+        "second_order": "0217ca7a-e377-4b28-84c8-cbd7d12e0757"
+      },
+      {
+        "rid": "#165:0",
+        "first_order": "01012db7-d093-4134-b80f-784e18e3ca62",
+        "second_order": "0217ca7a-e377-4b28-84c8-cbd7d12e0757"
+      },
+      {
+        "rid": "#161:0",
+        "first_order": "01012db7-d093-4134-b80f-784e18e3ca62",
+        "second_order": "0217ca7a-e377-4b28-84c8-cbd7d12e0757"
+      },
+      {
+        "rid": "#162:1",
+        "first_order": "01012db7-d093-4134-b80f-784e18e3ca62",
+        "second_order": "0217ca7a-e377-4b28-84c8-cbd7d12e0757"
+      },
+      {
+        "rid": "#159:1",
+        "first_order": "01012db7-d093-4134-b80f-784e18e3ca62",
+        "second_order": "0217ca7a-e377-4b28-84c8-cbd7d12e0757"
+      },
+      {
+        "rid": "#162:0",
+        "first_order": "01012db7-d093-4134-b80f-784e18e3ca62",
+        "second_order": "0217ca7a-e377-4b28-84c8-cbd7d12e0757"
+      },
+      {
+        "rid": "#86:1269",
+        "first_order": "01012db7-d093-4134-b80f-784e18e3ca62",
+        "second_order": "0217ca7a-e377-4b28-84c8-cbd7d12e0757"
+      },
+      {
+        "rid": "#85:1269",
+        "first_order": "01012db7-d093-4134-b80f-784e18e3ca62",
+        "second_order": "0217ca7a-e377-4b28-84c8-cbd7d12e0757"
+      },
+      {
+        "rid": "#159:18",
+        "first_order": "002ee415-4ac6-4420-8d52-6b7f484e0d7a",
+        "second_order": "02655ab3-b384-4278-8d03-684347fb6e8f"
+      },
+      {
+        "rid": "#160:18",
+        "first_order": "002ee415-4ac6-4420-8d52-6b7f484e0d7a",
+        "second_order": "02655ab3-b384-4278-8d03-684347fb6e8f"
+      },
+      {
+        "rid": "#168:5",
+        "first_order": "002ee415-4ac6-4420-8d52-6b7f484e0d7a",
+        "second_order": "02655ab3-b384-4278-8d03-684347fb6e8f"
+      },
+      {
+        "rid": "#164:20",
+        "first_order": "002ee415-4ac6-4420-8d52-6b7f484e0d7a",
+        "second_order": "02655ab3-b384-4278-8d03-684347fb6e8f"
+      },
+      {
+        "rid": "#162:16",
+        "first_order": "002ee415-4ac6-4420-8d52-6b7f484e0d7a",
+        "second_order": "02655ab3-b384-4278-8d03-684347fb6e8f"
+      },
+      {
+        "rid": "#159:21",
+        "first_order": "002ee415-4ac6-4420-8d52-6b7f484e0d7a",
+        "second_order": "02655ab3-b384-4278-8d03-684347fb6e8f"
+      },
+      {
+        "rid": "#161:17",
+        "first_order": "002ee415-4ac6-4420-8d52-6b7f484e0d7a",
+        "second_order": "02655ab3-b384-4278-8d03-684347fb6e8f"
+      },
+      {
+        "rid": "#84:1271",
+        "first_order": "002ee415-4ac6-4420-8d52-6b7f484e0d7a",
+        "second_order": "02655ab3-b384-4278-8d03-684347fb6e8f"
+      },
+      {
+        "rid": "#84:1271",
+        "first_order": "002ee415-4ac6-4420-8d52-6b7f484e0d7a",
+        "second_order": "02655ab3-b384-4278-8d03-684347fb6e8f"
+      },
+      {
+        "rid": "#85:1269",
+        "first_order": "01012db7-d093-4134-b80f-784e18e3ca62",
+        "second_order": "0290c216-7731-4a58-9e6d-8b14f4c295ff"
+      },
+      {
+        "rid": "#85:1269",
+        "first_order": "01012db7-d093-4134-b80f-784e18e3ca62",
+        "second_order": "0290c216-7731-4a58-9e6d-8b14f4c295ff"
+      },
+      {
+        "rid": "#85:1269",
+        "first_order": "01012db7-d093-4134-b80f-784e18e3ca62",
+        "second_order": "0290c216-7731-4a58-9e6d-8b14f4c295ff"
+      },
+      {
+        "rid": "#85:1269",
+        "first_order": "01012db7-d093-4134-b80f-784e18e3ca62",
+        "second_order": "0290c216-7731-4a58-9e6d-8b14f4c295ff"
+      },
+      {
+        "rid": "#85:1273",
+        "first_order": "0120f8b0-a806-47ed-86c7-9b996c4bb1ad",
+        "second_order": "0290c216-7731-4a58-9e6d-8b14f4c295ff"
+      },
+      {
+        "rid": "#85:1269",
+        "first_order": "01012db7-d093-4134-b80f-784e18e3ca62",
+        "second_order": "0290c216-7731-4a58-9e6d-8b14f4c295ff"
+      },
+      {
+        "rid": "#86:1269",
+        "first_order": "01012db7-d093-4134-b80f-784e18e3ca62",
+        "second_order": "0290c216-7731-4a58-9e6d-8b14f4c295ff"
+      },
+      {
+        "rid": "#83:1273",
+        "first_order": "0120f8b0-a806-47ed-86c7-9b996c4bb1ad",
+        "second_order": "0290c216-7731-4a58-9e6d-8b14f4c295ff"
+      },
+      {
+        "rid": "#81:1586",
+        "first_order": "000ddb44-dcb0-4acd-8b75-0c675615dbce",
+        "second_order": "02c65a99-78c2-47a3-b67b-99ff1d24c206"
+      },
+      {
+        "rid": "#81:1586",
+        "first_order": "000ddb44-dcb0-4acd-8b75-0c675615dbce",
+        "second_order": "02c65a99-78c2-47a3-b67b-99ff1d24c206"
+      },
+      {
+        "rid": "#85:1585",
+        "first_order": "000ddb44-dcb0-4acd-8b75-0c675615dbce",
+        "second_order": "02c65a99-78c2-47a3-b67b-99ff1d24c206"
+      },
+      {
+        "rid": "#159:22",
+        "first_order": "000ddb44-dcb0-4acd-8b75-0c675615dbce",
+        "second_order": "0361b819-0d7e-4346-a685-239d62cc1d4e"
+      },
+      {
+        "rid": "#161:22",
+        "first_order": "000ddb44-dcb0-4acd-8b75-0c675615dbce",
+        "second_order": "0361b819-0d7e-4346-a685-239d62cc1d4e"
+      },
+      {
+        "rid": "#157:67",
+        "first_order": "000ddb44-dcb0-4acd-8b75-0c675615dbce",
+        "second_order": "0361b819-0d7e-4346-a685-239d62cc1d4e"
+      },
+      {
+        "rid": "#81:1587",
+        "first_order": "000ddb44-dcb0-4acd-8b75-0c675615dbce",
+        "second_order": "0361b819-0d7e-4346-a685-239d62cc1d4e"
+      },
+      {
+        "rid": "#85:1585",
+        "first_order": "000ddb44-dcb0-4acd-8b75-0c675615dbce",
+        "second_order": "0361b819-0d7e-4346-a685-239d62cc1d4e"
+      },
+      {
+        "rid": "#150:51",
+        "first_order": "002ee415-4ac6-4420-8d52-6b7f484e0d7a",
+        "second_order": "036b69a8-169a-4369-8baf-9b4dbc1da813"
+      },
+      {
+        "rid": "#161:39",
+        "first_order": "002ee415-4ac6-4420-8d52-6b7f484e0d7a",
+        "second_order": "036b69a8-169a-4369-8baf-9b4dbc1da813"
+      },
+      {
+        "rid": "#167:6",
+        "first_order": "002ee415-4ac6-4420-8d52-6b7f484e0d7a",
+        "second_order": "036b69a8-169a-4369-8baf-9b4dbc1da813"
+      },
+      {
+        "rid": "#147:50",
+        "first_order": "002ee415-4ac6-4420-8d52-6b7f484e0d7a",
+        "second_order": "036b69a8-169a-4369-8baf-9b4dbc1da813"
+      },
+      {
+        "rid": "#164:37",
+        "first_order": "002ee415-4ac6-4420-8d52-6b7f484e0d7a",
+        "second_order": "036b69a8-169a-4369-8baf-9b4dbc1da813"
+      },
+      {
+        "rid": "#168:6",
+        "first_order": "002ee415-4ac6-4420-8d52-6b7f484e0d7a",
+        "second_order": "036b69a8-169a-4369-8baf-9b4dbc1da813"
+      }
+    ],
+    "largest_orders": [
+      {
+        "order_id": "31933c97-86d6-497a-87c9-f2f895e380e5",
+        "nodes": 1707,
+        "edges": 2705,
+        "alarms": 139
+      },
+      {
+        "order_id": "2784f133-4878-4188-8270-a6ba44db1d33",
+        "nodes": 1551,
+        "edges": 2689,
+        "alarms": 5
+      },
+      {
+        "order_id": "ceb98b95-ab1b-4a45-bd86-415389676d2c",
+        "nodes": 1372,
+        "edges": 2996,
+        "alarms": 12
+      },
+      {
+        "order_id": "c874c620-32d4-44a8-b80c-29630d5639ca",
+        "nodes": 895,
+        "edges": 2002,
+        "alarms": 12
+      },
+      {
+        "order_id": "2fe6a9be-60a8-4e1d-abf0-2586e6d12838",
+        "nodes": 854,
+        "edges": 1828,
+        "alarms": 1
+      },
+      {
+        "order_id": "3b57501d-7252-4f74-90c6-659403e45d5a",
+        "nodes": 769,
+        "edges": 1643,
+        "alarms": 11
+      },
+      {
+        "order_id": "1b3d0a63-136f-40be-8dea-64a5838ce911",
+        "nodes": 749,
+        "edges": 1697,
+        "alarms": 10
+      },
+      {
+        "order_id": "8b1f0a47-4ff1-4bcf-aded-f843c96250a7",
+        "nodes": 710,
+        "edges": 1417,
+        "alarms": 17
+      },
+      {
+        "order_id": "a85d70af-06ff-44fe-820f-f72a850cad82",
+        "nodes": 653,
+        "edges": 1269,
+        "alarms": 32
+      },
+      {
+        "order_id": "2f2ea13f-5a13-45e7-a28e-932ebe505136",
+        "nodes": 632,
+        "edges": 1099,
+        "alarms": 12
+      },
+      {
+        "order_id": "c1009bff-bffd-42e8-ad2f-bd1fd5f79581",
+        "nodes": 629,
+        "edges": 1140,
+        "alarms": 15
+      },
+      {
+        "order_id": "acbd789d-1376-40f1-8276-8d8af4e39877",
+        "nodes": 624,
+        "edges": 1399,
+        "alarms": 4
+      },
+      {
+        "order_id": "a4eda8cf-1e47-4f63-b643-d10946f340f8",
+        "nodes": 624,
+        "edges": 1395,
+        "alarms": 3
+      },
+      {
+        "order_id": "28f503c0-16fa-4742-b5e9-778eaf8cc2fa",
+        "nodes": 596,
+        "edges": 1343,
+        "alarms": 10
+      },
+      {
+        "order_id": "d8b806f7-e843-4c02-8cb6-e88502f272ca",
+        "nodes": 595,
+        "edges": 1191,
+        "alarms": 23
+      },
+      {
+        "order_id": "2c8414e0-b37b-4ae7-8106-ea1f2284ddab",
+        "nodes": 586,
+        "edges": 1298,
+        "alarms": 3
+      },
+      {
+        "order_id": "27a8c334-1074-446b-9a15-752cc3735e0b",
+        "nodes": 580,
+        "edges": 986,
+        "alarms": 34
+      },
+      {
+        "order_id": "d486e454-ea19-4eb8-a79c-734d64b5bcb6",
+        "nodes": 579,
+        "edges": 1272,
+        "alarms": 5
+      },
+      {
+        "order_id": "1f10e213-6723-4011-a5f0-ee492c872467",
+        "nodes": 576,
+        "edges": 1265,
+        "alarms": 3
+      },
+      {
+        "order_id": "3b6044d9-0b4b-44db-a59a-9495db3e56f4",
+        "nodes": 574,
+        "edges": 1263,
+        "alarms": 1
+      }
+    ]
+  },
+  "test": {
+    "root": "D:\\zgyidong\\test",
+    "totals": {
+      "orders": 546,
+      "nodes": 91301,
+      "edges": 160286,
+      "alarms": 3238,
+      "roots": 0,
+      "missing_endpoints": 1309,
+      "self_loops": 0
+    },
+    "maxima": {
+      "nodes": 1073,
+      "edges": 2178,
+      "alarms": 63
+    },
+    "node_classes": {
+      "TransCircuitRoute": 35320,
+      "RiPort": 10104,
+      "NTransPort": 10045,
+      "TransBoard": 9105,
+      "Board": 5497,
+      "RRU": 4774,
+      "Room": 3960,
+      "Cell": 3443,
+      "TransDevice": 3434,
+      "Alarm": 3238,
+      "BaseStation": 701,
+      "BBU": 612,
+      "TransCircuit": 495,
+      "UTransZPort": 323,
+      "UTransAPort": 250
+    },
+    "edge_classes": {
+      "dependOn": 156023,
+      "generate": 3238,
+      "causedBy": 1025
+    },
+    "node_keys": {
+      "@rid": 91301,
+      "@class": 91301,
+      "in_dependOn": 88003,
+      "out_dependOn": 77622,
+      "zh_label": 63633,
+      "vendor_name": 25131,
+      "ldn": 20987,
+      "related_respoint_zh_label": 3458,
+      "service_level": 3434,
+      "title": 3238,
+      "device": 3238,
+      "location": 3238,
+      "time": 3238,
+      "reason": 3238,
+      "timeLists": 3238,
+      "addInfo": 3238,
+      "vendor": 3238,
+      "room": 3238,
+      "position": 1449,
+      "label": 1110,
+      "device_type": 701
+    },
+    "edge_keys": {
+      "@rid": 160286,
+      "@class": 160286,
+      "in": 160286,
+      "out": 160286,
+      "@type": 156023,
+      "@version": 156023,
+      "modified_time": 156023,
+      "@fieldTypes": 156023
+    },
+    "cross_order_rid_collisions": 100,
+    "cross_order_rid_collision_examples": [
+      {
+        "rid": "#161:0",
+        "first_order": "00c65d88-71c7-4efd-838e-6e46d74c1948",
+        "second_order": "04c4c660-a42b-4c85-ac4f-34ffa598f7ab"
+      },
+      {
+        "rid": "#81:1586",
+        "first_order": "00c65d88-71c7-4efd-838e-6e46d74c1948",
+        "second_order": "056a4a59-4bb1-40db-a644-9474b6a3ced9"
+      },
+      {
+        "rid": "#81:1586",
+        "first_order": "00c65d88-71c7-4efd-838e-6e46d74c1948",
+        "second_order": "056a4a59-4bb1-40db-a644-9474b6a3ced9"
+      },
+      {
+        "rid": "#82:1586",
+        "first_order": "00c65d88-71c7-4efd-838e-6e46d74c1948",
+        "second_order": "056a4a59-4bb1-40db-a644-9474b6a3ced9"
+      },
+      {
+        "rid": "#163:0",
+        "first_order": "00c65d88-71c7-4efd-838e-6e46d74c1948",
+        "second_order": "05d2fb28-fd1f-40b6-ab88-97f6ffdb2a45"
+      },
+      {
+        "rid": "#154:0",
+        "first_order": "00c65d88-71c7-4efd-838e-6e46d74c1948",
+        "second_order": "05d2fb28-fd1f-40b6-ab88-97f6ffdb2a45"
+      },
+      {
+        "rid": "#161:0",
+        "first_order": "00c65d88-71c7-4efd-838e-6e46d74c1948",
+        "second_order": "05d2fb28-fd1f-40b6-ab88-97f6ffdb2a45"
+      },
+      {
+        "rid": "#155:0",
+        "first_order": "00c65d88-71c7-4efd-838e-6e46d74c1948",
+        "second_order": "05d2fb28-fd1f-40b6-ab88-97f6ffdb2a45"
+      },
+      {
+        "rid": "#81:1586",
+        "first_order": "00c65d88-71c7-4efd-838e-6e46d74c1948",
+        "second_order": "05d2fb28-fd1f-40b6-ab88-97f6ffdb2a45"
+      },
+      {
+        "rid": "#82:1586",
+        "first_order": "00c65d88-71c7-4efd-838e-6e46d74c1948",
+        "second_order": "05d2fb28-fd1f-40b6-ab88-97f6ffdb2a45"
+      },
+      {
+        "rid": "#81:1586",
+        "first_order": "00c65d88-71c7-4efd-838e-6e46d74c1948",
+        "second_order": "06d84a90-670f-4ccb-b482-9afdb874d164"
+      },
+      {
+        "rid": "#159:1",
+        "first_order": "04c4c660-a42b-4c85-ac4f-34ffa598f7ab",
+        "second_order": "06da0faf-ed4d-4329-af78-57eb6c2a9849"
+      },
+      {
+        "rid": "#161:0",
+        "first_order": "00c65d88-71c7-4efd-838e-6e46d74c1948",
+        "second_order": "06da0faf-ed4d-4329-af78-57eb6c2a9849"
+      },
+      {
+        "rid": "#152:5",
+        "first_order": "00c65d88-71c7-4efd-838e-6e46d74c1948",
+        "second_order": "06da0faf-ed4d-4329-af78-57eb6c2a9849"
+      },
+      {
+        "rid": "#146:0",
+        "first_order": "00c65d88-71c7-4efd-838e-6e46d74c1948",
+        "second_order": "06da0faf-ed4d-4329-af78-57eb6c2a9849"
+      },
+      {
+        "rid": "#154:0",
+        "first_order": "00c65d88-71c7-4efd-838e-6e46d74c1948",
+        "second_order": "06da0faf-ed4d-4329-af78-57eb6c2a9849"
+      },
+      {
+        "rid": "#163:0",
+        "first_order": "00c65d88-71c7-4efd-838e-6e46d74c1948",
+        "second_order": "06da0faf-ed4d-4329-af78-57eb6c2a9849"
+      },
+      {
+        "rid": "#141:0",
+        "first_order": "00c65d88-71c7-4efd-838e-6e46d74c1948",
+        "second_order": "06da0faf-ed4d-4329-af78-57eb6c2a9849"
+      },
+      {
+        "rid": "#155:0",
+        "first_order": "00c65d88-71c7-4efd-838e-6e46d74c1948",
+        "second_order": "06da0faf-ed4d-4329-af78-57eb6c2a9849"
+      },
+      {
+        "rid": "#164:0",
+        "first_order": "04c4c660-a42b-4c85-ac4f-34ffa598f7ab",
+        "second_order": "06da0faf-ed4d-4329-af78-57eb6c2a9849"
+      },
+      {
+        "rid": "#160:1",
+        "first_order": "04c4c660-a42b-4c85-ac4f-34ffa598f7ab",
+        "second_order": "06da0faf-ed4d-4329-af78-57eb6c2a9849"
+      },
+      {
+        "rid": "#161:1",
+        "first_order": "04c4c660-a42b-4c85-ac4f-34ffa598f7ab",
+        "second_order": "06da0faf-ed4d-4329-af78-57eb6c2a9849"
+      },
+      {
+        "rid": "#162:1",
+        "first_order": "04c4c660-a42b-4c85-ac4f-34ffa598f7ab",
+        "second_order": "06da0faf-ed4d-4329-af78-57eb6c2a9849"
+      },
+      {
+        "rid": "#81:1586",
+        "first_order": "00c65d88-71c7-4efd-838e-6e46d74c1948",
+        "second_order": "06da0faf-ed4d-4329-af78-57eb6c2a9849"
+      },
+      {
+        "rid": "#82:1586",
+        "first_order": "00c65d88-71c7-4efd-838e-6e46d74c1948",
+        "second_order": "06da0faf-ed4d-4329-af78-57eb6c2a9849"
+      },
+      {
+        "rid": "#159:22",
+        "first_order": "056a4a59-4bb1-40db-a644-9474b6a3ced9",
+        "second_order": "07c300f7-bf9e-46bc-88de-ce7ad5276010"
+      },
+      {
+        "rid": "#161:22",
+        "first_order": "056a4a59-4bb1-40db-a644-9474b6a3ced9",
+        "second_order": "07c300f7-bf9e-46bc-88de-ce7ad5276010"
+      },
+      {
+        "rid": "#81:1587",
+        "first_order": "056a4a59-4bb1-40db-a644-9474b6a3ced9",
+        "second_order": "07c300f7-bf9e-46bc-88de-ce7ad5276010"
+      },
+      {
+        "rid": "#85:1585",
+        "first_order": "056a4a59-4bb1-40db-a644-9474b6a3ced9",
+        "second_order": "07c300f7-bf9e-46bc-88de-ce7ad5276010"
+      },
+      {
+        "rid": "#81:1586",
+        "first_order": "00c65d88-71c7-4efd-838e-6e46d74c1948",
+        "second_order": "08cc24a7-d384-4d87-89a0-c7306e84afd3"
+      },
+      {
+        "rid": "#84:1586",
+        "first_order": "056a4a59-4bb1-40db-a644-9474b6a3ced9",
+        "second_order": "08cc24a7-d384-4d87-89a0-c7306e84afd3"
+      },
+      {
+        "rid": "#84:1539",
+        "first_order": "06d84a90-670f-4ccb-b482-9afdb874d164",
+        "second_order": "09bfca5b-75c1-42c2-b5fd-5d6d7822d71e"
+      },
+      {
+        "rid": "#84:1539",
+        "first_order": "06d84a90-670f-4ccb-b482-9afdb874d164",
+        "second_order": "09bfca5b-75c1-42c2-b5fd-5d6d7822d71e"
+      },
+      {
+        "rid": "#164:20",
+        "first_order": "001250fc-acbf-45fb-a89b-95d17005e3bf",
+        "second_order": "0a884a84-bd68-4390-906e-67cbbfe80c74"
+      },
+      {
+        "rid": "#161:17",
+        "first_order": "001250fc-acbf-45fb-a89b-95d17005e3bf",
+        "second_order": "0a884a84-bd68-4390-906e-67cbbfe80c74"
+      },
+      {
+        "rid": "#168:5",
+        "first_order": "001250fc-acbf-45fb-a89b-95d17005e3bf",
+        "second_order": "0a884a84-bd68-4390-906e-67cbbfe80c74"
+      },
+      {
+        "rid": "#160:18",
+        "first_order": "001250fc-acbf-45fb-a89b-95d17005e3bf",
+        "second_order": "0a884a84-bd68-4390-906e-67cbbfe80c74"
+      },
+      {
+        "rid": "#159:21",
+        "first_order": "001250fc-acbf-45fb-a89b-95d17005e3bf",
+        "second_order": "0a884a84-bd68-4390-906e-67cbbfe80c74"
+      },
+      {
+        "rid": "#159:18",
+        "first_order": "001250fc-acbf-45fb-a89b-95d17005e3bf",
+        "second_order": "0a884a84-bd68-4390-906e-67cbbfe80c74"
+      },
+      {
+        "rid": "#162:16",
+        "first_order": "001250fc-acbf-45fb-a89b-95d17005e3bf",
+        "second_order": "0a884a84-bd68-4390-906e-67cbbfe80c74"
+      },
+      {
+        "rid": "#84:1271",
+        "first_order": "001250fc-acbf-45fb-a89b-95d17005e3bf",
+        "second_order": "0a884a84-bd68-4390-906e-67cbbfe80c74"
+      },
+      {
+        "rid": "#166:64",
+        "first_order": "0a884a84-bd68-4390-906e-67cbbfe80c74",
+        "second_order": "0c1958be-8ece-4821-81a8-809c9fb5f986"
+      },
+      {
+        "rid": "#82:88",
+        "first_order": "0a884a84-bd68-4390-906e-67cbbfe80c74",
+        "second_order": "0c1958be-8ece-4821-81a8-809c9fb5f986"
+      },
+      {
+        "rid": "#83:85",
+        "first_order": "0a884a84-bd68-4390-906e-67cbbfe80c74",
+        "second_order": "0c1958be-8ece-4821-81a8-809c9fb5f986"
+      },
+      {
+        "rid": "#85:1596",
+        "first_order": "06d84a90-670f-4ccb-b482-9afdb874d164",
+        "second_order": "0f2a154d-6f4a-4b05-b9a8-6502b110d3af"
+      },
+      {
+        "rid": "#84:16",
+        "first_order": "06da0faf-ed4d-4329-af78-57eb6c2a9849",
+        "second_order": "0f2a154d-6f4a-4b05-b9a8-6502b110d3af"
+      },
+      {
+        "rid": "#81:1586",
+        "first_order": "00c65d88-71c7-4efd-838e-6e46d74c1948",
+        "second_order": "0f2a154d-6f4a-4b05-b9a8-6502b110d3af"
+      },
+      {
+        "rid": "#85:1596",
+        "first_order": "06d84a90-670f-4ccb-b482-9afdb874d164",
+        "second_order": "0f2a154d-6f4a-4b05-b9a8-6502b110d3af"
+      },
+      {
+        "rid": "#81:1587",
+        "first_order": "056a4a59-4bb1-40db-a644-9474b6a3ced9",
+        "second_order": "0f2a154d-6f4a-4b05-b9a8-6502b110d3af"
+      },
+      {
+        "rid": "#160:596",
+        "first_order": "0f2a154d-6f4a-4b05-b9a8-6502b110d3af",
+        "second_order": "0ff09b29-0ded-465a-a684-9d78f7e9e2cd"
+      },
+      {
+        "rid": "#141:2377",
+        "first_order": "07ae65ec-c048-4b05-9fd5-114fee44f62e",
+        "second_order": "0ff09b29-0ded-465a-a684-9d78f7e9e2cd"
+      },
+      {
+        "rid": "#84:1586",
+        "first_order": "056a4a59-4bb1-40db-a644-9474b6a3ced9",
+        "second_order": "0ff09b29-0ded-465a-a684-9d78f7e9e2cd"
+      },
+      {
+        "rid": "#81:1586",
+        "first_order": "00c65d88-71c7-4efd-838e-6e46d74c1948",
+        "second_order": "0ff09b29-0ded-465a-a684-9d78f7e9e2cd"
+      },
+      {
+        "rid": "#85:1596",
+        "first_order": "06d84a90-670f-4ccb-b482-9afdb874d164",
+        "second_order": "0ff09b29-0ded-465a-a684-9d78f7e9e2cd"
+      },
+      {
+        "rid": "#85:1585",
+        "first_order": "056a4a59-4bb1-40db-a644-9474b6a3ced9",
+        "second_order": "0ff09b29-0ded-465a-a684-9d78f7e9e2cd"
+      },
+      {
+        "rid": "#150:111",
+        "first_order": "04c4c660-a42b-4c85-ac4f-34ffa598f7ab",
+        "second_order": "10735bd0-fc38-4d0b-a19e-99578d60ad51"
+      },
+      {
+        "rid": "#142:3280",
+        "first_order": "06d84a90-670f-4ccb-b482-9afdb874d164",
+        "second_order": "128fe5fd-8273-44f5-ae20-b31d2e31f6bd"
+      },
+      {
+        "rid": "#158:3234",
+        "first_order": "06d84a90-670f-4ccb-b482-9afdb874d164",
+        "second_order": "128fe5fd-8273-44f5-ae20-b31d2e31f6bd"
+      },
+      {
+        "rid": "#160:1125",
+        "first_order": "06d84a90-670f-4ccb-b482-9afdb874d164",
+        "second_order": "128fe5fd-8273-44f5-ae20-b31d2e31f6bd"
+      },
+      {
+        "rid": "#153:2013",
+        "first_order": "06d84a90-670f-4ccb-b482-9afdb874d164",
+        "second_order": "128fe5fd-8273-44f5-ae20-b31d2e31f6bd"
+      },
+      {
+        "rid": "#163:621",
+        "first_order": "06d84a90-670f-4ccb-b482-9afdb874d164",
+        "second_order": "128fe5fd-8273-44f5-ae20-b31d2e31f6bd"
+      },
+      {
+        "rid": "#142:2689",
+        "first_order": "06d84a90-670f-4ccb-b482-9afdb874d164",
+        "second_order": "128fe5fd-8273-44f5-ae20-b31d2e31f6bd"
+      },
+      {
+        "rid": "#156:2740",
+        "first_order": "06d84a90-670f-4ccb-b482-9afdb874d164",
+        "second_order": "128fe5fd-8273-44f5-ae20-b31d2e31f6bd"
+      },
+      {
+        "rid": "#144:3279",
+        "first_order": "06d84a90-670f-4ccb-b482-9afdb874d164",
+        "second_order": "128fe5fd-8273-44f5-ae20-b31d2e31f6bd"
+      },
+      {
+        "rid": "#154:92",
+        "first_order": "06d84a90-670f-4ccb-b482-9afdb874d164",
+        "second_order": "128fe5fd-8273-44f5-ae20-b31d2e31f6bd"
+      },
+      {
+        "rid": "#161:32",
+        "first_order": "06d84a90-670f-4ccb-b482-9afdb874d164",
+        "second_order": "128fe5fd-8273-44f5-ae20-b31d2e31f6bd"
+      },
+      {
+        "rid": "#145:3279",
+        "first_order": "06d84a90-670f-4ccb-b482-9afdb874d164",
+        "second_order": "128fe5fd-8273-44f5-ae20-b31d2e31f6bd"
+      },
+      {
+        "rid": "#153:89",
+        "first_order": "06d84a90-670f-4ccb-b482-9afdb874d164",
+        "second_order": "128fe5fd-8273-44f5-ae20-b31d2e31f6bd"
+      },
+      {
+        "rid": "#159:32",
+        "first_order": "06d84a90-670f-4ccb-b482-9afdb874d164",
+        "second_order": "128fe5fd-8273-44f5-ae20-b31d2e31f6bd"
+      },
+      {
+        "rid": "#142:3279",
+        "first_order": "06d84a90-670f-4ccb-b482-9afdb874d164",
+        "second_order": "128fe5fd-8273-44f5-ae20-b31d2e31f6bd"
+      },
+      {
+        "rid": "#156:3234",
+        "first_order": "06d84a90-670f-4ccb-b482-9afdb874d164",
+        "second_order": "128fe5fd-8273-44f5-ae20-b31d2e31f6bd"
+      },
+      {
+        "rid": "#163:1124",
+        "first_order": "06d84a90-670f-4ccb-b482-9afdb874d164",
+        "second_order": "128fe5fd-8273-44f5-ae20-b31d2e31f6bd"
+      },
+      {
+        "rid": "#143:3278",
+        "first_order": "06d84a90-670f-4ccb-b482-9afdb874d164",
+        "second_order": "128fe5fd-8273-44f5-ae20-b31d2e31f6bd"
+      },
+      {
+        "rid": "#157:3235",
+        "first_order": "06d84a90-670f-4ccb-b482-9afdb874d164",
+        "second_order": "128fe5fd-8273-44f5-ae20-b31d2e31f6bd"
+      },
+      {
+        "rid": "#143:3277",
+        "first_order": "06d84a90-670f-4ccb-b482-9afdb874d164",
+        "second_order": "128fe5fd-8273-44f5-ae20-b31d2e31f6bd"
+      },
+      {
+        "rid": "#153:3235",
+        "first_order": "06d84a90-670f-4ccb-b482-9afdb874d164",
+        "second_order": "128fe5fd-8273-44f5-ae20-b31d2e31f6bd"
+      },
+      {
+        "rid": "#164:1124",
+        "first_order": "06d84a90-670f-4ccb-b482-9afdb874d164",
+        "second_order": "128fe5fd-8273-44f5-ae20-b31d2e31f6bd"
+      },
+      {
+        "rid": "#144:3276",
+        "first_order": "06d84a90-670f-4ccb-b482-9afdb874d164",
+        "second_order": "128fe5fd-8273-44f5-ae20-b31d2e31f6bd"
+      },
+      {
+        "rid": "#154:3234",
+        "first_order": "06d84a90-670f-4ccb-b482-9afdb874d164",
+        "second_order": "128fe5fd-8273-44f5-ae20-b31d2e31f6bd"
+      },
+      {
+        "rid": "#146:3279",
+        "first_order": "06d84a90-670f-4ccb-b482-9afdb874d164",
+        "second_order": "128fe5fd-8273-44f5-ae20-b31d2e31f6bd"
+      },
+      {
+        "rid": "#155:91",
+        "first_order": "06d84a90-670f-4ccb-b482-9afdb874d164",
+        "second_order": "128fe5fd-8273-44f5-ae20-b31d2e31f6bd"
+      },
+      {
+        "rid": "#162:32",
+        "first_order": "06d84a90-670f-4ccb-b482-9afdb874d164",
+        "second_order": "128fe5fd-8273-44f5-ae20-b31d2e31f6bd"
+      },
+      {
+        "rid": "#141:3281",
+        "first_order": "06d84a90-670f-4ccb-b482-9afdb874d164",
+        "second_order": "128fe5fd-8273-44f5-ae20-b31d2e31f6bd"
+      },
+      {
+        "rid": "#141:3280",
+        "first_order": "06d84a90-670f-4ccb-b482-9afdb874d164",
+        "second_order": "128fe5fd-8273-44f5-ae20-b31d2e31f6bd"
+      },
+      {
+        "rid": "#157:3236",
+        "first_order": "06d84a90-670f-4ccb-b482-9afdb874d164",
+        "second_order": "128fe5fd-8273-44f5-ae20-b31d2e31f6bd"
+      },
+      {
+        "rid": "#161:1125",
+        "first_order": "06d84a90-670f-4ccb-b482-9afdb874d164",
+        "second_order": "128fe5fd-8273-44f5-ae20-b31d2e31f6bd"
+      },
+      {
+        "rid": "#144:3277",
+        "first_order": "06d84a90-670f-4ccb-b482-9afdb874d164",
+        "second_order": "128fe5fd-8273-44f5-ae20-b31d2e31f6bd"
+      },
+      {
+        "rid": "#158:3233",
+        "first_order": "06d84a90-670f-4ccb-b482-9afdb874d164",
+        "second_order": "128fe5fd-8273-44f5-ae20-b31d2e31f6bd"
+      },
+      {
+        "rid": "#143:3279",
+        "first_order": "06d84a90-670f-4ccb-b482-9afdb874d164",
+        "second_order": "128fe5fd-8273-44f5-ae20-b31d2e31f6bd"
+      },
+      {
+        "rid": "#153:3236",
+        "first_order": "06d84a90-670f-4ccb-b482-9afdb874d164",
+        "second_order": "128fe5fd-8273-44f5-ae20-b31d2e31f6bd"
+      },
+      {
+        "rid": "#162:1125",
+        "first_order": "06d84a90-670f-4ccb-b482-9afdb874d164",
+        "second_order": "128fe5fd-8273-44f5-ae20-b31d2e31f6bd"
+      },
+      {
+        "rid": "#144:3278",
+        "first_order": "06d84a90-670f-4ccb-b482-9afdb874d164",
+        "second_order": "128fe5fd-8273-44f5-ae20-b31d2e31f6bd"
+      },
+      {
+        "rid": "#154:3235",
+        "first_order": "06d84a90-670f-4ccb-b482-9afdb874d164",
+        "second_order": "128fe5fd-8273-44f5-ae20-b31d2e31f6bd"
+      },
+      {
+        "rid": "#142:1803",
+        "first_order": "06d84a90-670f-4ccb-b482-9afdb874d164",
+        "second_order": "128fe5fd-8273-44f5-ae20-b31d2e31f6bd"
+      },
+      {
+        "rid": "#154:2013",
+        "first_order": "06d84a90-670f-4ccb-b482-9afdb874d164",
+        "second_order": "128fe5fd-8273-44f5-ae20-b31d2e31f6bd"
+      },
+      {
+        "rid": "#146:3278",
+        "first_order": "06d84a90-670f-4ccb-b482-9afdb874d164",
+        "second_order": "128fe5fd-8273-44f5-ae20-b31d2e31f6bd"
+      },
+      {
+        "rid": "#156:3235",
+        "first_order": "06d84a90-670f-4ccb-b482-9afdb874d164",
+        "second_order": "128fe5fd-8273-44f5-ae20-b31d2e31f6bd"
+      },
+      {
+        "rid": "#145:3276",
+        "first_order": "06d84a90-670f-4ccb-b482-9afdb874d164",
+        "second_order": "128fe5fd-8273-44f5-ae20-b31d2e31f6bd"
+      },
+      {
+        "rid": "#155:3234",
+        "first_order": "06d84a90-670f-4ccb-b482-9afdb874d164",
+        "second_order": "128fe5fd-8273-44f5-ae20-b31d2e31f6bd"
+      },
+      {
+        "rid": "#159:1126",
+        "first_order": "06d84a90-670f-4ccb-b482-9afdb874d164",
+        "second_order": "128fe5fd-8273-44f5-ae20-b31d2e31f6bd"
+      }
+    ],
+    "largest_orders": [
+      {
+        "order_id": "5b2934e0-b8fd-4f39-9287-15c201fd4c08",
+        "nodes": 1073,
+        "edges": 1845,
+        "alarms": 9
+      },
+      {
+        "order_id": "c2f7c036-aaf0-4a95-9bf4-3cae57b6e7d5",
+        "nodes": 1045,
+        "edges": 2056,
+        "alarms": 25
+      },
+      {
+        "order_id": "faa00ed5-c0b9-445e-98ac-671035a4a239",
+        "nodes": 979,
+        "edges": 2178,
+        "alarms": 14
+      },
+      {
+        "order_id": "3ff15322-56cf-4d2d-b742-077372b53bcb",
+        "nodes": 908,
+        "edges": 1928,
+        "alarms": 15
+      },
+      {
+        "order_id": "625ffce7-65c5-4657-9104-4148b4113130",
+        "nodes": 887,
+        "edges": 1263,
+        "alarms": 63
+      },
+      {
+        "order_id": "d793d532-08ad-4410-a3fd-c09844eb67d0",
+        "nodes": 886,
+        "edges": 1644,
+        "alarms": 19
+      },
+      {
+        "order_id": "d62da5f0-d182-404f-89d9-d9e4812d96c0",
+        "nodes": 754,
+        "edges": 1180,
+        "alarms": 58
+      },
+      {
+        "order_id": "43e1c548-f5bd-4696-b916-8f2420bb4c59",
+        "nodes": 646,
+        "edges": 1364,
+        "alarms": 21
+      },
+      {
+        "order_id": "06d84a90-670f-4ccb-b482-9afdb874d164",
+        "nodes": 573,
+        "edges": 1092,
+        "alarms": 20
+      },
+      {
+        "order_id": "af374848-7bd9-44f9-bfb8-4c087a74d016",
+        "nodes": 565,
+        "edges": 1128,
+        "alarms": 16
+      },
+      {
+        "order_id": "2a67de80-0e3a-40c5-8ba3-a1e61ec22635",
+        "nodes": 539,
+        "edges": 1016,
+        "alarms": 24
+      },
+      {
+        "order_id": "af614073-0139-45cc-82d0-97e02af80b2d",
+        "nodes": 530,
+        "edges": 809,
+        "alarms": 28
+      },
+      {
+        "order_id": "8af50732-cb04-4d4c-af7e-042b2f480f6d",
+        "nodes": 484,
+        "edges": 974,
+        "alarms": 3
+      },
+      {
+        "order_id": "94e0dcac-a49d-47ac-ac89-fbeee49debf7",
+        "nodes": 449,
+        "edges": 938,
+        "alarms": 6
+      },
+      {
+        "order_id": "91ff0556-3e3e-45c9-90ad-93e5fa61e2e3",
+        "nodes": 441,
+        "edges": 914,
+        "alarms": 6
+      },
+      {
+        "order_id": "ff760551-d2f8-492a-aebf-77f185724db0",
+        "nodes": 431,
+        "edges": 807,
+        "alarms": 2
+      },
+      {
+        "order_id": "8e9801e5-40d3-4a77-963f-9dc0ee6569e3",
+        "nodes": 411,
+        "edges": 864,
+        "alarms": 2
+      },
+      {
+        "order_id": "1439543f-d9f2-41bc-b617-92caddaf47be",
+        "nodes": 406,
+        "edges": 809,
+        "alarms": 1
+      },
+      {
+        "order_id": "ab462860-55cd-41c4-97b1-1bd896a14d2b",
+        "nodes": 404,
+        "edges": 818,
+        "alarms": 3
+      },
+      {
+        "order_id": "ef9521a6-f6f6-4d15-bfe5-0c315d9e7e97",
+        "nodes": 399,
+        "edges": 720,
+        "alarms": 16
+      }
+    ]
+  },
+  "combined": {
+    "alarms": 12572,
+    "edges": 650971,
+    "missing_endpoints": 5659,
+    "nodes": 371137,
+    "orders": 2180,
+    "roots": 3046,
+    "self_loops": 0
+  }
+}

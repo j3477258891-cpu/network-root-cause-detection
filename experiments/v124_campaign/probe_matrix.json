@@ -1,0 +1,399 @@
+{
+  "version": "v124",
+  "design": "each probe = baseline + N actions (order-distinct); online k = (delta_tp + N) / 2",
+  "budget": 27,
+  "per_day": 2,
+  "decision_points": {
+    "D1": "after probe 1-2: online accuracy >= 0.65 (>=5/8) -> proceed L2; <0.50 -> stop",
+    "D2": "after probe 3-5: cumulative accuracy >= 0.65 -> proceed L3; posterior gate check",
+    "D3": "after probe 6-8: posterior P(F1>=0.945) nominal >= 0.85 / conservative >= 0.80 -> emit final"
+  },
+  "stop_conditions": [
+    "3 consecutive probes net_tp <= 0",
+    "online accuracy < 0.60",
+    "posterior conservative P < 0.80",
+    "equation conflict"
+  ],
+  "probes": [
+    {
+      "probe_id": 1,
+      "layer": "L1",
+      "n_actions": 4,
+      "file": "D:\\zgyidong\\experiments\\v124_campaign\\probe_01_L1.csv",
+      "predictions": 1035,
+      "sha256": "ba3a866203f0a17c113e023d0c4d0586814832a27ce341ee777e0b9f0a133c38",
+      "actions": [
+        {
+          "order_id": "aa321b94-f3d9-45cf-b1ee-f3a1fe38da68",
+          "remove_rid": "#-1:dab0445c-e5d2-4336-8694-4e271b8b1117",
+          "add_rid": "#-1:429df297-9a4e-462a-a377-ae4cd47eda24",
+          "score_margin": 0.27137255668640137
+        },
+        {
+          "order_id": "625ffce7-65c5-4657-9104-4148b4113130",
+          "remove_rid": "#-1:05a9320e-1492-477f-a9e4-2c6d879fbd49",
+          "add_rid": "#-1:a8f28178-4795-4f26-84d6-1791944fb245",
+          "score_margin": 0.20579242706298828
+        },
+        {
+          "order_id": "aa54ba78-924a-45c7-a182-d8d100b3d130",
+          "remove_rid": "#-1:072cd141-f607-4e6c-aa6f-97d204285259",
+          "add_rid": "#-1:d38962d1-1f9c-429c-8711-d466f3efa3c5",
+          "score_margin": 0.15748995542526245
+        },
+        {
+          "order_id": "fad26f6d-c956-4598-9639-39fef649b32c",
+          "remove_rid": "#-1:e9e6853e-519f-46b4-821e-0ab0fe97ef51",
+          "add_rid": "#-1:d779f103-178f-4a59-8d44-e8a5ee182ba1",
+          "score_margin": 0.14524179697036743
+        }
+      ]
+    },
+    {
+      "probe_id": 2,
+      "layer": "L1",
+      "n_actions": 4,
+      "file": "D:\\zgyidong\\experiments\\v124_campaign\\probe_02_L1.csv",
+      "predictions": 1035,
+      "sha256": "e2b36601092fcffe96fe0bb2ba3a7137537fe81c4cf155ae7e90f676f8a0c80b",
+      "actions": [
+        {
+          "order_id": "06d346bc-1345-4825-9e01-546cc30ac6ba",
+          "remove_rid": "#-1:3005e057-e449-4a72-8269-c9b7d32dfaa7",
+          "add_rid": "#-1:a8f691fe-fb68-4083-bc58-267227343e3c",
+          "score_margin": 0.11422228813171387
+        },
+        {
+          "order_id": "b92c1c42-bc69-48fa-b5c6-7bbd2635a15b",
+          "remove_rid": "#-1:46dad958-ef00-43e3-9cc6-b2312a363aea",
+          "add_rid": "#-1:e98f47f3-1430-4bab-bd66-cd79564e73e6",
+          "score_margin": 0.1075814962387085
+        },
+        {
+          "order_id": "5b2934e0-b8fd-4f39-9287-15c201fd4c08",
+          "remove_rid": "#-1:05d4f9e8-75d9-435e-b3dc-0773e8437b17",
+          "add_rid": "#-1:7616f447-bb42-4ee1-9ca0-2f3a563f143d",
+          "score_margin": 0.026991665363311768
+        },
+        {
+          "order_id": "a3645153-27f5-4b8c-9e3a-bc84cfd7c653",
+          "remove_rid": "#-1:fe0aed2a-0446-4bba-8836-7bf35d20cd0b",
+          "add_rid": "#-1:3a8f96aa-2921-40b6-aafe-19d93e9c762a",
+          "score_margin": 0.0019301772117614746
+        }
+      ]
+    },
+    {
+      "probe_id": 3,
+      "layer": "L1",
+      "n_actions": 2,
+      "file": "D:\\zgyidong\\experiments\\v124_campaign\\probe_03_L1.csv",
+      "predictions": 1035,
+      "sha256": "72620d24191867be68f4e32e7385d22bc643a65abeddb5519e59a2e98a911a5d",
+      "actions": [
+        {
+          "order_id": "c2f7c036-aaf0-4a95-9bf4-3cae57b6e7d5",
+          "remove_rid": "#-1:0e2c59d3-277a-49ac-b27d-9c109ca1602f",
+          "add_rid": "#-1:563dfeb8-68a1-4fc9-bed7-1cc9fb3b6d6b",
+          "score_margin": -0.034110069274902344
+        },
+        {
+          "order_id": "51d2ff1d-1bcb-41c7-ae33-83db088b2545",
+          "remove_rid": "#-1:16fa34c4-15d7-4e95-8ffe-dc7a4c51f6c3",
+          "add_rid": "#-1:213df979-3107-4f97-b62a-08303f63e348",
+          "score_margin": -0.061673879623413086
+        }
+      ]
+    },
+    {
+      "probe_id": 4,
+      "layer": "L2",
+      "n_actions": 8,
+      "file": "D:\\zgyidong\\experiments\\v124_campaign\\probe_04_L2.csv",
+      "predictions": 1035,
+      "sha256": "d25c129136c19de9951293766979088a718a1b2decb8060bd14c0783582cce42",
+      "actions": [
+        {
+          "order_id": "d793d532-08ad-4410-a3fd-c09844eb67d0",
+          "remove_rid": "#-1:16b56bf4-e427-4983-bbcf-28d712f9d40e",
+          "add_rid": "#-1:c5555566-e3df-4e44-8c05-aaab66a5c9b2",
+          "score_margin": -0.16406762599945068
+        },
+        {
+          "order_id": "81e47a27-a3f2-41ee-863e-36a27b36e510",
+          "remove_rid": "#-1:ed22acb9-bd9a-4741-b587-96edb71423e9",
+          "add_rid": "#-1:c930a772-2aec-456e-aa3c-6cee41ceaeea",
+          "score_margin": -0.1885002851486206
+        },
+        {
+          "order_id": "6e2c4bef-2309-4ace-9c76-983bac0255a8",
+          "remove_rid": "#-1:7802637c-5183-41e7-9b5a-265e47384dbc",
+          "add_rid": "#-1:0b1419ea-df28-4dce-aa17-bc13ff702e95",
+          "score_margin": -0.205813467502594
+        },
+        {
+          "order_id": "af374848-7bd9-44f9-bfb8-4c087a74d016",
+          "remove_rid": "#-1:2da33b00-7529-4ffb-8ecd-6a0cca5f01c4",
+          "add_rid": "#-1:84951a88-f1b5-42a0-b848-bd9160c75b73",
+          "score_margin": -0.2340725064277649
+        },
+        {
+          "order_id": "53aa2dc8-1861-4faa-8d25-3847c8e392bb",
+          "remove_rid": "#-1:3cd51cc3-e934-4322-b218-d7986a228a0a",
+          "add_rid": "#-1:4e8373ef-5afc-45ed-8abf-09e4d5ac6b67",
+          "score_margin": -0.24993300437927246
+        },
+        {
+          "order_id": "b1e02c99-d2c4-4546-8324-74fdba3844ad",
+          "remove_rid": "#-1:5a7d8ce4-e0e5-4899-ae76-76c431209b9a",
+          "add_rid": "#-1:6321b4e6-4c58-4c07-9ed3-ff1d86091d06",
+          "score_margin": -0.2571360468864441
+        },
+        {
+          "order_id": "8df78ab7-ca49-44f4-9fc2-1427cf850964",
+          "remove_rid": "#-1:035c60d5-eab4-43c9-ab1f-920eca60a16b",
+          "add_rid": "#-1:d66659d1-337f-4be6-83be-05795ef803cd",
+          "score_margin": -0.2874531149864197
+        },
+        {
+          "order_id": "61b314bc-e57b-494c-b1f0-24ec0a347f17",
+          "remove_rid": "#-1:0342265a-97b5-4d10-ad3a-02fd9a9d6139",
+          "add_rid": "#-1:3e9c3ad7-296b-4dd1-a0b6-6c145477dcef",
+          "score_margin": -0.2913964092731476
+        }
+      ]
+    },
+    {
+      "probe_id": 5,
+      "layer": "L2",
+      "n_actions": 8,
+      "file": "D:\\zgyidong\\experiments\\v124_campaign\\probe_05_L2.csv",
+      "predictions": 1035,
+      "sha256": "be4f3f27d3cfcba69c9a4b20968384c75665043618d646e9444056fac43d22fe",
+      "actions": [
+        {
+          "order_id": "edcaa16f-fee4-415e-88ac-ba68e7aa0087",
+          "remove_rid": "#-1:fdaaf547-da3c-47bd-b583-00d8af72e779",
+          "add_rid": "#-1:9c3d60d1-9412-4278-87b2-fcfb5eb15669",
+          "score_margin": -0.29403936862945557
+        },
+        {
+          "order_id": "af614073-0139-45cc-82d0-97e02af80b2d",
+          "remove_rid": "#-1:234b8763-8699-4669-a8ab-31a66a257551",
+          "add_rid": "#-1:0771a7a8-2000-439c-a4ce-1d30244cd225",
+          "score_margin": -0.29765450954437256
+        },
+        {
+          "order_id": "f6a6325f-450b-426e-a0d9-505b9996adfc",
+          "remove_rid": "#-1:897da660-69c6-490e-938a-09f66c1e8163",
+          "add_rid": "#-1:fb6f2b00-97c0-41b9-8de4-1b234b2cc853",
+          "score_margin": -0.31784600019454956
+        },
+        {
+          "order_id": "a6ae9c3c-c787-47e0-abf0-d610533dc2a0",
+          "remove_rid": "#-1:97d24cf9-e8a1-45f9-8cc6-b6cc1580e991",
+          "add_rid": "#-1:f4748a81-f1ce-4c63-b92b-571fb125ef8b",
+          "score_margin": -0.32039347290992737
+        },
+        {
+          "order_id": "06d84a90-670f-4ccb-b482-9afdb874d164",
+          "remove_rid": "#-1:d1c9980d-85c4-40db-9036-f831f95a0aa7",
+          "add_rid": "#-1:7546c1b4-41c2-4d6c-9466-c6766f460056",
+          "score_margin": -0.3218928873538971
+        },
+        {
+          "order_id": "12fb9fb0-19b0-4b39-b037-f2e479fadb8a",
+          "remove_rid": "#-1:251f48e8-6196-43d0-8eff-fb6cb233a58f",
+          "add_rid": "#-1:8d1a24ae-333c-4a6b-a3d8-25f411c45ed8",
+          "score_margin": -0.3241886794567108
+        },
+        {
+          "order_id": "c27a096b-576b-4fb7-9fb2-7f04feab066d",
+          "remove_rid": "#-1:59be51b1-b5f6-4f1d-b7d4-a8cea8789049",
+          "add_rid": "#-1:bdb85be4-661a-4a6a-9f56-fbff53833e80",
+          "score_margin": -0.33986786007881165
+        },
+        {
+          "order_id": "edf35c43-b3c6-4ee0-b82e-b19e942bec89",
+          "remove_rid": "#-1:ba21b8f6-ec0f-44cc-bbc2-021fcb1a88ac",
+          "add_rid": "#-1:24c2c71d-5081-4d06-8b04-ef94592f679f",
+          "score_margin": -0.35603004693984985
+        }
+      ]
+    },
+    {
+      "probe_id": 6,
+      "layer": "L3",
+      "n_actions": 8,
+      "file": "D:\\zgyidong\\experiments\\v124_campaign\\probe_06_L3.csv",
+      "predictions": 1035,
+      "sha256": "4c7bf4a6da43cd0449ae764d71246d5442691e277df480ea5c6684a9402fe90b",
+      "actions": [
+        {
+          "order_id": "faeeeb88-468e-485d-b71b-d3f799baaaf0",
+          "remove_rid": "#-1:28976d88-a314-4ad8-a917-8058c54a6d1f",
+          "add_rid": "#-1:9602714c-0fcb-43e5-b630-e6036059b9c5",
+          "score_margin": -0.3836626708507538
+        },
+        {
+          "order_id": "5f31acb6-cb86-4488-af6a-f6d2d4d3a4d9",
+          "remove_rid": "#-1:4bc7a677-2371-4b87-906a-85155eca4496",
+          "add_rid": "#-1:98253ab3-be74-4530-a161-aa4625fc725c",
+          "score_margin": -0.38623762130737305
+        },
+        {
+          "order_id": "5523ff85-e4ed-4c63-8e88-054e355e8c60",
+          "remove_rid": "#-1:904982e4-5b4f-438c-90b4-356a7d9a8985",
+          "add_rid": "#-1:04b38cad-f96c-4d28-91e0-3a5e516b9f13",
+          "score_margin": -0.40072816610336304
+        },
+        {
+          "order_id": "8a2eca9e-2e8b-410c-823d-5745cd4a9f88",
+          "remove_rid": "#-1:129f471d-8df9-4bfb-9b99-3ebcbe57608f",
+          "add_rid": "#-1:75cd7fd5-833c-42d2-8ad9-90bc33c1cbea",
+          "score_margin": -0.41093623638153076
+        },
+        {
+          "order_id": "e7700f4a-e97e-40ad-bda5-afd0f92e7509",
+          "remove_rid": "#-1:678aaccb-9f5d-4fab-957b-cd94865e233e",
+          "add_rid": "#-1:009af8ca-5650-48c1-ac34-dd48826a16df",
+          "score_margin": -0.4249756336212158
+        },
+        {
+          "order_id": "00c65d88-71c7-4efd-838e-6e46d74c1948",
+          "remove_rid": "#-1:9b0bd177-c23d-4426-8213-668c8e77c6d3",
+          "add_rid": "#-1:7c5dfa85-b30e-402b-8d0c-f94b3c447ee7",
+          "score_margin": -0.4267706871032715
+        },
+        {
+          "order_id": "947bec57-c9f8-47ad-aa45-37cb9be6c798",
+          "remove_rid": "#-1:b894a7ec-dc86-4656-971a-c1b10121a044",
+          "add_rid": "#-1:2286a000-80e1-48c7-a376-2653802e61b4",
+          "score_margin": -0.4453037977218628
+        },
+        {
+          "order_id": "ab02ed9d-74ea-4fc1-8935-9e5396cf94ba",
+          "remove_rid": "#-1:59550636-05a9-49cc-b46d-9ccedaa6d1b4",
+          "add_rid": "#-1:2fe391a0-09be-47fc-bb08-f50ecb445a3f",
+          "score_margin": -0.45590755343437195
+        }
+      ]
+    },
+    {
+      "probe_id": 7,
+      "layer": "L3",
+      "n_actions": 8,
+      "file": "D:\\zgyidong\\experiments\\v124_campaign\\probe_07_L3.csv",
+      "predictions": 1035,
+      "sha256": "195c66d147ae42895c40887fe053b6b991adc0e1e9e103ecd18cf60f9e6b3c0b",
+      "actions": [
+        {
+          "order_id": "e8dcd7dc-771c-4366-a5b1-8a1ea25c54e3",
+          "remove_rid": "#-1:ff04b2a7-921d-47c3-97d3-b1714a5e1bc8",
+          "add_rid": "#-1:8bb1ab76-3bd2-4b57-b3ab-bfae954998f8",
+          "score_margin": -0.4596608579158783
+        },
+        {
+          "order_id": "1cc2844c-8c88-4f44-a2e0-79ce53bd1a31",
+          "remove_rid": "#-1:d8044763-9f35-46ae-a56f-6a8e27978539",
+          "add_rid": "#-1:ee9e23c3-d15e-4b2a-bb13-3297e735e176",
+          "score_margin": -0.4694598317146301
+        },
+        {
+          "order_id": "df6cbfdb-c0f8-48dd-b4cf-f0e8205fbe39",
+          "remove_rid": "#-1:bb0efa27-c50b-4379-b7dd-ecc863dc195e",
+          "add_rid": "#-1:6cc003c5-9051-4c2d-a5ae-83b290d362b5",
+          "score_margin": -0.47171255946159363
+        },
+        {
+          "order_id": "82f3997a-668c-4663-9dd6-a0a298f14d00",
+          "remove_rid": "#-1:24a89126-1a36-4305-b0f5-0a60e349ead1",
+          "add_rid": "#-1:41150270-f6f1-46ef-bab3-274132c0ebbc",
+          "score_margin": -0.4770206809043884
+        },
+        {
+          "order_id": "01b0f97d-4713-4071-8ebd-2e03009fcb3a",
+          "remove_rid": "#-1:42843cac-db4f-46fd-9f0d-21c399a452ed",
+          "add_rid": "#-1:f684c864-c7af-48a8-8331-c72eaf356fd4",
+          "score_margin": -0.4836110770702362
+        },
+        {
+          "order_id": "74a6f1eb-a808-4e1f-ab52-4e1fa4da6e14",
+          "remove_rid": "#-1:013fb817-c5e3-46db-abd1-17408304ce8d",
+          "add_rid": "#-1:75499131-b609-4ca6-a148-e08c75a0668b",
+          "score_margin": -0.4931827485561371
+        },
+        {
+          "order_id": "bdbb6a39-a21b-4893-a4c0-e3170fc6ea11",
+          "remove_rid": "#-1:f9815547-4e61-4bfa-a811-6d0809276508",
+          "add_rid": "#-1:909e5149-bcf1-4f5c-a1e6-9280287a4b95",
+          "score_margin": -0.4966743290424347
+        },
+        {
+          "order_id": "d51a4fe5-3721-4585-929c-0ca993c3a0be",
+          "remove_rid": "#-1:e3994fe4-4a5b-4ca3-bbd9-0624471cb5de",
+          "add_rid": "#-1:9d662e4b-3a13-4259-b9b9-4b93bfaef737",
+          "score_margin": -0.5037626624107361
+        }
+      ]
+    },
+    {
+      "probe_id": 8,
+      "layer": "L3",
+      "n_actions": 8,
+      "file": "D:\\zgyidong\\experiments\\v124_campaign\\probe_08_L3.csv",
+      "predictions": 1035,
+      "sha256": "a74791a0fb2ed06460b0f80b5a75883bc2a2afc093e06adfaec9b99584857767",
+      "actions": [
+        {
+          "order_id": "2e3320ae-9900-438a-af44-86d7af1abd65",
+          "remove_rid": "#-1:177da67c-7603-4370-aaa8-cac4a2b66b50",
+          "add_rid": "#-1:caf56496-d0f9-42ed-9427-cae114a835e0",
+          "score_margin": -0.5322741866111755
+        },
+        {
+          "order_id": "d450cd63-3e5d-4c67-b11a-517c03d7e3e0",
+          "remove_rid": "#-1:483c97ce-dbdd-4262-90a3-a87eb4bd5fb6",
+          "add_rid": "#-1:48efcb47-2887-4583-b31a-654c0a75cfef",
+          "score_margin": -0.5377445220947266
+        },
+        {
+          "order_id": "4bc34075-c7db-40a9-9c7e-920c0d401a48",
+          "remove_rid": "#-1:04f5d847-c9d7-4f45-a9e2-933a3a021bf0",
+          "add_rid": "#-1:e41d84f8-6a9c-499f-8e23-5741b3a5ace1",
+          "score_margin": -0.5460941791534424
+        },
+        {
+          "order_id": "c253a5fd-6156-4b39-98cb-b3b11c93b25a",
+          "remove_rid": "#-1:1fbdfd79-8ded-43a1-b100-9afe6d58809c",
+          "add_rid": "#-1:a6854279-4b4e-4d6b-b70d-897182582a28",
+          "score_margin": -0.5542033314704895
+        },
+        {
+          "order_id": "ed52fdc5-fce4-4fb1-a76e-bf6732d6360f",
+          "remove_rid": "#-1:9ca0945b-4ba1-4c80-978a-4ec10253f9d9",
+          "add_rid": "#-1:760b3b8a-4628-4ad9-9b3c-02accd3b3280",
+          "score_margin": -0.5550562143325806
+        },
+        {
+          "order_id": "bccb900b-ec1a-4fd9-b2fe-e77b133c8585",
+          "remove_rid": "#-1:9ee3f53c-1d9c-4e53-acea-fc6fc2578170",
+          "add_rid": "#-1:574be929-e320-4804-b284-3851e1732248",
+          "score_margin": -0.5559097528457642
+        },
+        {
+          "order_id": "8dac662e-5ffc-469b-ada5-8e0449b5c502",
+          "remove_rid": "#-1:966d0900-3d0b-4e6c-ba67-a8cb5c51248c",
+          "add_rid": "#-1:83de94de-09ff-4f5c-8a05-74ebb2b98db6",
+          "score_margin": -0.5574812889099121
+        },
+        {
+          "order_id": "a889ab21-690a-4a7b-91e5-81f3e79d0ff1",
+          "remove_rid": "#-1:ac9e5b44-1902-468b-8ae2-890549f913f0",
+          "add_rid": "#-1:b834c19f-01be-4e98-990b-0ca71ef9da8b",
+          "score_margin": -0.5612918138504028
+        }
+      ]
+    }
+  ]
+}

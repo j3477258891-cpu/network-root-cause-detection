@@ -1,0 +1,674 @@
+{
+  "version": "v66-order-count-action-audit-1",
+  "target": 0.95,
+  "test_baseline": {
+    "tp": 956,
+    "predictions": 1035,
+    "f1": 0.9196729196729196,
+    "target_margin_needed": 63.049999999999955,
+    "sha256": "8390ecf4a3fab22a8c40c950eac76dd3e4b1309a2527412549193613c64ccfcb"
+  },
+  "train_analogue": {
+    "predictions": 3103,
+    "tp": 2796,
+    "truth": 3041,
+    "f1": 0.91015625
+  },
+  "candidate_counts": {
+    "train": 2036,
+    "test": 657,
+    "test_orders": 460
+  },
+  "strict_station_oof": {
+    "chosen_positive_actions": 161,
+    "estimated_margin": 66.04375540316106,
+    "actual_margin": 51.35,
+    "oracle_action_universe_margin": 209.25,
+    "calibration": {
+      "add": [
+        {
+          "count": 264,
+          "mean_probability": 2.7889183911611326e-05,
+          "positive_rate": 0.0,
+          "actual_margin": -250.79999999999998
+        },
+        {
+          "count": 263,
+          "mean_probability": 0.0013638529926538467,
+          "positive_rate": 0.0076045627376425855,
+          "actual_margin": -245.85
+        },
+        {
+          "count": 263,
+          "mean_probability": 0.01045240368694067,
+          "positive_rate": 0.015209125475285171,
+          "actual_margin": -241.85
+        },
+        {
+          "count": 263,
+          "mean_probability": 0.057360753417015076,
+          "positive_rate": 0.015209125475285171,
+          "actual_margin": -241.85
+        },
+        {
+          "count": 264,
+          "mean_probability": 0.43548455834388733,
+          "positive_rate": 0.36742424242424243,
+          "actual_margin": -56.79999999999999
+        }
+      ],
+      "delete": [
+        {
+          "count": 144,
+          "mean_probability": 0.502137303352356,
+          "positive_rate": 0.4097222222222222,
+          "actual_margin": 18.799999999999994
+        },
+        {
+          "count": 144,
+          "mean_probability": 0.8892900943756104,
+          "positive_rate": 0.8333333333333334,
+          "actual_margin": -103.2
+        },
+        {
+          "count": 143,
+          "mean_probability": 0.9766021966934204,
+          "positive_rate": 0.972027972027972,
+          "actual_margin": -142.15
+        },
+        {
+          "count": 144,
+          "mean_probability": 0.995422899723053,
+          "positive_rate": 1.0,
+          "actual_margin": -151.20000000000002
+        },
+        {
+          "count": 144,
+          "mean_probability": 0.9998067021369934,
+          "positive_rate": 1.0,
+          "actual_margin": -151.20000000000002
+        }
+      ]
+    },
+    "curve": [
+      {
+        "actions": 5,
+        "expected_margin": 4.132924103736878,
+        "actual_margin": 5.15,
+        "adds": 4,
+        "deletes": 1,
+        "expected_tp_delta": 2.646507978439331,
+        "actual_tp_delta": 3
+      },
+      {
+        "actions": 10,
+        "expected_margin": 8.038453006744385,
+        "actual_margin": 6.4,
+        "adds": 9,
+        "deletes": 1,
+        "expected_tp_delta": 6.97427225112915,
+        "actual_tp_delta": 6
+      },
+      {
+        "actions": 20,
+        "expected_margin": 15.45541881620884,
+        "actual_margin": 8.600000000000001,
+        "adds": 16,
+        "deletes": 4,
+        "expected_tp_delta": 10.222851753234863,
+        "actual_tp_delta": 6
+      },
+      {
+        "actions": 40,
+        "expected_margin": 28.51001600921154,
+        "actual_margin": 23.0,
+        "adds": 30,
+        "deletes": 10,
+        "expected_tp_delta": 16.336238861083984,
+        "actual_tp_delta": 13
+      },
+      {
+        "actions": 80,
+        "expected_margin": 48.37625204622746,
+        "actual_margin": 25.6,
+        "adds": 56,
+        "deletes": 24,
+        "expected_tp_delta": 24.538455963134766,
+        "actual_tp_delta": 18
+      },
+      {
+        "actions": 160,
+        "expected_margin": 66.04324952661992,
+        "actual_margin": 50.400000000000006,
+        "adds": 104,
+        "deletes": 56,
+        "expected_tp_delta": 32.808956146240234,
+        "actual_tp_delta": 18
+      },
+      {
+        "actions": 161,
+        "expected_margin": 66.04375540316106,
+        "actual_margin": 51.35,
+        "adds": 104,
+        "deletes": 57,
+        "expected_tp_delta": 32.2837028503418,
+        "actual_tp_delta": 17
+      }
+    ]
+  },
+  "test_projection": {
+    "positive_nonconflicting_actions": 40,
+    "expected_margin": 14.007483750581741,
+    "needed_margin": 63.049999999999955,
+    "coverage_ratio": 0.2221646907308763,
+    "curve": [
+      {
+        "actions": 5,
+        "expected_margin": 3.339492917060852,
+        "actual_margin": null,
+        "adds": 5,
+        "deletes": 0,
+        "expected_tp_delta": 4.044746398925781,
+        "actual_tp_delta": null
+      },
+      {
+        "actions": 10,
+        "expected_margin": 6.256461197137833,
+        "actual_margin": null,
+        "adds": 9,
+        "deletes": 1,
+        "expected_tp_delta": 6.2926716804504395,
+        "actual_tp_delta": null
+      },
+      {
+        "actions": 20,
+        "expected_margin": 10.518874901533128,
+        "actual_margin": null,
+        "adds": 18,
+        "deletes": 2,
+        "expected_tp_delta": 11.798779487609863,
+        "actual_tp_delta": null
+      },
+      {
+        "actions": 40,
+        "expected_margin": 14.007483750581741,
+        "actual_margin": null,
+        "adds": 30,
+        "deletes": 10,
+        "expected_tp_delta": 13.628707885742188,
+        "actual_tp_delta": null
+      },
+      {
+        "actions": 40,
+        "expected_margin": 14.007483750581741,
+        "actual_margin": null,
+        "adds": 30,
+        "deletes": 10,
+        "expected_tp_delta": 13.628707885742188,
+        "actual_tp_delta": null
+      },
+      {
+        "actions": 40,
+        "expected_margin": 14.007483750581741,
+        "actual_margin": null,
+        "adds": 30,
+        "deletes": 10,
+        "expected_tp_delta": 13.628707885742188,
+        "actual_tp_delta": null
+      },
+      {
+        "actions": 40,
+        "expected_margin": 14.007483750581741,
+        "actual_margin": null,
+        "adds": 30,
+        "deletes": 10,
+        "expected_tp_delta": 13.628707885742188,
+        "actual_tp_delta": null
+      }
+    ],
+    "feasibility_gate": false,
+    "warning": "Expected margins are OOF-calibrated estimates, not leaderboard evidence. No submission is emitted until the OOF trajectory and coverage gate are both strong."
+  },
+  "candidate_actions": [
+    {
+      "rank": 1,
+      "order_id": "625ffce7-65c5-4657-9104-4148b4113130",
+      "rid": "#-1:a8f28178-4795-4f26-84d6-1791944fb245",
+      "kind": "add",
+      "expected_margin": 0.7144723415374756,
+      "probability_true_root": 0.8322361707687378,
+      "station_rank": 1,
+      "station_score": 0.7030441761016846,
+      "title": "输入电源断"
+    },
+    {
+      "rank": 2,
+      "order_id": "441995e6-e153-4e40-af0f-d0eb20ddcfa5",
+      "rid": "#-1:53f23b3e-c801-45d7-8d31-1cb8b8809946",
+      "kind": "add",
+      "expected_margin": 0.6803759813308716,
+      "probability_true_root": 0.8151879906654358,
+      "station_rank": 1,
+      "station_score": 0.821563720703125,
+      "title": "单板输入电压异常告警"
+    },
+    {
+      "rank": 3,
+      "order_id": "af26c607-3f9d-4a37-8d4d-a809bfccd1f6",
+      "rid": "#-1:21b56b75-9b57-4986-9f58-9f1e28c2c979",
+      "kind": "add",
+      "expected_margin": 0.676232385635376,
+      "probability_true_root": 0.813116192817688,
+      "station_rank": 2,
+      "station_score": 0.7195209860801697,
+      "title": "小区关断告警"
+    },
+    {
+      "rank": 4,
+      "order_id": "9ca5e12f-f73f-472c-99b3-8e74c01272fe",
+      "rid": "#-1:247d7153-ba7f-4012-86c3-2d6b9b7e9730",
+      "kind": "add",
+      "expected_margin": 0.6359546661376954,
+      "probability_true_root": 0.7929773330688477,
+      "station_rank": 1,
+      "station_score": 0.6779353022575378,
+      "title": "单板过温保护下电"
+    },
+    {
+      "rank": 5,
+      "order_id": "eac28a99-2650-4dee-9f74-7054f480be19",
+      "rid": "#-1:a9cc9261-661b-41a3-89dd-0aee4886d4be",
+      "kind": "add",
+      "expected_margin": 0.6324575424194336,
+      "probability_true_root": 0.7912287712097168,
+      "station_rank": 1,
+      "station_score": 0.7304747104644775,
+      "title": "以太网物理接口(ETPI) 信号丢失(LOS)"
+    },
+    {
+      "rank": 6,
+      "order_id": "aa321b94-f3d9-45cf-b1ee-f3a1fe38da68",
+      "rid": "#-1:429df297-9a4e-462a-a377-ae4cd47eda24",
+      "kind": "add",
+      "expected_margin": 0.5945506572723389,
+      "probability_true_root": 0.7722753286361694,
+      "station_rank": 1,
+      "station_score": 0.7094882130622864,
+      "title": "光口接收链路故障"
+    },
+    {
+      "rank": 7,
+      "order_id": "1117ad03-8891-4bf6-854c-612bf19fdae4",
+      "rid": "#-1:08baefd1-6af0-4be4-88f5-6fa77d069d9d",
+      "kind": "add",
+      "expected_margin": 0.5874252796173096,
+      "probability_true_root": 0.7687126398086548,
+      "station_rank": 2,
+      "station_score": 0.7103927135467529,
+      "title": "小区关断告警"
+    },
+    {
+      "rank": 8,
+      "order_id": "25a37559-7249-4fe0-bfd9-97007b9f7c5d",
+      "rid": "#-1:622a2277-8e4d-4b77-aefb-1f90747752a2",
+      "kind": "delete",
+      "expected_margin": 0.5855587542057037,
+      "probability_true_root": 0.18222062289714813,
+      "station_rank": 2,
+      "station_score": 0.39845284819602966,
+      "title": "NR分布单元小区TRP不可用告警"
+    },
+    {
+      "rank": 9,
+      "order_id": "9f309a7d-e211-451b-975d-f25463fff535",
+      "rid": "#-1:76e9f86f-70ab-40c3-8072-731bbc9e9486",
+      "kind": "add",
+      "expected_margin": 0.5804415225982666,
+      "probability_true_root": 0.7652207612991333,
+      "station_rank": 2,
+      "station_score": 0.7262709736824036,
+      "title": "射频单元IR接口异常告警"
+    },
+    {
+      "rank": 10,
+      "order_id": "4c2b3b06-a6a2-4c1b-9734-def3d1f849d8",
+      "rid": "#-1:66facd91-e281-4331-bbae-04ab8bd9746d",
+      "kind": "add",
+      "expected_margin": 0.5689920663833619,
+      "probability_true_root": 0.7594960331916809,
+      "station_rank": 1,
+      "station_score": 0.6594231724739075,
+      "title": "[衍生告警]PTN光缆中断，单报LOS"
+    },
+    {
+      "rank": 11,
+      "order_id": "fad26f6d-c956-4598-9639-39fef649b32c",
+      "rid": "#-1:a6f7eb99-a84e-41d4-a903-5e31451dc4d8",
+      "kind": "add",
+      "expected_margin": 0.5654856443405152,
+      "probability_true_root": 0.7577428221702576,
+      "station_rank": 7,
+      "station_score": 0.6814935207366943,
+      "title": "设备掉电"
+    },
+    {
+      "rank": 12,
+      "order_id": "8df78ab7-ca49-44f4-9fc2-1427cf850964",
+      "rid": "#-1:d66659d1-337f-4be6-83be-05795ef803cd",
+      "kind": "add",
+      "expected_margin": 0.5260591983795166,
+      "probability_true_root": 0.7380295991897583,
+      "station_rank": 2,
+      "station_score": 0.6527664661407471,
+      "title": "[衍生告警]PTN光缆中断，单报LOS"
+    },
+    {
+      "rank": 13,
+      "order_id": "8b6e841a-d9e6-4b0d-ad7d-935807539c7e",
+      "rid": "#-1:e0cfe958-c013-42ca-87b7-7810b0dd90c6",
+      "kind": "add",
+      "expected_margin": 0.45535700321197514,
+      "probability_true_root": 0.7026785016059875,
+      "station_rank": 2,
+      "station_score": 0.5778907537460327,
+      "title": "RRU链路断"
+    },
+    {
+      "rank": 14,
+      "order_id": "d5376a71-c48e-4351-ba60-f982778b3eb4",
+      "rid": "#-1:0c809583-390f-4d16-9b91-c4fb1e99c5c2",
+      "kind": "add",
+      "expected_margin": 0.4421146392822266,
+      "probability_true_root": 0.6960573196411133,
+      "station_rank": 3,
+      "station_score": 0.6175422668457031,
+      "title": "以太网物理接口(ETPI) 信号丢失(LOS)"
+    },
+    {
+      "rank": 15,
+      "order_id": "faeeeb88-468e-485d-b71b-d3f799baaaf0",
+      "rid": "#-1:9602714c-0fcb-43e5-b630-e6036059b9c5",
+      "kind": "add",
+      "expected_margin": 0.40765099525451665,
+      "probability_true_root": 0.6788254976272583,
+      "station_rank": 2,
+      "station_score": 0.5875034332275391,
+      "title": "光口接收链路恶化"
+    },
+    {
+      "rank": 16,
+      "order_id": "51d2ff1d-1bcb-41c7-ae33-83db088b2545",
+      "rid": "#-1:213df979-3107-4f97-b62a-08303f63e348",
+      "kind": "add",
+      "expected_margin": 0.3961960554122925,
+      "probability_true_root": 0.6730980277061462,
+      "station_rank": 1,
+      "station_score": 0.6681440472602844,
+      "title": "光口接收链路故障"
+    },
+    {
+      "rank": 17,
+      "order_id": "faa00ed5-c0b9-445e-98ac-671035a4a239",
+      "rid": "#-1:76e3a0a3-1943-4a4c-ad08-d31dc732cb73",
+      "kind": "add",
+      "expected_margin": 0.38937406539916997,
+      "probability_true_root": 0.669687032699585,
+      "station_rank": 1,
+      "station_score": 0.5900029540061951,
+      "title": "ETH_LOS"
+    },
+    {
+      "rank": 18,
+      "order_id": "35dcec5d-5286-4e33-bd22-42708535b5c8",
+      "rid": "#-1:5d4c15aa-67c6-47a6-8b32-8213aa4d09ac",
+      "kind": "add",
+      "expected_margin": 0.387925672531128,
+      "probability_true_root": 0.668962836265564,
+      "station_rank": 3,
+      "station_score": 0.550851583480835,
+      "title": "ETH_LINK_DOWN"
+    },
+    {
+      "rank": 19,
+      "order_id": "a3645153-27f5-4b8c-9e3a-bc84cfd7c653",
+      "rid": "#-1:fe0aed2a-0446-4bba-8836-7bf35d20cd0b",
+      "kind": "delete",
+      "expected_margin": 0.3750974059104919,
+      "probability_true_root": 0.28745129704475403,
+      "station_rank": 5,
+      "station_score": 0.3145962357521057,
+      "title": "射频单元直流掉电告警"
+    },
+    {
+      "rank": 20,
+      "order_id": "b92c1c42-bc69-48fa-b5c6-7bbd2635a15b",
+      "rid": "#-1:e98f47f3-1430-4bab-bd66-cd79564e73e6",
+      "kind": "add",
+      "expected_margin": 0.31715302467346196,
+      "probability_true_root": 0.633576512336731,
+      "station_rank": 1,
+      "station_score": 0.5610470175743103,
+      "title": "光口接收链路故障"
+    },
+    {
+      "rank": 21,
+      "order_id": "6e2c4bef-2309-4ace-9c76-983bac0255a8",
+      "rid": "#-1:0b1419ea-df28-4dce-aa17-bc13ff702e95",
+      "kind": "add",
+      "expected_margin": 0.3021559000015259,
+      "probability_true_root": 0.6260779500007629,
+      "station_rank": 2,
+      "station_score": 0.5779388546943665,
+      "title": "网元不支持配置的参数"
+    },
+    {
+      "rank": 22,
+      "order_id": "fcead0b1-a014-4436-9e49-8041559471da",
+      "rid": "#-1:3ac6fa2b-8553-4ab3-b7d9-4404a68bfeef",
+      "kind": "add",
+      "expected_margin": 0.2871933460235596,
+      "probability_true_root": 0.6185966730117798,
+      "station_rank": 2,
+      "station_score": 0.6468364596366882,
+      "title": "RRU链路断"
+    },
+    {
+      "rank": 23,
+      "order_id": "8106c960-6510-43b1-af25-b3c91388c598",
+      "rid": "#-1:d1108dd6-92f1-4970-9cd2-912857e84b72",
+      "kind": "delete",
+      "expected_margin": 0.28622545003890987,
+      "probability_true_root": 0.33188727498054504,
+      "station_rank": 5,
+      "station_score": 0.3271384537220001,
+      "title": "射频单元IR接口异常告警"
+    },
+    {
+      "rank": 24,
+      "order_id": "81e47a27-a3f2-41ee-863e-36a27b36e510",
+      "rid": "#-1:c930a772-2aec-456e-aa3c-6cee41ceaeea",
+      "kind": "add",
+      "expected_margin": 0.2578940868377686,
+      "probability_true_root": 0.6039470434188843,
+      "station_rank": 3,
+      "station_score": 0.5922797918319702,
+      "title": "RRU链路断"
+    },
+    {
+      "rank": 25,
+      "order_id": "947bec57-c9f8-47ad-aa45-37cb9be6c798",
+      "rid": "#-1:b894a7ec-dc86-4656-971a-c1b10121a044",
+      "kind": "delete",
+      "expected_margin": 0.24459857940673824,
+      "probability_true_root": 0.35270071029663086,
+      "station_rank": 2,
+      "station_score": 0.4473276734352112,
+      "title": "光口接收链路故障"
+    },
+    {
+      "rank": 26,
+      "order_id": "d793d532-08ad-4410-a3fd-c09844eb67d0",
+      "rid": "#-1:20b04ec9-5805-4030-82a0-bf14861d1cd8",
+      "kind": "add",
+      "expected_margin": 0.23932843208312993,
+      "probability_true_root": 0.5946642160415649,
+      "station_rank": 5,
+      "station_score": 0.568822979927063,
+      "title": "以太网物理接口(ETPI) 信号丢失(LOS)"
+    },
+    {
+      "rank": 27,
+      "order_id": "e7700f4a-e97e-40ad-bda5-afd0f92e7509",
+      "rid": "#-1:009af8ca-5650-48c1-ac34-dd48826a16df",
+      "kind": "add",
+      "expected_margin": 0.21386163234710698,
+      "probability_true_root": 0.5819308161735535,
+      "station_rank": 2,
+      "station_score": 0.4903559386730194,
+      "title": "RRU链路断"
+    },
+    {
+      "rank": 28,
+      "order_id": "c2f7c036-aaf0-4a95-9bf4-3cae57b6e7d5",
+      "rid": "#-1:544c9a02-cf1c-41da-a398-c495142bca71",
+      "kind": "add",
+      "expected_margin": 0.2060125350952149,
+      "probability_true_root": 0.5780062675476074,
+      "station_rank": 4,
+      "station_score": 0.5164362192153931,
+      "title": "[衍生告警]PTN光缆中断，单报LOS"
+    },
+    {
+      "rank": 29,
+      "order_id": "9738b42a-7360-4763-8895-0e84599b4d60",
+      "rid": "#-1:18d342c5-d25e-45f4-9b1d-dcbdba1120bc",
+      "kind": "delete",
+      "expected_margin": 0.20186491012573238,
+      "probability_true_root": 0.3740675449371338,
+      "station_rank": 4,
+      "station_score": 0.46597230434417725,
+      "title": "BBU CPRI接口异常告警"
+    },
+    {
+      "rank": 30,
+      "order_id": "53aa2dc8-1861-4faa-8d25-3847c8e392bb",
+      "rid": "#-1:4e8373ef-5afc-45ed-8abf-09e4d5ac6b67",
+      "kind": "add",
+      "expected_margin": 0.19325940608978276,
+      "probability_true_root": 0.5716297030448914,
+      "station_rank": 3,
+      "station_score": 0.5043432712554932,
+      "title": "输入电源断"
+    },
+    {
+      "rank": 31,
+      "order_id": "e7c0c3fe-f81e-494f-8faa-edcee9a23ce3",
+      "rid": "#-1:db4bd4d4-5e9c-4cf2-8d26-d69a1dc99950",
+      "kind": "add",
+      "expected_margin": 0.1870794773101807,
+      "probability_true_root": 0.5685397386550903,
+      "station_rank": 1,
+      "station_score": 0.5232401490211487,
+      "title": "射频单元直流掉电告警"
+    },
+    {
+      "rank": 32,
+      "order_id": "f57b8fbe-bd33-4dc7-95ef-fbffa4552754",
+      "rid": "#-1:245caebe-e60c-43fc-b1a4-ebdb838df6d1",
+      "kind": "delete",
+      "expected_margin": 0.15731008052825923,
+      "probability_true_root": 0.39634495973587036,
+      "station_rank": 4,
+      "station_score": 0.40536749362945557,
+      "title": "光模块接收光功率异常"
+    },
+    {
+      "rank": 33,
+      "order_id": "1600d318-ecdc-4d10-816f-9f2c6987eb9f",
+      "rid": "#-1:bc774a67-51fc-4c30-8eb8-1dd39cd33cf6",
+      "kind": "delete",
+      "expected_margin": 0.15420324802398677,
+      "probability_true_root": 0.3978983759880066,
+      "station_rank": 2,
+      "station_score": 0.3317995071411133,
+      "title": "RRU链路断"
+    },
+    {
+      "rank": 34,
+      "order_id": "5f31acb6-cb86-4488-af6a-f6d2d4d3a4d9",
+      "rid": "#-1:fdd7bddb-e7cc-4a6f-8246-0c2cf89a221e",
+      "kind": "delete",
+      "expected_margin": 0.14912236928939815,
+      "probability_true_root": 0.4004388153553009,
+      "station_rank": 3,
+      "station_score": 0.3918188810348511,
+      "title": "单板电源关断"
+    },
+    {
+      "rank": 35,
+      "order_id": "82f3997a-668c-4663-9dd6-a0a298f14d00",
+      "rid": "#-1:24a89126-1a36-4305-b0f5-0a60e349ead1",
+      "kind": "delete",
+      "expected_margin": 0.11301566362380977,
+      "probability_true_root": 0.4184921681880951,
+      "station_rank": 2,
+      "station_score": 0.4985450208187103,
+      "title": "射频单元IR接口异常告警"
+    },
+    {
+      "rank": 36,
+      "order_id": "0e755fc0-8819-4420-b701-1f84ec0e59de",
+      "rid": "#-1:0f95a457-9523-4b28-9a93-81b08542d6b4",
+      "kind": "add",
+      "expected_margin": 0.10934476852416997,
+      "probability_true_root": 0.529672384262085,
+      "station_rank": 1,
+      "station_score": 0.4730132818222046,
+      "title": "射频单元维护链路异常告警"
+    },
+    {
+      "rank": 37,
+      "order_id": "5f0b3c7f-806d-4622-a671-5d23ee09c827",
+      "rid": "#-1:2a0b69d3-858a-49e0-9b6a-e1cf21eb55bb",
+      "kind": "delete",
+      "expected_margin": 0.10803754329681392,
+      "probability_true_root": 0.420981228351593,
+      "station_rank": 2,
+      "station_score": 0.47820404171943665,
+      "title": "RRU链路断"
+    },
+    {
+      "rank": 38,
+      "order_id": "06d84a90-670f-4ccb-b482-9afdb874d164",
+      "rid": "#-1:00a6ec40-ea39-40f7-9a99-456ee3f07e4f",
+      "kind": "add",
+      "expected_margin": 0.046610999107360884,
+      "probability_true_root": 0.4983054995536804,
+      "station_rank": 3,
+      "station_score": 0.5004079937934875,
+      "title": "[衍生告警]PTN光缆中断，单报LOS"
+    },
+    {
+      "rank": 39,
+      "order_id": "7b56b02c-061a-443f-8977-17ad3f65f9cf",
+      "rid": "#-1:a1e01065-1f62-4a52-b4ce-7dfad17b952f",
+      "kind": "add",
+      "expected_margin": 0.029901194572448775,
+      "probability_true_root": 0.48995059728622437,
+      "station_rank": 2,
+      "station_score": 0.5354853868484497,
+      "title": "光模块不可用"
+    },
+    {
+      "rank": 40,
+      "order_id": "7b1b39e5-954a-418c-9ed7-03285444ea24",
+      "rid": "#-1:9e23d2aa-04a7-45dc-ba50-0453d34937d4",
+      "kind": "add",
+      "expected_margin": 0.0015892267227173296,
+      "probability_true_root": 0.47579461336135864,
+      "station_rank": 2,
+      "station_score": 0.4847330152988434,
+      "title": "网元断链告警"
+    }
+  ]
+}

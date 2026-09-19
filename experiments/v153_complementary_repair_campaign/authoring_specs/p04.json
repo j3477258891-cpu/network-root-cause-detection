@@ -1,0 +1,134 @@
+{
+  "base_file": "D:\\zgyidong\\experiments\\v149_online_calibrated_addition_campaign\\v149_final_k08_from_v148.csv",
+  "base_sha256": "c8f304c44f6b3a7ed40599cae50d0f17c0c37f8456553e6171a2d7cfdc196d0a",
+  "output_file": "D:\\zgyidong\\experiments\\v153_complementary_repair_campaign\\v153_probe_p04_group.csv",
+  "preview_file": "D:\\zgyidong\\experiments\\v153_complementary_repair_campaign\\previews\\p04.png",
+  "actions": [
+    {
+      "order_index": 236,
+      "order_id": "7b1b39e5-954a-418c-9ed7-03285444ea24",
+      "kind": "add",
+      "delta_p": 1,
+      "add_rid": "#-1:fac75988-ea52-43cb-888c-45f1495ba491",
+      "remove_rid": null,
+      "node": {
+        "@rid": "#-1:fac75988-ea52-43cb-888c-45f1495ba491",
+        "title": "S1用户面路径不可用",
+        "location": "sbn=0,NodeMe=532639,Equipment=1,rack=1,shelf=1,board=1",
+        "reason": "1.eNodeB路由错误。\n2.XGW故障。\n3.eNodeB与XGW之间的传输链路故障。"
+      },
+      "probabilities": {
+        "0": 0.3212110949022483,
+        "1": 0.6787889050977517
+      },
+      "source_model": "v38_control",
+      "candidate_id": 5,
+      "model_probabilities": {
+        "v38_control": {
+          "0": 0.24415650414182913,
+          "1": 0.7558434958581709
+        },
+        "catboost": {
+          "0": 0.3982656856626675,
+          "1": 0.6017343143373325
+        }
+      },
+      "primary_source": "v38_control",
+      "full_legal_ranks": {
+        "v38_control": 5,
+        "catboost": 9
+      },
+      "rrf": 0.029877369007803793,
+      "v152_anchor": true,
+      "delta_tp_bounds": {
+        "max": 1,
+        "min": 0
+      },
+      "expected_f1": 0.9279222860335864
+    },
+    {
+      "order_index": 33,
+      "order_id": "1117ad03-8891-4bf6-854c-612bf19fdae4",
+      "kind": "add",
+      "delta_p": 1,
+      "add_rid": "#-1:bea1860d-537e-4e4b-ba53-08f5ce0bd7dc",
+      "remove_rid": null,
+      "node": {
+        "@rid": "#-1:bea1860d-537e-4e4b-ba53-08f5ce0bd7dc",
+        "title": "小区关断告警",
+        "location": "SubNetwork=CMCC-GZ-04,ManagedElement=12641069,ENBCUCPFunction=1,CULTE=1,CUEUtranCellTDDLTE=3",
+        "reason": "小区被关断"
+      },
+      "probabilities": {
+        "0": 0.47329087228979133,
+        "1": 0.5267091277102087
+      },
+      "source_model": "v38_control",
+      "candidate_id": 9,
+      "model_probabilities": {
+        "v38_control": {
+          "0": 0.3343660247005541,
+          "1": 0.6656339752994459
+        },
+        "catboost": {
+          "0": 0.6122157198790286,
+          "1": 0.38778428012097144
+        }
+      },
+      "primary_source": "v38_control",
+      "full_legal_ranks": {
+        "v38_control": 12,
+        "catboost": 39
+      },
+      "rrf": 0.02398989898989899,
+      "v152_anchor": false,
+      "delta_tp_bounds": {
+        "max": 1,
+        "min": 0
+      },
+      "expected_f1": 0.9277767551461341
+    },
+    {
+      "order_index": 347,
+      "order_id": "ab02ed9d-74ea-4fc1-8935-9e5396cf94ba",
+      "kind": "add",
+      "delta_p": 1,
+      "add_rid": "#-1:2fe391a0-09be-47fc-bb08-f50ecb445a3f",
+      "remove_rid": null,
+      "node": {
+        "@rid": "#-1:2fe391a0-09be-47fc-bb08-f50ecb445a3f",
+        "title": "[衍生告警]PTN光缆中断，单报LOS",
+        "location": "R8EGF[0-1-2]-GE\\:1",
+        "reason": "以太网物理接口(ETPI) 信号丢失(LOS)"
+      },
+      "probabilities": {
+        "0": 0.5278856823210898,
+        "1": 0.47211431767891027
+      },
+      "source_model": "v38_control",
+      "candidate_id": 15,
+      "model_probabilities": {
+        "v38_control": {
+          "0": 0.35788979118695546,
+          "1": 0.6421102088130446
+        },
+        "catboost": {
+          "0": 0.6978815734552242,
+          "1": 0.30211842654477594
+        }
+      },
+      "primary_source": "v38_control",
+      "full_legal_ranks": {
+        "v38_control": 15,
+        "catboost": 77
+      },
+      "rrf": 0.020632603406326035,
+      "v152_anchor": false,
+      "delta_tp_bounds": {
+        "max": 1,
+        "min": 0
+      },
+      "expected_f1": 0.9277245113087836
+    }
+  ]
+}

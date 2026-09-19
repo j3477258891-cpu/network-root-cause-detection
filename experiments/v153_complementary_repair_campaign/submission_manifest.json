@@ -1,0 +1,509 @@
+{
+  "files": [
+    {
+      "group_id": "G04",
+      "kind": "group",
+      "primary_source": "v38_control",
+      "ids": [
+        1,
+        2,
+        7,
+        10,
+        13
+      ],
+      "action_kind": "delete",
+      "expected_best_f1": 0.9293022838059435,
+      "one_step_expected_best_f1": 0.9285870119675866,
+      "conditional_p_target": 0.0,
+      "lookahead_steps": 2,
+      "branches": [
+        {
+          "delta_tp": -5,
+          "conditional_weight": 0.008074287645461836,
+          "known_best_f1_after_feedback": 0.9277166108185735,
+          "next_if_this_feedback": {
+            "kind": "group",
+            "ids": [
+              8,
+              11,
+              14,
+              17
+            ],
+            "expected_best_f1": 0.9284128597380786
+          }
+        },
+        {
+          "delta_tp": -4,
+          "conditional_weight": 0.05660765062391898,
+          "known_best_f1_after_feedback": 0.9277166108185735,
+          "next_if_this_feedback": {
+            "kind": "group",
+            "ids": [
+              3,
+              4,
+              6
+            ],
+            "expected_best_f1": 0.9284090677647621
+          }
+        },
+        {
+          "delta_tp": -3,
+          "conditional_weight": 0.1658886683372415,
+          "known_best_f1_after_feedback": 0.9277166108185735,
+          "next_if_this_feedback": {
+            "kind": "group",
+            "ids": [
+              3,
+              4,
+              6
+            ],
+            "expected_best_f1": 0.928414108354788
+          }
+        },
+        {
+          "delta_tp": -2,
+          "conditional_weight": 0.28278234563328264,
+          "known_best_f1_after_feedback": 0.9280230326295585,
+          "next_if_this_feedback": {
+            "kind": "group",
+            "ids": [
+              3,
+              4,
+              6
+            ],
+            "expected_best_f1": 0.9287328528596037
+          }
+        },
+        {
+          "delta_tp": -1,
+          "conditional_weight": 0.31200838421948685,
+          "known_best_f1_after_feedback": 0.9289827255278311,
+          "next_if_this_feedback": {
+            "kind": "group",
+            "ids": [
+              3,
+              4,
+              6
+            ],
+            "expected_best_f1": 0.9297065283124321
+          }
+        },
+        {
+          "delta_tp": 0,
+          "conditional_weight": 0.1746386635406082,
+          "known_best_f1_after_feedback": 0.9299424184261037,
+          "next_if_this_feedback": {
+            "kind": "group",
+            "ids": [
+              3,
+              4,
+              6
+            ],
+            "expected_best_f1": 0.9306764349172343
+          }
+        }
+      ],
+      "probability_warning": "Equal-prior model mixture with independent action outcomes within each model, conditioned on measured leaf counts and feasible score branches. Not an exact global label posterior, calibrated target probability, or global ten-step optimum.",
+      "probe_id": "p01",
+      "file": "v153_probe_p01_group.csv",
+      "sha256": "4866c4e278d709a7a4c92aa0fe9762ddf25e42df43b11f251e859d79ca2cc800",
+      "predictions": 1040,
+      "delta_p": -5,
+      "local_validation": {
+        "orders": 546,
+        "predictions": 1040,
+        "sha256": "4866c4e278d709a7a4c92aa0fe9762ddf25e42df43b11f251e859d79ca2cc800",
+        "exact_difference": true,
+        "root_counts_1_to_8": true,
+        "duplicates": 0
+      },
+      "created_at": "2026-09-07T17:12:25+08:00"
+    },
+    {
+      "group_id": "G03",
+      "kind": "group",
+      "primary_source": "catboost",
+      "ids": [
+        3,
+        4,
+        6
+      ],
+      "action_kind": "delete",
+      "expected_best_f1": 0.9290248966809207,
+      "one_step_expected_best_f1": 0.928414108354788,
+      "conditional_p_target": 0.0,
+      "lookahead_steps": 2,
+      "branches": [
+        {
+          "delta_tp": -3,
+          "conditional_weight": 0.016937177909554815,
+          "known_best_f1_after_feedback": 0.9277166108185735,
+          "next_if_this_feedback": {
+            "kind": "group",
+            "ids": [
+              8,
+              11,
+              14,
+              17
+            ],
+            "expected_best_f1": 0.9283438071908406
+          }
+        },
+        {
+          "delta_tp": -2,
+          "conditional_weight": 0.1505953912881133,
+          "known_best_f1_after_feedback": 0.9277166108185735,
+          "next_if_this_feedback": {
+            "kind": "group",
+            "ids": [
+              8,
+              11,
+              14,
+              17
+            ],
+            "expected_best_f1": 0.9283385640816704
+          }
+        },
+        {
+          "delta_tp": -1,
+          "conditional_weight": 0.4309508650095581,
+          "known_best_f1_after_feedback": 0.9280920421860019,
+          "next_if_this_feedback": {
+            "kind": "group",
+            "ids": [
+              8,
+              11,
+              14,
+              17
+            ],
+            "expected_best_f1": 0.9287062307112952
+          }
+        },
+        {
+          "delta_tp": 0,
+          "conditional_weight": 0.40151656579277384,
+          "known_best_f1_after_feedback": 0.9290508149568553,
+          "next_if_this_feedback": {
+            "kind": "group",
+            "ids": [
+              8,
+              11,
+              14,
+              17
+            ],
+            "expected_best_f1": 0.9296530740886572
+          }
+        }
+      ],
+      "probability_warning": "Equal-prior model mixture with independent action outcomes within each model, conditioned on measured leaf counts and feasible score branches. Not an exact global label posterior, calibrated target probability, or global ten-step optimum.",
+      "probe_id": "p02",
+      "file": "v153_probe_p02_group.csv",
+      "sha256": "68ddb607cb6c33b9dd742ab7facb909347857132b297879ad54bdb5620f71ebb",
+      "predictions": 1042,
+      "delta_p": -3,
+      "local_validation": {
+        "orders": 546,
+        "predictions": 1042,
+        "sha256": "68ddb607cb6c33b9dd742ab7facb909347857132b297879ad54bdb5620f71ebb",
+        "exact_difference": true,
+        "root_counts_1_to_8": true,
+        "duplicates": 0
+      },
+      "created_at": "2026-09-07T17:26:11+08:00"
+    },
+    {
+      "group_id": "G01",
+      "kind": "group",
+      "primary_source": "catboost",
+      "ids": [
+        8,
+        11,
+        14,
+        17
+      ],
+      "action_kind": "add",
+      "expected_best_f1": 0.9287248189360044,
+      "one_step_expected_best_f1": 0.9283385640816704,
+      "conditional_p_target": 0.0,
+      "lookahead_steps": 2,
+      "branches": [
+        {
+          "delta_tp": 0,
+          "conditional_weight": 0.047660952198206555,
+          "known_best_f1_after_feedback": 0.9277166108185735,
+          "next_if_this_feedback": {
+            "kind": "group",
+            "ids": [
+              5,
+              9,
+              15
+            ],
+            "expected_best_f1": 0.9282964231415324
+          }
+        },
+        {
+          "delta_tp": 1,
+          "conditional_weight": 0.1854044401775864,
+          "known_best_f1_after_feedback": 0.9277166108185735,
+          "next_if_this_feedback": {
+            "kind": "group",
+            "ids": [
+              5,
+              9,
+              15
+            ],
+            "expected_best_f1": 0.9281693987292594
+          }
+        },
+        {
+          "delta_tp": 2,
+          "conditional_weight": 0.33932428968658856,
+          "known_best_f1_after_feedback": 0.9278547539417105,
+          "next_if_this_feedback": {
+            "kind": "split",
+            "ids": [
+              17
+            ],
+            "expected_best_f1": 0.9282774184308946
+          }
+        },
+        {
+          "delta_tp": 3,
+          "conditional_weight": 0.31521981148354644,
+          "known_best_f1_after_feedback": 0.9288103201146679,
+          "next_if_this_feedback": {
+            "kind": "group",
+            "ids": [
+              5,
+              9,
+              15
+            ],
+            "expected_best_f1": 0.929120809057097
+          }
+        },
+        {
+          "delta_tp": 4,
+          "conditional_weight": 0.11239050645407218,
+          "known_best_f1_after_feedback": 0.9297658862876255,
+          "next_if_this_feedback": {
+            "kind": "group",
+            "ids": [
+              5,
+              9,
+              15
+            ],
+            "expected_best_f1": 0.9300628772471847
+          }
+        }
+      ],
+      "probability_warning": "Equal-prior model mixture with independent action outcomes within each model, conditioned on measured leaf counts and feasible score branches. Not an exact global label posterior, calibrated target probability, or global ten-step optimum.",
+      "probe_id": "p03",
+      "file": "v153_probe_p03_group.csv",
+      "sha256": "102b99385a8094a1d47b2748dfaa79fbd5a2b2b69936dffa9e5e7d9636fba196",
+      "predictions": 1049,
+      "delta_p": 4,
+      "local_validation": {
+        "orders": 546,
+        "predictions": 1049,
+        "sha256": "102b99385a8094a1d47b2748dfaa79fbd5a2b2b69936dffa9e5e7d9636fba196",
+        "exact_difference": true,
+        "root_counts_1_to_8": true,
+        "duplicates": 0
+      },
+      "created_at": "2026-09-08T17:26:31+08:00"
+    },
+    {
+      "group_id": "G02",
+      "kind": "group",
+      "primary_source": "v38_control",
+      "ids": [
+        5,
+        9,
+        15
+      ],
+      "action_kind": "add",
+      "expected_best_f1": 0.9286321749620591,
+      "one_step_expected_best_f1": 0.9282095117682844,
+      "conditional_p_target": 0.0,
+      "lookahead_steps": 2,
+      "branches": [
+        {
+          "delta_tp": 0,
+          "conditional_weight": 0.15168116708172383,
+          "known_best_f1_after_feedback": 0.9278547539417105,
+          "next_if_this_feedback": {
+            "kind": "split",
+            "ids": [
+              17
+            ],
+            "expected_best_f1": 0.9282765088656891
+          }
+        },
+        {
+          "delta_tp": 1,
+          "conditional_weight": 0.40739892183774046,
+          "known_best_f1_after_feedback": 0.9278547539417105,
+          "next_if_this_feedback": {
+            "kind": "split",
+            "ids": [
+              17
+            ],
+            "expected_best_f1": 0.9282768477736693
+          }
+        },
+        {
+          "delta_tp": 2,
+          "conditional_weight": 0.3373090775867554,
+          "known_best_f1_after_feedback": 0.9284351145038168,
+          "next_if_this_feedback": {
+            "kind": "split",
+            "ids": [
+              17
+            ],
+            "expected_best_f1": 0.9288579811560302
+          }
+        },
+        {
+          "delta_tp": 3,
+          "conditional_weight": 0.10361083349378047,
+          "known_best_f1_after_feedback": 0.9293893129770993,
+          "next_if_this_feedback": {
+            "kind": "split",
+            "ids": [
+              17
+            ],
+            "expected_best_f1": 0.9298148822032265
+          }
+        }
+      ],
+      "probability_warning": "Equal-prior model mixture with independent action outcomes within each model, conditioned on measured leaf counts and feasible score branches. Not an exact global label posterior, calibrated target probability, or global ten-step optimum.",
+      "probe_id": "p04",
+      "file": "v153_probe_p04_group.csv",
+      "sha256": "46a81c5485bf93324390e775c21e1cf00015af6cf8037affa49777547ef80f76",
+      "predictions": 1048,
+      "delta_p": 3,
+      "local_validation": {
+        "orders": 546,
+        "predictions": 1048,
+        "sha256": "46a81c5485bf93324390e775c21e1cf00015af6cf8037affa49777547ef80f76",
+        "exact_difference": true,
+        "root_counts_1_to_8": true,
+        "duplicates": 0
+      },
+      "created_at": "2026-09-08T17:52:34+08:00"
+    },
+    {
+      "kind": "split",
+      "ids": [
+        5
+      ],
+      "parent_ids": [
+        5,
+        9,
+        15
+      ],
+      "parent_delta_tp": 1,
+      "expected_best_f1": 0.9286105344705238,
+      "one_step_expected_best_f1": 0.9281795066795585,
+      "conditional_p_target": 0.0,
+      "lookahead_steps": 2,
+      "branches": [
+        {
+          "delta_tp": 0,
+          "conditional_weight": 0.4225703509486542,
+          "known_best_f1_after_feedback": 0.9279236276849642,
+          "next_if_this_feedback": {
+            "kind": "split",
+            "ids": [
+              9
+            ],
+            "expected_best_f1": 0.9283667621776506
+          }
+        },
+        {
+          "delta_tp": 1,
+          "conditional_weight": 0.5774296490513458,
+          "known_best_f1_after_feedback": 0.9283667621776505,
+          "next_if_this_feedback": {
+            "kind": "split",
+            "ids": [
+              17
+            ],
+            "expected_best_f1": 0.9287889301305323
+          }
+        }
+      ],
+      "probability_warning": "Equal-prior model mixture with independent action outcomes within each model, conditioned on measured leaf counts and feasible score branches. Not an exact global label posterior, calibrated target probability, or global ten-step optimum.",
+      "probe_id": "p05",
+      "file": "v153_probe_p05_split.csv",
+      "sha256": "275d6e83fcd34983d40368ba3cbbf18262c6836e81238a823a1469b62aaab159",
+      "predictions": 1046,
+      "delta_p": 1,
+      "local_validation": {
+        "orders": 546,
+        "predictions": 1046,
+        "sha256": "275d6e83fcd34983d40368ba3cbbf18262c6836e81238a823a1469b62aaab159",
+        "exact_difference": true,
+        "root_counts_1_to_8": true,
+        "duplicates": 0
+      },
+      "created_at": "2026-09-08T22:34:27+08:00"
+    },
+    {
+      "kind": "split",
+      "ids": [
+        9
+      ],
+      "parent_ids": [
+        9,
+        15
+      ],
+      "parent_delta_tp": 1,
+      "expected_best_f1": 0.9287892184196861,
+      "one_step_expected_best_f1": 0.9283667621776506,
+      "conditional_p_target": 0.0,
+      "lookahead_steps": 2,
+      "branches": [
+        {
+          "delta_tp": 0,
+          "conditional_weight": 0.41171446816318613,
+          "known_best_f1_after_feedback": 0.9283667621776505,
+          "next_if_this_feedback": {
+            "kind": "split",
+            "ids": [
+              17
+            ],
+            "expected_best_f1": 0.9287893271172547
+          }
+        },
+        {
+          "delta_tp": 1,
+          "conditional_weight": 0.588285531836814,
+          "known_best_f1_after_feedback": 0.9283667621776505,
+          "next_if_this_feedback": {
+            "kind": "split",
+            "ids": [
+              17
+            ],
+            "expected_best_f1": 0.9287891423471679
+          }
+        }
+      ],
+      "probability_warning": "Equal-prior model mixture with independent action outcomes within each model, conditioned on measured leaf counts and feasible score branches. Not an exact global label posterior, calibrated target probability, or global ten-step optimum.",
+      "probe_id": "p06",
+      "file": "v153_probe_p06_split.csv",
+      "sha256": "85bd54e35339ab615f16a3c7c4eeba6c6fd0c402811a1f706c8420faef63b6b3",
+      "predictions": 1046,
+      "delta_p": 1,
+      "local_validation": {
+        "orders": 546,
+        "predictions": 1046,
+        "sha256": "85bd54e35339ab615f16a3c7c4eeba6c6fd0c402811a1f706c8420faef63b6b3",
+        "exact_difference": true,
+        "root_counts_1_to_8": true,
+        "duplicates": 0
+      },
+      "created_at": "2026-09-09T22:22:22+08:00"
+    }
+  ]
+}

@@ -1,0 +1,149 @@
+{
+  "probe_id": "v32_delete_batch05",
+  "path": "D:\\zgyidong\\experiments\\v32_delete_ranker\\submissions\\v32_delete_batch05.csv",
+  "baseline": "D:\\zgyidong\\experiments\\v30_meta_stack\\submissions\\v30_cross_order_top5.csv",
+  "kind": "delete",
+  "actions": [
+    {
+      "action_id": "v32_delete_001_dc8df7d5",
+      "order_id": "dc8df7d5-edb9-4849-a7d5-f34a911a3107",
+      "remove_rids": [
+        "#-1:093f68ee-a160-4cc0-8508-36d378df4dfc"
+      ],
+      "add_rids": [],
+      "source": "v32_domain_delete_consensus",
+      "expected_gain": 0.3785950541496277,
+      "evidence": {
+        "false_positive_probability": 0.3785950541496277,
+        "station_probability": 0.3194325268268585,
+        "template_probability": 0.43775758147239685,
+        "title": "射频单元IR接口异常告警",
+        "reason": "69",
+        "rid": "#-1:093f68ee-a160-4cc0-8508-36d378df4dfc",
+        "selected_count": 6
+      }
+    },
+    {
+      "action_id": "v32_delete_002_ef9521a6",
+      "order_id": "ef9521a6-f6f6-4d15-bfe5-0c315d9e7e97",
+      "remove_rids": [
+        "#-1:a1343530-5a78-4d7b-9cb7-caee0ff11f4c"
+      ],
+      "add_rids": [],
+      "source": "v32_domain_delete_consensus",
+      "expected_gain": 0.3190643787384033,
+      "evidence": {
+        "false_positive_probability": 0.3190643787384033,
+        "station_probability": 0.31877732276916504,
+        "template_probability": 0.3193514347076416,
+        "title": "设备掉电",
+        "reason": "1. 市电异常。 2. 外部供电设备故障。",
+        "rid": "#-1:a1343530-5a78-4d7b-9cb7-caee0ff11f4c",
+        "selected_count": 6
+      }
+    },
+    {
+      "action_id": "v32_delete_003_0eacbb73",
+      "order_id": "0eacbb73-5845-409a-a1f0-ccd89a466965",
+      "remove_rids": [
+        "#-1:4377cfad-b549-4c29-a91e-7f1311a9f01b"
+      ],
+      "add_rids": [],
+      "source": "v32_domain_delete_consensus",
+      "expected_gain": 0.19578585028648376,
+      "evidence": {
+        "false_positive_probability": 0.19578585028648376,
+        "station_probability": 0.14845074713230133,
+        "template_probability": 0.2431209683418274,
+        "title": "射频单元CPRI接口异常告警",
+        "reason": "566",
+        "rid": "#-1:4377cfad-b549-4c29-a91e-7f1311a9f01b",
+        "selected_count": 2
+      }
+    },
+    {
+      "action_id": "v32_delete_004_2a67de80",
+      "order_id": "2a67de80-0e3a-40c5-8ba3-a1e61ec22635",
+      "remove_rids": [
+        "#-1:1fd57fd4-79c2-4a35-99bd-38dd4d048065"
+      ],
+      "add_rids": [],
+      "source": "v32_domain_delete_consensus",
+      "expected_gain": 0.13992765545845032,
+      "evidence": {
+        "false_positive_probability": 0.13992765545845032,
+        "station_probability": 0.16836988925933838,
+        "template_probability": 0.11148540675640106,
+        "title": "射频单元交流掉电告警",
+        "reason": "551",
+        "rid": "#-1:1fd57fd4-79c2-4a35-99bd-38dd4d048065",
+        "selected_count": 6
+      }
+    },
+    {
+      "action_id": "v32_delete_005_85f9b683",
+      "order_id": "85f9b683-713b-43e0-9f8d-1c21d7525ca0",
+      "remove_rids": [
+        "#-1:dde7a6cf-4265-48d3-be4d-2c8a66c9a19f"
+      ],
+      "add_rids": [],
+      "source": "v32_domain_delete_consensus",
+      "expected_gain": 0.11918684840202332,
+      "evidence": {
+        "false_positive_probability": 0.11918684840202332,
+        "station_probability": 0.14789129793643951,
+        "template_probability": 0.09048239886760712,
+        "title": "射频单元交流掉电告警",
+        "reason": "551",
+        "rid": "#-1:dde7a6cf-4265-48d3-be4d-2c8a66c9a19f",
+        "selected_count": 6
+      }
+    }
+  ],
+  "predictions": 1030,
+  "prediction_delta": -5,
+  "candidate_rank_start": 1,
+  "candidate_rank_stop": 5,
+  "sha256": "117477015d1dbaf1bc5ce0e9588e2a3dd1e9ee98389e9b2e7c1a4a428effa289",
+  "excluded_orders": 129,
+  "protected_in": 92,
+  "protected_out": 112,
+  "score_possibilities": [
+    {
+      "delta_tp": -5,
+      "tp": 950,
+      "predictions": 1030,
+      "score": 0.916104147
+    },
+    {
+      "delta_tp": -4,
+      "tp": 951,
+      "predictions": 1030,
+      "score": 0.917068467
+    },
+    {
+      "delta_tp": -3,
+      "tp": 952,
+      "predictions": 1030,
+      "score": 0.918032787
+    },
+    {
+      "delta_tp": -2,
+      "tp": 953,
+      "predictions": 1030,
+      "score": 0.918997107
+    },
+    {
+      "delta_tp": -1,
+      "tp": 954,
+      "predictions": 1030,
+      "score": 0.919961427
+    },
+    {
+      "delta_tp": 0,
+      "tp": 955,
+      "predictions": 1030,
+      "score": 0.920925747
+    }
+  ]
+}

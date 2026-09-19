@@ -1,0 +1,29 @@
+{
+  "version": "v124",
+  "baseline": {"f1": 0.919673, "tp": 956, "p": 1035, "sha256": "8390ecf4a3fab22a8c40c950eac76dd3e4b1309a2527412549193613c64ccfcb"},
+  "status": "awaiting online probes",
+  "target": {"f1": 0.945, "tp": 983, "net_gain": 27},
+  "tracks": {
+    "A_rerank_slices": {
+      "probes": [
+        {"probe_id": "R1", "file": "probe_r1_rerank_slice.csv", "orders": 182, "slice_p": 315, "sha256": "d93679f99b5f097774050018729c12fae20571ba72baf43d24177b95840d30b6"},
+        {"probe_id": "R2", "file": "probe_r2_rerank_slice.csv", "orders": 182, "slice_p": 357, "sha256": "2d9d3445a4b704c8ad24cd8ba020b21f37860e62dd222033e3984b729bc76d08"},
+        {"probe_id": "R3", "file": "probe_r3_rerank_slice.csv", "orders": 182, "slice_p": 363, "sha256": "4958893cf9060536a246c3ecf8e0116dc577471af6ad30c85bf9775a0b8adcb3"}
+      ],
+      "oof_train_delta_3slices": [15, 16, 9],
+      "oof_train_total_delta": 40
+    },
+    "B_swap_actions": {
+      "probe_count": 8,
+      "action_count": 50,
+      "layers": {"L1": 10, "L2": 30, "L3": 59}
+    }
+  },
+  "decision_rules": {
+    "emit_final": "cumulative A-delta >= 27",
+    "topup": "10 <= cumulative A-delta < 27 -> use B verified-positive actions",
+    "stop": "cumulative A-delta < 10 or 3 consecutive probes net_tp <= 0 -> keep baseline 0.919673"
+  },
+  "final_emission_allowed": false,
+  "reason": "awaiting R1/R2/R3 online scores; no final file emitted"
+}

@@ -1,0 +1,40 @@
+{
+  "version": "v24-full-hetero-probe-1",
+  "seeds": [20260803, 20260817, 20260831],
+  "folds": 5,
+  "hidden_dim": 192,
+  "heads": 6,
+  "graph_layers": 4,
+  "path_layers": 2,
+  "dropout": 0.15,
+  "batch_size": 8,
+  "predict_batch_size": 16,
+  "epochs": 60,
+  "patience": 10,
+  "learning_rate": 0.0005,
+  "weight_decay": 0.0001,
+  "positive_weight": 2.0,
+  "loss_weights": {
+    "bce": 0.40,
+    "pairwise": 0.40,
+    "gate": 0.15,
+    "preserve": 0.05
+  },
+  "hard_negatives_per_positive": 8,
+  "target_test_predictions": 1059,
+  "max_rootcauses": 8,
+  "probe_gate": {
+    "min_total_tp_delta": 1,
+    "min_improved_folds": 3,
+    "min_fold_tp_delta": -2
+  },
+  "final_gate": {
+    "min_nested_tp_delta": 125,
+    "min_seed_tp_delta": 100,
+    "min_fold_tp_delta": 5,
+    "bootstrap_lower_bound": 40.0,
+    "test_min_changed_orders": 8,
+    "test_max_changed_orders": 80,
+    "max_template_share": 0.20
+  }
+}

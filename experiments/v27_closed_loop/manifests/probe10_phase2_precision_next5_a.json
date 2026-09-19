@@ -1,0 +1,104 @@
+{
+  "batch_id": "probe10_phase2_precision_next5_a",
+  "kind": "adaptive_split",
+  "parent": "probe10_phase2_precision_next5",
+  "status": "scored",
+  "decision": "accept",
+  "action_ids": [
+    "phase2_precision_01_5f31acb6",
+    "phase2_precision_02_767c94f2",
+    "phase2_precision_03_9738b42a"
+  ],
+  "actions": [
+    {
+      "action_id": "phase2_precision_01_5f31acb6",
+      "order_id": "5f31acb6-cb86-4488-af6a-f6d2d4d3a4d9",
+      "remove_rids": [
+        "#-1:4bc7a677-2371-4b87-906a-85155eca4496"
+      ],
+      "add_rids": [],
+      "source": "phase2_precision",
+      "subtype": "precision_remove_next",
+      "expected_gain": 0.3516964197911533,
+      "evidence": {
+        "v11_score": 0.6483035802088467,
+        "rank": 1,
+        "independent_unseen_order": true
+      }
+    },
+    {
+      "action_id": "phase2_precision_02_767c94f2",
+      "order_id": "767c94f2-ed95-4967-a7e6-f0badda74572",
+      "remove_rids": [
+        "#-1:698fc874-3097-42c5-90ba-0e5875034dff"
+      ],
+      "add_rids": [],
+      "source": "phase2_precision",
+      "subtype": "precision_remove_next",
+      "expected_gain": 0.3400837530822274,
+      "evidence": {
+        "v11_score": 0.6599162469177726,
+        "rank": 2,
+        "independent_unseen_order": true
+      }
+    },
+    {
+      "action_id": "phase2_precision_03_9738b42a",
+      "order_id": "9738b42a-7360-4763-8895-0e84599b4d60",
+      "remove_rids": [
+        "#-1:7feea0e0-d89e-47b4-98e7-836da80b44cf"
+      ],
+      "add_rids": [],
+      "source": "phase2_precision",
+      "subtype": "precision_remove_next",
+      "expected_gain": 0.33989658975038184,
+      "evidence": {
+        "v11_score": 0.6601034102496182,
+        "rank": 3,
+        "independent_unseen_order": true
+      }
+    }
+  ],
+  "validation": {
+    "actions": 3,
+    "orders": 3,
+    "removed": 3,
+    "added": 0,
+    "prediction_delta": -3,
+    "sources": {
+      "phase2_precision": 3
+    }
+  },
+  "predictions": 1056,
+  "prediction_delta": -3,
+  "submission": "D:\\zgyidong\\experiments\\v27_closed_loop\\submissions\\probe10_phase2_precision_next5_a.csv",
+  "manifest": "D:\\zgyidong\\experiments\\v27_closed_loop\\manifests\\probe10_phase2_precision_next5_a.json",
+  "sha256": "17237906361be826ea7f03e322c77e3b4c2ccff2eeb95ef7b45396ddde83dd62",
+  "score_possibilities": [
+    {
+      "delta_tp": -3,
+      "tp": 950,
+      "score": 0.904761905
+    },
+    {
+      "delta_tp": -2,
+      "tp": 951,
+      "score": 0.905714286
+    },
+    {
+      "delta_tp": -1,
+      "tp": 952,
+      "score": 0.906666667
+    },
+    {
+      "delta_tp": 0,
+      "tp": 953,
+      "score": 0.907619048
+    }
+  ],
+  "score": 0.906667,
+  "reconstructed_score": 0.9066666666666666,
+  "tp": 952,
+  "delta_tp": -1,
+  "score_gain": 0.0003426666666666023
+}

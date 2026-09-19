@@ -1,0 +1,63 @@
+{
+  "seed": 20260803,
+  "completed_folds": [
+    0,
+    1
+  ],
+  "orders": 654,
+  "candidates": 3702,
+  "baseline_predictions": 1265,
+  "baseline_tp": 1144,
+  "folds": [
+    {
+      "fold": 0,
+      "orders": 327,
+      "candidates": 1712,
+      "baseline_predictions": 600,
+      "baseline_tp": 532,
+      "rank_only_tp": 533,
+      "rank_only_delta": 1,
+      "orders_improved": 2,
+      "orders_harmed": 1,
+      "orders_unchanged": 324,
+      "count_head_predictions": 535,
+      "count_head_tp": 480
+    },
+    {
+      "fold": 1,
+      "orders": 327,
+      "candidates": 1990,
+      "baseline_predictions": 665,
+      "baseline_tp": 612,
+      "rank_only_tp": 613,
+      "rank_only_delta": 1,
+      "orders_improved": 1,
+      "orders_harmed": 0,
+      "orders_unchanged": 326,
+      "count_head_predictions": 584,
+      "count_head_tp": 545
+    }
+  ],
+  "rank_only": {
+    "tp": 1146,
+    "tp_delta": 2,
+    "orders_improved": 3,
+    "orders_harmed": 1,
+    "bootstrap_95_lower_delta": -2.0
+  },
+  "subset_exact_count": {
+    "tp": 1158,
+    "tp_delta": 14,
+    "orders_improved": 20,
+    "orders_harmed": 14,
+    "bootstrap_95_lower_delta": -9.0
+  },
+  "semantic_pairwise_accuracy": 0.9697324414715719,
+  "semantic_pair_count": 5980,
+  "count_head": {
+    "predictions": 1119,
+    "tp": 1025,
+    "mean_absolute_count_error": 0.3287461773700306
+  },
+  "test_score_correlation_fold_0_1": 0.9502356728325017
+}

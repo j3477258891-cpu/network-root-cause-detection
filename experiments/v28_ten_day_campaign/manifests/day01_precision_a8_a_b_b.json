@@ -1,0 +1,55 @@
+{
+  "batch_id": "day01_precision_a8_a_b_b",
+  "kind": "adaptive_split",
+  "parent": "day01_precision_a8_a_b",
+  "status": "ready",
+  "decision": "pending",
+  "action_ids": [
+    "v28_precision_a_04_8106c960"
+  ],
+  "actions": [
+    {
+      "action_id": "v28_precision_a_04_8106c960",
+      "order_id": "8106c960-6510-43b1-af25-b3c91388c598",
+      "remove_rids": [
+        "#-1:17cbacb0-d3fe-45b8-8627-2cb9afedb0ab"
+      ],
+      "add_rids": [],
+      "source": "v28_precision",
+      "subtype": "precision_remove_unseen",
+      "expected_gain": 0.3317735128665199,
+      "evidence": {
+        "v11_score": 0.6682264871334801,
+        "rank": 4,
+        "unseen_order": true
+      }
+    }
+  ],
+  "validation": {
+    "actions": 1,
+    "orders": 1,
+    "removed": 1,
+    "added": 0,
+    "prediction_delta": -1,
+    "sources": {
+      "v28_precision": 1
+    }
+  },
+  "predictions": 1048,
+  "prediction_delta": -1,
+  "submission": "experiments\\v28_ten_day_campaign\\submissions\\day01_precision_a8_a_b_b.csv",
+  "manifest": "experiments\\v28_ten_day_campaign\\manifests\\day01_precision_a8_a_b_b.json",
+  "sha256": "c0ea425057cd5b53225ae76dfa7dff3cc611e2703e74e630b59406e368a51135",
+  "score_possibilities": [
+    {
+      "delta_tp": -1,
+      "tp": 954,
+      "score": 0.912045889
+    },
+    {
+      "delta_tp": 0,
+      "tp": 955,
+      "score": 0.913001912
+    }
+  ]
+}

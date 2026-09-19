@@ -1,0 +1,238 @@
+{
+  "version": 1,
+  "unique_scored_file_count": 37,
+  "equation_shape": [
+    37,
+    3238
+  ],
+  "equation_feasible": true,
+  "baseline": {
+    "path": "D:\\zgyidong\\experiments\\v120_swap_campaign\\probe_00_baseline.csv",
+    "sha256": "8390ecf4a3fab22a8c40c950eac76dd3e4b1309a2527412549193613c64ccfcb",
+    "predictions": 1035,
+    "tp": 956,
+    "score": 0.919673
+  },
+  "target": {
+    "f1": 0.945,
+    "required_tp_at_p_1035": 983,
+    "required_delta_tp": 27
+  },
+  "catalogs": [
+    "v120",
+    "v121",
+    "v122"
+  ],
+  "candidate_count": 328,
+  "candidate_optimal_count": 328,
+  "candidate_min_delta_positive_count": 0,
+  "candidate_fixed_negative_count": 4,
+  "candidate_fixed_zero_count": 0,
+  "candidate_delta_distribution": [
+    {
+      "catalog_source": "v120",
+      "min_delta": -1,
+      "max_delta": -1,
+      "count": 4
+    },
+    {
+      "catalog_source": "v120",
+      "min_delta": -1,
+      "max_delta": 0,
+      "count": 24
+    },
+    {
+      "catalog_source": "v120",
+      "min_delta": -1,
+      "max_delta": 1,
+      "count": 64
+    },
+    {
+      "catalog_source": "v121",
+      "min_delta": -1,
+      "max_delta": 0,
+      "count": 8
+    },
+    {
+      "catalog_source": "v121",
+      "min_delta": -1,
+      "max_delta": 1,
+      "count": 44
+    },
+    {
+      "catalog_source": "v122",
+      "min_delta": 0,
+      "max_delta": 1,
+      "count": 184
+    }
+  ],
+  "min_delta_positive_candidates": [],
+  "fixed_negative_candidates": [
+    {
+      "candidate_id": "v120_pair_088",
+      "catalog_source": "v120",
+      "catalog_provenance": [
+        "v120"
+      ],
+      "order_id": "abe0d010-6809-4a4d-9ae6-ee7f320f699d",
+      "remove_rid": "#-1:4a00b491-52e2-45cb-ae01-72137e3fe6a4",
+      "add_rid": "#-1:275f37ad-3297-49f6-82d2-57406a713ac1",
+      "kind": "swap",
+      "model_support": 1,
+      "nominal_p_net_gain": 0.62,
+      "conservative_p_net_gain": 0.57,
+      "equation": {
+        "min": -1,
+        "max": -1,
+        "min_status": "0",
+        "max_status": "0",
+        "min_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "max_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "optimal": true
+      },
+      "node_keys": [
+        {
+          "role": "add",
+          "order_id": "abe0d010-6809-4a4d-9ae6-ee7f320f699d",
+          "rid": "#-1:275f37ad-3297-49f6-82d2-57406a713ac1"
+        },
+        {
+          "role": "remove",
+          "order_id": "abe0d010-6809-4a4d-9ae6-ee7f320f699d",
+          "rid": "#-1:4a00b491-52e2-45cb-ae01-72137e3fe6a4"
+        }
+      ]
+    },
+    {
+      "candidate_id": "v120_pair_019",
+      "catalog_source": "v120",
+      "catalog_provenance": [
+        "v120",
+        "v121"
+      ],
+      "order_id": "53aa2dc8-1861-4faa-8d25-3847c8e392bb",
+      "remove_rid": "#-1:83d4eb97-c2b7-45a8-8df7-a8482b577066",
+      "add_rid": "#-1:4e8373ef-5afc-45ed-8abf-09e4d5ac6b67",
+      "kind": "swap",
+      "model_support": 4,
+      "nominal_p_net_gain": 0.6177610099315644,
+      "conservative_p_net_gain": 0.5677610099315643,
+      "equation": {
+        "min": -1,
+        "max": -1,
+        "min_status": "0",
+        "max_status": "0",
+        "min_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "max_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "optimal": true
+      },
+      "node_keys": [
+        {
+          "role": "add",
+          "order_id": "53aa2dc8-1861-4faa-8d25-3847c8e392bb",
+          "rid": "#-1:4e8373ef-5afc-45ed-8abf-09e4d5ac6b67"
+        },
+        {
+          "role": "remove",
+          "order_id": "53aa2dc8-1861-4faa-8d25-3847c8e392bb",
+          "rid": "#-1:83d4eb97-c2b7-45a8-8df7-a8482b577066"
+        }
+      ]
+    },
+    {
+      "candidate_id": "v120_pair_091",
+      "catalog_source": "v120",
+      "catalog_provenance": [
+        "v120"
+      ],
+      "order_id": "abe0d010-6809-4a4d-9ae6-ee7f320f699d",
+      "remove_rid": "#-1:0890a904-295a-4684-991e-5bfabd668f46",
+      "add_rid": "#-1:275f37ad-3297-49f6-82d2-57406a713ac1",
+      "kind": "swap",
+      "model_support": 1,
+      "nominal_p_net_gain": 0.5866666666666667,
+      "conservative_p_net_gain": 0.5366666666666666,
+      "equation": {
+        "min": -1,
+        "max": -1,
+        "min_status": "0",
+        "max_status": "0",
+        "min_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "max_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "optimal": true
+      },
+      "node_keys": [
+        {
+          "role": "add",
+          "order_id": "abe0d010-6809-4a4d-9ae6-ee7f320f699d",
+          "rid": "#-1:275f37ad-3297-49f6-82d2-57406a713ac1"
+        },
+        {
+          "role": "remove",
+          "order_id": "abe0d010-6809-4a4d-9ae6-ee7f320f699d",
+          "rid": "#-1:0890a904-295a-4684-991e-5bfabd668f46"
+        }
+      ]
+    },
+    {
+      "candidate_id": "v120_pair_061",
+      "catalog_source": "v120",
+      "catalog_provenance": [
+        "v120",
+        "v121"
+      ],
+      "order_id": "d5376a71-c48e-4351-ba60-f982778b3eb4",
+      "remove_rid": "#-1:e401b7b4-697f-434e-8437-4b2136d6904f",
+      "add_rid": "#-1:0c809583-390f-4d16-9b91-c4fb1e99c5c2",
+      "kind": "swap",
+      "model_support": 4,
+      "nominal_p_net_gain": 0.579324172437191,
+      "conservative_p_net_gain": 0.529324172437191,
+      "equation": {
+        "min": -1,
+        "max": -1,
+        "min_status": "0",
+        "max_status": "0",
+        "min_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "max_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "optimal": true
+      },
+      "node_keys": [
+        {
+          "role": "add",
+          "order_id": "d5376a71-c48e-4351-ba60-f982778b3eb4",
+          "rid": "#-1:0c809583-390f-4d16-9b91-c4fb1e99c5c2"
+        },
+        {
+          "role": "remove",
+          "order_id": "d5376a71-c48e-4351-ba60-f982778b3eb4",
+          "rid": "#-1:e401b7b4-697f-434e-8437-4b2136d6904f"
+        }
+      ]
+    }
+  ],
+  "fixed_zero_candidates": [],
+  "fixed_online_single_swaps": [
+    {
+      "order_id": "53aa2dc8-1861-4faa-8d25-3847c8e392bb",
+      "remove_rid": "#-1:83d4eb97-c2b7-45a8-8df7-a8482b577066",
+      "add_rid": "#-1:4e8373ef-5afc-45ed-8abf-09e4d5ac6b67",
+      "delta_tp": -1,
+      "evidence_file": "D:\\zgyidong\\experiments\\v121_equation_safe_campaign\\probe_01_exploratory_best.csv",
+      "evidence_score": 0.918711
+    },
+    {
+      "order_id": "d5376a71-c48e-4351-ba60-f982778b3eb4",
+      "remove_rid": "#-1:e401b7b4-697f-434e-8437-4b2136d6904f",
+      "add_rid": "#-1:0c809583-390f-4d16-9b91-c4fb1e99c5c2",
+      "delta_tp": -1,
+      "evidence_file": "D:\\zgyidong\\experiments\\v30_meta_stack\\submissions\\v30_cross_order_top5.csv",
+      "evidence_score": 0.918711
+    }
+  ],
+  "notes": [
+    "V30 verified records were recovered by probe_id because their JSON entries omit path.",
+    "The older V121 equation_system.json is stale when this audit finds more records; use these outputs instead.",
+    "No submission CSV was generated by this audit."
+  ]
+}

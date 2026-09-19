@@ -1,0 +1,77 @@
+{
+  "version": "v61-prefix-recovery-audit-1",
+  "campaign": "v59",
+  "trials": 5,
+  "time_limit": 3.0,
+  "prefixes": [
+    50,
+    55,
+    60,
+    65,
+    70,
+    75
+  ],
+  "first_unique_distribution": {
+    "50": 0,
+    "55": 1,
+    "60": 1,
+    "65": 0,
+    "70": 1,
+    "75": 1
+  },
+  "unresolved": 1,
+  "rows": [
+    {
+      "trial": 0,
+      "first_unique_prefix": 60,
+      "outcomes": {
+        "50": "timeout",
+        "55": "timeout",
+        "60": "unique"
+      }
+    },
+    {
+      "trial": 1,
+      "first_unique_prefix": 75,
+      "outcomes": {
+        "50": "timeout",
+        "55": "timeout",
+        "60": "timeout",
+        "65": "timeout",
+        "70": "timeout",
+        "75": "unique"
+      }
+    },
+    {
+      "trial": 2,
+      "first_unique_prefix": 55,
+      "outcomes": {
+        "50": "timeout",
+        "55": "unique"
+      }
+    },
+    {
+      "trial": 3,
+      "first_unique_prefix": null,
+      "outcomes": {
+        "50": "timeout",
+        "55": "timeout",
+        "60": "timeout",
+        "65": "timeout",
+        "70": "timeout",
+        "75": "timeout"
+      }
+    },
+    {
+      "trial": 4,
+      "first_unique_prefix": 70,
+      "outcomes": {
+        "50": "timeout",
+        "55": "timeout",
+        "60": "timeout",
+        "65": "timeout",
+        "70": "unique"
+      }
+    }
+  ]
+}

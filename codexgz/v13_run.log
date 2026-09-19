@@ -1,0 +1,151 @@
+Loading data...
+orders=1634 test_orders=546 rows=9334 positives=3041 groups=1040 repeated_orders=762 fold_sizes=[327, 327, 327, 327, 326]
+static=(9334, 39) directed=(9334, 13) bucket_a=(9334, 14)
+x_train=(7622, 88) x_validation=(1712, 88)
+fold=0 trained (46s)
+x_train=(7344, 88) x_validation=(1990, 88)
+fold=1 trained (65s)
+x_train=(7312, 88) x_validation=(2022, 88)
+fold=2 trained (74s)
+x_train=(7580, 88) x_validation=(1754, 88)
+fold=3 trained (82s)
+x_train=(7478, 88) x_validation=(1856, 88)
+fold=4 trained (90s)
+eval_fold=0 weight=0.50 baseline=0.914434 candidate=0.902625 gain=-0.011809
+eval_fold=1 weight=0.75 baseline=0.913767 candidate=0.910755 gain=-0.003012
+eval_fold=2 weight=1.00 baseline=0.893761 candidate=0.901554 gain=+0.007794
+eval_fold=3 weight=0.75 baseline=0.917628 candidate=0.915622 gain=-0.002005
+eval_fold=4 weight=0.50 baseline=0.881044 candidate=0.886536 gain=+0.005492
+NESTED baseline=(0.9039145907473309, 2794, 347, 247, 3141) candidate=(0.9032258064516129, 2786, 342, 255, 3128) gain=-0.000689 improved_folds=2/5
+FINAL weight=0.75 threshold=0.619343025 global_oof=(0.9090016366612111, 2777, 292, 264, 3069, 0.6193430247723171) G1=False G2=False
+G3 seed symdiff pairwise=[12, 18, 16] gate=False
+G4 threshold_count=1020 fixed_count=1059 max_per_order=8 gate=True
+GATES: G1=False G2=False G3=False G4=True G5=True PASSED=False
+CONSTRAINED {'forced_in_count': 32, 'forced_out_count': 32, 'constrained_vs_winner': {'different_nodes': 28, 'different_orders': 18, 'removed': 14, 'added': 14}, 'count_distribution': {1: 317, 2: 80, 3: 98, 4: 14, 5: 11, 6: 12, 7: 7, 8: 7}}
+{
+  "train_orders": 1634,
+  "test_orders": 546,
+  "train_rows": 9334,
+  "positives": 3041,
+  "group_count": 1040,
+  "repeated_orders": 762,
+  "fold_sizes": [
+    327,
+    327,
+    327,
+    327,
+    326
+  ],
+  "seeds": [
+    20260801,
+    20260817,
+    20260831
+  ],
+  "fold_metrics": [
+    {
+      "fold": 0,
+      "weight": 0.5,
+      "threshold": 0.4627455936008573,
+      "baseline_f1": 0.9144338807260155,
+      "candidate_f1": 0.9026248941574937,
+      "gain": -0.011808986568521807
+    },
+    {
+      "fold": 1,
+      "weight": 0.75,
+      "threshold": 0.6370934315873283,
+      "baseline_f1": 0.913767019667171,
+      "candidate_f1": 0.9107551487414187,
+      "gain": -0.00301187092575228
+    },
+    {
+      "fold": 2,
+      "weight": 1.0,
+      "threshold": 0.5830899929113883,
+      "baseline_f1": 0.893760539629005,
+      "candidate_f1": 0.9015544041450777,
+      "gain": 0.007793864516072668
+    },
+    {
+      "fold": 3,
+      "weight": 0.75,
+      "threshold": 0.6193430247723171,
+      "baseline_f1": 0.9176276771004942,
+      "candidate_f1": 0.9156223893065998,
+      "gain": -0.002005287793894417
+    },
+    {
+      "fold": 4,
+      "weight": 0.5,
+      "threshold": 0.4627455936008573,
+      "baseline_f1": 0.8810437452033768,
+      "candidate_f1": 0.886535552193646,
+      "gain": 0.005491806990269188
+    }
+  ],
+  "nested_baseline": [
+    0.9039145907473309,
+    2794,
+    347,
+    247,
+    3141
+  ],
+  "nested_candidate": [
+    0.9032258064516129,
+    2786,
+    342,
+    255,
+    3128
+  ],
+  "nested_gain": -0.000688784295718059,
+  "improved_folds": 2,
+  "final_weight": 0.75,
+  "final_threshold": 0.6193430247723171,
+  "global_oof": [
+    0.9090016366612111,
+    2777,
+    292,
+    264,
+    3069,
+    0.6193430247723171
+  ],
+  "gates": {
+    "G1_nested_gain": false,
+    "G2_improved_folds": false,
+    "G3_seed_symdiff": false,
+    "G4_counts": true,
+    "G5_unique": true,
+    "passed": false
+  },
+  "seed_pairwise_symdiff": [
+    12,
+    18,
+    16
+  ],
+  "threshold_test_count": 1020,
+  "fixed_test_count": 1059,
+  "max_per_order": 8,
+  "raw_submission": "D:\\zgyidong\\codexgz\\v13\\result_record_v13_meta_1059.csv",
+  "constrained": {
+    "forced_in_count": 32,
+    "forced_out_count": 32,
+    "constrained_vs_winner": {
+      "different_nodes": 28,
+      "different_orders": 18,
+      "removed": 14,
+      "added": 14
+    },
+    "count_distribution": {
+      "1": 317,
+      "2": 80,
+      "3": 98,
+      "4": 14,
+      "5": 11,
+      "6": 12,
+      "7": 7,
+      "8": 7
+    }
+  },
+  "seconds": 112.77725958824158
+}
+TOTAL 113s outputs=D:\zgyidong\codexgz\v13

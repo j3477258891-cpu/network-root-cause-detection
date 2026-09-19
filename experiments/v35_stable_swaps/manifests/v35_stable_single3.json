@@ -1,0 +1,63 @@
+{
+  "probe_id": "v35_stable_single3",
+  "baseline": "D:\\zgyidong\\experiments\\v30_meta_stack\\submissions\\v30_cross_order_top5.csv",
+  "path": "D:\\zgyidong\\experiments\\v35_stable_swaps\\submissions\\v35_stable_single3.csv",
+  "kind": "swap",
+  "actions": [
+    {
+      "action_id": "v35_stable_001_fad26f6d",
+      "order_id": "fad26f6d-c956-4598-9639-39fef649b32c",
+      "remove_rids": [
+        "#-1:e9e6853e-519f-46b4-821e-0ab0fe97ef51"
+      ],
+      "add_rids": [
+        "#-1:a6f7eb99-a84e-41d4-a903-5e31451dc4d8"
+      ],
+      "source": "v35_multi_model_stable_swap",
+      "expected_gain": 0.02262282371520996,
+      "evidence": {
+        "order_index": 533,
+        "order_id": "fad26f6d-c956-4598-9639-39fef649b32c",
+        "remove_rids": [
+          "#-1:e9e6853e-519f-46b4-821e-0ab0fe97ef51"
+        ],
+        "add_rids": [
+          "#-1:a6f7eb99-a84e-41d4-a903-5e31451dc4d8"
+        ],
+        "model_utility_min": 0.02262282371520996,
+        "model_utility_mean": 0.04064491391181946,
+        "model_utility_values": [
+          0.058667004108428955,
+          0.02262282371520996
+        ],
+        "supporting_model_indices": [
+          0,
+          2
+        ],
+        "count": 7
+      }
+    }
+  ],
+  "predictions": 1035,
+  "prediction_delta": 0,
+  "sha256": "fe2e379792c0b9a67bb77a15dfa97715718bb1eff5d803e6b3f24340dea08397",
+  "excluded_orders": 129,
+  "protected_nodes": 64,
+  "score_possibilities": [
+    {
+      "delta_tp": -1,
+      "tp": 954,
+      "score": 0.917748918
+    },
+    {
+      "delta_tp": 0,
+      "tp": 955,
+      "score": 0.918710919
+    },
+    {
+      "delta_tp": 1,
+      "tp": 956,
+      "score": 0.91967292
+    }
+  ]
+}

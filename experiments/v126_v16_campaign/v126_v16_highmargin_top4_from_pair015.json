@@ -1,0 +1,62 @@
+{
+  "version": "v126-v16-highmargin",
+  "base": "D:\\zgyidong\\experiments\\v124_campaign\\v124_single_pair_015_from_probe13.csv",
+  "base_sha256": "31131129bba8363fcf1df2c053f836102e8f209640164c2c4c7eedb431447c6c",
+  "base_public_f1": 0.921597,
+  "base_tp": 958,
+  "source_catalog": "D:\\zgyidong\\experiments\\v16\\v16_test_swap_catalog.csv",
+  "oof_calibration": {
+    "margin_ge_0.7": {
+      "positive": 4,
+      "total": 5
+    },
+    "margin_ge_0.6": {
+      "positive": 6,
+      "total": 10
+    }
+  },
+  "candidates": [
+    {
+      "order_id": "dd29409d-298e-451b-8231-e0c53c0e420a",
+      "removed_rid": "#-1:8b8bf8e9-9748-4726-8fd5-e9565379f047",
+      "added_rid": "#-1:dd1a4fe7-36f6-40d6-976a-61e7f8d57656",
+      "margin": "0.8709786879532513",
+      "seed_min_margin": "0.8604051942394522",
+      "high_conflict": "True",
+      "meta_mean": "-0.45825945141024693"
+    },
+    {
+      "order_id": "6600d905-9faf-4ee3-8d44-223e9bc4dfdb",
+      "removed_rid": "#-1:f38934ea-7530-401b-b354-bde0e9a2de71",
+      "added_rid": "#-1:960a3406-2124-4963-ab8c-91a9b9cd77c0",
+      "margin": "0.846228376983099",
+      "seed_min_margin": "0.8343106766830353",
+      "high_conflict": "True",
+      "meta_mean": "-0.1625894313287258"
+    },
+    {
+      "order_id": "29e6bb98-ef14-4333-920b-0cd42ff58a96",
+      "removed_rid": "#-1:95ce5b4b-39bf-4501-82ca-9aca6b9ee799",
+      "added_rid": "#-1:c94052a7-1334-454b-bbd2-2dc1f0ee047b",
+      "margin": "0.6393375981452271",
+      "seed_min_margin": "0.6200259792031415",
+      "high_conflict": "True",
+      "meta_mean": "-0.4860188569498241"
+    },
+    {
+      "order_id": "9ca5e12f-f73f-472c-99b3-8e74c01272fe",
+      "removed_rid": "#-1:878ee284-26b7-41c1-b7dc-47e528d71504",
+      "added_rid": "#-1:247d7153-ba7f-4012-86c3-2d6b9b7e9730",
+      "margin": "0.6026579119835076",
+      "seed_min_margin": "0.5979608960434487",
+      "high_conflict": "True",
+      "meta_mean": "0.017944767100764623"
+    }
+  ],
+  "predictions": 1035,
+  "orders": 546,
+  "sha256": "dc107c1e8fb231cc4eb64c1f57df05ceaea3ee3bf2796f74b3c06e0f3cee55e2",
+  "status": "exploratory_not_scored",
+  "warning": "V16 OOF calibration and model margins are not online evidence.",
+  "target_condition": "if all 4 swaps net +1, TP=962, F1=0.925445"
+}

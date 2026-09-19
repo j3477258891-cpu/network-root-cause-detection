@@ -1,0 +1,1295 @@
+{
+  "train_p": 3097,
+  "test_p": 1035,
+  "train_tp": 2795,
+  "models": {
+    "template_extra": {
+      "oof_tp": 2827,
+      "oof_delta_tp": 32,
+      "action_curves": {
+        "5": {
+          "sum_delta": 2,
+          "positive": 2,
+          "negative": 0,
+          "mean": 0.4
+        },
+        "10": {
+          "sum_delta": 5,
+          "positive": 5,
+          "negative": 0,
+          "mean": 0.5
+        },
+        "20": {
+          "sum_delta": 10,
+          "positive": 10,
+          "negative": 0,
+          "mean": 0.5
+        },
+        "30": {
+          "sum_delta": 15,
+          "positive": 15,
+          "negative": 0,
+          "mean": 0.5
+        },
+        "40": {
+          "sum_delta": 17,
+          "positive": 19,
+          "negative": 2,
+          "mean": 0.425
+        },
+        "60": {
+          "sum_delta": 16,
+          "positive": 21,
+          "negative": 5,
+          "mean": 0.26666666666666666
+        },
+        "100": {
+          "sum_delta": 14,
+          "positive": 26,
+          "negative": 12,
+          "mean": 0.14
+        }
+      },
+      "test_candidate_count": 2688,
+      "test_top30": [
+        {
+          "order_index": 125,
+          "order_id": "441995e6-e153-4e40-af0f-d0eb20ddcfa5",
+          "remove_local": 0,
+          "add_local": 1,
+          "remove_rid": "#-1:63de300f-5195-4f21-8e5d-244d93516979",
+          "add_rid": "#-1:53f23b3e-c801-45d7-8d31-1cb8b8809946",
+          "score_margin": 0.37785443663597107
+        },
+        {
+          "order_index": 532,
+          "order_id": "faa00ed5-c0b9-445e-98ac-671035a4a239",
+          "remove_local": 10,
+          "add_local": 11,
+          "remove_rid": "#-1:5173cc70-f178-481c-865b-a5a5f0d3c249",
+          "add_rid": "#-1:d4f3c427-0b59-41d3-8208-18c218433c27",
+          "score_margin": 0.25106775760650635
+        },
+        {
+          "order_index": 339,
+          "order_id": "aa321b94-f3d9-45cf-b1ee-f3a1fe38da68",
+          "remove_local": 2,
+          "add_local": 1,
+          "remove_rid": "#-1:dab0445c-e5d2-4336-8694-4e271b8b1117",
+          "add_rid": "#-1:429df297-9a4e-462a-a377-ae4cd47eda24",
+          "score_margin": 0.24782496690750122
+        },
+        {
+          "order_index": 532,
+          "order_id": "faa00ed5-c0b9-445e-98ac-671035a4a239",
+          "remove_local": 10,
+          "add_local": 2,
+          "remove_rid": "#-1:5173cc70-f178-481c-865b-a5a5f0d3c249",
+          "add_rid": "#-1:f977e0bf-42cd-4e28-88e9-128508fe3131",
+          "score_margin": 0.22075897455215454
+        },
+        {
+          "order_index": 184,
+          "order_id": "625ffce7-65c5-4657-9104-4148b4113130",
+          "remove_local": 12,
+          "add_local": 53,
+          "remove_rid": "#-1:05a9320e-1492-477f-a9e4-2c6d879fbd49",
+          "add_rid": "#-1:a8f28178-4795-4f26-84d6-1791944fb245",
+          "score_margin": 0.2046223282814026
+        },
+        {
+          "order_index": 341,
+          "order_id": "aa54ba78-924a-45c7-a182-d8d100b3d130",
+          "remove_local": 17,
+          "add_local": 22,
+          "remove_rid": "#-1:072cd141-f607-4e6c-aa6f-97d204285259",
+          "add_rid": "#-1:13b01a84-3dbb-4865-adfb-6dc028159154",
+          "score_margin": 0.19736593961715698
+        },
+        {
+          "order_index": 184,
+          "order_id": "625ffce7-65c5-4657-9104-4148b4113130",
+          "remove_local": 12,
+          "add_local": 48,
+          "remove_rid": "#-1:05a9320e-1492-477f-a9e4-2c6d879fbd49",
+          "add_rid": "#-1:224b57dc-60c0-4fc8-a6ab-ad594824e66b",
+          "score_margin": 0.19100546836853027
+        },
+        {
+          "order_index": 184,
+          "order_id": "625ffce7-65c5-4657-9104-4148b4113130",
+          "remove_local": 18,
+          "add_local": 53,
+          "remove_rid": "#-1:766a8ee0-a46f-460f-a02d-6314e6cc1071",
+          "add_rid": "#-1:a8f28178-4795-4f26-84d6-1791944fb245",
+          "score_margin": 0.1831601858139038
+        },
+        {
+          "order_index": 341,
+          "order_id": "aa54ba78-924a-45c7-a182-d8d100b3d130",
+          "remove_local": 17,
+          "add_local": 14,
+          "remove_rid": "#-1:072cd141-f607-4e6c-aa6f-97d204285259",
+          "add_rid": "#-1:d38962d1-1f9c-429c-8711-d466f3efa3c5",
+          "score_margin": 0.18162918090820312
+        },
+        {
+          "order_index": 341,
+          "order_id": "aa54ba78-924a-45c7-a182-d8d100b3d130",
+          "remove_local": 17,
+          "add_local": 0,
+          "remove_rid": "#-1:072cd141-f607-4e6c-aa6f-97d204285259",
+          "add_rid": "#-1:4869f31f-0c44-4fd8-8557-aea5f4e3ea62",
+          "score_margin": 0.17958581447601318
+        },
+        {
+          "order_index": 184,
+          "order_id": "625ffce7-65c5-4657-9104-4148b4113130",
+          "remove_local": 12,
+          "add_local": 7,
+          "remove_rid": "#-1:05a9320e-1492-477f-a9e4-2c6d879fbd49",
+          "add_rid": "#-1:4b6983f7-ec6d-4d11-9e4f-9c12c47dd998",
+          "score_margin": 0.1784643530845642
+        },
+        {
+          "order_index": 184,
+          "order_id": "625ffce7-65c5-4657-9104-4148b4113130",
+          "remove_local": 18,
+          "add_local": 48,
+          "remove_rid": "#-1:766a8ee0-a46f-460f-a02d-6314e6cc1071",
+          "add_rid": "#-1:224b57dc-60c0-4fc8-a6ab-ad594824e66b",
+          "score_margin": 0.1695433259010315
+        },
+        {
+          "order_index": 341,
+          "order_id": "aa54ba78-924a-45c7-a182-d8d100b3d130",
+          "remove_local": 18,
+          "add_local": 22,
+          "remove_rid": "#-1:f6307913-eba3-4fee-b846-1fc3579d1ac3",
+          "add_rid": "#-1:13b01a84-3dbb-4865-adfb-6dc028159154",
+          "score_margin": 0.15862470865249634
+        },
+        {
+          "order_index": 184,
+          "order_id": "625ffce7-65c5-4657-9104-4148b4113130",
+          "remove_local": 18,
+          "add_local": 7,
+          "remove_rid": "#-1:766a8ee0-a46f-460f-a02d-6314e6cc1071",
+          "add_rid": "#-1:4b6983f7-ec6d-4d11-9e4f-9c12c47dd998",
+          "score_margin": 0.15700221061706543
+        },
+        {
+          "order_index": 15,
+          "order_id": "06d346bc-1345-4825-9e01-546cc30ac6ba",
+          "remove_local": 19,
+          "add_local": 21,
+          "remove_rid": "#-1:3005e057-e449-4a72-8269-c9b7d32dfaa7",
+          "add_rid": "#-1:a8f691fe-fb68-4083-bc58-267227343e3c",
+          "score_margin": 0.14770442247390747
+        },
+        {
+          "order_index": 341,
+          "order_id": "aa54ba78-924a-45c7-a182-d8d100b3d130",
+          "remove_local": 18,
+          "add_local": 14,
+          "remove_rid": "#-1:f6307913-eba3-4fee-b846-1fc3579d1ac3",
+          "add_rid": "#-1:d38962d1-1f9c-429c-8711-d466f3efa3c5",
+          "score_margin": 0.14288794994354248
+        },
+        {
+          "order_index": 184,
+          "order_id": "625ffce7-65c5-4657-9104-4148b4113130",
+          "remove_local": 15,
+          "add_local": 53,
+          "remove_rid": "#-1:79657cf6-720b-4c38-96e2-9f2689b10071",
+          "add_rid": "#-1:a8f28178-4795-4f26-84d6-1791944fb245",
+          "score_margin": 0.14165282249450684
+        },
+        {
+          "order_index": 341,
+          "order_id": "aa54ba78-924a-45c7-a182-d8d100b3d130",
+          "remove_local": 18,
+          "add_local": 0,
+          "remove_rid": "#-1:f6307913-eba3-4fee-b846-1fc3579d1ac3",
+          "add_rid": "#-1:4869f31f-0c44-4fd8-8557-aea5f4e3ea62",
+          "score_margin": 0.14084458351135254
+        },
+        {
+          "order_index": 341,
+          "order_id": "aa54ba78-924a-45c7-a182-d8d100b3d130",
+          "remove_local": 17,
+          "add_local": 7,
+          "remove_rid": "#-1:072cd141-f607-4e6c-aa6f-97d204285259",
+          "add_rid": "#-1:a04e72e5-9609-4cf5-99b1-55d93a7891ac",
+          "score_margin": 0.13362133502960205
+        },
+        {
+          "order_index": 533,
+          "order_id": "fad26f6d-c956-4598-9639-39fef649b32c",
+          "remove_local": 9,
+          "add_local": 7,
+          "remove_rid": "#-1:e9e6853e-519f-46b4-821e-0ab0fe97ef51",
+          "add_rid": "#-1:d779f103-178f-4a59-8d44-e8a5ee182ba1",
+          "score_margin": 0.13075023889541626
+        },
+        {
+          "order_index": 184,
+          "order_id": "625ffce7-65c5-4657-9104-4148b4113130",
+          "remove_local": 15,
+          "add_local": 48,
+          "remove_rid": "#-1:79657cf6-720b-4c38-96e2-9f2689b10071",
+          "add_rid": "#-1:224b57dc-60c0-4fc8-a6ab-ad594824e66b",
+          "score_margin": 0.12803596258163452
+        },
+        {
+          "order_index": 532,
+          "order_id": "faa00ed5-c0b9-445e-98ac-671035a4a239",
+          "remove_local": 10,
+          "add_local": 12,
+          "remove_rid": "#-1:5173cc70-f178-481c-865b-a5a5f0d3c249",
+          "add_rid": "#-1:76e3a0a3-1943-4a4c-ad08-d31dc732cb73",
+          "score_margin": 0.11657443642616272
+        },
+        {
+          "order_index": 314,
+          "order_id": "9ca5e12f-f73f-472c-99b3-8e74c01272fe",
+          "remove_local": 3,
+          "add_local": 0,
+          "remove_rid": "#-1:878ee284-26b7-41c1-b7dc-47e528d71504",
+          "add_rid": "#-1:247d7153-ba7f-4012-86c3-2d6b9b7e9730",
+          "score_margin": 0.11561053991317749
+        },
+        {
+          "order_index": 184,
+          "order_id": "625ffce7-65c5-4657-9104-4148b4113130",
+          "remove_local": 15,
+          "add_local": 7,
+          "remove_rid": "#-1:79657cf6-720b-4c38-96e2-9f2689b10071",
+          "add_rid": "#-1:4b6983f7-ec6d-4d11-9e4f-9c12c47dd998",
+          "score_margin": 0.11549484729766846
+        },
+        {
+          "order_index": 341,
+          "order_id": "aa54ba78-924a-45c7-a182-d8d100b3d130",
+          "remove_local": 16,
+          "add_local": 22,
+          "remove_rid": "#-1:f1f3b0c8-e761-4a18-b447-73f17210b0bf",
+          "add_rid": "#-1:13b01a84-3dbb-4865-adfb-6dc028159154",
+          "score_margin": 0.1052166223526001
+        },
+        {
+          "order_index": 533,
+          "order_id": "fad26f6d-c956-4598-9639-39fef649b32c",
+          "remove_local": 9,
+          "add_local": 1,
+          "remove_rid": "#-1:e9e6853e-519f-46b4-821e-0ab0fe97ef51",
+          "add_rid": "#-1:a6f7eb99-a84e-41d4-a903-5e31451dc4d8",
+          "score_margin": 0.10114580392837524
+        },
+        {
+          "order_index": 341,
+          "order_id": "aa54ba78-924a-45c7-a182-d8d100b3d130",
+          "remove_local": 8,
+          "add_local": 22,
+          "remove_rid": "#-1:e8fce4fe-875b-4c40-9de6-77ba54e4e1ec",
+          "add_rid": "#-1:13b01a84-3dbb-4865-adfb-6dc028159154",
+          "score_margin": 0.09834229946136475
+        },
+        {
+          "order_index": 341,
+          "order_id": "aa54ba78-924a-45c7-a182-d8d100b3d130",
+          "remove_local": 18,
+          "add_local": 7,
+          "remove_rid": "#-1:f6307913-eba3-4fee-b846-1fc3579d1ac3",
+          "add_rid": "#-1:a04e72e5-9609-4cf5-99b1-55d93a7891ac",
+          "score_margin": 0.0948801040649414
+        },
+        {
+          "order_index": 380,
+          "order_id": "b92c1c42-bc69-48fa-b5c6-7bbd2635a15b",
+          "remove_local": 0,
+          "add_local": 1,
+          "remove_rid": "#-1:46dad958-ef00-43e3-9cc6-b2312a363aea",
+          "add_rid": "#-1:e98f47f3-1430-4bab-bd66-cd79564e73e6",
+          "score_margin": 0.09247767925262451
+        },
+        {
+          "order_index": 184,
+          "order_id": "625ffce7-65c5-4657-9104-4148b4113130",
+          "remove_local": 12,
+          "add_local": 19,
+          "remove_rid": "#-1:05a9320e-1492-477f-a9e4-2c6d879fbd49",
+          "add_rid": "#-1:f938c759-1beb-4c9f-a283-44a9d5ae5a91",
+          "score_margin": 0.09029102325439453
+        }
+      ],
+      "test_top60_expected_positive_count": 60
+    },
+    "template_hist": {
+      "oof_tp": 2827,
+      "oof_delta_tp": 32,
+      "action_curves": {
+        "5": {
+          "sum_delta": 3,
+          "positive": 3,
+          "negative": 0,
+          "mean": 0.6
+        },
+        "10": {
+          "sum_delta": 6,
+          "positive": 6,
+          "negative": 0,
+          "mean": 0.6
+        },
+        "20": {
+          "sum_delta": 7,
+          "positive": 9,
+          "negative": 2,
+          "mean": 0.35
+        },
+        "30": {
+          "sum_delta": 7,
+          "positive": 12,
+          "negative": 5,
+          "mean": 0.23333333333333334
+        },
+        "40": {
+          "sum_delta": 7,
+          "positive": 15,
+          "negative": 8,
+          "mean": 0.175
+        },
+        "60": {
+          "sum_delta": 0,
+          "positive": 18,
+          "negative": 18,
+          "mean": 0.0
+        },
+        "100": {
+          "sum_delta": 6,
+          "positive": 31,
+          "negative": 25,
+          "mean": 0.06
+        }
+      },
+      "test_candidate_count": 2688,
+      "test_top30": [
+        {
+          "order_index": 532,
+          "order_id": "faa00ed5-c0b9-445e-98ac-671035a4a239",
+          "remove_local": 10,
+          "add_local": 2,
+          "remove_rid": "#-1:5173cc70-f178-481c-865b-a5a5f0d3c249",
+          "add_rid": "#-1:f977e0bf-42cd-4e28-88e9-128508fe3131",
+          "score_margin": 0.4981497824192047
+        },
+        {
+          "order_index": 125,
+          "order_id": "441995e6-e153-4e40-af0f-d0eb20ddcfa5",
+          "remove_local": 0,
+          "add_local": 1,
+          "remove_rid": "#-1:63de300f-5195-4f21-8e5d-244d93516979",
+          "add_rid": "#-1:53f23b3e-c801-45d7-8d31-1cb8b8809946",
+          "score_margin": 0.47149065136909485
+        },
+        {
+          "order_index": 339,
+          "order_id": "aa321b94-f3d9-45cf-b1ee-f3a1fe38da68",
+          "remove_local": 2,
+          "add_local": 1,
+          "remove_rid": "#-1:dab0445c-e5d2-4336-8694-4e271b8b1117",
+          "add_rid": "#-1:429df297-9a4e-462a-a377-ae4cd47eda24",
+          "score_margin": 0.41971611976623535
+        },
+        {
+          "order_index": 532,
+          "order_id": "faa00ed5-c0b9-445e-98ac-671035a4a239",
+          "remove_local": 10,
+          "add_local": 11,
+          "remove_rid": "#-1:5173cc70-f178-481c-865b-a5a5f0d3c249",
+          "add_rid": "#-1:d4f3c427-0b59-41d3-8208-18c218433c27",
+          "score_margin": 0.3886878788471222
+        },
+        {
+          "order_index": 236,
+          "order_id": "7b1b39e5-954a-418c-9ed7-03285444ea24",
+          "remove_local": 2,
+          "add_local": 1,
+          "remove_rid": "#-1:552046b6-e16f-4a58-90d4-bb2c3433ccb4",
+          "add_rid": "#-1:9e23d2aa-04a7-45dc-ba50-0453d34937d4",
+          "score_margin": 0.3411611318588257
+        },
+        {
+          "order_index": 314,
+          "order_id": "9ca5e12f-f73f-472c-99b3-8e74c01272fe",
+          "remove_local": 3,
+          "add_local": 0,
+          "remove_rid": "#-1:878ee284-26b7-41c1-b7dc-47e528d71504",
+          "add_rid": "#-1:247d7153-ba7f-4012-86c3-2d6b9b7e9730",
+          "score_margin": 0.30879002809524536
+        },
+        {
+          "order_index": 532,
+          "order_id": "faa00ed5-c0b9-445e-98ac-671035a4a239",
+          "remove_local": 10,
+          "add_local": 12,
+          "remove_rid": "#-1:5173cc70-f178-481c-865b-a5a5f0d3c249",
+          "add_rid": "#-1:76e3a0a3-1943-4a4c-ad08-d31dc732cb73",
+          "score_margin": 0.29293760657310486
+        },
+        {
+          "order_index": 27,
+          "order_id": "0e755fc0-8819-4420-b701-1f84ec0e59de",
+          "remove_local": 0,
+          "add_local": 2,
+          "remove_rid": "#-1:da579a04-4b4a-4e5f-88e7-8f434b4622e7",
+          "add_rid": "#-1:0f95a457-9523-4b28-9a93-81b08542d6b4",
+          "score_margin": 0.2828933298587799
+        },
+        {
+          "order_index": 142,
+          "order_id": "4c2b3b06-a6a2-4c1b-9734-def3d1f849d8",
+          "remove_local": 0,
+          "add_local": 3,
+          "remove_rid": "#-1:478860c0-cfb6-4e87-8e69-14f09e94b850",
+          "add_rid": "#-1:aee1adf1-be6a-4986-bd73-4fda938342fc",
+          "score_margin": 0.2624817490577698
+        },
+        {
+          "order_index": 142,
+          "order_id": "4c2b3b06-a6a2-4c1b-9734-def3d1f849d8",
+          "remove_local": 0,
+          "add_local": 4,
+          "remove_rid": "#-1:478860c0-cfb6-4e87-8e69-14f09e94b850",
+          "add_rid": "#-1:66facd91-e281-4331-bbae-04ab8bd9746d",
+          "score_margin": 0.23911873996257782
+        },
+        {
+          "order_index": 533,
+          "order_id": "fad26f6d-c956-4598-9639-39fef649b32c",
+          "remove_local": 8,
+          "add_local": 7,
+          "remove_rid": "#-1:45f33f70-9bd9-4726-8a18-995f324dd172",
+          "add_rid": "#-1:d779f103-178f-4a59-8d44-e8a5ee182ba1",
+          "score_margin": 0.21825939416885376
+        },
+        {
+          "order_index": 303,
+          "order_id": "9738b42a-7360-4763-8895-0e84599b4d60",
+          "remove_local": 5,
+          "add_local": 8,
+          "remove_rid": "#-1:18d342c5-d25e-45f4-9b1d-dcbdba1120bc",
+          "add_rid": "#-1:7feea0e0-d89e-47b4-98e7-836da80b44cf",
+          "score_margin": 0.20702120661735535
+        },
+        {
+          "order_index": 533,
+          "order_id": "fad26f6d-c956-4598-9639-39fef649b32c",
+          "remove_local": 9,
+          "add_local": 7,
+          "remove_rid": "#-1:e9e6853e-519f-46b4-821e-0ab0fe97ef51",
+          "add_rid": "#-1:d779f103-178f-4a59-8d44-e8a5ee182ba1",
+          "score_margin": 0.17768150568008423
+        },
+        {
+          "order_index": 380,
+          "order_id": "b92c1c42-bc69-48fa-b5c6-7bbd2635a15b",
+          "remove_local": 0,
+          "add_local": 1,
+          "remove_rid": "#-1:46dad958-ef00-43e3-9cc6-b2312a363aea",
+          "add_rid": "#-1:e98f47f3-1430-4bab-bd66-cd79564e73e6",
+          "score_margin": 0.17737102508544922
+        },
+        {
+          "order_index": 184,
+          "order_id": "625ffce7-65c5-4657-9104-4148b4113130",
+          "remove_local": 12,
+          "add_local": 48,
+          "remove_rid": "#-1:05a9320e-1492-477f-a9e4-2c6d879fbd49",
+          "add_rid": "#-1:224b57dc-60c0-4fc8-a6ab-ad594824e66b",
+          "score_margin": 0.17359381914138794
+        },
+        {
+          "order_index": 184,
+          "order_id": "625ffce7-65c5-4657-9104-4148b4113130",
+          "remove_local": 12,
+          "add_local": 53,
+          "remove_rid": "#-1:05a9320e-1492-477f-a9e4-2c6d879fbd49",
+          "add_rid": "#-1:a8f28178-4795-4f26-84d6-1791944fb245",
+          "score_margin": 0.17303615808486938
+        },
+        {
+          "order_index": 184,
+          "order_id": "625ffce7-65c5-4657-9104-4148b4113130",
+          "remove_local": 18,
+          "add_local": 48,
+          "remove_rid": "#-1:766a8ee0-a46f-460f-a02d-6314e6cc1071",
+          "add_rid": "#-1:224b57dc-60c0-4fc8-a6ab-ad594824e66b",
+          "score_margin": 0.17040276527404785
+        },
+        {
+          "order_index": 184,
+          "order_id": "625ffce7-65c5-4657-9104-4148b4113130",
+          "remove_local": 18,
+          "add_local": 53,
+          "remove_rid": "#-1:766a8ee0-a46f-460f-a02d-6314e6cc1071",
+          "add_rid": "#-1:a8f28178-4795-4f26-84d6-1791944fb245",
+          "score_margin": 0.1698451042175293
+        },
+        {
+          "order_index": 532,
+          "order_id": "faa00ed5-c0b9-445e-98ac-671035a4a239",
+          "remove_local": 10,
+          "add_local": 13,
+          "remove_rid": "#-1:5173cc70-f178-481c-865b-a5a5f0d3c249",
+          "add_rid": "#-1:915eef53-ee5f-4650-8570-01f2b0b0380d",
+          "score_margin": 0.16277071833610535
+        },
+        {
+          "order_index": 184,
+          "order_id": "625ffce7-65c5-4657-9104-4148b4113130",
+          "remove_local": 12,
+          "add_local": 7,
+          "remove_rid": "#-1:05a9320e-1492-477f-a9e4-2c6d879fbd49",
+          "add_rid": "#-1:4b6983f7-ec6d-4d11-9e4f-9c12c47dd998",
+          "score_margin": 0.15515458583831787
+        },
+        {
+          "order_index": 533,
+          "order_id": "fad26f6d-c956-4598-9639-39fef649b32c",
+          "remove_local": 12,
+          "add_local": 7,
+          "remove_rid": "#-1:a5ec568a-0395-45f0-9e0c-d7b5cdbe0e71",
+          "add_rid": "#-1:d779f103-178f-4a59-8d44-e8a5ee182ba1",
+          "score_margin": 0.15297889709472656
+        },
+        {
+          "order_index": 184,
+          "order_id": "625ffce7-65c5-4657-9104-4148b4113130",
+          "remove_local": 18,
+          "add_local": 7,
+          "remove_rid": "#-1:766a8ee0-a46f-460f-a02d-6314e6cc1071",
+          "add_rid": "#-1:4b6983f7-ec6d-4d11-9e4f-9c12c47dd998",
+          "score_margin": 0.15196353197097778
+        },
+        {
+          "order_index": 341,
+          "order_id": "aa54ba78-924a-45c7-a182-d8d100b3d130",
+          "remove_local": 8,
+          "add_local": 7,
+          "remove_rid": "#-1:e8fce4fe-875b-4c40-9de6-77ba54e4e1ec",
+          "add_rid": "#-1:a04e72e5-9609-4cf5-99b1-55d93a7891ac",
+          "score_margin": 0.13317179679870605
+        },
+        {
+          "order_index": 533,
+          "order_id": "fad26f6d-c956-4598-9639-39fef649b32c",
+          "remove_local": 4,
+          "add_local": 7,
+          "remove_rid": "#-1:f9d64afc-8fcb-4d95-9ff0-37f50f7d2783",
+          "add_rid": "#-1:d779f103-178f-4a59-8d44-e8a5ee182ba1",
+          "score_margin": 0.11942321062088013
+        },
+        {
+          "order_index": 442,
+          "order_id": "d5376a71-c48e-4351-ba60-f982778b3eb4",
+          "remove_local": 8,
+          "add_local": 9,
+          "remove_rid": "#-1:80c55c8d-719d-4720-bb6e-7803308a4902",
+          "add_rid": "#-1:0c809583-390f-4d16-9b91-c4fb1e99c5c2",
+          "score_margin": 0.11336341500282288
+        },
+        {
+          "order_index": 533,
+          "order_id": "fad26f6d-c956-4598-9639-39fef649b32c",
+          "remove_local": 8,
+          "add_local": 1,
+          "remove_rid": "#-1:45f33f70-9bd9-4726-8a18-995f324dd172",
+          "add_rid": "#-1:a6f7eb99-a84e-41d4-a903-5e31451dc4d8",
+          "score_margin": 0.11302030086517334
+        },
+        {
+          "order_index": 341,
+          "order_id": "aa54ba78-924a-45c7-a182-d8d100b3d130",
+          "remove_local": 8,
+          "add_local": 14,
+          "remove_rid": "#-1:e8fce4fe-875b-4c40-9de6-77ba54e4e1ec",
+          "add_rid": "#-1:d38962d1-1f9c-429c-8711-d466f3efa3c5",
+          "score_margin": 0.1125078797340393
+        },
+        {
+          "order_index": 339,
+          "order_id": "aa321b94-f3d9-45cf-b1ee-f3a1fe38da68",
+          "remove_local": 2,
+          "add_local": 0,
+          "remove_rid": "#-1:dab0445c-e5d2-4336-8694-4e271b8b1117",
+          "add_rid": "#-1:a31ada88-c433-48a8-aa2e-4936da2ed6cf",
+          "score_margin": 0.10759982466697693
+        },
+        {
+          "order_index": 341,
+          "order_id": "aa54ba78-924a-45c7-a182-d8d100b3d130",
+          "remove_local": 8,
+          "add_local": 22,
+          "remove_rid": "#-1:e8fce4fe-875b-4c40-9de6-77ba54e4e1ec",
+          "add_rid": "#-1:13b01a84-3dbb-4865-adfb-6dc028159154",
+          "score_margin": 0.1059601902961731
+        },
+        {
+          "order_index": 184,
+          "order_id": "625ffce7-65c5-4657-9104-4148b4113130",
+          "remove_local": 31,
+          "add_local": 48,
+          "remove_rid": "#-1:9dbca98a-9929-421b-806d-644e232bb68f",
+          "add_rid": "#-1:224b57dc-60c0-4fc8-a6ab-ad594824e66b",
+          "score_margin": 0.08990132808685303
+        }
+      ],
+      "test_top60_expected_positive_count": 60
+    },
+    "site_extra": {
+      "oof_tp": 2824,
+      "oof_delta_tp": 29,
+      "action_curves": {
+        "5": {
+          "sum_delta": 2,
+          "positive": 2,
+          "negative": 0,
+          "mean": 0.4
+        },
+        "10": {
+          "sum_delta": 5,
+          "positive": 5,
+          "negative": 0,
+          "mean": 0.5
+        },
+        "20": {
+          "sum_delta": 10,
+          "positive": 10,
+          "negative": 0,
+          "mean": 0.5
+        },
+        "30": {
+          "sum_delta": 12,
+          "positive": 15,
+          "negative": 3,
+          "mean": 0.4
+        },
+        "40": {
+          "sum_delta": 10,
+          "positive": 17,
+          "negative": 7,
+          "mean": 0.25
+        },
+        "60": {
+          "sum_delta": 13,
+          "positive": 21,
+          "negative": 8,
+          "mean": 0.21666666666666667
+        },
+        "100": {
+          "sum_delta": 22,
+          "positive": 32,
+          "negative": 10,
+          "mean": 0.22
+        }
+      },
+      "test_candidate_count": 2688,
+      "test_top30": [
+        {
+          "order_index": 125,
+          "order_id": "441995e6-e153-4e40-af0f-d0eb20ddcfa5",
+          "remove_local": 0,
+          "add_local": 1,
+          "remove_rid": "#-1:63de300f-5195-4f21-8e5d-244d93516979",
+          "add_rid": "#-1:53f23b3e-c801-45d7-8d31-1cb8b8809946",
+          "score_margin": 0.4075687527656555
+        },
+        {
+          "order_index": 532,
+          "order_id": "faa00ed5-c0b9-445e-98ac-671035a4a239",
+          "remove_local": 10,
+          "add_local": 11,
+          "remove_rid": "#-1:5173cc70-f178-481c-865b-a5a5f0d3c249",
+          "add_rid": "#-1:d4f3c427-0b59-41d3-8208-18c218433c27",
+          "score_margin": 0.2745913863182068
+        },
+        {
+          "order_index": 532,
+          "order_id": "faa00ed5-c0b9-445e-98ac-671035a4a239",
+          "remove_local": 10,
+          "add_local": 2,
+          "remove_rid": "#-1:5173cc70-f178-481c-865b-a5a5f0d3c249",
+          "add_rid": "#-1:f977e0bf-42cd-4e28-88e9-128508fe3131",
+          "score_margin": 0.2455006241798401
+        },
+        {
+          "order_index": 339,
+          "order_id": "aa321b94-f3d9-45cf-b1ee-f3a1fe38da68",
+          "remove_local": 2,
+          "add_local": 1,
+          "remove_rid": "#-1:dab0445c-e5d2-4336-8694-4e271b8b1117",
+          "add_rid": "#-1:429df297-9a4e-462a-a377-ae4cd47eda24",
+          "score_margin": 0.22502005100250244
+        },
+        {
+          "order_index": 184,
+          "order_id": "625ffce7-65c5-4657-9104-4148b4113130",
+          "remove_local": 12,
+          "add_local": 53,
+          "remove_rid": "#-1:05a9320e-1492-477f-a9e4-2c6d879fbd49",
+          "add_rid": "#-1:a8f28178-4795-4f26-84d6-1791944fb245",
+          "score_margin": 0.21272772550582886
+        },
+        {
+          "order_index": 184,
+          "order_id": "625ffce7-65c5-4657-9104-4148b4113130",
+          "remove_local": 12,
+          "add_local": 48,
+          "remove_rid": "#-1:05a9320e-1492-477f-a9e4-2c6d879fbd49",
+          "add_rid": "#-1:224b57dc-60c0-4fc8-a6ab-ad594824e66b",
+          "score_margin": 0.21022772789001465
+        },
+        {
+          "order_index": 184,
+          "order_id": "625ffce7-65c5-4657-9104-4148b4113130",
+          "remove_local": 18,
+          "add_local": 53,
+          "remove_rid": "#-1:766a8ee0-a46f-460f-a02d-6314e6cc1071",
+          "add_rid": "#-1:a8f28178-4795-4f26-84d6-1791944fb245",
+          "score_margin": 0.20284441113471985
+        },
+        {
+          "order_index": 184,
+          "order_id": "625ffce7-65c5-4657-9104-4148b4113130",
+          "remove_local": 18,
+          "add_local": 48,
+          "remove_rid": "#-1:766a8ee0-a46f-460f-a02d-6314e6cc1071",
+          "add_rid": "#-1:224b57dc-60c0-4fc8-a6ab-ad594824e66b",
+          "score_margin": 0.20034441351890564
+        },
+        {
+          "order_index": 341,
+          "order_id": "aa54ba78-924a-45c7-a182-d8d100b3d130",
+          "remove_local": 17,
+          "add_local": 14,
+          "remove_rid": "#-1:072cd141-f607-4e6c-aa6f-97d204285259",
+          "add_rid": "#-1:d38962d1-1f9c-429c-8711-d466f3efa3c5",
+          "score_margin": 0.19466054439544678
+        },
+        {
+          "order_index": 184,
+          "order_id": "625ffce7-65c5-4657-9104-4148b4113130",
+          "remove_local": 12,
+          "add_local": 7,
+          "remove_rid": "#-1:05a9320e-1492-477f-a9e4-2c6d879fbd49",
+          "add_rid": "#-1:4b6983f7-ec6d-4d11-9e4f-9c12c47dd998",
+          "score_margin": 0.18618768453598022
+        },
+        {
+          "order_index": 341,
+          "order_id": "aa54ba78-924a-45c7-a182-d8d100b3d130",
+          "remove_local": 17,
+          "add_local": 0,
+          "remove_rid": "#-1:072cd141-f607-4e6c-aa6f-97d204285259",
+          "add_rid": "#-1:4869f31f-0c44-4fd8-8557-aea5f4e3ea62",
+          "score_margin": 0.1803297996520996
+        },
+        {
+          "order_index": 184,
+          "order_id": "625ffce7-65c5-4657-9104-4148b4113130",
+          "remove_local": 15,
+          "add_local": 53,
+          "remove_rid": "#-1:79657cf6-720b-4c38-96e2-9f2689b10071",
+          "add_rid": "#-1:a8f28178-4795-4f26-84d6-1791944fb245",
+          "score_margin": 0.17730927467346191
+        },
+        {
+          "order_index": 184,
+          "order_id": "625ffce7-65c5-4657-9104-4148b4113130",
+          "remove_local": 18,
+          "add_local": 7,
+          "remove_rid": "#-1:766a8ee0-a46f-460f-a02d-6314e6cc1071",
+          "add_rid": "#-1:4b6983f7-ec6d-4d11-9e4f-9c12c47dd998",
+          "score_margin": 0.17630437016487122
+        },
+        {
+          "order_index": 184,
+          "order_id": "625ffce7-65c5-4657-9104-4148b4113130",
+          "remove_local": 15,
+          "add_local": 48,
+          "remove_rid": "#-1:79657cf6-720b-4c38-96e2-9f2689b10071",
+          "add_rid": "#-1:224b57dc-60c0-4fc8-a6ab-ad594824e66b",
+          "score_margin": 0.1748092770576477
+        },
+        {
+          "order_index": 341,
+          "order_id": "aa54ba78-924a-45c7-a182-d8d100b3d130",
+          "remove_local": 17,
+          "add_local": 22,
+          "remove_rid": "#-1:072cd141-f607-4e6c-aa6f-97d204285259",
+          "add_rid": "#-1:13b01a84-3dbb-4865-adfb-6dc028159154",
+          "score_margin": 0.1644546389579773
+        },
+        {
+          "order_index": 184,
+          "order_id": "625ffce7-65c5-4657-9104-4148b4113130",
+          "remove_local": 15,
+          "add_local": 7,
+          "remove_rid": "#-1:79657cf6-720b-4c38-96e2-9f2689b10071",
+          "add_rid": "#-1:4b6983f7-ec6d-4d11-9e4f-9c12c47dd998",
+          "score_margin": 0.15076923370361328
+        },
+        {
+          "order_index": 341,
+          "order_id": "aa54ba78-924a-45c7-a182-d8d100b3d130",
+          "remove_local": 18,
+          "add_local": 14,
+          "remove_rid": "#-1:f6307913-eba3-4fee-b846-1fc3579d1ac3",
+          "add_rid": "#-1:d38962d1-1f9c-429c-8711-d466f3efa3c5",
+          "score_margin": 0.15019279718399048
+        },
+        {
+          "order_index": 532,
+          "order_id": "faa00ed5-c0b9-445e-98ac-671035a4a239",
+          "remove_local": 10,
+          "add_local": 12,
+          "remove_rid": "#-1:5173cc70-f178-481c-865b-a5a5f0d3c249",
+          "add_rid": "#-1:76e3a0a3-1943-4a4c-ad08-d31dc732cb73",
+          "score_margin": 0.1375901997089386
+        },
+        {
+          "order_index": 341,
+          "order_id": "aa54ba78-924a-45c7-a182-d8d100b3d130",
+          "remove_local": 18,
+          "add_local": 0,
+          "remove_rid": "#-1:f6307913-eba3-4fee-b846-1fc3579d1ac3",
+          "add_rid": "#-1:4869f31f-0c44-4fd8-8557-aea5f4e3ea62",
+          "score_margin": 0.1358620524406433
+        },
+        {
+          "order_index": 533,
+          "order_id": "fad26f6d-c956-4598-9639-39fef649b32c",
+          "remove_local": 9,
+          "add_local": 7,
+          "remove_rid": "#-1:e9e6853e-519f-46b4-821e-0ab0fe97ef51",
+          "add_rid": "#-1:d779f103-178f-4a59-8d44-e8a5ee182ba1",
+          "score_margin": 0.1280902624130249
+        },
+        {
+          "order_index": 15,
+          "order_id": "06d346bc-1345-4825-9e01-546cc30ac6ba",
+          "remove_local": 19,
+          "add_local": 21,
+          "remove_rid": "#-1:3005e057-e449-4a72-8269-c9b7d32dfaa7",
+          "add_rid": "#-1:a8f691fe-fb68-4083-bc58-267227343e3c",
+          "score_margin": 0.12665647268295288
+        },
+        {
+          "order_index": 380,
+          "order_id": "b92c1c42-bc69-48fa-b5c6-7bbd2635a15b",
+          "remove_local": 0,
+          "add_local": 1,
+          "remove_rid": "#-1:46dad958-ef00-43e3-9cc6-b2312a363aea",
+          "add_rid": "#-1:e98f47f3-1430-4bab-bd66-cd79564e73e6",
+          "score_margin": 0.12491029500961304
+        },
+        {
+          "order_index": 341,
+          "order_id": "aa54ba78-924a-45c7-a182-d8d100b3d130",
+          "remove_local": 18,
+          "add_local": 22,
+          "remove_rid": "#-1:f6307913-eba3-4fee-b846-1fc3579d1ac3",
+          "add_rid": "#-1:13b01a84-3dbb-4865-adfb-6dc028159154",
+          "score_margin": 0.119986891746521
+        },
+        {
+          "order_index": 184,
+          "order_id": "625ffce7-65c5-4657-9104-4148b4113130",
+          "remove_local": 12,
+          "add_local": 19,
+          "remove_rid": "#-1:05a9320e-1492-477f-a9e4-2c6d879fbd49",
+          "add_rid": "#-1:f938c759-1beb-4c9f-a283-44a9d5ae5a91",
+          "score_margin": 0.11199259757995605
+        },
+        {
+          "order_index": 341,
+          "order_id": "aa54ba78-924a-45c7-a182-d8d100b3d130",
+          "remove_local": 17,
+          "add_local": 7,
+          "remove_rid": "#-1:072cd141-f607-4e6c-aa6f-97d204285259",
+          "add_rid": "#-1:a04e72e5-9609-4cf5-99b1-55d93a7891ac",
+          "score_margin": 0.10783344507217407
+        },
+        {
+          "order_index": 184,
+          "order_id": "625ffce7-65c5-4657-9104-4148b4113130",
+          "remove_local": 18,
+          "add_local": 19,
+          "remove_rid": "#-1:766a8ee0-a46f-460f-a02d-6314e6cc1071",
+          "add_rid": "#-1:f938c759-1beb-4c9f-a283-44a9d5ae5a91",
+          "score_margin": 0.10210928320884705
+        },
+        {
+          "order_index": 341,
+          "order_id": "aa54ba78-924a-45c7-a182-d8d100b3d130",
+          "remove_local": 16,
+          "add_local": 14,
+          "remove_rid": "#-1:f1f3b0c8-e761-4a18-b447-73f17210b0bf",
+          "add_rid": "#-1:d38962d1-1f9c-429c-8711-d466f3efa3c5",
+          "score_margin": 0.09465920925140381
+        },
+        {
+          "order_index": 341,
+          "order_id": "aa54ba78-924a-45c7-a182-d8d100b3d130",
+          "remove_local": 8,
+          "add_local": 14,
+          "remove_rid": "#-1:e8fce4fe-875b-4c40-9de6-77ba54e4e1ec",
+          "add_rid": "#-1:d38962d1-1f9c-429c-8711-d466f3efa3c5",
+          "score_margin": 0.09147465229034424
+        },
+        {
+          "order_index": 533,
+          "order_id": "fad26f6d-c956-4598-9639-39fef649b32c",
+          "remove_local": 9,
+          "add_local": 1,
+          "remove_rid": "#-1:e9e6853e-519f-46b4-821e-0ab0fe97ef51",
+          "add_rid": "#-1:a6f7eb99-a84e-41d4-a903-5e31451dc4d8",
+          "score_margin": 0.0891992449760437
+        },
+        {
+          "order_index": 171,
+          "order_id": "5b2934e0-b8fd-4f39-9287-15c201fd4c08",
+          "remove_local": 1,
+          "add_local": 8,
+          "remove_rid": "#-1:a6ed7286-b4e4-4d08-8a3c-cb4f06e65eb6",
+          "add_rid": "#-1:7616f447-bb42-4ee1-9ca0-2f3a563f143d",
+          "score_margin": 0.08885830640792847
+        }
+      ],
+      "test_top60_expected_positive_count": 60
+    },
+    "site_hist": {
+      "oof_tp": 2829,
+      "oof_delta_tp": 34,
+      "action_curves": {
+        "5": {
+          "sum_delta": -1,
+          "positive": 2,
+          "negative": 3,
+          "mean": -0.2
+        },
+        "10": {
+          "sum_delta": -3,
+          "positive": 2,
+          "negative": 5,
+          "mean": -0.3
+        },
+        "20": {
+          "sum_delta": -6,
+          "positive": 4,
+          "negative": 10,
+          "mean": -0.3
+        },
+        "30": {
+          "sum_delta": -8,
+          "positive": 6,
+          "negative": 14,
+          "mean": -0.26666666666666666
+        },
+        "40": {
+          "sum_delta": -6,
+          "positive": 10,
+          "negative": 16,
+          "mean": -0.15
+        },
+        "60": {
+          "sum_delta": 0,
+          "positive": 16,
+          "negative": 16,
+          "mean": 0.0
+        },
+        "100": {
+          "sum_delta": 7,
+          "positive": 30,
+          "negative": 23,
+          "mean": 0.07
+        }
+      },
+      "test_candidate_count": 2688,
+      "test_top30": [
+        {
+          "order_index": 532,
+          "order_id": "faa00ed5-c0b9-445e-98ac-671035a4a239",
+          "remove_local": 10,
+          "add_local": 11,
+          "remove_rid": "#-1:5173cc70-f178-481c-865b-a5a5f0d3c249",
+          "add_rid": "#-1:d4f3c427-0b59-41d3-8208-18c218433c27",
+          "score_margin": 0.5267012119293213
+        },
+        {
+          "order_index": 532,
+          "order_id": "faa00ed5-c0b9-445e-98ac-671035a4a239",
+          "remove_local": 10,
+          "add_local": 2,
+          "remove_rid": "#-1:5173cc70-f178-481c-865b-a5a5f0d3c249",
+          "add_rid": "#-1:f977e0bf-42cd-4e28-88e9-128508fe3131",
+          "score_margin": 0.5207053422927856
+        },
+        {
+          "order_index": 125,
+          "order_id": "441995e6-e153-4e40-af0f-d0eb20ddcfa5",
+          "remove_local": 0,
+          "add_local": 1,
+          "remove_rid": "#-1:63de300f-5195-4f21-8e5d-244d93516979",
+          "add_rid": "#-1:53f23b3e-c801-45d7-8d31-1cb8b8809946",
+          "score_margin": 0.46974432468414307
+        },
+        {
+          "order_index": 339,
+          "order_id": "aa321b94-f3d9-45cf-b1ee-f3a1fe38da68",
+          "remove_local": 2,
+          "add_local": 1,
+          "remove_rid": "#-1:dab0445c-e5d2-4336-8694-4e271b8b1117",
+          "add_rid": "#-1:429df297-9a4e-462a-a377-ae4cd47eda24",
+          "score_margin": 0.4586341083049774
+        },
+        {
+          "order_index": 236,
+          "order_id": "7b1b39e5-954a-418c-9ed7-03285444ea24",
+          "remove_local": 2,
+          "add_local": 1,
+          "remove_rid": "#-1:552046b6-e16f-4a58-90d4-bb2c3433ccb4",
+          "add_rid": "#-1:9e23d2aa-04a7-45dc-ba50-0453d34937d4",
+          "score_margin": 0.3421550393104553
+        },
+        {
+          "order_index": 27,
+          "order_id": "0e755fc0-8819-4420-b701-1f84ec0e59de",
+          "remove_local": 0,
+          "add_local": 2,
+          "remove_rid": "#-1:da579a04-4b4a-4e5f-88e7-8f434b4622e7",
+          "add_rid": "#-1:0f95a457-9523-4b28-9a93-81b08542d6b4",
+          "score_margin": 0.29077833890914917
+        },
+        {
+          "order_index": 532,
+          "order_id": "faa00ed5-c0b9-445e-98ac-671035a4a239",
+          "remove_local": 10,
+          "add_local": 12,
+          "remove_rid": "#-1:5173cc70-f178-481c-865b-a5a5f0d3c249",
+          "add_rid": "#-1:76e3a0a3-1943-4a4c-ad08-d31dc732cb73",
+          "score_margin": 0.22282034158706665
+        },
+        {
+          "order_index": 533,
+          "order_id": "fad26f6d-c956-4598-9639-39fef649b32c",
+          "remove_local": 9,
+          "add_local": 7,
+          "remove_rid": "#-1:e9e6853e-519f-46b4-821e-0ab0fe97ef51",
+          "add_rid": "#-1:d779f103-178f-4a59-8d44-e8a5ee182ba1",
+          "score_margin": 0.2118282914161682
+        },
+        {
+          "order_index": 314,
+          "order_id": "9ca5e12f-f73f-472c-99b3-8e74c01272fe",
+          "remove_local": 3,
+          "add_local": 0,
+          "remove_rid": "#-1:878ee284-26b7-41c1-b7dc-47e528d71504",
+          "add_rid": "#-1:247d7153-ba7f-4012-86c3-2d6b9b7e9730",
+          "score_margin": 0.20898684859275818
+        },
+        {
+          "order_index": 142,
+          "order_id": "4c2b3b06-a6a2-4c1b-9734-def3d1f849d8",
+          "remove_local": 0,
+          "add_local": 4,
+          "remove_rid": "#-1:478860c0-cfb6-4e87-8e69-14f09e94b850",
+          "add_rid": "#-1:66facd91-e281-4331-bbae-04ab8bd9746d",
+          "score_margin": 0.19984598457813263
+        },
+        {
+          "order_index": 380,
+          "order_id": "b92c1c42-bc69-48fa-b5c6-7bbd2635a15b",
+          "remove_local": 0,
+          "add_local": 1,
+          "remove_rid": "#-1:46dad958-ef00-43e3-9cc6-b2312a363aea",
+          "add_rid": "#-1:e98f47f3-1430-4bab-bd66-cd79564e73e6",
+          "score_margin": 0.1950383186340332
+        },
+        {
+          "order_index": 142,
+          "order_id": "4c2b3b06-a6a2-4c1b-9734-def3d1f849d8",
+          "remove_local": 0,
+          "add_local": 3,
+          "remove_rid": "#-1:478860c0-cfb6-4e87-8e69-14f09e94b850",
+          "add_rid": "#-1:aee1adf1-be6a-4986-bd73-4fda938342fc",
+          "score_margin": 0.1840491145849228
+        },
+        {
+          "order_index": 303,
+          "order_id": "9738b42a-7360-4763-8895-0e84599b4d60",
+          "remove_local": 9,
+          "add_local": 8,
+          "remove_rid": "#-1:898f080e-40e1-42c7-84a0-05d7a3a7c5c3",
+          "add_rid": "#-1:7feea0e0-d89e-47b4-98e7-836da80b44cf",
+          "score_margin": 0.1653609573841095
+        },
+        {
+          "order_index": 184,
+          "order_id": "625ffce7-65c5-4657-9104-4148b4113130",
+          "remove_local": 12,
+          "add_local": 48,
+          "remove_rid": "#-1:05a9320e-1492-477f-a9e4-2c6d879fbd49",
+          "add_rid": "#-1:224b57dc-60c0-4fc8-a6ab-ad594824e66b",
+          "score_margin": 0.15452581644058228
+        },
+        {
+          "order_index": 533,
+          "order_id": "fad26f6d-c956-4598-9639-39fef649b32c",
+          "remove_local": 9,
+          "add_local": 1,
+          "remove_rid": "#-1:e9e6853e-519f-46b4-821e-0ab0fe97ef51",
+          "add_rid": "#-1:a6f7eb99-a84e-41d4-a903-5e31451dc4d8",
+          "score_margin": 0.15268856287002563
+        },
+        {
+          "order_index": 184,
+          "order_id": "625ffce7-65c5-4657-9104-4148b4113130",
+          "remove_local": 18,
+          "add_local": 48,
+          "remove_rid": "#-1:766a8ee0-a46f-460f-a02d-6314e6cc1071",
+          "add_rid": "#-1:224b57dc-60c0-4fc8-a6ab-ad594824e66b",
+          "score_margin": 0.15216851234436035
+        },
+        {
+          "order_index": 184,
+          "order_id": "625ffce7-65c5-4657-9104-4148b4113130",
+          "remove_local": 12,
+          "add_local": 53,
+          "remove_rid": "#-1:05a9320e-1492-477f-a9e4-2c6d879fbd49",
+          "add_rid": "#-1:a8f28178-4795-4f26-84d6-1791944fb245",
+          "score_margin": 0.1390513777732849
+        },
+        {
+          "order_index": 532,
+          "order_id": "faa00ed5-c0b9-445e-98ac-671035a4a239",
+          "remove_local": 10,
+          "add_local": 13,
+          "remove_rid": "#-1:5173cc70-f178-481c-865b-a5a5f0d3c249",
+          "add_rid": "#-1:915eef53-ee5f-4650-8570-01f2b0b0380d",
+          "score_margin": 0.13805481791496277
+        },
+        {
+          "order_index": 184,
+          "order_id": "625ffce7-65c5-4657-9104-4148b4113130",
+          "remove_local": 12,
+          "add_local": 7,
+          "remove_rid": "#-1:05a9320e-1492-477f-a9e4-2c6d879fbd49",
+          "add_rid": "#-1:4b6983f7-ec6d-4d11-9e4f-9c12c47dd998",
+          "score_margin": 0.13736224174499512
+        },
+        {
+          "order_index": 184,
+          "order_id": "625ffce7-65c5-4657-9104-4148b4113130",
+          "remove_local": 18,
+          "add_local": 53,
+          "remove_rid": "#-1:766a8ee0-a46f-460f-a02d-6314e6cc1071",
+          "add_rid": "#-1:a8f28178-4795-4f26-84d6-1791944fb245",
+          "score_margin": 0.136694073677063
+        },
+        {
+          "order_index": 184,
+          "order_id": "625ffce7-65c5-4657-9104-4148b4113130",
+          "remove_local": 18,
+          "add_local": 7,
+          "remove_rid": "#-1:766a8ee0-a46f-460f-a02d-6314e6cc1071",
+          "add_rid": "#-1:4b6983f7-ec6d-4d11-9e4f-9c12c47dd998",
+          "score_margin": 0.1350049376487732
+        },
+        {
+          "order_index": 533,
+          "order_id": "fad26f6d-c956-4598-9639-39fef649b32c",
+          "remove_local": 8,
+          "add_local": 7,
+          "remove_rid": "#-1:45f33f70-9bd9-4726-8a18-995f324dd172",
+          "add_rid": "#-1:d779f103-178f-4a59-8d44-e8a5ee182ba1",
+          "score_margin": 0.12870538234710693
+        },
+        {
+          "order_index": 303,
+          "order_id": "9738b42a-7360-4763-8895-0e84599b4d60",
+          "remove_local": 5,
+          "add_local": 8,
+          "remove_rid": "#-1:18d342c5-d25e-45f4-9b1d-dcbdba1120bc",
+          "add_rid": "#-1:7feea0e0-d89e-47b4-98e7-836da80b44cf",
+          "score_margin": 0.12707123160362244
+        },
+        {
+          "order_index": 533,
+          "order_id": "fad26f6d-c956-4598-9639-39fef649b32c",
+          "remove_local": 4,
+          "add_local": 7,
+          "remove_rid": "#-1:f9d64afc-8fcb-4d95-9ff0-37f50f7d2783",
+          "add_rid": "#-1:d779f103-178f-4a59-8d44-e8a5ee182ba1",
+          "score_margin": 0.12421584129333496
+        },
+        {
+          "order_index": 442,
+          "order_id": "d5376a71-c48e-4351-ba60-f982778b3eb4",
+          "remove_local": 7,
+          "add_local": 9,
+          "remove_rid": "#-1:a37892ad-1380-4b50-b583-162d0ac4b26d",
+          "add_rid": "#-1:0c809583-390f-4d16-9b91-c4fb1e99c5c2",
+          "score_margin": 0.11123821139335632
+        },
+        {
+          "order_index": 442,
+          "order_id": "d5376a71-c48e-4351-ba60-f982778b3eb4",
+          "remove_local": 8,
+          "add_local": 9,
+          "remove_rid": "#-1:80c55c8d-719d-4720-bb6e-7803308a4902",
+          "add_rid": "#-1:0c809583-390f-4d16-9b91-c4fb1e99c5c2",
+          "score_margin": 0.11035960912704468
+        },
+        {
+          "order_index": 33,
+          "order_id": "1117ad03-8891-4bf6-854c-612bf19fdae4",
+          "remove_local": 0,
+          "add_local": 2,
+          "remove_rid": "#-1:21e8a85d-b692-481b-a9ae-fb979094dca3",
+          "add_rid": "#-1:08baefd1-6af0-4be4-88f5-6fa77d069d9d",
+          "score_margin": 0.10396909713745117
+        },
+        {
+          "order_index": 341,
+          "order_id": "aa54ba78-924a-45c7-a182-d8d100b3d130",
+          "remove_local": 8,
+          "add_local": 14,
+          "remove_rid": "#-1:e8fce4fe-875b-4c40-9de6-77ba54e4e1ec",
+          "add_rid": "#-1:d38962d1-1f9c-429c-8711-d466f3efa3c5",
+          "score_margin": 0.10085755586624146
+        },
+        {
+          "order_index": 341,
+          "order_id": "aa54ba78-924a-45c7-a182-d8d100b3d130",
+          "remove_local": 8,
+          "add_local": 7,
+          "remove_rid": "#-1:e8fce4fe-875b-4c40-9de6-77ba54e4e1ec",
+          "add_rid": "#-1:a04e72e5-9609-4cf5-99b1-55d93a7891ac",
+          "score_margin": 0.09150981903076172
+        },
+        {
+          "order_index": 15,
+          "order_id": "06d346bc-1345-4825-9e01-546cc30ac6ba",
+          "remove_local": 19,
+          "add_local": 21,
+          "remove_rid": "#-1:3005e057-e449-4a72-8269-c9b7d32dfaa7",
+          "add_rid": "#-1:a8f691fe-fb68-4083-bc58-267227343e3c",
+          "score_margin": 0.08926743268966675
+        }
+      ],
+      "test_top60_expected_positive_count": 56
+    }
+  }
+}

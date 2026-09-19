@@ -299,8 +299,14 @@ def validate_submission(path: Path, test_records: list[dict], total: int = 1059)
                 source = nodes.get(item["@rid"])
                 if source is None:
                     raise ValueError((order_id, item["@rid"]))
+                # ``semantic_records`` keeps normalized modeling fields at the
+                # alarm level and the exact submission payload under
+                # ``source``.  Comparing a submitted raw location with the
+                # normalized location rejects valid files, including the
+                # already-scored champion.
+                submission_source = source.get("source", source)
                 for field in ("title", "location", "reason"):
-                    if item.get(field, "") != source.get(field, ""):
+                    if item.get(field, "") != submission_source.get(field, ""):
                         raise ValueError((order_id, item["@rid"], field))
             count += len(roots)
     if seen != set(expected) or count != total:

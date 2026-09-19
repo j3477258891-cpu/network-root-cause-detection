@@ -1,0 +1,20 @@
+Loading data...
+orders=1634 rows=9334 groups=1040 fold_sizes=[327, 327, 327, 327, 326]
+fold=0 trained (75s)
+fold=1 trained (112s)
+fold=2 trained (147s)
+fold=3 trained (183s)
+fold=4 trained (219s)
+DIVERSITY max_pearson=0.9910 max_argmax_consistency=0.8384 ok=False
+model 0 OOF f1=0.908120 tp=2807 fp=334 fn=234
+model 1 OOF f1=0.909856 tp=2811 fp=327 fn=230
+model 2 OOF f1=0.907200 tp=2835 fp=374 fn=206
+model 3 OOF f1=0.909061 tp=2799 fp=318 fn=242
+model 4 OOF f1=0.905117 tp=2795 fp=340 fn=246
+fold=0 weights=[np.float64(0.0), np.float64(0.15), np.float64(0.0), np.float64(0.4), np.float64(0.45)] ref_f1=0.914489 val_fusion=0.924806 val_best_single=0.910995 gain=+0.013811
+fold=1 weights=[np.float64(0.05), np.float64(0.1), np.float64(0.05), np.float64(0.35), np.float64(0.45)] ref_f1=0.913428 val_fusion=0.923423 val_best_single=0.922272 gain=+0.001151
+fold=2 weights=[np.float64(0.05), np.float64(0.2), np.float64(0.0), np.float64(0.55), np.float64(0.2)] ref_f1=0.916952 val_fusion=0.913043 val_best_single=0.909091 gain=+0.003953
+fold=3 weights=[np.float64(0.05), np.float64(0.5), np.float64(0.05), np.float64(0.35), np.float64(0.05)] ref_f1=0.913929 val_fusion=0.925349 val_best_single=0.921031 gain=+0.004318
+fold=4 weights=[np.float64(0.0), np.float64(0.5), np.float64(0.0), np.float64(0.35), np.float64(0.15)] ref_f1=0.921496 val_fusion=0.895451 val_best_single=0.894297 gain=+0.001154
+FUSION weights=[0.062, 0.25, 0.0, 0.438, 0.25] OOF=0.914794 best_single=0.909856 gain=+0.004938 improved_folds=5/5 G1=True G2=True
+FUSION SKIPPED: diversity check failed

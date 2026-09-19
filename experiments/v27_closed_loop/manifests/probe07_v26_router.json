@@ -1,0 +1,60 @@
+{
+  "batch_id": "probe07_v26_router",
+  "kind": "planned_probe",
+  "parent": null,
+  "status": "scored",
+  "decision": "accept",
+  "action_ids": [
+    "v26_router_abe0d010"
+  ],
+  "actions": [
+    {
+      "action_id": "v26_router_abe0d010",
+      "order_id": "abe0d010-6809-4a4d-9ae6-ee7f320f699d",
+      "remove_rids": [],
+      "add_rids": [
+        "#-1:0890a904-295a-4684-991e-5bfabd668f46"
+      ],
+      "source": "v26_router",
+      "subtype": "v26_router",
+      "expected_gain": 0.5,
+      "evidence": {
+        "candidate": "D:\\zgyidong\\experiments\\v26_selective_router\\submissions\\v26_selective_error_router_p1059.csv"
+      },
+      "probe_batch": null,
+      "online_delta_tp": null
+    }
+  ],
+  "validation": {
+    "actions": 1,
+    "orders": 1,
+    "removed": 0,
+    "added": 1,
+    "prediction_delta": 1,
+    "sources": {
+      "v26_router": 1
+    }
+  },
+  "predictions": 1060,
+  "prediction_delta": 1,
+  "submission": "D:\\zgyidong\\experiments\\v27_closed_loop\\submissions\\probe07_v26_router.csv",
+  "manifest": "D:\\zgyidong\\experiments\\v27_closed_loop\\manifests\\probe07_v26_router.json",
+  "sha256": "bdf0ce3959f64f6079e8d23e9af4617dab1f091cc637e3c3e9f223c65620b927",
+  "score_possibilities": [
+    {
+      "delta_tp": 0,
+      "tp": 953,
+      "score": 0.905893536
+    },
+    {
+      "delta_tp": 1,
+      "tp": 954,
+      "score": 0.906844106
+    }
+  ],
+  "score": 0.906844,
+  "reconstructed_score": 0.9068441064638784,
+  "tp": 954,
+  "delta_tp": 1,
+  "score_gain": 0.0005201064638783448
+}

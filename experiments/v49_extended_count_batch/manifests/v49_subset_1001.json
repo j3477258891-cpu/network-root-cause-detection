@@ -1,0 +1,115 @@
+{
+  "probe_id": "v49_subset_1001",
+  "baseline": "D:\\zgyidong\\experiments\\v30_meta_stack\\submissions\\v30_cross_order_top5.csv",
+  "fixed_base": "v37_exact_corrections",
+  "path": "D:\\zgyidong\\experiments\\v49_extended_count_batch\\submissions\\v49_subset_1001.csv",
+  "candidate_action_ids": [
+    "v36_count_delete_1",
+    "v49_stable_add_001"
+  ],
+  "actions": [
+    {
+      "action_id": "v37_exact_001",
+      "order_id": "d5376a71-c48e-4351-ba60-f982778b3eb4",
+      "remove_rids": [
+        "#-1:0c809583-390f-4d16-9b91-c4fb1e99c5c2"
+      ],
+      "add_rids": [
+        "#-1:e401b7b4-697f-434e-8437-4b2136d6904f"
+      ],
+      "source": "historical_leaderboard_equations",
+      "expected_gain": null,
+      "evidence": {
+        "proof": "label fixed in every binary solution of all scored equations"
+      }
+    },
+    {
+      "action_id": "v36_count_delete_1",
+      "order_id": "25a37559-7249-4fe0-bfd9-97007b9f7c5d",
+      "remove_rids": [
+        "#-1:622a2277-8e4d-4b77-aefb-1f90747752a2"
+      ],
+      "add_rids": [],
+      "source": "v36_selective_count_consensus",
+      "expected_gain": 0.891822616259257,
+      "evidence": {
+        "order_id": "25a37559-7249-4fe0-bfd9-97007b9f7c5d",
+        "rid": "#-1:622a2277-8e4d-4b77-aefb-1f90747752a2",
+        "kind": "delete",
+        "current_count": 2,
+        "proposed_count": 1,
+        "support": 6,
+        "mean_margin": 0.891822616259257,
+        "min_margin": 0.8765264749526978,
+        "node_score": 0.39845284819602966,
+        "probability_models": [
+          "D:\\zgyidong\\experiments\\v34_count_model\\station_alpha_0_test.npy",
+          "D:\\zgyidong\\experiments\\v34_count_model\\station_alpha_1_test.npy",
+          "D:\\zgyidong\\experiments\\v34_count_model\\station_alpha_2_test.npy",
+          "D:\\zgyidong\\experiments\\v34_count_model\\template_alpha_0_test.npy",
+          "D:\\zgyidong\\experiments\\v34_count_model\\template_alpha_1_test.npy",
+          "D:\\zgyidong\\experiments\\v34_count_model\\template_alpha_2_test.npy"
+        ]
+      }
+    },
+    {
+      "action_id": "v49_stable_add_001",
+      "order_id": "c27a096b-576b-4fb7-9fb2-7f04feab066d",
+      "remove_rids": [],
+      "add_rids": [
+        "#-1:bdb85be4-661a-4a6a-9f56-fbff53833e80"
+      ],
+      "source": "v48_station_stable_stratum",
+      "expected_gain": null,
+      "evidence": {
+        "row": 2384,
+        "rank": 5,
+        "rank_bin": "r01_10",
+        "order_index": 406,
+        "order_id": "c27a096b-576b-4fb7-9fb2-7f04feab066d",
+        "rid": "#-1:bdb85be4-661a-4a6a-9f56-fbff53833e80",
+        "kind": "add",
+        "title": "射频单元IR接口异常告警",
+        "vendor": "设备商乙",
+        "device_type": "",
+        "deployment": "",
+        "radio": "",
+        "timeline": "111111",
+        "current_count": 1,
+        "alarm_count": 2,
+        "rank_average": 0.7039954662322998,
+        "score_median": 0.37720875442028046,
+        "agreement": 1,
+        "scores": {
+          "v11": 0.26164349913597107,
+          "v13": 0.3261115252971649,
+          "v19": 0.9974883794784546,
+          "station": 0.39192503690719604,
+          "domain": 0.45235124230384827,
+          "consensus": 0.36249247193336487
+        },
+        "matched_rule": {
+          "fields": [
+            "rank_bin"
+          ],
+          "values": [
+            "r01_10"
+          ],
+          "support": 10,
+          "correct": 8,
+          "precision": 0.8,
+          "fold_count": 4,
+          "fold_precision": {
+            "0": 0.6666666666666666,
+            "1": 1.0,
+            "3": 1.0,
+            "4": 0.6666666666666666
+          },
+          "beta_lower_90": 0.5848430682740908
+        }
+      }
+    }
+  ],
+  "predictions": 1035,
+  "sha256": "2e4790c49db4b41fd55d7e3fe2e1a528f6897368a4a9a7a8393509d7be3d197c"
+}

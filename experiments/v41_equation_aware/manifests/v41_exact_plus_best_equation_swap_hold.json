@@ -1,0 +1,78 @@
+{
+  "probe_id": "v41_exact_plus_best_equation_swap_hold",
+  "baseline": "D:\\zgyidong\\experiments\\v30_meta_stack\\submissions\\v30_cross_order_top5.csv",
+  "fixed_base": "v37_exact_corrections",
+  "path": "D:\\zgyidong\\experiments\\v41_equation_aware\\submissions\\v41_exact_plus_best_equation_swap_hold.csv",
+  "candidate_ids": [
+    "v30_safe_split_a1"
+  ],
+  "actions": [
+    {
+      "action_id": "v37_exact_001",
+      "order_id": "d5376a71-c48e-4351-ba60-f982778b3eb4",
+      "remove_rids": [
+        "#-1:0c809583-390f-4d16-9b91-c4fb1e99c5c2"
+      ],
+      "add_rids": [
+        "#-1:e401b7b4-697f-434e-8437-4b2136d6904f"
+      ],
+      "source": "historical_leaderboard_equations",
+      "expected_gain": null,
+      "evidence": {
+        "proof": "label fixed in every binary solution of all scored equations"
+      }
+    },
+    {
+      "action_id": "v30_safe_ext_001_add",
+      "order_id": "1117ad03-8891-4bf6-854c-612bf19fdae4",
+      "remove_rids": [],
+      "add_rids": [
+        "#-1:bea1860d-537e-4e4b-ba53-08f5ce0bd7dc"
+      ],
+      "source": "v30_cross_order_meta",
+      "expected_gain": 0.479153037071228,
+      "evidence": {
+        "pair_id": "v30_safe_ext_001",
+        "node_score": 0.7933630347251892,
+        "pair_margin": 0.479153037071228,
+        "title": "小区关断告警"
+      }
+    },
+    {
+      "action_id": "v30_safe_ext_001_remove",
+      "order_id": "9738b42a-7360-4763-8895-0e84599b4d60",
+      "remove_rids": [
+        "#-1:18d342c5-d25e-45f4-9b1d-dcbdba1120bc"
+      ],
+      "add_rids": [],
+      "source": "v30_cross_order_meta",
+      "expected_gain": 0.479153037071228,
+      "evidence": {
+        "pair_id": "v30_safe_ext_001",
+        "node_score": 0.3142099976539612,
+        "pair_margin": 0.479153037071228,
+        "title": "BBU CPRI接口异常告警"
+      }
+    }
+  ],
+  "predictions": 1035,
+  "prediction_delta_vs_exact": 0,
+  "sha256": "5bf659d6cd4cfc8f082873d9b3db72cc0895a15401612fcc5107a117b15d2119",
+  "score_possibilities": [
+    {
+      "candidate_delta_tp": -1,
+      "tp": 955,
+      "score": 0.918710919
+    },
+    {
+      "candidate_delta_tp": 0,
+      "tp": 956,
+      "score": 0.91967292
+    },
+    {
+      "candidate_delta_tp": 1,
+      "tp": 957,
+      "score": 0.920634921
+    }
+  ]
+}

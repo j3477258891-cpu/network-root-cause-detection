@@ -1,0 +1,1287 @@
+{
+    "time": 1760059044.502978,
+    "nodes": [
+        {
+            "@rid": "#87:290",
+            "@class": "BaseStation",
+            "zh_label": "西北2-Z5H",
+            "in_dependOn": [
+                "#69:18806"
+            ],
+            "out_dependOn": [
+                "#71:8816",
+                "#74:272311"
+            ],
+            "vendor_name": "设备商甲",
+            "device_type": "宏基站"
+        },
+        {
+            "@rid": "#133:361",
+            "@class": "TransCircuit",
+            "zh_label": "4位置1传输1机房-位置21传输1机房-FE0001/P",
+            "in_dependOn": [
+                "#74:272311",
+                "#73:431369",
+                "#69:431343",
+                "#70:431414",
+                "#71:431416"
+            ],
+            "out_dependOn": [
+                "#69:272312",
+                "#70:272311"
+            ]
+        },
+        {
+            "@rid": "#143:354",
+            "@class": "UTransZPort",
+            "zh_label": "32-50008-核心-D9-01 ZXCTN6700-32-0-1-17-PGEAT1-ptp11(动环监控)",
+            "in_dependOn": [
+                "#70:272311",
+                "#73:425885"
+            ],
+            "out_dependOn": [
+                "#72:272311"
+            ]
+        },
+        {
+            "@rid": "#162:475",
+            "@class": "TransBoard",
+            "zh_label": "32-50008-核心-D9-01 ZXCTN6700-32-0-1-17-PGEAT1",
+            "in_dependOn": [
+                "#72:272311"
+            ],
+            "out_dependOn": [
+                "#74:272310"
+            ]
+        },
+        {
+            "@rid": "#167:129",
+            "@class": "TransDevice",
+            "zh_label": "32-50008-核心-D9-01 ZXCTN6700-32",
+            "service_level": "城域汇聚",
+            "in_dependOn": [
+                "#74:272310"
+            ],
+            "out_dependOn": [
+                "#69:272311"
+            ]
+        },
+        {
+            "@rid": "#135:7",
+            "@class": "UTransAPort",
+            "zh_label": "33-55424---ZXCTN 6180H-0-1-8-OIGE8A-ptp1(BN:ME{306888806},EQ={/r=0/sh=1/sl=8},PTP={/p=1_1})",
+            "in_dependOn": [
+                "#69:272312"
+            ],
+            "out_dependOn": [
+                "#71:272311"
+            ]
+        },
+        {
+            "@rid": "#161:475",
+            "@class": "TransBoard",
+            "zh_label": "33-55424---ZXCTN 6180H-0-1-8-OIGE8A",
+            "in_dependOn": [
+                "#71:272311",
+                "#72:385423",
+                "#73:392517",
+                "#71:435086"
+            ],
+            "out_dependOn": [
+                "#73:272311"
+            ]
+        },
+        {
+            "@rid": "#170:17",
+            "@class": "TransDevice",
+            "zh_label": "33-55424---ZXCTN 6180H",
+            "service_level": "城域接入",
+            "in_dependOn": [
+                "#71:216512",
+                "#72:216511",
+                "#74:216509",
+                "#69:272043",
+                "#73:272311"
+            ],
+            "out_dependOn": [
+                "#72:216508"
+            ]
+        },
+        {
+            "@rid": "#93:289",
+            "@class": "BBU",
+            "ldn": "Equipment=1",
+            "in_dependOn": [
+                "#71:8816",
+                "#73:432525"
+            ],
+            "vendor_name": "设备商甲",
+            "out_dependOn": [
+                "#72:8816",
+                "#73:8816",
+                "#74:8815",
+                "#69:8816",
+                "#70:8816"
+            ]
+        },
+        {
+            "@rid": "#104:1568",
+            "@class": "Board",
+            "ldn": "Equipment=1,ReplaceableUnit=VBP_1_8",
+            "in_dependOn": [
+                "#70:8816"
+            ],
+            "vendor_name": "设备商甲",
+            "out_dependOn": [
+                "#70:18806",
+                "#71:18806",
+                "#69:18805"
+            ]
+        },
+        {
+            "@rid": "#109:5977",
+            "@class": "RiPort",
+            "ldn": "Equipment=1,ReplaceableUnit=VBP_1_8,RiPort=OF3",
+            "in_dependOn": [
+                "#69:18805"
+            ],
+            "vendor_name": "设备商甲",
+            "out_dependOn": [
+                "#72:18804"
+            ]
+        },
+        {
+            "@rid": "#106:5975",
+            "@class": "RiPort",
+            "ldn": "Equipment=1,ReplaceableUnit=63,RiPort=OPT1",
+            "in_dependOn": [
+                "#72:18804"
+            ],
+            "vendor_name": "设备商甲",
+            "out_dependOn": [
+                "#69:18802"
+            ]
+        },
+        {
+            "@rid": "#116:1882",
+            "@class": "RRU",
+            "in_dependOn": [
+                "#69:18802"
+            ],
+            "vendor_name": "设备商甲",
+            "ldn": "Equipment=1,ReplaceableUnit=63",
+            "out_dependOn": [
+                "#70:18801"
+            ]
+        },
+        {
+            "@rid": "#117:2685",
+            "@class": "Cell",
+            "in_dependOn": [
+                "#70:18801"
+            ],
+            "vendor_name": "设备商甲"
+        },
+        {
+            "@rid": "#105:5977",
+            "@class": "RiPort",
+            "ldn": "Equipment=1,ReplaceableUnit=VBP_1_8,RiPort=OF1",
+            "in_dependOn": [
+                "#71:18806"
+            ],
+            "vendor_name": "设备商甲",
+            "out_dependOn": [
+                "#74:18804"
+            ]
+        },
+        {
+            "@rid": "#108:5976",
+            "@class": "RiPort",
+            "ldn": "Equipment=1,ReplaceableUnit=61,RiPort=OPT1",
+            "in_dependOn": [
+                "#74:18804"
+            ],
+            "vendor_name": "设备商甲",
+            "out_dependOn": [
+                "#71:18803"
+            ]
+        },
+        {
+            "@rid": "#114:1883",
+            "@class": "RRU",
+            "in_dependOn": [
+                "#71:18803"
+            ],
+            "vendor_name": "设备商甲",
+            "ldn": "Equipment=1,ReplaceableUnit=61",
+            "out_dependOn": [
+                "#74:18801"
+            ]
+        },
+        {
+            "@rid": "#121:2684",
+            "@class": "Cell",
+            "in_dependOn": [
+                "#74:18801"
+            ],
+            "vendor_name": "设备商甲"
+        },
+        {
+            "@rid": "#110:5976",
+            "@class": "RiPort",
+            "ldn": "Equipment=1,ReplaceableUnit=VBP_1_8,RiPort=OF2",
+            "in_dependOn": [
+                "#70:18806"
+            ],
+            "vendor_name": "设备商甲",
+            "out_dependOn": [
+                "#73:18804"
+            ]
+        },
+        {
+            "@rid": "#107:5976",
+            "@class": "RiPort",
+            "ldn": "Equipment=1,ReplaceableUnit=62,RiPort=OPT1",
+            "in_dependOn": [
+                "#73:18804"
+            ],
+            "vendor_name": "设备商甲",
+            "out_dependOn": [
+                "#70:18803"
+            ]
+        },
+        {
+            "@rid": "#112:1883",
+            "@class": "RRU",
+            "in_dependOn": [
+                "#70:18803"
+            ],
+            "vendor_name": "设备商甲",
+            "ldn": "Equipment=1,ReplaceableUnit=62",
+            "out_dependOn": [
+                "#69:18801"
+            ]
+        },
+        {
+            "@rid": "#122:2684",
+            "@class": "Cell",
+            "in_dependOn": [
+                "#69:18801"
+            ],
+            "vendor_name": "设备商甲"
+        },
+        {
+            "@rid": "#103:1568",
+            "@class": "Board",
+            "ldn": "Equipment=1,ReplaceableUnit=VBP_1_7",
+            "in_dependOn": [
+                "#69:8816"
+            ],
+            "vendor_name": "设备商甲",
+            "out_dependOn": [
+                "#72:18806",
+                "#73:18805",
+                "#74:18805",
+                "#70:18805",
+                "#71:18805",
+                "#72:18805"
+            ]
+        },
+        {
+            "@rid": "#106:5976",
+            "@class": "RiPort",
+            "ldn": "Equipment=1,ReplaceableUnit=VBP_1_7,RiPort=OF6",
+            "in_dependOn": [
+                "#72:18805"
+            ],
+            "vendor_name": "设备商甲",
+            "out_dependOn": [
+                "#69:18803"
+            ]
+        },
+        {
+            "@rid": "#109:5975",
+            "@class": "RiPort",
+            "ldn": "Equipment=1,ReplaceableUnit=66,RiPort=OPT2",
+            "in_dependOn": [
+                "#69:18803"
+            ],
+            "vendor_name": "设备商甲",
+            "out_dependOn": [
+                "#72:18802"
+            ]
+        },
+        {
+            "@rid": "#113:1883",
+            "@class": "RRU",
+            "in_dependOn": [
+                "#74:18802",
+                "#72:18802"
+            ],
+            "vendor_name": "设备商甲",
+            "ldn": "Equipment=1,ReplaceableUnit=66",
+            "out_dependOn": [
+                "#72:8815",
+                "#72:18801"
+            ]
+        },
+        {
+            "@rid": "#119:2685",
+            "@class": "Cell",
+            "in_dependOn": [
+                "#72:18801"
+            ],
+            "vendor_name": "设备商甲"
+        },
+        {
+            "@rid": "#119:1127",
+            "@class": "Cell",
+            "in_dependOn": [
+                "#72:8815"
+            ],
+            "vendor_name": "设备商甲"
+        },
+        {
+            "@rid": "#105:5976",
+            "@class": "RiPort",
+            "ldn": "Equipment=1,ReplaceableUnit=VBP_1_7,RiPort=OF4",
+            "in_dependOn": [
+                "#71:18805"
+            ],
+            "vendor_name": "设备商甲",
+            "out_dependOn": [
+                "#74:18803"
+            ]
+        },
+        {
+            "@rid": "#108:5975",
+            "@class": "RiPort",
+            "ldn": "Equipment=1,ReplaceableUnit=64,RiPort=OPT2",
+            "in_dependOn": [
+                "#74:18803"
+            ],
+            "vendor_name": "设备商甲",
+            "out_dependOn": [
+                "#71:18802"
+            ]
+        },
+        {
+            "@rid": "#115:1883",
+            "@class": "RRU",
+            "in_dependOn": [
+                "#73:18802",
+                "#71:18802"
+            ],
+            "vendor_name": "设备商甲",
+            "ldn": "Equipment=1,ReplaceableUnit=64",
+            "out_dependOn": [
+                "#71:8815",
+                "#71:18801"
+            ]
+        },
+        {
+            "@rid": "#118:2685",
+            "@class": "Cell",
+            "in_dependOn": [
+                "#71:18801"
+            ],
+            "vendor_name": "设备商甲"
+        },
+        {
+            "@rid": "#118:1127",
+            "@class": "Cell",
+            "in_dependOn": [
+                "#71:8815"
+            ],
+            "vendor_name": "设备商甲"
+        },
+        {
+            "@rid": "#110:5975",
+            "@class": "RiPort",
+            "ldn": "Equipment=1,ReplaceableUnit=VBP_1_7,RiPort=OF2",
+            "in_dependOn": [
+                "#70:18805"
+            ],
+            "vendor_name": "设备商甲",
+            "out_dependOn": [
+                "#73:18803"
+            ]
+        },
+        {
+            "@rid": "#107:5975",
+            "@class": "RiPort",
+            "ldn": "Equipment=1,ReplaceableUnit=65,RiPort=OPT1",
+            "in_dependOn": [
+                "#73:18803"
+            ],
+            "vendor_name": "设备商甲",
+            "out_dependOn": [
+                "#70:18802"
+            ]
+        },
+        {
+            "@rid": "#111:1883",
+            "@class": "RRU",
+            "in_dependOn": [
+                "#72:18803",
+                "#70:18802"
+            ],
+            "vendor_name": "设备商甲",
+            "ldn": "Equipment=1,ReplaceableUnit=65",
+            "out_dependOn": [
+                "#73:8815",
+                "#73:18801"
+            ]
+        },
+        {
+            "@rid": "#120:2684",
+            "@class": "Cell",
+            "in_dependOn": [
+                "#73:18801"
+            ],
+            "vendor_name": "设备商甲"
+        },
+        {
+            "@rid": "#120:1127",
+            "@class": "Cell",
+            "in_dependOn": [
+                "#73:8815"
+            ],
+            "vendor_name": "设备商甲"
+        },
+        {
+            "@rid": "#108:5977",
+            "@class": "RiPort",
+            "ldn": "Equipment=1,ReplaceableUnit=VBP_1_7,RiPort=OF3",
+            "in_dependOn": [
+                "#74:18805"
+            ],
+            "vendor_name": "设备商甲",
+            "out_dependOn": [
+                "#71:18804"
+            ]
+        },
+        {
+            "@rid": "#105:5975",
+            "@class": "RiPort",
+            "ldn": "Equipment=1,ReplaceableUnit=66,RiPort=OPT1",
+            "in_dependOn": [
+                "#71:18804"
+            ],
+            "vendor_name": "设备商甲",
+            "out_dependOn": [
+                "#74:18802"
+            ]
+        },
+        {
+            "@rid": "#107:5977",
+            "@class": "RiPort",
+            "ldn": "Equipment=1,ReplaceableUnit=VBP_1_7,RiPort=OF1",
+            "in_dependOn": [
+                "#73:18805"
+            ],
+            "vendor_name": "设备商甲",
+            "out_dependOn": [
+                "#70:18804"
+            ]
+        },
+        {
+            "@rid": "#110:5974",
+            "@class": "RiPort",
+            "ldn": "Equipment=1,ReplaceableUnit=64,RiPort=OPT1",
+            "in_dependOn": [
+                "#70:18804"
+            ],
+            "vendor_name": "设备商甲",
+            "out_dependOn": [
+                "#73:18802"
+            ]
+        },
+        {
+            "@rid": "#106:5977",
+            "@class": "RiPort",
+            "ldn": "Equipment=1,ReplaceableUnit=VBP_1_7,RiPort=OF5",
+            "in_dependOn": [
+                "#72:18806"
+            ],
+            "vendor_name": "设备商甲",
+            "out_dependOn": [
+                "#69:18804"
+            ]
+        },
+        {
+            "@rid": "#109:5976",
+            "@class": "RiPort",
+            "ldn": "Equipment=1,ReplaceableUnit=65,RiPort=OPT2",
+            "in_dependOn": [
+                "#69:18804"
+            ],
+            "vendor_name": "设备商甲",
+            "out_dependOn": [
+                "#72:18803"
+            ]
+        },
+        {
+            "@rid": "#102:1568",
+            "@class": "Board",
+            "ldn": "Equipment=1,ReplaceableUnit=VSW_1_1",
+            "in_dependOn": [
+                "#74:8815"
+            ],
+            "vendor_name": "设备商甲"
+        },
+        {
+            "@rid": "#101:1568",
+            "@class": "Board",
+            "ldn": "Equipment=1,ReplaceableUnit=VPD_1_5",
+            "in_dependOn": [
+                "#73:8816"
+            ],
+            "vendor_name": "设备商甲"
+        },
+        {
+            "@rid": "#100:1568",
+            "@class": "Board",
+            "ldn": "Equipment=1,ReplaceableUnit=VFC_1_14",
+            "in_dependOn": [
+                "#72:8816"
+            ],
+            "vendor_name": "设备商甲"
+        },
+        {
+            "@rid": "#84:156",
+            "@class": "Room",
+            "zh_label": "4位置1无线CRAN1机房",
+            "out_dependOn": [
+                "#72:18622",
+                "#69:18806",
+                "#71:27532",
+                "#74:31827",
+                "#70:432503",
+                "#72:432585",
+                "#70:432635"
+            ],
+            "position": ""
+        },
+        {
+            "@rid": "#84:1283",
+            "@class": "Room",
+            "zh_label": "位置21传输1机房",
+            "in_dependOn": [
+                "#69:272311",
+                "#72:307412"
+            ],
+            "position": ""
+        },
+        {
+            "@rid": "#86:1273",
+            "@class": "Room",
+            "zh_label": "4位置1传输1机房",
+            "in_dependOn": [
+                "#72:216508"
+            ],
+            "position": ""
+        },
+        {
+            "title": "输入电源断",
+            "device": "西北2-Z5H",
+            "location": "SubNetwork=1004,ManagedElement=1408466,Equipment=1,ReplaceableUnit=62",
+            "time": 1760058530000,
+            "reason": "外部掉电",
+            "timeLists": [
+                0,
+                0,
+                0,
+                1,
+                1,
+                1
+            ],
+            "addInfo": "LDN:Equipment=1,ReplaceableUnit=62;Radio:TD-LTE,NR;Aid:1752854992;Cause:571;OfficeId:1408466;OfficeName:西北2-Z5H;DeviceType:RU;DeviceId:62;DeviceName:西北2-Z5H#北18-2622-AAU2;BoardType:A9631A S26;Remark:电源类型：。LTE eNBId：498547,NR gNBId：1408466。Location：rack=62,shelf=1,board=1。;deployment:SA_NSA",
+            "vendor": "设备商甲",
+            "room": "4位置1无线CRAN1机房",
+            "@rid": "#-1:2998f360-1931-4e78-a7fa-36f0e81167cc",
+            "@class": "Alarm"
+        },
+        {
+            "title": "输入电源断",
+            "device": "西北2-Z5H",
+            "location": "SubNetwork=1004,ManagedElement=1408466,Equipment=1,ReplaceableUnit=61",
+            "time": 1760058530000,
+            "reason": "外部掉电",
+            "timeLists": [
+                0,
+                0,
+                0,
+                1,
+                1,
+                1
+            ],
+            "addInfo": "LDN:Equipment=1,ReplaceableUnit=61;Radio:TD-LTE,NR;Aid:1752854991;Cause:571;OfficeId:1408466;OfficeName:西北2-Z5H;DeviceType:RU;DeviceId:61;DeviceName:西北2-Z5H#北18-2621-AAU1;BoardType:A9631A S26;Remark:电源类型：。LTE eNBId：498547,NR gNBId：1408466。Location：rack=61,shelf=1,board=1。;deployment:SA_NSA",
+            "vendor": "设备商甲",
+            "room": "4位置1无线CRAN1机房",
+            "@rid": "#-1:3a586e30-c669-4217-a033-77b11a953298",
+            "@class": "Alarm"
+        },
+        {
+            "title": "输入电源断",
+            "device": "西北2-Z5H",
+            "location": "SubNetwork=1004,ManagedElement=1408466,Equipment=1,ReplaceableUnit=63",
+            "time": 1760058530000,
+            "reason": "外部掉电",
+            "timeLists": [
+                0,
+                0,
+                0,
+                1,
+                1,
+                1
+            ],
+            "addInfo": "LDN:Equipment=1,ReplaceableUnit=63;Radio:TD-LTE,NR;Aid:1752854993;Cause:571;OfficeId:1408466;OfficeName:西北2-Z5H;DeviceType:RU;DeviceId:63;DeviceName:西北2-Z5H#北18-2623-AAU3;BoardType:A9631A S26;Remark:电源类型：。LTE eNBId：498547,NR gNBId：1408466。Location：rack=63,shelf=1,board=1。;deployment:SA_NSA",
+            "vendor": "设备商甲",
+            "room": "4位置1无线CRAN1机房",
+            "@rid": "#-1:6d881010-a27f-4eaf-abf9-9d6dd321de08",
+            "@class": "Alarm"
+        },
+        {
+            "title": "DU小区退服",
+            "device": "西北2-Z5H",
+            "location": "SubNetwork=1004,ManagedElement=1408466,GNBDUFunction=460-00_1408466,NRCellDU=1",
+            "time": 1760058637000,
+            "reason": "RRU资源准备中或光口通信异常",
+            "timeLists": [
+                0,
+                0,
+                0,
+                0,
+                1,
+                1
+            ],
+            "addInfo": "LDN:GNBDUFunction=460-00_1408466,NRCellDU=1;PLMN:46000,46015;Radio:NR;Aid:1752854995;Cause:306;OfficeId:1408466;OfficeName:西北2-Z5H;DeviceType:CELL;DeviceId:1;DeviceName:西北2-Z5H-2611;BoardType:;Remark:类型： ，ID： 460-00-1408466-1，失败：RRU，错误： 7-100。NR gNBId：1408466。Location：rack=1,shelf=1,board=1。;deployment:SA_NSA;S-NSSAI:001-FFFFFF,128-03FFFF,129-020000",
+            "vendor": "设备商甲",
+            "room": "4位置1无线CRAN1机房",
+            "@rid": "#-1:5daed405-3719-49e9-9786-569df926c486",
+            "@class": "Alarm",
+            "label": "TargetAlarm"
+        },
+        {
+            "title": "DU小区退服",
+            "device": "西北2-Z5H",
+            "location": "SubNetwork=1004,ManagedElement=1408466,GNBDUFunction=460-00_1408466,NRCellDU=3",
+            "time": 1760058637000,
+            "reason": "RRU资源准备中或光口通信异常",
+            "timeLists": [
+                0,
+                0,
+                0,
+                0,
+                1,
+                1
+            ],
+            "addInfo": "LDN:GNBDUFunction=460-00_1408466,NRCellDU=3;PLMN:46000,46015;Radio:NR;Aid:1752854997;Cause:306;OfficeId:1408466;OfficeName:西北2-Z5H;DeviceType:CELL;DeviceId:3;DeviceName:西北2-Z5H-2613;BoardType:;Remark:类型： ，ID： 460-00-1408466-3，失败：RRU，错误： 7-100。NR gNBId：1408466。Location：rack=1,shelf=1,board=1。;deployment:SA_NSA;S-NSSAI:001-FFFFFF,128-03FFFF,129-020000",
+            "vendor": "设备商甲",
+            "room": "4位置1无线CRAN1机房",
+            "@rid": "#-1:87083e53-858c-4a06-bb68-3bbd71c3ee60",
+            "@class": "Alarm",
+            "label": "TargetAlarm"
+        },
+        {
+            "title": "DU小区退服",
+            "device": "西北2-Z5H",
+            "location": "SubNetwork=1004,ManagedElement=1408466,GNBDUFunction=460-00_1408466,NRCellDU=2",
+            "time": 1760058637000,
+            "reason": "RRU资源准备中或光口通信异常",
+            "timeLists": [
+                0,
+                0,
+                0,
+                0,
+                1,
+                1
+            ],
+            "addInfo": "LDN:GNBDUFunction=460-00_1408466,NRCellDU=2;PLMN:46000,46015;Radio:NR;Aid:1752854996;Cause:306;OfficeId:1408466;OfficeName:西北2-Z5H;DeviceType:CELL;DeviceId:2;DeviceName:西北2-Z5H-2612;BoardType:;Remark:类型： ，ID： 460-00-1408466-2，失败：RRU，错误： 7-100。NR gNBId：1408466。Location：rack=1,shelf=1,board=1。;deployment:SA_NSA;S-NSSAI:001-FFFFFF,128-03FFFF,129-020000",
+            "vendor": "设备商甲",
+            "room": "4位置1无线CRAN1机房",
+            "@rid": "#-1:200e6079-0939-44eb-a12e-edb704173504",
+            "@class": "Alarm",
+            "label": "TargetAlarm"
+        }
+    ],
+    "edges": [
+        {
+            "@type": "d",
+            "@rid": "#74:272311",
+            "@version": 4,
+            "@class": "dependOn",
+            "modified_time": 1759264598,
+            "in": "#133:361",
+            "out": "#87:290",
+            "@fieldTypes": "modified_time=l,in=x,out=x"
+        },
+        {
+            "@type": "d",
+            "@rid": "#71:8816",
+            "@version": 14,
+            "@class": "dependOn",
+            "modified_time": 1759201913,
+            "in": "#93:289",
+            "out": "#87:290",
+            "@fieldTypes": "modified_time=l,in=x,out=x"
+        },
+        {
+            "@type": "d",
+            "@rid": "#70:272311",
+            "@version": 16,
+            "@class": "dependOn",
+            "modified_time": 1759273680,
+            "in": "#143:354",
+            "out": "#133:361",
+            "@fieldTypes": "modified_time=l,in=x,out=x"
+        },
+        {
+            "@type": "d",
+            "@rid": "#69:272312",
+            "@version": 16,
+            "@class": "dependOn",
+            "modified_time": 1759273680,
+            "in": "#135:7",
+            "out": "#133:361",
+            "@fieldTypes": "modified_time=l,in=x,out=x"
+        },
+        {
+            "@type": "d",
+            "@rid": "#72:272311",
+            "@version": 19,
+            "@class": "dependOn",
+            "modified_time": 1759273680,
+            "in": "#162:475",
+            "out": "#143:354",
+            "@fieldTypes": "modified_time=l,in=x,out=x"
+        },
+        {
+            "@type": "d",
+            "@rid": "#74:272310",
+            "@version": 19,
+            "@class": "dependOn",
+            "modified_time": 1759273680,
+            "in": "#167:129",
+            "out": "#162:475",
+            "@fieldTypes": "modified_time=l,in=x,out=x"
+        },
+        {
+            "@type": "d",
+            "@rid": "#69:272311",
+            "@version": 19,
+            "@class": "dependOn",
+            "modified_time": 1759273680,
+            "in": "#84:1283",
+            "out": "#167:129",
+            "@fieldTypes": "modified_time=l,in=x,out=x"
+        },
+        {
+            "@type": "d",
+            "@rid": "#71:272311",
+            "@version": 16,
+            "@class": "dependOn",
+            "modified_time": 1759273680,
+            "in": "#161:475",
+            "out": "#135:7",
+            "@fieldTypes": "modified_time=l,in=x,out=x"
+        },
+        {
+            "@type": "d",
+            "@rid": "#73:272311",
+            "@version": 25,
+            "@class": "dependOn",
+            "modified_time": 1759273680,
+            "in": "#170:17",
+            "out": "#161:475",
+            "@fieldTypes": "modified_time=l,in=x,out=x"
+        },
+        {
+            "@type": "d",
+            "@rid": "#72:216508",
+            "@version": 323,
+            "@class": "dependOn",
+            "modified_time": 1759273680,
+            "in": "#86:1273",
+            "out": "#170:17",
+            "@fieldTypes": "modified_time=l,in=x,out=x"
+        },
+        {
+            "@type": "d",
+            "@rid": "#70:8816",
+            "@version": 17,
+            "@class": "dependOn",
+            "modified_time": 1759201913,
+            "in": "#104:1568",
+            "out": "#93:289",
+            "@fieldTypes": "modified_time=l,in=x,out=x"
+        },
+        {
+            "@type": "d",
+            "@rid": "#69:8816",
+            "@version": 17,
+            "@class": "dependOn",
+            "modified_time": 1759201913,
+            "in": "#103:1568",
+            "out": "#93:289",
+            "@fieldTypes": "modified_time=l,in=x,out=x"
+        },
+        {
+            "@type": "d",
+            "@rid": "#74:8815",
+            "@version": 17,
+            "@class": "dependOn",
+            "modified_time": 1759201913,
+            "in": "#102:1568",
+            "out": "#93:289",
+            "@fieldTypes": "modified_time=l,in=x,out=x"
+        },
+        {
+            "@type": "d",
+            "@rid": "#73:8816",
+            "@version": 17,
+            "@class": "dependOn",
+            "modified_time": 1759201913,
+            "in": "#101:1568",
+            "out": "#93:289",
+            "@fieldTypes": "modified_time=l,in=x,out=x"
+        },
+        {
+            "@type": "d",
+            "@rid": "#72:8816",
+            "@version": 17,
+            "@class": "dependOn",
+            "modified_time": 1759201913,
+            "in": "#100:1568",
+            "out": "#93:289",
+            "@fieldTypes": "modified_time=l,in=x,out=x"
+        },
+        {
+            "@type": "d",
+            "@rid": "#69:18805",
+            "@version": 8,
+            "@class": "dependOn",
+            "modified_time": 1759201913,
+            "in": "#109:5977",
+            "out": "#104:1568",
+            "@fieldTypes": "modified_time=l,in=x,out=x"
+        },
+        {
+            "@type": "d",
+            "@rid": "#71:18806",
+            "@version": 8,
+            "@class": "dependOn",
+            "modified_time": 1759201913,
+            "in": "#105:5977",
+            "out": "#104:1568",
+            "@fieldTypes": "modified_time=l,in=x,out=x"
+        },
+        {
+            "@type": "d",
+            "@rid": "#70:18806",
+            "@version": 8,
+            "@class": "dependOn",
+            "modified_time": 1759201913,
+            "in": "#110:5976",
+            "out": "#104:1568",
+            "@fieldTypes": "modified_time=l,in=x,out=x"
+        },
+        {
+            "@type": "d",
+            "@rid": "#72:18804",
+            "@version": 8,
+            "@class": "dependOn",
+            "modified_time": 1759201913,
+            "in": "#106:5975",
+            "out": "#109:5977",
+            "@fieldTypes": "modified_time=l,in=x,out=x"
+        },
+        {
+            "@type": "d",
+            "@rid": "#69:18802",
+            "@version": 8,
+            "@class": "dependOn",
+            "modified_time": 1759201913,
+            "in": "#116:1882",
+            "out": "#106:5975",
+            "@fieldTypes": "modified_time=l,in=x,out=x"
+        },
+        {
+            "@type": "d",
+            "@rid": "#70:18801",
+            "@version": 8,
+            "@class": "dependOn",
+            "modified_time": 1759201913,
+            "in": "#117:2685",
+            "out": "#116:1882",
+            "@fieldTypes": "modified_time=l,in=x,out=x"
+        },
+        {
+            "@type": "d",
+            "@rid": "#74:18804",
+            "@version": 8,
+            "@class": "dependOn",
+            "modified_time": 1759201913,
+            "in": "#108:5976",
+            "out": "#105:5977",
+            "@fieldTypes": "modified_time=l,in=x,out=x"
+        },
+        {
+            "@type": "d",
+            "@rid": "#71:18803",
+            "@version": 8,
+            "@class": "dependOn",
+            "modified_time": 1759201913,
+            "in": "#114:1883",
+            "out": "#108:5976",
+            "@fieldTypes": "modified_time=l,in=x,out=x"
+        },
+        {
+            "@type": "d",
+            "@rid": "#74:18801",
+            "@version": 8,
+            "@class": "dependOn",
+            "modified_time": 1759201913,
+            "in": "#121:2684",
+            "out": "#114:1883",
+            "@fieldTypes": "modified_time=l,in=x,out=x"
+        },
+        {
+            "@type": "d",
+            "@rid": "#73:18804",
+            "@version": 8,
+            "@class": "dependOn",
+            "modified_time": 1759201913,
+            "in": "#107:5976",
+            "out": "#110:5976",
+            "@fieldTypes": "modified_time=l,in=x,out=x"
+        },
+        {
+            "@type": "d",
+            "@rid": "#70:18803",
+            "@version": 8,
+            "@class": "dependOn",
+            "modified_time": 1759201913,
+            "in": "#112:1883",
+            "out": "#107:5976",
+            "@fieldTypes": "modified_time=l,in=x,out=x"
+        },
+        {
+            "@type": "d",
+            "@rid": "#69:18801",
+            "@version": 8,
+            "@class": "dependOn",
+            "modified_time": 1759201913,
+            "in": "#122:2684",
+            "out": "#112:1883",
+            "@fieldTypes": "modified_time=l,in=x,out=x"
+        },
+        {
+            "@type": "d",
+            "@rid": "#72:18805",
+            "@version": 8,
+            "@class": "dependOn",
+            "modified_time": 1759201913,
+            "in": "#106:5976",
+            "out": "#103:1568",
+            "@fieldTypes": "modified_time=l,in=x,out=x"
+        },
+        {
+            "@type": "d",
+            "@rid": "#71:18805",
+            "@version": 8,
+            "@class": "dependOn",
+            "modified_time": 1759201913,
+            "in": "#105:5976",
+            "out": "#103:1568",
+            "@fieldTypes": "modified_time=l,in=x,out=x"
+        },
+        {
+            "@type": "d",
+            "@rid": "#70:18805",
+            "@version": 8,
+            "@class": "dependOn",
+            "modified_time": 1759201913,
+            "in": "#110:5975",
+            "out": "#103:1568",
+            "@fieldTypes": "modified_time=l,in=x,out=x"
+        },
+        {
+            "@type": "d",
+            "@rid": "#74:18805",
+            "@version": 8,
+            "@class": "dependOn",
+            "modified_time": 1759201913,
+            "in": "#108:5977",
+            "out": "#103:1568",
+            "@fieldTypes": "modified_time=l,in=x,out=x"
+        },
+        {
+            "@type": "d",
+            "@rid": "#73:18805",
+            "@version": 8,
+            "@class": "dependOn",
+            "modified_time": 1759201913,
+            "in": "#107:5977",
+            "out": "#103:1568",
+            "@fieldTypes": "modified_time=l,in=x,out=x"
+        },
+        {
+            "@type": "d",
+            "@rid": "#72:18806",
+            "@version": 8,
+            "@class": "dependOn",
+            "modified_time": 1759201913,
+            "in": "#106:5977",
+            "out": "#103:1568",
+            "@fieldTypes": "modified_time=l,in=x,out=x"
+        },
+        {
+            "@type": "d",
+            "@rid": "#69:18803",
+            "@version": 8,
+            "@class": "dependOn",
+            "modified_time": 1759201913,
+            "in": "#109:5975",
+            "out": "#106:5976",
+            "@fieldTypes": "modified_time=l,in=x,out=x"
+        },
+        {
+            "@type": "d",
+            "@rid": "#72:18802",
+            "@version": 8,
+            "@class": "dependOn",
+            "modified_time": 1759201913,
+            "in": "#113:1883",
+            "out": "#109:5975",
+            "@fieldTypes": "modified_time=l,in=x,out=x"
+        },
+        {
+            "@type": "d",
+            "@rid": "#72:18801",
+            "@version": 8,
+            "@class": "dependOn",
+            "modified_time": 1759201913,
+            "in": "#119:2685",
+            "out": "#113:1883",
+            "@fieldTypes": "modified_time=l,in=x,out=x"
+        },
+        {
+            "@type": "d",
+            "@rid": "#72:8815",
+            "@version": 9,
+            "@class": "dependOn",
+            "modified_time": 1759198149,
+            "in": "#119:1127",
+            "out": "#113:1883",
+            "@fieldTypes": "modified_time=l,in=x,out=x"
+        },
+        {
+            "@type": "d",
+            "@rid": "#74:18803",
+            "@version": 8,
+            "@class": "dependOn",
+            "modified_time": 1759201913,
+            "in": "#108:5975",
+            "out": "#105:5976",
+            "@fieldTypes": "modified_time=l,in=x,out=x"
+        },
+        {
+            "@type": "d",
+            "@rid": "#71:18802",
+            "@version": 8,
+            "@class": "dependOn",
+            "modified_time": 1759201913,
+            "in": "#115:1883",
+            "out": "#108:5975",
+            "@fieldTypes": "modified_time=l,in=x,out=x"
+        },
+        {
+            "@type": "d",
+            "@rid": "#71:18801",
+            "@version": 8,
+            "@class": "dependOn",
+            "modified_time": 1759201913,
+            "in": "#118:2685",
+            "out": "#115:1883",
+            "@fieldTypes": "modified_time=l,in=x,out=x"
+        },
+        {
+            "@type": "d",
+            "@rid": "#71:8815",
+            "@version": 9,
+            "@class": "dependOn",
+            "modified_time": 1759198149,
+            "in": "#118:1127",
+            "out": "#115:1883",
+            "@fieldTypes": "modified_time=l,in=x,out=x"
+        },
+        {
+            "@type": "d",
+            "@rid": "#73:18803",
+            "@version": 8,
+            "@class": "dependOn",
+            "modified_time": 1759201913,
+            "in": "#107:5975",
+            "out": "#110:5975",
+            "@fieldTypes": "modified_time=l,in=x,out=x"
+        },
+        {
+            "@type": "d",
+            "@rid": "#70:18802",
+            "@version": 8,
+            "@class": "dependOn",
+            "modified_time": 1759201913,
+            "in": "#111:1883",
+            "out": "#107:5975",
+            "@fieldTypes": "modified_time=l,in=x,out=x"
+        },
+        {
+            "@type": "d",
+            "@rid": "#73:18801",
+            "@version": 8,
+            "@class": "dependOn",
+            "modified_time": 1759201913,
+            "in": "#120:2684",
+            "out": "#111:1883",
+            "@fieldTypes": "modified_time=l,in=x,out=x"
+        },
+        {
+            "@type": "d",
+            "@rid": "#73:8815",
+            "@version": 9,
+            "@class": "dependOn",
+            "modified_time": 1759198149,
+            "in": "#120:1127",
+            "out": "#111:1883",
+            "@fieldTypes": "modified_time=l,in=x,out=x"
+        },
+        {
+            "@type": "d",
+            "@rid": "#71:18804",
+            "@version": 8,
+            "@class": "dependOn",
+            "modified_time": 1759201913,
+            "in": "#105:5975",
+            "out": "#108:5977",
+            "@fieldTypes": "modified_time=l,in=x,out=x"
+        },
+        {
+            "@type": "d",
+            "@rid": "#74:18802",
+            "@version": 8,
+            "@class": "dependOn",
+            "modified_time": 1759201913,
+            "in": "#113:1883",
+            "out": "#105:5975",
+            "@fieldTypes": "modified_time=l,in=x,out=x"
+        },
+        {
+            "@type": "d",
+            "@rid": "#70:18804",
+            "@version": 8,
+            "@class": "dependOn",
+            "modified_time": 1759201913,
+            "in": "#110:5974",
+            "out": "#107:5977",
+            "@fieldTypes": "modified_time=l,in=x,out=x"
+        },
+        {
+            "@type": "d",
+            "@rid": "#73:18802",
+            "@version": 8,
+            "@class": "dependOn",
+            "modified_time": 1759201913,
+            "in": "#115:1883",
+            "out": "#110:5974",
+            "@fieldTypes": "modified_time=l,in=x,out=x"
+        },
+        {
+            "@type": "d",
+            "@rid": "#69:18804",
+            "@version": 8,
+            "@class": "dependOn",
+            "modified_time": 1759201913,
+            "in": "#109:5976",
+            "out": "#106:5977",
+            "@fieldTypes": "modified_time=l,in=x,out=x"
+        },
+        {
+            "@type": "d",
+            "@rid": "#72:18803",
+            "@version": 8,
+            "@class": "dependOn",
+            "modified_time": 1759201913,
+            "in": "#111:1883",
+            "out": "#109:5976",
+            "@fieldTypes": "modified_time=l,in=x,out=x"
+        },
+        {
+            "@type": "d",
+            "@rid": "#69:18806",
+            "@version": 8,
+            "@class": "dependOn",
+            "modified_time": 1759201913,
+            "in": "#87:290",
+            "out": "#84:156",
+            "@fieldTypes": "modified_time=l,in=x,out=x"
+        },
+        {
+            "@type": "d",
+            "@rid": "#69:272311",
+            "@version": 19,
+            "@class": "dependOn",
+            "modified_time": 1759273680,
+            "in": "#84:1283",
+            "out": "#167:129",
+            "@fieldTypes": "modified_time=l,in=x,out=x"
+        },
+        {
+            "@type": "d",
+            "@rid": "#72:216508",
+            "@version": 323,
+            "@class": "dependOn",
+            "modified_time": 1759273680,
+            "in": "#86:1273",
+            "out": "#170:17",
+            "@fieldTypes": "modified_time=l,in=x,out=x"
+        },
+        {
+            "@rid": "#-2:2998f360-1931-4e78-a7fa-36f0e81167cc",
+            "in": "#-1:2998f360-1931-4e78-a7fa-36f0e81167cc",
+            "out": "#112:1883",
+            "@class": "generate"
+        },
+        {
+            "@rid": "#-2:3a586e30-c669-4217-a033-77b11a953298",
+            "in": "#-1:3a586e30-c669-4217-a033-77b11a953298",
+            "out": "#114:1883",
+            "@class": "generate"
+        },
+        {
+            "@rid": "#-2:6d881010-a27f-4eaf-abf9-9d6dd321de08",
+            "in": "#-1:6d881010-a27f-4eaf-abf9-9d6dd321de08",
+            "out": "#116:1882",
+            "@class": "generate"
+        },
+        {
+            "@rid": "#-2:5daed405-3719-49e9-9786-569df926c486",
+            "in": "#-1:5daed405-3719-49e9-9786-569df926c486",
+            "out": "#121:2684",
+            "@class": "generate"
+        },
+        {
+            "@rid": "#-2:87083e53-858c-4a06-bb68-3bbd71c3ee60",
+            "in": "#-1:87083e53-858c-4a06-bb68-3bbd71c3ee60",
+            "out": "#117:2685",
+            "@class": "generate"
+        },
+        {
+            "@rid": "#-2:200e6079-0939-44eb-a12e-edb704173504",
+            "in": "#-1:200e6079-0939-44eb-a12e-edb704173504",
+            "out": "#122:2684",
+            "@class": "generate"
+        }
+    ]
+}

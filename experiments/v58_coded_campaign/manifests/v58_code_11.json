@@ -1,0 +1,6106 @@
+{
+  "probe_id": "v58_code_11",
+  "row_index": 10,
+  "path": "D:\\zgyidong\\experiments\\v58_coded_campaign\\submissions\\v58_code_11.csv",
+  "baseline": "D:\\zgyidong\\experiments\\v30_meta_stack\\submissions\\v30_cross_order_top5.csv",
+  "fixed_base": "v37_exact_corrections",
+  "candidate_indices": [
+    2,
+    4,
+    5,
+    8,
+    11,
+    12,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    23,
+    24,
+    28,
+    32,
+    33,
+    34,
+    35,
+    37,
+    38,
+    39,
+    40,
+    42,
+    44,
+    45,
+    46,
+    47,
+    50,
+    52,
+    53,
+    54,
+    57,
+    59,
+    61,
+    64,
+    66,
+    67,
+    72,
+    77,
+    83,
+    88,
+    89,
+    93,
+    96,
+    97,
+    100,
+    101,
+    105,
+    106,
+    108,
+    109,
+    110,
+    112,
+    113,
+    118,
+    120,
+    125
+  ],
+  "candidate_actions": [
+    {
+      "action_id": "v36_count_add_3",
+      "order_id": "4c2b3b06-a6a2-4c1b-9734-def3d1f849d8",
+      "remove_rids": [],
+      "add_rids": [
+        "#-1:66facd91-e281-4331-bbae-04ab8bd9746d"
+      ],
+      "source": "v36_selective_count_consensus",
+      "expected_gain": 0.2696733921766281,
+      "evidence": {
+        "order_id": "4c2b3b06-a6a2-4c1b-9734-def3d1f849d8",
+        "rid": "#-1:66facd91-e281-4331-bbae-04ab8bd9746d",
+        "kind": "add",
+        "current_count": 1,
+        "proposed_count": 2,
+        "support": 6,
+        "mean_margin": 0.2696733921766281,
+        "min_margin": 0.2562140226364136,
+        "node_score": 0.6594231724739075,
+        "probability_models": [
+          "D:\\zgyidong\\experiments\\v34_count_model\\station_alpha_0_test.npy",
+          "D:\\zgyidong\\experiments\\v34_count_model\\station_alpha_1_test.npy",
+          "D:\\zgyidong\\experiments\\v34_count_model\\station_alpha_2_test.npy",
+          "D:\\zgyidong\\experiments\\v34_count_model\\template_alpha_0_test.npy",
+          "D:\\zgyidong\\experiments\\v34_count_model\\template_alpha_1_test.npy",
+          "D:\\zgyidong\\experiments\\v34_count_model\\template_alpha_2_test.npy"
+        ]
+      }
+    },
+    {
+      "action_id": "v50_add_batch01_n08_hold_001",
+      "order_id": "057ebcd1-2299-447c-9551-1b7cc3f4f78a",
+      "remove_rids": [],
+      "add_rids": [
+        "#-1:e6bd5856-66c9-47ae-b215-b84e64c533fb"
+      ],
+      "source": "v50_empirical_bayes_stratum",
+      "expected_gain": 0.04672118005451342,
+      "evidence": {
+        "row": 83,
+        "rank": 124,
+        "rank_bin": "r101_200",
+        "order_index": 11,
+        "order_id": "057ebcd1-2299-447c-9551-1b7cc3f4f78a",
+        "rid": "#-1:e6bd5856-66c9-47ae-b215-b84e64c533fb",
+        "kind": "add",
+        "title": "LTE小区退出服务",
+        "vendor": "设备商甲",
+        "device_type": "CELL",
+        "deployment": "NSA",
+        "radio": "TD-LTE",
+        "timeline": "000010",
+        "current_count": 2,
+        "alarm_count": 9,
+        "rank_average": 0.5848522186279297,
+        "score_median": 0.12762906402349472,
+        "agreement": 0,
+        "scores": {
+          "v11": 0.12501920759677887,
+          "v13": 0.14435113966464996,
+          "v19": 0.13023892045021057,
+          "station": 0.1053164005279541,
+          "domain": 0.20326171815395355,
+          "consensus": 0.06131085008382797
+        },
+        "matched_rule": {
+          "fields": [
+            "title",
+            "rank_bin"
+          ],
+          "values": [
+            "LTE小区退出服务",
+            "r101_200"
+          ],
+          "support": 5,
+          "correct": 3,
+          "precision": 0.6,
+          "fold_count": 4,
+          "fold_precision": {
+            "0": 1.0,
+            "2": 1.0,
+            "3": 0.5,
+            "4": 0.0
+          },
+          "posterior_mean": 0.5065576398909732,
+          "beta_lower_75": 0.4234802790882948,
+          "advantage": 0.04672118005451342
+        },
+        "estimated_advantage": 0.04672118005451342
+      }
+    },
+    {
+      "action_id": "v50_add_batch01_n08_hold_002",
+      "order_id": "5aa15346-c717-441f-8cb7-08e3b4b7b827",
+      "remove_rids": [],
+      "add_rids": [
+        "#-1:81cab9cc-7e6f-4dae-883f-2b9668791df1"
+      ],
+      "source": "v50_empirical_bayes_stratum",
+      "expected_gain": 0.04672118005451342,
+      "evidence": {
+        "row": 949,
+        "rank": 137,
+        "rank_bin": "r101_200",
+        "order_index": 170,
+        "order_id": "5aa15346-c717-441f-8cb7-08e3b4b7b827",
+        "rid": "#-1:81cab9cc-7e6f-4dae-883f-2b9668791df1",
+        "kind": "add",
+        "title": "LTE小区退出服务",
+        "vendor": "设备商甲",
+        "device_type": "CELL",
+        "deployment": "NSA",
+        "radio": "LTE FDD",
+        "timeline": "011111",
+        "current_count": 1,
+        "alarm_count": 12,
+        "rank_average": 0.5736793279647827,
+        "score_median": 0.07842327281832695,
+        "agreement": 0,
+        "scores": {
+          "v11": 0.24754095077514648,
+          "v13": 0.26547545194625854,
+          "v19": 0.05653471127152443,
+          "station": 0.08154590427875519,
+          "domain": 0.07530064135789871,
+          "consensus": 0.04356536269187927
+        },
+        "matched_rule": {
+          "fields": [
+            "title",
+            "rank_bin"
+          ],
+          "values": [
+            "LTE小区退出服务",
+            "r101_200"
+          ],
+          "support": 5,
+          "correct": 3,
+          "precision": 0.6,
+          "fold_count": 4,
+          "fold_precision": {
+            "0": 1.0,
+            "2": 1.0,
+            "3": 0.5,
+            "4": 0.0
+          },
+          "posterior_mean": 0.5065576398909732,
+          "beta_lower_75": 0.4234802790882948,
+          "advantage": 0.04672118005451342
+        },
+        "estimated_advantage": 0.04672118005451342
+      }
+    },
+    {
+      "action_id": "v50_add_batch01_n08_hold_005",
+      "order_id": "e91d27cd-b255-48d5-908a-4e0e50789845",
+      "remove_rids": [],
+      "add_rids": [
+        "#-1:4558315e-1ab9-47a4-892e-619c14e87739"
+      ],
+      "source": "v50_empirical_bayes_stratum",
+      "expected_gain": 0.04672118005451342,
+      "evidence": {
+        "row": 2909,
+        "rank": 155,
+        "rank_bin": "r101_200",
+        "order_index": 488,
+        "order_id": "e91d27cd-b255-48d5-908a-4e0e50789845",
+        "rid": "#-1:4558315e-1ab9-47a4-892e-619c14e87739",
+        "kind": "add",
+        "title": "LTE小区退出服务",
+        "vendor": "设备商甲",
+        "device_type": "CELL",
+        "deployment": "NSA",
+        "radio": "TD-LTE",
+        "timeline": "000011",
+        "current_count": 1,
+        "alarm_count": 2,
+        "rank_average": 0.5498403906822205,
+        "score_median": 0.1096348948776722,
+        "agreement": 0,
+        "scores": {
+          "v11": 0.14114801585674286,
+          "v13": 0.13049550354480743,
+          "v19": 0.023089254274964333,
+          "station": 0.11327152699232101,
+          "domain": 0.10599826276302338,
+          "consensus": 0.09025885164737701
+        },
+        "matched_rule": {
+          "fields": [
+            "title",
+            "rank_bin"
+          ],
+          "values": [
+            "LTE小区退出服务",
+            "r101_200"
+          ],
+          "support": 5,
+          "correct": 3,
+          "precision": 0.6,
+          "fold_count": 4,
+          "fold_precision": {
+            "0": 1.0,
+            "2": 1.0,
+            "3": 0.5,
+            "4": 0.0
+          },
+          "posterior_mean": 0.5065576398909732,
+          "beta_lower_75": 0.4234802790882948,
+          "advantage": 0.04672118005451342
+        },
+        "estimated_advantage": 0.04672118005451342
+      }
+    },
+    {
+      "action_id": "v50_add_batch01_n08_hold_008",
+      "order_id": "2c0a6d62-f7a9-4154-8ab3-eeda0d3d53ea",
+      "remove_rids": [],
+      "add_rids": [
+        "#-1:aac13150-1e1a-479f-a4f0-26cfd3c178cf"
+      ],
+      "source": "v50_empirical_bayes_stratum",
+      "expected_gain": 0.04672118005451342,
+      "evidence": {
+        "row": 441,
+        "rank": 165,
+        "rank_bin": "r101_200",
+        "order_index": 78,
+        "order_id": "2c0a6d62-f7a9-4154-8ab3-eeda0d3d53ea",
+        "rid": "#-1:aac13150-1e1a-479f-a4f0-26cfd3c178cf",
+        "kind": "add",
+        "title": "LTE小区退出服务",
+        "vendor": "设备商甲",
+        "device_type": "CELL",
+        "deployment": "NSA",
+        "radio": "TD-LTE",
+        "timeline": "000011",
+        "current_count": 1,
+        "alarm_count": 3,
+        "rank_average": 0.5407784581184387,
+        "score_median": 0.07158737257122993,
+        "agreement": 0,
+        "scores": {
+          "v11": 0.08533787727355957,
+          "v13": 0.07636381685733795,
+          "v19": 0.06681092828512192,
+          "station": 0.020607588812708855,
+          "domain": 0.11366552859544754,
+          "consensus": 0.014673471450805664
+        },
+        "matched_rule": {
+          "fields": [
+            "title",
+            "rank_bin"
+          ],
+          "values": [
+            "LTE小区退出服务",
+            "r101_200"
+          ],
+          "support": 5,
+          "correct": 3,
+          "precision": 0.6,
+          "fold_count": 4,
+          "fold_precision": {
+            "0": 1.0,
+            "2": 1.0,
+            "3": 0.5,
+            "4": 0.0
+          },
+          "posterior_mean": 0.5065576398909732,
+          "beta_lower_75": 0.4234802790882948,
+          "advantage": 0.04672118005451342
+        },
+        "estimated_advantage": 0.04672118005451342
+      }
+    },
+    {
+      "action_id": "v50_add_batch02_n08_hold_001",
+      "order_id": "24ca72c7-4470-4656-8c43-1141c0a68da6",
+      "remove_rids": [],
+      "add_rids": [
+        "#-1:2a766766-d3fc-43f0-b1ff-f5d9fd31b060"
+      ],
+      "source": "v50_empirical_bayes_stratum",
+      "expected_gain": 0.04672118005451342,
+      "evidence": {
+        "row": 376,
+        "rank": 167,
+        "rank_bin": "r101_200",
+        "order_index": 66,
+        "order_id": "24ca72c7-4470-4656-8c43-1141c0a68da6",
+        "rid": "#-1:2a766766-d3fc-43f0-b1ff-f5d9fd31b060",
+        "kind": "add",
+        "title": "DU小区退服",
+        "vendor": "设备商甲",
+        "device_type": "CELL",
+        "deployment": "SA_NSA",
+        "radio": "NR",
+        "timeline": "000111",
+        "current_count": 1,
+        "alarm_count": 7,
+        "rank_average": 0.5314591526985168,
+        "score_median": 0.21816598623991013,
+        "agreement": 1,
+        "scores": {
+          "v11": 0.03022123873233795,
+          "v13": 0.031818848103284836,
+          "v19": 0.5349550843238831,
+          "station": 0.2480841428041458,
+          "domain": 0.31671419739723206,
+          "consensus": 0.18824782967567444
+        },
+        "matched_rule": {
+          "fields": [
+            "device_type",
+            "rank_bin"
+          ],
+          "values": [
+            "CELL",
+            "r101_200"
+          ],
+          "support": 5,
+          "correct": 3,
+          "precision": 0.6,
+          "fold_count": 4,
+          "fold_precision": {
+            "0": 1.0,
+            "2": 1.0,
+            "3": 0.5,
+            "4": 0.0
+          },
+          "posterior_mean": 0.5065576398909732,
+          "beta_lower_75": 0.4234802790882948,
+          "advantage": 0.04672118005451342
+        },
+        "estimated_advantage": 0.04672118005451342
+      }
+    },
+    {
+      "action_id": "v50_add_batch02_n08_hold_004",
+      "order_id": "e90ab54c-d993-48e5-b0a2-74e278a3dca4",
+      "remove_rids": [],
+      "add_rids": [
+        "#-1:371238c8-958c-46f6-90b0-ab90825826be"
+      ],
+      "source": "v50_empirical_bayes_stratum",
+      "expected_gain": 0.04672118005451342,
+      "evidence": {
+        "row": 2906,
+        "rank": 195,
+        "rank_bin": "r101_200",
+        "order_index": 487,
+        "order_id": "e90ab54c-d993-48e5-b0a2-74e278a3dca4",
+        "rid": "#-1:371238c8-958c-46f6-90b0-ab90825826be",
+        "kind": "add",
+        "title": "LTE小区退出服务",
+        "vendor": "设备商甲",
+        "device_type": "CELL",
+        "deployment": "NSA",
+        "radio": "TD-LTE",
+        "timeline": "000001",
+        "current_count": 3,
+        "alarm_count": 8,
+        "rank_average": 0.5012357234954834,
+        "score_median": 0.04580573923885822,
+        "agreement": 0,
+        "scores": {
+          "v11": 0.06647726893424988,
+          "v13": 0.06259185075759888,
+          "v19": 0.04783867299556732,
+          "station": 0.0084483427926898,
+          "domain": 0.043772805482149124,
+          "consensus": 0.004446832928806543
+        },
+        "matched_rule": {
+          "fields": [
+            "title",
+            "rank_bin"
+          ],
+          "values": [
+            "LTE小区退出服务",
+            "r101_200"
+          ],
+          "support": 5,
+          "correct": 3,
+          "precision": 0.6,
+          "fold_count": 4,
+          "fold_precision": {
+            "0": 1.0,
+            "2": 1.0,
+            "3": 0.5,
+            "4": 0.0
+          },
+          "posterior_mean": 0.5065576398909732,
+          "beta_lower_75": 0.4234802790882948,
+          "advantage": 0.04672118005451342
+        },
+        "estimated_advantage": 0.04672118005451342
+      }
+    },
+    {
+      "action_id": "v50_add_batch02_n08_hold_005",
+      "order_id": "96770f68-d78d-4a2a-8b73-43f95ffa3129",
+      "remove_rids": [],
+      "add_rids": [
+        "#-1:2533002a-ac3a-48c7-8344-647ccae80b2a"
+      ],
+      "source": "v50_empirical_bayes_stratum",
+      "expected_gain": 0.04672118005451342,
+      "evidence": {
+        "row": 1735,
+        "rank": 198,
+        "rank_bin": "r101_200",
+        "order_index": 302,
+        "order_id": "96770f68-d78d-4a2a-8b73-43f95ffa3129",
+        "rid": "#-1:2533002a-ac3a-48c7-8344-647ccae80b2a",
+        "kind": "add",
+        "title": "LTE小区退出服务",
+        "vendor": "设备商甲",
+        "device_type": "CELL",
+        "deployment": "NSA",
+        "radio": "LTE FDD",
+        "timeline": "000001",
+        "current_count": 1,
+        "alarm_count": 5,
+        "rank_average": 0.4994851052761078,
+        "score_median": 0.036132960580289364,
+        "agreement": 0,
+        "scores": {
+          "v11": 0.04401804879307747,
+          "v13": 0.043043993413448334,
+          "v19": 0.10147281736135483,
+          "station": 0.02007012628018856,
+          "domain": 0.029221927747130394,
+          "consensus": 0.010479218326508999
+        },
+        "matched_rule": {
+          "fields": [
+            "title",
+            "rank_bin"
+          ],
+          "values": [
+            "LTE小区退出服务",
+            "r101_200"
+          ],
+          "support": 5,
+          "correct": 3,
+          "precision": 0.6,
+          "fold_count": 4,
+          "fold_precision": {
+            "0": 1.0,
+            "2": 1.0,
+            "3": 0.5,
+            "4": 0.0
+          },
+          "posterior_mean": 0.5065576398909732,
+          "beta_lower_75": 0.4234802790882948,
+          "advantage": 0.04672118005451342
+        },
+        "estimated_advantage": 0.04672118005451342
+      }
+    },
+    {
+      "action_id": "v50_add_batch02_n08_hold_006",
+      "order_id": "e84dea47-7eab-4682-b981-3ab6f358ef57",
+      "remove_rids": [],
+      "add_rids": [
+        "#-1:0257a157-63ab-48ee-8497-56184cb1b54d"
+      ],
+      "source": "v50_empirical_bayes_stratum",
+      "expected_gain": 0.04672118005451342,
+      "evidence": {
+        "row": 2892,
+        "rank": 199,
+        "rank_bin": "r101_200",
+        "order_index": 485,
+        "order_id": "e84dea47-7eab-4682-b981-3ab6f358ef57",
+        "rid": "#-1:0257a157-63ab-48ee-8497-56184cb1b54d",
+        "kind": "add",
+        "title": "LTE小区退出服务",
+        "vendor": "设备商甲",
+        "device_type": "CELL",
+        "deployment": "NSA",
+        "radio": "LTE FDD",
+        "timeline": "011111",
+        "current_count": 1,
+        "alarm_count": 4,
+        "rank_average": 0.4967047870159149,
+        "score_median": 0.039222121238708496,
+        "agreement": 0,
+        "scores": {
+          "v11": 0.0419631227850914,
+          "v13": 0.040034692734479904,
+          "v19": 0.11349344998598099,
+          "station": 0.016705501824617386,
+          "domain": 0.03840954974293709,
+          "consensus": 0.009222883731126785
+        },
+        "matched_rule": {
+          "fields": [
+            "title",
+            "rank_bin"
+          ],
+          "values": [
+            "LTE小区退出服务",
+            "r101_200"
+          ],
+          "support": 5,
+          "correct": 3,
+          "precision": 0.6,
+          "fold_count": 4,
+          "fold_precision": {
+            "0": 1.0,
+            "2": 1.0,
+            "3": 0.5,
+            "4": 0.0
+          },
+          "posterior_mean": 0.5065576398909732,
+          "beta_lower_75": 0.4234802790882948,
+          "advantage": 0.04672118005451342
+        },
+        "estimated_advantage": 0.04672118005451342
+      }
+    },
+    {
+      "action_id": "v50_add_batch02_n08_hold_007",
+      "order_id": "e7c0c3fe-f81e-494f-8faa-edcee9a23ce3",
+      "remove_rids": [],
+      "add_rids": [
+        "#-1:4044d294-2a14-4c31-9d5f-3464269651d2"
+      ],
+      "source": "v50_empirical_bayes_stratum",
+      "expected_gain": 0.011078527207559419,
+      "evidence": {
+        "row": 2885,
+        "rank": 52,
+        "rank_bin": "r51_100",
+        "order_index": 483,
+        "order_id": "e7c0c3fe-f81e-494f-8faa-edcee9a23ce3",
+        "rid": "#-1:4044d294-2a14-4c31-9d5f-3464269651d2",
+        "kind": "add",
+        "title": "射频单元直流掉电告警",
+        "vendor": "设备商乙",
+        "device_type": "",
+        "deployment": "",
+        "radio": "",
+        "timeline": "001111",
+        "current_count": 1,
+        "alarm_count": 11,
+        "rank_average": 0.6509113907814026,
+        "score_median": 0.5323226451873779,
+        "agreement": 4,
+        "scores": {
+          "v11": 0.5425217151641846,
+          "v13": 0.5984416007995605,
+          "v19": 0.1031622663140297,
+          "station": 0.5221235752105713,
+          "domain": 0.4933929145336151,
+          "consensus": 0.6088493466377258
+        },
+        "matched_rule": {
+          "fields": [
+            "vendor",
+            "rank_bin"
+          ],
+          "values": [
+            "设备商乙",
+            "r51_100"
+          ],
+          "support": 21,
+          "correct": 10,
+          "precision": 0.47619047619047616,
+          "fold_count": 4,
+          "fold_precision": {
+            "0": 0.5,
+            "1": 0.6666666666666666,
+            "2": 0.3333333333333333,
+            "4": 0.6
+          },
+          "posterior_mean": 0.47091498704401924,
+          "beta_lower_75": 0.41352505951768576,
+          "advantage": 0.011078527207559419
+        },
+        "estimated_advantage": 0.011078527207559419
+      }
+    },
+    {
+      "action_id": "v50_add_batch02_n08_hold_008",
+      "order_id": "01b0f97d-4713-4071-8ebd-2e03009fcb3a",
+      "remove_rids": [],
+      "add_rids": [
+        "#-1:f684c864-c7af-48a8-8331-c72eaf356fd4"
+      ],
+      "source": "v50_empirical_bayes_stratum",
+      "expected_gain": 0.011078527207559419,
+      "evidence": {
+        "row": 37,
+        "rank": 56,
+        "rank_bin": "r51_100",
+        "order_index": 3,
+        "order_id": "01b0f97d-4713-4071-8ebd-2e03009fcb3a",
+        "rid": "#-1:f684c864-c7af-48a8-8331-c72eaf356fd4",
+        "kind": "add",
+        "title": "BBU单板维护链路异常告警",
+        "vendor": "设备商乙",
+        "device_type": "",
+        "deployment": "",
+        "radio": "",
+        "timeline": "000011",
+        "current_count": 1,
+        "alarm_count": 12,
+        "rank_average": 0.6471527218818665,
+        "score_median": 0.2978261560201645,
+        "agreement": 1,
+        "scores": {
+          "v11": 0.2857488691806793,
+          "v13": 0.25321337580680847,
+          "v19": 0.6041696071624756,
+          "station": 0.35249701142311096,
+          "domain": 0.2934146523475647,
+          "consensus": 0.3022376596927643
+        },
+        "matched_rule": {
+          "fields": [
+            "vendor",
+            "rank_bin"
+          ],
+          "values": [
+            "设备商乙",
+            "r51_100"
+          ],
+          "support": 21,
+          "correct": 10,
+          "precision": 0.47619047619047616,
+          "fold_count": 4,
+          "fold_precision": {
+            "0": 0.5,
+            "1": 0.6666666666666666,
+            "2": 0.3333333333333333,
+            "4": 0.6
+          },
+          "posterior_mean": 0.47091498704401924,
+          "beta_lower_75": 0.41352505951768576,
+          "advantage": 0.011078527207559419
+        },
+        "estimated_advantage": 0.011078527207559419
+      }
+    },
+    {
+      "action_id": "v50_add_batch03_n08_hold_001",
+      "order_id": "faa00ed5-c0b9-445e-98ac-671035a4a239",
+      "remove_rids": [],
+      "add_rids": [
+        "#-1:d4f3c427-0b59-41d3-8208-18c218433c27"
+      ],
+      "source": "v50_empirical_bayes_stratum",
+      "expected_gain": 0.011078527207559419,
+      "evidence": {
+        "row": 3174,
+        "rank": 58,
+        "rank_bin": "r51_100",
+        "order_index": 532,
+        "order_id": "faa00ed5-c0b9-445e-98ac-671035a4a239",
+        "rid": "#-1:d4f3c427-0b59-41d3-8208-18c218433c27",
+        "kind": "add",
+        "title": "ETH_LOS",
+        "vendor": "设备商乙",
+        "device_type": "",
+        "deployment": "",
+        "radio": "",
+        "timeline": "100000",
+        "current_count": 1,
+        "alarm_count": 14,
+        "rank_average": 0.6451961994171143,
+        "score_median": 0.3719526678323746,
+        "agreement": 2,
+        "scores": {
+          "v11": 0.2830280661582947,
+          "v13": 0.28424954414367676,
+          "v19": 0.1804899126291275,
+          "station": 0.5779268741607666,
+          "domain": 0.4596557915210724,
+          "consensus": 0.6178073883056641
+        },
+        "matched_rule": {
+          "fields": [
+            "vendor",
+            "rank_bin"
+          ],
+          "values": [
+            "设备商乙",
+            "r51_100"
+          ],
+          "support": 21,
+          "correct": 10,
+          "precision": 0.47619047619047616,
+          "fold_count": 4,
+          "fold_precision": {
+            "0": 0.5,
+            "1": 0.6666666666666666,
+            "2": 0.3333333333333333,
+            "4": 0.6
+          },
+          "posterior_mean": 0.47091498704401924,
+          "beta_lower_75": 0.41352505951768576,
+          "advantage": 0.011078527207559419
+        },
+        "estimated_advantage": 0.011078527207559419
+      }
+    },
+    {
+      "action_id": "v50_add_batch03_n08_hold_002",
+      "order_id": "0e755fc0-8819-4420-b701-1f84ec0e59de",
+      "remove_rids": [],
+      "add_rids": [
+        "#-1:0f95a457-9523-4b28-9a93-81b08542d6b4"
+      ],
+      "source": "v50_empirical_bayes_stratum",
+      "expected_gain": 0.011078527207559419,
+      "evidence": {
+        "row": 180,
+        "rank": 60,
+        "rank_bin": "r51_100",
+        "order_index": 27,
+        "order_id": "0e755fc0-8819-4420-b701-1f84ec0e59de",
+        "rid": "#-1:0f95a457-9523-4b28-9a93-81b08542d6b4",
+        "kind": "add",
+        "title": "射频单元维护链路异常告警",
+        "vendor": "设备商乙",
+        "device_type": "",
+        "deployment": "",
+        "radio": "",
+        "timeline": "000011",
+        "current_count": 1,
+        "alarm_count": 4,
+        "rank_average": 0.6424673199653625,
+        "score_median": 0.4348790794610977,
+        "agreement": 1,
+        "scores": {
+          "v11": 0.09789144992828369,
+          "v13": 0.08872440457344055,
+          "v19": 0.7841949462890625,
+          "station": 0.4730132818222046,
+          "domain": 0.43613865971565247,
+          "consensus": 0.43361949920654297
+        },
+        "matched_rule": {
+          "fields": [
+            "vendor",
+            "rank_bin"
+          ],
+          "values": [
+            "设备商乙",
+            "r51_100"
+          ],
+          "support": 21,
+          "correct": 10,
+          "precision": 0.47619047619047616,
+          "fold_count": 4,
+          "fold_precision": {
+            "0": 0.5,
+            "1": 0.6666666666666666,
+            "2": 0.3333333333333333,
+            "4": 0.6
+          },
+          "posterior_mean": 0.47091498704401924,
+          "beta_lower_75": 0.41352505951768576,
+          "advantage": 0.011078527207559419
+        },
+        "estimated_advantage": 0.011078527207559419
+      }
+    },
+    {
+      "action_id": "v50_add_batch03_n08_hold_004",
+      "order_id": "fa82abed-1394-4701-b303-e3a5371d30af",
+      "remove_rids": [],
+      "add_rids": [
+        "#-1:a4eca6a4-28de-484e-88b6-5cc9d53b641c"
+      ],
+      "source": "v50_empirical_bayes_stratum",
+      "expected_gain": 0.011078527207559419,
+      "evidence": {
+        "row": 3156,
+        "rank": 67,
+        "rank_bin": "r51_100",
+        "order_index": 531,
+        "order_id": "fa82abed-1394-4701-b303-e3a5371d30af",
+        "rid": "#-1:a4eca6a4-28de-484e-88b6-5cc9d53b641c",
+        "kind": "add",
+        "title": "传输光接口异常告警",
+        "vendor": "设备商乙",
+        "device_type": "",
+        "deployment": "",
+        "radio": "",
+        "timeline": "111111",
+        "current_count": 1,
+        "alarm_count": 10,
+        "rank_average": 0.6353619694709778,
+        "score_median": 0.32909804582595825,
+        "agreement": 0,
+        "scores": {
+          "v11": 0.30377912521362305,
+          "v13": 0.24508793652057648,
+          "v19": 0.245770663022995,
+          "station": 0.35441696643829346,
+          "domain": 0.36636343598365784,
+          "consensus": 0.3592361807823181
+        },
+        "matched_rule": {
+          "fields": [
+            "vendor",
+            "rank_bin"
+          ],
+          "values": [
+            "设备商乙",
+            "r51_100"
+          ],
+          "support": 21,
+          "correct": 10,
+          "precision": 0.47619047619047616,
+          "fold_count": 4,
+          "fold_precision": {
+            "0": 0.5,
+            "1": 0.6666666666666666,
+            "2": 0.3333333333333333,
+            "4": 0.6
+          },
+          "posterior_mean": 0.47091498704401924,
+          "beta_lower_75": 0.41352505951768576,
+          "advantage": 0.011078527207559419
+        },
+        "estimated_advantage": 0.011078527207559419
+      }
+    },
+    {
+      "action_id": "v50_add_batch03_n08_hold_005",
+      "order_id": "d3af2aee-7dc1-4e51-9412-857e58882314",
+      "remove_rids": [],
+      "add_rids": [
+        "#-1:788b74a5-a6cd-4d8c-9052-632b8cc30e10"
+      ],
+      "source": "v50_empirical_bayes_stratum",
+      "expected_gain": 0.011078527207559419,
+      "evidence": {
+        "row": 2595,
+        "rank": 69,
+        "rank_bin": "r51_100",
+        "order_index": 436,
+        "order_id": "d3af2aee-7dc1-4e51-9412-857e58882314",
+        "rid": "#-1:788b74a5-a6cd-4d8c-9052-632b8cc30e10",
+        "kind": "add",
+        "title": "射频单元维护链路异常告警",
+        "vendor": "设备商乙",
+        "device_type": "",
+        "deployment": "",
+        "radio": "",
+        "timeline": "111111",
+        "current_count": 1,
+        "alarm_count": 4,
+        "rank_average": 0.6331994533538818,
+        "score_median": 0.2421637400984764,
+        "agreement": 0,
+        "scores": {
+          "v11": 0.2310207635164261,
+          "v13": 0.2287454605102539,
+          "v19": 0.4929726719856262,
+          "station": 0.25330671668052673,
+          "domain": 0.2673746347427368,
+          "consensus": 0.1654549390077591
+        },
+        "matched_rule": {
+          "fields": [
+            "vendor",
+            "rank_bin"
+          ],
+          "values": [
+            "设备商乙",
+            "r51_100"
+          ],
+          "support": 21,
+          "correct": 10,
+          "precision": 0.47619047619047616,
+          "fold_count": 4,
+          "fold_precision": {
+            "0": 0.5,
+            "1": 0.6666666666666666,
+            "2": 0.3333333333333333,
+            "4": 0.6
+          },
+          "posterior_mean": 0.47091498704401924,
+          "beta_lower_75": 0.41352505951768576,
+          "advantage": 0.011078527207559419
+        },
+        "estimated_advantage": 0.011078527207559419
+      }
+    },
+    {
+      "action_id": "v50_add_batch04_n08_hold_001",
+      "order_id": "e3fac97b-b244-438e-b6e4-7bd8dce938e0",
+      "remove_rids": [],
+      "add_rids": [
+        "#-1:67dc4805-7fae-4cc8-a7cc-2b1123940417"
+      ],
+      "source": "v50_empirical_bayes_stratum",
+      "expected_gain": 0.011078527207559419,
+      "evidence": {
+        "row": 2842,
+        "rank": 79,
+        "rank_bin": "r51_100",
+        "order_index": 473,
+        "order_id": "e3fac97b-b244-438e-b6e4-7bd8dce938e0",
+        "rid": "#-1:67dc4805-7fae-4cc8-a7cc-2b1123940417",
+        "kind": "add",
+        "title": "射频单元时钟异常告警",
+        "vendor": "设备商乙",
+        "device_type": "",
+        "deployment": "",
+        "radio": "",
+        "timeline": "111111",
+        "current_count": 1,
+        "alarm_count": 6,
+        "rank_average": 0.6268149614334106,
+        "score_median": 0.1667582020163536,
+        "agreement": 1,
+        "scores": {
+          "v11": 0.2223563939332962,
+          "v13": 0.19641175866127014,
+          "v19": 0.7934413552284241,
+          "station": 0.08553551882505417,
+          "domain": 0.13710464537143707,
+          "consensus": 0.05407421663403511
+        },
+        "matched_rule": {
+          "fields": [
+            "vendor",
+            "rank_bin"
+          ],
+          "values": [
+            "设备商乙",
+            "r51_100"
+          ],
+          "support": 21,
+          "correct": 10,
+          "precision": 0.47619047619047616,
+          "fold_count": 4,
+          "fold_precision": {
+            "0": 0.5,
+            "1": 0.6666666666666666,
+            "2": 0.3333333333333333,
+            "4": 0.6
+          },
+          "posterior_mean": 0.47091498704401924,
+          "beta_lower_75": 0.41352505951768576,
+          "advantage": 0.011078527207559419
+        },
+        "estimated_advantage": 0.011078527207559419
+      }
+    },
+    {
+      "action_id": "v50_add_batch04_n08_hold_005",
+      "order_id": "599a8ce2-c4f0-453c-b951-105fb1067e7e",
+      "remove_rids": [],
+      "add_rids": [
+        "#-1:0091f234-51c0-487f-bf31-c3c4bd3dd33e"
+      ],
+      "source": "v50_empirical_bayes_stratum",
+      "expected_gain": 0.011078527207559419,
+      "evidence": {
+        "row": 933,
+        "rank": 90,
+        "rank_bin": "r51_100",
+        "order_index": 166,
+        "order_id": "599a8ce2-c4f0-453c-b951-105fb1067e7e",
+        "rid": "#-1:0091f234-51c0-487f-bf31-c3c4bd3dd33e",
+        "kind": "add",
+        "title": "射频单元维护链路异常告警",
+        "vendor": "设备商乙",
+        "device_type": "",
+        "deployment": "",
+        "radio": "",
+        "timeline": "000110",
+        "current_count": 1,
+        "alarm_count": 4,
+        "rank_average": 0.6195036768913269,
+        "score_median": 0.11222229152917862,
+        "agreement": 1,
+        "scores": {
+          "v11": 0.07889927923679352,
+          "v13": 0.06099973991513252,
+          "v19": 0.9153483510017395,
+          "station": 0.1416931450366974,
+          "domain": 0.18679533898830414,
+          "consensus": 0.08275143802165985
+        },
+        "matched_rule": {
+          "fields": [
+            "vendor",
+            "rank_bin"
+          ],
+          "values": [
+            "设备商乙",
+            "r51_100"
+          ],
+          "support": 21,
+          "correct": 10,
+          "precision": 0.47619047619047616,
+          "fold_count": 4,
+          "fold_precision": {
+            "0": 0.5,
+            "1": 0.6666666666666666,
+            "2": 0.3333333333333333,
+            "4": 0.6
+          },
+          "posterior_mean": 0.47091498704401924,
+          "beta_lower_75": 0.41352505951768576,
+          "advantage": 0.011078527207559419
+        },
+        "estimated_advantage": 0.011078527207559419
+      }
+    },
+    {
+      "action_id": "v50_add_batch04_n08_hold_006",
+      "order_id": "ed52fdc5-fce4-4fb1-a76e-bf6732d6360f",
+      "remove_rids": [],
+      "add_rids": [
+        "#-1:760b3b8a-4628-4ad9-9b3c-02accd3b3280"
+      ],
+      "source": "v50_empirical_bayes_stratum",
+      "expected_gain": 0.011078527207559419,
+      "evidence": {
+        "row": 2961,
+        "rank": 92,
+        "rank_bin": "r51_100",
+        "order_index": 494,
+        "order_id": "ed52fdc5-fce4-4fb1-a76e-bf6732d6360f",
+        "rid": "#-1:760b3b8a-4628-4ad9-9b3c-02accd3b3280",
+        "kind": "add",
+        "title": "时钟参考源异常告警",
+        "vendor": "设备商乙",
+        "device_type": "",
+        "deployment": "",
+        "radio": "",
+        "timeline": "000111",
+        "current_count": 7,
+        "alarm_count": 16,
+        "rank_average": 0.6184223890304565,
+        "score_median": 0.16457615047693253,
+        "agreement": 1,
+        "scores": {
+          "v11": 0.24964484572410583,
+          "v13": 0.20162567496299744,
+          "v19": 0.5589994788169861,
+          "station": 0.1114773079752922,
+          "domain": 0.12752662599086761,
+          "consensus": 0.08039561659097672
+        },
+        "matched_rule": {
+          "fields": [
+            "vendor",
+            "rank_bin"
+          ],
+          "values": [
+            "设备商乙",
+            "r51_100"
+          ],
+          "support": 21,
+          "correct": 10,
+          "precision": 0.47619047619047616,
+          "fold_count": 4,
+          "fold_precision": {
+            "0": 0.5,
+            "1": 0.6666666666666666,
+            "2": 0.3333333333333333,
+            "4": 0.6
+          },
+          "posterior_mean": 0.47091498704401924,
+          "beta_lower_75": 0.41352505951768576,
+          "advantage": 0.011078527207559419
+        },
+        "estimated_advantage": 0.011078527207559419
+      }
+    },
+    {
+      "action_id": "v50_add_batch04_n08_hold_007",
+      "order_id": "66ee1170-8f45-43ec-a392-426aaac31f7b",
+      "remove_rids": [],
+      "add_rids": [
+        "#-1:05da9895-4431-4714-a9c5-10b181dd5684"
+      ],
+      "source": "v50_empirical_bayes_stratum",
+      "expected_gain": 0.011078527207559419,
+      "evidence": {
+        "row": 1150,
+        "rank": 93,
+        "rank_bin": "r51_100",
+        "order_index": 194,
+        "order_id": "66ee1170-8f45-43ec-a392-426aaac31f7b",
+        "rid": "#-1:05da9895-4431-4714-a9c5-10b181dd5684",
+        "kind": "add",
+        "title": "射频单元维护链路异常告警",
+        "vendor": "设备商乙",
+        "device_type": "",
+        "deployment": "",
+        "radio": "",
+        "timeline": "000011",
+        "current_count": 1,
+        "alarm_count": 4,
+        "rank_average": 0.6179590225219727,
+        "score_median": 0.09066081792116165,
+        "agreement": 1,
+        "scores": {
+          "v11": 0.08899973332881927,
+          "v13": 0.0745445042848587,
+          "v19": 0.920583963394165,
+          "station": 0.14199164509773254,
+          "domain": 0.07828975468873978,
+          "consensus": 0.09232190251350403
+        },
+        "matched_rule": {
+          "fields": [
+            "vendor",
+            "rank_bin"
+          ],
+          "values": [
+            "设备商乙",
+            "r51_100"
+          ],
+          "support": 21,
+          "correct": 10,
+          "precision": 0.47619047619047616,
+          "fold_count": 4,
+          "fold_precision": {
+            "0": 0.5,
+            "1": 0.6666666666666666,
+            "2": 0.3333333333333333,
+            "4": 0.6
+          },
+          "posterior_mean": 0.47091498704401924,
+          "beta_lower_75": 0.41352505951768576,
+          "advantage": 0.011078527207559419
+        },
+        "estimated_advantage": 0.011078527207559419
+      }
+    },
+    {
+      "action_id": "v50_add_batch04_n08_hold_008",
+      "order_id": "7002339b-8846-40ad-a1be-8b837008e2aa",
+      "remove_rids": [],
+      "add_rids": [
+        "#-1:ab40c757-c0ae-4f62-bf9b-7070e7d36a7c"
+      ],
+      "source": "v50_empirical_bayes_stratum",
+      "expected_gain": 0.011078527207559419,
+      "evidence": {
+        "row": 1268,
+        "rank": 96,
+        "rank_bin": "r51_100",
+        "order_index": 212,
+        "order_id": "7002339b-8846-40ad-a1be-8b837008e2aa",
+        "rid": "#-1:ab40c757-c0ae-4f62-bf9b-7070e7d36a7c",
+        "kind": "add",
+        "title": "射频单元维护链路异常告警",
+        "vendor": "设备商乙",
+        "device_type": "",
+        "deployment": "",
+        "radio": "",
+        "timeline": "000111",
+        "current_count": 1,
+        "alarm_count": 3,
+        "rank_average": 0.6154361367225647,
+        "score_median": 0.11561835184693336,
+        "agreement": 1,
+        "scores": {
+          "v11": 0.06659320741891861,
+          "v13": 0.05078893527388573,
+          "v19": 0.9106209874153137,
+          "station": 0.14607903361320496,
+          "domain": 0.22750194370746613,
+          "consensus": 0.08515767008066177
+        },
+        "matched_rule": {
+          "fields": [
+            "vendor",
+            "rank_bin"
+          ],
+          "values": [
+            "设备商乙",
+            "r51_100"
+          ],
+          "support": 21,
+          "correct": 10,
+          "precision": 0.47619047619047616,
+          "fold_count": 4,
+          "fold_precision": {
+            "0": 0.5,
+            "1": 0.6666666666666666,
+            "2": 0.3333333333333333,
+            "4": 0.6
+          },
+          "posterior_mean": 0.47091498704401924,
+          "beta_lower_75": 0.41352505951768576,
+          "advantage": 0.011078527207559419
+        },
+        "estimated_advantage": 0.011078527207559419
+      }
+    },
+    {
+      "action_id": "v50_delete_batch01_n08_hold_002",
+      "order_id": "eff8f9b6-1cb4-483c-9128-cf8a4985dbf4",
+      "remove_rids": [
+        "#-1:fad88414-d576-4924-b598-15c725fb5096"
+      ],
+      "add_rids": [],
+      "source": "v50_empirical_bayes_stratum",
+      "expected_gain": 0.1099386724386725,
+      "evidence": {
+        "row": 3051,
+        "rank": 56,
+        "rank_bin": "r51_100",
+        "order_index": 509,
+        "order_id": "eff8f9b6-1cb4-483c-9128-cf8a4985dbf4",
+        "rid": "#-1:fad88414-d576-4924-b598-15c725fb5096",
+        "kind": "delete",
+        "title": "BBU CPRI接口异常告警",
+        "vendor": "设备商乙",
+        "device_type": "",
+        "deployment": "",
+        "radio": "",
+        "timeline": "111111",
+        "current_count": 3,
+        "alarm_count": 6,
+        "rank_average": 0.745597779750824,
+        "score_median": 0.8583182096481323,
+        "agreement": 5,
+        "scores": {
+          "v11": 0.8354596495628357,
+          "v13": 0.7561498880386353,
+          "v19": 0.4535464346408844,
+          "station": 0.881176769733429,
+          "domain": 0.9076765775680542,
+          "consensus": 0.9230884313583374
+        },
+        "matched_rule": {
+          "fields": [
+            "title",
+            "rank_bin"
+          ],
+          "values": [
+            "BBU CPRI接口异常告警",
+            "r51_100"
+          ],
+          "support": 6,
+          "correct": 5,
+          "precision": 0.8333333333333334,
+          "fold_count": 3,
+          "fold_precision": {
+            "1": 1.0,
+            "2": 1.0,
+            "4": 0.75
+          },
+          "posterior_mean": 0.6501022126022127,
+          "beta_lower_75": 0.5591486603905467,
+          "advantage": 0.1099386724386725
+        },
+        "estimated_advantage": 0.1099386724386725
+      }
+    },
+    {
+      "action_id": "v50_delete_batch01_n08_hold_003",
+      "order_id": "f85240db-96a5-407f-8ff3-b0af3d8f6d05",
+      "remove_rids": [
+        "#-1:858ae07c-232a-4cd1-9677-c9a738e0860b"
+      ],
+      "add_rids": [],
+      "source": "v50_empirical_bayes_stratum",
+      "expected_gain": 0.1099386724386725,
+      "evidence": {
+        "row": 3147,
+        "rank": 65,
+        "rank_bin": "r51_100",
+        "order_index": 528,
+        "order_id": "f85240db-96a5-407f-8ff3-b0af3d8f6d05",
+        "rid": "#-1:858ae07c-232a-4cd1-9677-c9a738e0860b",
+        "kind": "delete",
+        "title": "BBU CPRI接口异常告警",
+        "vendor": "设备商乙",
+        "device_type": "",
+        "deployment": "",
+        "radio": "",
+        "timeline": "000111",
+        "current_count": 2,
+        "alarm_count": 3,
+        "rank_average": 0.7579548954963684,
+        "score_median": 0.8347513973712921,
+        "agreement": 6,
+        "scores": {
+          "v11": 0.9240361452102661,
+          "v13": 0.8357537388801575,
+          "v19": 0.6767220497131348,
+          "station": 0.7846243381500244,
+          "domain": 0.8337490558624268,
+          "consensus": 0.8673022985458374
+        },
+        "matched_rule": {
+          "fields": [
+            "title",
+            "rank_bin"
+          ],
+          "values": [
+            "BBU CPRI接口异常告警",
+            "r51_100"
+          ],
+          "support": 6,
+          "correct": 5,
+          "precision": 0.8333333333333334,
+          "fold_count": 3,
+          "fold_precision": {
+            "1": 1.0,
+            "2": 1.0,
+            "4": 0.75
+          },
+          "posterior_mean": 0.6501022126022127,
+          "beta_lower_75": 0.5591486603905467,
+          "advantage": 0.1099386724386725
+        },
+        "estimated_advantage": 0.1099386724386725
+      }
+    },
+    {
+      "action_id": "v50_delete_batch01_n08_hold_004",
+      "order_id": "5e6e4a4b-969f-420a-93f4-1a492a75f0f9",
+      "remove_rids": [
+        "#-1:6b818cdd-abd3-4b6d-b417-0b8db4e3279a"
+      ],
+      "add_rids": [],
+      "source": "v50_empirical_bayes_stratum",
+      "expected_gain": 0.1099386724386725,
+      "evidence": {
+        "row": 990,
+        "rank": 67,
+        "rank_bin": "r51_100",
+        "order_index": 176,
+        "order_id": "5e6e4a4b-969f-420a-93f4-1a492a75f0f9",
+        "rid": "#-1:6b818cdd-abd3-4b6d-b417-0b8db4e3279a",
+        "kind": "delete",
+        "title": "BBU CPRI接口异常告警",
+        "vendor": "设备商乙",
+        "device_type": "",
+        "deployment": "",
+        "radio": "",
+        "timeline": "111111",
+        "current_count": 2,
+        "alarm_count": 4,
+        "rank_average": 0.759036123752594,
+        "score_median": 0.8609741926193237,
+        "agreement": 6,
+        "scores": {
+          "v11": 0.7872528433799744,
+          "v13": 0.6397934556007385,
+          "v19": 0.9004507064819336,
+          "station": 0.9233680963516235,
+          "domain": 0.8214976787567139,
+          "consensus": 0.9324042201042175
+        },
+        "matched_rule": {
+          "fields": [
+            "title",
+            "rank_bin"
+          ],
+          "values": [
+            "BBU CPRI接口异常告警",
+            "r51_100"
+          ],
+          "support": 6,
+          "correct": 5,
+          "precision": 0.8333333333333334,
+          "fold_count": 3,
+          "fold_precision": {
+            "1": 1.0,
+            "2": 1.0,
+            "4": 0.75
+          },
+          "posterior_mean": 0.6501022126022127,
+          "beta_lower_75": 0.5591486603905467,
+          "advantage": 0.1099386724386725
+        },
+        "estimated_advantage": 0.1099386724386725
+      }
+    },
+    {
+      "action_id": "v50_delete_batch01_n08_hold_005",
+      "order_id": "050ba66b-e989-48e5-a059-a336a79e0dab",
+      "remove_rids": [
+        "#-1:806890e7-580c-47ab-85da-8d53fe933d77"
+      ],
+      "add_rids": [],
+      "source": "v50_empirical_bayes_stratum",
+      "expected_gain": 0.1099386724386725,
+      "evidence": {
+        "row": 68,
+        "rank": 76,
+        "rank_bin": "r51_100",
+        "order_index": 9,
+        "order_id": "050ba66b-e989-48e5-a059-a336a79e0dab",
+        "rid": "#-1:806890e7-580c-47ab-85da-8d53fe933d77",
+        "kind": "delete",
+        "title": "BBU CPRI接口异常告警",
+        "vendor": "设备商乙",
+        "device_type": "",
+        "deployment": "",
+        "radio": "",
+        "timeline": "000011",
+        "current_count": 4,
+        "alarm_count": 6,
+        "rank_average": 0.7715992331504822,
+        "score_median": 0.8165852129459381,
+        "agreement": 6,
+        "scores": {
+          "v11": 0.9101992249488831,
+          "v13": 0.8395029902458191,
+          "v19": 0.9647563695907593,
+          "station": 0.708001434803009,
+          "domain": 0.7573755383491516,
+          "consensus": 0.7936674356460571
+        },
+        "matched_rule": {
+          "fields": [
+            "title",
+            "rank_bin"
+          ],
+          "values": [
+            "BBU CPRI接口异常告警",
+            "r51_100"
+          ],
+          "support": 6,
+          "correct": 5,
+          "precision": 0.8333333333333334,
+          "fold_count": 3,
+          "fold_precision": {
+            "1": 1.0,
+            "2": 1.0,
+            "4": 0.75
+          },
+          "posterior_mean": 0.6501022126022127,
+          "beta_lower_75": 0.5591486603905467,
+          "advantage": 0.1099386724386725
+        },
+        "estimated_advantage": 0.1099386724386725
+      }
+    },
+    {
+      "action_id": "v50_delete_batch01_n08_hold_007",
+      "order_id": "d7b73432-8545-486a-8820-7b7030be0af3",
+      "remove_rids": [
+        "#-1:33e99d65-b384-4658-9ce0-ecdc7c286b39"
+      ],
+      "add_rids": [],
+      "source": "v50_empirical_bayes_stratum",
+      "expected_gain": 0.1099386724386725,
+      "evidence": {
+        "row": 2746,
+        "rank": 100,
+        "rank_bin": "r51_100",
+        "order_index": 449,
+        "order_id": "d7b73432-8545-486a-8820-7b7030be0af3",
+        "rid": "#-1:33e99d65-b384-4658-9ce0-ecdc7c286b39",
+        "kind": "delete",
+        "title": "BBU CPRI接口异常告警",
+        "vendor": "设备商乙",
+        "device_type": "",
+        "deployment": "",
+        "radio": "",
+        "timeline": "000011",
+        "current_count": 2,
+        "alarm_count": 4,
+        "rank_average": 0.8084645867347717,
+        "score_median": 0.9382527470588684,
+        "agreement": 6,
+        "scores": {
+          "v11": 0.9283982515335083,
+          "v13": 0.8168473243713379,
+          "v19": 0.9360984563827515,
+          "station": 0.9404070377349854,
+          "domain": 0.94045490026474,
+          "consensus": 0.9669473767280579
+        },
+        "matched_rule": {
+          "fields": [
+            "title",
+            "rank_bin"
+          ],
+          "values": [
+            "BBU CPRI接口异常告警",
+            "r51_100"
+          ],
+          "support": 6,
+          "correct": 5,
+          "precision": 0.8333333333333334,
+          "fold_count": 3,
+          "fold_precision": {
+            "1": 1.0,
+            "2": 1.0,
+            "4": 0.75
+          },
+          "posterior_mean": 0.6501022126022127,
+          "beta_lower_75": 0.5591486603905467,
+          "advantage": 0.1099386724386725
+        },
+        "estimated_advantage": 0.1099386724386725
+      }
+    },
+    {
+      "action_id": "v50_delete_batch02_n08_hold_001",
+      "order_id": "28b90da8-e634-4666-8e89-10d1f5c74846",
+      "remove_rids": [
+        "#-1:28289fe0-1167-46f9-b834-90490b58eb7e"
+      ],
+      "add_rids": [],
+      "source": "v50_empirical_bayes_stratum",
+      "expected_gain": 0.03770509326064886,
+      "evidence": {
+        "row": 396,
+        "rank": 37,
+        "rank_bin": "r26_50",
+        "order_index": 72,
+        "order_id": "28b90da8-e634-4666-8e89-10d1f5c74846",
+        "rid": "#-1:28289fe0-1167-46f9-b834-90490b58eb7e",
+        "kind": "delete",
+        "title": "光口接收链路故障",
+        "vendor": "设备商甲",
+        "device_type": "SDR",
+        "deployment": "NSA",
+        "radio": "LTE FDD",
+        "timeline": "111111",
+        "current_count": 3,
+        "alarm_count": 3,
+        "rank_average": 0.7205231189727783,
+        "score_median": 0.6960577964782715,
+        "agreement": 6,
+        "scores": {
+          "v11": 0.7278805375099182,
+          "v13": 0.6642350554466248,
+          "v19": 0.8904820084571838,
+          "station": 0.6388474106788635,
+          "domain": 0.6230404376983643,
+          "consensus": 0.7749556303024292
+        },
+        "matched_rule": {
+          "fields": [
+            "title",
+            "device_type"
+          ],
+          "values": [
+            "光口接收链路故障",
+            "SDR"
+          ],
+          "support": 8,
+          "correct": 5,
+          "precision": 0.625,
+          "fold_count": 4,
+          "fold_precision": {
+            "1": 0.5,
+            "2": 0.5,
+            "3": 1.0,
+            "4": 0.6666666666666666
+          },
+          "posterior_mean": 0.577868633424189,
+          "beta_lower_75": 0.4962300676749261,
+          "advantage": 0.03770509326064886
+        },
+        "estimated_advantage": 0.03770509326064886
+      }
+    },
+    {
+      "action_id": "v50_delete_batch02_n08_hold_002",
+      "order_id": "69a3a452-8984-4c9a-baed-99c8ae6ac3a2",
+      "remove_rids": [
+        "#-1:f5a6f67f-9051-4eb6-b365-019f32f817fc"
+      ],
+      "add_rids": [],
+      "source": "v50_empirical_bayes_stratum",
+      "expected_gain": 0.03770509326064886,
+      "evidence": {
+        "row": 1185,
+        "rank": 53,
+        "rank_bin": "r51_100",
+        "order_index": 198,
+        "order_id": "69a3a452-8984-4c9a-baed-99c8ae6ac3a2",
+        "rid": "#-1:f5a6f67f-9051-4eb6-b365-019f32f817fc",
+        "kind": "delete",
+        "title": "RRU链路断",
+        "vendor": "设备商甲",
+        "device_type": "RU",
+        "deployment": "LTE",
+        "radio": "TD-LTE",
+        "timeline": "111000",
+        "current_count": 7,
+        "alarm_count": 18,
+        "rank_average": 0.7351972460746765,
+        "score_median": 0.7846810519695282,
+        "agreement": 6,
+        "scores": {
+          "v11": 0.8742187023162842,
+          "v13": 0.8187981247901917,
+          "v19": 0.6553918719291687,
+          "station": 0.7505639791488647,
+          "domain": 0.6805059313774109,
+          "consensus": 0.8329333066940308
+        },
+        "matched_rule": {
+          "fields": [
+            "title",
+            "rank_bin"
+          ],
+          "values": [
+            "RRU链路断",
+            "r51_100"
+          ],
+          "support": 8,
+          "correct": 5,
+          "precision": 0.625,
+          "fold_count": 4,
+          "fold_precision": {
+            "0": 0.0,
+            "1": 0.6666666666666666,
+            "2": 0.6666666666666666,
+            "3": 1.0
+          },
+          "posterior_mean": 0.577868633424189,
+          "beta_lower_75": 0.4962300676749261,
+          "advantage": 0.03770509326064886
+        },
+        "estimated_advantage": 0.03770509326064886
+      }
+    },
+    {
+      "action_id": "v50_delete_batch02_n08_hold_003",
+      "order_id": "b90d6799-a2cb-401c-a1bd-8e1ec2204268",
+      "remove_rids": [
+        "#-1:3fb199da-062e-4cd3-bef9-cb53eb35d1cb"
+      ],
+      "add_rids": [],
+      "source": "v50_empirical_bayes_stratum",
+      "expected_gain": 0.03770509326064886,
+      "evidence": {
+        "row": 2198,
+        "rank": 57,
+        "rank_bin": "r51_100",
+        "order_index": 379,
+        "order_id": "b90d6799-a2cb-401c-a1bd-8e1ec2204268",
+        "rid": "#-1:3fb199da-062e-4cd3-bef9-cb53eb35d1cb",
+        "kind": "delete",
+        "title": "RRU链路断",
+        "vendor": "设备商甲",
+        "device_type": "RU",
+        "deployment": "SA_NSA",
+        "radio": "TD-LTE,NR",
+        "timeline": "000011",
+        "current_count": 3,
+        "alarm_count": 11,
+        "rank_average": 0.7463186383247375,
+        "score_median": 0.7347094714641571,
+        "agreement": 6,
+        "scores": {
+          "v11": 0.6980201601982117,
+          "v13": 0.5941997766494751,
+          "v19": 0.9801495671272278,
+          "station": 0.6253193020820618,
+          "domain": 0.8458981513977051,
+          "consensus": 0.7713987827301025
+        },
+        "matched_rule": {
+          "fields": [
+            "title",
+            "rank_bin"
+          ],
+          "values": [
+            "RRU链路断",
+            "r51_100"
+          ],
+          "support": 8,
+          "correct": 5,
+          "precision": 0.625,
+          "fold_count": 4,
+          "fold_precision": {
+            "0": 0.0,
+            "1": 0.6666666666666666,
+            "2": 0.6666666666666666,
+            "3": 1.0
+          },
+          "posterior_mean": 0.577868633424189,
+          "beta_lower_75": 0.4962300676749261,
+          "advantage": 0.03770509326064886
+        },
+        "estimated_advantage": 0.03770509326064886
+      }
+    },
+    {
+      "action_id": "v50_delete_batch02_n08_hold_004",
+      "order_id": "d450cd63-3e5d-4c67-b11a-517c03d7e3e0",
+      "remove_rids": [
+        "#-1:483c97ce-dbdd-4262-90a3-a87eb4bd5fb6"
+      ],
+      "add_rids": [],
+      "source": "v50_empirical_bayes_stratum",
+      "expected_gain": 0.03770509326064886,
+      "evidence": {
+        "row": 2607,
+        "rank": 58,
+        "rank_bin": "r51_100",
+        "order_index": 438,
+        "order_id": "d450cd63-3e5d-4c67-b11a-517c03d7e3e0",
+        "rid": "#-1:483c97ce-dbdd-4262-90a3-a87eb4bd5fb6",
+        "kind": "delete",
+        "title": "RRU链路断",
+        "vendor": "设备商甲",
+        "device_type": "RU",
+        "deployment": "SA",
+        "radio": "NR",
+        "timeline": "010000",
+        "current_count": 2,
+        "alarm_count": 8,
+        "rank_average": 0.7467820048332214,
+        "score_median": 0.8164947032928467,
+        "agreement": 6,
+        "scores": {
+          "v11": 0.892033040523529,
+          "v13": 0.7889764904975891,
+          "v19": 0.8629193902015686,
+          "station": 0.7597904801368713,
+          "domain": 0.647517204284668,
+          "consensus": 0.8440129160881042
+        },
+        "matched_rule": {
+          "fields": [
+            "title",
+            "rank_bin"
+          ],
+          "values": [
+            "RRU链路断",
+            "r51_100"
+          ],
+          "support": 8,
+          "correct": 5,
+          "precision": 0.625,
+          "fold_count": 4,
+          "fold_precision": {
+            "0": 0.0,
+            "1": 0.6666666666666666,
+            "2": 0.6666666666666666,
+            "3": 1.0
+          },
+          "posterior_mean": 0.577868633424189,
+          "beta_lower_75": 0.4962300676749261,
+          "advantage": 0.03770509326064886
+        },
+        "estimated_advantage": 0.03770509326064886
+      }
+    },
+    {
+      "action_id": "v50_delete_batch02_n08_hold_007",
+      "order_id": "f11b9469-743e-44d1-b27c-8d1a3cf0bd3a",
+      "remove_rids": [
+        "#-1:ba6e2836-d8f4-45e9-a2dc-9fc777bd34f4"
+      ],
+      "add_rids": [],
+      "source": "v50_empirical_bayes_stratum",
+      "expected_gain": 0.03770509326064886,
+      "evidence": {
+        "row": 3071,
+        "rank": 63,
+        "rank_bin": "r51_100",
+        "order_index": 511,
+        "order_id": "f11b9469-743e-44d1-b27c-8d1a3cf0bd3a",
+        "rid": "#-1:ba6e2836-d8f4-45e9-a2dc-9fc777bd34f4",
+        "kind": "delete",
+        "title": "RRU链路断",
+        "vendor": "设备商甲",
+        "device_type": "RU",
+        "deployment": "SA_NSA",
+        "radio": "NR",
+        "timeline": "000011",
+        "current_count": 2,
+        "alarm_count": 4,
+        "rank_average": 0.754041850566864,
+        "score_median": 0.8247116208076477,
+        "agreement": 6,
+        "scores": {
+          "v11": 0.8638662695884705,
+          "v13": 0.7934524416923523,
+          "v19": 0.8559707999229431,
+          "station": 0.7916059494018555,
+          "domain": 0.7899831533432007,
+          "consensus": 0.8765795826911926
+        },
+        "matched_rule": {
+          "fields": [
+            "title",
+            "rank_bin"
+          ],
+          "values": [
+            "RRU链路断",
+            "r51_100"
+          ],
+          "support": 8,
+          "correct": 5,
+          "precision": 0.625,
+          "fold_count": 4,
+          "fold_precision": {
+            "0": 0.0,
+            "1": 0.6666666666666666,
+            "2": 0.6666666666666666,
+            "3": 1.0
+          },
+          "posterior_mean": 0.577868633424189,
+          "beta_lower_75": 0.4962300676749261,
+          "advantage": 0.03770509326064886
+        },
+        "estimated_advantage": 0.03770509326064886
+      }
+    },
+    {
+      "action_id": "v50_delete_batch03_n08_hold_001",
+      "order_id": "f715e5bc-38b1-4db9-b863-0642125d72be",
+      "remove_rids": [
+        "#-1:df517462-aff1-4c1d-82fe-2cd23fcfea67"
+      ],
+      "add_rids": [],
+      "source": "v50_empirical_bayes_stratum",
+      "expected_gain": 0.03770509326064886,
+      "evidence": {
+        "row": 3138,
+        "rank": 70,
+        "rank_bin": "r51_100",
+        "order_index": 527,
+        "order_id": "f715e5bc-38b1-4db9-b863-0642125d72be",
+        "rid": "#-1:df517462-aff1-4c1d-82fe-2cd23fcfea67",
+        "kind": "delete",
+        "title": "RRU链路断",
+        "vendor": "设备商甲",
+        "device_type": "RU",
+        "deployment": "LTE",
+        "radio": "LTE FDD",
+        "timeline": "000111",
+        "current_count": 3,
+        "alarm_count": 8,
+        "rank_average": 0.7641334533691406,
+        "score_median": 0.8773409724235535,
+        "agreement": 6,
+        "scores": {
+          "v11": 0.8806729912757874,
+          "v13": 0.8253608345985413,
+          "v19": 0.5009748339653015,
+          "station": 0.935361921787262,
+          "domain": 0.8740089535713196,
+          "consensus": 0.9534308910369873
+        },
+        "matched_rule": {
+          "fields": [
+            "title",
+            "rank_bin"
+          ],
+          "values": [
+            "RRU链路断",
+            "r51_100"
+          ],
+          "support": 8,
+          "correct": 5,
+          "precision": 0.625,
+          "fold_count": 4,
+          "fold_precision": {
+            "0": 0.0,
+            "1": 0.6666666666666666,
+            "2": 0.6666666666666666,
+            "3": 1.0
+          },
+          "posterior_mean": 0.577868633424189,
+          "beta_lower_75": 0.4962300676749261,
+          "advantage": 0.03770509326064886
+        },
+        "estimated_advantage": 0.03770509326064886
+      }
+    },
+    {
+      "action_id": "v50_delete_batch03_n08_hold_002",
+      "order_id": "50136eba-2902-466a-ad94-d96b351c9fc2",
+      "remove_rids": [
+        "#-1:37b6995c-f44d-4c21-bdcb-51dd4823178a"
+      ],
+      "add_rids": [],
+      "source": "v50_empirical_bayes_stratum",
+      "expected_gain": 0.03770509326064886,
+      "evidence": {
+        "row": 844,
+        "rank": 73,
+        "rank_bin": "r51_100",
+        "order_index": 147,
+        "order_id": "50136eba-2902-466a-ad94-d96b351c9fc2",
+        "rid": "#-1:37b6995c-f44d-4c21-bdcb-51dd4823178a",
+        "kind": "delete",
+        "title": "RRU链路断",
+        "vendor": "设备商甲",
+        "device_type": "RU",
+        "deployment": "LTE",
+        "radio": "TD-LTE",
+        "timeline": "110000",
+        "current_count": 2,
+        "alarm_count": 7,
+        "rank_average": 0.7687159180641174,
+        "score_median": 0.886717826128006,
+        "agreement": 6,
+        "scores": {
+          "v11": 0.9354853630065918,
+          "v13": 0.8659746646881104,
+          "v19": 0.5924088358879089,
+          "station": 0.9074609875679016,
+          "domain": 0.7408784627914429,
+          "consensus": 0.9456144571304321
+        },
+        "matched_rule": {
+          "fields": [
+            "title",
+            "rank_bin"
+          ],
+          "values": [
+            "RRU链路断",
+            "r51_100"
+          ],
+          "support": 8,
+          "correct": 5,
+          "precision": 0.625,
+          "fold_count": 4,
+          "fold_precision": {
+            "0": 0.0,
+            "1": 0.6666666666666666,
+            "2": 0.6666666666666666,
+            "3": 1.0
+          },
+          "posterior_mean": 0.577868633424189,
+          "beta_lower_75": 0.4962300676749261,
+          "advantage": 0.03770509326064886
+        },
+        "estimated_advantage": 0.03770509326064886
+      }
+    },
+    {
+      "action_id": "v50_delete_batch03_n08_hold_003",
+      "order_id": "9a450bcc-058d-4fe0-be99-aaa6371ad2cd",
+      "remove_rids": [
+        "#-1:bf9bf60e-1227-4006-9ee6-91ccd54bf3e8"
+      ],
+      "add_rids": [],
+      "source": "v50_empirical_bayes_stratum",
+      "expected_gain": 0.03770509326064886,
+      "evidence": {
+        "row": 1784,
+        "rank": 85,
+        "rank_bin": "r51_100",
+        "order_index": 310,
+        "order_id": "9a450bcc-058d-4fe0-be99-aaa6371ad2cd",
+        "rid": "#-1:bf9bf60e-1227-4006-9ee6-91ccd54bf3e8",
+        "kind": "delete",
+        "title": "RRU链路断",
+        "vendor": "设备商甲",
+        "device_type": "RU",
+        "deployment": "SA_NSA",
+        "radio": "LTE,NR",
+        "timeline": "000011",
+        "current_count": 3,
+        "alarm_count": 6,
+        "rank_average": 0.7828235626220703,
+        "score_median": 0.8491770923137665,
+        "agreement": 6,
+        "scores": {
+          "v11": 0.8404305577278137,
+          "v13": 0.7568379044532776,
+          "v19": 0.982601523399353,
+          "station": 0.8571270704269409,
+          "domain": 0.841227114200592,
+          "consensus": 0.9180868864059448
+        },
+        "matched_rule": {
+          "fields": [
+            "title",
+            "rank_bin"
+          ],
+          "values": [
+            "RRU链路断",
+            "r51_100"
+          ],
+          "support": 8,
+          "correct": 5,
+          "precision": 0.625,
+          "fold_count": 4,
+          "fold_precision": {
+            "0": 0.0,
+            "1": 0.6666666666666666,
+            "2": 0.6666666666666666,
+            "3": 1.0
+          },
+          "posterior_mean": 0.577868633424189,
+          "beta_lower_75": 0.4962300676749261,
+          "advantage": 0.03770509326064886
+        },
+        "estimated_advantage": 0.03770509326064886
+      }
+    },
+    {
+      "action_id": "v50_delete_batch03_n08_hold_006",
+      "order_id": "8106c960-6510-43b1-af25-b3c91388c598",
+      "remove_rids": [
+        "#-1:d1108dd6-92f1-4970-9cd2-912857e84b72"
+      ],
+      "add_rids": [],
+      "source": "v50_empirical_bayes_stratum",
+      "expected_gain": 0.01994548661215334,
+      "evidence": {
+        "row": 1485,
+        "rank": 9,
+        "rank_bin": "r01_10",
+        "order_index": 254,
+        "order_id": "8106c960-6510-43b1-af25-b3c91388c598",
+        "rid": "#-1:d1108dd6-92f1-4970-9cd2-912857e84b72",
+        "kind": "delete",
+        "title": "射频单元IR接口异常告警",
+        "vendor": "设备商乙",
+        "device_type": "",
+        "deployment": "",
+        "radio": "",
+        "timeline": "111110",
+        "current_count": 4,
+        "alarm_count": 10,
+        "rank_average": 0.6672330498695374,
+        "score_median": 0.43607062101364136,
+        "agreement": 3,
+        "scores": {
+          "v11": 0.6716694235801697,
+          "v13": 0.651908814907074,
+          "v19": 0.5134853720664978,
+          "station": 0.3271384537220001,
+          "domain": 0.3586558699607849,
+          "consensus": 0.19780226051807404
+        },
+        "matched_rule": {
+          "fields": [
+            "vendor",
+            "rank_bin"
+          ],
+          "values": [
+            "设备商乙",
+            "r01_10"
+          ],
+          "support": 5,
+          "correct": 3,
+          "precision": 0.6,
+          "fold_count": 4,
+          "fold_precision": {
+            "0": 0.0,
+            "2": 1.0,
+            "3": 1.0,
+            "4": 0.0
+          },
+          "posterior_mean": 0.5601090267756935,
+          "beta_lower_75": 0.4722253482413355,
+          "advantage": 0.01994548661215334
+        },
+        "estimated_advantage": 0.01994548661215334
+      }
+    },
+    {
+      "action_id": "v50_delete_batch03_n08_hold_008",
+      "order_id": "861f8d83-388f-485f-982d-ed3f28ff0bcb",
+      "remove_rids": [
+        "#-1:388176d7-e14d-4d5c-a510-2b39ccbfc25b"
+      ],
+      "add_rids": [],
+      "source": "v50_empirical_bayes_stratum",
+      "expected_gain": 0.01994548661215334,
+      "evidence": {
+        "row": 1536,
+        "rank": 119,
+        "rank_bin": "r101_200",
+        "order_index": 264,
+        "order_id": "861f8d83-388f-485f-982d-ed3f28ff0bcb",
+        "rid": "#-1:388176d7-e14d-4d5c-a510-2b39ccbfc25b",
+        "kind": "delete",
+        "title": "射频单元IR接口异常告警",
+        "vendor": "设备商乙",
+        "device_type": "",
+        "deployment": "",
+        "radio": "",
+        "timeline": "000010",
+        "current_count": 2,
+        "alarm_count": 3,
+        "rank_average": 0.8279785513877869,
+        "score_median": 0.9423615336418152,
+        "agreement": 6,
+        "scores": {
+          "v11": 0.9338024854660034,
+          "v13": 0.8796122074127197,
+          "v19": 0.9374449849128723,
+          "station": 0.9534862637519836,
+          "domain": 0.9472780823707581,
+          "consensus": 0.9751927852630615
+        },
+        "matched_rule": {
+          "fields": [
+            "title",
+            "rank_bin"
+          ],
+          "values": [
+            "射频单元IR接口异常告警",
+            "r101_200"
+          ],
+          "support": 5,
+          "correct": 3,
+          "precision": 0.6,
+          "fold_count": 2,
+          "fold_precision": {
+            "0": 1.0,
+            "2": 0.3333333333333333
+          },
+          "posterior_mean": 0.5601090267756935,
+          "beta_lower_75": 0.4722253482413355,
+          "advantage": 0.01994548661215334
+        },
+        "estimated_advantage": 0.01994548661215334
+      }
+    },
+    {
+      "action_id": "v50_delete_batch04_n05_hold_002",
+      "order_id": "af374848-7bd9-44f9-bfb8-4c087a74d016",
+      "remove_rids": [
+        "#-1:d968cca4-8b85-4d13-b5f0-06d744dd90b4"
+      ],
+      "add_rids": [],
+      "source": "v50_empirical_bayes_stratum",
+      "expected_gain": 0.01287383640324824,
+      "evidence": {
+        "row": 2101,
+        "rank": 19,
+        "rank_bin": "r11_25",
+        "order_index": 361,
+        "order_id": "af374848-7bd9-44f9-bfb8-4c087a74d016",
+        "rid": "#-1:d968cca4-8b85-4d13-b5f0-06d744dd90b4",
+        "kind": "delete",
+        "title": "[衍生告警]PTN光缆中断，单报LOS",
+        "vendor": "设备商甲",
+        "device_type": "",
+        "deployment": "",
+        "radio": "",
+        "timeline": "000111",
+        "current_count": 4,
+        "alarm_count": 16,
+        "rank_average": 0.6894243359565735,
+        "score_median": 0.6422726809978485,
+        "agreement": 5,
+        "scores": {
+          "v11": 0.6518644094467163,
+          "v13": 0.6326809525489807,
+          "v19": 0.43571433424949646,
+          "station": 0.7149370312690735,
+          "domain": 0.6665589213371277,
+          "consensus": 0.5796337723731995
+        },
+        "matched_rule": {
+          "fields": [
+            "vendor",
+            "rank_bin"
+          ],
+          "values": [
+            "设备商甲",
+            "r11_25"
+          ],
+          "support": 7,
+          "correct": 4,
+          "precision": 0.5714285714285714,
+          "fold_count": 4,
+          "fold_precision": {
+            "0": 0.0,
+            "2": 1.0,
+            "3": 1.0,
+            "4": 0.5
+          },
+          "posterior_mean": 0.5530373765667884,
+          "beta_lower_75": 0.47081637401228194,
+          "advantage": 0.01287383640324824
+        },
+        "estimated_advantage": 0.01287383640324824
+      }
+    },
+    {
+      "action_id": "v50_delete_batch04_n05_hold_005",
+      "order_id": "fad26f6d-c956-4598-9639-39fef649b32c",
+      "remove_rids": [
+        "#-1:e9e6853e-519f-46b4-821e-0ab0fe97ef51"
+      ],
+      "add_rids": [],
+      "source": "v50_empirical_bayes_stratum",
+      "expected_gain": 0.01287383640324824,
+      "evidence": {
+        "row": 3186,
+        "rank": 25,
+        "rank_bin": "r11_25",
+        "order_index": 533,
+        "order_id": "fad26f6d-c956-4598-9639-39fef649b32c",
+        "rid": "#-1:e9e6853e-519f-46b4-821e-0ab0fe97ef51",
+        "kind": "delete",
+        "title": "设备掉电",
+        "vendor": "设备商甲",
+        "device_type": "RU",
+        "deployment": "LTE",
+        "radio": "TD-LTE",
+        "timeline": "000011",
+        "current_count": 7,
+        "alarm_count": 14,
+        "rank_average": 0.6967871785163879,
+        "score_median": 0.650420755147934,
+        "agreement": 6,
+        "scores": {
+          "v11": 0.6706318855285645,
+          "v13": 0.6081924438476562,
+          "v19": 0.6660811305046082,
+          "station": 0.6228265166282654,
+          "domain": 0.6348862051963806,
+          "consensus": 0.6659553050994873
+        },
+        "matched_rule": {
+          "fields": [
+            "vendor",
+            "rank_bin"
+          ],
+          "values": [
+            "设备商甲",
+            "r11_25"
+          ],
+          "support": 7,
+          "correct": 4,
+          "precision": 0.5714285714285714,
+          "fold_count": 4,
+          "fold_precision": {
+            "0": 0.0,
+            "2": 1.0,
+            "3": 1.0,
+            "4": 0.5
+          },
+          "posterior_mean": 0.5530373765667884,
+          "beta_lower_75": 0.47081637401228194,
+          "advantage": 0.01287383640324824
+        },
+        "estimated_advantage": 0.01287383640324824
+      }
+    },
+    {
+      "action_id": "v52_add_019_edf35c43",
+      "order_id": "edf35c43-b3c6-4ee0-b82e-b19e942bec89",
+      "remove_rids": [],
+      "add_rids": [
+        "#-1:24c2c71d-5081-4d06-8b04-ef94592f679f"
+      ],
+      "source": "v40_boundary_frontier",
+      "expected_gain": 0.05263157894736842,
+      "evidence": {
+        "source_rank": 19,
+        "order_id": "edf35c43-b3c6-4ee0-b82e-b19e942bec89",
+        "rid": "#-1:24c2c71d-5081-4d06-8b04-ef94592f679f",
+        "kind": "add",
+        "title": "GNSS星卡天线故障告警",
+        "rank_average": 0.6760374903678894,
+        "scores": {
+          "v11": 0.3692387044429779,
+          "v13": 0.32066914439201355,
+          "v19": 0.8814520239830017,
+          "station": 0.4031767249107361,
+          "domain": 0.44941720366477966,
+          "consensus": 0.30813080072402954
+        }
+      }
+    },
+    {
+      "action_id": "v52_add_020_7f43b995",
+      "order_id": "7f43b995-0f0f-4fa5-ad3b-6f196f7434dc",
+      "remove_rids": [],
+      "add_rids": [
+        "#-1:65ec4259-67df-4be5-9790-f1b2ad693d96"
+      ],
+      "source": "v40_boundary_frontier",
+      "expected_gain": 0.05,
+      "evidence": {
+        "source_rank": 20,
+        "order_id": "7f43b995-0f0f-4fa5-ad3b-6f196f7434dc",
+        "rid": "#-1:65ec4259-67df-4be5-9790-f1b2ad693d96",
+        "kind": "add",
+        "title": "RRU链路断",
+        "rank_average": 0.6754196286201477,
+        "scores": {
+          "v11": 0.5106109976768494,
+          "v13": 0.4570780396461487,
+          "v19": 0.8624435663223267,
+          "station": 0.4142764210700989,
+          "domain": 0.26573336124420166,
+          "consensus": 0.3139645457267761
+        }
+      }
+    },
+    {
+      "action_id": "v52_add_027_3163481a",
+      "order_id": "3163481a-c029-4f79-b462-d5687da886dd",
+      "remove_rids": [],
+      "add_rids": [
+        "#-1:f4f12567-e378-43d0-8746-2813d5b4b3e3"
+      ],
+      "source": "v40_boundary_frontier",
+      "expected_gain": 0.037037037037037035,
+      "evidence": {
+        "source_rank": 27,
+        "order_id": "3163481a-c029-4f79-b462-d5687da886dd",
+        "rid": "#-1:f4f12567-e378-43d0-8746-2813d5b4b3e3",
+        "kind": "add",
+        "title": "RRU链路断",
+        "rank_average": 0.6677479147911072,
+        "scores": {
+          "v11": 0.22206418216228485,
+          "v13": 0.1938343644142151,
+          "v19": 0.9717472195625305,
+          "station": 0.1624586582183838,
+          "domain": 0.34328457713127136,
+          "consensus": 0.10598330944776535
+        }
+      }
+    },
+    {
+      "action_id": "v52_add_038_c253a5fd",
+      "order_id": "c253a5fd-6156-4b39-98cb-b3b11c93b25a",
+      "remove_rids": [],
+      "add_rids": [
+        "#-1:a6854279-4b4e-4d6b-b70d-897182582a28"
+      ],
+      "source": "v40_boundary_frontier",
+      "expected_gain": 0.02631578947368421,
+      "evidence": {
+        "source_rank": 38,
+        "order_id": "c253a5fd-6156-4b39-98cb-b3b11c93b25a",
+        "rid": "#-1:a6854279-4b4e-4d6b-b70d-897182582a28",
+        "kind": "add",
+        "title": "RRU链路断",
+        "rank_average": 0.6554422974586487,
+        "scores": {
+          "v11": 0.5448775887489319,
+          "v13": 0.5443018078804016,
+          "v19": 0.3857778310775757,
+          "station": 0.36354777216911316,
+          "domain": 0.3859623670578003,
+          "consensus": 0.22510595619678497
+        }
+      }
+    },
+    {
+      "action_id": "v52_add_062_40ee781f",
+      "order_id": "40ee781f-40f4-481e-b9d5-c2e9b9b98b3f",
+      "remove_rids": [],
+      "add_rids": [
+        "#-1:cbd78370-a1a6-4a6b-9edb-0ed8452cb42c"
+      ],
+      "source": "v40_boundary_frontier",
+      "expected_gain": 0.016129032258064516,
+      "evidence": {
+        "source_rank": 62,
+        "order_id": "40ee781f-40f4-481e-b9d5-c2e9b9b98b3f",
+        "rid": "#-1:cbd78370-a1a6-4a6b-9edb-0ed8452cb42c",
+        "kind": "add",
+        "title": "RRU链路断",
+        "rank_average": 0.6285140514373779,
+        "scores": {
+          "v11": 0.25186315178871155,
+          "v13": 0.20837296545505524,
+          "v19": 0.45100608468055725,
+          "station": 0.1867094337940216,
+          "domain": 0.2951240837574005,
+          "consensus": 0.11013420671224594
+        }
+      }
+    },
+    {
+      "action_id": "v52_add_073_b1d58e4a",
+      "order_id": "b1d58e4a-b781-41a2-a685-cf803f14d38f",
+      "remove_rids": [],
+      "add_rids": [
+        "#-1:1e5c63fb-6ad2-401a-9969-a1bc6def1070"
+      ],
+      "source": "v40_boundary_frontier",
+      "expected_gain": 0.0136986301369863,
+      "evidence": {
+        "source_rank": 73,
+        "order_id": "b1d58e4a-b781-41a2-a685-cf803f14d38f",
+        "rid": "#-1:1e5c63fb-6ad2-401a-9969-a1bc6def1070",
+        "kind": "add",
+        "title": "LTE小区退出服务",
+        "rank_average": 0.6220781207084656,
+        "scores": {
+          "v11": 0.45265328884124756,
+          "v13": 0.4549090564250946,
+          "v19": 0.18072710931301117,
+          "station": 0.1602591723203659,
+          "domain": 0.25000715255737305,
+          "consensus": 0.10280881822109222
+        }
+      }
+    },
+    {
+      "action_id": "v52_add_075_8f73e1cf",
+      "order_id": "8f73e1cf-c334-4f3b-aa08-78d25a9722f5",
+      "remove_rids": [],
+      "add_rids": [
+        "#-1:c7ad6d1d-f834-4257-9936-4e324f1f1672"
+      ],
+      "source": "v40_boundary_frontier",
+      "expected_gain": 0.013333333333333334,
+      "evidence": {
+        "source_rank": 75,
+        "order_id": "8f73e1cf-c334-4f3b-aa08-78d25a9722f5",
+        "rid": "#-1:c7ad6d1d-f834-4257-9936-4e324f1f1672",
+        "kind": "add",
+        "title": "RRU链路断",
+        "rank_average": 0.6199155449867249,
+        "scores": {
+          "v11": 0.24627628922462463,
+          "v13": 0.2313196063041687,
+          "v19": 0.15213541686534882,
+          "station": 0.33052295446395874,
+          "domain": 0.2871098220348358,
+          "consensus": 0.2568338215351105
+        }
+      }
+    },
+    {
+      "action_id": "v52_add_087_0f2a154d",
+      "order_id": "0f2a154d-6f4a-4b05-b9a8-6502b110d3af",
+      "remove_rids": [],
+      "add_rids": [
+        "#-1:c741843e-4c37-4398-9f25-06198e694e6f"
+      ],
+      "source": "v40_boundary_frontier",
+      "expected_gain": 0.011494252873563218,
+      "evidence": {
+        "source_rank": 87,
+        "order_id": "0f2a154d-6f4a-4b05-b9a8-6502b110d3af",
+        "rid": "#-1:c741843e-4c37-4398-9f25-06198e694e6f",
+        "kind": "add",
+        "title": "网元连接中断",
+        "rank_average": 0.6106477379798889,
+        "scores": {
+          "v11": 0.3802555501461029,
+          "v13": 0.2288249135017395,
+          "v19": 0.15130721032619476,
+          "station": 0.1754840910434723,
+          "domain": 0.20107367634773254,
+          "consensus": 0.09914534538984299
+        }
+      }
+    },
+    {
+      "action_id": "v52_add_093_af614073",
+      "order_id": "af614073-0139-45cc-82d0-97e02af80b2d",
+      "remove_rids": [],
+      "add_rids": [
+        "#-1:4575df13-6492-4683-8956-edaaaaf6ff25"
+      ],
+      "source": "v40_boundary_frontier",
+      "expected_gain": 0.010752688172043012,
+      "evidence": {
+        "source_rank": 93,
+        "order_id": "af614073-0139-45cc-82d0-97e02af80b2d",
+        "rid": "#-1:4575df13-6492-4683-8956-edaaaaf6ff25",
+        "kind": "add",
+        "title": "射频单元维护链路异常告警",
+        "rank_average": 0.6036453247070312,
+        "scores": {
+          "v11": 0.17340482771396637,
+          "v13": 0.1412770301103592,
+          "v19": 0.2461017668247223,
+          "station": 0.16774477064609528,
+          "domain": 0.19583044946193695,
+          "consensus": 0.09264272451400757
+        }
+      }
+    },
+    {
+      "action_id": "v52_delete_006_c2f7c036",
+      "order_id": "c2f7c036-aaf0-4a95-9bf4-3cae57b6e7d5",
+      "remove_rids": [
+        "#-1:0e2c59d3-277a-49ac-b27d-9c109ca1602f"
+      ],
+      "add_rids": [],
+      "source": "v40_boundary_frontier",
+      "expected_gain": 0.16666666666666666,
+      "evidence": {
+        "source_rank": 6,
+        "order_id": "c2f7c036-aaf0-4a95-9bf4-3cae57b6e7d5",
+        "rid": "#-1:0e2c59d3-277a-49ac-b27d-9c109ca1602f",
+        "kind": "delete",
+        "title": "[衍生告警]PTN光缆中断，单报LOS",
+        "rank_average": 0.6619297862052917,
+        "scores": {
+          "v11": 0.6081815361976624,
+          "v13": 0.6145555377006531,
+          "v19": 0.144616961479187,
+          "station": 0.5666828155517578,
+          "domain": 0.5420055389404297,
+          "consensus": 0.6424580812454224
+        }
+      }
+    },
+    {
+      "action_id": "v52_delete_019_a1aec670",
+      "order_id": "a1aec670-550d-4abb-bd10-dadfd29f6635",
+      "remove_rids": [
+        "#-1:9e3ee7ee-16d7-4f25-aa83-3734e4c978f2"
+      ],
+      "add_rids": [],
+      "source": "v40_boundary_frontier",
+      "expected_gain": 0.05263157894736842,
+      "evidence": {
+        "source_rank": 19,
+        "order_id": "a1aec670-550d-4abb-bd10-dadfd29f6635",
+        "rid": "#-1:9e3ee7ee-16d7-4f25-aa83-3734e4c978f2",
+        "kind": "delete",
+        "title": "射频单元直流掉电告警",
+        "rank_average": 0.6908144950866699,
+        "scores": {
+          "v11": 0.8505432605743408,
+          "v13": 0.7110195159912109,
+          "v19": 0.2796725928783417,
+          "station": 0.5840923190116882,
+          "domain": 0.6115524768829346,
+          "consensus": 0.575286328792572
+        }
+      }
+    },
+    {
+      "action_id": "v52_delete_026_cdae01fa",
+      "order_id": "cdae01fa-ffeb-421d-bce8-020d92e0b8ab",
+      "remove_rids": [
+        "#-1:bdd347fe-bdbd-4937-9f50-b5a36492708a"
+      ],
+      "add_rids": [],
+      "source": "v40_boundary_frontier",
+      "expected_gain": 0.038461538461538464,
+      "evidence": {
+        "source_rank": 26,
+        "order_id": "cdae01fa-ffeb-421d-bce8-020d92e0b8ab",
+        "rid": "#-1:bdd347fe-bdbd-4937-9f50-b5a36492708a",
+        "kind": "delete",
+        "title": "BBU IR接口异常告警",
+        "rank_average": 0.7054886221885681,
+        "scores": {
+          "v11": 0.7371250987052917,
+          "v13": 0.6292756199836731,
+          "v19": 0.8457736968994141,
+          "station": 0.5024551749229431,
+          "domain": 0.646897554397583,
+          "consensus": 0.5003950595855713
+        }
+      }
+    },
+    {
+      "action_id": "v52_delete_031_320223fc",
+      "order_id": "320223fc-89b1-40bc-88a9-4b07d012da47",
+      "remove_rids": [
+        "#-1:7ecae749-0d4e-4b02-8c67-d51272846c5f"
+      ],
+      "add_rids": [],
+      "source": "v40_boundary_frontier",
+      "expected_gain": 0.03225806451612903,
+      "evidence": {
+        "source_rank": 31,
+        "order_id": "320223fc-89b1-40bc-88a9-4b07d012da47",
+        "rid": "#-1:7ecae749-0d4e-4b02-8c67-d51272846c5f",
+        "kind": "delete",
+        "title": "输入电源断",
+        "rank_average": 0.7120790481567383,
+        "scores": {
+          "v11": 0.8940714597702026,
+          "v13": 0.6868264675140381,
+          "v19": 0.7257664203643799,
+          "station": 0.5704598426818848,
+          "domain": 0.5103151798248291,
+          "consensus": 0.661195695400238
+        }
+      }
+    },
+    {
+      "action_id": "v52_delete_032_29e6bb98",
+      "order_id": "29e6bb98-ef14-4333-920b-0cd42ff58a96",
+      "remove_rids": [
+        "#-1:95ce5b4b-39bf-4501-82ca-9aca6b9ee799"
+      ],
+      "add_rids": [],
+      "source": "v40_boundary_frontier",
+      "expected_gain": 0.03125,
+      "evidence": {
+        "source_rank": 32,
+        "order_id": "29e6bb98-ef14-4333-920b-0cd42ff58a96",
+        "rid": "#-1:95ce5b4b-39bf-4501-82ca-9aca6b9ee799",
+        "kind": "delete",
+        "title": "射频单元交流掉电告警",
+        "rank_average": 0.7169704437255859,
+        "scores": {
+          "v11": 0.820072591304779,
+          "v13": 0.7487859725952148,
+          "v19": 0.6070684194564819,
+          "station": 0.7003740072250366,
+          "domain": 0.7402564287185669,
+          "consensus": 0.755577564239502
+        }
+      }
+    },
+    {
+      "action_id": "v52_delete_036_98aafbf4",
+      "order_id": "98aafbf4-e316-425d-a5bb-6bc17ddc7776",
+      "remove_rids": [
+        "#-1:54b69ebf-4380-42cd-a0ae-2c74e3bba101"
+      ],
+      "add_rids": [],
+      "source": "v40_boundary_frontier",
+      "expected_gain": 0.027777777777777776,
+      "evidence": {
+        "source_rank": 36,
+        "order_id": "98aafbf4-e316-425d-a5bb-6bc17ddc7776",
+        "rid": "#-1:54b69ebf-4380-42cd-a0ae-2c74e3bba101",
+        "kind": "delete",
+        "title": "射频单元交流掉电告警",
+        "rank_average": 0.7205746173858643,
+        "scores": {
+          "v11": 0.7943210601806641,
+          "v13": 0.6573024988174438,
+          "v19": 0.6281252503395081,
+          "station": 0.7720630764961243,
+          "domain": 0.7523488402366638,
+          "consensus": 0.8308739066123962
+        }
+      }
+    },
+    {
+      "action_id": "v52_delete_037_8dac662e",
+      "order_id": "8dac662e-5ffc-469b-ada5-8e0449b5c502",
+      "remove_rids": [
+        "#-1:966d0900-3d0b-4e6c-ba67-a8cb5c51248c"
+      ],
+      "add_rids": [],
+      "source": "v40_boundary_frontier",
+      "expected_gain": 0.02702702702702703,
+      "evidence": {
+        "source_rank": 37,
+        "order_id": "8dac662e-5ffc-469b-ada5-8e0449b5c502",
+        "rid": "#-1:966d0900-3d0b-4e6c-ba67-a8cb5c51248c",
+        "kind": "delete",
+        "title": "射频单元交流掉电告警",
+        "rank_average": 0.7229945063591003,
+        "scores": {
+          "v11": 0.8154064416885376,
+          "v13": 0.7466071248054504,
+          "v19": 0.7894623279571533,
+          "station": 0.7104901075363159,
+          "domain": 0.697116494178772,
+          "consensus": 0.6486285924911499
+        }
+      }
+    },
+    {
+      "action_id": "v52_delete_039_fde23762",
+      "order_id": "fde23762-9d4c-48a7-ade0-2fc4ed9af9f8",
+      "remove_rids": [
+        "#-1:3892e9b0-81a8-4740-bd4f-2ee3c95bc551"
+      ],
+      "add_rids": [],
+      "source": "v40_boundary_frontier",
+      "expected_gain": 0.02564102564102564,
+      "evidence": {
+        "source_rank": 39,
+        "order_id": "fde23762-9d4c-48a7-ade0-2fc4ed9af9f8",
+        "rid": "#-1:3892e9b0-81a8-4740-bd4f-2ee3c95bc551",
+        "kind": "delete",
+        "title": "输入电源断",
+        "rank_average": 0.7275254726409912,
+        "scores": {
+          "v11": 0.8347975611686707,
+          "v13": 0.8048292994499207,
+          "v19": 0.6591963768005371,
+          "station": 0.7837223410606384,
+          "domain": 0.48819464445114136,
+          "consensus": 0.8789608478546143
+        }
+      }
+    },
+    {
+      "action_id": "v52_delete_041_a6ae9c3c",
+      "order_id": "a6ae9c3c-c787-47e0-abf0-d610533dc2a0",
+      "remove_rids": [
+        "#-1:97d24cf9-e8a1-45f9-8cc6-b6cc1580e991"
+      ],
+      "add_rids": [],
+      "source": "v40_boundary_frontier",
+      "expected_gain": 0.024390243902439025,
+      "evidence": {
+        "source_rank": 41,
+        "order_id": "a6ae9c3c-c787-47e0-abf0-d610533dc2a0",
+        "rid": "#-1:97d24cf9-e8a1-45f9-8cc6-b6cc1580e991",
+        "kind": "delete",
+        "title": "光模块接收光功率异常",
+        "rank_average": 0.7282463908195496,
+        "scores": {
+          "v11": 0.9142197370529175,
+          "v13": 0.7844375967979431,
+          "v19": 0.8096985816955566,
+          "station": 0.581728458404541,
+          "domain": 0.6171386241912842,
+          "consensus": 0.6159461736679077
+        }
+      }
+    },
+    {
+      "action_id": "v52_delete_043_06d346bc",
+      "order_id": "06d346bc-1345-4825-9e01-546cc30ac6ba",
+      "remove_rids": [
+        "#-1:3005e057-e449-4a72-8269-c9b7d32dfaa7"
+      ],
+      "add_rids": [],
+      "source": "v40_boundary_frontier",
+      "expected_gain": 0.023255813953488372,
+      "evidence": {
+        "source_rank": 43,
+        "order_id": "06d346bc-1345-4825-9e01-546cc30ac6ba",
+        "rid": "#-1:3005e057-e449-4a72-8269-c9b7d32dfaa7",
+        "kind": "delete",
+        "title": "设备掉电",
+        "rank_average": 0.7297394871711731,
+        "scores": {
+          "v11": 0.8592720031738281,
+          "v13": 0.7881261706352234,
+          "v19": 0.7373446822166443,
+          "station": 0.6960623264312744,
+          "domain": 0.6705865859985352,
+          "consensus": 0.8220776915550232
+        }
+      }
+    },
+    {
+      "action_id": "v52_delete_058_73c169ec",
+      "order_id": "73c169ec-d1f0-42e0-81fb-31f07a6abca1",
+      "remove_rids": [
+        "#-1:30ccb60c-0f27-4d4e-992b-75f7a74fcfcf"
+      ],
+      "add_rids": [],
+      "source": "v40_boundary_frontier",
+      "expected_gain": 0.017241379310344827,
+      "evidence": {
+        "source_rank": 58,
+        "order_id": "73c169ec-d1f0-42e0-81fb-31f07a6abca1",
+        "rid": "#-1:30ccb60c-0f27-4d4e-992b-75f7a74fcfcf",
+        "kind": "delete",
+        "title": "设备掉电",
+        "rank_average": 0.7538358569145203,
+        "scores": {
+          "v11": 0.9579914212226868,
+          "v13": 0.6889152526855469,
+          "v19": 0.49975329637527466,
+          "station": 0.8563379049301147,
+          "domain": 0.7677700519561768,
+          "consensus": 0.9226924180984497
+        }
+      }
+    },
+    {
+      "action_id": "v52_delete_062_d2906204",
+      "order_id": "d2906204-8342-4348-af98-4608f8f335c3",
+      "remove_rids": [
+        "#-1:9b9ddef2-3075-4be7-a055-6c6c54dd868a"
+      ],
+      "add_rids": [],
+      "source": "v40_boundary_frontier",
+      "expected_gain": 0.016129032258064516,
+      "evidence": {
+        "source_rank": 62,
+        "order_id": "d2906204-8342-4348-af98-4608f8f335c3",
+        "rid": "#-1:9b9ddef2-3075-4be7-a055-6c6c54dd868a",
+        "kind": "delete",
+        "title": "光模块接收光功率异常",
+        "rank_average": 0.7584697604179382,
+        "scores": {
+          "v11": 0.8431547284126282,
+          "v13": 0.7883742451667786,
+          "v19": 0.9279106855392456,
+          "station": 0.7877918481826782,
+          "domain": 0.7805749177932739,
+          "consensus": 0.8754550218582153
+        }
+      }
+    },
+    {
+      "action_id": "v52_delete_071_30e36e69",
+      "order_id": "30e36e69-1c92-47dd-8202-86ffbd6d3fd7",
+      "remove_rids": [
+        "#-1:dfcbcadb-7de8-4fca-92dd-959516b0a019"
+      ],
+      "add_rids": [],
+      "source": "v40_boundary_frontier",
+      "expected_gain": 0.014084507042253521,
+      "evidence": {
+        "source_rank": 71,
+        "order_id": "30e36e69-1c92-47dd-8202-86ffbd6d3fd7",
+        "rid": "#-1:dfcbcadb-7de8-4fca-92dd-959516b0a019",
+        "kind": "delete",
+        "title": "光口链路故障",
+        "rank_average": 0.7712388038635254,
+        "scores": {
+          "v11": 0.8357347249984741,
+          "v13": 0.7527700066566467,
+          "v19": 0.9467904567718506,
+          "station": 0.8240264058113098,
+          "domain": 0.8861249089241028,
+          "consensus": 0.9036339521408081
+        }
+      }
+    }
+  ],
+  "actions": [
+    {
+      "action_id": "v37_exact_001",
+      "order_id": "d5376a71-c48e-4351-ba60-f982778b3eb4",
+      "remove_rids": [
+        "#-1:0c809583-390f-4d16-9b91-c4fb1e99c5c2"
+      ],
+      "add_rids": [
+        "#-1:e401b7b4-697f-434e-8437-4b2136d6904f"
+      ],
+      "source": "historical_leaderboard_equations",
+      "expected_gain": null,
+      "evidence": {
+        "proof": "label fixed in every binary solution of all scored equations"
+      }
+    },
+    {
+      "action_id": "v36_count_add_3",
+      "order_id": "4c2b3b06-a6a2-4c1b-9734-def3d1f849d8",
+      "remove_rids": [],
+      "add_rids": [
+        "#-1:66facd91-e281-4331-bbae-04ab8bd9746d"
+      ],
+      "source": "v36_selective_count_consensus",
+      "expected_gain": 0.2696733921766281,
+      "evidence": {
+        "order_id": "4c2b3b06-a6a2-4c1b-9734-def3d1f849d8",
+        "rid": "#-1:66facd91-e281-4331-bbae-04ab8bd9746d",
+        "kind": "add",
+        "current_count": 1,
+        "proposed_count": 2,
+        "support": 6,
+        "mean_margin": 0.2696733921766281,
+        "min_margin": 0.2562140226364136,
+        "node_score": 0.6594231724739075,
+        "probability_models": [
+          "D:\\zgyidong\\experiments\\v34_count_model\\station_alpha_0_test.npy",
+          "D:\\zgyidong\\experiments\\v34_count_model\\station_alpha_1_test.npy",
+          "D:\\zgyidong\\experiments\\v34_count_model\\station_alpha_2_test.npy",
+          "D:\\zgyidong\\experiments\\v34_count_model\\template_alpha_0_test.npy",
+          "D:\\zgyidong\\experiments\\v34_count_model\\template_alpha_1_test.npy",
+          "D:\\zgyidong\\experiments\\v34_count_model\\template_alpha_2_test.npy"
+        ]
+      }
+    },
+    {
+      "action_id": "v50_add_batch01_n08_hold_001",
+      "order_id": "057ebcd1-2299-447c-9551-1b7cc3f4f78a",
+      "remove_rids": [],
+      "add_rids": [
+        "#-1:e6bd5856-66c9-47ae-b215-b84e64c533fb"
+      ],
+      "source": "v50_empirical_bayes_stratum",
+      "expected_gain": 0.04672118005451342,
+      "evidence": {
+        "row": 83,
+        "rank": 124,
+        "rank_bin": "r101_200",
+        "order_index": 11,
+        "order_id": "057ebcd1-2299-447c-9551-1b7cc3f4f78a",
+        "rid": "#-1:e6bd5856-66c9-47ae-b215-b84e64c533fb",
+        "kind": "add",
+        "title": "LTE小区退出服务",
+        "vendor": "设备商甲",
+        "device_type": "CELL",
+        "deployment": "NSA",
+        "radio": "TD-LTE",
+        "timeline": "000010",
+        "current_count": 2,
+        "alarm_count": 9,
+        "rank_average": 0.5848522186279297,
+        "score_median": 0.12762906402349472,
+        "agreement": 0,
+        "scores": {
+          "v11": 0.12501920759677887,
+          "v13": 0.14435113966464996,
+          "v19": 0.13023892045021057,
+          "station": 0.1053164005279541,
+          "domain": 0.20326171815395355,
+          "consensus": 0.06131085008382797
+        },
+        "matched_rule": {
+          "fields": [
+            "title",
+            "rank_bin"
+          ],
+          "values": [
+            "LTE小区退出服务",
+            "r101_200"
+          ],
+          "support": 5,
+          "correct": 3,
+          "precision": 0.6,
+          "fold_count": 4,
+          "fold_precision": {
+            "0": 1.0,
+            "2": 1.0,
+            "3": 0.5,
+            "4": 0.0
+          },
+          "posterior_mean": 0.5065576398909732,
+          "beta_lower_75": 0.4234802790882948,
+          "advantage": 0.04672118005451342
+        },
+        "estimated_advantage": 0.04672118005451342
+      }
+    },
+    {
+      "action_id": "v50_add_batch01_n08_hold_002",
+      "order_id": "5aa15346-c717-441f-8cb7-08e3b4b7b827",
+      "remove_rids": [],
+      "add_rids": [
+        "#-1:81cab9cc-7e6f-4dae-883f-2b9668791df1"
+      ],
+      "source": "v50_empirical_bayes_stratum",
+      "expected_gain": 0.04672118005451342,
+      "evidence": {
+        "row": 949,
+        "rank": 137,
+        "rank_bin": "r101_200",
+        "order_index": 170,
+        "order_id": "5aa15346-c717-441f-8cb7-08e3b4b7b827",
+        "rid": "#-1:81cab9cc-7e6f-4dae-883f-2b9668791df1",
+        "kind": "add",
+        "title": "LTE小区退出服务",
+        "vendor": "设备商甲",
+        "device_type": "CELL",
+        "deployment": "NSA",
+        "radio": "LTE FDD",
+        "timeline": "011111",
+        "current_count": 1,
+        "alarm_count": 12,
+        "rank_average": 0.5736793279647827,
+        "score_median": 0.07842327281832695,
+        "agreement": 0,
+        "scores": {
+          "v11": 0.24754095077514648,
+          "v13": 0.26547545194625854,
+          "v19": 0.05653471127152443,
+          "station": 0.08154590427875519,
+          "domain": 0.07530064135789871,
+          "consensus": 0.04356536269187927
+        },
+        "matched_rule": {
+          "fields": [
+            "title",
+            "rank_bin"
+          ],
+          "values": [
+            "LTE小区退出服务",
+            "r101_200"
+          ],
+          "support": 5,
+          "correct": 3,
+          "precision": 0.6,
+          "fold_count": 4,
+          "fold_precision": {
+            "0": 1.0,
+            "2": 1.0,
+            "3": 0.5,
+            "4": 0.0
+          },
+          "posterior_mean": 0.5065576398909732,
+          "beta_lower_75": 0.4234802790882948,
+          "advantage": 0.04672118005451342
+        },
+        "estimated_advantage": 0.04672118005451342
+      }
+    },
+    {
+      "action_id": "v50_add_batch01_n08_hold_005",
+      "order_id": "e91d27cd-b255-48d5-908a-4e0e50789845",
+      "remove_rids": [],
+      "add_rids": [
+        "#-1:4558315e-1ab9-47a4-892e-619c14e87739"
+      ],
+      "source": "v50_empirical_bayes_stratum",
+      "expected_gain": 0.04672118005451342,
+      "evidence": {
+        "row": 2909,
+        "rank": 155,
+        "rank_bin": "r101_200",
+        "order_index": 488,
+        "order_id": "e91d27cd-b255-48d5-908a-4e0e50789845",
+        "rid": "#-1:4558315e-1ab9-47a4-892e-619c14e87739",
+        "kind": "add",
+        "title": "LTE小区退出服务",
+        "vendor": "设备商甲",
+        "device_type": "CELL",
+        "deployment": "NSA",
+        "radio": "TD-LTE",
+        "timeline": "000011",
+        "current_count": 1,
+        "alarm_count": 2,
+        "rank_average": 0.5498403906822205,
+        "score_median": 0.1096348948776722,
+        "agreement": 0,
+        "scores": {
+          "v11": 0.14114801585674286,
+          "v13": 0.13049550354480743,
+          "v19": 0.023089254274964333,
+          "station": 0.11327152699232101,
+          "domain": 0.10599826276302338,
+          "consensus": 0.09025885164737701
+        },
+        "matched_rule": {
+          "fields": [
+            "title",
+            "rank_bin"
+          ],
+          "values": [
+            "LTE小区退出服务",
+            "r101_200"
+          ],
+          "support": 5,
+          "correct": 3,
+          "precision": 0.6,
+          "fold_count": 4,
+          "fold_precision": {
+            "0": 1.0,
+            "2": 1.0,
+            "3": 0.5,
+            "4": 0.0
+          },
+          "posterior_mean": 0.5065576398909732,
+          "beta_lower_75": 0.4234802790882948,
+          "advantage": 0.04672118005451342
+        },
+        "estimated_advantage": 0.04672118005451342
+      }
+    },
+    {
+      "action_id": "v50_add_batch01_n08_hold_008",
+      "order_id": "2c0a6d62-f7a9-4154-8ab3-eeda0d3d53ea",
+      "remove_rids": [],
+      "add_rids": [
+        "#-1:aac13150-1e1a-479f-a4f0-26cfd3c178cf"
+      ],
+      "source": "v50_empirical_bayes_stratum",
+      "expected_gain": 0.04672118005451342,
+      "evidence": {
+        "row": 441,
+        "rank": 165,
+        "rank_bin": "r101_200",
+        "order_index": 78,
+        "order_id": "2c0a6d62-f7a9-4154-8ab3-eeda0d3d53ea",
+        "rid": "#-1:aac13150-1e1a-479f-a4f0-26cfd3c178cf",
+        "kind": "add",
+        "title": "LTE小区退出服务",
+        "vendor": "设备商甲",
+        "device_type": "CELL",
+        "deployment": "NSA",
+        "radio": "TD-LTE",
+        "timeline": "000011",
+        "current_count": 1,
+        "alarm_count": 3,
+        "rank_average": 0.5407784581184387,
+        "score_median": 0.07158737257122993,
+        "agreement": 0,
+        "scores": {
+          "v11": 0.08533787727355957,
+          "v13": 0.07636381685733795,
+          "v19": 0.06681092828512192,
+          "station": 0.020607588812708855,
+          "domain": 0.11366552859544754,
+          "consensus": 0.014673471450805664
+        },
+        "matched_rule": {
+          "fields": [
+            "title",
+            "rank_bin"
+          ],
+          "values": [
+            "LTE小区退出服务",
+            "r101_200"
+          ],
+          "support": 5,
+          "correct": 3,
+          "precision": 0.6,
+          "fold_count": 4,
+          "fold_precision": {
+            "0": 1.0,
+            "2": 1.0,
+            "3": 0.5,
+            "4": 0.0
+          },
+          "posterior_mean": 0.5065576398909732,
+          "beta_lower_75": 0.4234802790882948,
+          "advantage": 0.04672118005451342
+        },
+        "estimated_advantage": 0.04672118005451342
+      }
+    },
+    {
+      "action_id": "v50_add_batch02_n08_hold_001",
+      "order_id": "24ca72c7-4470-4656-8c43-1141c0a68da6",
+      "remove_rids": [],
+      "add_rids": [
+        "#-1:2a766766-d3fc-43f0-b1ff-f5d9fd31b060"
+      ],
+      "source": "v50_empirical_bayes_stratum",
+      "expected_gain": 0.04672118005451342,
+      "evidence": {
+        "row": 376,
+        "rank": 167,
+        "rank_bin": "r101_200",
+        "order_index": 66,
+        "order_id": "24ca72c7-4470-4656-8c43-1141c0a68da6",
+        "rid": "#-1:2a766766-d3fc-43f0-b1ff-f5d9fd31b060",
+        "kind": "add",
+        "title": "DU小区退服",
+        "vendor": "设备商甲",
+        "device_type": "CELL",
+        "deployment": "SA_NSA",
+        "radio": "NR",
+        "timeline": "000111",
+        "current_count": 1,
+        "alarm_count": 7,
+        "rank_average": 0.5314591526985168,
+        "score_median": 0.21816598623991013,
+        "agreement": 1,
+        "scores": {
+          "v11": 0.03022123873233795,
+          "v13": 0.031818848103284836,
+          "v19": 0.5349550843238831,
+          "station": 0.2480841428041458,
+          "domain": 0.31671419739723206,
+          "consensus": 0.18824782967567444
+        },
+        "matched_rule": {
+          "fields": [
+            "device_type",
+            "rank_bin"
+          ],
+          "values": [
+            "CELL",
+            "r101_200"
+          ],
+          "support": 5,
+          "correct": 3,
+          "precision": 0.6,
+          "fold_count": 4,
+          "fold_precision": {
+            "0": 1.0,
+            "2": 1.0,
+            "3": 0.5,
+            "4": 0.0
+          },
+          "posterior_mean": 0.5065576398909732,
+          "beta_lower_75": 0.4234802790882948,
+          "advantage": 0.04672118005451342
+        },
+        "estimated_advantage": 0.04672118005451342
+      }
+    },
+    {
+      "action_id": "v50_add_batch02_n08_hold_004",
+      "order_id": "e90ab54c-d993-48e5-b0a2-74e278a3dca4",
+      "remove_rids": [],
+      "add_rids": [
+        "#-1:371238c8-958c-46f6-90b0-ab90825826be"
+      ],
+      "source": "v50_empirical_bayes_stratum",
+      "expected_gain": 0.04672118005451342,
+      "evidence": {
+        "row": 2906,
+        "rank": 195,
+        "rank_bin": "r101_200",
+        "order_index": 487,
+        "order_id": "e90ab54c-d993-48e5-b0a2-74e278a3dca4",
+        "rid": "#-1:371238c8-958c-46f6-90b0-ab90825826be",
+        "kind": "add",
+        "title": "LTE小区退出服务",
+        "vendor": "设备商甲",
+        "device_type": "CELL",
+        "deployment": "NSA",
+        "radio": "TD-LTE",
+        "timeline": "000001",
+        "current_count": 3,
+        "alarm_count": 8,
+        "rank_average": 0.5012357234954834,
+        "score_median": 0.04580573923885822,
+        "agreement": 0,
+        "scores": {
+          "v11": 0.06647726893424988,
+          "v13": 0.06259185075759888,
+          "v19": 0.04783867299556732,
+          "station": 0.0084483427926898,
+          "domain": 0.043772805482149124,
+          "consensus": 0.004446832928806543
+        },
+        "matched_rule": {
+          "fields": [
+            "title",
+            "rank_bin"
+          ],
+          "values": [
+            "LTE小区退出服务",
+            "r101_200"
+          ],
+          "support": 5,
+          "correct": 3,
+          "precision": 0.6,
+          "fold_count": 4,
+          "fold_precision": {
+            "0": 1.0,
+            "2": 1.0,
+            "3": 0.5,
+            "4": 0.0
+          },
+          "posterior_mean": 0.5065576398909732,
+          "beta_lower_75": 0.4234802790882948,
+          "advantage": 0.04672118005451342
+        },
+        "estimated_advantage": 0.04672118005451342
+      }
+    },
+    {
+      "action_id": "v50_add_batch02_n08_hold_005",
+      "order_id": "96770f68-d78d-4a2a-8b73-43f95ffa3129",
+      "remove_rids": [],
+      "add_rids": [
+        "#-1:2533002a-ac3a-48c7-8344-647ccae80b2a"
+      ],
+      "source": "v50_empirical_bayes_stratum",
+      "expected_gain": 0.04672118005451342,
+      "evidence": {
+        "row": 1735,
+        "rank": 198,
+        "rank_bin": "r101_200",
+        "order_index": 302,
+        "order_id": "96770f68-d78d-4a2a-8b73-43f95ffa3129",
+        "rid": "#-1:2533002a-ac3a-48c7-8344-647ccae80b2a",
+        "kind": "add",
+        "title": "LTE小区退出服务",
+        "vendor": "设备商甲",
+        "device_type": "CELL",
+        "deployment": "NSA",
+        "radio": "LTE FDD",
+        "timeline": "000001",
+        "current_count": 1,
+        "alarm_count": 5,
+        "rank_average": 0.4994851052761078,
+        "score_median": 0.036132960580289364,
+        "agreement": 0,
+        "scores": {
+          "v11": 0.04401804879307747,
+          "v13": 0.043043993413448334,
+          "v19": 0.10147281736135483,
+          "station": 0.02007012628018856,
+          "domain": 0.029221927747130394,
+          "consensus": 0.010479218326508999
+        },
+        "matched_rule": {
+          "fields": [
+            "title",
+            "rank_bin"
+          ],
+          "values": [
+            "LTE小区退出服务",
+            "r101_200"
+          ],
+          "support": 5,
+          "correct": 3,
+          "precision": 0.6,
+          "fold_count": 4,
+          "fold_precision": {
+            "0": 1.0,
+            "2": 1.0,
+            "3": 0.5,
+            "4": 0.0
+          },
+          "posterior_mean": 0.5065576398909732,
+          "beta_lower_75": 0.4234802790882948,
+          "advantage": 0.04672118005451342
+        },
+        "estimated_advantage": 0.04672118005451342
+      }
+    },
+    {
+      "action_id": "v50_add_batch02_n08_hold_006",
+      "order_id": "e84dea47-7eab-4682-b981-3ab6f358ef57",
+      "remove_rids": [],
+      "add_rids": [
+        "#-1:0257a157-63ab-48ee-8497-56184cb1b54d"
+      ],
+      "source": "v50_empirical_bayes_stratum",
+      "expected_gain": 0.04672118005451342,
+      "evidence": {
+        "row": 2892,
+        "rank": 199,
+        "rank_bin": "r101_200",
+        "order_index": 485,
+        "order_id": "e84dea47-7eab-4682-b981-3ab6f358ef57",
+        "rid": "#-1:0257a157-63ab-48ee-8497-56184cb1b54d",
+        "kind": "add",
+        "title": "LTE小区退出服务",
+        "vendor": "设备商甲",
+        "device_type": "CELL",
+        "deployment": "NSA",
+        "radio": "LTE FDD",
+        "timeline": "011111",
+        "current_count": 1,
+        "alarm_count": 4,
+        "rank_average": 0.4967047870159149,
+        "score_median": 0.039222121238708496,
+        "agreement": 0,
+        "scores": {
+          "v11": 0.0419631227850914,
+          "v13": 0.040034692734479904,
+          "v19": 0.11349344998598099,
+          "station": 0.016705501824617386,
+          "domain": 0.03840954974293709,
+          "consensus": 0.009222883731126785
+        },
+        "matched_rule": {
+          "fields": [
+            "title",
+            "rank_bin"
+          ],
+          "values": [
+            "LTE小区退出服务",
+            "r101_200"
+          ],
+          "support": 5,
+          "correct": 3,
+          "precision": 0.6,
+          "fold_count": 4,
+          "fold_precision": {
+            "0": 1.0,
+            "2": 1.0,
+            "3": 0.5,
+            "4": 0.0
+          },
+          "posterior_mean": 0.5065576398909732,
+          "beta_lower_75": 0.4234802790882948,
+          "advantage": 0.04672118005451342
+        },
+        "estimated_advantage": 0.04672118005451342
+      }
+    },
+    {
+      "action_id": "v50_add_batch02_n08_hold_007",
+      "order_id": "e7c0c3fe-f81e-494f-8faa-edcee9a23ce3",
+      "remove_rids": [],
+      "add_rids": [
+        "#-1:4044d294-2a14-4c31-9d5f-3464269651d2"
+      ],
+      "source": "v50_empirical_bayes_stratum",
+      "expected_gain": 0.011078527207559419,
+      "evidence": {
+        "row": 2885,
+        "rank": 52,
+        "rank_bin": "r51_100",
+        "order_index": 483,
+        "order_id": "e7c0c3fe-f81e-494f-8faa-edcee9a23ce3",
+        "rid": "#-1:4044d294-2a14-4c31-9d5f-3464269651d2",
+        "kind": "add",
+        "title": "射频单元直流掉电告警",
+        "vendor": "设备商乙",
+        "device_type": "",
+        "deployment": "",
+        "radio": "",
+        "timeline": "001111",
+        "current_count": 1,
+        "alarm_count": 11,
+        "rank_average": 0.6509113907814026,
+        "score_median": 0.5323226451873779,
+        "agreement": 4,
+        "scores": {
+          "v11": 0.5425217151641846,
+          "v13": 0.5984416007995605,
+          "v19": 0.1031622663140297,
+          "station": 0.5221235752105713,
+          "domain": 0.4933929145336151,
+          "consensus": 0.6088493466377258
+        },
+        "matched_rule": {
+          "fields": [
+            "vendor",
+            "rank_bin"
+          ],
+          "values": [
+            "设备商乙",
+            "r51_100"
+          ],
+          "support": 21,
+          "correct": 10,
+          "precision": 0.47619047619047616,
+          "fold_count": 4,
+          "fold_precision": {
+            "0": 0.5,
+            "1": 0.6666666666666666,
+            "2": 0.3333333333333333,
+            "4": 0.6
+          },
+          "posterior_mean": 0.47091498704401924,
+          "beta_lower_75": 0.41352505951768576,
+          "advantage": 0.011078527207559419
+        },
+        "estimated_advantage": 0.011078527207559419
+      }
+    },
+    {
+      "action_id": "v50_add_batch02_n08_hold_008",
+      "order_id": "01b0f97d-4713-4071-8ebd-2e03009fcb3a",
+      "remove_rids": [],
+      "add_rids": [
+        "#-1:f684c864-c7af-48a8-8331-c72eaf356fd4"
+      ],
+      "source": "v50_empirical_bayes_stratum",
+      "expected_gain": 0.011078527207559419,
+      "evidence": {
+        "row": 37,
+        "rank": 56,
+        "rank_bin": "r51_100",
+        "order_index": 3,
+        "order_id": "01b0f97d-4713-4071-8ebd-2e03009fcb3a",
+        "rid": "#-1:f684c864-c7af-48a8-8331-c72eaf356fd4",
+        "kind": "add",
+        "title": "BBU单板维护链路异常告警",
+        "vendor": "设备商乙",
+        "device_type": "",
+        "deployment": "",
+        "radio": "",
+        "timeline": "000011",
+        "current_count": 1,
+        "alarm_count": 12,
+        "rank_average": 0.6471527218818665,
+        "score_median": 0.2978261560201645,
+        "agreement": 1,
+        "scores": {
+          "v11": 0.2857488691806793,
+          "v13": 0.25321337580680847,
+          "v19": 0.6041696071624756,
+          "station": 0.35249701142311096,
+          "domain": 0.2934146523475647,
+          "consensus": 0.3022376596927643
+        },
+        "matched_rule": {
+          "fields": [
+            "vendor",
+            "rank_bin"
+          ],
+          "values": [
+            "设备商乙",
+            "r51_100"
+          ],
+          "support": 21,
+          "correct": 10,
+          "precision": 0.47619047619047616,
+          "fold_count": 4,
+          "fold_precision": {
+            "0": 0.5,
+            "1": 0.6666666666666666,
+            "2": 0.3333333333333333,
+            "4": 0.6
+          },
+          "posterior_mean": 0.47091498704401924,
+          "beta_lower_75": 0.41352505951768576,
+          "advantage": 0.011078527207559419
+        },
+        "estimated_advantage": 0.011078527207559419
+      }
+    },
+    {
+      "action_id": "v50_add_batch03_n08_hold_001",
+      "order_id": "faa00ed5-c0b9-445e-98ac-671035a4a239",
+      "remove_rids": [],
+      "add_rids": [
+        "#-1:d4f3c427-0b59-41d3-8208-18c218433c27"
+      ],
+      "source": "v50_empirical_bayes_stratum",
+      "expected_gain": 0.011078527207559419,
+      "evidence": {
+        "row": 3174,
+        "rank": 58,
+        "rank_bin": "r51_100",
+        "order_index": 532,
+        "order_id": "faa00ed5-c0b9-445e-98ac-671035a4a239",
+        "rid": "#-1:d4f3c427-0b59-41d3-8208-18c218433c27",
+        "kind": "add",
+        "title": "ETH_LOS",
+        "vendor": "设备商乙",
+        "device_type": "",
+        "deployment": "",
+        "radio": "",
+        "timeline": "100000",
+        "current_count": 1,
+        "alarm_count": 14,
+        "rank_average": 0.6451961994171143,
+        "score_median": 0.3719526678323746,
+        "agreement": 2,
+        "scores": {
+          "v11": 0.2830280661582947,
+          "v13": 0.28424954414367676,
+          "v19": 0.1804899126291275,
+          "station": 0.5779268741607666,
+          "domain": 0.4596557915210724,
+          "consensus": 0.6178073883056641
+        },
+        "matched_rule": {
+          "fields": [
+            "vendor",
+            "rank_bin"
+          ],
+          "values": [
+            "设备商乙",
+            "r51_100"
+          ],
+          "support": 21,
+          "correct": 10,
+          "precision": 0.47619047619047616,
+          "fold_count": 4,
+          "fold_precision": {
+            "0": 0.5,
+            "1": 0.6666666666666666,
+            "2": 0.3333333333333333,
+            "4": 0.6
+          },
+          "posterior_mean": 0.47091498704401924,
+          "beta_lower_75": 0.41352505951768576,
+          "advantage": 0.011078527207559419
+        },
+        "estimated_advantage": 0.011078527207559419
+      }
+    },
+    {
+      "action_id": "v50_add_batch03_n08_hold_002",
+      "order_id": "0e755fc0-8819-4420-b701-1f84ec0e59de",
+      "remove_rids": [],
+      "add_rids": [
+        "#-1:0f95a457-9523-4b28-9a93-81b08542d6b4"
+      ],
+      "source": "v50_empirical_bayes_stratum",
+      "expected_gain": 0.011078527207559419,
+      "evidence": {
+        "row": 180,
+        "rank": 60,
+        "rank_bin": "r51_100",
+        "order_index": 27,
+        "order_id": "0e755fc0-8819-4420-b701-1f84ec0e59de",
+        "rid": "#-1:0f95a457-9523-4b28-9a93-81b08542d6b4",
+        "kind": "add",
+        "title": "射频单元维护链路异常告警",
+        "vendor": "设备商乙",
+        "device_type": "",
+        "deployment": "",
+        "radio": "",
+        "timeline": "000011",
+        "current_count": 1,
+        "alarm_count": 4,
+        "rank_average": 0.6424673199653625,
+        "score_median": 0.4348790794610977,
+        "agreement": 1,
+        "scores": {
+          "v11": 0.09789144992828369,
+          "v13": 0.08872440457344055,
+          "v19": 0.7841949462890625,
+          "station": 0.4730132818222046,
+          "domain": 0.43613865971565247,
+          "consensus": 0.43361949920654297
+        },
+        "matched_rule": {
+          "fields": [
+            "vendor",
+            "rank_bin"
+          ],
+          "values": [
+            "设备商乙",
+            "r51_100"
+          ],
+          "support": 21,
+          "correct": 10,
+          "precision": 0.47619047619047616,
+          "fold_count": 4,
+          "fold_precision": {
+            "0": 0.5,
+            "1": 0.6666666666666666,
+            "2": 0.3333333333333333,
+            "4": 0.6
+          },
+          "posterior_mean": 0.47091498704401924,
+          "beta_lower_75": 0.41352505951768576,
+          "advantage": 0.011078527207559419
+        },
+        "estimated_advantage": 0.011078527207559419
+      }
+    },
+    {
+      "action_id": "v50_add_batch03_n08_hold_004",
+      "order_id": "fa82abed-1394-4701-b303-e3a5371d30af",
+      "remove_rids": [],
+      "add_rids": [
+        "#-1:a4eca6a4-28de-484e-88b6-5cc9d53b641c"
+      ],
+      "source": "v50_empirical_bayes_stratum",
+      "expected_gain": 0.011078527207559419,
+      "evidence": {
+        "row": 3156,
+        "rank": 67,
+        "rank_bin": "r51_100",
+        "order_index": 531,
+        "order_id": "fa82abed-1394-4701-b303-e3a5371d30af",
+        "rid": "#-1:a4eca6a4-28de-484e-88b6-5cc9d53b641c",
+        "kind": "add",
+        "title": "传输光接口异常告警",
+        "vendor": "设备商乙",
+        "device_type": "",
+        "deployment": "",
+        "radio": "",
+        "timeline": "111111",
+        "current_count": 1,
+        "alarm_count": 10,
+        "rank_average": 0.6353619694709778,
+        "score_median": 0.32909804582595825,
+        "agreement": 0,
+        "scores": {
+          "v11": 0.30377912521362305,
+          "v13": 0.24508793652057648,
+          "v19": 0.245770663022995,
+          "station": 0.35441696643829346,
+          "domain": 0.36636343598365784,
+          "consensus": 0.3592361807823181
+        },
+        "matched_rule": {
+          "fields": [
+            "vendor",
+            "rank_bin"
+          ],
+          "values": [
+            "设备商乙",
+            "r51_100"
+          ],
+          "support": 21,
+          "correct": 10,
+          "precision": 0.47619047619047616,
+          "fold_count": 4,
+          "fold_precision": {
+            "0": 0.5,
+            "1": 0.6666666666666666,
+            "2": 0.3333333333333333,
+            "4": 0.6
+          },
+          "posterior_mean": 0.47091498704401924,
+          "beta_lower_75": 0.41352505951768576,
+          "advantage": 0.011078527207559419
+        },
+        "estimated_advantage": 0.011078527207559419
+      }
+    },
+    {
+      "action_id": "v50_add_batch03_n08_hold_005",
+      "order_id": "d3af2aee-7dc1-4e51-9412-857e58882314",
+      "remove_rids": [],
+      "add_rids": [
+        "#-1:788b74a5-a6cd-4d8c-9052-632b8cc30e10"
+      ],
+      "source": "v50_empirical_bayes_stratum",
+      "expected_gain": 0.011078527207559419,
+      "evidence": {
+        "row": 2595,
+        "rank": 69,
+        "rank_bin": "r51_100",
+        "order_index": 436,
+        "order_id": "d3af2aee-7dc1-4e51-9412-857e58882314",
+        "rid": "#-1:788b74a5-a6cd-4d8c-9052-632b8cc30e10",
+        "kind": "add",
+        "title": "射频单元维护链路异常告警",
+        "vendor": "设备商乙",
+        "device_type": "",
+        "deployment": "",
+        "radio": "",
+        "timeline": "111111",
+        "current_count": 1,
+        "alarm_count": 4,
+        "rank_average": 0.6331994533538818,
+        "score_median": 0.2421637400984764,
+        "agreement": 0,
+        "scores": {
+          "v11": 0.2310207635164261,
+          "v13": 0.2287454605102539,
+          "v19": 0.4929726719856262,
+          "station": 0.25330671668052673,
+          "domain": 0.2673746347427368,
+          "consensus": 0.1654549390077591
+        },
+        "matched_rule": {
+          "fields": [
+            "vendor",
+            "rank_bin"
+          ],
+          "values": [
+            "设备商乙",
+            "r51_100"
+          ],
+          "support": 21,
+          "correct": 10,
+          "precision": 0.47619047619047616,
+          "fold_count": 4,
+          "fold_precision": {
+            "0": 0.5,
+            "1": 0.6666666666666666,
+            "2": 0.3333333333333333,
+            "4": 0.6
+          },
+          "posterior_mean": 0.47091498704401924,
+          "beta_lower_75": 0.41352505951768576,
+          "advantage": 0.011078527207559419
+        },
+        "estimated_advantage": 0.011078527207559419
+      }
+    },
+    {
+      "action_id": "v50_add_batch04_n08_hold_001",
+      "order_id": "e3fac97b-b244-438e-b6e4-7bd8dce938e0",
+      "remove_rids": [],
+      "add_rids": [
+        "#-1:67dc4805-7fae-4cc8-a7cc-2b1123940417"
+      ],
+      "source": "v50_empirical_bayes_stratum",
+      "expected_gain": 0.011078527207559419,
+      "evidence": {
+        "row": 2842,
+        "rank": 79,
+        "rank_bin": "r51_100",
+        "order_index": 473,
+        "order_id": "e3fac97b-b244-438e-b6e4-7bd8dce938e0",
+        "rid": "#-1:67dc4805-7fae-4cc8-a7cc-2b1123940417",
+        "kind": "add",
+        "title": "射频单元时钟异常告警",
+        "vendor": "设备商乙",
+        "device_type": "",
+        "deployment": "",
+        "radio": "",
+        "timeline": "111111",
+        "current_count": 1,
+        "alarm_count": 6,
+        "rank_average": 0.6268149614334106,
+        "score_median": 0.1667582020163536,
+        "agreement": 1,
+        "scores": {
+          "v11": 0.2223563939332962,
+          "v13": 0.19641175866127014,
+          "v19": 0.7934413552284241,
+          "station": 0.08553551882505417,
+          "domain": 0.13710464537143707,
+          "consensus": 0.05407421663403511
+        },
+        "matched_rule": {
+          "fields": [
+            "vendor",
+            "rank_bin"
+          ],
+          "values": [
+            "设备商乙",
+            "r51_100"
+          ],
+          "support": 21,
+          "correct": 10,
+          "precision": 0.47619047619047616,
+          "fold_count": 4,
+          "fold_precision": {
+            "0": 0.5,
+            "1": 0.6666666666666666,
+            "2": 0.3333333333333333,
+            "4": 0.6
+          },
+          "posterior_mean": 0.47091498704401924,
+          "beta_lower_75": 0.41352505951768576,
+          "advantage": 0.011078527207559419
+        },
+        "estimated_advantage": 0.011078527207559419
+      }
+    },
+    {
+      "action_id": "v50_add_batch04_n08_hold_005",
+      "order_id": "599a8ce2-c4f0-453c-b951-105fb1067e7e",
+      "remove_rids": [],
+      "add_rids": [
+        "#-1:0091f234-51c0-487f-bf31-c3c4bd3dd33e"
+      ],
+      "source": "v50_empirical_bayes_stratum",
+      "expected_gain": 0.011078527207559419,
+      "evidence": {
+        "row": 933,
+        "rank": 90,
+        "rank_bin": "r51_100",
+        "order_index": 166,
+        "order_id": "599a8ce2-c4f0-453c-b951-105fb1067e7e",
+        "rid": "#-1:0091f234-51c0-487f-bf31-c3c4bd3dd33e",
+        "kind": "add",
+        "title": "射频单元维护链路异常告警",
+        "vendor": "设备商乙",
+        "device_type": "",
+        "deployment": "",
+        "radio": "",
+        "timeline": "000110",
+        "current_count": 1,
+        "alarm_count": 4,
+        "rank_average": 0.6195036768913269,
+        "score_median": 0.11222229152917862,
+        "agreement": 1,
+        "scores": {
+          "v11": 0.07889927923679352,
+          "v13": 0.06099973991513252,
+          "v19": 0.9153483510017395,
+          "station": 0.1416931450366974,
+          "domain": 0.18679533898830414,
+          "consensus": 0.08275143802165985
+        },
+        "matched_rule": {
+          "fields": [
+            "vendor",
+            "rank_bin"
+          ],
+          "values": [
+            "设备商乙",
+            "r51_100"
+          ],
+          "support": 21,
+          "correct": 10,
+          "precision": 0.47619047619047616,
+          "fold_count": 4,
+          "fold_precision": {
+            "0": 0.5,
+            "1": 0.6666666666666666,
+            "2": 0.3333333333333333,
+            "4": 0.6
+          },
+          "posterior_mean": 0.47091498704401924,
+          "beta_lower_75": 0.41352505951768576,
+          "advantage": 0.011078527207559419
+        },
+        "estimated_advantage": 0.011078527207559419
+      }
+    },
+    {
+      "action_id": "v50_add_batch04_n08_hold_006",
+      "order_id": "ed52fdc5-fce4-4fb1-a76e-bf6732d6360f",
+      "remove_rids": [],
+      "add_rids": [
+        "#-1:760b3b8a-4628-4ad9-9b3c-02accd3b3280"
+      ],
+      "source": "v50_empirical_bayes_stratum",
+      "expected_gain": 0.011078527207559419,
+      "evidence": {
+        "row": 2961,
+        "rank": 92,
+        "rank_bin": "r51_100",
+        "order_index": 494,
+        "order_id": "ed52fdc5-fce4-4fb1-a76e-bf6732d6360f",
+        "rid": "#-1:760b3b8a-4628-4ad9-9b3c-02accd3b3280",
+        "kind": "add",
+        "title": "时钟参考源异常告警",
+        "vendor": "设备商乙",
+        "device_type": "",
+        "deployment": "",
+        "radio": "",
+        "timeline": "000111",
+        "current_count": 7,
+        "alarm_count": 16,
+        "rank_average": 0.6184223890304565,
+        "score_median": 0.16457615047693253,
+        "agreement": 1,
+        "scores": {
+          "v11": 0.24964484572410583,
+          "v13": 0.20162567496299744,
+          "v19": 0.5589994788169861,
+          "station": 0.1114773079752922,
+          "domain": 0.12752662599086761,
+          "consensus": 0.08039561659097672
+        },
+        "matched_rule": {
+          "fields": [
+            "vendor",
+            "rank_bin"
+          ],
+          "values": [
+            "设备商乙",
+            "r51_100"
+          ],
+          "support": 21,
+          "correct": 10,
+          "precision": 0.47619047619047616,
+          "fold_count": 4,
+          "fold_precision": {
+            "0": 0.5,
+            "1": 0.6666666666666666,
+            "2": 0.3333333333333333,
+            "4": 0.6
+          },
+          "posterior_mean": 0.47091498704401924,
+          "beta_lower_75": 0.41352505951768576,
+          "advantage": 0.011078527207559419
+        },
+        "estimated_advantage": 0.011078527207559419
+      }
+    },
+    {
+      "action_id": "v50_add_batch04_n08_hold_007",
+      "order_id": "66ee1170-8f45-43ec-a392-426aaac31f7b",
+      "remove_rids": [],
+      "add_rids": [
+        "#-1:05da9895-4431-4714-a9c5-10b181dd5684"
+      ],
+      "source": "v50_empirical_bayes_stratum",
+      "expected_gain": 0.011078527207559419,
+      "evidence": {
+        "row": 1150,
+        "rank": 93,
+        "rank_bin": "r51_100",
+        "order_index": 194,
+        "order_id": "66ee1170-8f45-43ec-a392-426aaac31f7b",
+        "rid": "#-1:05da9895-4431-4714-a9c5-10b181dd5684",
+        "kind": "add",
+        "title": "射频单元维护链路异常告警",
+        "vendor": "设备商乙",
+        "device_type": "",
+        "deployment": "",
+        "radio": "",
+        "timeline": "000011",
+        "current_count": 1,
+        "alarm_count": 4,
+        "rank_average": 0.6179590225219727,
+        "score_median": 0.09066081792116165,
+        "agreement": 1,
+        "scores": {
+          "v11": 0.08899973332881927,
+          "v13": 0.0745445042848587,
+          "v19": 0.920583963394165,
+          "station": 0.14199164509773254,
+          "domain": 0.07828975468873978,
+          "consensus": 0.09232190251350403
+        },
+        "matched_rule": {
+          "fields": [
+            "vendor",
+            "rank_bin"
+          ],
+          "values": [
+            "设备商乙",
+            "r51_100"
+          ],
+          "support": 21,
+          "correct": 10,
+          "precision": 0.47619047619047616,
+          "fold_count": 4,
+          "fold_precision": {
+            "0": 0.5,
+            "1": 0.6666666666666666,
+            "2": 0.3333333333333333,
+            "4": 0.6
+          },
+          "posterior_mean": 0.47091498704401924,
+          "beta_lower_75": 0.41352505951768576,
+          "advantage": 0.011078527207559419
+        },
+        "estimated_advantage": 0.011078527207559419
+      }
+    },
+    {
+      "action_id": "v50_add_batch04_n08_hold_008",
+      "order_id": "7002339b-8846-40ad-a1be-8b837008e2aa",
+      "remove_rids": [],
+      "add_rids": [
+        "#-1:ab40c757-c0ae-4f62-bf9b-7070e7d36a7c"
+      ],
+      "source": "v50_empirical_bayes_stratum",
+      "expected_gain": 0.011078527207559419,
+      "evidence": {
+        "row": 1268,
+        "rank": 96,
+        "rank_bin": "r51_100",
+        "order_index": 212,
+        "order_id": "7002339b-8846-40ad-a1be-8b837008e2aa",
+        "rid": "#-1:ab40c757-c0ae-4f62-bf9b-7070e7d36a7c",
+        "kind": "add",
+        "title": "射频单元维护链路异常告警",
+        "vendor": "设备商乙",
+        "device_type": "",
+        "deployment": "",
+        "radio": "",
+        "timeline": "000111",
+        "current_count": 1,
+        "alarm_count": 3,
+        "rank_average": 0.6154361367225647,
+        "score_median": 0.11561835184693336,
+        "agreement": 1,
+        "scores": {
+          "v11": 0.06659320741891861,
+          "v13": 0.05078893527388573,
+          "v19": 0.9106209874153137,
+          "station": 0.14607903361320496,
+          "domain": 0.22750194370746613,
+          "consensus": 0.08515767008066177
+        },
+        "matched_rule": {
+          "fields": [
+            "vendor",
+            "rank_bin"
+          ],
+          "values": [
+            "设备商乙",
+            "r51_100"
+          ],
+          "support": 21,
+          "correct": 10,
+          "precision": 0.47619047619047616,
+          "fold_count": 4,
+          "fold_precision": {
+            "0": 0.5,
+            "1": 0.6666666666666666,
+            "2": 0.3333333333333333,
+            "4": 0.6
+          },
+          "posterior_mean": 0.47091498704401924,
+          "beta_lower_75": 0.41352505951768576,
+          "advantage": 0.011078527207559419
+        },
+        "estimated_advantage": 0.011078527207559419
+      }
+    },
+    {
+      "action_id": "v50_delete_batch01_n08_hold_002",
+      "order_id": "eff8f9b6-1cb4-483c-9128-cf8a4985dbf4",
+      "remove_rids": [
+        "#-1:fad88414-d576-4924-b598-15c725fb5096"
+      ],
+      "add_rids": [],
+      "source": "v50_empirical_bayes_stratum",
+      "expected_gain": 0.1099386724386725,
+      "evidence": {
+        "row": 3051,
+        "rank": 56,
+        "rank_bin": "r51_100",
+        "order_index": 509,
+        "order_id": "eff8f9b6-1cb4-483c-9128-cf8a4985dbf4",
+        "rid": "#-1:fad88414-d576-4924-b598-15c725fb5096",
+        "kind": "delete",
+        "title": "BBU CPRI接口异常告警",
+        "vendor": "设备商乙",
+        "device_type": "",
+        "deployment": "",
+        "radio": "",
+        "timeline": "111111",
+        "current_count": 3,
+        "alarm_count": 6,
+        "rank_average": 0.745597779750824,
+        "score_median": 0.8583182096481323,
+        "agreement": 5,
+        "scores": {
+          "v11": 0.8354596495628357,
+          "v13": 0.7561498880386353,
+          "v19": 0.4535464346408844,
+          "station": 0.881176769733429,
+          "domain": 0.9076765775680542,
+          "consensus": 0.9230884313583374
+        },
+        "matched_rule": {
+          "fields": [
+            "title",
+            "rank_bin"
+          ],
+          "values": [
+            "BBU CPRI接口异常告警",
+            "r51_100"
+          ],
+          "support": 6,
+          "correct": 5,
+          "precision": 0.8333333333333334,
+          "fold_count": 3,
+          "fold_precision": {
+            "1": 1.0,
+            "2": 1.0,
+            "4": 0.75
+          },
+          "posterior_mean": 0.6501022126022127,
+          "beta_lower_75": 0.5591486603905467,
+          "advantage": 0.1099386724386725
+        },
+        "estimated_advantage": 0.1099386724386725
+      }
+    },
+    {
+      "action_id": "v50_delete_batch01_n08_hold_003",
+      "order_id": "f85240db-96a5-407f-8ff3-b0af3d8f6d05",
+      "remove_rids": [
+        "#-1:858ae07c-232a-4cd1-9677-c9a738e0860b"
+      ],
+      "add_rids": [],
+      "source": "v50_empirical_bayes_stratum",
+      "expected_gain": 0.1099386724386725,
+      "evidence": {
+        "row": 3147,
+        "rank": 65,
+        "rank_bin": "r51_100",
+        "order_index": 528,
+        "order_id": "f85240db-96a5-407f-8ff3-b0af3d8f6d05",
+        "rid": "#-1:858ae07c-232a-4cd1-9677-c9a738e0860b",
+        "kind": "delete",
+        "title": "BBU CPRI接口异常告警",
+        "vendor": "设备商乙",
+        "device_type": "",
+        "deployment": "",
+        "radio": "",
+        "timeline": "000111",
+        "current_count": 2,
+        "alarm_count": 3,
+        "rank_average": 0.7579548954963684,
+        "score_median": 0.8347513973712921,
+        "agreement": 6,
+        "scores": {
+          "v11": 0.9240361452102661,
+          "v13": 0.8357537388801575,
+          "v19": 0.6767220497131348,
+          "station": 0.7846243381500244,
+          "domain": 0.8337490558624268,
+          "consensus": 0.8673022985458374
+        },
+        "matched_rule": {
+          "fields": [
+            "title",
+            "rank_bin"
+          ],
+          "values": [
+            "BBU CPRI接口异常告警",
+            "r51_100"
+          ],
+          "support": 6,
+          "correct": 5,
+          "precision": 0.8333333333333334,
+          "fold_count": 3,
+          "fold_precision": {
+            "1": 1.0,
+            "2": 1.0,
+            "4": 0.75
+          },
+          "posterior_mean": 0.6501022126022127,
+          "beta_lower_75": 0.5591486603905467,
+          "advantage": 0.1099386724386725
+        },
+        "estimated_advantage": 0.1099386724386725
+      }
+    },
+    {
+      "action_id": "v50_delete_batch01_n08_hold_004",
+      "order_id": "5e6e4a4b-969f-420a-93f4-1a492a75f0f9",
+      "remove_rids": [
+        "#-1:6b818cdd-abd3-4b6d-b417-0b8db4e3279a"
+      ],
+      "add_rids": [],
+      "source": "v50_empirical_bayes_stratum",
+      "expected_gain": 0.1099386724386725,
+      "evidence": {
+        "row": 990,
+        "rank": 67,
+        "rank_bin": "r51_100",
+        "order_index": 176,
+        "order_id": "5e6e4a4b-969f-420a-93f4-1a492a75f0f9",
+        "rid": "#-1:6b818cdd-abd3-4b6d-b417-0b8db4e3279a",
+        "kind": "delete",
+        "title": "BBU CPRI接口异常告警",
+        "vendor": "设备商乙",
+        "device_type": "",
+        "deployment": "",
+        "radio": "",
+        "timeline": "111111",
+        "current_count": 2,
+        "alarm_count": 4,
+        "rank_average": 0.759036123752594,
+        "score_median": 0.8609741926193237,
+        "agreement": 6,
+        "scores": {
+          "v11": 0.7872528433799744,
+          "v13": 0.6397934556007385,
+          "v19": 0.9004507064819336,
+          "station": 0.9233680963516235,
+          "domain": 0.8214976787567139,
+          "consensus": 0.9324042201042175
+        },
+        "matched_rule": {
+          "fields": [
+            "title",
+            "rank_bin"
+          ],
+          "values": [
+            "BBU CPRI接口异常告警",
+            "r51_100"
+          ],
+          "support": 6,
+          "correct": 5,
+          "precision": 0.8333333333333334,
+          "fold_count": 3,
+          "fold_precision": {
+            "1": 1.0,
+            "2": 1.0,
+            "4": 0.75
+          },
+          "posterior_mean": 0.6501022126022127,
+          "beta_lower_75": 0.5591486603905467,
+          "advantage": 0.1099386724386725
+        },
+        "estimated_advantage": 0.1099386724386725
+      }
+    },
+    {
+      "action_id": "v50_delete_batch01_n08_hold_005",
+      "order_id": "050ba66b-e989-48e5-a059-a336a79e0dab",
+      "remove_rids": [
+        "#-1:806890e7-580c-47ab-85da-8d53fe933d77"
+      ],
+      "add_rids": [],
+      "source": "v50_empirical_bayes_stratum",
+      "expected_gain": 0.1099386724386725,
+      "evidence": {
+        "row": 68,
+        "rank": 76,
+        "rank_bin": "r51_100",
+        "order_index": 9,
+        "order_id": "050ba66b-e989-48e5-a059-a336a79e0dab",
+        "rid": "#-1:806890e7-580c-47ab-85da-8d53fe933d77",
+        "kind": "delete",
+        "title": "BBU CPRI接口异常告警",
+        "vendor": "设备商乙",
+        "device_type": "",
+        "deployment": "",
+        "radio": "",
+        "timeline": "000011",
+        "current_count": 4,
+        "alarm_count": 6,
+        "rank_average": 0.7715992331504822,
+        "score_median": 0.8165852129459381,
+        "agreement": 6,
+        "scores": {
+          "v11": 0.9101992249488831,
+          "v13": 0.8395029902458191,
+          "v19": 0.9647563695907593,
+          "station": 0.708001434803009,
+          "domain": 0.7573755383491516,
+          "consensus": 0.7936674356460571
+        },
+        "matched_rule": {
+          "fields": [
+            "title",
+            "rank_bin"
+          ],
+          "values": [
+            "BBU CPRI接口异常告警",
+            "r51_100"
+          ],
+          "support": 6,
+          "correct": 5,
+          "precision": 0.8333333333333334,
+          "fold_count": 3,
+          "fold_precision": {
+            "1": 1.0,
+            "2": 1.0,
+            "4": 0.75
+          },
+          "posterior_mean": 0.6501022126022127,
+          "beta_lower_75": 0.5591486603905467,
+          "advantage": 0.1099386724386725
+        },
+        "estimated_advantage": 0.1099386724386725
+      }
+    },
+    {
+      "action_id": "v50_delete_batch01_n08_hold_007",
+      "order_id": "d7b73432-8545-486a-8820-7b7030be0af3",
+      "remove_rids": [
+        "#-1:33e99d65-b384-4658-9ce0-ecdc7c286b39"
+      ],
+      "add_rids": [],
+      "source": "v50_empirical_bayes_stratum",
+      "expected_gain": 0.1099386724386725,
+      "evidence": {
+        "row": 2746,
+        "rank": 100,
+        "rank_bin": "r51_100",
+        "order_index": 449,
+        "order_id": "d7b73432-8545-486a-8820-7b7030be0af3",
+        "rid": "#-1:33e99d65-b384-4658-9ce0-ecdc7c286b39",
+        "kind": "delete",
+        "title": "BBU CPRI接口异常告警",
+        "vendor": "设备商乙",
+        "device_type": "",
+        "deployment": "",
+        "radio": "",
+        "timeline": "000011",
+        "current_count": 2,
+        "alarm_count": 4,
+        "rank_average": 0.8084645867347717,
+        "score_median": 0.9382527470588684,
+        "agreement": 6,
+        "scores": {
+          "v11": 0.9283982515335083,
+          "v13": 0.8168473243713379,
+          "v19": 0.9360984563827515,
+          "station": 0.9404070377349854,
+          "domain": 0.94045490026474,
+          "consensus": 0.9669473767280579
+        },
+        "matched_rule": {
+          "fields": [
+            "title",
+            "rank_bin"
+          ],
+          "values": [
+            "BBU CPRI接口异常告警",
+            "r51_100"
+          ],
+          "support": 6,
+          "correct": 5,
+          "precision": 0.8333333333333334,
+          "fold_count": 3,
+          "fold_precision": {
+            "1": 1.0,
+            "2": 1.0,
+            "4": 0.75
+          },
+          "posterior_mean": 0.6501022126022127,
+          "beta_lower_75": 0.5591486603905467,
+          "advantage": 0.1099386724386725
+        },
+        "estimated_advantage": 0.1099386724386725
+      }
+    },
+    {
+      "action_id": "v50_delete_batch02_n08_hold_001",
+      "order_id": "28b90da8-e634-4666-8e89-10d1f5c74846",
+      "remove_rids": [
+        "#-1:28289fe0-1167-46f9-b834-90490b58eb7e"
+      ],
+      "add_rids": [],
+      "source": "v50_empirical_bayes_stratum",
+      "expected_gain": 0.03770509326064886,
+      "evidence": {
+        "row": 396,
+        "rank": 37,
+        "rank_bin": "r26_50",
+        "order_index": 72,
+        "order_id": "28b90da8-e634-4666-8e89-10d1f5c74846",
+        "rid": "#-1:28289fe0-1167-46f9-b834-90490b58eb7e",
+        "kind": "delete",
+        "title": "光口接收链路故障",
+        "vendor": "设备商甲",
+        "device_type": "SDR",
+        "deployment": "NSA",
+        "radio": "LTE FDD",
+        "timeline": "111111",
+        "current_count": 3,
+        "alarm_count": 3,
+        "rank_average": 0.7205231189727783,
+        "score_median": 0.6960577964782715,
+        "agreement": 6,
+        "scores": {
+          "v11": 0.7278805375099182,
+          "v13": 0.6642350554466248,
+          "v19": 0.8904820084571838,
+          "station": 0.6388474106788635,
+          "domain": 0.6230404376983643,
+          "consensus": 0.7749556303024292
+        },
+        "matched_rule": {
+          "fields": [
+            "title",
+            "device_type"
+          ],
+          "values": [
+            "光口接收链路故障",
+            "SDR"
+          ],
+          "support": 8,
+          "correct": 5,
+          "precision": 0.625,
+          "fold_count": 4,
+          "fold_precision": {
+            "1": 0.5,
+            "2": 0.5,
+            "3": 1.0,
+            "4": 0.6666666666666666
+          },
+          "posterior_mean": 0.577868633424189,
+          "beta_lower_75": 0.4962300676749261,
+          "advantage": 0.03770509326064886
+        },
+        "estimated_advantage": 0.03770509326064886
+      }
+    },
+    {
+      "action_id": "v50_delete_batch02_n08_hold_002",
+      "order_id": "69a3a452-8984-4c9a-baed-99c8ae6ac3a2",
+      "remove_rids": [
+        "#-1:f5a6f67f-9051-4eb6-b365-019f32f817fc"
+      ],
+      "add_rids": [],
+      "source": "v50_empirical_bayes_stratum",
+      "expected_gain": 0.03770509326064886,
+      "evidence": {
+        "row": 1185,
+        "rank": 53,
+        "rank_bin": "r51_100",
+        "order_index": 198,
+        "order_id": "69a3a452-8984-4c9a-baed-99c8ae6ac3a2",
+        "rid": "#-1:f5a6f67f-9051-4eb6-b365-019f32f817fc",
+        "kind": "delete",
+        "title": "RRU链路断",
+        "vendor": "设备商甲",
+        "device_type": "RU",
+        "deployment": "LTE",
+        "radio": "TD-LTE",
+        "timeline": "111000",
+        "current_count": 7,
+        "alarm_count": 18,
+        "rank_average": 0.7351972460746765,
+        "score_median": 0.7846810519695282,
+        "agreement": 6,
+        "scores": {
+          "v11": 0.8742187023162842,
+          "v13": 0.8187981247901917,
+          "v19": 0.6553918719291687,
+          "station": 0.7505639791488647,
+          "domain": 0.6805059313774109,
+          "consensus": 0.8329333066940308
+        },
+        "matched_rule": {
+          "fields": [
+            "title",
+            "rank_bin"
+          ],
+          "values": [
+            "RRU链路断",
+            "r51_100"
+          ],
+          "support": 8,
+          "correct": 5,
+          "precision": 0.625,
+          "fold_count": 4,
+          "fold_precision": {
+            "0": 0.0,
+            "1": 0.6666666666666666,
+            "2": 0.6666666666666666,
+            "3": 1.0
+          },
+          "posterior_mean": 0.577868633424189,
+          "beta_lower_75": 0.4962300676749261,
+          "advantage": 0.03770509326064886
+        },
+        "estimated_advantage": 0.03770509326064886
+      }
+    },
+    {
+      "action_id": "v50_delete_batch02_n08_hold_003",
+      "order_id": "b90d6799-a2cb-401c-a1bd-8e1ec2204268",
+      "remove_rids": [
+        "#-1:3fb199da-062e-4cd3-bef9-cb53eb35d1cb"
+      ],
+      "add_rids": [],
+      "source": "v50_empirical_bayes_stratum",
+      "expected_gain": 0.03770509326064886,
+      "evidence": {
+        "row": 2198,
+        "rank": 57,
+        "rank_bin": "r51_100",
+        "order_index": 379,
+        "order_id": "b90d6799-a2cb-401c-a1bd-8e1ec2204268",
+        "rid": "#-1:3fb199da-062e-4cd3-bef9-cb53eb35d1cb",
+        "kind": "delete",
+        "title": "RRU链路断",
+        "vendor": "设备商甲",
+        "device_type": "RU",
+        "deployment": "SA_NSA",
+        "radio": "TD-LTE,NR",
+        "timeline": "000011",
+        "current_count": 3,
+        "alarm_count": 11,
+        "rank_average": 0.7463186383247375,
+        "score_median": 0.7347094714641571,
+        "agreement": 6,
+        "scores": {
+          "v11": 0.6980201601982117,
+          "v13": 0.5941997766494751,
+          "v19": 0.9801495671272278,
+          "station": 0.6253193020820618,
+          "domain": 0.8458981513977051,
+          "consensus": 0.7713987827301025
+        },
+        "matched_rule": {
+          "fields": [
+            "title",
+            "rank_bin"
+          ],
+          "values": [
+            "RRU链路断",
+            "r51_100"
+          ],
+          "support": 8,
+          "correct": 5,
+          "precision": 0.625,
+          "fold_count": 4,
+          "fold_precision": {
+            "0": 0.0,
+            "1": 0.6666666666666666,
+            "2": 0.6666666666666666,
+            "3": 1.0
+          },
+          "posterior_mean": 0.577868633424189,
+          "beta_lower_75": 0.4962300676749261,
+          "advantage": 0.03770509326064886
+        },
+        "estimated_advantage": 0.03770509326064886
+      }
+    },
+    {
+      "action_id": "v50_delete_batch02_n08_hold_004",
+      "order_id": "d450cd63-3e5d-4c67-b11a-517c03d7e3e0",
+      "remove_rids": [
+        "#-1:483c97ce-dbdd-4262-90a3-a87eb4bd5fb6"
+      ],
+      "add_rids": [],
+      "source": "v50_empirical_bayes_stratum",
+      "expected_gain": 0.03770509326064886,
+      "evidence": {
+        "row": 2607,
+        "rank": 58,
+        "rank_bin": "r51_100",
+        "order_index": 438,
+        "order_id": "d450cd63-3e5d-4c67-b11a-517c03d7e3e0",
+        "rid": "#-1:483c97ce-dbdd-4262-90a3-a87eb4bd5fb6",
+        "kind": "delete",
+        "title": "RRU链路断",
+        "vendor": "设备商甲",
+        "device_type": "RU",
+        "deployment": "SA",
+        "radio": "NR",
+        "timeline": "010000",
+        "current_count": 2,
+        "alarm_count": 8,
+        "rank_average": 0.7467820048332214,
+        "score_median": 0.8164947032928467,
+        "agreement": 6,
+        "scores": {
+          "v11": 0.892033040523529,
+          "v13": 0.7889764904975891,
+          "v19": 0.8629193902015686,
+          "station": 0.7597904801368713,
+          "domain": 0.647517204284668,
+          "consensus": 0.8440129160881042
+        },
+        "matched_rule": {
+          "fields": [
+            "title",
+            "rank_bin"
+          ],
+          "values": [
+            "RRU链路断",
+            "r51_100"
+          ],
+          "support": 8,
+          "correct": 5,
+          "precision": 0.625,
+          "fold_count": 4,
+          "fold_precision": {
+            "0": 0.0,
+            "1": 0.6666666666666666,
+            "2": 0.6666666666666666,
+            "3": 1.0
+          },
+          "posterior_mean": 0.577868633424189,
+          "beta_lower_75": 0.4962300676749261,
+          "advantage": 0.03770509326064886
+        },
+        "estimated_advantage": 0.03770509326064886
+      }
+    },
+    {
+      "action_id": "v50_delete_batch02_n08_hold_007",
+      "order_id": "f11b9469-743e-44d1-b27c-8d1a3cf0bd3a",
+      "remove_rids": [
+        "#-1:ba6e2836-d8f4-45e9-a2dc-9fc777bd34f4"
+      ],
+      "add_rids": [],
+      "source": "v50_empirical_bayes_stratum",
+      "expected_gain": 0.03770509326064886,
+      "evidence": {
+        "row": 3071,
+        "rank": 63,
+        "rank_bin": "r51_100",
+        "order_index": 511,
+        "order_id": "f11b9469-743e-44d1-b27c-8d1a3cf0bd3a",
+        "rid": "#-1:ba6e2836-d8f4-45e9-a2dc-9fc777bd34f4",
+        "kind": "delete",
+        "title": "RRU链路断",
+        "vendor": "设备商甲",
+        "device_type": "RU",
+        "deployment": "SA_NSA",
+        "radio": "NR",
+        "timeline": "000011",
+        "current_count": 2,
+        "alarm_count": 4,
+        "rank_average": 0.754041850566864,
+        "score_median": 0.8247116208076477,
+        "agreement": 6,
+        "scores": {
+          "v11": 0.8638662695884705,
+          "v13": 0.7934524416923523,
+          "v19": 0.8559707999229431,
+          "station": 0.7916059494018555,
+          "domain": 0.7899831533432007,
+          "consensus": 0.8765795826911926
+        },
+        "matched_rule": {
+          "fields": [
+            "title",
+            "rank_bin"
+          ],
+          "values": [
+            "RRU链路断",
+            "r51_100"
+          ],
+          "support": 8,
+          "correct": 5,
+          "precision": 0.625,
+          "fold_count": 4,
+          "fold_precision": {
+            "0": 0.0,
+            "1": 0.6666666666666666,
+            "2": 0.6666666666666666,
+            "3": 1.0
+          },
+          "posterior_mean": 0.577868633424189,
+          "beta_lower_75": 0.4962300676749261,
+          "advantage": 0.03770509326064886
+        },
+        "estimated_advantage": 0.03770509326064886
+      }
+    },
+    {
+      "action_id": "v50_delete_batch03_n08_hold_001",
+      "order_id": "f715e5bc-38b1-4db9-b863-0642125d72be",
+      "remove_rids": [
+        "#-1:df517462-aff1-4c1d-82fe-2cd23fcfea67"
+      ],
+      "add_rids": [],
+      "source": "v50_empirical_bayes_stratum",
+      "expected_gain": 0.03770509326064886,
+      "evidence": {
+        "row": 3138,
+        "rank": 70,
+        "rank_bin": "r51_100",
+        "order_index": 527,
+        "order_id": "f715e5bc-38b1-4db9-b863-0642125d72be",
+        "rid": "#-1:df517462-aff1-4c1d-82fe-2cd23fcfea67",
+        "kind": "delete",
+        "title": "RRU链路断",
+        "vendor": "设备商甲",
+        "device_type": "RU",
+        "deployment": "LTE",
+        "radio": "LTE FDD",
+        "timeline": "000111",
+        "current_count": 3,
+        "alarm_count": 8,
+        "rank_average": 0.7641334533691406,
+        "score_median": 0.8773409724235535,
+        "agreement": 6,
+        "scores": {
+          "v11": 0.8806729912757874,
+          "v13": 0.8253608345985413,
+          "v19": 0.5009748339653015,
+          "station": 0.935361921787262,
+          "domain": 0.8740089535713196,
+          "consensus": 0.9534308910369873
+        },
+        "matched_rule": {
+          "fields": [
+            "title",
+            "rank_bin"
+          ],
+          "values": [
+            "RRU链路断",
+            "r51_100"
+          ],
+          "support": 8,
+          "correct": 5,
+          "precision": 0.625,
+          "fold_count": 4,
+          "fold_precision": {
+            "0": 0.0,
+            "1": 0.6666666666666666,
+            "2": 0.6666666666666666,
+            "3": 1.0
+          },
+          "posterior_mean": 0.577868633424189,
+          "beta_lower_75": 0.4962300676749261,
+          "advantage": 0.03770509326064886
+        },
+        "estimated_advantage": 0.03770509326064886
+      }
+    },
+    {
+      "action_id": "v50_delete_batch03_n08_hold_002",
+      "order_id": "50136eba-2902-466a-ad94-d96b351c9fc2",
+      "remove_rids": [
+        "#-1:37b6995c-f44d-4c21-bdcb-51dd4823178a"
+      ],
+      "add_rids": [],
+      "source": "v50_empirical_bayes_stratum",
+      "expected_gain": 0.03770509326064886,
+      "evidence": {
+        "row": 844,
+        "rank": 73,
+        "rank_bin": "r51_100",
+        "order_index": 147,
+        "order_id": "50136eba-2902-466a-ad94-d96b351c9fc2",
+        "rid": "#-1:37b6995c-f44d-4c21-bdcb-51dd4823178a",
+        "kind": "delete",
+        "title": "RRU链路断",
+        "vendor": "设备商甲",
+        "device_type": "RU",
+        "deployment": "LTE",
+        "radio": "TD-LTE",
+        "timeline": "110000",
+        "current_count": 2,
+        "alarm_count": 7,
+        "rank_average": 0.7687159180641174,
+        "score_median": 0.886717826128006,
+        "agreement": 6,
+        "scores": {
+          "v11": 0.9354853630065918,
+          "v13": 0.8659746646881104,
+          "v19": 0.5924088358879089,
+          "station": 0.9074609875679016,
+          "domain": 0.7408784627914429,
+          "consensus": 0.9456144571304321
+        },
+        "matched_rule": {
+          "fields": [
+            "title",
+            "rank_bin"
+          ],
+          "values": [
+            "RRU链路断",
+            "r51_100"
+          ],
+          "support": 8,
+          "correct": 5,
+          "precision": 0.625,
+          "fold_count": 4,
+          "fold_precision": {
+            "0": 0.0,
+            "1": 0.6666666666666666,
+            "2": 0.6666666666666666,
+            "3": 1.0
+          },
+          "posterior_mean": 0.577868633424189,
+          "beta_lower_75": 0.4962300676749261,
+          "advantage": 0.03770509326064886
+        },
+        "estimated_advantage": 0.03770509326064886
+      }
+    },
+    {
+      "action_id": "v50_delete_batch03_n08_hold_003",
+      "order_id": "9a450bcc-058d-4fe0-be99-aaa6371ad2cd",
+      "remove_rids": [
+        "#-1:bf9bf60e-1227-4006-9ee6-91ccd54bf3e8"
+      ],
+      "add_rids": [],
+      "source": "v50_empirical_bayes_stratum",
+      "expected_gain": 0.03770509326064886,
+      "evidence": {
+        "row": 1784,
+        "rank": 85,
+        "rank_bin": "r51_100",
+        "order_index": 310,
+        "order_id": "9a450bcc-058d-4fe0-be99-aaa6371ad2cd",
+        "rid": "#-1:bf9bf60e-1227-4006-9ee6-91ccd54bf3e8",
+        "kind": "delete",
+        "title": "RRU链路断",
+        "vendor": "设备商甲",
+        "device_type": "RU",
+        "deployment": "SA_NSA",
+        "radio": "LTE,NR",
+        "timeline": "000011",
+        "current_count": 3,
+        "alarm_count": 6,
+        "rank_average": 0.7828235626220703,
+        "score_median": 0.8491770923137665,
+        "agreement": 6,
+        "scores": {
+          "v11": 0.8404305577278137,
+          "v13": 0.7568379044532776,
+          "v19": 0.982601523399353,
+          "station": 0.8571270704269409,
+          "domain": 0.841227114200592,
+          "consensus": 0.9180868864059448
+        },
+        "matched_rule": {
+          "fields": [
+            "title",
+            "rank_bin"
+          ],
+          "values": [
+            "RRU链路断",
+            "r51_100"
+          ],
+          "support": 8,
+          "correct": 5,
+          "precision": 0.625,
+          "fold_count": 4,
+          "fold_precision": {
+            "0": 0.0,
+            "1": 0.6666666666666666,
+            "2": 0.6666666666666666,
+            "3": 1.0
+          },
+          "posterior_mean": 0.577868633424189,
+          "beta_lower_75": 0.4962300676749261,
+          "advantage": 0.03770509326064886
+        },
+        "estimated_advantage": 0.03770509326064886
+      }
+    },
+    {
+      "action_id": "v50_delete_batch03_n08_hold_006",
+      "order_id": "8106c960-6510-43b1-af25-b3c91388c598",
+      "remove_rids": [
+        "#-1:d1108dd6-92f1-4970-9cd2-912857e84b72"
+      ],
+      "add_rids": [],
+      "source": "v50_empirical_bayes_stratum",
+      "expected_gain": 0.01994548661215334,
+      "evidence": {
+        "row": 1485,
+        "rank": 9,
+        "rank_bin": "r01_10",
+        "order_index": 254,
+        "order_id": "8106c960-6510-43b1-af25-b3c91388c598",
+        "rid": "#-1:d1108dd6-92f1-4970-9cd2-912857e84b72",
+        "kind": "delete",
+        "title": "射频单元IR接口异常告警",
+        "vendor": "设备商乙",
+        "device_type": "",
+        "deployment": "",
+        "radio": "",
+        "timeline": "111110",
+        "current_count": 4,
+        "alarm_count": 10,
+        "rank_average": 0.6672330498695374,
+        "score_median": 0.43607062101364136,
+        "agreement": 3,
+        "scores": {
+          "v11": 0.6716694235801697,
+          "v13": 0.651908814907074,
+          "v19": 0.5134853720664978,
+          "station": 0.3271384537220001,
+          "domain": 0.3586558699607849,
+          "consensus": 0.19780226051807404
+        },
+        "matched_rule": {
+          "fields": [
+            "vendor",
+            "rank_bin"
+          ],
+          "values": [
+            "设备商乙",
+            "r01_10"
+          ],
+          "support": 5,
+          "correct": 3,
+          "precision": 0.6,
+          "fold_count": 4,
+          "fold_precision": {
+            "0": 0.0,
+            "2": 1.0,
+            "3": 1.0,
+            "4": 0.0
+          },
+          "posterior_mean": 0.5601090267756935,
+          "beta_lower_75": 0.4722253482413355,
+          "advantage": 0.01994548661215334
+        },
+        "estimated_advantage": 0.01994548661215334
+      }
+    },
+    {
+      "action_id": "v50_delete_batch03_n08_hold_008",
+      "order_id": "861f8d83-388f-485f-982d-ed3f28ff0bcb",
+      "remove_rids": [
+        "#-1:388176d7-e14d-4d5c-a510-2b39ccbfc25b"
+      ],
+      "add_rids": [],
+      "source": "v50_empirical_bayes_stratum",
+      "expected_gain": 0.01994548661215334,
+      "evidence": {
+        "row": 1536,
+        "rank": 119,
+        "rank_bin": "r101_200",
+        "order_index": 264,
+        "order_id": "861f8d83-388f-485f-982d-ed3f28ff0bcb",
+        "rid": "#-1:388176d7-e14d-4d5c-a510-2b39ccbfc25b",
+        "kind": "delete",
+        "title": "射频单元IR接口异常告警",
+        "vendor": "设备商乙",
+        "device_type": "",
+        "deployment": "",
+        "radio": "",
+        "timeline": "000010",
+        "current_count": 2,
+        "alarm_count": 3,
+        "rank_average": 0.8279785513877869,
+        "score_median": 0.9423615336418152,
+        "agreement": 6,
+        "scores": {
+          "v11": 0.9338024854660034,
+          "v13": 0.8796122074127197,
+          "v19": 0.9374449849128723,
+          "station": 0.9534862637519836,
+          "domain": 0.9472780823707581,
+          "consensus": 0.9751927852630615
+        },
+        "matched_rule": {
+          "fields": [
+            "title",
+            "rank_bin"
+          ],
+          "values": [
+            "射频单元IR接口异常告警",
+            "r101_200"
+          ],
+          "support": 5,
+          "correct": 3,
+          "precision": 0.6,
+          "fold_count": 2,
+          "fold_precision": {
+            "0": 1.0,
+            "2": 0.3333333333333333
+          },
+          "posterior_mean": 0.5601090267756935,
+          "beta_lower_75": 0.4722253482413355,
+          "advantage": 0.01994548661215334
+        },
+        "estimated_advantage": 0.01994548661215334
+      }
+    },
+    {
+      "action_id": "v50_delete_batch04_n05_hold_002",
+      "order_id": "af374848-7bd9-44f9-bfb8-4c087a74d016",
+      "remove_rids": [
+        "#-1:d968cca4-8b85-4d13-b5f0-06d744dd90b4"
+      ],
+      "add_rids": [],
+      "source": "v50_empirical_bayes_stratum",
+      "expected_gain": 0.01287383640324824,
+      "evidence": {
+        "row": 2101,
+        "rank": 19,
+        "rank_bin": "r11_25",
+        "order_index": 361,
+        "order_id": "af374848-7bd9-44f9-bfb8-4c087a74d016",
+        "rid": "#-1:d968cca4-8b85-4d13-b5f0-06d744dd90b4",
+        "kind": "delete",
+        "title": "[衍生告警]PTN光缆中断，单报LOS",
+        "vendor": "设备商甲",
+        "device_type": "",
+        "deployment": "",
+        "radio": "",
+        "timeline": "000111",
+        "current_count": 4,
+        "alarm_count": 16,
+        "rank_average": 0.6894243359565735,
+        "score_median": 0.6422726809978485,
+        "agreement": 5,
+        "scores": {
+          "v11": 0.6518644094467163,
+          "v13": 0.6326809525489807,
+          "v19": 0.43571433424949646,
+          "station": 0.7149370312690735,
+          "domain": 0.6665589213371277,
+          "consensus": 0.5796337723731995
+        },
+        "matched_rule": {
+          "fields": [
+            "vendor",
+            "rank_bin"
+          ],
+          "values": [
+            "设备商甲",
+            "r11_25"
+          ],
+          "support": 7,
+          "correct": 4,
+          "precision": 0.5714285714285714,
+          "fold_count": 4,
+          "fold_precision": {
+            "0": 0.0,
+            "2": 1.0,
+            "3": 1.0,
+            "4": 0.5
+          },
+          "posterior_mean": 0.5530373765667884,
+          "beta_lower_75": 0.47081637401228194,
+          "advantage": 0.01287383640324824
+        },
+        "estimated_advantage": 0.01287383640324824
+      }
+    },
+    {
+      "action_id": "v50_delete_batch04_n05_hold_005",
+      "order_id": "fad26f6d-c956-4598-9639-39fef649b32c",
+      "remove_rids": [
+        "#-1:e9e6853e-519f-46b4-821e-0ab0fe97ef51"
+      ],
+      "add_rids": [],
+      "source": "v50_empirical_bayes_stratum",
+      "expected_gain": 0.01287383640324824,
+      "evidence": {
+        "row": 3186,
+        "rank": 25,
+        "rank_bin": "r11_25",
+        "order_index": 533,
+        "order_id": "fad26f6d-c956-4598-9639-39fef649b32c",
+        "rid": "#-1:e9e6853e-519f-46b4-821e-0ab0fe97ef51",
+        "kind": "delete",
+        "title": "设备掉电",
+        "vendor": "设备商甲",
+        "device_type": "RU",
+        "deployment": "LTE",
+        "radio": "TD-LTE",
+        "timeline": "000011",
+        "current_count": 7,
+        "alarm_count": 14,
+        "rank_average": 0.6967871785163879,
+        "score_median": 0.650420755147934,
+        "agreement": 6,
+        "scores": {
+          "v11": 0.6706318855285645,
+          "v13": 0.6081924438476562,
+          "v19": 0.6660811305046082,
+          "station": 0.6228265166282654,
+          "domain": 0.6348862051963806,
+          "consensus": 0.6659553050994873
+        },
+        "matched_rule": {
+          "fields": [
+            "vendor",
+            "rank_bin"
+          ],
+          "values": [
+            "设备商甲",
+            "r11_25"
+          ],
+          "support": 7,
+          "correct": 4,
+          "precision": 0.5714285714285714,
+          "fold_count": 4,
+          "fold_precision": {
+            "0": 0.0,
+            "2": 1.0,
+            "3": 1.0,
+            "4": 0.5
+          },
+          "posterior_mean": 0.5530373765667884,
+          "beta_lower_75": 0.47081637401228194,
+          "advantage": 0.01287383640324824
+        },
+        "estimated_advantage": 0.01287383640324824
+      }
+    },
+    {
+      "action_id": "v52_add_019_edf35c43",
+      "order_id": "edf35c43-b3c6-4ee0-b82e-b19e942bec89",
+      "remove_rids": [],
+      "add_rids": [
+        "#-1:24c2c71d-5081-4d06-8b04-ef94592f679f"
+      ],
+      "source": "v40_boundary_frontier",
+      "expected_gain": 0.05263157894736842,
+      "evidence": {
+        "source_rank": 19,
+        "order_id": "edf35c43-b3c6-4ee0-b82e-b19e942bec89",
+        "rid": "#-1:24c2c71d-5081-4d06-8b04-ef94592f679f",
+        "kind": "add",
+        "title": "GNSS星卡天线故障告警",
+        "rank_average": 0.6760374903678894,
+        "scores": {
+          "v11": 0.3692387044429779,
+          "v13": 0.32066914439201355,
+          "v19": 0.8814520239830017,
+          "station": 0.4031767249107361,
+          "domain": 0.44941720366477966,
+          "consensus": 0.30813080072402954
+        }
+      }
+    },
+    {
+      "action_id": "v52_add_020_7f43b995",
+      "order_id": "7f43b995-0f0f-4fa5-ad3b-6f196f7434dc",
+      "remove_rids": [],
+      "add_rids": [
+        "#-1:65ec4259-67df-4be5-9790-f1b2ad693d96"
+      ],
+      "source": "v40_boundary_frontier",
+      "expected_gain": 0.05,
+      "evidence": {
+        "source_rank": 20,
+        "order_id": "7f43b995-0f0f-4fa5-ad3b-6f196f7434dc",
+        "rid": "#-1:65ec4259-67df-4be5-9790-f1b2ad693d96",
+        "kind": "add",
+        "title": "RRU链路断",
+        "rank_average": 0.6754196286201477,
+        "scores": {
+          "v11": 0.5106109976768494,
+          "v13": 0.4570780396461487,
+          "v19": 0.8624435663223267,
+          "station": 0.4142764210700989,
+          "domain": 0.26573336124420166,
+          "consensus": 0.3139645457267761
+        }
+      }
+    },
+    {
+      "action_id": "v52_add_027_3163481a",
+      "order_id": "3163481a-c029-4f79-b462-d5687da886dd",
+      "remove_rids": [],
+      "add_rids": [
+        "#-1:f4f12567-e378-43d0-8746-2813d5b4b3e3"
+      ],
+      "source": "v40_boundary_frontier",
+      "expected_gain": 0.037037037037037035,
+      "evidence": {
+        "source_rank": 27,
+        "order_id": "3163481a-c029-4f79-b462-d5687da886dd",
+        "rid": "#-1:f4f12567-e378-43d0-8746-2813d5b4b3e3",
+        "kind": "add",
+        "title": "RRU链路断",
+        "rank_average": 0.6677479147911072,
+        "scores": {
+          "v11": 0.22206418216228485,
+          "v13": 0.1938343644142151,
+          "v19": 0.9717472195625305,
+          "station": 0.1624586582183838,
+          "domain": 0.34328457713127136,
+          "consensus": 0.10598330944776535
+        }
+      }
+    },
+    {
+      "action_id": "v52_add_038_c253a5fd",
+      "order_id": "c253a5fd-6156-4b39-98cb-b3b11c93b25a",
+      "remove_rids": [],
+      "add_rids": [
+        "#-1:a6854279-4b4e-4d6b-b70d-897182582a28"
+      ],
+      "source": "v40_boundary_frontier",
+      "expected_gain": 0.02631578947368421,
+      "evidence": {
+        "source_rank": 38,
+        "order_id": "c253a5fd-6156-4b39-98cb-b3b11c93b25a",
+        "rid": "#-1:a6854279-4b4e-4d6b-b70d-897182582a28",
+        "kind": "add",
+        "title": "RRU链路断",
+        "rank_average": 0.6554422974586487,
+        "scores": {
+          "v11": 0.5448775887489319,
+          "v13": 0.5443018078804016,
+          "v19": 0.3857778310775757,
+          "station": 0.36354777216911316,
+          "domain": 0.3859623670578003,
+          "consensus": 0.22510595619678497
+        }
+      }
+    },
+    {
+      "action_id": "v52_add_062_40ee781f",
+      "order_id": "40ee781f-40f4-481e-b9d5-c2e9b9b98b3f",
+      "remove_rids": [],
+      "add_rids": [
+        "#-1:cbd78370-a1a6-4a6b-9edb-0ed8452cb42c"
+      ],
+      "source": "v40_boundary_frontier",
+      "expected_gain": 0.016129032258064516,
+      "evidence": {
+        "source_rank": 62,
+        "order_id": "40ee781f-40f4-481e-b9d5-c2e9b9b98b3f",
+        "rid": "#-1:cbd78370-a1a6-4a6b-9edb-0ed8452cb42c",
+        "kind": "add",
+        "title": "RRU链路断",
+        "rank_average": 0.6285140514373779,
+        "scores": {
+          "v11": 0.25186315178871155,
+          "v13": 0.20837296545505524,
+          "v19": 0.45100608468055725,
+          "station": 0.1867094337940216,
+          "domain": 0.2951240837574005,
+          "consensus": 0.11013420671224594
+        }
+      }
+    },
+    {
+      "action_id": "v52_add_073_b1d58e4a",
+      "order_id": "b1d58e4a-b781-41a2-a685-cf803f14d38f",
+      "remove_rids": [],
+      "add_rids": [
+        "#-1:1e5c63fb-6ad2-401a-9969-a1bc6def1070"
+      ],
+      "source": "v40_boundary_frontier",
+      "expected_gain": 0.0136986301369863,
+      "evidence": {
+        "source_rank": 73,
+        "order_id": "b1d58e4a-b781-41a2-a685-cf803f14d38f",
+        "rid": "#-1:1e5c63fb-6ad2-401a-9969-a1bc6def1070",
+        "kind": "add",
+        "title": "LTE小区退出服务",
+        "rank_average": 0.6220781207084656,
+        "scores": {
+          "v11": 0.45265328884124756,
+          "v13": 0.4549090564250946,
+          "v19": 0.18072710931301117,
+          "station": 0.1602591723203659,
+          "domain": 0.25000715255737305,
+          "consensus": 0.10280881822109222
+        }
+      }
+    },
+    {
+      "action_id": "v52_add_075_8f73e1cf",
+      "order_id": "8f73e1cf-c334-4f3b-aa08-78d25a9722f5",
+      "remove_rids": [],
+      "add_rids": [
+        "#-1:c7ad6d1d-f834-4257-9936-4e324f1f1672"
+      ],
+      "source": "v40_boundary_frontier",
+      "expected_gain": 0.013333333333333334,
+      "evidence": {
+        "source_rank": 75,
+        "order_id": "8f73e1cf-c334-4f3b-aa08-78d25a9722f5",
+        "rid": "#-1:c7ad6d1d-f834-4257-9936-4e324f1f1672",
+        "kind": "add",
+        "title": "RRU链路断",
+        "rank_average": 0.6199155449867249,
+        "scores": {
+          "v11": 0.24627628922462463,
+          "v13": 0.2313196063041687,
+          "v19": 0.15213541686534882,
+          "station": 0.33052295446395874,
+          "domain": 0.2871098220348358,
+          "consensus": 0.2568338215351105
+        }
+      }
+    },
+    {
+      "action_id": "v52_add_087_0f2a154d",
+      "order_id": "0f2a154d-6f4a-4b05-b9a8-6502b110d3af",
+      "remove_rids": [],
+      "add_rids": [
+        "#-1:c741843e-4c37-4398-9f25-06198e694e6f"
+      ],
+      "source": "v40_boundary_frontier",
+      "expected_gain": 0.011494252873563218,
+      "evidence": {
+        "source_rank": 87,
+        "order_id": "0f2a154d-6f4a-4b05-b9a8-6502b110d3af",
+        "rid": "#-1:c741843e-4c37-4398-9f25-06198e694e6f",
+        "kind": "add",
+        "title": "网元连接中断",
+        "rank_average": 0.6106477379798889,
+        "scores": {
+          "v11": 0.3802555501461029,
+          "v13": 0.2288249135017395,
+          "v19": 0.15130721032619476,
+          "station": 0.1754840910434723,
+          "domain": 0.20107367634773254,
+          "consensus": 0.09914534538984299
+        }
+      }
+    },
+    {
+      "action_id": "v52_add_093_af614073",
+      "order_id": "af614073-0139-45cc-82d0-97e02af80b2d",
+      "remove_rids": [],
+      "add_rids": [
+        "#-1:4575df13-6492-4683-8956-edaaaaf6ff25"
+      ],
+      "source": "v40_boundary_frontier",
+      "expected_gain": 0.010752688172043012,
+      "evidence": {
+        "source_rank": 93,
+        "order_id": "af614073-0139-45cc-82d0-97e02af80b2d",
+        "rid": "#-1:4575df13-6492-4683-8956-edaaaaf6ff25",
+        "kind": "add",
+        "title": "射频单元维护链路异常告警",
+        "rank_average": 0.6036453247070312,
+        "scores": {
+          "v11": 0.17340482771396637,
+          "v13": 0.1412770301103592,
+          "v19": 0.2461017668247223,
+          "station": 0.16774477064609528,
+          "domain": 0.19583044946193695,
+          "consensus": 0.09264272451400757
+        }
+      }
+    },
+    {
+      "action_id": "v52_delete_006_c2f7c036",
+      "order_id": "c2f7c036-aaf0-4a95-9bf4-3cae57b6e7d5",
+      "remove_rids": [
+        "#-1:0e2c59d3-277a-49ac-b27d-9c109ca1602f"
+      ],
+      "add_rids": [],
+      "source": "v40_boundary_frontier",
+      "expected_gain": 0.16666666666666666,
+      "evidence": {
+        "source_rank": 6,
+        "order_id": "c2f7c036-aaf0-4a95-9bf4-3cae57b6e7d5",
+        "rid": "#-1:0e2c59d3-277a-49ac-b27d-9c109ca1602f",
+        "kind": "delete",
+        "title": "[衍生告警]PTN光缆中断，单报LOS",
+        "rank_average": 0.6619297862052917,
+        "scores": {
+          "v11": 0.6081815361976624,
+          "v13": 0.6145555377006531,
+          "v19": 0.144616961479187,
+          "station": 0.5666828155517578,
+          "domain": 0.5420055389404297,
+          "consensus": 0.6424580812454224
+        }
+      }
+    },
+    {
+      "action_id": "v52_delete_019_a1aec670",
+      "order_id": "a1aec670-550d-4abb-bd10-dadfd29f6635",
+      "remove_rids": [
+        "#-1:9e3ee7ee-16d7-4f25-aa83-3734e4c978f2"
+      ],
+      "add_rids": [],
+      "source": "v40_boundary_frontier",
+      "expected_gain": 0.05263157894736842,
+      "evidence": {
+        "source_rank": 19,
+        "order_id": "a1aec670-550d-4abb-bd10-dadfd29f6635",
+        "rid": "#-1:9e3ee7ee-16d7-4f25-aa83-3734e4c978f2",
+        "kind": "delete",
+        "title": "射频单元直流掉电告警",
+        "rank_average": 0.6908144950866699,
+        "scores": {
+          "v11": 0.8505432605743408,
+          "v13": 0.7110195159912109,
+          "v19": 0.2796725928783417,
+          "station": 0.5840923190116882,
+          "domain": 0.6115524768829346,
+          "consensus": 0.575286328792572
+        }
+      }
+    },
+    {
+      "action_id": "v52_delete_026_cdae01fa",
+      "order_id": "cdae01fa-ffeb-421d-bce8-020d92e0b8ab",
+      "remove_rids": [
+        "#-1:bdd347fe-bdbd-4937-9f50-b5a36492708a"
+      ],
+      "add_rids": [],
+      "source": "v40_boundary_frontier",
+      "expected_gain": 0.038461538461538464,
+      "evidence": {
+        "source_rank": 26,
+        "order_id": "cdae01fa-ffeb-421d-bce8-020d92e0b8ab",
+        "rid": "#-1:bdd347fe-bdbd-4937-9f50-b5a36492708a",
+        "kind": "delete",
+        "title": "BBU IR接口异常告警",
+        "rank_average": 0.7054886221885681,
+        "scores": {
+          "v11": 0.7371250987052917,
+          "v13": 0.6292756199836731,
+          "v19": 0.8457736968994141,
+          "station": 0.5024551749229431,
+          "domain": 0.646897554397583,
+          "consensus": 0.5003950595855713
+        }
+      }
+    },
+    {
+      "action_id": "v52_delete_031_320223fc",
+      "order_id": "320223fc-89b1-40bc-88a9-4b07d012da47",
+      "remove_rids": [
+        "#-1:7ecae749-0d4e-4b02-8c67-d51272846c5f"
+      ],
+      "add_rids": [],
+      "source": "v40_boundary_frontier",
+      "expected_gain": 0.03225806451612903,
+      "evidence": {
+        "source_rank": 31,
+        "order_id": "320223fc-89b1-40bc-88a9-4b07d012da47",
+        "rid": "#-1:7ecae749-0d4e-4b02-8c67-d51272846c5f",
+        "kind": "delete",
+        "title": "输入电源断",
+        "rank_average": 0.7120790481567383,
+        "scores": {
+          "v11": 0.8940714597702026,
+          "v13": 0.6868264675140381,
+          "v19": 0.7257664203643799,
+          "station": 0.5704598426818848,
+          "domain": 0.5103151798248291,
+          "consensus": 0.661195695400238
+        }
+      }
+    },
+    {
+      "action_id": "v52_delete_032_29e6bb98",
+      "order_id": "29e6bb98-ef14-4333-920b-0cd42ff58a96",
+      "remove_rids": [
+        "#-1:95ce5b4b-39bf-4501-82ca-9aca6b9ee799"
+      ],
+      "add_rids": [],
+      "source": "v40_boundary_frontier",
+      "expected_gain": 0.03125,
+      "evidence": {
+        "source_rank": 32,
+        "order_id": "29e6bb98-ef14-4333-920b-0cd42ff58a96",
+        "rid": "#-1:95ce5b4b-39bf-4501-82ca-9aca6b9ee799",
+        "kind": "delete",
+        "title": "射频单元交流掉电告警",
+        "rank_average": 0.7169704437255859,
+        "scores": {
+          "v11": 0.820072591304779,
+          "v13": 0.7487859725952148,
+          "v19": 0.6070684194564819,
+          "station": 0.7003740072250366,
+          "domain": 0.7402564287185669,
+          "consensus": 0.755577564239502
+        }
+      }
+    },
+    {
+      "action_id": "v52_delete_036_98aafbf4",
+      "order_id": "98aafbf4-e316-425d-a5bb-6bc17ddc7776",
+      "remove_rids": [
+        "#-1:54b69ebf-4380-42cd-a0ae-2c74e3bba101"
+      ],
+      "add_rids": [],
+      "source": "v40_boundary_frontier",
+      "expected_gain": 0.027777777777777776,
+      "evidence": {
+        "source_rank": 36,
+        "order_id": "98aafbf4-e316-425d-a5bb-6bc17ddc7776",
+        "rid": "#-1:54b69ebf-4380-42cd-a0ae-2c74e3bba101",
+        "kind": "delete",
+        "title": "射频单元交流掉电告警",
+        "rank_average": 0.7205746173858643,
+        "scores": {
+          "v11": 0.7943210601806641,
+          "v13": 0.6573024988174438,
+          "v19": 0.6281252503395081,
+          "station": 0.7720630764961243,
+          "domain": 0.7523488402366638,
+          "consensus": 0.8308739066123962
+        }
+      }
+    },
+    {
+      "action_id": "v52_delete_037_8dac662e",
+      "order_id": "8dac662e-5ffc-469b-ada5-8e0449b5c502",
+      "remove_rids": [
+        "#-1:966d0900-3d0b-4e6c-ba67-a8cb5c51248c"
+      ],
+      "add_rids": [],
+      "source": "v40_boundary_frontier",
+      "expected_gain": 0.02702702702702703,
+      "evidence": {
+        "source_rank": 37,
+        "order_id": "8dac662e-5ffc-469b-ada5-8e0449b5c502",
+        "rid": "#-1:966d0900-3d0b-4e6c-ba67-a8cb5c51248c",
+        "kind": "delete",
+        "title": "射频单元交流掉电告警",
+        "rank_average": 0.7229945063591003,
+        "scores": {
+          "v11": 0.8154064416885376,
+          "v13": 0.7466071248054504,
+          "v19": 0.7894623279571533,
+          "station": 0.7104901075363159,
+          "domain": 0.697116494178772,
+          "consensus": 0.6486285924911499
+        }
+      }
+    },
+    {
+      "action_id": "v52_delete_039_fde23762",
+      "order_id": "fde23762-9d4c-48a7-ade0-2fc4ed9af9f8",
+      "remove_rids": [
+        "#-1:3892e9b0-81a8-4740-bd4f-2ee3c95bc551"
+      ],
+      "add_rids": [],
+      "source": "v40_boundary_frontier",
+      "expected_gain": 0.02564102564102564,
+      "evidence": {
+        "source_rank": 39,
+        "order_id": "fde23762-9d4c-48a7-ade0-2fc4ed9af9f8",
+        "rid": "#-1:3892e9b0-81a8-4740-bd4f-2ee3c95bc551",
+        "kind": "delete",
+        "title": "输入电源断",
+        "rank_average": 0.7275254726409912,
+        "scores": {
+          "v11": 0.8347975611686707,
+          "v13": 0.8048292994499207,
+          "v19": 0.6591963768005371,
+          "station": 0.7837223410606384,
+          "domain": 0.48819464445114136,
+          "consensus": 0.8789608478546143
+        }
+      }
+    },
+    {
+      "action_id": "v52_delete_041_a6ae9c3c",
+      "order_id": "a6ae9c3c-c787-47e0-abf0-d610533dc2a0",
+      "remove_rids": [
+        "#-1:97d24cf9-e8a1-45f9-8cc6-b6cc1580e991"
+      ],
+      "add_rids": [],
+      "source": "v40_boundary_frontier",
+      "expected_gain": 0.024390243902439025,
+      "evidence": {
+        "source_rank": 41,
+        "order_id": "a6ae9c3c-c787-47e0-abf0-d610533dc2a0",
+        "rid": "#-1:97d24cf9-e8a1-45f9-8cc6-b6cc1580e991",
+        "kind": "delete",
+        "title": "光模块接收光功率异常",
+        "rank_average": 0.7282463908195496,
+        "scores": {
+          "v11": 0.9142197370529175,
+          "v13": 0.7844375967979431,
+          "v19": 0.8096985816955566,
+          "station": 0.581728458404541,
+          "domain": 0.6171386241912842,
+          "consensus": 0.6159461736679077
+        }
+      }
+    },
+    {
+      "action_id": "v52_delete_043_06d346bc",
+      "order_id": "06d346bc-1345-4825-9e01-546cc30ac6ba",
+      "remove_rids": [
+        "#-1:3005e057-e449-4a72-8269-c9b7d32dfaa7"
+      ],
+      "add_rids": [],
+      "source": "v40_boundary_frontier",
+      "expected_gain": 0.023255813953488372,
+      "evidence": {
+        "source_rank": 43,
+        "order_id": "06d346bc-1345-4825-9e01-546cc30ac6ba",
+        "rid": "#-1:3005e057-e449-4a72-8269-c9b7d32dfaa7",
+        "kind": "delete",
+        "title": "设备掉电",
+        "rank_average": 0.7297394871711731,
+        "scores": {
+          "v11": 0.8592720031738281,
+          "v13": 0.7881261706352234,
+          "v19": 0.7373446822166443,
+          "station": 0.6960623264312744,
+          "domain": 0.6705865859985352,
+          "consensus": 0.8220776915550232
+        }
+      }
+    },
+    {
+      "action_id": "v52_delete_058_73c169ec",
+      "order_id": "73c169ec-d1f0-42e0-81fb-31f07a6abca1",
+      "remove_rids": [
+        "#-1:30ccb60c-0f27-4d4e-992b-75f7a74fcfcf"
+      ],
+      "add_rids": [],
+      "source": "v40_boundary_frontier",
+      "expected_gain": 0.017241379310344827,
+      "evidence": {
+        "source_rank": 58,
+        "order_id": "73c169ec-d1f0-42e0-81fb-31f07a6abca1",
+        "rid": "#-1:30ccb60c-0f27-4d4e-992b-75f7a74fcfcf",
+        "kind": "delete",
+        "title": "设备掉电",
+        "rank_average": 0.7538358569145203,
+        "scores": {
+          "v11": 0.9579914212226868,
+          "v13": 0.6889152526855469,
+          "v19": 0.49975329637527466,
+          "station": 0.8563379049301147,
+          "domain": 0.7677700519561768,
+          "consensus": 0.9226924180984497
+        }
+      }
+    },
+    {
+      "action_id": "v52_delete_062_d2906204",
+      "order_id": "d2906204-8342-4348-af98-4608f8f335c3",
+      "remove_rids": [
+        "#-1:9b9ddef2-3075-4be7-a055-6c6c54dd868a"
+      ],
+      "add_rids": [],
+      "source": "v40_boundary_frontier",
+      "expected_gain": 0.016129032258064516,
+      "evidence": {
+        "source_rank": 62,
+        "order_id": "d2906204-8342-4348-af98-4608f8f335c3",
+        "rid": "#-1:9b9ddef2-3075-4be7-a055-6c6c54dd868a",
+        "kind": "delete",
+        "title": "光模块接收光功率异常",
+        "rank_average": 0.7584697604179382,
+        "scores": {
+          "v11": 0.8431547284126282,
+          "v13": 0.7883742451667786,
+          "v19": 0.9279106855392456,
+          "station": 0.7877918481826782,
+          "domain": 0.7805749177932739,
+          "consensus": 0.8754550218582153
+        }
+      }
+    },
+    {
+      "action_id": "v52_delete_071_30e36e69",
+      "order_id": "30e36e69-1c92-47dd-8202-86ffbd6d3fd7",
+      "remove_rids": [
+        "#-1:dfcbcadb-7de8-4fca-92dd-959516b0a019"
+      ],
+      "add_rids": [],
+      "source": "v40_boundary_frontier",
+      "expected_gain": 0.014084507042253521,
+      "evidence": {
+        "source_rank": 71,
+        "order_id": "30e36e69-1c92-47dd-8202-86ffbd6d3fd7",
+        "rid": "#-1:dfcbcadb-7de8-4fca-92dd-959516b0a019",
+        "kind": "delete",
+        "title": "光口链路故障",
+        "rank_average": 0.7712388038635254,
+        "scores": {
+          "v11": 0.8357347249984741,
+          "v13": 0.7527700066566467,
+          "v19": 0.9467904567718506,
+          "station": 0.8240264058113098,
+          "domain": 0.8861249089241028,
+          "consensus": 0.9036339521408081
+        }
+      }
+    }
+  ],
+  "additions": 29,
+  "deletions": 30,
+  "predictions": 1034,
+  "prediction_delta": -1,
+  "sha256": "be5392342ae98bc5f8ae7525dcddb8605329f907a9e6a9619a1072bda0742099",
+  "score_possibilities": [
+    {
+      "correct_count": 0,
+      "batch_delta_tp": -30,
+      "tp": 926,
+      "score": 0.891241578
+    },
+    {
+      "correct_count": 1,
+      "batch_delta_tp": -29,
+      "tp": 927,
+      "score": 0.892204042
+    },
+    {
+      "correct_count": 2,
+      "batch_delta_tp": -28,
+      "tp": 928,
+      "score": 0.893166506
+    },
+    {
+      "correct_count": 3,
+      "batch_delta_tp": -27,
+      "tp": 929,
+      "score": 0.89412897
+    },
+    {
+      "correct_count": 4,
+      "batch_delta_tp": -26,
+      "tp": 930,
+      "score": 0.895091434
+    },
+    {
+      "correct_count": 5,
+      "batch_delta_tp": -25,
+      "tp": 931,
+      "score": 0.896053898
+    },
+    {
+      "correct_count": 6,
+      "batch_delta_tp": -24,
+      "tp": 932,
+      "score": 0.897016362
+    },
+    {
+      "correct_count": 7,
+      "batch_delta_tp": -23,
+      "tp": 933,
+      "score": 0.897978826
+    },
+    {
+      "correct_count": 8,
+      "batch_delta_tp": -22,
+      "tp": 934,
+      "score": 0.89894129
+    },
+    {
+      "correct_count": 9,
+      "batch_delta_tp": -21,
+      "tp": 935,
+      "score": 0.899903754
+    },
+    {
+      "correct_count": 10,
+      "batch_delta_tp": -20,
+      "tp": 936,
+      "score": 0.900866218
+    },
+    {
+      "correct_count": 11,
+      "batch_delta_tp": -19,
+      "tp": 937,
+      "score": 0.901828681
+    },
+    {
+      "correct_count": 12,
+      "batch_delta_tp": -18,
+      "tp": 938,
+      "score": 0.902791145
+    },
+    {
+      "correct_count": 13,
+      "batch_delta_tp": -17,
+      "tp": 939,
+      "score": 0.903753609
+    },
+    {
+      "correct_count": 14,
+      "batch_delta_tp": -16,
+      "tp": 940,
+      "score": 0.904716073
+    },
+    {
+      "correct_count": 15,
+      "batch_delta_tp": -15,
+      "tp": 941,
+      "score": 0.905678537
+    },
+    {
+      "correct_count": 16,
+      "batch_delta_tp": -14,
+      "tp": 942,
+      "score": 0.906641001
+    },
+    {
+      "correct_count": 17,
+      "batch_delta_tp": -13,
+      "tp": 943,
+      "score": 0.907603465
+    },
+    {
+      "correct_count": 18,
+      "batch_delta_tp": -12,
+      "tp": 944,
+      "score": 0.908565929
+    },
+    {
+      "correct_count": 19,
+      "batch_delta_tp": -11,
+      "tp": 945,
+      "score": 0.909528393
+    },
+    {
+      "correct_count": 20,
+      "batch_delta_tp": -10,
+      "tp": 946,
+      "score": 0.910490857
+    },
+    {
+      "correct_count": 21,
+      "batch_delta_tp": -9,
+      "tp": 947,
+      "score": 0.911453321
+    },
+    {
+      "correct_count": 22,
+      "batch_delta_tp": -8,
+      "tp": 948,
+      "score": 0.912415784
+    },
+    {
+      "correct_count": 23,
+      "batch_delta_tp": -7,
+      "tp": 949,
+      "score": 0.913378248
+    },
+    {
+      "correct_count": 24,
+      "batch_delta_tp": -6,
+      "tp": 950,
+      "score": 0.914340712
+    },
+    {
+      "correct_count": 25,
+      "batch_delta_tp": -5,
+      "tp": 951,
+      "score": 0.915303176
+    },
+    {
+      "correct_count": 26,
+      "batch_delta_tp": -4,
+      "tp": 952,
+      "score": 0.91626564
+    },
+    {
+      "correct_count": 27,
+      "batch_delta_tp": -3,
+      "tp": 953,
+      "score": 0.917228104
+    },
+    {
+      "correct_count": 28,
+      "batch_delta_tp": -2,
+      "tp": 954,
+      "score": 0.918190568
+    },
+    {
+      "correct_count": 29,
+      "batch_delta_tp": -1,
+      "tp": 955,
+      "score": 0.919153032
+    },
+    {
+      "correct_count": 30,
+      "batch_delta_tp": 0,
+      "tp": 956,
+      "score": 0.920115496
+    },
+    {
+      "correct_count": 31,
+      "batch_delta_tp": 1,
+      "tp": 957,
+      "score": 0.92107796
+    },
+    {
+      "correct_count": 32,
+      "batch_delta_tp": 2,
+      "tp": 958,
+      "score": 0.922040423
+    },
+    {
+      "correct_count": 33,
+      "batch_delta_tp": 3,
+      "tp": 959,
+      "score": 0.923002887
+    },
+    {
+      "correct_count": 34,
+      "batch_delta_tp": 4,
+      "tp": 960,
+      "score": 0.923965351
+    },
+    {
+      "correct_count": 35,
+      "batch_delta_tp": 5,
+      "tp": 961,
+      "score": 0.924927815
+    },
+    {
+      "correct_count": 36,
+      "batch_delta_tp": 6,
+      "tp": 962,
+      "score": 0.925890279
+    },
+    {
+      "correct_count": 37,
+      "batch_delta_tp": 7,
+      "tp": 963,
+      "score": 0.926852743
+    },
+    {
+      "correct_count": 38,
+      "batch_delta_tp": 8,
+      "tp": 964,
+      "score": 0.927815207
+    },
+    {
+      "correct_count": 39,
+      "batch_delta_tp": 9,
+      "tp": 965,
+      "score": 0.928777671
+    },
+    {
+      "correct_count": 40,
+      "batch_delta_tp": 10,
+      "tp": 966,
+      "score": 0.929740135
+    },
+    {
+      "correct_count": 41,
+      "batch_delta_tp": 11,
+      "tp": 967,
+      "score": 0.930702599
+    },
+    {
+      "correct_count": 42,
+      "batch_delta_tp": 12,
+      "tp": 968,
+      "score": 0.931665063
+    },
+    {
+      "correct_count": 43,
+      "batch_delta_tp": 13,
+      "tp": 969,
+      "score": 0.932627526
+    },
+    {
+      "correct_count": 44,
+      "batch_delta_tp": 14,
+      "tp": 970,
+      "score": 0.93358999
+    },
+    {
+      "correct_count": 45,
+      "batch_delta_tp": 15,
+      "tp": 971,
+      "score": 0.934552454
+    },
+    {
+      "correct_count": 46,
+      "batch_delta_tp": 16,
+      "tp": 972,
+      "score": 0.935514918
+    },
+    {
+      "correct_count": 47,
+      "batch_delta_tp": 17,
+      "tp": 973,
+      "score": 0.936477382
+    },
+    {
+      "correct_count": 48,
+      "batch_delta_tp": 18,
+      "tp": 974,
+      "score": 0.937439846
+    },
+    {
+      "correct_count": 49,
+      "batch_delta_tp": 19,
+      "tp": 975,
+      "score": 0.93840231
+    },
+    {
+      "correct_count": 50,
+      "batch_delta_tp": 20,
+      "tp": 976,
+      "score": 0.939364774
+    },
+    {
+      "correct_count": 51,
+      "batch_delta_tp": 21,
+      "tp": 977,
+      "score": 0.940327238
+    },
+    {
+      "correct_count": 52,
+      "batch_delta_tp": 22,
+      "tp": 978,
+      "score": 0.941289702
+    },
+    {
+      "correct_count": 53,
+      "batch_delta_tp": 23,
+      "tp": 979,
+      "score": 0.942252166
+    },
+    {
+      "correct_count": 54,
+      "batch_delta_tp": 24,
+      "tp": 980,
+      "score": 0.943214629
+    },
+    {
+      "correct_count": 55,
+      "batch_delta_tp": 25,
+      "tp": 981,
+      "score": 0.944177093
+    },
+    {
+      "correct_count": 56,
+      "batch_delta_tp": 26,
+      "tp": 982,
+      "score": 0.945139557
+    },
+    {
+      "correct_count": 57,
+      "batch_delta_tp": 27,
+      "tp": 983,
+      "score": 0.946102021
+    },
+    {
+      "correct_count": 58,
+      "batch_delta_tp": 28,
+      "tp": 984,
+      "score": 0.947064485
+    },
+    {
+      "correct_count": 59,
+      "batch_delta_tp": 29,
+      "tp": 985,
+      "score": 0.948026949
+    }
+  ]
+}

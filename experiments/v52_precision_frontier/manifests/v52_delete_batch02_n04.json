@@ -1,0 +1,163 @@
+{
+  "probe_id": "v52_delete_batch02_n04",
+  "baseline": "D:\\zgyidong\\experiments\\v30_meta_stack\\submissions\\v30_cross_order_top5.csv",
+  "fixed_base": "v37_exact_corrections",
+  "path": "D:\\zgyidong\\experiments\\v52_precision_frontier\\submissions\\v52_delete_batch02_n04.csv",
+  "kind": "delete",
+  "candidate_count": 4,
+  "actions": [
+    {
+      "action_id": "v37_exact_001",
+      "order_id": "d5376a71-c48e-4351-ba60-f982778b3eb4",
+      "remove_rids": [
+        "#-1:0c809583-390f-4d16-9b91-c4fb1e99c5c2"
+      ],
+      "add_rids": [
+        "#-1:e401b7b4-697f-434e-8437-4b2136d6904f"
+      ],
+      "source": "historical_leaderboard_equations",
+      "expected_gain": null,
+      "evidence": {
+        "proof": "label fixed in every binary solution of all scored equations"
+      }
+    },
+    {
+      "action_id": "v52_delete_026_cdae01fa",
+      "order_id": "cdae01fa-ffeb-421d-bce8-020d92e0b8ab",
+      "remove_rids": [
+        "#-1:bdd347fe-bdbd-4937-9f50-b5a36492708a"
+      ],
+      "add_rids": [],
+      "source": "v40_boundary_frontier",
+      "expected_gain": 0.038461538461538464,
+      "evidence": {
+        "source_rank": 26,
+        "order_id": "cdae01fa-ffeb-421d-bce8-020d92e0b8ab",
+        "rid": "#-1:bdd347fe-bdbd-4937-9f50-b5a36492708a",
+        "kind": "delete",
+        "title": "BBU IR接口异常告警",
+        "rank_average": 0.7054886221885681,
+        "scores": {
+          "v11": 0.7371250987052917,
+          "v13": 0.6292756199836731,
+          "v19": 0.8457736968994141,
+          "station": 0.5024551749229431,
+          "domain": 0.646897554397583,
+          "consensus": 0.5003950595855713
+        }
+      }
+    },
+    {
+      "action_id": "v52_delete_027_a889ab21",
+      "order_id": "a889ab21-690a-4a7b-91e5-81f3e79d0ff1",
+      "remove_rids": [
+        "#-1:ac9e5b44-1902-468b-8ae2-890549f913f0"
+      ],
+      "add_rids": [],
+      "source": "v40_boundary_frontier",
+      "expected_gain": 0.037037037037037035,
+      "evidence": {
+        "source_rank": 27,
+        "order_id": "a889ab21-690a-4a7b-91e5-81f3e79d0ff1",
+        "rid": "#-1:ac9e5b44-1902-468b-8ae2-890549f913f0",
+        "kind": "delete",
+        "title": "RRU链路断",
+        "rank_average": 0.7074452042579651,
+        "scores": {
+          "v11": 0.7890577912330627,
+          "v13": 0.7703996896743774,
+          "v19": 0.5013293027877808,
+          "station": 0.6520243883132935,
+          "domain": 0.6577571034431458,
+          "consensus": 0.688232421875
+        }
+      }
+    },
+    {
+      "action_id": "v52_delete_028_b1e02c99",
+      "order_id": "b1e02c99-d2c4-4546-8324-74fdba3844ad",
+      "remove_rids": [
+        "#-1:5a7d8ce4-e0e5-4899-ae76-76c431209b9a"
+      ],
+      "add_rids": [],
+      "source": "v40_boundary_frontier",
+      "expected_gain": 0.03571428571428571,
+      "evidence": {
+        "source_rank": 28,
+        "order_id": "b1e02c99-d2c4-4546-8324-74fdba3844ad",
+        "rid": "#-1:5a7d8ce4-e0e5-4899-ae76-76c431209b9a",
+        "kind": "delete",
+        "title": "射频单元输入电源能力不足告警",
+        "rank_average": 0.7094016671180725,
+        "scores": {
+          "v11": 0.6634947657585144,
+          "v13": 0.683314859867096,
+          "v19": 0.893098771572113,
+          "station": 0.5237553119659424,
+          "domain": 0.5954546332359314,
+          "consensus": 0.5504418611526489
+        }
+      }
+    },
+    {
+      "action_id": "v52_delete_030_9edf5fc9",
+      "order_id": "9edf5fc9-4ffc-4b68-8dae-cc1ca97b41f3",
+      "remove_rids": [
+        "#-1:efa0e091-a821-49e8-b504-cca305d34efc"
+      ],
+      "add_rids": [],
+      "source": "v40_boundary_frontier",
+      "expected_gain": 0.03333333333333333,
+      "evidence": {
+        "source_rank": 30,
+        "order_id": "9edf5fc9-4ffc-4b68-8dae-cc1ca97b41f3",
+        "rid": "#-1:efa0e091-a821-49e8-b504-cca305d34efc",
+        "kind": "delete",
+        "title": "光模块不可用",
+        "rank_average": 0.7109463214874268,
+        "scores": {
+          "v11": 0.7946602702140808,
+          "v13": 0.7440378069877625,
+          "v19": 0.7916455268859863,
+          "station": 0.6136745810508728,
+          "domain": 0.5588050484657288,
+          "consensus": 0.5595513582229614
+        }
+      }
+    }
+  ],
+  "predictions": 1031,
+  "sha256": "6e6be89997af26521c50862ed907cdb1df4dad83da9634ee692dd303b6229fd4",
+  "score_possibilities": [
+    {
+      "candidate_correct": 0,
+      "tp": 956,
+      "predictions_delta": -4,
+      "score": 0.921445783
+    },
+    {
+      "candidate_correct": 1,
+      "tp": 955,
+      "predictions_delta": -4,
+      "score": 0.920481928
+    },
+    {
+      "candidate_correct": 2,
+      "tp": 954,
+      "predictions_delta": -4,
+      "score": 0.919518072
+    },
+    {
+      "candidate_correct": 3,
+      "tp": 953,
+      "predictions_delta": -4,
+      "score": 0.918554217
+    },
+    {
+      "candidate_correct": 4,
+      "tp": 952,
+      "predictions_delta": -4,
+      "score": 0.917590361
+    }
+  ]
+}

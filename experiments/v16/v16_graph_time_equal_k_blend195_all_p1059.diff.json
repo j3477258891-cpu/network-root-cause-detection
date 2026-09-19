@@ -1,0 +1,136 @@
+{
+  "source_champion": "D:\\zgyidong\\experiments\\submissions\\champion_0.906324_day01_probe01_v11_full.csv",
+  "variant": "all",
+  "weight_graph_time": 0.195,
+  "weight_v11": 0.8049999999999999,
+  "strict_equal_k": true,
+  "excluded_order_count": 63,
+  "changed_order_count": 4,
+  "removed_count": 4,
+  "added_count": 4,
+  "delta_p": 0,
+  "changes": [
+    {
+      "order_id": "25a37559-7249-4fe0-bfd9-97007b9f7c5d",
+      "k": 1,
+      "removed": [
+        "#-1:622a2277-8e4d-4b77-aefb-1f90747752a2"
+      ],
+      "added": [
+        "#-1:08c72d0d-bea2-430a-b3ae-84deb00b3a99"
+      ],
+      "delta_p": 0,
+      "v11_boundary_margin": -0.016235087373432155,
+      "graph_time_boundary_margin": 0.6795433622868954,
+      "blend_boundary_margin": 0.11944171031033174,
+      "blend_seed_boundary_margins": [
+        0.12410115675022482,
+        0.11714827028332128,
+        0.11707570389744909
+      ]
+    },
+    {
+      "order_id": "6600d905-9faf-4ee3-8d44-223e9bc4dfdb",
+      "k": 1,
+      "removed": [
+        "#-1:f38934ea-7530-401b-b354-bde0e9a2de71"
+      ],
+      "added": [
+        "#-1:960a3406-2124-4963-ab8c-91a9b9cd77c0"
+      ],
+      "delta_p": 0,
+      "v11_boundary_margin": -0.11427787849345779,
+      "graph_time_boundary_margin": 0.8717194699588089,
+      "blend_boundary_margin": 0.07799160445473424,
+      "blend_seed_boundary_margins": [
+        0.0799925267798701,
+        0.07604573000880471,
+        0.0779365565755279
+      ]
+    },
+    {
+      "order_id": "b92c1c42-bc69-48fa-b5c6-7bbd2635a15b",
+      "k": 1,
+      "removed": [
+        "#-1:46dad958-ef00-43e3-9cc6-b2312a363aea"
+      ],
+      "added": [
+        "#-1:e98f47f3-1430-4bab-bd66-cd79564e73e6"
+      ],
+      "delta_p": 0,
+      "v11_boundary_margin": -0.024936117175982764,
+      "graph_time_boundary_margin": 0.4796698156261723,
+      "blend_boundary_margin": 0.07346203972043741,
+      "blend_seed_boundary_margins": [
+        0.07742426752391518,
+        0.07173857965248787,
+        0.0712232719849093
+      ]
+    },
+    {
+      "order_id": "eac28a99-2650-4dee-9f74-7054f480be19",
+      "k": 1,
+      "removed": [
+        "#-1:a13e48cd-02a9-4620-9bf1-dfff291688e0"
+      ],
+      "added": [
+        "#-1:a9cc9261-661b-41a3-89dd-0aee4886d4be"
+      ],
+      "delta_p": 0,
+      "v11_boundary_margin": -0.0007094413167810787,
+      "graph_time_boundary_margin": 0.004419461302558381,
+      "blend_boundary_margin": 0.0002906946939900956,
+      "blend_seed_boundary_margins": [
+        -0.0005940593825330964,
+        0.0002858016945901931,
+        0.0011803417699131902
+      ]
+    }
+  ],
+  "oof_fixed_k_validation": {
+    "base": {
+      "f1": 0.9101449275362319,
+      "tp": 2826,
+      "fp": 343,
+      "fn": 215,
+      "predictions": 3169
+    },
+    "candidate": {
+      "f1": 0.9104669887278583,
+      "tp": 2827,
+      "fp": 342,
+      "fn": 214,
+      "predictions": 3169
+    },
+    "fold_tp_deltas": [
+      2,
+      0,
+      1,
+      -2,
+      0
+    ],
+    "fold_changed_orders": [
+      4,
+      0,
+      1,
+      5,
+      4
+    ],
+    "net_tp_delta": 1
+  },
+  "sha256": "fe3fd832c1a7d6bc266fdeae2d23110a65d66927d22dd6b6a8cb6f2a76b0c1a6",
+  "validation": {
+    "orders": 546,
+    "predictions": 1059,
+    "distribution": {
+      "1": 316,
+      "2": 81,
+      "3": 98,
+      "4": 15,
+      "5": 10,
+      "6": 12,
+      "7": 7,
+      "8": 7
+    }
+  }
+}

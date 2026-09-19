@@ -1,0 +1,52 @@
+{
+  "version": "v25-semantic-router-1",
+  "train_orders": 1634,
+  "test_orders": 546,
+  "train_alarms": 9334,
+  "test_alarms": 3238,
+  "positive_labels": 3041,
+  "split": {
+    "primary_template": {
+      "group_count": 1040,
+      "fold_sizes": [
+        327,
+        327,
+        327,
+        327,
+        326
+      ],
+      "largest_group": 76
+    },
+    "station_stress": {
+      "group_count": 1265,
+      "fold_sizes": [
+        327,
+        327,
+        327,
+        327,
+        326
+      ],
+      "largest_group": 76
+    },
+    "connected_component_audit": {
+      "component_count": 493,
+      "fold_sizes": [
+        782,
+        213,
+        213,
+        213,
+        213
+      ],
+      "largest_component": 782
+    },
+    "connected_component_used_for_training": false
+  },
+  "excluded_from_model": [
+    "rid",
+    "raw IP",
+    "raw UUID"
+  ],
+  "unlabeled_test_used_for": [
+    "domain language adaptation"
+  ]
+}

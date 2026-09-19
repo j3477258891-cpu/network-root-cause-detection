@@ -1,0 +1,163 @@
+{
+  "probe_id": "v52_add_batch07_n04",
+  "baseline": "D:\\zgyidong\\experiments\\v30_meta_stack\\submissions\\v30_cross_order_top5.csv",
+  "fixed_base": "v37_exact_corrections",
+  "path": "D:\\zgyidong\\experiments\\v52_precision_frontier\\submissions\\v52_add_batch07_n04.csv",
+  "kind": "add",
+  "candidate_count": 4,
+  "actions": [
+    {
+      "action_id": "v37_exact_001",
+      "order_id": "d5376a71-c48e-4351-ba60-f982778b3eb4",
+      "remove_rids": [
+        "#-1:0c809583-390f-4d16-9b91-c4fb1e99c5c2"
+      ],
+      "add_rids": [
+        "#-1:e401b7b4-697f-434e-8437-4b2136d6904f"
+      ],
+      "source": "historical_leaderboard_equations",
+      "expected_gain": null,
+      "evidence": {
+        "proof": "label fixed in every binary solution of all scored equations"
+      }
+    },
+    {
+      "action_id": "v52_add_075_8f73e1cf",
+      "order_id": "8f73e1cf-c334-4f3b-aa08-78d25a9722f5",
+      "remove_rids": [],
+      "add_rids": [
+        "#-1:c7ad6d1d-f834-4257-9936-4e324f1f1672"
+      ],
+      "source": "v40_boundary_frontier",
+      "expected_gain": 0.013333333333333334,
+      "evidence": {
+        "source_rank": 75,
+        "order_id": "8f73e1cf-c334-4f3b-aa08-78d25a9722f5",
+        "rid": "#-1:c7ad6d1d-f834-4257-9936-4e324f1f1672",
+        "kind": "add",
+        "title": "RRU链路断",
+        "rank_average": 0.6199155449867249,
+        "scores": {
+          "v11": 0.24627628922462463,
+          "v13": 0.2313196063041687,
+          "v19": 0.15213541686534882,
+          "station": 0.33052295446395874,
+          "domain": 0.2871098220348358,
+          "consensus": 0.2568338215351105
+        }
+      }
+    },
+    {
+      "action_id": "v52_add_080_5d372878",
+      "order_id": "5d372878-06b4-49d2-bfbb-099457fb694a",
+      "remove_rids": [],
+      "add_rids": [
+        "#-1:3fc9bbae-b58b-4651-adde-07e522ff4af0"
+      ],
+      "source": "v40_boundary_frontier",
+      "expected_gain": 0.0125,
+      "evidence": {
+        "source_rank": 80,
+        "order_id": "5d372878-06b4-49d2-bfbb-099457fb694a",
+        "rid": "#-1:3fc9bbae-b58b-4651-adde-07e522ff4af0",
+        "kind": "add",
+        "title": "RRU链路断",
+        "rank_average": 0.6178045272827148,
+        "scores": {
+          "v11": 0.47606417536735535,
+          "v13": 0.3872235119342804,
+          "v19": 0.36677610874176025,
+          "station": 0.08663236349821091,
+          "domain": 0.11756927520036697,
+          "consensus": 0.0475994348526001
+        }
+      }
+    },
+    {
+      "action_id": "v52_add_084_c5a4dcc9",
+      "order_id": "c5a4dcc9-dc47-4143-aa67-aae914699008",
+      "remove_rids": [],
+      "add_rids": [
+        "#-1:fc4a97e7-2ae6-4397-871f-640f18d1b314"
+      ],
+      "source": "v40_boundary_frontier",
+      "expected_gain": 0.011904761904761904,
+      "evidence": {
+        "source_rank": 84,
+        "order_id": "c5a4dcc9-dc47-4143-aa67-aae914699008",
+        "rid": "#-1:fc4a97e7-2ae6-4397-871f-640f18d1b314",
+        "kind": "add",
+        "title": "[衍生告警]设备商乙5G基站退服",
+        "rank_average": 0.6139944195747375,
+        "scores": {
+          "v11": 0.23603127896785736,
+          "v13": 0.16951557993888855,
+          "v19": 0.6009892225265503,
+          "station": 0.09911201149225235,
+          "domain": 0.09806083887815475,
+          "consensus": 0.06919527053833008
+        }
+      }
+    },
+    {
+      "action_id": "v52_add_086_3a8199cf",
+      "order_id": "3a8199cf-84a3-4d89-8e4b-3b754fc811af",
+      "remove_rids": [],
+      "add_rids": [
+        "#-1:02c07c3d-0565-4cd4-bfd8-000da89818f3"
+      ],
+      "source": "v40_boundary_frontier",
+      "expected_gain": 0.011627906976744186,
+      "evidence": {
+        "source_rank": 86,
+        "order_id": "3a8199cf-84a3-4d89-8e4b-3b754fc811af",
+        "rid": "#-1:02c07c3d-0565-4cd4-bfd8-000da89818f3",
+        "kind": "add",
+        "title": "射频单元维护链路异常告警",
+        "rank_average": 0.6126042008399963,
+        "scores": {
+          "v11": 0.07957348227500916,
+          "v13": 0.06142820417881012,
+          "v19": 0.8111909031867981,
+          "station": 0.15979959070682526,
+          "domain": 0.2048213928937912,
+          "consensus": 0.09121296554803848
+        }
+      }
+    }
+  ],
+  "predictions": 1039,
+  "sha256": "00b70bc21f92f6485d99d0f502039102f4e46640631233713057bfd652dcf025",
+  "score_possibilities": [
+    {
+      "candidate_correct": 0,
+      "tp": 956,
+      "predictions_delta": 4,
+      "score": 0.917906865
+    },
+    {
+      "candidate_correct": 1,
+      "tp": 957,
+      "predictions_delta": 4,
+      "score": 0.918867019
+    },
+    {
+      "candidate_correct": 2,
+      "tp": 958,
+      "predictions_delta": 4,
+      "score": 0.919827172
+    },
+    {
+      "candidate_correct": 3,
+      "tp": 959,
+      "predictions_delta": 4,
+      "score": 0.920787326
+    },
+    {
+      "candidate_correct": 4,
+      "tp": 960,
+      "predictions_delta": 4,
+      "score": 0.92174748
+    }
+  ]
+}

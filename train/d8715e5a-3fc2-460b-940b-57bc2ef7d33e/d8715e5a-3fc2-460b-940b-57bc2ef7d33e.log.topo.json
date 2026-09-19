@@ -1,0 +1,684 @@
+{
+    "time": 1768707274.733092,
+    "nodes": [
+        {
+            "@rid": "#89:38293",
+            "@class": "BaseStation",
+            "zh_label": "LFZ105A56R_",
+            "in_dependOn": [
+                "#72:676212"
+            ],
+            "vendor_name": "设备商甲",
+            "out_dependOn": [
+                "#73:676206"
+            ],
+            "device_type": "宏基站"
+        },
+        {
+            "@rid": "#93:23477",
+            "@class": "BBU",
+            "ldn": "Equipment=1",
+            "in_dependOn": [
+                "#71:434477",
+                "#73:676206"
+            ],
+            "vendor_name": "设备商甲",
+            "out_dependOn": [
+                "#72:434476",
+                "#73:434474",
+                "#74:434473",
+                "#69:434477"
+            ]
+        },
+        {
+            "@rid": "#104:198297",
+            "@class": "Board",
+            "ldn": "1-1-17",
+            "in_dependOn": [
+                "#69:434477"
+            ],
+            "vendor_name": "设备商甲"
+        },
+        {
+            "@rid": "#103:198297",
+            "@class": "Board",
+            "ldn": "1-1-1",
+            "in_dependOn": [
+                "#74:434473"
+            ],
+            "vendor_name": "设备商甲"
+        },
+        {
+            "@rid": "#102:198298",
+            "@class": "Board",
+            "ldn": "1-1-9",
+            "in_dependOn": [
+                "#73:434474"
+            ],
+            "vendor_name": "设备商甲",
+            "out_dependOn": [
+                "#70:434476",
+                "#71:434476"
+            ]
+        },
+        {
+            "@rid": "#106:17921",
+            "@class": "RiPort",
+            "ldn": "1-1-9-1",
+            "in_dependOn": [
+                "#71:434476"
+            ],
+            "vendor_name": "设备商甲",
+            "out_dependOn": [
+                "#73:434473"
+            ]
+        },
+        {
+            "@rid": "#108:17921",
+            "@class": "RiPort",
+            "ldn": "51-1-1-1",
+            "in_dependOn": [
+                "#73:434473"
+            ],
+            "vendor_name": "设备商甲",
+            "out_dependOn": [
+                "#69:434476"
+            ]
+        },
+        {
+            "@rid": "#112:156692",
+            "@class": "RRU",
+            "in_dependOn": [
+                "#69:434476"
+            ],
+            "vendor_name": "设备商甲",
+            "ldn": "51-1-1",
+            "out_dependOn": [
+                "#71:434475"
+            ]
+        },
+        {
+            "@rid": "#122:126311",
+            "@class": "Cell",
+            "in_dependOn": [
+                "#71:434475"
+            ],
+            "vendor_name": "设备商甲"
+        },
+        {
+            "@rid": "#105:17921",
+            "@class": "RiPort",
+            "ldn": "1-1-9-2",
+            "in_dependOn": [
+                "#70:434476"
+            ],
+            "vendor_name": "设备商甲",
+            "out_dependOn": [
+                "#72:434475"
+            ]
+        },
+        {
+            "@rid": "#107:17921",
+            "@class": "RiPort",
+            "ldn": "52-1-1-1",
+            "in_dependOn": [
+                "#72:434475"
+            ],
+            "vendor_name": "设备商甲",
+            "out_dependOn": [
+                "#74:434472"
+            ]
+        },
+        {
+            "@rid": "#111:156693",
+            "@class": "RRU",
+            "in_dependOn": [
+                "#74:434472"
+            ],
+            "vendor_name": "设备商甲",
+            "ldn": "52-1-1",
+            "out_dependOn": [
+                "#70:434475"
+            ]
+        },
+        {
+            "@rid": "#121:126311",
+            "@class": "Cell",
+            "in_dependOn": [
+                "#70:434475"
+            ],
+            "vendor_name": "设备商甲"
+        },
+        {
+            "@rid": "#101:198298",
+            "@class": "Board",
+            "ldn": "1-1-15",
+            "in_dependOn": [
+                "#72:434476"
+            ],
+            "vendor_name": "设备商甲"
+        },
+        {
+            "@rid": "#84:257",
+            "@class": "Room",
+            "zh_label": "无线机房",
+            "related_respoint_zh_label": "None",
+            "in_dependOn": [
+                "#74:89809",
+                "#69:89811",
+                "#70:89811",
+                "#71:195296",
+                "#72:195296",
+                "#73:195296",
+                "#74:524552",
+                "#69:524556",
+                "#70:524556",
+                "#70:600922"
+            ],
+            "out_dependOn": [
+                "#70:195303",
+                "#69:432725",
+                "#71:432728",
+                "#70:433573",
+                "#71:433997",
+                "#71:434031",
+                "#70:434477",
+                "#74:524555",
+                "#72:674401",
+                "#74:676077",
+                "#70:676088",
+                "#72:676144",
+                "#72:676175",
+                "#74:676170",
+                "#72:676212",
+                "#70:677459"
+            ]
+        },
+        {
+            "@rid": "#92:24721",
+            "@class": "BaseStation",
+            "zh_label": "-ZLH",
+            "in_dependOn": [
+                "#70:434477"
+            ],
+            "out_dependOn": [
+                "#71:434477",
+                "#73:636423"
+            ],
+            "vendor_name": "设备商甲",
+            "device_type": "宏基站"
+        },
+        {
+            "title": "设备掉电",
+            "device": "LFZ105A56R_",
+            "location": "SubNetwork=5300,ManagedElement=595646,Equipment=1,Rack=52,SubRack=1,Slot=1,PlugInUnit=1,SdrDeviceGroup=1",
+            "time": 1768706793000,
+            "reason": "1. 市电异常。\n2. 外部供电设备故障。",
+            "timeLists": [
+                0,
+                0,
+                0,
+                0,
+                1,
+                1
+            ],
+            "addInfo": "LDN:Equipment=1,Rack=52,SubRack=1,Slot=1,PlugInUnit=1,SdrDeviceGroup=1;Radio:TD-LTE;Aid:33;Cause:571;OfficeId:595646;OfficeName:LFZ105A56R_;DeviceType:RU;DeviceId:52;DeviceName:SubRack-1;BoardType:R8978 M1920A;Remark:序列号\\: 219991066421\\; TDL eNBId\\:595646\\; \\: 接口板=(1,1,9), 接口板=1, 类型SFP, 故障=52, 故障=1\\; TDL\\: ID=(65,66)\\; Location：rack=52,shelf=1,board=1。;deployment:LTE",
+            "vendor": "设备商甲",
+            "room": "无线机房",
+            "@rid": "#-1:043b40cf-27e3-44ba-bc9d-04b6d08d6316",
+            "@class": "Alarm"
+        },
+        {
+            "title": "[衍生告警]设备商甲4G小区退服",
+            "device": "LFZ105A56R_",
+            "location": ":东;\n名称:;\n告警:[告警]4G;\n告警:；2\n告警时间:2026-01-18 11:28:03;",
+            "time": 1768706883000,
+            "reason": "1.S1链路故障；\n2.小区所使用的主控板、基带板或RRU故障；\n3.小区配置失败；\n4.时钟失锁；\n5.业务负荷分担时辅主控板产品进程异常。",
+            "timeLists": [
+                0,
+                0,
+                0,
+                0,
+                1,
+                1
+            ],
+            "addInfo": "1.S1链路故障；\n2.、RRU故障；\n3.配置失败；\n4.时；\n5.分时进程异常。",
+            "vendor": "设备商甲",
+            "room": "无线机房",
+            "@rid": "#-1:f821d710-2890-4ebf-9115-78b499a3c9af",
+            "@class": "Alarm"
+        },
+        {
+            "title": "[衍生告警]4G基站退服告警",
+            "device": "LFZ105A56R_",
+            "location": "2026-01-18 11:28:03[告警]4G告警,3；2026-01-18 11:28:03;LFZ105A562R1_;LTE服务;2026-01-18 11:28:03;LAZ105A565R1_;LTE服务;2026-01-18 11:28:07;LFZ105A561R1_;LTE服务;",
+            "time": 1768706894000,
+            "reason": "1.S1链路故障；\n2.小区所使用的主控板、基带板或RRU故障；\n3.小区配置失败；\n4.时钟失锁；\n5.业务负荷分担时辅主控板产品进程异常。",
+            "timeLists": [
+                0,
+                0,
+                0,
+                0,
+                1,
+                1
+            ],
+            "addInfo": "1.S1链路故障；\n2.、RRU故障；\n3.配置失败；\n4.时；\n5.分时进程异常。",
+            "vendor": "设备商甲",
+            "room": "无线机房",
+            "@rid": "#-1:f232ec0e-9043-4121-bc85-5a1fcf3a2abf",
+            "@class": "Alarm"
+        },
+        {
+            "title": "设备掉电",
+            "device": "LFZ105A56R_",
+            "location": "SubNetwork=5300,ManagedElement=595646,Equipment=1,Rack=51,SubRack=1,Slot=1,PlugInUnit=1,SdrDeviceGroup=1",
+            "time": 1768706797000,
+            "reason": "1. 市电异常。\n2. 外部供电设备故障。",
+            "timeLists": [
+                0,
+                0,
+                0,
+                0,
+                1,
+                1
+            ],
+            "addInfo": "LDN:Equipment=1,Rack=51,SubRack=1,Slot=1,PlugInUnit=1,SdrDeviceGroup=1;Radio:TD-LTE;Aid:34;Cause:571;OfficeId:595646;OfficeName:LFZ105A56R_;DeviceType:RU;DeviceId:51;DeviceName:SubRack-1;BoardType:R8978 M1920A;Remark:序列号\\: 219531949238\\; TDL eNBId\\:595646\\; \\: 接口板=(1,1,9), 接口板=0, 类型SFP, 故障=51, 故障=1\\; TDL\\: ID=64\\; Location：rack=51,shelf=1,board=1。;deployment:LTE",
+            "vendor": "设备商甲",
+            "room": "无线机房",
+            "@rid": "#-1:f6958eef-5026-497b-a971-613526b462c7",
+            "@class": "Alarm"
+        },
+        {
+            "title": "LTE小区退出服务",
+            "device": "LFZ105A56R_",
+            "location": "SubNetwork=5300,ManagedElement=595646,ENBFunctionTDD=595646,EUtranCellTDD=64",
+            "time": 1768706887000,
+            "reason": "1.S1链路故障；\n2.小区所使用的主控板、基带板或RRU故障；\n3.小区配置失败；\n4.时钟失锁；\n5.业务负荷分担时辅主控板产品进程异常。",
+            "timeLists": [
+                0,
+                0,
+                0,
+                0,
+                1,
+                1
+            ],
+            "addInfo": "LDN:ENBFunctionTDD=595646,EUtranCellTDD=64;PLMN:46000;Radio:TD-LTE;Aid:37;Cause:306;OfficeId:595646;OfficeName:LFZ105A56R_;DeviceType:CELL;DeviceId:64;DeviceName:LFZ105A561R1_;BoardType:CCE1;Remark:\\: 64, RRU异常\\; 类型：, 70001000\\; 序列号\\: 715109000415\\; TDL eNBId\\:595646\\; Location：rack=1,shelf=1,board=1。;deployment:LTE",
+            "vendor": "设备商甲",
+            "room": "无线机房",
+            "@rid": "#-1:2db3e282-19a2-48d2-9b57-dccf54cdc115",
+            "@class": "Alarm",
+            "label": "TargetAlarm"
+        },
+        {
+            "title": "[衍生告警]设备商甲4G小区退服",
+            "device": "LFZ105A56R_",
+            "location": ":东;\n名称:;\n告警:[告警]4G;\n告警:；2\n告警时间:2026-01-18 11:28:07;",
+            "time": 1768706887000,
+            "reason": "1.S1链路故障；\n2.小区所使用的主控板、基带板或RRU故障；\n3.小区配置失败；\n4.时钟失锁；\n5.业务负荷分担时辅主控板产品进程异常。",
+            "timeLists": [
+                0,
+                0,
+                0,
+                0,
+                1,
+                1
+            ],
+            "addInfo": "1.S1链路故障；\n2.、RRU故障；\n3.配置失败；\n4.时；\n5.分时进程异常。",
+            "vendor": "设备商甲",
+            "room": "无线机房",
+            "@rid": "#-1:74a47619-16ca-4a6e-90b4-7b68e6bdf92a",
+            "@class": "Alarm"
+        },
+        {
+            "title": "LTE小区退出服务",
+            "device": "LFZ105A56R_",
+            "location": "SubNetwork=5300,ManagedElement=595646,ENBFunctionTDD=595646,EUtranCellTDD=65",
+            "time": 1768706883000,
+            "reason": "1.S1链路故障；\n2.小区所使用的主控板、基带板或RRU故障；\n3.小区配置失败；\n4.时钟失锁；\n5.业务负荷分担时辅主控板产品进程异常。",
+            "timeLists": [
+                0,
+                0,
+                0,
+                0,
+                1,
+                1
+            ],
+            "addInfo": "LDN:ENBFunctionTDD=595646,EUtranCellTDD=65;PLMN:46000;Radio:TD-LTE;Aid:36;Cause:306;OfficeId:595646;OfficeName:LFZ105A56R_;DeviceType:CELL;DeviceId:65;DeviceName:LFZ105A562R1_;BoardType:CCE1;Remark:\\: 65, RRU异常\\; 类型：, 70001000\\; 序列号\\: 715109000415\\; TDL eNBId\\:595646\\; Location：rack=1,shelf=1,board=1。;deployment:LTE",
+            "vendor": "设备商甲",
+            "room": "无线机房",
+            "@rid": "#-1:f9dc56e7-8dd8-4a33-b809-2cfa536bbde9",
+            "@class": "Alarm",
+            "label": "TargetAlarm"
+        },
+        {
+            "title": "[衍生告警]设备商甲4G基站退服",
+            "device": "LFZ105A56R_",
+            "location": "2026-01-18 11:28:03[告警]4G,3；2026-01-18 11:28:03;LFZ105A562R1_;LTE服务;2026-01-18 11:28:03;LAZ105A565R1_;LTE服务;2026-01-18 11:28:07;LFZ105A561R1_;LTE服务;",
+            "time": 1768706894000,
+            "reason": "1.S1链路故障；\n2.小区所使用的主控板、基带板或RRU故障；\n3.小区配置失败；\n4.时钟失锁；\n5.业务负荷分担时辅主控板产品进程异常。",
+            "timeLists": [
+                0,
+                0,
+                0,
+                0,
+                1,
+                1
+            ],
+            "addInfo": "1.S1链路故障；\n2.、RRU故障；\n3.配置失败；\n4.时；\n5.分时进程异常。",
+            "vendor": "设备商甲",
+            "room": "无线机房",
+            "@rid": "#-1:24df130b-bfec-4f8f-b943-fef93e2fff2b",
+            "@class": "Alarm"
+        },
+        {
+            "title": "LTE小区退出服务",
+            "device": "LFZ105A56R_",
+            "location": "SubNetwork=5300,ManagedElement=595646,ENBFunctionTDD=595646,EUtranCellTDD=66",
+            "time": 1768706883000,
+            "reason": "1.S1链路故障；\n2.小区所使用的主控板、基带板或RRU故障；\n3.小区配置失败；\n4.时钟失锁；\n5.业务负荷分担时辅主控板产品进程异常。",
+            "timeLists": [
+                0,
+                0,
+                0,
+                0,
+                1,
+                1
+            ],
+            "addInfo": "LDN:ENBFunctionTDD=595646,EUtranCellTDD=66;PLMN:46000;Radio:TD-LTE;Aid:35;Cause:306;OfficeId:595646;OfficeName:LFZ105A56R_;DeviceType:CELL;DeviceId:66;DeviceName:LAZ105A565R1_;BoardType:CCE1;Remark:\\: 66, RRU异常\\; 类型：, 70001000\\; 序列号\\: 715109000415\\; TDL eNBId\\:595646\\; Location：rack=1,shelf=1,board=1。;deployment:LTE",
+            "vendor": "设备商甲",
+            "room": "无线机房",
+            "@rid": "#-1:bf28e56e-c877-403f-8c12-f99b8cddb8de",
+            "@class": "Alarm"
+        }
+    ],
+    "edges": [
+        {
+            "@type": "d",
+            "@rid": "#73:676206",
+            "@version": 1,
+            "@class": "dependOn",
+            "modified_time": 1768219915,
+            "in": "#93:23477",
+            "out": "#89:38293",
+            "@fieldTypes": "modified_time=l,in=x,out=x"
+        },
+        {
+            "@type": "d",
+            "@rid": "#69:434477",
+            "@version": 5,
+            "@class": "dependOn",
+            "modified_time": 1768219915,
+            "in": "#104:198297",
+            "out": "#93:23477",
+            "@fieldTypes": "modified_time=l,in=x,out=x"
+        },
+        {
+            "@type": "d",
+            "@rid": "#74:434473",
+            "@version": 5,
+            "@class": "dependOn",
+            "modified_time": 1768219915,
+            "in": "#103:198297",
+            "out": "#93:23477",
+            "@fieldTypes": "modified_time=l,in=x,out=x"
+        },
+        {
+            "@type": "d",
+            "@rid": "#73:434474",
+            "@version": 5,
+            "@class": "dependOn",
+            "modified_time": 1768219915,
+            "in": "#102:198298",
+            "out": "#93:23477",
+            "@fieldTypes": "modified_time=l,in=x,out=x"
+        },
+        {
+            "@type": "d",
+            "@rid": "#72:434476",
+            "@version": 5,
+            "@class": "dependOn",
+            "modified_time": 1768219915,
+            "in": "#101:198298",
+            "out": "#93:23477",
+            "@fieldTypes": "modified_time=l,in=x,out=x"
+        },
+        {
+            "@type": "d",
+            "@rid": "#71:434476",
+            "@version": 5,
+            "@class": "dependOn",
+            "modified_time": 1768219915,
+            "in": "#106:17921",
+            "out": "#102:198298",
+            "@fieldTypes": "modified_time=l,in=x,out=x"
+        },
+        {
+            "@type": "d",
+            "@rid": "#70:434476",
+            "@version": 5,
+            "@class": "dependOn",
+            "modified_time": 1768219915,
+            "in": "#105:17921",
+            "out": "#102:198298",
+            "@fieldTypes": "modified_time=l,in=x,out=x"
+        },
+        {
+            "@type": "d",
+            "@rid": "#73:434473",
+            "@version": 5,
+            "@class": "dependOn",
+            "modified_time": 1768219915,
+            "in": "#108:17921",
+            "out": "#106:17921",
+            "@fieldTypes": "modified_time=l,in=x,out=x"
+        },
+        {
+            "@type": "d",
+            "@rid": "#69:434476",
+            "@version": 5,
+            "@class": "dependOn",
+            "modified_time": 1768219915,
+            "in": "#112:156692",
+            "out": "#108:17921",
+            "@fieldTypes": "modified_time=l,in=x,out=x"
+        },
+        {
+            "@type": "d",
+            "@rid": "#71:434475",
+            "@version": 5,
+            "@class": "dependOn",
+            "modified_time": 1768219915,
+            "in": "#122:126311",
+            "out": "#112:156692",
+            "@fieldTypes": "modified_time=l,in=x,out=x"
+        },
+        {
+            "@type": "d",
+            "@rid": "#72:434475",
+            "@version": 5,
+            "@class": "dependOn",
+            "modified_time": 1768219915,
+            "in": "#107:17921",
+            "out": "#105:17921",
+            "@fieldTypes": "modified_time=l,in=x,out=x"
+        },
+        {
+            "@type": "d",
+            "@rid": "#74:434472",
+            "@version": 5,
+            "@class": "dependOn",
+            "modified_time": 1768219915,
+            "in": "#111:156693",
+            "out": "#107:17921",
+            "@fieldTypes": "modified_time=l,in=x,out=x"
+        },
+        {
+            "@type": "d",
+            "@rid": "#70:434475",
+            "@version": 5,
+            "@class": "dependOn",
+            "modified_time": 1768219915,
+            "in": "#121:126311",
+            "out": "#111:156693",
+            "@fieldTypes": "modified_time=l,in=x,out=x"
+        },
+        {
+            "@type": "d",
+            "@rid": "#72:676212",
+            "@version": 1,
+            "@class": "dependOn",
+            "modified_time": 1768219915,
+            "in": "#89:38293",
+            "out": "#84:257",
+            "@fieldTypes": "modified_time=l,in=x,out=x"
+        },
+        {
+            "@type": "d",
+            "@rid": "#71:434477",
+            "@version": 4,
+            "@class": "dependOn",
+            "modified_time": 1767994153,
+            "in": "#93:23477",
+            "out": "#92:24721",
+            "@fieldTypes": "modified_time=l,in=x,out=x"
+        },
+        {
+            "@rid": "#-2:043b40cf-27e3-44ba-bc9d-04b6d08d6316",
+            "in": "#-1:043b40cf-27e3-44ba-bc9d-04b6d08d6316",
+            "out": "#111:156693",
+            "@class": "generate"
+        },
+        {
+            "@rid": "#-2:f821d710-2890-4ebf-9115-78b499a3c9af",
+            "in": "#-1:f821d710-2890-4ebf-9115-78b499a3c9af",
+            "out": "#89:38293",
+            "@class": "generate"
+        },
+        {
+            "@rid": "#-2:f232ec0e-9043-4121-bc85-5a1fcf3a2abf",
+            "in": "#-1:f232ec0e-9043-4121-bc85-5a1fcf3a2abf",
+            "out": "#89:38293",
+            "@class": "generate"
+        },
+        {
+            "@rid": "#-2:f6958eef-5026-497b-a971-613526b462c7",
+            "in": "#-1:f6958eef-5026-497b-a971-613526b462c7",
+            "out": "#112:156692",
+            "@class": "generate"
+        },
+        {
+            "@rid": "#-2:2db3e282-19a2-48d2-9b57-dccf54cdc115",
+            "in": "#-1:2db3e282-19a2-48d2-9b57-dccf54cdc115",
+            "out": "#122:126311",
+            "@class": "generate"
+        },
+        {
+            "@rid": "#-2:74a47619-16ca-4a6e-90b4-7b68e6bdf92a",
+            "in": "#-1:74a47619-16ca-4a6e-90b4-7b68e6bdf92a",
+            "out": "#89:38293",
+            "@class": "generate"
+        },
+        {
+            "@rid": "#-2:f9dc56e7-8dd8-4a33-b809-2cfa536bbde9",
+            "in": "#-1:f9dc56e7-8dd8-4a33-b809-2cfa536bbde9",
+            "out": "#121:126311",
+            "@class": "generate"
+        },
+        {
+            "@rid": "#-2:24df130b-bfec-4f8f-b943-fef93e2fff2b",
+            "in": "#-1:24df130b-bfec-4f8f-b943-fef93e2fff2b",
+            "out": "#89:38293",
+            "@class": "generate"
+        },
+        {
+            "@rid": "#-2:bf28e56e-c877-403f-8c12-f99b8cddb8de",
+            "in": "#-1:bf28e56e-c877-403f-8c12-f99b8cddb8de",
+            "out": "#89:38293",
+            "@class": "generate"
+        },
+        {
+            "@rid": "#-1:f821d710-2890-4ebf-9115-78b499a3c9af_#-1:043b40cf-27e3-44ba-bc9d-04b6d08d6316_causedBy",
+            "out": "#-1:f821d710-2890-4ebf-9115-78b499a3c9af",
+            "in": "#-1:043b40cf-27e3-44ba-bc9d-04b6d08d6316",
+            "@class": "causedBy"
+        },
+        {
+            "@rid": "#-1:f232ec0e-9043-4121-bc85-5a1fcf3a2abf_#-1:043b40cf-27e3-44ba-bc9d-04b6d08d6316_causedBy",
+            "out": "#-1:f232ec0e-9043-4121-bc85-5a1fcf3a2abf",
+            "in": "#-1:043b40cf-27e3-44ba-bc9d-04b6d08d6316",
+            "@class": "causedBy"
+        },
+        {
+            "@rid": "#-1:2db3e282-19a2-48d2-9b57-dccf54cdc115_#-1:043b40cf-27e3-44ba-bc9d-04b6d08d6316_causedBy",
+            "out": "#-1:2db3e282-19a2-48d2-9b57-dccf54cdc115",
+            "in": "#-1:043b40cf-27e3-44ba-bc9d-04b6d08d6316",
+            "@class": "causedBy"
+        },
+        {
+            "@rid": "#-1:74a47619-16ca-4a6e-90b4-7b68e6bdf92a_#-1:043b40cf-27e3-44ba-bc9d-04b6d08d6316_causedBy",
+            "out": "#-1:74a47619-16ca-4a6e-90b4-7b68e6bdf92a",
+            "in": "#-1:043b40cf-27e3-44ba-bc9d-04b6d08d6316",
+            "@class": "causedBy"
+        },
+        {
+            "@rid": "#-1:f9dc56e7-8dd8-4a33-b809-2cfa536bbde9_#-1:043b40cf-27e3-44ba-bc9d-04b6d08d6316_causedBy",
+            "out": "#-1:f9dc56e7-8dd8-4a33-b809-2cfa536bbde9",
+            "in": "#-1:043b40cf-27e3-44ba-bc9d-04b6d08d6316",
+            "@class": "causedBy"
+        },
+        {
+            "@rid": "#-1:24df130b-bfec-4f8f-b943-fef93e2fff2b_#-1:043b40cf-27e3-44ba-bc9d-04b6d08d6316_causedBy",
+            "out": "#-1:24df130b-bfec-4f8f-b943-fef93e2fff2b",
+            "in": "#-1:043b40cf-27e3-44ba-bc9d-04b6d08d6316",
+            "@class": "causedBy"
+        },
+        {
+            "@rid": "#-1:bf28e56e-c877-403f-8c12-f99b8cddb8de_#-1:043b40cf-27e3-44ba-bc9d-04b6d08d6316_causedBy",
+            "out": "#-1:bf28e56e-c877-403f-8c12-f99b8cddb8de",
+            "in": "#-1:043b40cf-27e3-44ba-bc9d-04b6d08d6316",
+            "@class": "causedBy"
+        },
+        {
+            "@rid": "#-1:f821d710-2890-4ebf-9115-78b499a3c9af_#-1:f6958eef-5026-497b-a971-613526b462c7_causedBy",
+            "out": "#-1:f821d710-2890-4ebf-9115-78b499a3c9af",
+            "in": "#-1:f6958eef-5026-497b-a971-613526b462c7",
+            "@class": "causedBy"
+        },
+        {
+            "@rid": "#-1:f232ec0e-9043-4121-bc85-5a1fcf3a2abf_#-1:f6958eef-5026-497b-a971-613526b462c7_causedBy",
+            "out": "#-1:f232ec0e-9043-4121-bc85-5a1fcf3a2abf",
+            "in": "#-1:f6958eef-5026-497b-a971-613526b462c7",
+            "@class": "causedBy"
+        },
+        {
+            "@rid": "#-1:2db3e282-19a2-48d2-9b57-dccf54cdc115_#-1:f6958eef-5026-497b-a971-613526b462c7_causedBy",
+            "out": "#-1:2db3e282-19a2-48d2-9b57-dccf54cdc115",
+            "in": "#-1:f6958eef-5026-497b-a971-613526b462c7",
+            "@class": "causedBy"
+        },
+        {
+            "@rid": "#-1:74a47619-16ca-4a6e-90b4-7b68e6bdf92a_#-1:f6958eef-5026-497b-a971-613526b462c7_causedBy",
+            "out": "#-1:74a47619-16ca-4a6e-90b4-7b68e6bdf92a",
+            "in": "#-1:f6958eef-5026-497b-a971-613526b462c7",
+            "@class": "causedBy"
+        },
+        {
+            "@rid": "#-1:f9dc56e7-8dd8-4a33-b809-2cfa536bbde9_#-1:f6958eef-5026-497b-a971-613526b462c7_causedBy",
+            "out": "#-1:f9dc56e7-8dd8-4a33-b809-2cfa536bbde9",
+            "in": "#-1:f6958eef-5026-497b-a971-613526b462c7",
+            "@class": "causedBy"
+        },
+        {
+            "@rid": "#-1:24df130b-bfec-4f8f-b943-fef93e2fff2b_#-1:f6958eef-5026-497b-a971-613526b462c7_causedBy",
+            "out": "#-1:24df130b-bfec-4f8f-b943-fef93e2fff2b",
+            "in": "#-1:f6958eef-5026-497b-a971-613526b462c7",
+            "@class": "causedBy"
+        },
+        {
+            "@rid": "#-1:bf28e56e-c877-403f-8c12-f99b8cddb8de_#-1:f6958eef-5026-497b-a971-613526b462c7_causedBy",
+            "out": "#-1:bf28e56e-c877-403f-8c12-f99b8cddb8de",
+            "in": "#-1:f6958eef-5026-497b-a971-613526b462c7",
+            "@class": "causedBy"
+        }
+    ]
+}

@@ -1,0 +1,965 @@
+{
+  "method": "nested template-grouped ridge count correction",
+  "group_count": 1040,
+  "fold_sizes": [
+    327,
+    327,
+    327,
+    327,
+    326
+  ],
+  "target_predictions": 3169,
+  "feature_dimension": 321,
+  "optimistic_best": {
+    "alpha": 100.0,
+    "weight": 0.2,
+    "tp_delta": -26,
+    "fold_deltas": [
+      -10,
+      3,
+      -18,
+      0,
+      -1
+    ],
+    "changed_orders": 279,
+    "count_increased": 141,
+    "count_decreased": 130,
+    "max_abs_count_change": 5
+  },
+  "nested_choices": [
+    {
+      "heldout_fold": 0,
+      "alpha": 100.0,
+      "weight": 0.45,
+      "training_delta": -15,
+      "heldout_delta": -11
+    },
+    {
+      "heldout_fold": 1,
+      "alpha": 100.0,
+      "weight": 0.05,
+      "training_delta": -28,
+      "heldout_delta": 1
+    },
+    {
+      "heldout_fold": 2,
+      "alpha": 100.0,
+      "weight": 0.2,
+      "training_delta": -8,
+      "heldout_delta": -18
+    },
+    {
+      "heldout_fold": 3,
+      "alpha": 100.0,
+      "weight": 0.2,
+      "training_delta": -26,
+      "heldout_delta": 0
+    },
+    {
+      "heldout_fold": 4,
+      "alpha": 100.0,
+      "weight": 0.25,
+      "training_delta": -24,
+      "heldout_delta": -2
+    }
+  ],
+  "nested": {
+    "tp_delta": -30,
+    "fold_deltas": [
+      -11,
+      1,
+      -18,
+      0,
+      -2
+    ],
+    "changed_orders": 279,
+    "count_increased": 141,
+    "count_decreased": 130,
+    "max_abs_count_change": 5,
+    "bootstrap_95_lower": -59.0
+  },
+  "passed_mean_gate": false,
+  "passed_significant_gate": false,
+  "all_candidates": [
+    {
+      "alpha": 0.1,
+      "weight": 0.0,
+      "tp_delta": -82,
+      "fold_deltas": [
+        -28,
+        -2,
+        -26,
+        -15,
+        -11
+      ],
+      "changed_orders": 383,
+      "count_increased": 202,
+      "count_decreased": 181,
+      "max_abs_count_change": 5
+    },
+    {
+      "alpha": 0.1,
+      "weight": 0.05,
+      "tp_delta": -78,
+      "fold_deltas": [
+        -28,
+        -1,
+        -26,
+        -12,
+        -11
+      ],
+      "changed_orders": 385,
+      "count_increased": 202,
+      "count_decreased": 181,
+      "max_abs_count_change": 5
+    },
+    {
+      "alpha": 0.1,
+      "weight": 0.1,
+      "tp_delta": -80,
+      "fold_deltas": [
+        -28,
+        0,
+        -27,
+        -14,
+        -11
+      ],
+      "changed_orders": 386,
+      "count_increased": 202,
+      "count_decreased": 181,
+      "max_abs_count_change": 5
+    },
+    {
+      "alpha": 0.1,
+      "weight": 0.15000000000000002,
+      "tp_delta": -83,
+      "fold_deltas": [
+        -27,
+        -1,
+        -27,
+        -16,
+        -12
+      ],
+      "changed_orders": 389,
+      "count_increased": 202,
+      "count_decreased": 181,
+      "max_abs_count_change": 5
+    },
+    {
+      "alpha": 0.1,
+      "weight": 0.2,
+      "tp_delta": -79,
+      "fold_deltas": [
+        -26,
+        -1,
+        -26,
+        -16,
+        -10
+      ],
+      "changed_orders": 390,
+      "count_increased": 202,
+      "count_decreased": 181,
+      "max_abs_count_change": 5
+    },
+    {
+      "alpha": 0.1,
+      "weight": 0.25,
+      "tp_delta": -79,
+      "fold_deltas": [
+        -26,
+        0,
+        -26,
+        -16,
+        -11
+      ],
+      "changed_orders": 390,
+      "count_increased": 202,
+      "count_decreased": 181,
+      "max_abs_count_change": 5
+    },
+    {
+      "alpha": 0.1,
+      "weight": 0.30000000000000004,
+      "tp_delta": -82,
+      "fold_deltas": [
+        -27,
+        0,
+        -26,
+        -18,
+        -11
+      ],
+      "changed_orders": 392,
+      "count_increased": 202,
+      "count_decreased": 181,
+      "max_abs_count_change": 5
+    },
+    {
+      "alpha": 0.1,
+      "weight": 0.35000000000000003,
+      "tp_delta": -81,
+      "fold_deltas": [
+        -27,
+        0,
+        -26,
+        -17,
+        -11
+      ],
+      "changed_orders": 393,
+      "count_increased": 202,
+      "count_decreased": 181,
+      "max_abs_count_change": 5
+    },
+    {
+      "alpha": 0.1,
+      "weight": 0.4,
+      "tp_delta": -84,
+      "fold_deltas": [
+        -27,
+        0,
+        -27,
+        -18,
+        -12
+      ],
+      "changed_orders": 396,
+      "count_increased": 202,
+      "count_decreased": 181,
+      "max_abs_count_change": 5
+    },
+    {
+      "alpha": 0.1,
+      "weight": 0.45,
+      "tp_delta": -81,
+      "fold_deltas": [
+        -28,
+        -1,
+        -25,
+        -17,
+        -10
+      ],
+      "changed_orders": 400,
+      "count_increased": 202,
+      "count_decreased": 181,
+      "max_abs_count_change": 5
+    },
+    {
+      "alpha": 0.1,
+      "weight": 0.5,
+      "tp_delta": -83,
+      "fold_deltas": [
+        -28,
+        0,
+        -24,
+        -20,
+        -11
+      ],
+      "changed_orders": 400,
+      "count_increased": 202,
+      "count_decreased": 181,
+      "max_abs_count_change": 5
+    },
+    {
+      "alpha": 1.0,
+      "weight": 0.0,
+      "tp_delta": -75,
+      "fold_deltas": [
+        -25,
+        -1,
+        -25,
+        -14,
+        -10
+      ],
+      "changed_orders": 365,
+      "count_increased": 191,
+      "count_decreased": 174,
+      "max_abs_count_change": 5
+    },
+    {
+      "alpha": 1.0,
+      "weight": 0.05,
+      "tp_delta": -69,
+      "fold_deltas": [
+        -24,
+        0,
+        -25,
+        -11,
+        -9
+      ],
+      "changed_orders": 367,
+      "count_increased": 191,
+      "count_decreased": 174,
+      "max_abs_count_change": 5
+    },
+    {
+      "alpha": 1.0,
+      "weight": 0.1,
+      "tp_delta": -72,
+      "fold_deltas": [
+        -24,
+        1,
+        -26,
+        -14,
+        -9
+      ],
+      "changed_orders": 368,
+      "count_increased": 191,
+      "count_decreased": 174,
+      "max_abs_count_change": 5
+    },
+    {
+      "alpha": 1.0,
+      "weight": 0.15000000000000002,
+      "tp_delta": -75,
+      "fold_deltas": [
+        -23,
+        0,
+        -26,
+        -16,
+        -10
+      ],
+      "changed_orders": 371,
+      "count_increased": 191,
+      "count_decreased": 174,
+      "max_abs_count_change": 5
+    },
+    {
+      "alpha": 1.0,
+      "weight": 0.2,
+      "tp_delta": -71,
+      "fold_deltas": [
+        -22,
+        0,
+        -25,
+        -16,
+        -8
+      ],
+      "changed_orders": 372,
+      "count_increased": 191,
+      "count_decreased": 174,
+      "max_abs_count_change": 5
+    },
+    {
+      "alpha": 1.0,
+      "weight": 0.25,
+      "tp_delta": -71,
+      "fold_deltas": [
+        -22,
+        1,
+        -25,
+        -16,
+        -9
+      ],
+      "changed_orders": 372,
+      "count_increased": 191,
+      "count_decreased": 174,
+      "max_abs_count_change": 5
+    },
+    {
+      "alpha": 1.0,
+      "weight": 0.30000000000000004,
+      "tp_delta": -74,
+      "fold_deltas": [
+        -23,
+        1,
+        -25,
+        -18,
+        -9
+      ],
+      "changed_orders": 374,
+      "count_increased": 191,
+      "count_decreased": 174,
+      "max_abs_count_change": 5
+    },
+    {
+      "alpha": 1.0,
+      "weight": 0.35000000000000003,
+      "tp_delta": -73,
+      "fold_deltas": [
+        -23,
+        1,
+        -25,
+        -17,
+        -9
+      ],
+      "changed_orders": 375,
+      "count_increased": 191,
+      "count_decreased": 174,
+      "max_abs_count_change": 5
+    },
+    {
+      "alpha": 1.0,
+      "weight": 0.4,
+      "tp_delta": -77,
+      "fold_deltas": [
+        -24,
+        1,
+        -26,
+        -18,
+        -10
+      ],
+      "changed_orders": 377,
+      "count_increased": 191,
+      "count_decreased": 174,
+      "max_abs_count_change": 5
+    },
+    {
+      "alpha": 1.0,
+      "weight": 0.45,
+      "tp_delta": -74,
+      "fold_deltas": [
+        -25,
+        0,
+        -24,
+        -17,
+        -8
+      ],
+      "changed_orders": 380,
+      "count_increased": 191,
+      "count_decreased": 174,
+      "max_abs_count_change": 5
+    },
+    {
+      "alpha": 1.0,
+      "weight": 0.5,
+      "tp_delta": -76,
+      "fold_deltas": [
+        -25,
+        1,
+        -23,
+        -20,
+        -9
+      ],
+      "changed_orders": 380,
+      "count_increased": 191,
+      "count_decreased": 174,
+      "max_abs_count_change": 5
+    },
+    {
+      "alpha": 10.0,
+      "weight": 0.0,
+      "tp_delta": -49,
+      "fold_deltas": [
+        -19,
+        2,
+        -20,
+        -6,
+        -6
+      ],
+      "changed_orders": 313,
+      "count_increased": 166,
+      "count_decreased": 147,
+      "max_abs_count_change": 5
+    },
+    {
+      "alpha": 10.0,
+      "weight": 0.05,
+      "tp_delta": -43,
+      "fold_deltas": [
+        -18,
+        3,
+        -20,
+        -3,
+        -5
+      ],
+      "changed_orders": 315,
+      "count_increased": 166,
+      "count_decreased": 147,
+      "max_abs_count_change": 5
+    },
+    {
+      "alpha": 10.0,
+      "weight": 0.1,
+      "tp_delta": -45,
+      "fold_deltas": [
+        -17,
+        4,
+        -21,
+        -6,
+        -5
+      ],
+      "changed_orders": 316,
+      "count_increased": 166,
+      "count_decreased": 147,
+      "max_abs_count_change": 5
+    },
+    {
+      "alpha": 10.0,
+      "weight": 0.15000000000000002,
+      "tp_delta": -48,
+      "fold_deltas": [
+        -16,
+        3,
+        -21,
+        -8,
+        -6
+      ],
+      "changed_orders": 319,
+      "count_increased": 166,
+      "count_decreased": 147,
+      "max_abs_count_change": 5
+    },
+    {
+      "alpha": 10.0,
+      "weight": 0.2,
+      "tp_delta": -44,
+      "fold_deltas": [
+        -16,
+        3,
+        -20,
+        -8,
+        -3
+      ],
+      "changed_orders": 320,
+      "count_increased": 166,
+      "count_decreased": 147,
+      "max_abs_count_change": 5
+    },
+    {
+      "alpha": 10.0,
+      "weight": 0.25,
+      "tp_delta": -44,
+      "fold_deltas": [
+        -16,
+        4,
+        -20,
+        -8,
+        -4
+      ],
+      "changed_orders": 320,
+      "count_increased": 166,
+      "count_decreased": 147,
+      "max_abs_count_change": 5
+    },
+    {
+      "alpha": 10.0,
+      "weight": 0.30000000000000004,
+      "tp_delta": -47,
+      "fold_deltas": [
+        -17,
+        4,
+        -20,
+        -10,
+        -4
+      ],
+      "changed_orders": 322,
+      "count_increased": 166,
+      "count_decreased": 147,
+      "max_abs_count_change": 5
+    },
+    {
+      "alpha": 10.0,
+      "weight": 0.35000000000000003,
+      "tp_delta": -47,
+      "fold_deltas": [
+        -17,
+        4,
+        -21,
+        -9,
+        -4
+      ],
+      "changed_orders": 323,
+      "count_increased": 166,
+      "count_decreased": 147,
+      "max_abs_count_change": 5
+    },
+    {
+      "alpha": 10.0,
+      "weight": 0.4,
+      "tp_delta": -50,
+      "fold_deltas": [
+        -18,
+        4,
+        -22,
+        -9,
+        -5
+      ],
+      "changed_orders": 325,
+      "count_increased": 166,
+      "count_decreased": 147,
+      "max_abs_count_change": 5
+    },
+    {
+      "alpha": 10.0,
+      "weight": 0.45,
+      "tp_delta": -47,
+      "fold_deltas": [
+        -19,
+        3,
+        -20,
+        -8,
+        -3
+      ],
+      "changed_orders": 328,
+      "count_increased": 166,
+      "count_decreased": 147,
+      "max_abs_count_change": 5
+    },
+    {
+      "alpha": 10.0,
+      "weight": 0.5,
+      "tp_delta": -52,
+      "fold_deltas": [
+        -19,
+        4,
+        -20,
+        -13,
+        -4
+      ],
+      "changed_orders": 328,
+      "count_increased": 166,
+      "count_decreased": 147,
+      "max_abs_count_change": 5
+    },
+    {
+      "alpha": 100.0,
+      "weight": 0.0,
+      "tp_delta": -35,
+      "fold_deltas": [
+        -11,
+        0,
+        -19,
+        0,
+        -5
+      ],
+      "changed_orders": 271,
+      "count_increased": 141,
+      "count_decreased": 130,
+      "max_abs_count_change": 5
+    },
+    {
+      "alpha": 100.0,
+      "weight": 0.05,
+      "tp_delta": -27,
+      "fold_deltas": [
+        -11,
+        1,
+        -19,
+        5,
+        -3
+      ],
+      "changed_orders": 273,
+      "count_increased": 141,
+      "count_decreased": 130,
+      "max_abs_count_change": 5
+    },
+    {
+      "alpha": 100.0,
+      "weight": 0.1,
+      "tp_delta": -29,
+      "fold_deltas": [
+        -11,
+        2,
+        -19,
+        2,
+        -3
+      ],
+      "changed_orders": 275,
+      "count_increased": 141,
+      "count_decreased": 130,
+      "max_abs_count_change": 5
+    },
+    {
+      "alpha": 100.0,
+      "weight": 0.15000000000000002,
+      "tp_delta": -30,
+      "fold_deltas": [
+        -10,
+        3,
+        -19,
+        0,
+        -4
+      ],
+      "changed_orders": 278,
+      "count_increased": 141,
+      "count_decreased": 130,
+      "max_abs_count_change": 5
+    },
+    {
+      "alpha": 100.0,
+      "weight": 0.2,
+      "tp_delta": -26,
+      "fold_deltas": [
+        -10,
+        3,
+        -18,
+        0,
+        -1
+      ],
+      "changed_orders": 279,
+      "count_increased": 141,
+      "count_decreased": 130,
+      "max_abs_count_change": 5
+    },
+    {
+      "alpha": 100.0,
+      "weight": 0.25,
+      "tp_delta": -26,
+      "fold_deltas": [
+        -10,
+        4,
+        -18,
+        0,
+        -2
+      ],
+      "changed_orders": 279,
+      "count_increased": 141,
+      "count_decreased": 130,
+      "max_abs_count_change": 5
+    },
+    {
+      "alpha": 100.0,
+      "weight": 0.30000000000000004,
+      "tp_delta": -27,
+      "fold_deltas": [
+        -10,
+        4,
+        -18,
+        -1,
+        -2
+      ],
+      "changed_orders": 280,
+      "count_increased": 141,
+      "count_decreased": 130,
+      "max_abs_count_change": 5
+    },
+    {
+      "alpha": 100.0,
+      "weight": 0.35000000000000003,
+      "tp_delta": -27,
+      "fold_deltas": [
+        -10,
+        4,
+        -19,
+        0,
+        -2
+      ],
+      "changed_orders": 281,
+      "count_increased": 141,
+      "count_decreased": 130,
+      "max_abs_count_change": 5
+    },
+    {
+      "alpha": 100.0,
+      "weight": 0.4,
+      "tp_delta": -28,
+      "fold_deltas": [
+        -10,
+        4,
+        -20,
+        0,
+        -2
+      ],
+      "changed_orders": 283,
+      "count_increased": 141,
+      "count_decreased": 130,
+      "max_abs_count_change": 5
+    },
+    {
+      "alpha": 100.0,
+      "weight": 0.45,
+      "tp_delta": -26,
+      "fold_deltas": [
+        -11,
+        3,
+        -18,
+        2,
+        -2
+      ],
+      "changed_orders": 285,
+      "count_increased": 141,
+      "count_decreased": 130,
+      "max_abs_count_change": 5
+    },
+    {
+      "alpha": 100.0,
+      "weight": 0.5,
+      "tp_delta": -32,
+      "fold_deltas": [
+        -11,
+        4,
+        -18,
+        -4,
+        -3
+      ],
+      "changed_orders": 285,
+      "count_increased": 141,
+      "count_decreased": 130,
+      "max_abs_count_change": 5
+    },
+    {
+      "alpha": 1000.0,
+      "weight": 0.0,
+      "tp_delta": -58,
+      "fold_deltas": [
+        -14,
+        -4,
+        -21,
+        -5,
+        -14
+      ],
+      "changed_orders": 290,
+      "count_increased": 155,
+      "count_decreased": 135,
+      "max_abs_count_change": 4
+    },
+    {
+      "alpha": 1000.0,
+      "weight": 0.05,
+      "tp_delta": -50,
+      "fold_deltas": [
+        -14,
+        -3,
+        -21,
+        0,
+        -12
+      ],
+      "changed_orders": 292,
+      "count_increased": 155,
+      "count_decreased": 135,
+      "max_abs_count_change": 4
+    },
+    {
+      "alpha": 1000.0,
+      "weight": 0.1,
+      "tp_delta": -52,
+      "fold_deltas": [
+        -14,
+        -2,
+        -22,
+        -2,
+        -12
+      ],
+      "changed_orders": 294,
+      "count_increased": 155,
+      "count_decreased": 135,
+      "max_abs_count_change": 4
+    },
+    {
+      "alpha": 1000.0,
+      "weight": 0.15000000000000002,
+      "tp_delta": -55,
+      "fold_deltas": [
+        -13,
+        -3,
+        -22,
+        -4,
+        -13
+      ],
+      "changed_orders": 296,
+      "count_increased": 155,
+      "count_decreased": 135,
+      "max_abs_count_change": 4
+    },
+    {
+      "alpha": 1000.0,
+      "weight": 0.2,
+      "tp_delta": -53,
+      "fold_deltas": [
+        -13,
+        -3,
+        -21,
+        -5,
+        -11
+      ],
+      "changed_orders": 298,
+      "count_increased": 155,
+      "count_decreased": 135,
+      "max_abs_count_change": 4
+    },
+    {
+      "alpha": 1000.0,
+      "weight": 0.25,
+      "tp_delta": -53,
+      "fold_deltas": [
+        -13,
+        -3,
+        -21,
+        -5,
+        -11
+      ],
+      "changed_orders": 298,
+      "count_increased": 155,
+      "count_decreased": 135,
+      "max_abs_count_change": 4
+    },
+    {
+      "alpha": 1000.0,
+      "weight": 0.30000000000000004,
+      "tp_delta": -54,
+      "fold_deltas": [
+        -13,
+        -3,
+        -21,
+        -6,
+        -11
+      ],
+      "changed_orders": 298,
+      "count_increased": 155,
+      "count_decreased": 135,
+      "max_abs_count_change": 4
+    },
+    {
+      "alpha": 1000.0,
+      "weight": 0.35000000000000003,
+      "tp_delta": -53,
+      "fold_deltas": [
+        -13,
+        -3,
+        -22,
+        -5,
+        -10
+      ],
+      "changed_orders": 299,
+      "count_increased": 155,
+      "count_decreased": 135,
+      "max_abs_count_change": 4
+    },
+    {
+      "alpha": 1000.0,
+      "weight": 0.4,
+      "tp_delta": -53,
+      "fold_deltas": [
+        -13,
+        -3,
+        -23,
+        -4,
+        -10
+      ],
+      "changed_orders": 302,
+      "count_increased": 155,
+      "count_decreased": 135,
+      "max_abs_count_change": 4
+    },
+    {
+      "alpha": 1000.0,
+      "weight": 0.45,
+      "tp_delta": -50,
+      "fold_deltas": [
+        -14,
+        -3,
+        -21,
+        -2,
+        -10
+      ],
+      "changed_orders": 305,
+      "count_increased": 155,
+      "count_decreased": 135,
+      "max_abs_count_change": 4
+    },
+    {
+      "alpha": 1000.0,
+      "weight": 0.5,
+      "tp_delta": -57,
+      "fold_deltas": [
+        -14,
+        -2,
+        -21,
+        -8,
+        -12
+      ],
+      "changed_orders": 305,
+      "count_increased": 155,
+      "count_decreased": 135,
+      "max_abs_count_change": 4
+    }
+  ]
+}

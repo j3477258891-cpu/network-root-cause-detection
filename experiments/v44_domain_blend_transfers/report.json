@@ -1,0 +1,217 @@
+{
+  "version": "v44-domain-blend-transfers-1",
+  "blend": {
+    "station_weight": 0.4,
+    "domain_alpha2_weight": 0.6
+  },
+  "oof_available_pairs": 24,
+  "oof_curve": {
+    "1": {
+      "delta_tp": -1,
+      "positive_pairs": 0,
+      "neutral_pairs": 0,
+      "negative_pairs": 1,
+      "deltas": [
+        -1
+      ],
+      "minimum_margin": 0.28220611810684204
+    },
+    "2": {
+      "delta_tp": -2,
+      "positive_pairs": 0,
+      "neutral_pairs": 0,
+      "negative_pairs": 2,
+      "deltas": [
+        -1,
+        -1
+      ],
+      "minimum_margin": 0.20792794227600098
+    },
+    "3": {
+      "delta_tp": -1,
+      "positive_pairs": 1,
+      "neutral_pairs": 0,
+      "negative_pairs": 2,
+      "deltas": [
+        -1,
+        -1,
+        1
+      ],
+      "minimum_margin": 0.1686251163482666
+    },
+    "5": {
+      "delta_tp": -1,
+      "positive_pairs": 1,
+      "neutral_pairs": 2,
+      "negative_pairs": 2,
+      "deltas": [
+        -1,
+        -1,
+        1,
+        0,
+        0
+      ],
+      "minimum_margin": 0.11520540714263916
+    },
+    "8": {
+      "delta_tp": 0,
+      "positive_pairs": 2,
+      "neutral_pairs": 4,
+      "negative_pairs": 2,
+      "deltas": [
+        -1,
+        -1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "minimum_margin": 0.09106391668319702
+    },
+    "10": {
+      "delta_tp": -1,
+      "positive_pairs": 2,
+      "neutral_pairs": 5,
+      "negative_pairs": 3,
+      "deltas": [
+        -1,
+        -1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        -1,
+        0
+      ],
+      "minimum_margin": 0.06904745101928711
+    },
+    "16": {
+      "delta_tp": -1,
+      "positive_pairs": 3,
+      "neutral_pairs": 9,
+      "negative_pairs": 4,
+      "deltas": [
+        -1,
+        -1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        -1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        -1,
+        0
+      ],
+      "minimum_margin": 0.030305445194244385
+    },
+    "24": {
+      "delta_tp": 1,
+      "positive_pairs": 6,
+      "neutral_pairs": 13,
+      "negative_pairs": 5,
+      "deltas": [
+        -1,
+        -1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        -1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        -1,
+        0,
+        1,
+        0
+      ],
+      "minimum_margin": 0.0005327463150024414
+    }
+  },
+  "exclusions": {
+    "historical_nodes": 138,
+    "protected_nodes": 0,
+    "excluded_test_rows": 138,
+    "exact_orders": 1
+  },
+  "test_available_pairs": 5,
+  "test_top_pairs": [
+    {
+      "pair_index": 1,
+      "add_row": 1091,
+      "remove_row": 1485,
+      "add_order_index": 184,
+      "remove_order_index": 254,
+      "add_score": 0.6731903553009033,
+      "remove_score": 0.34604889154434204,
+      "margin": 0.3271414637565613
+    },
+    {
+      "pair_index": 2,
+      "add_row": 787,
+      "remove_row": 1928,
+      "add_order_index": 142,
+      "remove_order_index": 333,
+      "add_score": 0.6113150715827942,
+      "remove_score": 0.37187474966049194,
+      "margin": 0.23944032192230225
+    },
+    {
+      "pair_index": 3,
+      "add_row": 1259,
+      "remove_row": 1790,
+      "add_order_index": 211,
+      "remove_order_index": 311,
+      "add_score": 0.5538057088851929,
+      "remove_score": 0.4175882935523987,
+      "margin": 0.1362174153327942
+    },
+    {
+      "pair_index": 4,
+      "add_row": 3191,
+      "remove_row": 962,
+      "add_order_index": 534,
+      "remove_order_index": 171,
+      "add_score": 0.5233739614486694,
+      "remove_score": 0.4999769926071167,
+      "margin": 0.023396968841552734
+    },
+    {
+      "pair_index": 5,
+      "add_row": 1971,
+      "remove_row": 1005,
+      "add_order_index": 339,
+      "remove_order_index": 179,
+      "add_score": 0.5164777636528015,
+      "remove_score": 0.5057827830314636,
+      "margin": 0.01069498062133789
+    }
+  ],
+  "gate": {
+    "requires_top5_delta_tp": 3,
+    "requires_top5_negative_pairs_at_most": 1,
+    "requires_top10_delta_tp": 4,
+    "passed": false
+  },
+  "probes": {}
+}

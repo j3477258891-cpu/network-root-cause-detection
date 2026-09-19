@@ -1,0 +1,75 @@
+{
+  "batch_id": "probe05_group_pair_a_b",
+  "kind": "adaptive_split",
+  "parent": "probe05_group_pair_a",
+  "status": "ready",
+  "decision": "pending",
+  "action_ids": [
+    "group_pair_a6ae9c3c"
+  ],
+  "actions": [
+    {
+      "action_id": "group_pair_a6ae9c3c",
+      "order_id": "a6ae9c3c-c787-47e0-abf0-d610533dc2a0",
+      "remove_rids": [],
+      "add_rids": [
+        "#-1:b5c750a8-72e9-4e7c-8016-b079fbd6291d"
+      ],
+      "source": "group_rule",
+      "subtype": "group_pair",
+      "expected_gain": 1.0,
+      "evidence": {
+        "subtype": "group_pair",
+        "pattern": [
+          0,
+          1
+        ],
+        "support": 7,
+        "sites": 6,
+        "domains": [
+          [
+            [
+              "设备商甲",
+              ""
+            ],
+            [
+              "设备商甲",
+              ""
+            ]
+          ]
+        ],
+        "consistency": 1.0,
+        "loo_non_degrading": true
+      },
+      "probe_batch": null,
+      "online_delta_tp": null
+    }
+  ],
+  "validation": {
+    "actions": 1,
+    "orders": 1,
+    "removed": 0,
+    "added": 1,
+    "prediction_delta": 1,
+    "sources": {
+      "group_rule": 1
+    }
+  },
+  "predictions": 1060,
+  "prediction_delta": 1,
+  "submission": "D:\\zgyidong\\experiments\\v27_closed_loop\\submissions\\probe05_group_pair_a_b.csv",
+  "manifest": "D:\\zgyidong\\experiments\\v27_closed_loop\\manifests\\probe05_group_pair_a_b.json",
+  "sha256": "ec069977a728c76dc016b42d5b92353b1e7bdfab2b0189dd3869e1fea6b82996",
+  "score_possibilities": [
+    {
+      "delta_tp": 0,
+      "tp": 953,
+      "score": 0.905893536
+    },
+    {
+      "delta_tp": 1,
+      "tp": 954,
+      "score": 0.906844106
+    }
+  ]
+}

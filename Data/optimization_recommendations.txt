@@ -1,0 +1,389 @@
+======================================================================
+OPTIMIZATION RECOMMENDATIONS FOR ROOT CAUSE SELECTION ALGORITHM
+======================================================================
+
+Target: Improve F1 Score from Current (~0.78-0.79) to Optimal (0.82)
+Current Problem: Moderately Over-Aggressive with Artificial 3-Root-Cause Bias
+Date: 2026-07-29
+
+======================================================================
+PART 1: ROOT CAUSE DIAGNOSIS SUMMARY
+======================================================================
+
+Your Algorithm's Current Behavior:
+- Average root causes per incident: 2.65-2.75
+- Distribution: 25.8% single | 7.9% double | 60.4% triple | 5.9% quad+
+- Main Issue: Unnatural 60.4% concentration at exactly 3 root causes
+
+Optimal Target (F1=0.82):
+- Average root causes per incident: 2.081
+- Distribution: 37.4% single | ~48.5% double/triple | 14.1% quad+
+- Key Feature: Natural variation across 1-4 root causes
+
+Gap Analysis:
+✗ Too many root causes overall: +0.6 per incident average
+✗ Insufficient single root cause detection: -11.6 percentage points
+✗ Artificial clustering at 3 root causes: +12 percentage points excess
+✗ Insufficient 2 root cause cases: -40% below expected levels
+
+======================================================================
+PART 2: SPECIFIC OPTIMIZATION STRATEGIES
+======================================================================
+
+----------------------------------------------------------------------
+STRATEGY 1: REDUCE K-VALUE CALCULATION TO INCREASE SELECTIVITY
+----------------------------------------------------------------------
+
+Problem: Your K-value (number of root causes to select) is consistently
+too high, especially for simple incidents that should have 1 root cause.
+
+Current Behavior Indicates:
+- K-value formula likely returns 3 for most incidents
+- Insufficient sensitivity to incident complexity
+- May be using fixed K or overly generous K calculation
+
+RECOMMENDED ADJUSTMENTS:
+
+A. If Using Fixed K=3:
+   → CHANGE TO: Dynamic K based on incident characteristics
+
+   Suggested Formula:
+   K = max(1, min(4, floor(0.8 + 0.4 * incident_complexity_score)))
+
+   Where incident_complexity_score considers:
+   - Number of affected network elements (normalize to 0-5 scale)
+   - Number of distinct fault types in incident
+   - Temporal span of alarm sequences
+   - Spatial distribution across equipment hierarchy
+
+B. If Using Dynamic K Calculation:
+   → REDUCE by 20-30%
+
+   Example adjustments:
+   - Current: K = ceiling(log2(num_candidates))
+     New:     K = max(1, floor(0.7 * log2(num_candidates)))
+
+   - Current: K = min(5, 2 + num_alarm_types)
+     New:     K = max(1, min(4, 1 + floor(0.6 * num_alarm_types)))
+
+C. Implement K-Value Caps Based on Incident Type:
+
+   Simple Incidents (single equipment, single fault type):
+   → Force K=1 regardless of other factors
+
+   Moderate Incidents (2-3 equipment, 1-2 fault types):
+   → Cap K at 2
+
+   Complex Incidents (4+ equipment or 3+ fault types):
+   → Allow K up to 3-4
+
+D. Add K-Value Uncertainty Penalty:
+
+   When selecting K root causes, if the (K+1)-th candidate has
+   similar score to the K-th candidate, this indicates uncertainty.
+
+   → REDUCE K by 1 when: score[K+1] / score[K] > 0.85
+
+   This prevents including marginal candidates.
+
+----------------------------------------------------------------------
+STRATEGY 2: INCREASE IN-DEGREE THRESHOLD TO FILTER WEAK CANDIDATES
+----------------------------------------------------------------------
+
+Problem: Your algorithm includes too many weakly-connected nodes as
+root causes, likely due to low in-degree threshold.
+
+Current Behavior Indicates:
+- Threshold may be 0 or very low (includes most candidate nodes)
+- Insufficient filtering of secondary/derivative fault nodes
+- Propagation effects misidentified as root causes
+
+RECOMMENDED ADJUSTMENTS:
+
+A. Increase Absolute In-Degree Threshold:
+
+   Current (estimated): threshold = 0 or 1
+   → Recommended: threshold = 2 (require at least 2 incoming edges)
+
+   Rationale: True root causes typically affect multiple downstream
+   components. A node with in-degree 0-1 is often a leaf node or
+   secondary effect, not a true root cause.
+
+B. Implement Relative In-Degree Filtering:
+
+   Instead of fixed threshold, use percentile-based filtering:
+
+   → Keep only nodes with in-degree >= 75th percentile of all candidates
+
+   This adapts to incident complexity:
+   - Simple incidents: Filters more aggressively
+   - Complex incidents: Adjusts threshold downward naturally
+
+C. Add In-Degree Variance Check:
+
+   If all candidate nodes have similar in-degree (low variance),
+   this suggests unclear causal structure.
+
+   → When variance(in_degrees) < threshold:
+      Force K=1 and select only the highest-scored node
+
+   Prevents selecting multiple marginal candidates when evidence
+   is ambiguous.
+
+D. Combine In-Degree with Temporal Priority:
+
+   Weight in-degree by temporal ordering:
+
+   adjusted_in_degree = raw_in_degree * (1 + temporal_priority_bonus)
+
+   Where temporal_priority_bonus:
+   - +0.3 for earliest alarms in incident
+   - +0.1 for early-to-mid alarms
+   - 0.0 for late alarms (likely secondary effects)
+
+   This helps distinguish true root causes (early + high in-degree)
+   from propagation effects (late + medium in-degree).
+
+----------------------------------------------------------------------
+STRATEGY 3: IMPLEMENT SINGLE-ROOT-CAUSE BOOST MECHANISM
+----------------------------------------------------------------------
+
+Problem: Only 25.8% single root cause detection vs. 37.4% optimal.
+Your algorithm under-identifies clear, simple incidents.
+
+RECOMMENDED ADJUSTMENTS:
+
+A. Add Single-Cause Confidence Detector:
+
+   Before applying standard K-value selection, check if incident
+   shows strong single-cause signature:
+
+   Triggers for FORCE K=1:
+   ✓ All alarms from single equipment/rack
+   ✓ All alarms of same fault type
+   ✓ Clear temporal sequence (first alarm >> subsequent alarms)
+   ✓ Top candidate score > 2.5x second candidate score
+   ✓ Incident affects single network element only
+
+   If ANY 2+ triggers satisfied → Force K=1
+
+B. Score Gap Analysis:
+
+   Calculate ratio between top and second candidate:
+   score_ratio = score[1] / score[2]
+
+   → If score_ratio > 2.0: Force K=1 (clear winner)
+   → If score_ratio > 1.5: Reduce calculated K by 1
+   → If score_ratio < 1.2: Indicates ambiguity, no adjustment
+
+C. Equipment Hierarchy Simplification:
+
+   Count distinct equipment at each hierarchy level:
+   - BBU level: X equipment
+   - RRU level: Y equipment
+   - Interface level: Z interfaces
+
+   → If X=1 and Y=1: Likely single root cause, set K=1
+   → If X+Y+Z <= 2: Strong single-cause candidate, cap K at 2
+
+----------------------------------------------------------------------
+STRATEGY 4: BREAK THE 3-ROOT-CAUSE ARTIFICIAL CLUSTERING
+----------------------------------------------------------------------
+
+Problem: 60.4% of incidents have exactly 3 root causes (unnatural).
+Indicates algorithmic bias or threshold effect.
+
+RECOMMENDED ADJUSTMENTS:
+
+A. Check for Hard-Coded K=3 Default:
+
+   Search your codebase for:
+   - Default K assignments: K = 3
+   - Fallback logic: if (K is invalid) then K = 3
+   - Minimum K thresholds: K = max(3, calculated_value)
+
+   → REPLACE all K=3 defaults with K=1
+
+   Rationale: When uncertain, prefer conservatism (K=1) over
+   aggressive selection (K=3).
+
+B. Add Randomization/Dithering to Break Threshold Effects:
+
+   If K calculation produces same value for many incidents:
+
+   K_final = K_calculated + random_adjustment
+
+   Where random_adjustment in {-1, 0, +1} based on:
+   - Score distribution variance
+   - Incident complexity uncertainty
+   - Secondary scoring factors
+
+   This creates natural variation in the 1-4 root cause range.
+
+C. Implement Multi-Tier Candidate Scoring:
+
+   Instead of selecting top-K blindly, use tiered selection:
+
+   Tier 1 (must include): Candidates with score > high_threshold
+   Tier 2 (maybe include): Candidates with medium_threshold < score < high_threshold
+   Tier 3 (exclude): Candidates with score < medium_threshold
+
+   Selection Logic:
+   - If Tier 1 has 1 candidate: Return K=1 (only the clear winner)
+   - If Tier 1 has 2 candidates: Return K=2
+   - If Tier 1 has 0 candidates: Escalate to Tier 2, apply stricter filtering
+
+   This prevents forcing K=3 when only 1-2 strong candidates exist.
+
+----------------------------------------------------------------------
+STRATEGY 5: INCREASE 2-ROOT-CAUSE DETECTION
+----------------------------------------------------------------------
+
+Problem: Only 7.9% of incidents have 2 root causes (too low).
+The algorithm jumps from K=1 directly to K=3, skipping K=2.
+
+RECOMMENDED ADJUSTMENTS:
+
+A. Implement Dual-Cause Pattern Detection:
+
+   Check for common 2-root-cause scenarios:
+   ✓ Two distinct equipment units failing simultaneously
+   ✓ Two different fault types on same equipment
+   ✓ Primary failure + secondary correlated failure
+   ✓ AC power failure + DC power failure (dual supply issue)
+   ✓ CPRI interface failure + corresponding RRU failure
+
+   When detected → Force K=2
+
+B. Score Clustering Analysis:
+
+   Examine top-5 candidate score distribution:
+
+   If scores show 2-cluster pattern:
+   [high, high, ---- gap ----, low, low, low]
+
+   → Set K=2 (two clear winners separated from pack)
+
+   Use clustering algorithm (k-means with k=2) on top-5 scores.
+
+C. Equipment Pairing Logic:
+
+   In telecom hierarchies, common root cause pairs:
+   - BBU + corresponding RRU
+   - Power supply A + Power supply B (redundancy failure)
+   - Primary interface + backup interface
+
+   When paired equipment involved → Bias toward K=2
+
+======================================================================
+PART 3: IMPLEMENTATION PRIORITY ROADMAP
+======================================================================
+
+PHASE 1 - IMMEDIATE FIXES (Highest Impact):
+Priority 1A: Check and eliminate any hard-coded K=3 defaults
+            → Replace with K=1 defaults
+
+Priority 1B: Increase in-degree threshold from 0/1 to 2
+            → Filters weak secondary-effect nodes
+
+Priority 1C: Implement single-cause confidence detector
+            → Boosts single root cause detection from 25.8% to ~35%
+
+Expected F1 Improvement: +0.02 to +0.03
+
+PHASE 2 - CORE ALGORITHM ADJUSTMENTS (Medium Impact):
+Priority 2A: Reduce K-value calculation by 20-30%
+            → Lowers average from 2.70 to ~2.30
+
+Priority 2B: Add score gap analysis to force K=1 when clear winner
+            → Increases single-cause detection to ~37%
+
+Priority 2C: Implement dual-cause pattern detection
+            → Increases 2-root-cause cases from 7.9% to ~15-20%
+
+Expected Cumulative F1 Improvement: +0.03 to +0.04
+
+PHASE 3 - REFINEMENT (Fine-Tuning):
+Priority 3A: Add temporal priority weighting to in-degree
+            → Better distinguishes primary from propagated causes
+
+Priority 3B: Implement randomization/dithering to break clustering
+            → Creates natural distribution variation
+
+Priority 3C: Multi-tier candidate scoring system
+            → Adaptive K selection based on score distribution
+
+Expected Cumulative F1 Improvement: +0.04 to +0.05
+
+TOTAL EXPECTED IMPROVEMENT: F1 Score from ~0.78-0.79 → 0.82-0.83
+
+======================================================================
+PART 4: VALIDATION STRATEGY
+======================================================================
+
+After Each Change:
+
+1. RUN YOUR ALGORITHM on the same dataset
+2. CALCULATE the new statistics:
+   - Average root causes per incident
+   - Distribution percentages
+3. COMPARE against optimal benchmarks:
+   - Target average: 2.0-2.1
+   - Target single-cause: 35-40%
+   - Target 2-3 causes: 45-50%
+   - Target 4+ causes: <15%
+4. COMPUTE F1 score using ground truth labels
+5. ITERATE if not converging toward F1=0.82
+
+Red Flags to Watch:
+⚠ Average drops below 1.8: You've over-corrected (too conservative)
+⚠ Single-cause ratio exceeds 45%: Under-aggressive
+⚠ New artificial clustering emerges: Threshold effect in new logic
+
+======================================================================
+PART 5: QUICK REFERENCE - TARGET METRICS
+======================================================================
+
+OPTIMAL DISTRIBUTION (F1=0.82):
+┌────────────────────┬──────────┬───────────┐
+│ Root Cause Count   │ Optimal  │ Your Goal │
+├────────────────────┼──────────┼───────────┤
+│ 1 root cause       │  37.4%   │  35-40%   │
+│ 2 root causes      │  ~11%    │  10-15%   │
+│ 3 root causes      │  ~37%    │  35-40%   │
+│ 4 root causes      │  ~10%    │  8-12%    │
+│ 5+ root causes     │  ~4%     │  <5%      │
+├────────────────────┼──────────┼───────────┤
+│ Average            │  2.081   │  2.0-2.1  │
+└────────────────────┴──────────┴───────────┘
+
+YOUR CURRENT STATUS:
+┌────────────────────┬──────────┬────────────┬──────────┐
+│ Root Cause Count   │ Current  │ Target     │ Gap      │
+├────────────────────┼──────────┼────────────┼──────────┤
+│ 1 root cause       │  25.8%   │  35-40%    │  -11.6%  │
+│ 2 root causes      │   7.9%   │  10-15%    │   -4.6%  │
+│ 3 root causes      │  60.4%   │  35-40%    │  +22.9%  │
+│ 4 root causes      │   3.4%   │  8-12%     │   -6.1%  │
+│ 5+ root causes     │   2.5%   │  <5%       │   ✓ OK   │
+├────────────────────┼──────────┼────────────┼──────────┤
+│ Average            │  ~2.70   │  2.0-2.1   │  +0.60   │
+└────────────────────┴──────────┴────────────┴──────────┘
+
+PRIMARY ADJUSTMENTS NEEDED:
+1. ↓ Reduce 3-root-cause over-concentration by 23 percentage points
+2. ↑ Increase single root cause detection by 12 percentage points
+3. ↑ Increase 2-root-cause detection by 5 percentage points
+4. ↑ Increase 4-root-cause cases by 6 percentage points
+5. ↓ Reduce overall average by 0.6 root causes per incident
+
+======================================================================
+END OF RECOMMENDATIONS
+======================================================================
+
+For questions or clarifications on implementation:
+- Review comprehensive_comparison.txt for detailed benchmark analysis
+- Review user_result_analysis.txt for your algorithm's statistical profile
+- Reference the F1=0.82 result_record file for ideal case-by-case patterns
+
+Good luck with optimization!

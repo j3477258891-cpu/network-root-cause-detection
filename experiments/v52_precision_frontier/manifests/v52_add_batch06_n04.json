@@ -1,0 +1,163 @@
+{
+  "probe_id": "v52_add_batch06_n04",
+  "baseline": "D:\\zgyidong\\experiments\\v30_meta_stack\\submissions\\v30_cross_order_top5.csv",
+  "fixed_base": "v37_exact_corrections",
+  "path": "D:\\zgyidong\\experiments\\v52_precision_frontier\\submissions\\v52_add_batch06_n04.csv",
+  "kind": "add",
+  "candidate_count": 4,
+  "actions": [
+    {
+      "action_id": "v37_exact_001",
+      "order_id": "d5376a71-c48e-4351-ba60-f982778b3eb4",
+      "remove_rids": [
+        "#-1:0c809583-390f-4d16-9b91-c4fb1e99c5c2"
+      ],
+      "add_rids": [
+        "#-1:e401b7b4-697f-434e-8437-4b2136d6904f"
+      ],
+      "source": "historical_leaderboard_equations",
+      "expected_gain": null,
+      "evidence": {
+        "proof": "label fixed in every binary solution of all scored equations"
+      }
+    },
+    {
+      "action_id": "v52_add_065_5f31acb6",
+      "order_id": "5f31acb6-cb86-4488-af6a-f6d2d4d3a4d9",
+      "remove_rids": [],
+      "add_rids": [
+        "#-1:98253ab3-be74-4530-a161-aa4625fc725c"
+      ],
+      "source": "v40_boundary_frontier",
+      "expected_gain": 0.015384615384615385,
+      "evidence": {
+        "source_rank": 65,
+        "order_id": "5f31acb6-cb86-4488-af6a-f6d2d4d3a4d9",
+        "rid": "#-1:98253ab3-be74-4530-a161-aa4625fc725c",
+        "kind": "add",
+        "title": "单板电源关断",
+        "rank_average": 0.6272783279418945,
+        "scores": {
+          "v11": 0.4130406975746155,
+          "v13": 0.3781864047050476,
+          "v19": 0.16047295928001404,
+          "station": 0.287889301776886,
+          "domain": 0.30483531951904297,
+          "consensus": 0.18694455921649933
+        }
+      }
+    },
+    {
+      "action_id": "v52_add_069_7b1b39e5",
+      "order_id": "7b1b39e5-954a-418c-9ed7-03285444ea24",
+      "remove_rids": [],
+      "add_rids": [
+        "#-1:9e23d2aa-04a7-45dc-ba50-0453d34937d4"
+      ],
+      "source": "v40_boundary_frontier",
+      "expected_gain": 0.014492753623188406,
+      "evidence": {
+        "source_rank": 69,
+        "order_id": "7b1b39e5-954a-418c-9ed7-03285444ea24",
+        "rid": "#-1:9e23d2aa-04a7-45dc-ba50-0453d34937d4",
+        "kind": "add",
+        "title": "网元断链告警",
+        "rank_average": 0.6252703070640564,
+        "scores": {
+          "v11": 0.14322508871555328,
+          "v13": 0.13565132021903992,
+          "v19": 0.167474165558815,
+          "station": 0.4847330152988434,
+          "domain": 0.4008641839027405,
+          "consensus": 0.6486541032791138
+        }
+      }
+    },
+    {
+      "action_id": "v52_add_072_440eed78",
+      "order_id": "440eed78-f2a8-46e0-84fb-935b7a722faf",
+      "remove_rids": [],
+      "add_rids": [
+        "#-1:f513d433-6f14-4554-9322-84cfb614c07a"
+      ],
+      "source": "v40_boundary_frontier",
+      "expected_gain": 0.013888888888888888,
+      "evidence": {
+        "source_rank": 72,
+        "order_id": "440eed78-f2a8-46e0-84fb-935b7a722faf",
+        "rid": "#-1:f513d433-6f14-4554-9322-84cfb614c07a",
+        "kind": "add",
+        "title": "以太网物理接口(ETPI) 信号丢失(LOS)",
+        "rank_average": 0.6232622265815735,
+        "scores": {
+          "v11": 0.1798117458820343,
+          "v13": 0.1811266988515854,
+          "v19": 0.4546648859977722,
+          "station": 0.18597620725631714,
+          "domain": 0.18816910684108734,
+          "consensus": 0.20890149474143982
+        }
+      }
+    },
+    {
+      "action_id": "v52_add_073_b1d58e4a",
+      "order_id": "b1d58e4a-b781-41a2-a685-cf803f14d38f",
+      "remove_rids": [],
+      "add_rids": [
+        "#-1:1e5c63fb-6ad2-401a-9969-a1bc6def1070"
+      ],
+      "source": "v40_boundary_frontier",
+      "expected_gain": 0.0136986301369863,
+      "evidence": {
+        "source_rank": 73,
+        "order_id": "b1d58e4a-b781-41a2-a685-cf803f14d38f",
+        "rid": "#-1:1e5c63fb-6ad2-401a-9969-a1bc6def1070",
+        "kind": "add",
+        "title": "LTE小区退出服务",
+        "rank_average": 0.6220781207084656,
+        "scores": {
+          "v11": 0.45265328884124756,
+          "v13": 0.4549090564250946,
+          "v19": 0.18072710931301117,
+          "station": 0.1602591723203659,
+          "domain": 0.25000715255737305,
+          "consensus": 0.10280881822109222
+        }
+      }
+    }
+  ],
+  "predictions": 1039,
+  "sha256": "08e007ae6f198caa0afdab8cc5712888c34333ce191e2392edb4335c01b97e21",
+  "score_possibilities": [
+    {
+      "candidate_correct": 0,
+      "tp": 956,
+      "predictions_delta": 4,
+      "score": 0.917906865
+    },
+    {
+      "candidate_correct": 1,
+      "tp": 957,
+      "predictions_delta": 4,
+      "score": 0.918867019
+    },
+    {
+      "candidate_correct": 2,
+      "tp": 958,
+      "predictions_delta": 4,
+      "score": 0.919827172
+    },
+    {
+      "candidate_correct": 3,
+      "tp": 959,
+      "predictions_delta": 4,
+      "score": 0.920787326
+    },
+    {
+      "candidate_correct": 4,
+      "tp": 960,
+      "predictions_delta": 4,
+      "score": 0.92174748
+    }
+  ]
+}

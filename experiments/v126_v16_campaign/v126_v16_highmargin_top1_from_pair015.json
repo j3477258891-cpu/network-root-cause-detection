@@ -1,0 +1,35 @@
+{
+  "version": "v126-v16-highmargin",
+  "base": "D:\\zgyidong\\experiments\\v124_campaign\\v124_single_pair_015_from_probe13.csv",
+  "base_sha256": "31131129bba8363fcf1df2c053f836102e8f209640164c2c4c7eedb431447c6c",
+  "base_public_f1": 0.921597,
+  "base_tp": 958,
+  "source_catalog": "D:\\zgyidong\\experiments\\v16\\v16_test_swap_catalog.csv",
+  "oof_calibration": {
+    "margin_ge_0.7": {
+      "positive": 4,
+      "total": 5
+    },
+    "margin_ge_0.6": {
+      "positive": 6,
+      "total": 10
+    }
+  },
+  "candidates": [
+    {
+      "order_id": "dd29409d-298e-451b-8231-e0c53c0e420a",
+      "removed_rid": "#-1:8b8bf8e9-9748-4726-8fd5-e9565379f047",
+      "added_rid": "#-1:dd1a4fe7-36f6-40d6-976a-61e7f8d57656",
+      "margin": "0.8709786879532513",
+      "seed_min_margin": "0.8604051942394522",
+      "high_conflict": "True",
+      "meta_mean": "-0.45825945141024693"
+    }
+  ],
+  "predictions": 1035,
+  "orders": 546,
+  "sha256": "6e374b33feb4215e73812735df895267494dbf88bc26c48228285ade168c909a",
+  "status": "exploratory_not_scored",
+  "warning": "V16 OOF calibration and model margins are not online evidence.",
+  "target_condition": "if all 1 swaps net +1, TP=959, F1=0.922559"
+}

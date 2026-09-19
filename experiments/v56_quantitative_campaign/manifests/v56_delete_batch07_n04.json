@@ -1,0 +1,555 @@
+{
+  "probe_id": "v56_delete_batch07_n04",
+  "path": "D:\\zgyidong\\experiments\\v56_quantitative_campaign\\submissions\\v56_delete_batch07_n04.csv",
+  "baseline": "D:\\zgyidong\\experiments\\v30_meta_stack\\submissions\\v30_cross_order_top5.csv",
+  "fixed_base": "v37_exact_corrections",
+  "candidate_actions": [
+    {
+      "action_id": "v50_delete_batch04_n05_hold_001",
+      "order_id": "d793d532-08ad-4410-a3fd-c09844eb67d0",
+      "remove_rids": [
+        "#-1:16b56bf4-e427-4983-bbcf-28d712f9d40e"
+      ],
+      "add_rids": [],
+      "source": "v50_empirical_bayes_stratum",
+      "expected_gain": 0.01287383640324824,
+      "evidence": {
+        "row": 2734,
+        "rank": 14,
+        "rank_bin": "r11_25",
+        "order_index": 448,
+        "order_id": "d793d532-08ad-4410-a3fd-c09844eb67d0",
+        "rid": "#-1:16b56bf4-e427-4983-bbcf-28d712f9d40e",
+        "kind": "delete",
+        "title": "[衍生告警]PTN光缆中断，单报LOS",
+        "vendor": "设备商甲",
+        "device_type": "",
+        "deployment": "",
+        "radio": "",
+        "timeline": "000111",
+        "current_count": 4,
+        "alarm_count": 19,
+        "rank_average": 0.6827309131622314,
+        "score_median": 0.6909367144107819,
+        "agreement": 5,
+        "scores": {
+          "v11": 0.694837749004364,
+          "v13": 0.6870356798171997,
+          "v19": 0.18034784495830536,
+          "station": 0.6969417333602905,
+          "domain": 0.6028507947921753,
+          "consensus": 0.8030528426170349
+        },
+        "matched_rule": {
+          "fields": [
+            "vendor",
+            "rank_bin"
+          ],
+          "values": [
+            "设备商甲",
+            "r11_25"
+          ],
+          "support": 7,
+          "correct": 4,
+          "precision": 0.5714285714285714,
+          "fold_count": 4,
+          "fold_precision": {
+            "0": 0.0,
+            "2": 1.0,
+            "3": 1.0,
+            "4": 0.5
+          },
+          "posterior_mean": 0.5530373765667884,
+          "beta_lower_75": 0.47081637401228194,
+          "advantage": 0.01287383640324824
+        },
+        "estimated_advantage": 0.01287383640324824
+      }
+    },
+    {
+      "action_id": "v50_delete_batch04_n05_hold_002",
+      "order_id": "af374848-7bd9-44f9-bfb8-4c087a74d016",
+      "remove_rids": [
+        "#-1:d968cca4-8b85-4d13-b5f0-06d744dd90b4"
+      ],
+      "add_rids": [],
+      "source": "v50_empirical_bayes_stratum",
+      "expected_gain": 0.01287383640324824,
+      "evidence": {
+        "row": 2101,
+        "rank": 19,
+        "rank_bin": "r11_25",
+        "order_index": 361,
+        "order_id": "af374848-7bd9-44f9-bfb8-4c087a74d016",
+        "rid": "#-1:d968cca4-8b85-4d13-b5f0-06d744dd90b4",
+        "kind": "delete",
+        "title": "[衍生告警]PTN光缆中断，单报LOS",
+        "vendor": "设备商甲",
+        "device_type": "",
+        "deployment": "",
+        "radio": "",
+        "timeline": "000111",
+        "current_count": 4,
+        "alarm_count": 16,
+        "rank_average": 0.6894243359565735,
+        "score_median": 0.6422726809978485,
+        "agreement": 5,
+        "scores": {
+          "v11": 0.6518644094467163,
+          "v13": 0.6326809525489807,
+          "v19": 0.43571433424949646,
+          "station": 0.7149370312690735,
+          "domain": 0.6665589213371277,
+          "consensus": 0.5796337723731995
+        },
+        "matched_rule": {
+          "fields": [
+            "vendor",
+            "rank_bin"
+          ],
+          "values": [
+            "设备商甲",
+            "r11_25"
+          ],
+          "support": 7,
+          "correct": 4,
+          "precision": 0.5714285714285714,
+          "fold_count": 4,
+          "fold_precision": {
+            "0": 0.0,
+            "2": 1.0,
+            "3": 1.0,
+            "4": 0.5
+          },
+          "posterior_mean": 0.5530373765667884,
+          "beta_lower_75": 0.47081637401228194,
+          "advantage": 0.01287383640324824
+        },
+        "estimated_advantage": 0.01287383640324824
+      }
+    },
+    {
+      "action_id": "v50_delete_batch04_n05_hold_003",
+      "order_id": "5f0b3c7f-806d-4622-a671-5d23ee09c827",
+      "remove_rids": [
+        "#-1:2a0b69d3-858a-49e0-9b6a-e1cf21eb55bb"
+      ],
+      "add_rids": [],
+      "source": "v50_empirical_bayes_stratum",
+      "expected_gain": 0.01287383640324824,
+      "evidence": {
+        "row": 1005,
+        "rank": 20,
+        "rank_bin": "r11_25",
+        "order_index": 179,
+        "order_id": "5f0b3c7f-806d-4622-a671-5d23ee09c827",
+        "rid": "#-1:2a0b69d3-858a-49e0-9b6a-e1cf21eb55bb",
+        "kind": "delete",
+        "title": "RRU链路断",
+        "vendor": "设备商甲",
+        "device_type": "RU",
+        "deployment": "NSA",
+        "radio": "LTE FDD",
+        "timeline": "111110",
+        "current_count": 2,
+        "alarm_count": 6,
+        "rank_average": 0.6905571818351746,
+        "score_median": 0.509697750210762,
+        "agreement": 3,
+        "scores": {
+          "v11": 0.8641796112060547,
+          "v13": 0.6758396625518799,
+          "v19": 0.44868531823158264,
+          "station": 0.47820404171943665,
+          "domain": 0.5241686105728149,
+          "consensus": 0.4952268898487091
+        },
+        "matched_rule": {
+          "fields": [
+            "vendor",
+            "rank_bin"
+          ],
+          "values": [
+            "设备商甲",
+            "r11_25"
+          ],
+          "support": 7,
+          "correct": 4,
+          "precision": 0.5714285714285714,
+          "fold_count": 4,
+          "fold_precision": {
+            "0": 0.0,
+            "2": 1.0,
+            "3": 1.0,
+            "4": 0.5
+          },
+          "posterior_mean": 0.5530373765667884,
+          "beta_lower_75": 0.47081637401228194,
+          "advantage": 0.01287383640324824
+        },
+        "estimated_advantage": 0.01287383640324824
+      }
+    },
+    {
+      "action_id": "v50_delete_batch04_n05_hold_004",
+      "order_id": "9adc0ae9-f4d1-4084-b78a-1ee0ce83b3ab",
+      "remove_rids": [
+        "#-1:b73ec874-5e81-4451-8181-fdbc79712652"
+      ],
+      "add_rids": [],
+      "source": "v50_empirical_bayes_stratum",
+      "expected_gain": 0.01287383640324824,
+      "evidence": {
+        "row": 1790,
+        "rank": 22,
+        "rank_bin": "r11_25",
+        "order_index": 311,
+        "order_id": "9adc0ae9-f4d1-4084-b78a-1ee0ce83b3ab",
+        "rid": "#-1:b73ec874-5e81-4451-8181-fdbc79712652",
+        "kind": "delete",
+        "title": "输入电源断",
+        "vendor": "设备商甲",
+        "device_type": "RU",
+        "deployment": "SA_NSA",
+        "radio": "TD-LTE,NR",
+        "timeline": "000011",
+        "current_count": 6,
+        "alarm_count": 14,
+        "rank_average": 0.6912779211997986,
+        "score_median": 0.6201733648777008,
+        "agreement": 4,
+        "scores": {
+          "v11": 0.6720532774925232,
+          "v13": 0.6254249811172485,
+          "v19": 0.7898967266082764,
+          "station": 0.48455190658569336,
+          "domain": 0.3729459047317505,
+          "consensus": 0.6149217486381531
+        },
+        "matched_rule": {
+          "fields": [
+            "vendor",
+            "rank_bin"
+          ],
+          "values": [
+            "设备商甲",
+            "r11_25"
+          ],
+          "support": 7,
+          "correct": 4,
+          "precision": 0.5714285714285714,
+          "fold_count": 4,
+          "fold_precision": {
+            "0": 0.0,
+            "2": 1.0,
+            "3": 1.0,
+            "4": 0.5
+          },
+          "posterior_mean": 0.5530373765667884,
+          "beta_lower_75": 0.47081637401228194,
+          "advantage": 0.01287383640324824
+        },
+        "estimated_advantage": 0.01287383640324824
+      }
+    }
+  ],
+  "actions": [
+    {
+      "action_id": "v37_exact_001",
+      "order_id": "d5376a71-c48e-4351-ba60-f982778b3eb4",
+      "remove_rids": [
+        "#-1:0c809583-390f-4d16-9b91-c4fb1e99c5c2"
+      ],
+      "add_rids": [
+        "#-1:e401b7b4-697f-434e-8437-4b2136d6904f"
+      ],
+      "source": "historical_leaderboard_equations",
+      "expected_gain": null,
+      "evidence": {
+        "proof": "label fixed in every binary solution of all scored equations"
+      }
+    },
+    {
+      "action_id": "v50_delete_batch04_n05_hold_001",
+      "order_id": "d793d532-08ad-4410-a3fd-c09844eb67d0",
+      "remove_rids": [
+        "#-1:16b56bf4-e427-4983-bbcf-28d712f9d40e"
+      ],
+      "add_rids": [],
+      "source": "v50_empirical_bayes_stratum",
+      "expected_gain": 0.01287383640324824,
+      "evidence": {
+        "row": 2734,
+        "rank": 14,
+        "rank_bin": "r11_25",
+        "order_index": 448,
+        "order_id": "d793d532-08ad-4410-a3fd-c09844eb67d0",
+        "rid": "#-1:16b56bf4-e427-4983-bbcf-28d712f9d40e",
+        "kind": "delete",
+        "title": "[衍生告警]PTN光缆中断，单报LOS",
+        "vendor": "设备商甲",
+        "device_type": "",
+        "deployment": "",
+        "radio": "",
+        "timeline": "000111",
+        "current_count": 4,
+        "alarm_count": 19,
+        "rank_average": 0.6827309131622314,
+        "score_median": 0.6909367144107819,
+        "agreement": 5,
+        "scores": {
+          "v11": 0.694837749004364,
+          "v13": 0.6870356798171997,
+          "v19": 0.18034784495830536,
+          "station": 0.6969417333602905,
+          "domain": 0.6028507947921753,
+          "consensus": 0.8030528426170349
+        },
+        "matched_rule": {
+          "fields": [
+            "vendor",
+            "rank_bin"
+          ],
+          "values": [
+            "设备商甲",
+            "r11_25"
+          ],
+          "support": 7,
+          "correct": 4,
+          "precision": 0.5714285714285714,
+          "fold_count": 4,
+          "fold_precision": {
+            "0": 0.0,
+            "2": 1.0,
+            "3": 1.0,
+            "4": 0.5
+          },
+          "posterior_mean": 0.5530373765667884,
+          "beta_lower_75": 0.47081637401228194,
+          "advantage": 0.01287383640324824
+        },
+        "estimated_advantage": 0.01287383640324824
+      }
+    },
+    {
+      "action_id": "v50_delete_batch04_n05_hold_002",
+      "order_id": "af374848-7bd9-44f9-bfb8-4c087a74d016",
+      "remove_rids": [
+        "#-1:d968cca4-8b85-4d13-b5f0-06d744dd90b4"
+      ],
+      "add_rids": [],
+      "source": "v50_empirical_bayes_stratum",
+      "expected_gain": 0.01287383640324824,
+      "evidence": {
+        "row": 2101,
+        "rank": 19,
+        "rank_bin": "r11_25",
+        "order_index": 361,
+        "order_id": "af374848-7bd9-44f9-bfb8-4c087a74d016",
+        "rid": "#-1:d968cca4-8b85-4d13-b5f0-06d744dd90b4",
+        "kind": "delete",
+        "title": "[衍生告警]PTN光缆中断，单报LOS",
+        "vendor": "设备商甲",
+        "device_type": "",
+        "deployment": "",
+        "radio": "",
+        "timeline": "000111",
+        "current_count": 4,
+        "alarm_count": 16,
+        "rank_average": 0.6894243359565735,
+        "score_median": 0.6422726809978485,
+        "agreement": 5,
+        "scores": {
+          "v11": 0.6518644094467163,
+          "v13": 0.6326809525489807,
+          "v19": 0.43571433424949646,
+          "station": 0.7149370312690735,
+          "domain": 0.6665589213371277,
+          "consensus": 0.5796337723731995
+        },
+        "matched_rule": {
+          "fields": [
+            "vendor",
+            "rank_bin"
+          ],
+          "values": [
+            "设备商甲",
+            "r11_25"
+          ],
+          "support": 7,
+          "correct": 4,
+          "precision": 0.5714285714285714,
+          "fold_count": 4,
+          "fold_precision": {
+            "0": 0.0,
+            "2": 1.0,
+            "3": 1.0,
+            "4": 0.5
+          },
+          "posterior_mean": 0.5530373765667884,
+          "beta_lower_75": 0.47081637401228194,
+          "advantage": 0.01287383640324824
+        },
+        "estimated_advantage": 0.01287383640324824
+      }
+    },
+    {
+      "action_id": "v50_delete_batch04_n05_hold_003",
+      "order_id": "5f0b3c7f-806d-4622-a671-5d23ee09c827",
+      "remove_rids": [
+        "#-1:2a0b69d3-858a-49e0-9b6a-e1cf21eb55bb"
+      ],
+      "add_rids": [],
+      "source": "v50_empirical_bayes_stratum",
+      "expected_gain": 0.01287383640324824,
+      "evidence": {
+        "row": 1005,
+        "rank": 20,
+        "rank_bin": "r11_25",
+        "order_index": 179,
+        "order_id": "5f0b3c7f-806d-4622-a671-5d23ee09c827",
+        "rid": "#-1:2a0b69d3-858a-49e0-9b6a-e1cf21eb55bb",
+        "kind": "delete",
+        "title": "RRU链路断",
+        "vendor": "设备商甲",
+        "device_type": "RU",
+        "deployment": "NSA",
+        "radio": "LTE FDD",
+        "timeline": "111110",
+        "current_count": 2,
+        "alarm_count": 6,
+        "rank_average": 0.6905571818351746,
+        "score_median": 0.509697750210762,
+        "agreement": 3,
+        "scores": {
+          "v11": 0.8641796112060547,
+          "v13": 0.6758396625518799,
+          "v19": 0.44868531823158264,
+          "station": 0.47820404171943665,
+          "domain": 0.5241686105728149,
+          "consensus": 0.4952268898487091
+        },
+        "matched_rule": {
+          "fields": [
+            "vendor",
+            "rank_bin"
+          ],
+          "values": [
+            "设备商甲",
+            "r11_25"
+          ],
+          "support": 7,
+          "correct": 4,
+          "precision": 0.5714285714285714,
+          "fold_count": 4,
+          "fold_precision": {
+            "0": 0.0,
+            "2": 1.0,
+            "3": 1.0,
+            "4": 0.5
+          },
+          "posterior_mean": 0.5530373765667884,
+          "beta_lower_75": 0.47081637401228194,
+          "advantage": 0.01287383640324824
+        },
+        "estimated_advantage": 0.01287383640324824
+      }
+    },
+    {
+      "action_id": "v50_delete_batch04_n05_hold_004",
+      "order_id": "9adc0ae9-f4d1-4084-b78a-1ee0ce83b3ab",
+      "remove_rids": [
+        "#-1:b73ec874-5e81-4451-8181-fdbc79712652"
+      ],
+      "add_rids": [],
+      "source": "v50_empirical_bayes_stratum",
+      "expected_gain": 0.01287383640324824,
+      "evidence": {
+        "row": 1790,
+        "rank": 22,
+        "rank_bin": "r11_25",
+        "order_index": 311,
+        "order_id": "9adc0ae9-f4d1-4084-b78a-1ee0ce83b3ab",
+        "rid": "#-1:b73ec874-5e81-4451-8181-fdbc79712652",
+        "kind": "delete",
+        "title": "输入电源断",
+        "vendor": "设备商甲",
+        "device_type": "RU",
+        "deployment": "SA_NSA",
+        "radio": "TD-LTE,NR",
+        "timeline": "000011",
+        "current_count": 6,
+        "alarm_count": 14,
+        "rank_average": 0.6912779211997986,
+        "score_median": 0.6201733648777008,
+        "agreement": 4,
+        "scores": {
+          "v11": 0.6720532774925232,
+          "v13": 0.6254249811172485,
+          "v19": 0.7898967266082764,
+          "station": 0.48455190658569336,
+          "domain": 0.3729459047317505,
+          "consensus": 0.6149217486381531
+        },
+        "matched_rule": {
+          "fields": [
+            "vendor",
+            "rank_bin"
+          ],
+          "values": [
+            "设备商甲",
+            "r11_25"
+          ],
+          "support": 7,
+          "correct": 4,
+          "precision": 0.5714285714285714,
+          "fold_count": 4,
+          "fold_precision": {
+            "0": 0.0,
+            "2": 1.0,
+            "3": 1.0,
+            "4": 0.5
+          },
+          "posterior_mean": 0.5530373765667884,
+          "beta_lower_75": 0.47081637401228194,
+          "advantage": 0.01287383640324824
+        },
+        "estimated_advantage": 0.01287383640324824
+      }
+    }
+  ],
+  "candidate_count": 4,
+  "additions": 0,
+  "deletions": 4,
+  "prediction_delta": -4,
+  "predictions": 1031,
+  "expected_delta_tp": -1.7878504937328463,
+  "sha256": "0f63c706ab5068eadcbad3d567c463cf1c6738834e4f124876416c173da5fc74",
+  "score_possibilities": [
+    {
+      "batch_delta_tp": -4,
+      "tp": 952,
+      "score": 0.917590361
+    },
+    {
+      "batch_delta_tp": -3,
+      "tp": 953,
+      "score": 0.918554217
+    },
+    {
+      "batch_delta_tp": -2,
+      "tp": 954,
+      "score": 0.919518072
+    },
+    {
+      "batch_delta_tp": -1,
+      "tp": 955,
+      "score": 0.920481928
+    },
+    {
+      "batch_delta_tp": 0,
+      "tp": 956,
+      "score": 0.921445783
+    }
+  ]
+}

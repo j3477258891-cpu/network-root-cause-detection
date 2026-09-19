@@ -1,0 +1,67 @@
+{
+  "probe_id": "v35_stable_single1",
+  "baseline": "D:\\zgyidong\\experiments\\v30_meta_stack\\submissions\\v30_cross_order_top5.csv",
+  "path": "D:\\zgyidong\\experiments\\v35_stable_swaps\\submissions\\v35_stable_single1.csv",
+  "kind": "swap",
+  "actions": [
+    {
+      "action_id": "v35_stable_001_8106c960",
+      "order_id": "8106c960-6510-43b1-af25-b3c91388c598",
+      "remove_rids": [
+        "#-1:d1108dd6-92f1-4970-9cd2-912857e84b72"
+      ],
+      "add_rids": [
+        "#-1:17cbacb0-d3fe-45b8-8627-2cb9afedb0ab"
+      ],
+      "source": "v35_multi_model_stable_swap",
+      "expected_gain": 0.047787636518478394,
+      "evidence": {
+        "order_index": 254,
+        "order_id": "8106c960-6510-43b1-af25-b3c91388c598",
+        "remove_rids": [
+          "#-1:d1108dd6-92f1-4970-9cd2-912857e84b72"
+        ],
+        "add_rids": [
+          "#-1:17cbacb0-d3fe-45b8-8627-2cb9afedb0ab"
+        ],
+        "model_utility_min": 0.047787636518478394,
+        "model_utility_mean": 0.054404981434345245,
+        "model_utility_values": [
+          0.0558946430683136,
+          0.047787636518478394,
+          0.05836367607116699,
+          0.055573970079422
+        ],
+        "supporting_model_indices": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "count": 4
+      }
+    }
+  ],
+  "predictions": 1035,
+  "prediction_delta": 0,
+  "sha256": "f03d8321fc1d3f6de4e78a8b8d8a50ada9adfb1f70d0abc5455eb87dacdc404c",
+  "excluded_orders": 129,
+  "protected_nodes": 64,
+  "score_possibilities": [
+    {
+      "delta_tp": -1,
+      "tp": 954,
+      "score": 0.917748918
+    },
+    {
+      "delta_tp": 0,
+      "tp": 955,
+      "score": 0.918710919
+    },
+    {
+      "delta_tp": 1,
+      "tp": 956,
+      "score": 0.91967292
+    }
+  ]
+}

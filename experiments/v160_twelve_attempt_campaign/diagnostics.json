@@ -1,0 +1,158 @@
+{
+  "source_class": "retrospective diagnostics; not new holdout validation",
+  "parent_gate_passed": false,
+  "parent_criteria": {
+    "complete_five_folds": true,
+    "at_least_three_positive_folds": true,
+    "pooled_beats_both_controls": true,
+    "positive_absolute_lower95": true,
+    "positive_relative_lower95_both": false,
+    "at_least_one_complete_historical_pool_replayed": true,
+    "provisional_integer_upper_at_least_target": false
+  },
+  "parent_pooled_gains": {
+    "catboost": 0.0031519235690522507,
+    "v38_control": 0.0020806036507593495,
+    "candidate": 0.003956306066798532
+  },
+  "parent_bootstrap": {
+    "iterations": 2000,
+    "station_clusters": 820,
+    "absolute_lower95": 0.00037060542583543796,
+    "relative_lower95": {
+      "catboost": -0.0009812598281172924,
+      "v38_control": -0.0017522495415675104
+    }
+  },
+  "cached_prediction_integrity_errors": [],
+  "labeled_train_orders": 1634,
+  "independent_campaign_trials": 0,
+  "v150_actual_first_pool": {
+    "predictions": 1125,
+    "tp": 989,
+    "score": "0.911941",
+    "true_additions": 20,
+    "pool_size": 80
+  },
+  "v150_warning": "Three-model nomination produced 20/80, so model support is not independent evidence.",
+  "historical_replay": {
+    "source_class": "retrospective_first_pool_count_replay",
+    "rows": [
+      {
+        "file": "D:\\zgyidong\\experiments\\v150_adaptive_addition_campaign\\v150_probe_01_all80.csv",
+        "actual_delta_tp": 20,
+        "prior_equations": 61,
+        "independent_trial": false,
+        "evaluated": false,
+        "reason": "full pool not covered by frozen models; no partial-count scoring"
+      },
+      {
+        "file": "D:\\zgyidong\\experiments\\v153_complementary_repair_campaign\\v153_probe_p01_group.csv",
+        "actual_delta_tp": -3,
+        "prior_equations": 62,
+        "independent_trial": false,
+        "evaluated": true,
+        "actions": 5,
+        "predictions": {
+          "catboost": {
+            "mean_delta_tp": -2.2305927672317396,
+            "absolute_count_error": 0.7694072327682604,
+            "count_nll": 1.2880308052792881
+          },
+          "v38_control": {
+            "mean_delta_tp": -1.053489475209785,
+            "absolute_count_error": 1.946510524790215,
+            "count_nll": 2.883047407082203
+          },
+          "candidate": {
+            "mean_delta_tp": -1.6420411212207617,
+            "absolute_count_error": 1.3579588787792383,
+            "count_nll": 1.8385427847033207
+          }
+        },
+        "warning": "Marginal outcome filtering retains dependencies only as hard constraints; count likelihood is a working independence diagnostic"
+      },
+      {
+        "file": "D:\\zgyidong\\experiments\\v153_complementary_repair_campaign\\v153_probe_p02_group.csv",
+        "actual_delta_tp": -2,
+        "prior_equations": 63,
+        "independent_trial": false,
+        "evaluated": true,
+        "actions": 3,
+        "predictions": {
+          "catboost": {
+            "mean_delta_tp": -0.7941291672639584,
+            "absolute_count_error": 1.2058708327360415,
+            "count_nll": 1.870459310285424
+          },
+          "v38_control": {
+            "mean_delta_tp": -0.7278733304326486,
+            "absolute_count_error": 1.2721266695673514,
+            "count_nll": 2.013238686094317
+          },
+          "candidate": {
+            "mean_delta_tp": -0.7610012488483034,
+            "absolute_count_error": 1.2389987511516964,
+            "count_nll": 1.9382812774167406
+          }
+        },
+        "warning": "Marginal outcome filtering retains dependencies only as hard constraints; count likelihood is a working independence diagnostic"
+      },
+      {
+        "file": "D:\\zgyidong\\experiments\\v153_complementary_repair_campaign\\v153_probe_p03_group.csv",
+        "actual_delta_tp": 2,
+        "prior_equations": 64,
+        "independent_trial": false,
+        "evaluated": true,
+        "actions": 4,
+        "predictions": {
+          "catboost": {
+            "mean_delta_tp": 2.433022267695379,
+            "absolute_count_error": 0.433022267695379,
+            "count_nll": 1.059300563923322
+          },
+          "v38_control": {
+            "mean_delta_tp": 1.2715530243480815,
+            "absolute_count_error": 0.7284469756519185,
+            "count_nll": 1.2126605126801788
+          },
+          "candidate": {
+            "mean_delta_tp": 1.85228764602173,
+            "absolute_count_error": 0.1477123539782701,
+            "count_nll": 0.9596935614701729
+          }
+        },
+        "warning": "Marginal outcome filtering retains dependencies only as hard constraints; count likelihood is a working independence diagnostic"
+      }
+    ],
+    "full_pool_evaluations": 3,
+    "fitted_new_parameters": false,
+    "future_equations_used": false,
+    "split_rows_counted_as_independent": false,
+    "mean_absolute_count_error": {
+      "catboost": 0.8027667777332269,
+      "v38_control": 1.315694723336495,
+      "candidate": 0.9148899946364016
+    }
+  },
+  "wide_typed_fn_retraining": false,
+  "gate_blocks_submission": false,
+  "available_parent_report_keys": [
+    "complete",
+    "passed",
+    "protocol_sha256",
+    "quota_cost",
+    "deadline_at",
+    "source_class",
+    "caveat",
+    "folds",
+    "new_fitted_parameters",
+    "pooled_gains",
+    "bootstrap",
+    "criteria",
+    "historical_replay",
+    "preflight",
+    "completed_at",
+    "decision"
+  ]
+}

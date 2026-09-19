@@ -1,0 +1,69 @@
+{
+  "version": "v132-station-pure-addition",
+  "base": "D:\\zgyidong\\experiments\\v124_campaign\\v124_single_pair_015_from_probe13.csv",
+  "base_sha256": "31131129bba8363fcf1df2c053f836102e8f209640164c2c4c7eedb431447c6c",
+  "source_scores": "D:\\zgyidong\\experiments\\v30_meta_stack\\station_extra_trees_test.npy",
+  "slice_size": 3,
+  "available_additions": 432,
+  "selected": [
+    {
+      "order_id": "441995e6-e153-4e40-af0f-d0eb20ddcfa5",
+      "add_rid": "#-1:53f23b3e-c801-45d7-8d31-1cb8b8809946",
+      "station_score": 0.821563720703125,
+      "base_root_count": 1
+    },
+    {
+      "order_id": "eac28a99-2650-4dee-9f74-7054f480be19",
+      "add_rid": "#-1:a9cc9261-661b-41a3-89dd-0aee4886d4be",
+      "station_score": 0.7304747104644775,
+      "base_root_count": 1
+    },
+    {
+      "order_id": "9f309a7d-e211-451b-975d-f25463fff535",
+      "add_rid": "#-1:76e9f86f-70ab-40c3-8072-731bbc9e9486",
+      "station_score": 0.7262709736824036,
+      "base_root_count": 1
+    }
+  ],
+  "oof_station_addition_curve": {
+    "1": {
+      "true": 1,
+      "false": 0,
+      "precision": 1.0
+    },
+    "3": {
+      "true": 3,
+      "false": 0,
+      "precision": 1.0
+    },
+    "5": {
+      "true": 4,
+      "false": 1,
+      "precision": 0.8
+    },
+    "10": {
+      "true": 7,
+      "false": 3,
+      "precision": 0.7
+    },
+    "20": {
+      "true": 15,
+      "false": 5,
+      "precision": 0.75
+    },
+    "30": {
+      "true": 23,
+      "false": 7,
+      "precision": 0.7667
+    }
+  },
+  "predictions": 1038,
+  "orders": 546,
+  "sha256": "2a07ceb1eb86f842f08faa49fc8d22140556c184ec2bfca81ef01371ef0e10b4",
+  "conditional_scores": {
+    "all_selected_additions_true": 0.923150817,
+    "none_selected_additions_true": 0.920268972
+  },
+  "status": "exploratory_not_scored",
+  "warning": "Pure additions are model-derived; no online score yet."
+}

@@ -1,0 +1,50 @@
+{
+  "base_file": "D:\\zgyidong\\experiments\\v149_online_calibrated_addition_campaign\\v149_final_k08_from_v148.csv",
+  "base_sha256": "c8f304c44f6b3a7ed40599cae50d0f17c0c37f8456553e6171a2d7cfdc196d0a",
+  "output_file": "D:\\zgyidong\\experiments\\v153_complementary_repair_campaign\\v153_probe_p06_split.csv",
+  "preview_file": "D:\\zgyidong\\experiments\\v153_complementary_repair_campaign\\previews\\p06.png",
+  "actions": [
+    {
+      "order_index": 33,
+      "order_id": "1117ad03-8891-4bf6-854c-612bf19fdae4",
+      "kind": "add",
+      "delta_p": 1,
+      "add_rid": "#-1:bea1860d-537e-4e4b-ba53-08f5ce0bd7dc",
+      "remove_rid": null,
+      "node": {
+        "@rid": "#-1:bea1860d-537e-4e4b-ba53-08f5ce0bd7dc",
+        "title": "小区关断告警",
+        "location": "SubNetwork=CMCC-GZ-04,ManagedElement=12641069,ENBCUCPFunction=1,CULTE=1,CUEUtranCellTDDLTE=3",
+        "reason": "小区被关断"
+      },
+      "probabilities": {
+        "0": 0.47329087228979133,
+        "1": 0.5267091277102087
+      },
+      "source_model": "v38_control",
+      "candidate_id": 9,
+      "model_probabilities": {
+        "v38_control": {
+          "0": 0.3343660247005541,
+          "1": 0.6656339752994459
+        },
+        "catboost": {
+          "0": 0.6122157198790286,
+          "1": 0.38778428012097144
+        }
+      },
+      "primary_source": "v38_control",
+      "full_legal_ranks": {
+        "v38_control": 12,
+        "catboost": 39
+      },
+      "rrf": 0.02398989898989899,
+      "v152_anchor": false,
+      "delta_tp_bounds": {
+        "max": 1,
+        "min": 0
+      },
+      "expected_f1": 0.9277767551461341
+    }
+  ]
+}

@@ -1,0 +1,289 @@
+{
+  "assessment_complete": true,
+  "passed": false,
+  "decision": "stop_keep_six_attempts",
+  "reasons": [
+    "insufficient_independent_comparable_validation_tasks",
+    "no_complete_comparable_holdout_campaign_results"
+  ],
+  "capacity": {
+    "labeled_orders": 1634,
+    "target_task_orders": 546,
+    "order_only_disjoint_task_upper": 2,
+    "task_upper_ignores_station_constraints": true,
+    "complete_comparable_observed_campaign_trials": 0,
+    "observed_success_rate": null,
+    "observed_success_interval": null,
+    "minimum_independent_all_success_trials": 17,
+    "best_case_interval_at_capacity": [
+      0.15811388300841897,
+      1.0
+    ],
+    "five_perfect_trials_counterfactual": [
+      0.4781762498950185,
+      1.0
+    ],
+    "capacity_sufficient": false,
+    "station_cross_fold_count": 0,
+    "template_cross_fold_count": 0,
+    "folds": [
+      {
+        "fold": 0,
+        "valid_orders": 782,
+        "fit_orders": 852,
+        "actions": 3997,
+        "families": {
+          "catboost": {
+            "rows": 3997,
+            "aligned": true
+          },
+          "v38_control": {
+            "rows": 3997,
+            "aligned": true
+          },
+          "v30_control": {
+            "rows": 3997,
+            "aligned": true
+          }
+        },
+        "signature": "a2aa21e4fa0b3929ae34475f8386e3b0c87b921309135493681fb7e693d82a71",
+        "source_class": "cached_outer_fold_not_full_campaign_trial"
+      },
+      {
+        "fold": 1,
+        "valid_orders": 213,
+        "fit_orders": 1421,
+        "actions": 744,
+        "families": {
+          "catboost": {
+            "rows": 744,
+            "aligned": true
+          },
+          "v38_control": {
+            "rows": 744,
+            "aligned": true
+          },
+          "v30_control": {
+            "rows": 744,
+            "aligned": true
+          }
+        },
+        "signature": "a2aa21e4fa0b3929ae34475f8386e3b0c87b921309135493681fb7e693d82a71",
+        "source_class": "cached_outer_fold_not_full_campaign_trial"
+      },
+      {
+        "fold": 2,
+        "valid_orders": 213,
+        "fit_orders": 1421,
+        "actions": 825,
+        "families": {
+          "catboost": {
+            "rows": 825,
+            "aligned": true
+          },
+          "v38_control": {
+            "rows": 825,
+            "aligned": true
+          },
+          "v30_control": {
+            "rows": 825,
+            "aligned": true
+          }
+        },
+        "signature": "a2aa21e4fa0b3929ae34475f8386e3b0c87b921309135493681fb7e693d82a71",
+        "source_class": "cached_outer_fold_not_full_campaign_trial"
+      },
+      {
+        "fold": 3,
+        "valid_orders": 213,
+        "fit_orders": 1421,
+        "actions": 802,
+        "families": {
+          "catboost": {
+            "rows": 802,
+            "aligned": true
+          },
+          "v38_control": {
+            "rows": 802,
+            "aligned": true
+          },
+          "v30_control": {
+            "rows": 802,
+            "aligned": true
+          }
+        },
+        "signature": "a2aa21e4fa0b3929ae34475f8386e3b0c87b921309135493681fb7e693d82a71",
+        "source_class": "cached_outer_fold_not_full_campaign_trial"
+      },
+      {
+        "fold": 4,
+        "valid_orders": 213,
+        "fit_orders": 1421,
+        "actions": 1017,
+        "families": {
+          "catboost": {
+            "rows": 1017,
+            "aligned": true
+          },
+          "v38_control": {
+            "rows": 1017,
+            "aligned": true
+          },
+          "v30_control": {
+            "rows": 1017,
+            "aligned": true
+          }
+        },
+        "signature": "a2aa21e4fa0b3929ae34475f8386e3b0c87b921309135493681fb7e693d82a71",
+        "source_class": "cached_outer_fold_not_full_campaign_trial"
+      }
+    ],
+    "integrity_errors": [],
+    "scope": "Specified V150/V152/V158 data and cached predictions. Not an assertion about unavailable external datasets.",
+    "warning": "Counterfactual intervals are sample-size bounds, not measured strategy success rates. Cached folds and resampling are not independent campaign trials."
+  },
+  "mathematics": {
+    "main_true_bounds": [
+      17,
+      17
+    ],
+    "auxiliary_delta_tp_bounds": [
+      -5,
+      2
+    ],
+    "route_a_oracle": {
+      "f1_upper": 0.9392212725546059,
+      "tp": 989,
+      "predictions": 1062,
+      "source_class": "optimistic_integer_bound_not_forecast"
+    },
+    "auxiliary_oracle": {
+      "f1_upper": 0.9338446788111218,
+      "tp": 974,
+      "predictions": 1042,
+      "source_class": "optimistic_integer_bound_not_forecast"
+    },
+    "joint_oracle": {
+      "f1_upper": 0.9424631478839752,
+      "tp": 991,
+      "predictions": 1059,
+      "source_class": "optimistic_integer_bound_not_forecast"
+    },
+    "auxiliary_feedback_branches": [
+      {
+        "delta_tp": -5,
+        "predictions": 1042,
+        "tp": 967,
+        "score": "0.927133",
+        "extra_perfect_additions_needed": null,
+        "individual_auxiliary_labels_inferred": false
+      },
+      {
+        "delta_tp": -4,
+        "predictions": 1042,
+        "tp": 968,
+        "score": "0.928092",
+        "extra_perfect_additions_needed": null,
+        "individual_auxiliary_labels_inferred": false
+      },
+      {
+        "delta_tp": -3,
+        "predictions": 1042,
+        "tp": 969,
+        "score": "0.929051",
+        "extra_perfect_additions_needed": null,
+        "individual_auxiliary_labels_inferred": false
+      },
+      {
+        "delta_tp": -2,
+        "predictions": 1042,
+        "tp": 970,
+        "score": "0.930010",
+        "extra_perfect_additions_needed": 16,
+        "individual_auxiliary_labels_inferred": false
+      },
+      {
+        "delta_tp": -1,
+        "predictions": 1042,
+        "tp": 971,
+        "score": "0.930968",
+        "extra_perfect_additions_needed": 15,
+        "individual_auxiliary_labels_inferred": false
+      },
+      {
+        "delta_tp": 0,
+        "predictions": 1042,
+        "tp": 972,
+        "score": "0.931927",
+        "extra_perfect_additions_needed": 13,
+        "individual_auxiliary_labels_inferred": false
+      },
+      {
+        "delta_tp": 1,
+        "predictions": 1042,
+        "tp": 973,
+        "score": "0.932886",
+        "extra_perfect_additions_needed": 11,
+        "individual_auxiliary_labels_inferred": false
+      },
+      {
+        "delta_tp": 2,
+        "predictions": 1042,
+        "tp": 974,
+        "score": "0.933845",
+        "extra_perfect_additions_needed": 9,
+        "individual_auxiliary_labels_inferred": false
+      }
+    ],
+    "safe_replay": [
+      {
+        "score": "0.929119",
+        "tp": 970,
+        "probe_id": "safe_probe"
+      },
+      {
+        "score": "0.930589",
+        "tp": 972,
+        "probe_id": "safe_final"
+      }
+    ],
+    "safe_feasible_worlds": 1,
+    "threshold_integer_rule": "2000000 * delta_TP - 938154 * delta_P > 15803706",
+    "source_class": "exact_integer_bounds_not_strategy_or_online_score"
+  },
+  "route_results": {
+    "A": {
+      "status": "not_run_evidence_gate_failed",
+      "planned_probes": 5,
+      "main_probes": 5,
+      "auxiliary_probes": 0,
+      "final_reserved": 1,
+      "success_rate": null,
+      "success_interval95": null,
+      "full_horizon_search_completed": false,
+      "selected": false
+    },
+    "B": {
+      "status": "not_run_evidence_gate_failed",
+      "planned_probes": 5,
+      "main_probes": 4,
+      "auxiliary_probes": 1,
+      "final_reserved": 1,
+      "success_rate": null,
+      "success_interval95": null,
+      "full_horizon_search_completed": false,
+      "selected": false
+    }
+  },
+  "bootstrap": {
+    "requested_iterations": 2000,
+    "executed_iterations": 0,
+    "absolute_lower95": null,
+    "relative_lower95": null,
+    "status": "not_run_no_valid_complete_policy_outcomes"
+  },
+  "release_authorized": false,
+  "outcome": "Evidence-first stop required by the accepted plan. No CSV emission or full policy search.",
+  "at": "2026-09-13T10:54:49.131597+08:00",
+  "configuration_sha256": "c66bb51a9170a52c7296d0f4310c0d287cebb65ba273556afaed1b3366a7c67e"
+}

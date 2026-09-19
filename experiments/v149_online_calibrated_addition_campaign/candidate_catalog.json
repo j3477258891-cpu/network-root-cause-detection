@@ -1,0 +1,423 @@
+{
+  "version": "v149-online-calibrated-additions-1",
+  "base": "D:/zgyidong/experiments/v148_two_true_decode/v148_final_candidates_2_3_from_v145.csv",
+  "base_sha256": "2056764119da0c37e1c416c3da249499b754678271a07b975ed2c0719e0ef6dd",
+  "ranking": "model_support desc, Borda desc, order_id asc, add_rid asc; one candidate per order",
+  "source_channels": [
+    {
+      "channel": "station",
+      "metadata": "D:/zgyidong/experiments/v132_station_additions/v132_station_add_top20_from_pair015.json",
+      "csv": "D:/zgyidong/experiments/v132_station_additions/v132_station_add_top20_from_pair015.csv"
+    },
+    {
+      "channel": "consensus",
+      "metadata": "D:/zgyidong/experiments/v133_consensus_additions/v133_consensus_add_top20_from_pair015.json",
+      "csv": "D:/zgyidong/experiments/v133_consensus_additions/v133_consensus_add_top20_from_pair015.csv"
+    },
+    {
+      "channel": "template",
+      "metadata": "D:/zgyidong/experiments/v137_template_single_root_additions/v137_template_single_root_add_top20_from_pair015.json",
+      "csv": "D:/zgyidong/experiments/v137_template_single_root_additions/v137_template_single_root_add_top20_from_pair015.csv"
+    }
+  ],
+  "exclusions": {
+    "v148_online_fixed_false_count": 6,
+    "historical_equation_fixed_zero_count": 14,
+    "excluded_negative_orders": [
+      "dd29409d-298e-451b-8231-e0c53c0e420a"
+    ],
+    "deletion_pool_note": "V118/V119 deletion actions are not used; V149 contains pure additions only."
+  },
+  "eligible_before_distinct_order_cut": 19,
+  "candidates": [
+    {
+      "order_id": "51d2ff1d-1bcb-41c7-ae33-83db088b2545",
+      "add_rid": "#-1:213df979-3107-4f97-b62a-08303f63e348",
+      "ranks": {
+        "station": 11,
+        "consensus": 14,
+        "template": 10
+      },
+      "source_scores": {
+        "station": 0.6681440472602844,
+        "consensus": 0.662075400352478,
+        "template": 0.6666271686553955
+      },
+      "model_support": 3,
+      "borda_score": 28,
+      "candidate_id": 1
+    },
+    {
+      "order_id": "6e2c4bef-2309-4ace-9c76-983bac0255a8",
+      "add_rid": "#-1:0b1419ea-df28-4dce-aa17-bc13ff702e95",
+      "ranks": {
+        "station": 15,
+        "consensus": 13,
+        "template": 12
+      },
+      "source_scores": {
+        "station": 0.5779388546943665,
+        "consensus": 0.6656619310379028,
+        "template": 0.5672858953475952
+      },
+      "model_support": 3,
+      "borda_score": 23,
+      "candidate_id": 2
+    },
+    {
+      "order_id": "b92c1c42-bc69-48fa-b5c6-7bbd2635a15b",
+      "add_rid": "#-1:e98f47f3-1430-4bab-bd66-cd79564e73e6",
+      "ranks": {
+        "station": 17,
+        "consensus": 20,
+        "template": 13
+      },
+      "source_scores": {
+        "station": 0.5610470175743103,
+        "consensus": 0.593901515007019,
+        "template": 0.5481794476509094
+      },
+      "model_support": 3,
+      "borda_score": 13,
+      "candidate_id": 3
+    },
+    {
+      "order_id": "625ffce7-65c5-4657-9104-4148b4113130",
+      "add_rid": "#-1:a8f28178-4795-4f26-84d6-1791944fb245",
+      "ranks": {
+        "station": 8,
+        "consensus": 4
+      },
+      "source_scores": {
+        "station": 0.7030441761016846,
+        "consensus": 0.8070818185806274
+      },
+      "model_support": 2,
+      "borda_score": 30,
+      "candidate_id": 4
+    },
+    {
+      "order_id": "fad26f6d-c956-4598-9639-39fef649b32c",
+      "add_rid": "#-1:d779f103-178f-4a59-8d44-e8a5ee182ba1",
+      "ranks": {
+        "station": 9,
+        "consensus": 9
+      },
+      "source_scores": {
+        "station": 0.6806977391242981,
+        "consensus": 0.7346486449241638
+      },
+      "model_support": 2,
+      "borda_score": 24,
+      "candidate_id": 5
+    },
+    {
+      "order_id": "81e47a27-a3f2-41ee-863e-36a27b36e510",
+      "add_rid": "#-1:c930a772-2aec-456e-aa3c-6cee41ceaeea",
+      "ranks": {
+        "station": 13,
+        "consensus": 17
+      },
+      "source_scores": {
+        "station": 0.5922797918319702,
+        "consensus": 0.6207128167152405
+      },
+      "model_support": 2,
+      "borda_score": 12,
+      "candidate_id": 6
+    },
+    {
+      "order_id": "35dcec5d-5286-4e33-bd22-42708535b5c8",
+      "add_rid": "#-1:5d4c15aa-67c6-47a6-8b32-8213aa4d09ac",
+      "ranks": {
+        "station": 18,
+        "consensus": 15
+      },
+      "source_scores": {
+        "station": 0.550851583480835,
+        "consensus": 0.6565049290657043
+      },
+      "model_support": 2,
+      "borda_score": 9,
+      "candidate_id": 7
+    },
+    {
+      "order_id": "7b1b39e5-954a-418c-9ed7-03285444ea24",
+      "add_rid": "#-1:9e23d2aa-04a7-45dc-ba50-0453d34937d4",
+      "ranks": {
+        "consensus": 16,
+        "template": 18
+      },
+      "source_scores": {
+        "consensus": 0.6486541032791138,
+        "template": 0.4869377911090851
+      },
+      "model_support": 2,
+      "borda_score": 8,
+      "candidate_id": 8
+    },
+    {
+      "order_id": "e7c0c3fe-f81e-494f-8faa-edcee9a23ce3",
+      "add_rid": "#-1:db4bd4d4-5e9c-4cf2-8d26-d69a1dc99950",
+      "ranks": {
+        "station": 19,
+        "consensus": 18
+      },
+      "source_scores": {
+        "station": 0.5232401490211487,
+        "consensus": 0.6200969219207764
+      },
+      "model_support": 2,
+      "borda_score": 5,
+      "candidate_id": 9
+    },
+    {
+      "order_id": "4c2b3b06-a6a2-4c1b-9734-def3d1f849d8",
+      "add_rid": "#-1:aee1adf1-be6a-4986-bd73-4fda938342fc",
+      "ranks": {
+        "consensus": 12
+      },
+      "source_scores": {
+        "consensus": 0.7018803954124451
+      },
+      "model_support": 1,
+      "borda_score": 9,
+      "candidate_id": 10
+    },
+    {
+      "order_id": "f6a6325f-450b-426e-a0d9-505b9996adfc",
+      "add_rid": "#-1:fb6f2b00-97c0-41b9-8de4-1b234b2cc853",
+      "ranks": {
+        "template": 15
+      },
+      "source_scores": {
+        "template": 0.5046322345733643
+      },
+      "model_support": 1,
+      "borda_score": 6,
+      "candidate_id": 11
+    },
+    {
+      "order_id": "d793d532-08ad-4410-a3fd-c09844eb67d0",
+      "add_rid": "#-1:20b04ec9-5805-4030-82a0-bf14861d1cd8",
+      "ranks": {
+        "station": 16
+      },
+      "source_scores": {
+        "station": 0.568822979927063
+      },
+      "model_support": 1,
+      "borda_score": 5,
+      "candidate_id": 12
+    },
+    {
+      "order_id": "e7700f4a-e97e-40ad-bda5-afd0f92e7509",
+      "add_rid": "#-1:009af8ca-5650-48c1-ac34-dd48826a16df",
+      "ranks": {
+        "template": 16
+      },
+      "source_scores": {
+        "template": 0.5015374422073364
+      },
+      "model_support": 1,
+      "borda_score": 5,
+      "candidate_id": 13
+    },
+    {
+      "order_id": "e8dcd7dc-771c-4366-a5b1-8a1ea25c54e3",
+      "add_rid": "#-1:8bb1ab76-3bd2-4b57-b3ab-bfae954998f8",
+      "ranks": {
+        "template": 17
+      },
+      "source_scores": {
+        "template": 0.5010747313499451
+      },
+      "model_support": 1,
+      "borda_score": 4,
+      "candidate_id": 14
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "order_id": "441995e6-e153-4e40-af0f-d0eb20ddcfa5",
+      "add_rid": "#-1:53f23b3e-c801-45d7-8d31-1cb8b8809946",
+      "ranks": {
+        "station": 1,
+        "consensus": 1,
+        "template": 1
+      },
+      "source_scores": {
+        "station": 0.821563720703125,
+        "consensus": 0.8895386457443237,
+        "template": 0.8358808755874634
+      },
+      "model_support": 3,
+      "borda_score": 60,
+      "reason": "v148_online_fixed_false"
+    },
+    {
+      "order_id": "eac28a99-2650-4dee-9f74-7054f480be19",
+      "add_rid": "#-1:a9cc9261-661b-41a3-89dd-0aee4886d4be",
+      "ranks": {
+        "station": 2,
+        "consensus": 7,
+        "template": 2
+      },
+      "source_scores": {
+        "station": 0.7304747104644775,
+        "consensus": 0.7728694677352905,
+        "template": 0.7257430553436279
+      },
+      "model_support": 3,
+      "borda_score": 52,
+      "reason": "v148_online_fixed_false"
+    },
+    {
+      "order_id": "9f309a7d-e211-451b-975d-f25463fff535",
+      "add_rid": "#-1:76e9f86f-70ab-40c3-8072-731bbc9e9486",
+      "ranks": {
+        "station": 3,
+        "consensus": 6,
+        "template": 4
+      },
+      "source_scores": {
+        "station": 0.7262709736824036,
+        "consensus": 0.7863795161247253,
+        "template": 0.7184572815895081
+      },
+      "model_support": 3,
+      "borda_score": 50,
+      "reason": "already_in_v148"
+    },
+    {
+      "order_id": "af26c607-3f9d-4a37-8d4d-a809bfccd1f6",
+      "add_rid": "#-1:21b56b75-9b57-4986-9f58-9f1e28c2c979",
+      "ranks": {
+        "station": 4,
+        "consensus": 2,
+        "template": 7
+      },
+      "source_scores": {
+        "station": 0.7195209860801697,
+        "consensus": 0.8297380208969116,
+        "template": 0.699417233467102
+      },
+      "model_support": 3,
+      "borda_score": 50,
+      "reason": "already_in_v148"
+    },
+    {
+      "order_id": "8df78ab7-ca49-44f4-9fc2-1427cf850964",
+      "add_rid": "#-1:035c60d5-eab4-43c9-ab1f-920eca60a16b",
+      "ranks": {
+        "station": 5,
+        "consensus": 10,
+        "template": 3
+      },
+      "source_scores": {
+        "station": 0.7178551554679871,
+        "consensus": 0.7228025197982788,
+        "template": 0.7192601561546326
+      },
+      "model_support": 3,
+      "borda_score": 45,
+      "reason": "v148_online_fixed_false"
+    },
+    {
+      "order_id": "1117ad03-8891-4bf6-854c-612bf19fdae4",
+      "add_rid": "#-1:08baefd1-6af0-4be4-88f5-6fa77d069d9d",
+      "ranks": {
+        "station": 6,
+        "consensus": 5,
+        "template": 6
+      },
+      "source_scores": {
+        "station": 0.7103927135467529,
+        "consensus": 0.8054361343383789,
+        "template": 0.7059062719345093
+      },
+      "model_support": 3,
+      "borda_score": 46,
+      "reason": "v148_online_fixed_false"
+    },
+    {
+      "order_id": "aa321b94-f3d9-45cf-b1ee-f3a1fe38da68",
+      "add_rid": "#-1:429df297-9a4e-462a-a377-ae4cd47eda24",
+      "ranks": {
+        "station": 7,
+        "consensus": 3,
+        "template": 5
+      },
+      "source_scores": {
+        "station": 0.7094882130622864,
+        "consensus": 0.8120096921920776,
+        "template": 0.7074196338653564
+      },
+      "model_support": 3,
+      "borda_score": 48,
+      "reason": "v148_online_fixed_false"
+    },
+    {
+      "order_id": "9ca5e12f-f73f-472c-99b3-8e74c01272fe",
+      "add_rid": "#-1:247d7153-ba7f-4012-86c3-2d6b9b7e9730",
+      "ranks": {
+        "station": 10,
+        "consensus": 8,
+        "template": 9
+      },
+      "source_scores": {
+        "station": 0.6779353022575378,
+        "consensus": 0.74679034948349,
+        "template": 0.6681069135665894
+      },
+      "model_support": 3,
+      "borda_score": 36,
+      "reason": "v148_online_fixed_false"
+    },
+    {
+      "order_id": "4c2b3b06-a6a2-4c1b-9734-def3d1f849d8",
+      "add_rid": "#-1:66facd91-e281-4331-bbae-04ab8bd9746d",
+      "ranks": {
+        "station": 12,
+        "template": 8
+      },
+      "source_scores": {
+        "station": 0.6594231724739075,
+        "template": 0.6682894229888916
+      },
+      "model_support": 2,
+      "borda_score": 22,
+      "reason": "already_in_v148"
+    },
+    {
+      "order_id": "faa00ed5-c0b9-445e-98ac-671035a4a239",
+      "add_rid": "#-1:76e3a0a3-1943-4a4c-ad08-d31dc732cb73",
+      "ranks": {
+        "station": 14,
+        "consensus": 11,
+        "template": 11
+      },
+      "source_scores": {
+        "station": 0.5900029540061951,
+        "consensus": 0.7090164422988892,
+        "template": 0.6097778081893921
+      },
+      "model_support": 3,
+      "borda_score": 27,
+      "reason": "already_in_v148"
+    },
+    {
+      "order_id": "e7c0c3fe-f81e-494f-8faa-edcee9a23ce3",
+      "add_rid": "#-1:4044d294-2a14-4c31-9d5f-3464269651d2",
+      "ranks": {
+        "template": 14
+      },
+      "source_scores": {
+        "template": 0.5221823453903198
+      },
+      "model_support": 1,
+      "borda_score": 7,
+      "reason": "lower_ranked_same_order"
+    }
+  ]
+}

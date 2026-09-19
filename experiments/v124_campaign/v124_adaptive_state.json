@@ -1,0 +1,75 @@
+{
+  "version": "v124-adaptive",
+  "verified_champion": {
+    "file": "D:\\zgyidong\\experiments\\v124_campaign\\v124_single_pair_015_from_probe13.csv",
+    "score": 0.921597,
+    "predictions": 1035,
+    "tp": 958,
+    "sha256": "31131129bba8363fcf1df2c053f836102e8f209640164c2c4c7eedb431447c6c"
+  },
+  "public_equations": [
+    {
+      "source": "v124_group_01.csv",
+      "equation": "pair_008 + pair_014 + pair_044 = -1"
+    },
+    {
+      "source": "v124_single_pair_008_from_probe13.csv",
+      "equation": "pair_008 = 0"
+    },
+    {
+      "derived": true,
+      "equation": "pair_014 + pair_044 = -1",
+      "conclusion": "pair_014 and pair_044 are each in {-1,0}; neither can be positive"
+    },
+    {
+      "source": "v124_group_02.csv",
+      "equation": "pair_049 + pair_084 + pair_015 = 0"
+    },
+    {
+      "source": "v124_single_pair_049_from_probe13.csv",
+      "equation": "pair_049 = 0"
+    },
+    {
+      "derived": true,
+      "equation": "pair_084 + pair_015 = 0",
+      "conclusion": "testing pair_084 fully determines pair_015"
+    },
+    {
+      "source": "v124_single_pair_084_from_probe13.csv",
+      "equation": "pair_084 = -1"
+    },
+    {
+      "derived": true,
+      "equation": "pair_015 = +1",
+      "conclusion": "pair_015 is the first equation-decoded positive candidate"
+    },
+    {
+      "source": "v124_single_pair_015_from_probe13.csv",
+      "equation": "pair_015 = +1 (publicly confirmed)"
+    },
+    {
+      "source": "v124_group_04_from_pair015.csv",
+      "equation": "pair_030 + pair_054 + pair_033 = -3"
+    },
+    {
+      "derived": true,
+      "equation": "pair_030 = pair_054 = pair_033 = -1",
+      "conclusion": "group 04 is fully rejected"
+    },
+    {
+      "source": "v124_group_03.csv",
+      "equation": "pair_011 + pair_018 + pair_045 = -1"
+    },
+    {
+      "source": "v124_group_12.csv",
+      "equation": "pair_022 + pair_055 = 0"
+    }
+  ],
+  "next_probe": {
+    "file": null,
+    "candidate_id": null,
+    "predictions": null,
+    "sha256": null,
+    "status": "v124_target_unreachable_with_remaining_decoded_pool"
+  }
+}

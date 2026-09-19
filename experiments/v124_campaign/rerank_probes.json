@@ -1,0 +1,40 @@
+{
+  "version": "v124-rerank",
+  "n_slices": 3,
+  "method": "slice-internal exact-count rerank with stacked 3-model score; P per slice preserved",
+  "oof_train_deltas_3slices": [
+    15,
+    16,
+    9
+  ],
+  "oof_train_total": 40,
+  "probes": [
+    {
+      "probe_id": "R1",
+      "slice": 0,
+      "orders": 182,
+      "slice_p": 315,
+      "file": "D:\\zgyidong\\experiments\\v124_campaign\\probe_r1_rerank_slice.csv",
+      "predictions": 1035,
+      "sha256": "d93679f99b5f097774050018729c12fae20571ba72baf43d24177b95840d30b6"
+    },
+    {
+      "probe_id": "R2",
+      "slice": 1,
+      "orders": 182,
+      "slice_p": 357,
+      "file": "D:\\zgyidong\\experiments\\v124_campaign\\probe_r2_rerank_slice.csv",
+      "predictions": 1035,
+      "sha256": "2d9d3445a4b704c8ad24cd8ba020b21f37860e62dd222033e3984b729bc76d08"
+    },
+    {
+      "probe_id": "R3",
+      "slice": 2,
+      "orders": 182,
+      "slice_p": 363,
+      "file": "D:\\zgyidong\\experiments\\v124_campaign\\probe_r3_rerank_slice.csv",
+      "predictions": 1035,
+      "sha256": "4958893cf9060536a246c3ecf8e0116dc577471af6ad30c85bf9775a0b8adcb3"
+    }
+  ]
+}

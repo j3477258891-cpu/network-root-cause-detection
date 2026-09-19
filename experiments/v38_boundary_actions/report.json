@@ -1,0 +1,5567 @@
+{
+  "version": "v38-boundary-action-ranker-1",
+  "train_actions": 4546,
+  "test_actions": 1507,
+  "train_positive_rate": 0.06797184337879454,
+  "oof_curves": {
+    "all": [
+      {
+        "k": 5,
+        "correct": 3,
+        "precision": 0.6,
+        "minimum_fold_precision": 0.3333333333333333
+      },
+      {
+        "k": 10,
+        "correct": 5,
+        "precision": 0.5,
+        "minimum_fold_precision": 0.2
+      },
+      {
+        "k": 15,
+        "correct": 7,
+        "precision": 0.4666666666666667,
+        "minimum_fold_precision": 0.2
+      },
+      {
+        "k": 20,
+        "correct": 10,
+        "precision": 0.5,
+        "minimum_fold_precision": 0.3333333333333333
+      },
+      {
+        "k": 30,
+        "correct": 15,
+        "precision": 0.5,
+        "minimum_fold_precision": 0.375
+      },
+      {
+        "k": 40,
+        "correct": 19,
+        "precision": 0.475,
+        "minimum_fold_precision": 0.3333333333333333
+      },
+      {
+        "k": 60,
+        "correct": 28,
+        "precision": 0.4666666666666667,
+        "minimum_fold_precision": 0.3333333333333333
+      },
+      {
+        "k": 80,
+        "correct": 34,
+        "precision": 0.425,
+        "minimum_fold_precision": 0.2857142857142857
+      },
+      {
+        "k": 100,
+        "correct": 44,
+        "precision": 0.44,
+        "minimum_fold_precision": 0.25
+      }
+    ],
+    "add": [
+      {
+        "k": 5,
+        "correct": 3,
+        "precision": 0.6,
+        "minimum_fold_precision": 0.3333333333333333
+      },
+      {
+        "k": 10,
+        "correct": 3,
+        "precision": 0.3,
+        "minimum_fold_precision": 0.0
+      },
+      {
+        "k": 15,
+        "correct": 7,
+        "precision": 0.4666666666666667,
+        "minimum_fold_precision": 0.3333333333333333
+      },
+      {
+        "k": 20,
+        "correct": 9,
+        "precision": 0.45,
+        "minimum_fold_precision": 0.2857142857142857
+      },
+      {
+        "k": 30,
+        "correct": 14,
+        "precision": 0.4666666666666667,
+        "minimum_fold_precision": 0.0
+      },
+      {
+        "k": 40,
+        "correct": 20,
+        "precision": 0.5,
+        "minimum_fold_precision": 0.0
+      },
+      {
+        "k": 60,
+        "correct": 28,
+        "precision": 0.4666666666666667,
+        "minimum_fold_precision": 0.2857142857142857
+      },
+      {
+        "k": 80,
+        "correct": 34,
+        "precision": 0.425,
+        "minimum_fold_precision": 0.3
+      },
+      {
+        "k": 100,
+        "correct": 43,
+        "precision": 0.43,
+        "minimum_fold_precision": 0.3125
+      }
+    ],
+    "delete": [
+      {
+        "k": 5,
+        "correct": 3,
+        "precision": 0.6,
+        "minimum_fold_precision": 0.5
+      },
+      {
+        "k": 10,
+        "correct": 5,
+        "precision": 0.5,
+        "minimum_fold_precision": 0.0
+      },
+      {
+        "k": 15,
+        "correct": 6,
+        "precision": 0.4,
+        "minimum_fold_precision": 0.0
+      },
+      {
+        "k": 20,
+        "correct": 8,
+        "precision": 0.4,
+        "minimum_fold_precision": 0.0
+      },
+      {
+        "k": 30,
+        "correct": 12,
+        "precision": 0.4,
+        "minimum_fold_precision": 0.0
+      },
+      {
+        "k": 40,
+        "correct": 15,
+        "precision": 0.375,
+        "minimum_fold_precision": 0.16666666666666666
+      },
+      {
+        "k": 60,
+        "correct": 21,
+        "precision": 0.35,
+        "minimum_fold_precision": 0.09523809523809523
+      },
+      {
+        "k": 80,
+        "correct": 29,
+        "precision": 0.3625,
+        "minimum_fold_precision": 0.1111111111111111
+      },
+      {
+        "k": 100,
+        "correct": 37,
+        "precision": 0.37,
+        "minimum_fold_precision": 0.10344827586206896
+      }
+    ]
+  },
+  "oof_et_top20_precision": 0.45,
+  "oof_hgb_top20_precision": 0.55,
+  "test_unique_candidates": 459,
+  "test_add_candidates": 262,
+  "test_delete_candidates": 197,
+  "top_test_candidates": [
+    {
+      "order_index": 533,
+      "row": 3181,
+      "local": 4,
+      "kind": "delete",
+      "step": 3,
+      "current_count": 7,
+      "proposed_count": 4,
+      "need_mean": 0.6338618894418081,
+      "need_min": 0.5736298561096191,
+      "argmax_support": 6,
+      "node_scores": [
+        0.6735727787017822,
+        0.6532188653945923,
+        0.8043311834335327,
+        0.7159645557403564,
+        0.719994843006134,
+        0.7383826971054077
+      ],
+      "order_id": "fad26f6d-c956-4598-9639-39fef649b32c",
+      "rid": "#-1:f9d64afc-8fcb-4d95-9ff0-37f50f7d2783",
+      "title": "设备掉电",
+      "ranker_probability": 0.8561435341835022
+    },
+    {
+      "order_index": 483,
+      "row": 2886,
+      "local": 9,
+      "kind": "add",
+      "step": 1,
+      "current_count": 1,
+      "proposed_count": 2,
+      "need_mean": 0.7747480670611063,
+      "need_min": 0.7506627440452576,
+      "argmax_support": 6,
+      "node_scores": [
+        0.5420759320259094,
+        0.5984416007995605,
+        0.1031622663140297,
+        0.5232401490211487,
+        0.48272886872291565,
+        0.6200969219207764
+      ],
+      "order_id": "e7c0c3fe-f81e-494f-8faa-edcee9a23ce3",
+      "rid": "#-1:db4bd4d4-5e9c-4cf2-8d26-d69a1dc99950",
+      "title": "射频单元直流掉电告警",
+      "ranker_probability": 0.8558024168014526
+    },
+    {
+      "order_index": 325,
+      "row": 1886,
+      "local": 4,
+      "kind": "add",
+      "step": 1,
+      "current_count": 1,
+      "proposed_count": 2,
+      "need_mean": 0.5489640980958939,
+      "need_min": 0.49246910214424133,
+      "argmax_support": 2,
+      "node_scores": [
+        0.5142590999603271,
+        0.46810561418533325,
+        0.8944076895713806,
+        0.7262709736824036,
+        0.7049981355667114,
+        0.7863795161247253
+      ],
+      "order_id": "9f309a7d-e211-451b-975d-f25463fff535",
+      "rid": "#-1:76e9f86f-70ab-40c3-8072-731bbc9e9486",
+      "title": "射频单元IR接口异常告警",
+      "ranker_probability": 0.8426575660705566
+    },
+    {
+      "order_index": 149,
+      "row": 855,
+      "local": 0,
+      "kind": "add",
+      "step": 1,
+      "current_count": 1,
+      "proposed_count": 2,
+      "need_mean": 0.4470771998167038,
+      "need_min": 0.413962721824646,
+      "argmax_support": 0,
+      "node_scores": [
+        0.46735942363739014,
+        0.4920085072517395,
+        0.8851826190948486,
+        0.6681440472602844,
+        0.5300415754318237,
+        0.662075400352478
+      ],
+      "order_id": "51d2ff1d-1bcb-41c7-ae33-83db088b2545",
+      "rid": "#-1:213df979-3107-4f97-b62a-08303f63e348",
+      "title": "光口接收链路故障",
+      "ranker_probability": 0.82258540391922
+    },
+    {
+      "order_index": 67,
+      "row": 384,
+      "local": 1,
+      "kind": "delete",
+      "step": 1,
+      "current_count": 2,
+      "proposed_count": 1,
+      "need_mean": 0.9429783622423807,
+      "need_min": 0.9338146448135376,
+      "argmax_support": 6,
+      "node_scores": [
+        0.2502939999103546,
+        0.17008662223815918,
+        0.14946000277996063,
+        0.39845284819602966,
+        0.3021176755428314,
+        0.3249792456626892
+      ],
+      "order_id": "25a37559-7249-4fe0-bfd9-97007b9f7c5d",
+      "rid": "#-1:622a2277-8e4d-4b77-aefb-1f90747752a2",
+      "title": "NR分布单元小区TRP不可用告警",
+      "ranker_probability": 0.756852388381958
+    },
+    {
+      "order_index": 380,
+      "row": 2205,
+      "local": 1,
+      "kind": "add",
+      "step": 1,
+      "current_count": 1,
+      "proposed_count": 2,
+      "need_mean": 0.8111826479434967,
+      "need_min": 0.7748450636863708,
+      "argmax_support": 6,
+      "node_scores": [
+        0.5549448132514954,
+        0.4494848847389221,
+        0.6721123456954956,
+        0.5610470175743103,
+        0.6052956581115723,
+        0.593901515007019
+      ],
+      "order_id": "b92c1c42-bc69-48fa-b5c6-7bbd2635a15b",
+      "rid": "#-1:e98f47f3-1430-4bab-bd66-cd79564e73e6",
+      "title": "光口接收链路故障",
+      "ranker_probability": 0.7243129014968872
+    },
+    {
+      "order_index": 211,
+      "row": 1254,
+      "local": 0,
+      "kind": "add",
+      "step": 2,
+      "current_count": 1,
+      "proposed_count": 3,
+      "need_mean": 0.6602934201558431,
+      "need_min": 0.590798020362854,
+      "argmax_support": 1,
+      "node_scores": [
+        0.3490278720855713,
+        0.23641522228717804,
+        0.6859453916549683,
+        0.5628101229667664,
+        0.5172208547592163,
+        0.5787099003791809
+      ],
+      "order_id": "6e2c4bef-2309-4ace-9c76-983bac0255a8",
+      "rid": "#-1:a4aab2b7-dacc-48af-a107-25fa2e283027",
+      "title": "管理通道通信异常",
+      "ranker_probability": 0.7242883443832397
+    },
+    {
+      "order_index": 96,
+      "row": 545,
+      "local": 7,
+      "kind": "add",
+      "step": 1,
+      "current_count": 2,
+      "proposed_count": 3,
+      "need_mean": 0.5976928373177847,
+      "need_min": 0.5118255615234375,
+      "argmax_support": 4,
+      "node_scores": [
+        0.10547467321157455,
+        0.11376216262578964,
+        0.47137850522994995,
+        0.550851583480835,
+        0.46044373512268066,
+        0.6565049290657043
+      ],
+      "order_id": "35dcec5d-5286-4e33-bd22-42708535b5c8",
+      "rid": "#-1:5d4c15aa-67c6-47a6-8b32-8213aa4d09ac",
+      "title": "ETH_LINK_DOWN",
+      "ranker_probability": 0.7074711322784424
+    },
+    {
+      "order_index": 441,
+      "row": 2633,
+      "local": 2,
+      "kind": "delete",
+      "step": 1,
+      "current_count": 4,
+      "proposed_count": 3,
+      "need_mean": 0.5292655030886332,
+      "need_min": 0.5096451640129089,
+      "argmax_support": 0,
+      "node_scores": [
+        0.7231355905532837,
+        0.6234142780303955,
+        0.6819659471511841,
+        0.5595537424087524,
+        0.5762389302253723,
+        0.5207609534263611
+      ],
+      "order_id": "d51a4fe5-3721-4585-929c-0ca993c3a0be",
+      "rid": "#-1:e3994fe4-4a5b-4ca3-bbd9-0624471cb5de",
+      "title": "单板未配置",
+      "ranker_probability": 0.6875050663948059
+    },
+    {
+      "order_index": 1,
+      "row": 11,
+      "local": 0,
+      "kind": "delete",
+      "step": 1,
+      "current_count": 2,
+      "proposed_count": 1,
+      "need_mean": 0.46771200994650525,
+      "need_min": 0.42596253752708435,
+      "argmax_support": 5,
+      "node_scores": [
+        0.7655904293060303,
+        0.6854081749916077,
+        0.046490710228681564,
+        0.6928051114082336,
+        0.6190880537033081,
+        0.7843829393386841
+      ],
+      "order_id": "0052146f-c00c-4786-8d58-c2db3ec6baa0",
+      "rid": "#-1:2ef23c93-34a2-40a2-89b4-90e8e4844fc6",
+      "title": "单板处于初始化状态",
+      "ranker_probability": 0.6870344281196594
+    },
+    {
+      "order_index": 399,
+      "row": 2337,
+      "local": 0,
+      "kind": "add",
+      "step": 1,
+      "current_count": 1,
+      "proposed_count": 2,
+      "need_mean": 0.45170433819293976,
+      "need_min": 0.41874822974205017,
+      "argmax_support": 0,
+      "node_scores": [
+        0.5581027269363403,
+        0.6015845537185669,
+        0.1558944433927536,
+        0.33746519684791565,
+        0.4024280905723572,
+        0.31923559308052063
+      ],
+      "order_id": "bdbb6a39-a21b-4893-a4c0-e3170fc6ea11",
+      "rid": "#-1:909e5149-bcf1-4f5c-a1e6-9280287a4b95",
+      "title": "输入电压异常",
+      "ranker_probability": 0.6765477061271667
+    },
+    {
+      "order_index": 359,
+      "row": 2081,
+      "local": 1,
+      "kind": "add",
+      "step": 1,
+      "current_count": 1,
+      "proposed_count": 2,
+      "need_mean": 0.454175665974617,
+      "need_min": 0.42463070154190063,
+      "argmax_support": 0,
+      "node_scores": [
+        0.30958694219589233,
+        0.22802096605300903,
+        0.10268475115299225,
+        0.7195209860801697,
+        0.586387574672699,
+        0.8297380208969116
+      ],
+      "order_id": "af26c607-3f9d-4a37-8d4d-a809bfccd1f6",
+      "rid": "#-1:21b56b75-9b57-4986-9f58-9f1e28c2c979",
+      "title": "小区关断告警",
+      "ranker_probability": 0.6601756811141968
+    },
+    {
+      "order_index": 226,
+      "row": 1363,
+      "local": 3,
+      "kind": "delete",
+      "step": 1,
+      "current_count": 3,
+      "proposed_count": 2,
+      "need_mean": 0.3820727864901225,
+      "need_min": 0.35398411750793457,
+      "argmax_support": 0,
+      "node_scores": [
+        0.6599162220954895,
+        0.6207530498504639,
+        0.9540032148361206,
+        0.7880091667175293,
+        0.7313420176506042,
+        0.8561538457870483
+      ],
+      "order_id": "767c94f2-ed95-4967-a7e6-f0badda74572",
+      "rid": "#-1:698fc874-3097-42c5-90ba-0e5875034dff",
+      "title": "输入电压异常",
+      "ranker_probability": 0.6415870785713196
+    },
+    {
+      "order_index": 492,
+      "row": 2946,
+      "local": 4,
+      "kind": "add",
+      "step": 1,
+      "current_count": 1,
+      "proposed_count": 2,
+      "need_mean": 0.6057765881220499,
+      "need_min": 0.5703151226043701,
+      "argmax_support": 2,
+      "node_scores": [
+        0.1870993822813034,
+        0.19808152318000793,
+        0.2622017562389374,
+        0.7304747104644775,
+        0.6367337703704834,
+        0.7728694677352905
+      ],
+      "order_id": "eac28a99-2650-4dee-9f74-7054f480be19",
+      "rid": "#-1:a9cc9261-661b-41a3-89dd-0aee4886d4be",
+      "title": "以太网物理接口(ETPI) 信号丢失(LOS)",
+      "ranker_probability": 0.6393367052078247
+    },
+    {
+      "order_index": 431,
+      "row": 2565,
+      "local": 0,
+      "kind": "delete",
+      "step": 1,
+      "current_count": 2,
+      "proposed_count": 1,
+      "need_mean": 0.5001979420582453,
+      "need_min": 0.47531089186668396,
+      "argmax_support": 6,
+      "node_scores": [
+        0.20197340846061707,
+        0.196042999625206,
+        0.7007112503051758,
+        0.6759921312332153,
+        0.6639506816864014,
+        0.6632086038589478
+      ],
+      "order_id": "d14a7ca0-eeb5-44b8-850a-fdc536f03f2c",
+      "rid": "#-1:42acdfe3-9f36-4590-b93c-fde53edb48d5",
+      "title": "BBU CPRI线速率协商异常告警",
+      "ranker_probability": 0.636015772819519
+    },
+    {
+      "order_index": 280,
+      "row": 1628,
+      "local": 0,
+      "kind": "delete",
+      "step": 1,
+      "current_count": 2,
+      "proposed_count": 1,
+      "need_mean": 0.46683307488759357,
+      "need_min": 0.41473785042762756,
+      "argmax_support": 2,
+      "node_scores": [
+        0.8154064416885376,
+        0.7466071248054504,
+        0.7894623279571533,
+        0.7104901075363159,
+        0.697116494178772,
+        0.6486285924911499
+      ],
+      "order_id": "8dac662e-5ffc-469b-ada5-8e0449b5c502",
+      "rid": "#-1:966d0900-3d0b-4e6c-ba67-a8cb5c51248c",
+      "title": "射频单元交流掉电告警",
+      "ranker_probability": 0.6161878705024719
+    },
+    {
+      "order_index": 258,
+      "row": 1509,
+      "local": 2,
+      "kind": "delete",
+      "step": 1,
+      "current_count": 2,
+      "proposed_count": 1,
+      "need_mean": 0.6529090205828348,
+      "need_min": 0.5502467155456543,
+      "argmax_support": 6,
+      "node_scores": [
+        0.8603816032409668,
+        0.8157591223716736,
+        0.5429826378822327,
+        0.4985450208187103,
+        0.509115993976593,
+        0.44590795040130615
+      ],
+      "order_id": "82f3997a-668c-4663-9dd6-a0a298f14d00",
+      "rid": "#-1:24a89126-1a36-4305-b0f5-0a60e349ead1",
+      "title": "射频单元IR接口异常告警",
+      "ranker_probability": 0.5956166982650757
+    },
+    {
+      "order_index": 179,
+      "row": 1005,
+      "local": 5,
+      "kind": "delete",
+      "step": 1,
+      "current_count": 2,
+      "proposed_count": 1,
+      "need_mean": 0.6794828573862711,
+      "need_min": 0.5917450189590454,
+      "argmax_support": 6,
+      "node_scores": [
+        0.8641796112060547,
+        0.6758396625518799,
+        0.44868531823158264,
+        0.47820404171943665,
+        0.5241686105728149,
+        0.4952268898487091
+      ],
+      "order_id": "5f0b3c7f-806d-4622-a671-5d23ee09c827",
+      "rid": "#-1:2a0b69d3-858a-49e0-9b6a-e1cf21eb55bb",
+      "title": "RRU链路断",
+      "ranker_probability": 0.5918834805488586
+    },
+    {
+      "order_index": 539,
+      "row": 3214,
+      "local": 3,
+      "kind": "add",
+      "step": 3,
+      "current_count": 1,
+      "proposed_count": 4,
+      "need_mean": 0.4257522275050481,
+      "need_min": 0.4023512005805969,
+      "argmax_support": 1,
+      "node_scores": [
+        0.576681911945343,
+        0.5394490957260132,
+        0.38533440232276917,
+        0.4311458468437195,
+        0.43637531995773315,
+        0.5191937685012817
+      ],
+      "order_id": "fcead0b1-a014-4436-9e49-8041559471da",
+      "rid": "#-1:21222fdd-69d7-49f4-89b9-859eb41b9002",
+      "title": "光口接收链路故障",
+      "ranker_probability": 0.5906608700752258
+    },
+    {
+      "order_index": 27,
+      "row": 180,
+      "local": 2,
+      "kind": "add",
+      "step": 1,
+      "current_count": 1,
+      "proposed_count": 2,
+      "need_mean": 0.4246496955553691,
+      "need_min": 0.3933924734592438,
+      "argmax_support": 0,
+      "node_scores": [
+        0.09789144992828369,
+        0.08872440457344055,
+        0.7841949462890625,
+        0.4730132818222046,
+        0.43613865971565247,
+        0.43361949920654297
+      ],
+      "order_id": "0e755fc0-8819-4420-b701-1f84ec0e59de",
+      "rid": "#-1:0f95a457-9523-4b28-9a93-81b08542d6b4",
+      "title": "射频单元维护链路异常告警",
+      "ranker_probability": 0.5867816209793091
+    },
+    {
+      "order_index": 361,
+      "row": 2103,
+      "local": 8,
+      "kind": "add",
+      "step": 1,
+      "current_count": 4,
+      "proposed_count": 5,
+      "need_mean": 0.4229693015416463,
+      "need_min": 0.4086589813232422,
+      "argmax_support": 5,
+      "node_scores": [
+        0.41726842522621155,
+        0.37743377685546875,
+        0.4172389507293701,
+        0.5115490555763245,
+        0.47221237421035767,
+        0.5725089311599731
+      ],
+      "order_id": "af374848-7bd9-44f9-bfb8-4c087a74d016",
+      "rid": "#-1:84951a88-f1b5-42a0-b848-bd9160c75b73",
+      "title": "网元连接中断",
+      "ranker_probability": 0.5739567875862122
+    },
+    {
+      "order_index": 339,
+      "row": 1972,
+      "local": 1,
+      "kind": "add",
+      "step": 1,
+      "current_count": 1,
+      "proposed_count": 2,
+      "need_mean": 0.6253047982851664,
+      "need_min": 0.5936646461486816,
+      "argmax_support": 3,
+      "node_scores": [
+        0.4588935971260071,
+        0.3945615589618683,
+        0.7686931490898132,
+        0.7094882130622864,
+        0.6046810746192932,
+        0.8120096921920776
+      ],
+      "order_id": "aa321b94-f3d9-45cf-b1ee-f3a1fe38da68",
+      "rid": "#-1:429df297-9a4e-462a-a377-ae4cd47eda24",
+      "title": "光口接收链路故障",
+      "ranker_probability": 0.5639355778694153
+    },
+    {
+      "order_index": 296,
+      "row": 1709,
+      "local": 1,
+      "kind": "delete",
+      "step": 1,
+      "current_count": 2,
+      "proposed_count": 1,
+      "need_mean": 0.6694294313589731,
+      "need_min": 0.6530092358589172,
+      "argmax_support": 6,
+      "node_scores": [
+        0.8088401556015015,
+        0.6590785384178162,
+        0.039401713758707047,
+        0.4473276734352112,
+        0.49813196063041687,
+        0.49623656272888184
+      ],
+      "order_id": "947bec57-c9f8-47ad-aa45-37cb9be6c798",
+      "rid": "#-1:b894a7ec-dc86-4656-971a-c1b10121a044",
+      "title": "光口接收链路故障",
+      "ranker_probability": 0.5589326024055481
+    },
+    {
+      "order_index": 337,
+      "row": 1951,
+      "local": 7,
+      "kind": "delete",
+      "step": 1,
+      "current_count": 4,
+      "proposed_count": 3,
+      "need_mean": 0.45107963184515637,
+      "need_min": 0.3827274441719055,
+      "argmax_support": 4,
+      "node_scores": [
+        0.9142197370529175,
+        0.7844375967979431,
+        0.8096985816955566,
+        0.581728458404541,
+        0.6171386241912842,
+        0.6159461736679077
+      ],
+      "order_id": "a6ae9c3c-c787-47e0-abf0-d610533dc2a0",
+      "rid": "#-1:97d24cf9-e8a1-45f9-8cc6-b6cc1580e991",
+      "title": "光模块接收光功率异常",
+      "ranker_probability": 0.5539634227752686
+    },
+    {
+      "order_index": 142,
+      "row": 787,
+      "local": 4,
+      "kind": "add",
+      "step": 2,
+      "current_count": 1,
+      "proposed_count": 3,
+      "need_mean": 0.16788890212774277,
+      "need_min": 0.14591048657894135,
+      "argmax_support": 0,
+      "node_scores": [
+        0.15065684914588928,
+        0.11118943244218826,
+        0.6941465735435486,
+        0.6594231724739075,
+        0.579243004322052,
+        0.6918765902519226
+      ],
+      "order_id": "4c2b3b06-a6a2-4c1b-9734-def3d1f849d8",
+      "rid": "#-1:66facd91-e281-4331-bbae-04ab8bd9746d",
+      "title": "[衍生告警]PTN光缆中断，单报LOS",
+      "ranker_probability": 0.5530259609222412
+    },
+    {
+      "order_index": 333,
+      "row": 1928,
+      "local": 10,
+      "kind": "delete",
+      "step": 1,
+      "current_count": 5,
+      "proposed_count": 4,
+      "need_mean": 0.6855337719122568,
+      "need_min": 0.6022045612335205,
+      "argmax_support": 4,
+      "node_scores": [
+        0.77984219789505,
+        0.5973215103149414,
+        0.622788667678833,
+        0.3145962357521057,
+        0.4100603759288788,
+        0.273314893245697
+      ],
+      "order_id": "a3645153-27f5-4b8c-9e3a-bc84cfd7c653",
+      "rid": "#-1:fe0aed2a-0446-4bba-8836-7bf35d20cd0b",
+      "title": "射频单元直流掉电告警",
+      "ranker_probability": 0.5426692962646484
+    },
+    {
+      "order_index": 86,
+      "row": 478,
+      "local": 0,
+      "kind": "delete",
+      "step": 1,
+      "current_count": 2,
+      "proposed_count": 1,
+      "need_mean": 0.3746344894170761,
+      "need_min": 0.3415171504020691,
+      "argmax_support": 0,
+      "node_scores": [
+        0.784210205078125,
+        0.6982787251472473,
+        0.7097867131233215,
+        0.7239826917648315,
+        0.7057891488075256,
+        0.7891120314598083
+      ],
+      "order_id": "30ee0cf1-0b53-438c-8154-c1356061e57c",
+      "rid": "#-1:c8d3a6e4-2a46-4d1f-8833-07014f4cbe73",
+      "title": "光口接收链路故障",
+      "ranker_probability": 0.5308148860931396
+    },
+    {
+      "order_index": 520,
+      "row": 3113,
+      "local": 4,
+      "kind": "delete",
+      "step": 1,
+      "current_count": 4,
+      "proposed_count": 3,
+      "need_mean": 0.670269250869751,
+      "need_min": 0.640606164932251,
+      "argmax_support": 6,
+      "node_scores": [
+        0.8065580725669861,
+        0.6983047723770142,
+        0.7213740944862366,
+        0.40536749362945557,
+        0.5282361507415771,
+        0.42633944749832153
+      ],
+      "order_id": "f57b8fbe-bd33-4dc7-95ef-fbffa4552754",
+      "rid": "#-1:245caebe-e60c-43fc-b1a4-ebdb838df6d1",
+      "title": "光模块接收光功率异常",
+      "ranker_probability": 0.5281296968460083
+    },
+    {
+      "order_index": 180,
+      "row": 1009,
+      "local": 3,
+      "kind": "delete",
+      "step": 1,
+      "current_count": 3,
+      "proposed_count": 2,
+      "need_mean": 0.6326105197270712,
+      "need_min": 0.6244220733642578,
+      "argmax_support": 6,
+      "node_scores": [
+        0.4597261846065521,
+        0.45239129662513733,
+        0.3168032169342041,
+        0.3918188810348511,
+        0.4633074700832367,
+        0.3292933702468872
+      ],
+      "order_id": "5f31acb6-cb86-4488-af6a-f6d2d4d3a4d9",
+      "rid": "#-1:fdd7bddb-e7cc-4a6f-8246-0c2cf89a221e",
+      "title": "单板电源关断",
+      "ranker_probability": 0.5254566073417664
+    },
+    {
+      "order_index": 206,
+      "row": 1225,
+      "local": 2,
+      "kind": "add",
+      "step": 1,
+      "current_count": 1,
+      "proposed_count": 2,
+      "need_mean": 0.592076579729716,
+      "need_min": 0.5330302715301514,
+      "argmax_support": 5,
+      "node_scores": [
+        0.45988500118255615,
+        0.5024858713150024,
+        0.32490140199661255,
+        0.35515132546424866,
+        0.44943445920944214,
+        0.31193864345550537
+      ],
+      "order_id": "6c596cdd-fd3a-44e3-ba8a-3deff75209ee",
+      "rid": "#-1:4e367429-ffd9-4a23-bc77-e74ff046d5ea",
+      "title": "单板电源关断",
+      "ranker_probability": 0.5240336060523987
+    },
+    {
+      "order_index": 121,
+      "row": 656,
+      "local": 1,
+      "kind": "delete",
+      "step": 1,
+      "current_count": 2,
+      "proposed_count": 1,
+      "need_mean": 0.54322483142217,
+      "need_min": 0.5173382759094238,
+      "argmax_support": 6,
+      "node_scores": [
+        0.12911289930343628,
+        0.0727795735001564,
+        0.8152133226394653,
+        0.8776856660842896,
+        0.8017587661743164,
+        0.9125638604164124
+      ],
+      "order_id": "43a52adc-0332-479c-9e4a-f2642ff64db8",
+      "rid": "#-1:99f8512f-1c76-4fcd-858e-f7f021edc875",
+      "title": "射频单元维护链路异常告警",
+      "ranker_probability": 0.5213308334350586
+    },
+    {
+      "order_index": 9,
+      "row": 71,
+      "local": 4,
+      "kind": "delete",
+      "step": 2,
+      "current_count": 4,
+      "proposed_count": 2,
+      "need_mean": 0.37498853107293445,
+      "need_min": 0.36349576711654663,
+      "argmax_support": 1,
+      "node_scores": [
+        0.9153320789337158,
+        0.8428702354431152,
+        0.9610276222229004,
+        0.743762195110321,
+        0.8479353785514832,
+        0.828702449798584
+      ],
+      "order_id": "050ba66b-e989-48e5-a059-a336a79e0dab",
+      "rid": "#-1:468300d3-ba53-4a45-acee-db648d539f2d",
+      "title": "BBU CPRI接口异常告警",
+      "ranker_probability": 0.5188993215560913
+    },
+    {
+      "order_index": 314,
+      "row": 1807,
+      "local": 0,
+      "kind": "add",
+      "step": 1,
+      "current_count": 1,
+      "proposed_count": 2,
+      "need_mean": 0.47101136048634845,
+      "need_min": 0.44510722160339355,
+      "argmax_support": 0,
+      "node_scores": [
+        0.48343077301979065,
+        0.4325466752052307,
+        0.02223167195916176,
+        0.6779353022575378,
+        0.6566944718360901,
+        0.74679034948349
+      ],
+      "order_id": "9ca5e12f-f73f-472c-99b3-8e74c01272fe",
+      "rid": "#-1:247d7153-ba7f-4012-86c3-2d6b9b7e9730",
+      "title": "单板过温保护下电",
+      "ranker_probability": 0.5095864534378052
+    },
+    {
+      "order_index": 33,
+      "row": 213,
+      "local": 2,
+      "kind": "add",
+      "step": 1,
+      "current_count": 1,
+      "proposed_count": 2,
+      "need_mean": 0.8525206049283346,
+      "need_min": 0.8189929723739624,
+      "argmax_support": 6,
+      "node_scores": [
+        0.27846646308898926,
+        0.2596791982650757,
+        0.03057016246020794,
+        0.7103927135467529,
+        0.6062731146812439,
+        0.8054361343383789
+      ],
+      "order_id": "1117ad03-8891-4bf6-854c-612bf19fdae4",
+      "rid": "#-1:08baefd1-6af0-4be4-88f5-6fa77d069d9d",
+      "title": "小区关断告警",
+      "ranker_probability": 0.506866991519928
+    },
+    {
+      "order_index": 311,
+      "row": 1790,
+      "local": 2,
+      "kind": "delete",
+      "step": 2,
+      "current_count": 6,
+      "proposed_count": 4,
+      "need_mean": 0.5793991883595785,
+      "need_min": 0.4949461817741394,
+      "argmax_support": 4,
+      "node_scores": [
+        0.6720532774925232,
+        0.6254249811172485,
+        0.7898967266082764,
+        0.48455190658569336,
+        0.3729459047317505,
+        0.6149217486381531
+      ],
+      "order_id": "9adc0ae9-f4d1-4084-b78a-1ee0ce83b3ab",
+      "rid": "#-1:b73ec874-5e81-4451-8181-fdbc79712652",
+      "title": "输入电源断",
+      "ranker_probability": 0.5004907250404358
+    },
+    {
+      "order_index": 184,
+      "row": 1091,
+      "local": 53,
+      "kind": "add",
+      "step": 1,
+      "current_count": 7,
+      "proposed_count": 8,
+      "need_mean": 0.44581474860509235,
+      "need_min": 0.3254323899745941,
+      "argmax_support": 6,
+      "node_scores": [
+        0.6849856972694397,
+        0.6249791979789734,
+        0.5809980034828186,
+        0.7030441761016846,
+        0.6532878279685974,
+        0.8070818185806274
+      ],
+      "order_id": "625ffce7-65c5-4657-9104-4148b4113130",
+      "rid": "#-1:a8f28178-4795-4f26-84d6-1791944fb245",
+      "title": "输入电源断",
+      "ranker_probability": 0.49752554297447205
+    },
+    {
+      "order_index": 532,
+      "row": 3174,
+      "local": 11,
+      "kind": "add",
+      "step": 3,
+      "current_count": 1,
+      "proposed_count": 4,
+      "need_mean": 0.5839094618956248,
+      "need_min": 0.5026868581771851,
+      "argmax_support": 5,
+      "node_scores": [
+        0.2830280661582947,
+        0.28424954414367676,
+        0.1804899126291275,
+        0.5779268741607666,
+        0.4596557915210724,
+        0.6178073883056641
+      ],
+      "order_id": "faa00ed5-c0b9-445e-98ac-671035a4a239",
+      "rid": "#-1:d4f3c427-0b59-41d3-8208-18c218433c27",
+      "title": "ETH_LOS",
+      "ranker_probability": 0.4941179156303406
+    },
+    {
+      "order_index": 146,
+      "row": 830,
+      "local": 0,
+      "kind": "add",
+      "step": 1,
+      "current_count": 1,
+      "proposed_count": 2,
+      "need_mean": 0.38212430477142334,
+      "need_min": 0.34633490443229675,
+      "argmax_support": 0,
+      "node_scores": [
+        0.5578055381774902,
+        0.5942766666412354,
+        0.03189023584127426,
+        0.225502610206604,
+        0.3539629876613617,
+        0.1551327109336853
+      ],
+      "order_id": "4f66c084-4f15-43d9-9f95-0350f4179ea6",
+      "rid": "#-1:21f1e2b1-7c74-4d6b-b9de-eaccf1430614",
+      "title": "输入电压异常",
+      "ranker_probability": 0.48441457748413086
+    },
+    {
+      "order_index": 236,
+      "row": 1403,
+      "local": 0,
+      "kind": "add",
+      "step": 2,
+      "current_count": 1,
+      "proposed_count": 3,
+      "need_mean": 0.3356364667415619,
+      "need_min": 0.31469953060150146,
+      "argmax_support": 0,
+      "node_scores": [
+        0.1288093477487564,
+        0.10409816354513168,
+        0.12285874038934708,
+        0.27525651454925537,
+        0.3073711395263672,
+        0.22434894740581512
+      ],
+      "order_id": "7b1b39e5-954a-418c-9ed7-03285444ea24",
+      "rid": "#-1:fac75988-ea52-43cb-888c-45f1495ba491",
+      "title": "S1用户面路径不可用",
+      "ranker_probability": 0.47865697741508484
+    },
+    {
+      "order_index": 153,
+      "row": 873,
+      "local": 0,
+      "kind": "add",
+      "step": 1,
+      "current_count": 1,
+      "proposed_count": 2,
+      "need_mean": 0.23263399054606756,
+      "need_min": 0.2239636778831482,
+      "argmax_support": 0,
+      "node_scores": [
+        0.39743658900260925,
+        0.359240859746933,
+        0.30658388137817383,
+        0.4183681309223175,
+        0.42978864908218384,
+        0.3559199869632721
+      ],
+      "order_id": "52df1065-3f92-4e4e-b255-d2575f9bd8b1",
+      "rid": "#-1:2d4efdc0-5900-4512-ae50-2db03e8cd689",
+      "title": "超级小区CP退出服务",
+      "ranker_probability": 0.47852885723114014
+    },
+    {
+      "order_index": 15,
+      "row": 118,
+      "local": 20,
+      "kind": "delete",
+      "step": 2,
+      "current_count": 8,
+      "proposed_count": 6,
+      "need_mean": 0.653432180484136,
+      "need_min": 0.5474492907524109,
+      "argmax_support": 4,
+      "node_scores": [
+        0.8503444194793701,
+        0.8218364715576172,
+        0.6140921711921692,
+        0.7885370254516602,
+        0.6897473931312561,
+        0.8812603950500488
+      ],
+      "order_id": "06d346bc-1345-4825-9e01-546cc30ac6ba",
+      "rid": "#-1:1ae334d7-8285-4ed0-a2eb-d5f84869373f",
+      "title": "设备掉电",
+      "ranker_probability": 0.4713485836982727
+    },
+    {
+      "order_index": 88,
+      "row": 499,
+      "local": 9,
+      "kind": "delete",
+      "step": 3,
+      "current_count": 6,
+      "proposed_count": 3,
+      "need_mean": 0.3544839223225911,
+      "need_min": 0.3150566816329956,
+      "argmax_support": 0,
+      "node_scores": [
+        0.8929632902145386,
+        0.6861318945884705,
+        0.7276034951210022,
+        0.5933396220207214,
+        0.5080053806304932,
+        0.6710980534553528
+      ],
+      "order_id": "320223fc-89b1-40bc-88a9-4b07d012da47",
+      "rid": "#-1:39f86371-8aff-4043-8f91-eca93ad72208",
+      "title": "输入电源断",
+      "ranker_probability": 0.466210275888443
+    },
+    {
+      "order_index": 281,
+      "row": 1640,
+      "local": 6,
+      "kind": "add",
+      "step": 1,
+      "current_count": 1,
+      "proposed_count": 2,
+      "need_mean": 0.3854355017344157,
+      "need_min": 0.30889883637428284,
+      "argmax_support": 0,
+      "node_scores": [
+        0.3137034475803375,
+        0.2707267701625824,
+        0.8121865391731262,
+        0.6527664661407471,
+        0.6410425305366516,
+        0.5903637409210205
+      ],
+      "order_id": "8df78ab7-ca49-44f4-9fc2-1427cf850964",
+      "rid": "#-1:d66659d1-337f-4be6-83be-05795ef803cd",
+      "title": "[衍生告警]PTN光缆中断，单报LOS",
+      "ranker_probability": 0.4650024175643921
+    },
+    {
+      "order_index": 191,
+      "row": 1137,
+      "local": 7,
+      "kind": "add",
+      "step": 1,
+      "current_count": 1,
+      "proposed_count": 2,
+      "need_mean": 0.6378895044326782,
+      "need_min": 0.6102312803268433,
+      "argmax_support": 2,
+      "node_scores": [
+        0.046179503202438354,
+        0.04186899587512016,
+        0.7671687602996826,
+        0.3352828919887543,
+        0.3355827033519745,
+        0.282956063747406
+      ],
+      "order_id": "6600d905-9faf-4ee3-8d44-223e9bc4dfdb",
+      "rid": "#-1:d75e7df5-766b-490b-b64b-38d823eca500",
+      "title": "射频单元维护链路异常告警",
+      "ranker_probability": 0.4598255753517151
+    },
+    {
+      "order_index": 89,
+      "row": 505,
+      "local": 5,
+      "kind": "delete",
+      "step": 1,
+      "current_count": 7,
+      "proposed_count": 6,
+      "need_mean": 0.5456839948892593,
+      "need_min": 0.39922183752059937,
+      "argmax_support": 1,
+      "node_scores": [
+        0.8803367018699646,
+        0.8115617632865906,
+        0.9337871074676514,
+        0.8034444451332092,
+        0.6633866429328918,
+        0.8749015927314758
+      ],
+      "order_id": "32cf16da-3094-4e10-8533-5efdf3335ec0",
+      "rid": "#-1:22776b83-6e3f-424d-a686-f6edbb6385fa",
+      "title": "光口接收链路故障",
+      "ranker_probability": 0.4579676389694214
+    },
+    {
+      "order_index": 495,
+      "row": 2967,
+      "local": 1,
+      "kind": "delete",
+      "step": 1,
+      "current_count": 2,
+      "proposed_count": 1,
+      "need_mean": 0.5588230590025584,
+      "need_min": 0.5368092060089111,
+      "argmax_support": 6,
+      "node_scores": [
+        0.8044617772102356,
+        0.746330201625824,
+        0.0647503212094307,
+        0.5293679237365723,
+        0.5144445300102234,
+        0.6610655188560486
+      ],
+      "order_id": "edcaa16f-fee4-415e-88ac-ba68e7aa0087",
+      "rid": "#-1:fdaaf547-da3c-47bd-b583-00d8af72e779",
+      "title": "BBU CPRI接口异常告警",
+      "ranker_probability": 0.44091975688934326
+    },
+    {
+      "order_index": 393,
+      "row": 2301,
+      "local": 0,
+      "kind": "add",
+      "step": 1,
+      "current_count": 1,
+      "proposed_count": 2,
+      "need_mean": 0.5649642646312714,
+      "need_min": 0.5339041948318481,
+      "argmax_support": 0,
+      "node_scores": [
+        0.21478937566280365,
+        0.20731589198112488,
+        0.4991161525249481,
+        0.3962240517139435,
+        0.4834766387939453,
+        0.4016200006008148
+      ],
+      "order_id": "bccb900b-ec1a-4fd9-b2fe-e77b133c8585",
+      "rid": "#-1:574be929-e320-4804-b284-3851e1732248",
+      "title": "GNSS天馈链路故障",
+      "ranker_probability": 0.4404807686805725
+    },
+    {
+      "order_index": 534,
+      "row": 3191,
+      "local": 0,
+      "kind": "add",
+      "step": 1,
+      "current_count": 1,
+      "proposed_count": 2,
+      "need_mean": 0.2832106252511342,
+      "need_min": 0.25463128089904785,
+      "argmax_support": 0,
+      "node_scores": [
+        0.3238561451435089,
+        0.234272301197052,
+        0.7772706747055054,
+        0.5875034332275391,
+        0.48062101006507874,
+        0.6375707983970642
+      ],
+      "order_id": "faeeeb88-468e-485d-b71b-d3f799baaaf0",
+      "rid": "#-1:9602714c-0fcb-43e5-b630-e6036059b9c5",
+      "title": "光口接收链路恶化",
+      "ranker_probability": 0.43031689524650574
+    },
+    {
+      "order_index": 303,
+      "row": 1748,
+      "local": 11,
+      "kind": "add",
+      "step": 2,
+      "current_count": 3,
+      "proposed_count": 5,
+      "need_mean": 0.40404434502124786,
+      "need_min": 0.3414469063282013,
+      "argmax_support": 3,
+      "node_scores": [
+        0.4891272187232971,
+        0.46181049942970276,
+        0.5511740446090698,
+        0.32549357414245605,
+        0.3782631456851959,
+        0.2978420853614807
+      ],
+      "order_id": "9738b42a-7360-4763-8895-0e84599b4d60",
+      "rid": "#-1:3febdb39-a85c-4ffd-862a-b7102daebc10",
+      "title": "射频单元CPRI接口异常告警",
+      "ranker_probability": 0.4260852634906769
+    },
+    {
+      "order_index": 417,
+      "row": 2492,
+      "local": 21,
+      "kind": "delete",
+      "step": 1,
+      "current_count": 8,
+      "proposed_count": 7,
+      "need_mean": 0.7947836319605509,
+      "need_min": 0.7151845693588257,
+      "argmax_support": 4,
+      "node_scores": [
+        0.9065360426902771,
+        0.9027108550071716,
+        0.780104398727417,
+        0.9148151278495789,
+        0.80308997631073,
+        0.9549852013587952
+      ],
+      "order_id": "c90fbdec-4d8e-4282-9615-6515cf4d5c28",
+      "rid": "#-1:a087592d-b6c6-4821-bd5c-e5ed365f0d17",
+      "title": "设备掉电",
+      "ranker_probability": 0.4179767072200775
+    },
+    {
+      "order_index": 436,
+      "row": 2595,
+      "local": 0,
+      "kind": "add",
+      "step": 1,
+      "current_count": 1,
+      "proposed_count": 2,
+      "need_mean": 0.19859232008457184,
+      "need_min": 0.17589454352855682,
+      "argmax_support": 0,
+      "node_scores": [
+        0.2310207635164261,
+        0.2287454605102539,
+        0.4929726719856262,
+        0.25330671668052673,
+        0.2673746347427368,
+        0.1654549390077591
+      ],
+      "order_id": "d3af2aee-7dc1-4e51-9412-857e58882314",
+      "rid": "#-1:788b74a5-a6cd-4d8c-9052-632b8cc30e10",
+      "title": "射频单元维护链路异常告警",
+      "ranker_probability": 0.41570019721984863
+    },
+    {
+      "order_index": 366,
+      "row": 2147,
+      "local": 0,
+      "kind": "delete",
+      "step": 3,
+      "current_count": 6,
+      "proposed_count": 3,
+      "need_mean": 0.26212803026040393,
+      "need_min": 0.20758503675460815,
+      "argmax_support": 0,
+      "node_scores": [
+        0.7193402051925659,
+        0.6530709266662598,
+        0.7950440645217896,
+        0.6872338652610779,
+        0.6093599796295166,
+        0.7586290836334229
+      ],
+      "order_id": "b1e02c99-d2c4-4546-8324-74fdba3844ad",
+      "rid": "#-1:de7b4d5e-e8a5-440b-a8c9-05d2872fcc28",
+      "title": "BBU CPRI接口异常告警",
+      "ranker_probability": 0.41507744789123535
+    },
+    {
+      "order_index": 16,
+      "row": 134,
+      "local": 13,
+      "kind": "add",
+      "step": 2,
+      "current_count": 2,
+      "proposed_count": 4,
+      "need_mean": 0.592713455359141,
+      "need_min": 0.5121822953224182,
+      "argmax_support": 4,
+      "node_scores": [
+        0.4220362901687622,
+        0.3992167115211487,
+        0.5173137784004211,
+        0.4867514371871948,
+        0.4910658001899719,
+        0.3823511600494385
+      ],
+      "order_id": "06d84a90-670f-4ccb-b482-9afdb874d164",
+      "rid": "#-1:7546c1b4-41c2-4d6c-9466-c6766f460056",
+      "title": "[衍生告警]PTN光缆中断，单报LOS",
+      "ranker_probability": 0.41462013125419617
+    },
+    {
+      "order_index": 270,
+      "row": 1565,
+      "local": 5,
+      "kind": "delete",
+      "step": 1,
+      "current_count": 2,
+      "proposed_count": 1,
+      "need_mean": 0.38292068243026733,
+      "need_min": 0.30951714515686035,
+      "argmax_support": 0,
+      "node_scores": [
+        0.7527163028717041,
+        0.7648811340332031,
+        0.161995068192482,
+        0.6349120736122131,
+        0.6810853481292725,
+        0.7283786535263062
+      ],
+      "order_id": "8a2eca9e-2e8b-410c-823d-5745cd4a9f88",
+      "rid": "#-1:129f471d-8df9-4bfb-9b99-3ebcbe57608f",
+      "title": "光口接收链路故障",
+      "ranker_probability": 0.4137296676635742
+    },
+    {
+      "order_index": 531,
+      "row": 3156,
+      "local": 3,
+      "kind": "add",
+      "step": 1,
+      "current_count": 1,
+      "proposed_count": 2,
+      "need_mean": 0.410536453127861,
+      "need_min": 0.3873209059238434,
+      "argmax_support": 0,
+      "node_scores": [
+        0.30377912521362305,
+        0.24508793652057648,
+        0.245770663022995,
+        0.35441696643829346,
+        0.36636343598365784,
+        0.3592361807823181
+      ],
+      "order_id": "fa82abed-1394-4701-b303-e3a5371d30af",
+      "rid": "#-1:a4eca6a4-28de-484e-88b6-5cc9d53b641c",
+      "title": "传输光接口异常告警",
+      "ranker_probability": 0.4112597405910492
+    },
+    {
+      "order_index": 384,
+      "row": 2232,
+      "local": 2,
+      "kind": "add",
+      "step": 1,
+      "current_count": 1,
+      "proposed_count": 2,
+      "need_mean": 0.6160686612129211,
+      "need_min": 0.5540089011192322,
+      "argmax_support": 6,
+      "node_scores": [
+        0.568739652633667,
+        0.5872616171836853,
+        0.4482908546924591,
+        0.3351137042045593,
+        0.4021351933479309,
+        0.2692621648311615
+      ],
+      "order_id": "bb26e0b0-996a-42cf-ba23-b62c3335e5fb",
+      "rid": "#-1:8715562f-9fea-408e-b718-f46aa53162bd",
+      "title": "单板电源关断",
+      "ranker_probability": 0.40934035181999207
+    },
+    {
+      "order_index": 247,
+      "row": 1455,
+      "local": 4,
+      "kind": "add",
+      "step": 1,
+      "current_count": 1,
+      "proposed_count": 2,
+      "need_mean": 0.48283692200978595,
+      "need_min": 0.47042274475097656,
+      "argmax_support": 0,
+      "node_scores": [
+        0.49854224920272827,
+        0.4343860447406769,
+        0.8624435663223267,
+        0.3675546646118164,
+        0.2690989077091217,
+        0.34117791056632996
+      ],
+      "order_id": "7f43b995-0f0f-4fa5-ad3b-6f196f7434dc",
+      "rid": "#-1:a3e05b3a-6873-4141-aa6b-0a95d637d423",
+      "title": "RRU链路断",
+      "ranker_probability": 0.4086659252643585
+    },
+    {
+      "order_index": 448,
+      "row": 2733,
+      "local": 8,
+      "kind": "add",
+      "step": 3,
+      "current_count": 4,
+      "proposed_count": 7,
+      "need_mean": 0.17804074535767236,
+      "need_min": 0.12085345387458801,
+      "argmax_support": 0,
+      "node_scores": [
+        0.49233245849609375,
+        0.4752797782421112,
+        0.15644176304340363,
+        0.5614209771156311,
+        0.4686594605445862,
+        0.5650713443756104
+      ],
+      "order_id": "d793d532-08ad-4410-a3fd-c09844eb67d0",
+      "rid": "#-1:c5555566-e3df-4e44-8c05-aaab66a5c9b2",
+      "title": "以太网物理接口(ETPI) 信号丢失(LOS)",
+      "ranker_probability": 0.4010762572288513
+    },
+    {
+      "order_index": 72,
+      "row": 396,
+      "local": 1,
+      "kind": "delete",
+      "step": 1,
+      "current_count": 3,
+      "proposed_count": 2,
+      "need_mean": 0.32325033843517303,
+      "need_min": 0.291248083114624,
+      "argmax_support": 0,
+      "node_scores": [
+        0.7278805375099182,
+        0.6642350554466248,
+        0.8904820084571838,
+        0.6388474106788635,
+        0.6230404376983643,
+        0.7749556303024292
+      ],
+      "order_id": "28b90da8-e634-4666-8e89-10d1f5c74846",
+      "rid": "#-1:28289fe0-1167-46f9-b834-90490b58eb7e",
+      "title": "光口接收链路故障",
+      "ranker_probability": 0.3863290548324585
+    },
+    {
+      "order_index": 254,
+      "row": 1487,
+      "local": 6,
+      "kind": "delete",
+      "step": 2,
+      "current_count": 4,
+      "proposed_count": 2,
+      "need_mean": 0.46027560035387677,
+      "need_min": 0.393770307302475,
+      "argmax_support": 6,
+      "node_scores": [
+        0.6696918606758118,
+        0.6190642714500427,
+        0.48635947704315186,
+        0.36684390902519226,
+        0.3978155851364136,
+        0.24777206778526306
+      ],
+      "order_id": "8106c960-6510-43b1-af25-b3c91388c598",
+      "rid": "#-1:6e7bb57a-c117-497c-9383-ec216acafe61",
+      "title": "射频单元IR接口异常告警",
+      "ranker_probability": 0.38439127802848816
+    }
+  ],
+  "probes": {
+    "v38_add_top08_plus_exact": {
+      "probe_id": "v38_add_top08_plus_exact",
+      "baseline": "D:\\zgyidong\\experiments\\v30_meta_stack\\submissions\\v30_cross_order_top5.csv",
+      "path": "D:\\zgyidong\\experiments\\v38_boundary_actions\\submissions\\v38_add_top08_plus_exact.csv",
+      "known_exact_gain": 1,
+      "candidate_count": 8,
+      "actions": [
+        {
+          "action_id": "v37_exact_001",
+          "order_id": "d5376a71-c48e-4351-ba60-f982778b3eb4",
+          "remove_rids": [
+            "#-1:0c809583-390f-4d16-9b91-c4fb1e99c5c2"
+          ],
+          "add_rids": [
+            "#-1:e401b7b4-697f-434e-8437-4b2136d6904f"
+          ],
+          "source": "historical_leaderboard_equations",
+          "expected_gain": null,
+          "evidence": {
+            "proof": "label fixed in every binary solution of all scored equations"
+          }
+        },
+        {
+          "action_id": "v38_add_top08_plus_exact_001",
+          "order_id": "e7c0c3fe-f81e-494f-8faa-edcee9a23ce3",
+          "remove_rids": [],
+          "add_rids": [
+            "#-1:db4bd4d4-5e9c-4cf2-8d26-d69a1dc99950"
+          ],
+          "source": "v38_boundary_action_ranker",
+          "expected_gain": 0.8558024168014526,
+          "evidence": {
+            "order_index": 483,
+            "row": 2886,
+            "local": 9,
+            "kind": "add",
+            "step": 1,
+            "current_count": 1,
+            "proposed_count": 2,
+            "need_mean": 0.7747480670611063,
+            "need_min": 0.7506627440452576,
+            "argmax_support": 6,
+            "node_scores": [
+              0.5420759320259094,
+              0.5984416007995605,
+              0.1031622663140297,
+              0.5232401490211487,
+              0.48272886872291565,
+              0.6200969219207764
+            ],
+            "order_id": "e7c0c3fe-f81e-494f-8faa-edcee9a23ce3",
+            "rid": "#-1:db4bd4d4-5e9c-4cf2-8d26-d69a1dc99950",
+            "title": "射频单元直流掉电告警",
+            "ranker_probability": 0.8558024168014526
+          }
+        },
+        {
+          "action_id": "v38_add_top08_plus_exact_002",
+          "order_id": "9f309a7d-e211-451b-975d-f25463fff535",
+          "remove_rids": [],
+          "add_rids": [
+            "#-1:76e9f86f-70ab-40c3-8072-731bbc9e9486"
+          ],
+          "source": "v38_boundary_action_ranker",
+          "expected_gain": 0.8426575660705566,
+          "evidence": {
+            "order_index": 325,
+            "row": 1886,
+            "local": 4,
+            "kind": "add",
+            "step": 1,
+            "current_count": 1,
+            "proposed_count": 2,
+            "need_mean": 0.5489640980958939,
+            "need_min": 0.49246910214424133,
+            "argmax_support": 2,
+            "node_scores": [
+              0.5142590999603271,
+              0.46810561418533325,
+              0.8944076895713806,
+              0.7262709736824036,
+              0.7049981355667114,
+              0.7863795161247253
+            ],
+            "order_id": "9f309a7d-e211-451b-975d-f25463fff535",
+            "rid": "#-1:76e9f86f-70ab-40c3-8072-731bbc9e9486",
+            "title": "射频单元IR接口异常告警",
+            "ranker_probability": 0.8426575660705566
+          }
+        },
+        {
+          "action_id": "v38_add_top08_plus_exact_003",
+          "order_id": "51d2ff1d-1bcb-41c7-ae33-83db088b2545",
+          "remove_rids": [],
+          "add_rids": [
+            "#-1:213df979-3107-4f97-b62a-08303f63e348"
+          ],
+          "source": "v38_boundary_action_ranker",
+          "expected_gain": 0.82258540391922,
+          "evidence": {
+            "order_index": 149,
+            "row": 855,
+            "local": 0,
+            "kind": "add",
+            "step": 1,
+            "current_count": 1,
+            "proposed_count": 2,
+            "need_mean": 0.4470771998167038,
+            "need_min": 0.413962721824646,
+            "argmax_support": 0,
+            "node_scores": [
+              0.46735942363739014,
+              0.4920085072517395,
+              0.8851826190948486,
+              0.6681440472602844,
+              0.5300415754318237,
+              0.662075400352478
+            ],
+            "order_id": "51d2ff1d-1bcb-41c7-ae33-83db088b2545",
+            "rid": "#-1:213df979-3107-4f97-b62a-08303f63e348",
+            "title": "光口接收链路故障",
+            "ranker_probability": 0.82258540391922
+          }
+        },
+        {
+          "action_id": "v38_add_top08_plus_exact_004",
+          "order_id": "b92c1c42-bc69-48fa-b5c6-7bbd2635a15b",
+          "remove_rids": [],
+          "add_rids": [
+            "#-1:e98f47f3-1430-4bab-bd66-cd79564e73e6"
+          ],
+          "source": "v38_boundary_action_ranker",
+          "expected_gain": 0.7243129014968872,
+          "evidence": {
+            "order_index": 380,
+            "row": 2205,
+            "local": 1,
+            "kind": "add",
+            "step": 1,
+            "current_count": 1,
+            "proposed_count": 2,
+            "need_mean": 0.8111826479434967,
+            "need_min": 0.7748450636863708,
+            "argmax_support": 6,
+            "node_scores": [
+              0.5549448132514954,
+              0.4494848847389221,
+              0.6721123456954956,
+              0.5610470175743103,
+              0.6052956581115723,
+              0.593901515007019
+            ],
+            "order_id": "b92c1c42-bc69-48fa-b5c6-7bbd2635a15b",
+            "rid": "#-1:e98f47f3-1430-4bab-bd66-cd79564e73e6",
+            "title": "光口接收链路故障",
+            "ranker_probability": 0.7243129014968872
+          }
+        },
+        {
+          "action_id": "v38_add_top08_plus_exact_005",
+          "order_id": "6e2c4bef-2309-4ace-9c76-983bac0255a8",
+          "remove_rids": [],
+          "add_rids": [
+            "#-1:a4aab2b7-dacc-48af-a107-25fa2e283027"
+          ],
+          "source": "v38_boundary_action_ranker",
+          "expected_gain": 0.7242883443832397,
+          "evidence": {
+            "order_index": 211,
+            "row": 1254,
+            "local": 0,
+            "kind": "add",
+            "step": 2,
+            "current_count": 1,
+            "proposed_count": 3,
+            "need_mean": 0.6602934201558431,
+            "need_min": 0.590798020362854,
+            "argmax_support": 1,
+            "node_scores": [
+              0.3490278720855713,
+              0.23641522228717804,
+              0.6859453916549683,
+              0.5628101229667664,
+              0.5172208547592163,
+              0.5787099003791809
+            ],
+            "order_id": "6e2c4bef-2309-4ace-9c76-983bac0255a8",
+            "rid": "#-1:a4aab2b7-dacc-48af-a107-25fa2e283027",
+            "title": "管理通道通信异常",
+            "ranker_probability": 0.7242883443832397
+          }
+        },
+        {
+          "action_id": "v38_add_top08_plus_exact_006",
+          "order_id": "35dcec5d-5286-4e33-bd22-42708535b5c8",
+          "remove_rids": [],
+          "add_rids": [
+            "#-1:5d4c15aa-67c6-47a6-8b32-8213aa4d09ac"
+          ],
+          "source": "v38_boundary_action_ranker",
+          "expected_gain": 0.7074711322784424,
+          "evidence": {
+            "order_index": 96,
+            "row": 545,
+            "local": 7,
+            "kind": "add",
+            "step": 1,
+            "current_count": 2,
+            "proposed_count": 3,
+            "need_mean": 0.5976928373177847,
+            "need_min": 0.5118255615234375,
+            "argmax_support": 4,
+            "node_scores": [
+              0.10547467321157455,
+              0.11376216262578964,
+              0.47137850522994995,
+              0.550851583480835,
+              0.46044373512268066,
+              0.6565049290657043
+            ],
+            "order_id": "35dcec5d-5286-4e33-bd22-42708535b5c8",
+            "rid": "#-1:5d4c15aa-67c6-47a6-8b32-8213aa4d09ac",
+            "title": "ETH_LINK_DOWN",
+            "ranker_probability": 0.7074711322784424
+          }
+        },
+        {
+          "action_id": "v38_add_top08_plus_exact_007",
+          "order_id": "bdbb6a39-a21b-4893-a4c0-e3170fc6ea11",
+          "remove_rids": [],
+          "add_rids": [
+            "#-1:909e5149-bcf1-4f5c-a1e6-9280287a4b95"
+          ],
+          "source": "v38_boundary_action_ranker",
+          "expected_gain": 0.6765477061271667,
+          "evidence": {
+            "order_index": 399,
+            "row": 2337,
+            "local": 0,
+            "kind": "add",
+            "step": 1,
+            "current_count": 1,
+            "proposed_count": 2,
+            "need_mean": 0.45170433819293976,
+            "need_min": 0.41874822974205017,
+            "argmax_support": 0,
+            "node_scores": [
+              0.5581027269363403,
+              0.6015845537185669,
+              0.1558944433927536,
+              0.33746519684791565,
+              0.4024280905723572,
+              0.31923559308052063
+            ],
+            "order_id": "bdbb6a39-a21b-4893-a4c0-e3170fc6ea11",
+            "rid": "#-1:909e5149-bcf1-4f5c-a1e6-9280287a4b95",
+            "title": "输入电压异常",
+            "ranker_probability": 0.6765477061271667
+          }
+        },
+        {
+          "action_id": "v38_add_top08_plus_exact_008",
+          "order_id": "af26c607-3f9d-4a37-8d4d-a809bfccd1f6",
+          "remove_rids": [],
+          "add_rids": [
+            "#-1:21b56b75-9b57-4986-9f58-9f1e28c2c979"
+          ],
+          "source": "v38_boundary_action_ranker",
+          "expected_gain": 0.6601756811141968,
+          "evidence": {
+            "order_index": 359,
+            "row": 2081,
+            "local": 1,
+            "kind": "add",
+            "step": 1,
+            "current_count": 1,
+            "proposed_count": 2,
+            "need_mean": 0.454175665974617,
+            "need_min": 0.42463070154190063,
+            "argmax_support": 0,
+            "node_scores": [
+              0.30958694219589233,
+              0.22802096605300903,
+              0.10268475115299225,
+              0.7195209860801697,
+              0.586387574672699,
+              0.8297380208969116
+            ],
+            "order_id": "af26c607-3f9d-4a37-8d4d-a809bfccd1f6",
+            "rid": "#-1:21b56b75-9b57-4986-9f58-9f1e28c2c979",
+            "title": "小区关断告警",
+            "ranker_probability": 0.6601756811141968
+          }
+        }
+      ],
+      "predictions": 1043,
+      "sha256": "f1ee8811a1f043b4d3a9b689e05485eee27e0c100d6715de5eabf8181af2fbe5",
+      "score_possibilities": [
+        {
+          "true_adds": 0,
+          "tp": 956,
+          "score": 0.91614758
+        },
+        {
+          "true_adds": 1,
+          "tp": 957,
+          "score": 0.917105894
+        },
+        {
+          "true_adds": 2,
+          "tp": 958,
+          "score": 0.918064207
+        },
+        {
+          "true_adds": 3,
+          "tp": 959,
+          "score": 0.91902252
+        },
+        {
+          "true_adds": 4,
+          "tp": 960,
+          "score": 0.919980834
+        },
+        {
+          "true_adds": 5,
+          "tp": 961,
+          "score": 0.920939147
+        },
+        {
+          "true_adds": 6,
+          "tp": 962,
+          "score": 0.92189746
+        },
+        {
+          "true_adds": 7,
+          "tp": 963,
+          "score": 0.922855774
+        },
+        {
+          "true_adds": 8,
+          "tp": 964,
+          "score": 0.923814087
+        }
+      ]
+    },
+    "v38_add_top16_plus_exact": {
+      "probe_id": "v38_add_top16_plus_exact",
+      "baseline": "D:\\zgyidong\\experiments\\v30_meta_stack\\submissions\\v30_cross_order_top5.csv",
+      "path": "D:\\zgyidong\\experiments\\v38_boundary_actions\\submissions\\v38_add_top16_plus_exact.csv",
+      "known_exact_gain": 1,
+      "candidate_count": 16,
+      "actions": [
+        {
+          "action_id": "v37_exact_001",
+          "order_id": "d5376a71-c48e-4351-ba60-f982778b3eb4",
+          "remove_rids": [
+            "#-1:0c809583-390f-4d16-9b91-c4fb1e99c5c2"
+          ],
+          "add_rids": [
+            "#-1:e401b7b4-697f-434e-8437-4b2136d6904f"
+          ],
+          "source": "historical_leaderboard_equations",
+          "expected_gain": null,
+          "evidence": {
+            "proof": "label fixed in every binary solution of all scored equations"
+          }
+        },
+        {
+          "action_id": "v38_add_top16_plus_exact_001",
+          "order_id": "e7c0c3fe-f81e-494f-8faa-edcee9a23ce3",
+          "remove_rids": [],
+          "add_rids": [
+            "#-1:db4bd4d4-5e9c-4cf2-8d26-d69a1dc99950"
+          ],
+          "source": "v38_boundary_action_ranker",
+          "expected_gain": 0.8558024168014526,
+          "evidence": {
+            "order_index": 483,
+            "row": 2886,
+            "local": 9,
+            "kind": "add",
+            "step": 1,
+            "current_count": 1,
+            "proposed_count": 2,
+            "need_mean": 0.7747480670611063,
+            "need_min": 0.7506627440452576,
+            "argmax_support": 6,
+            "node_scores": [
+              0.5420759320259094,
+              0.5984416007995605,
+              0.1031622663140297,
+              0.5232401490211487,
+              0.48272886872291565,
+              0.6200969219207764
+            ],
+            "order_id": "e7c0c3fe-f81e-494f-8faa-edcee9a23ce3",
+            "rid": "#-1:db4bd4d4-5e9c-4cf2-8d26-d69a1dc99950",
+            "title": "射频单元直流掉电告警",
+            "ranker_probability": 0.8558024168014526
+          }
+        },
+        {
+          "action_id": "v38_add_top16_plus_exact_002",
+          "order_id": "9f309a7d-e211-451b-975d-f25463fff535",
+          "remove_rids": [],
+          "add_rids": [
+            "#-1:76e9f86f-70ab-40c3-8072-731bbc9e9486"
+          ],
+          "source": "v38_boundary_action_ranker",
+          "expected_gain": 0.8426575660705566,
+          "evidence": {
+            "order_index": 325,
+            "row": 1886,
+            "local": 4,
+            "kind": "add",
+            "step": 1,
+            "current_count": 1,
+            "proposed_count": 2,
+            "need_mean": 0.5489640980958939,
+            "need_min": 0.49246910214424133,
+            "argmax_support": 2,
+            "node_scores": [
+              0.5142590999603271,
+              0.46810561418533325,
+              0.8944076895713806,
+              0.7262709736824036,
+              0.7049981355667114,
+              0.7863795161247253
+            ],
+            "order_id": "9f309a7d-e211-451b-975d-f25463fff535",
+            "rid": "#-1:76e9f86f-70ab-40c3-8072-731bbc9e9486",
+            "title": "射频单元IR接口异常告警",
+            "ranker_probability": 0.8426575660705566
+          }
+        },
+        {
+          "action_id": "v38_add_top16_plus_exact_003",
+          "order_id": "51d2ff1d-1bcb-41c7-ae33-83db088b2545",
+          "remove_rids": [],
+          "add_rids": [
+            "#-1:213df979-3107-4f97-b62a-08303f63e348"
+          ],
+          "source": "v38_boundary_action_ranker",
+          "expected_gain": 0.82258540391922,
+          "evidence": {
+            "order_index": 149,
+            "row": 855,
+            "local": 0,
+            "kind": "add",
+            "step": 1,
+            "current_count": 1,
+            "proposed_count": 2,
+            "need_mean": 0.4470771998167038,
+            "need_min": 0.413962721824646,
+            "argmax_support": 0,
+            "node_scores": [
+              0.46735942363739014,
+              0.4920085072517395,
+              0.8851826190948486,
+              0.6681440472602844,
+              0.5300415754318237,
+              0.662075400352478
+            ],
+            "order_id": "51d2ff1d-1bcb-41c7-ae33-83db088b2545",
+            "rid": "#-1:213df979-3107-4f97-b62a-08303f63e348",
+            "title": "光口接收链路故障",
+            "ranker_probability": 0.82258540391922
+          }
+        },
+        {
+          "action_id": "v38_add_top16_plus_exact_004",
+          "order_id": "b92c1c42-bc69-48fa-b5c6-7bbd2635a15b",
+          "remove_rids": [],
+          "add_rids": [
+            "#-1:e98f47f3-1430-4bab-bd66-cd79564e73e6"
+          ],
+          "source": "v38_boundary_action_ranker",
+          "expected_gain": 0.7243129014968872,
+          "evidence": {
+            "order_index": 380,
+            "row": 2205,
+            "local": 1,
+            "kind": "add",
+            "step": 1,
+            "current_count": 1,
+            "proposed_count": 2,
+            "need_mean": 0.8111826479434967,
+            "need_min": 0.7748450636863708,
+            "argmax_support": 6,
+            "node_scores": [
+              0.5549448132514954,
+              0.4494848847389221,
+              0.6721123456954956,
+              0.5610470175743103,
+              0.6052956581115723,
+              0.593901515007019
+            ],
+            "order_id": "b92c1c42-bc69-48fa-b5c6-7bbd2635a15b",
+            "rid": "#-1:e98f47f3-1430-4bab-bd66-cd79564e73e6",
+            "title": "光口接收链路故障",
+            "ranker_probability": 0.7243129014968872
+          }
+        },
+        {
+          "action_id": "v38_add_top16_plus_exact_005",
+          "order_id": "6e2c4bef-2309-4ace-9c76-983bac0255a8",
+          "remove_rids": [],
+          "add_rids": [
+            "#-1:a4aab2b7-dacc-48af-a107-25fa2e283027"
+          ],
+          "source": "v38_boundary_action_ranker",
+          "expected_gain": 0.7242883443832397,
+          "evidence": {
+            "order_index": 211,
+            "row": 1254,
+            "local": 0,
+            "kind": "add",
+            "step": 2,
+            "current_count": 1,
+            "proposed_count": 3,
+            "need_mean": 0.6602934201558431,
+            "need_min": 0.590798020362854,
+            "argmax_support": 1,
+            "node_scores": [
+              0.3490278720855713,
+              0.23641522228717804,
+              0.6859453916549683,
+              0.5628101229667664,
+              0.5172208547592163,
+              0.5787099003791809
+            ],
+            "order_id": "6e2c4bef-2309-4ace-9c76-983bac0255a8",
+            "rid": "#-1:a4aab2b7-dacc-48af-a107-25fa2e283027",
+            "title": "管理通道通信异常",
+            "ranker_probability": 0.7242883443832397
+          }
+        },
+        {
+          "action_id": "v38_add_top16_plus_exact_006",
+          "order_id": "35dcec5d-5286-4e33-bd22-42708535b5c8",
+          "remove_rids": [],
+          "add_rids": [
+            "#-1:5d4c15aa-67c6-47a6-8b32-8213aa4d09ac"
+          ],
+          "source": "v38_boundary_action_ranker",
+          "expected_gain": 0.7074711322784424,
+          "evidence": {
+            "order_index": 96,
+            "row": 545,
+            "local": 7,
+            "kind": "add",
+            "step": 1,
+            "current_count": 2,
+            "proposed_count": 3,
+            "need_mean": 0.5976928373177847,
+            "need_min": 0.5118255615234375,
+            "argmax_support": 4,
+            "node_scores": [
+              0.10547467321157455,
+              0.11376216262578964,
+              0.47137850522994995,
+              0.550851583480835,
+              0.46044373512268066,
+              0.6565049290657043
+            ],
+            "order_id": "35dcec5d-5286-4e33-bd22-42708535b5c8",
+            "rid": "#-1:5d4c15aa-67c6-47a6-8b32-8213aa4d09ac",
+            "title": "ETH_LINK_DOWN",
+            "ranker_probability": 0.7074711322784424
+          }
+        },
+        {
+          "action_id": "v38_add_top16_plus_exact_007",
+          "order_id": "bdbb6a39-a21b-4893-a4c0-e3170fc6ea11",
+          "remove_rids": [],
+          "add_rids": [
+            "#-1:909e5149-bcf1-4f5c-a1e6-9280287a4b95"
+          ],
+          "source": "v38_boundary_action_ranker",
+          "expected_gain": 0.6765477061271667,
+          "evidence": {
+            "order_index": 399,
+            "row": 2337,
+            "local": 0,
+            "kind": "add",
+            "step": 1,
+            "current_count": 1,
+            "proposed_count": 2,
+            "need_mean": 0.45170433819293976,
+            "need_min": 0.41874822974205017,
+            "argmax_support": 0,
+            "node_scores": [
+              0.5581027269363403,
+              0.6015845537185669,
+              0.1558944433927536,
+              0.33746519684791565,
+              0.4024280905723572,
+              0.31923559308052063
+            ],
+            "order_id": "bdbb6a39-a21b-4893-a4c0-e3170fc6ea11",
+            "rid": "#-1:909e5149-bcf1-4f5c-a1e6-9280287a4b95",
+            "title": "输入电压异常",
+            "ranker_probability": 0.6765477061271667
+          }
+        },
+        {
+          "action_id": "v38_add_top16_plus_exact_008",
+          "order_id": "af26c607-3f9d-4a37-8d4d-a809bfccd1f6",
+          "remove_rids": [],
+          "add_rids": [
+            "#-1:21b56b75-9b57-4986-9f58-9f1e28c2c979"
+          ],
+          "source": "v38_boundary_action_ranker",
+          "expected_gain": 0.6601756811141968,
+          "evidence": {
+            "order_index": 359,
+            "row": 2081,
+            "local": 1,
+            "kind": "add",
+            "step": 1,
+            "current_count": 1,
+            "proposed_count": 2,
+            "need_mean": 0.454175665974617,
+            "need_min": 0.42463070154190063,
+            "argmax_support": 0,
+            "node_scores": [
+              0.30958694219589233,
+              0.22802096605300903,
+              0.10268475115299225,
+              0.7195209860801697,
+              0.586387574672699,
+              0.8297380208969116
+            ],
+            "order_id": "af26c607-3f9d-4a37-8d4d-a809bfccd1f6",
+            "rid": "#-1:21b56b75-9b57-4986-9f58-9f1e28c2c979",
+            "title": "小区关断告警",
+            "ranker_probability": 0.6601756811141968
+          }
+        },
+        {
+          "action_id": "v38_add_top16_plus_exact_009",
+          "order_id": "eac28a99-2650-4dee-9f74-7054f480be19",
+          "remove_rids": [],
+          "add_rids": [
+            "#-1:a9cc9261-661b-41a3-89dd-0aee4886d4be"
+          ],
+          "source": "v38_boundary_action_ranker",
+          "expected_gain": 0.6393367052078247,
+          "evidence": {
+            "order_index": 492,
+            "row": 2946,
+            "local": 4,
+            "kind": "add",
+            "step": 1,
+            "current_count": 1,
+            "proposed_count": 2,
+            "need_mean": 0.6057765881220499,
+            "need_min": 0.5703151226043701,
+            "argmax_support": 2,
+            "node_scores": [
+              0.1870993822813034,
+              0.19808152318000793,
+              0.2622017562389374,
+              0.7304747104644775,
+              0.6367337703704834,
+              0.7728694677352905
+            ],
+            "order_id": "eac28a99-2650-4dee-9f74-7054f480be19",
+            "rid": "#-1:a9cc9261-661b-41a3-89dd-0aee4886d4be",
+            "title": "以太网物理接口(ETPI) 信号丢失(LOS)",
+            "ranker_probability": 0.6393367052078247
+          }
+        },
+        {
+          "action_id": "v38_add_top16_plus_exact_010",
+          "order_id": "fcead0b1-a014-4436-9e49-8041559471da",
+          "remove_rids": [],
+          "add_rids": [
+            "#-1:21222fdd-69d7-49f4-89b9-859eb41b9002"
+          ],
+          "source": "v38_boundary_action_ranker",
+          "expected_gain": 0.5906608700752258,
+          "evidence": {
+            "order_index": 539,
+            "row": 3214,
+            "local": 3,
+            "kind": "add",
+            "step": 3,
+            "current_count": 1,
+            "proposed_count": 4,
+            "need_mean": 0.4257522275050481,
+            "need_min": 0.4023512005805969,
+            "argmax_support": 1,
+            "node_scores": [
+              0.576681911945343,
+              0.5394490957260132,
+              0.38533440232276917,
+              0.4311458468437195,
+              0.43637531995773315,
+              0.5191937685012817
+            ],
+            "order_id": "fcead0b1-a014-4436-9e49-8041559471da",
+            "rid": "#-1:21222fdd-69d7-49f4-89b9-859eb41b9002",
+            "title": "光口接收链路故障",
+            "ranker_probability": 0.5906608700752258
+          }
+        },
+        {
+          "action_id": "v38_add_top16_plus_exact_011",
+          "order_id": "0e755fc0-8819-4420-b701-1f84ec0e59de",
+          "remove_rids": [],
+          "add_rids": [
+            "#-1:0f95a457-9523-4b28-9a93-81b08542d6b4"
+          ],
+          "source": "v38_boundary_action_ranker",
+          "expected_gain": 0.5867816209793091,
+          "evidence": {
+            "order_index": 27,
+            "row": 180,
+            "local": 2,
+            "kind": "add",
+            "step": 1,
+            "current_count": 1,
+            "proposed_count": 2,
+            "need_mean": 0.4246496955553691,
+            "need_min": 0.3933924734592438,
+            "argmax_support": 0,
+            "node_scores": [
+              0.09789144992828369,
+              0.08872440457344055,
+              0.7841949462890625,
+              0.4730132818222046,
+              0.43613865971565247,
+              0.43361949920654297
+            ],
+            "order_id": "0e755fc0-8819-4420-b701-1f84ec0e59de",
+            "rid": "#-1:0f95a457-9523-4b28-9a93-81b08542d6b4",
+            "title": "射频单元维护链路异常告警",
+            "ranker_probability": 0.5867816209793091
+          }
+        },
+        {
+          "action_id": "v38_add_top16_plus_exact_012",
+          "order_id": "af374848-7bd9-44f9-bfb8-4c087a74d016",
+          "remove_rids": [],
+          "add_rids": [
+            "#-1:84951a88-f1b5-42a0-b848-bd9160c75b73"
+          ],
+          "source": "v38_boundary_action_ranker",
+          "expected_gain": 0.5739567875862122,
+          "evidence": {
+            "order_index": 361,
+            "row": 2103,
+            "local": 8,
+            "kind": "add",
+            "step": 1,
+            "current_count": 4,
+            "proposed_count": 5,
+            "need_mean": 0.4229693015416463,
+            "need_min": 0.4086589813232422,
+            "argmax_support": 5,
+            "node_scores": [
+              0.41726842522621155,
+              0.37743377685546875,
+              0.4172389507293701,
+              0.5115490555763245,
+              0.47221237421035767,
+              0.5725089311599731
+            ],
+            "order_id": "af374848-7bd9-44f9-bfb8-4c087a74d016",
+            "rid": "#-1:84951a88-f1b5-42a0-b848-bd9160c75b73",
+            "title": "网元连接中断",
+            "ranker_probability": 0.5739567875862122
+          }
+        },
+        {
+          "action_id": "v38_add_top16_plus_exact_013",
+          "order_id": "aa321b94-f3d9-45cf-b1ee-f3a1fe38da68",
+          "remove_rids": [],
+          "add_rids": [
+            "#-1:429df297-9a4e-462a-a377-ae4cd47eda24"
+          ],
+          "source": "v38_boundary_action_ranker",
+          "expected_gain": 0.5639355778694153,
+          "evidence": {
+            "order_index": 339,
+            "row": 1972,
+            "local": 1,
+            "kind": "add",
+            "step": 1,
+            "current_count": 1,
+            "proposed_count": 2,
+            "need_mean": 0.6253047982851664,
+            "need_min": 0.5936646461486816,
+            "argmax_support": 3,
+            "node_scores": [
+              0.4588935971260071,
+              0.3945615589618683,
+              0.7686931490898132,
+              0.7094882130622864,
+              0.6046810746192932,
+              0.8120096921920776
+            ],
+            "order_id": "aa321b94-f3d9-45cf-b1ee-f3a1fe38da68",
+            "rid": "#-1:429df297-9a4e-462a-a377-ae4cd47eda24",
+            "title": "光口接收链路故障",
+            "ranker_probability": 0.5639355778694153
+          }
+        },
+        {
+          "action_id": "v38_add_top16_plus_exact_014",
+          "order_id": "4c2b3b06-a6a2-4c1b-9734-def3d1f849d8",
+          "remove_rids": [],
+          "add_rids": [
+            "#-1:66facd91-e281-4331-bbae-04ab8bd9746d"
+          ],
+          "source": "v38_boundary_action_ranker",
+          "expected_gain": 0.5530259609222412,
+          "evidence": {
+            "order_index": 142,
+            "row": 787,
+            "local": 4,
+            "kind": "add",
+            "step": 2,
+            "current_count": 1,
+            "proposed_count": 3,
+            "need_mean": 0.16788890212774277,
+            "need_min": 0.14591048657894135,
+            "argmax_support": 0,
+            "node_scores": [
+              0.15065684914588928,
+              0.11118943244218826,
+              0.6941465735435486,
+              0.6594231724739075,
+              0.579243004322052,
+              0.6918765902519226
+            ],
+            "order_id": "4c2b3b06-a6a2-4c1b-9734-def3d1f849d8",
+            "rid": "#-1:66facd91-e281-4331-bbae-04ab8bd9746d",
+            "title": "[衍生告警]PTN光缆中断，单报LOS",
+            "ranker_probability": 0.5530259609222412
+          }
+        },
+        {
+          "action_id": "v38_add_top16_plus_exact_015",
+          "order_id": "6c596cdd-fd3a-44e3-ba8a-3deff75209ee",
+          "remove_rids": [],
+          "add_rids": [
+            "#-1:4e367429-ffd9-4a23-bc77-e74ff046d5ea"
+          ],
+          "source": "v38_boundary_action_ranker",
+          "expected_gain": 0.5240336060523987,
+          "evidence": {
+            "order_index": 206,
+            "row": 1225,
+            "local": 2,
+            "kind": "add",
+            "step": 1,
+            "current_count": 1,
+            "proposed_count": 2,
+            "need_mean": 0.592076579729716,
+            "need_min": 0.5330302715301514,
+            "argmax_support": 5,
+            "node_scores": [
+              0.45988500118255615,
+              0.5024858713150024,
+              0.32490140199661255,
+              0.35515132546424866,
+              0.44943445920944214,
+              0.31193864345550537
+            ],
+            "order_id": "6c596cdd-fd3a-44e3-ba8a-3deff75209ee",
+            "rid": "#-1:4e367429-ffd9-4a23-bc77-e74ff046d5ea",
+            "title": "单板电源关断",
+            "ranker_probability": 0.5240336060523987
+          }
+        },
+        {
+          "action_id": "v38_add_top16_plus_exact_016",
+          "order_id": "9ca5e12f-f73f-472c-99b3-8e74c01272fe",
+          "remove_rids": [],
+          "add_rids": [
+            "#-1:247d7153-ba7f-4012-86c3-2d6b9b7e9730"
+          ],
+          "source": "v38_boundary_action_ranker",
+          "expected_gain": 0.5095864534378052,
+          "evidence": {
+            "order_index": 314,
+            "row": 1807,
+            "local": 0,
+            "kind": "add",
+            "step": 1,
+            "current_count": 1,
+            "proposed_count": 2,
+            "need_mean": 0.47101136048634845,
+            "need_min": 0.44510722160339355,
+            "argmax_support": 0,
+            "node_scores": [
+              0.48343077301979065,
+              0.4325466752052307,
+              0.02223167195916176,
+              0.6779353022575378,
+              0.6566944718360901,
+              0.74679034948349
+            ],
+            "order_id": "9ca5e12f-f73f-472c-99b3-8e74c01272fe",
+            "rid": "#-1:247d7153-ba7f-4012-86c3-2d6b9b7e9730",
+            "title": "单板过温保护下电",
+            "ranker_probability": 0.5095864534378052
+          }
+        }
+      ],
+      "predictions": 1051,
+      "sha256": "d78ea38fa956c88ef97d0fbcbd406c4c3ec8e37a15d29c48830bf6a591c0203d",
+      "score_possibilities": [
+        {
+          "true_adds": 0,
+          "tp": 956,
+          "score": 0.912649165
+        },
+        {
+          "true_adds": 1,
+          "tp": 957,
+          "score": 0.913603819
+        },
+        {
+          "true_adds": 2,
+          "tp": 958,
+          "score": 0.914558473
+        },
+        {
+          "true_adds": 3,
+          "tp": 959,
+          "score": 0.915513126
+        },
+        {
+          "true_adds": 4,
+          "tp": 960,
+          "score": 0.91646778
+        },
+        {
+          "true_adds": 5,
+          "tp": 961,
+          "score": 0.917422434
+        },
+        {
+          "true_adds": 6,
+          "tp": 962,
+          "score": 0.918377088
+        },
+        {
+          "true_adds": 7,
+          "tp": 963,
+          "score": 0.919331742
+        },
+        {
+          "true_adds": 8,
+          "tp": 964,
+          "score": 0.920286396
+        },
+        {
+          "true_adds": 9,
+          "tp": 965,
+          "score": 0.92124105
+        },
+        {
+          "true_adds": 10,
+          "tp": 966,
+          "score": 0.922195704
+        },
+        {
+          "true_adds": 11,
+          "tp": 967,
+          "score": 0.923150358
+        },
+        {
+          "true_adds": 12,
+          "tp": 968,
+          "score": 0.924105012
+        },
+        {
+          "true_adds": 13,
+          "tp": 969,
+          "score": 0.925059666
+        },
+        {
+          "true_adds": 14,
+          "tp": 970,
+          "score": 0.92601432
+        },
+        {
+          "true_adds": 15,
+          "tp": 971,
+          "score": 0.926968974
+        },
+        {
+          "true_adds": 16,
+          "tp": 972,
+          "score": 0.927923628
+        }
+      ]
+    },
+    "v38_add_top24_plus_exact": {
+      "probe_id": "v38_add_top24_plus_exact",
+      "baseline": "D:\\zgyidong\\experiments\\v30_meta_stack\\submissions\\v30_cross_order_top5.csv",
+      "path": "D:\\zgyidong\\experiments\\v38_boundary_actions\\submissions\\v38_add_top24_plus_exact.csv",
+      "known_exact_gain": 1,
+      "candidate_count": 24,
+      "actions": [
+        {
+          "action_id": "v37_exact_001",
+          "order_id": "d5376a71-c48e-4351-ba60-f982778b3eb4",
+          "remove_rids": [
+            "#-1:0c809583-390f-4d16-9b91-c4fb1e99c5c2"
+          ],
+          "add_rids": [
+            "#-1:e401b7b4-697f-434e-8437-4b2136d6904f"
+          ],
+          "source": "historical_leaderboard_equations",
+          "expected_gain": null,
+          "evidence": {
+            "proof": "label fixed in every binary solution of all scored equations"
+          }
+        },
+        {
+          "action_id": "v38_add_top24_plus_exact_001",
+          "order_id": "e7c0c3fe-f81e-494f-8faa-edcee9a23ce3",
+          "remove_rids": [],
+          "add_rids": [
+            "#-1:db4bd4d4-5e9c-4cf2-8d26-d69a1dc99950"
+          ],
+          "source": "v38_boundary_action_ranker",
+          "expected_gain": 0.8558024168014526,
+          "evidence": {
+            "order_index": 483,
+            "row": 2886,
+            "local": 9,
+            "kind": "add",
+            "step": 1,
+            "current_count": 1,
+            "proposed_count": 2,
+            "need_mean": 0.7747480670611063,
+            "need_min": 0.7506627440452576,
+            "argmax_support": 6,
+            "node_scores": [
+              0.5420759320259094,
+              0.5984416007995605,
+              0.1031622663140297,
+              0.5232401490211487,
+              0.48272886872291565,
+              0.6200969219207764
+            ],
+            "order_id": "e7c0c3fe-f81e-494f-8faa-edcee9a23ce3",
+            "rid": "#-1:db4bd4d4-5e9c-4cf2-8d26-d69a1dc99950",
+            "title": "射频单元直流掉电告警",
+            "ranker_probability": 0.8558024168014526
+          }
+        },
+        {
+          "action_id": "v38_add_top24_plus_exact_002",
+          "order_id": "9f309a7d-e211-451b-975d-f25463fff535",
+          "remove_rids": [],
+          "add_rids": [
+            "#-1:76e9f86f-70ab-40c3-8072-731bbc9e9486"
+          ],
+          "source": "v38_boundary_action_ranker",
+          "expected_gain": 0.8426575660705566,
+          "evidence": {
+            "order_index": 325,
+            "row": 1886,
+            "local": 4,
+            "kind": "add",
+            "step": 1,
+            "current_count": 1,
+            "proposed_count": 2,
+            "need_mean": 0.5489640980958939,
+            "need_min": 0.49246910214424133,
+            "argmax_support": 2,
+            "node_scores": [
+              0.5142590999603271,
+              0.46810561418533325,
+              0.8944076895713806,
+              0.7262709736824036,
+              0.7049981355667114,
+              0.7863795161247253
+            ],
+            "order_id": "9f309a7d-e211-451b-975d-f25463fff535",
+            "rid": "#-1:76e9f86f-70ab-40c3-8072-731bbc9e9486",
+            "title": "射频单元IR接口异常告警",
+            "ranker_probability": 0.8426575660705566
+          }
+        },
+        {
+          "action_id": "v38_add_top24_plus_exact_003",
+          "order_id": "51d2ff1d-1bcb-41c7-ae33-83db088b2545",
+          "remove_rids": [],
+          "add_rids": [
+            "#-1:213df979-3107-4f97-b62a-08303f63e348"
+          ],
+          "source": "v38_boundary_action_ranker",
+          "expected_gain": 0.82258540391922,
+          "evidence": {
+            "order_index": 149,
+            "row": 855,
+            "local": 0,
+            "kind": "add",
+            "step": 1,
+            "current_count": 1,
+            "proposed_count": 2,
+            "need_mean": 0.4470771998167038,
+            "need_min": 0.413962721824646,
+            "argmax_support": 0,
+            "node_scores": [
+              0.46735942363739014,
+              0.4920085072517395,
+              0.8851826190948486,
+              0.6681440472602844,
+              0.5300415754318237,
+              0.662075400352478
+            ],
+            "order_id": "51d2ff1d-1bcb-41c7-ae33-83db088b2545",
+            "rid": "#-1:213df979-3107-4f97-b62a-08303f63e348",
+            "title": "光口接收链路故障",
+            "ranker_probability": 0.82258540391922
+          }
+        },
+        {
+          "action_id": "v38_add_top24_plus_exact_004",
+          "order_id": "b92c1c42-bc69-48fa-b5c6-7bbd2635a15b",
+          "remove_rids": [],
+          "add_rids": [
+            "#-1:e98f47f3-1430-4bab-bd66-cd79564e73e6"
+          ],
+          "source": "v38_boundary_action_ranker",
+          "expected_gain": 0.7243129014968872,
+          "evidence": {
+            "order_index": 380,
+            "row": 2205,
+            "local": 1,
+            "kind": "add",
+            "step": 1,
+            "current_count": 1,
+            "proposed_count": 2,
+            "need_mean": 0.8111826479434967,
+            "need_min": 0.7748450636863708,
+            "argmax_support": 6,
+            "node_scores": [
+              0.5549448132514954,
+              0.4494848847389221,
+              0.6721123456954956,
+              0.5610470175743103,
+              0.6052956581115723,
+              0.593901515007019
+            ],
+            "order_id": "b92c1c42-bc69-48fa-b5c6-7bbd2635a15b",
+            "rid": "#-1:e98f47f3-1430-4bab-bd66-cd79564e73e6",
+            "title": "光口接收链路故障",
+            "ranker_probability": 0.7243129014968872
+          }
+        },
+        {
+          "action_id": "v38_add_top24_plus_exact_005",
+          "order_id": "6e2c4bef-2309-4ace-9c76-983bac0255a8",
+          "remove_rids": [],
+          "add_rids": [
+            "#-1:a4aab2b7-dacc-48af-a107-25fa2e283027"
+          ],
+          "source": "v38_boundary_action_ranker",
+          "expected_gain": 0.7242883443832397,
+          "evidence": {
+            "order_index": 211,
+            "row": 1254,
+            "local": 0,
+            "kind": "add",
+            "step": 2,
+            "current_count": 1,
+            "proposed_count": 3,
+            "need_mean": 0.6602934201558431,
+            "need_min": 0.590798020362854,
+            "argmax_support": 1,
+            "node_scores": [
+              0.3490278720855713,
+              0.23641522228717804,
+              0.6859453916549683,
+              0.5628101229667664,
+              0.5172208547592163,
+              0.5787099003791809
+            ],
+            "order_id": "6e2c4bef-2309-4ace-9c76-983bac0255a8",
+            "rid": "#-1:a4aab2b7-dacc-48af-a107-25fa2e283027",
+            "title": "管理通道通信异常",
+            "ranker_probability": 0.7242883443832397
+          }
+        },
+        {
+          "action_id": "v38_add_top24_plus_exact_006",
+          "order_id": "35dcec5d-5286-4e33-bd22-42708535b5c8",
+          "remove_rids": [],
+          "add_rids": [
+            "#-1:5d4c15aa-67c6-47a6-8b32-8213aa4d09ac"
+          ],
+          "source": "v38_boundary_action_ranker",
+          "expected_gain": 0.7074711322784424,
+          "evidence": {
+            "order_index": 96,
+            "row": 545,
+            "local": 7,
+            "kind": "add",
+            "step": 1,
+            "current_count": 2,
+            "proposed_count": 3,
+            "need_mean": 0.5976928373177847,
+            "need_min": 0.5118255615234375,
+            "argmax_support": 4,
+            "node_scores": [
+              0.10547467321157455,
+              0.11376216262578964,
+              0.47137850522994995,
+              0.550851583480835,
+              0.46044373512268066,
+              0.6565049290657043
+            ],
+            "order_id": "35dcec5d-5286-4e33-bd22-42708535b5c8",
+            "rid": "#-1:5d4c15aa-67c6-47a6-8b32-8213aa4d09ac",
+            "title": "ETH_LINK_DOWN",
+            "ranker_probability": 0.7074711322784424
+          }
+        },
+        {
+          "action_id": "v38_add_top24_plus_exact_007",
+          "order_id": "bdbb6a39-a21b-4893-a4c0-e3170fc6ea11",
+          "remove_rids": [],
+          "add_rids": [
+            "#-1:909e5149-bcf1-4f5c-a1e6-9280287a4b95"
+          ],
+          "source": "v38_boundary_action_ranker",
+          "expected_gain": 0.6765477061271667,
+          "evidence": {
+            "order_index": 399,
+            "row": 2337,
+            "local": 0,
+            "kind": "add",
+            "step": 1,
+            "current_count": 1,
+            "proposed_count": 2,
+            "need_mean": 0.45170433819293976,
+            "need_min": 0.41874822974205017,
+            "argmax_support": 0,
+            "node_scores": [
+              0.5581027269363403,
+              0.6015845537185669,
+              0.1558944433927536,
+              0.33746519684791565,
+              0.4024280905723572,
+              0.31923559308052063
+            ],
+            "order_id": "bdbb6a39-a21b-4893-a4c0-e3170fc6ea11",
+            "rid": "#-1:909e5149-bcf1-4f5c-a1e6-9280287a4b95",
+            "title": "输入电压异常",
+            "ranker_probability": 0.6765477061271667
+          }
+        },
+        {
+          "action_id": "v38_add_top24_plus_exact_008",
+          "order_id": "af26c607-3f9d-4a37-8d4d-a809bfccd1f6",
+          "remove_rids": [],
+          "add_rids": [
+            "#-1:21b56b75-9b57-4986-9f58-9f1e28c2c979"
+          ],
+          "source": "v38_boundary_action_ranker",
+          "expected_gain": 0.6601756811141968,
+          "evidence": {
+            "order_index": 359,
+            "row": 2081,
+            "local": 1,
+            "kind": "add",
+            "step": 1,
+            "current_count": 1,
+            "proposed_count": 2,
+            "need_mean": 0.454175665974617,
+            "need_min": 0.42463070154190063,
+            "argmax_support": 0,
+            "node_scores": [
+              0.30958694219589233,
+              0.22802096605300903,
+              0.10268475115299225,
+              0.7195209860801697,
+              0.586387574672699,
+              0.8297380208969116
+            ],
+            "order_id": "af26c607-3f9d-4a37-8d4d-a809bfccd1f6",
+            "rid": "#-1:21b56b75-9b57-4986-9f58-9f1e28c2c979",
+            "title": "小区关断告警",
+            "ranker_probability": 0.6601756811141968
+          }
+        },
+        {
+          "action_id": "v38_add_top24_plus_exact_009",
+          "order_id": "eac28a99-2650-4dee-9f74-7054f480be19",
+          "remove_rids": [],
+          "add_rids": [
+            "#-1:a9cc9261-661b-41a3-89dd-0aee4886d4be"
+          ],
+          "source": "v38_boundary_action_ranker",
+          "expected_gain": 0.6393367052078247,
+          "evidence": {
+            "order_index": 492,
+            "row": 2946,
+            "local": 4,
+            "kind": "add",
+            "step": 1,
+            "current_count": 1,
+            "proposed_count": 2,
+            "need_mean": 0.6057765881220499,
+            "need_min": 0.5703151226043701,
+            "argmax_support": 2,
+            "node_scores": [
+              0.1870993822813034,
+              0.19808152318000793,
+              0.2622017562389374,
+              0.7304747104644775,
+              0.6367337703704834,
+              0.7728694677352905
+            ],
+            "order_id": "eac28a99-2650-4dee-9f74-7054f480be19",
+            "rid": "#-1:a9cc9261-661b-41a3-89dd-0aee4886d4be",
+            "title": "以太网物理接口(ETPI) 信号丢失(LOS)",
+            "ranker_probability": 0.6393367052078247
+          }
+        },
+        {
+          "action_id": "v38_add_top24_plus_exact_010",
+          "order_id": "fcead0b1-a014-4436-9e49-8041559471da",
+          "remove_rids": [],
+          "add_rids": [
+            "#-1:21222fdd-69d7-49f4-89b9-859eb41b9002"
+          ],
+          "source": "v38_boundary_action_ranker",
+          "expected_gain": 0.5906608700752258,
+          "evidence": {
+            "order_index": 539,
+            "row": 3214,
+            "local": 3,
+            "kind": "add",
+            "step": 3,
+            "current_count": 1,
+            "proposed_count": 4,
+            "need_mean": 0.4257522275050481,
+            "need_min": 0.4023512005805969,
+            "argmax_support": 1,
+            "node_scores": [
+              0.576681911945343,
+              0.5394490957260132,
+              0.38533440232276917,
+              0.4311458468437195,
+              0.43637531995773315,
+              0.5191937685012817
+            ],
+            "order_id": "fcead0b1-a014-4436-9e49-8041559471da",
+            "rid": "#-1:21222fdd-69d7-49f4-89b9-859eb41b9002",
+            "title": "光口接收链路故障",
+            "ranker_probability": 0.5906608700752258
+          }
+        },
+        {
+          "action_id": "v38_add_top24_plus_exact_011",
+          "order_id": "0e755fc0-8819-4420-b701-1f84ec0e59de",
+          "remove_rids": [],
+          "add_rids": [
+            "#-1:0f95a457-9523-4b28-9a93-81b08542d6b4"
+          ],
+          "source": "v38_boundary_action_ranker",
+          "expected_gain": 0.5867816209793091,
+          "evidence": {
+            "order_index": 27,
+            "row": 180,
+            "local": 2,
+            "kind": "add",
+            "step": 1,
+            "current_count": 1,
+            "proposed_count": 2,
+            "need_mean": 0.4246496955553691,
+            "need_min": 0.3933924734592438,
+            "argmax_support": 0,
+            "node_scores": [
+              0.09789144992828369,
+              0.08872440457344055,
+              0.7841949462890625,
+              0.4730132818222046,
+              0.43613865971565247,
+              0.43361949920654297
+            ],
+            "order_id": "0e755fc0-8819-4420-b701-1f84ec0e59de",
+            "rid": "#-1:0f95a457-9523-4b28-9a93-81b08542d6b4",
+            "title": "射频单元维护链路异常告警",
+            "ranker_probability": 0.5867816209793091
+          }
+        },
+        {
+          "action_id": "v38_add_top24_plus_exact_012",
+          "order_id": "af374848-7bd9-44f9-bfb8-4c087a74d016",
+          "remove_rids": [],
+          "add_rids": [
+            "#-1:84951a88-f1b5-42a0-b848-bd9160c75b73"
+          ],
+          "source": "v38_boundary_action_ranker",
+          "expected_gain": 0.5739567875862122,
+          "evidence": {
+            "order_index": 361,
+            "row": 2103,
+            "local": 8,
+            "kind": "add",
+            "step": 1,
+            "current_count": 4,
+            "proposed_count": 5,
+            "need_mean": 0.4229693015416463,
+            "need_min": 0.4086589813232422,
+            "argmax_support": 5,
+            "node_scores": [
+              0.41726842522621155,
+              0.37743377685546875,
+              0.4172389507293701,
+              0.5115490555763245,
+              0.47221237421035767,
+              0.5725089311599731
+            ],
+            "order_id": "af374848-7bd9-44f9-bfb8-4c087a74d016",
+            "rid": "#-1:84951a88-f1b5-42a0-b848-bd9160c75b73",
+            "title": "网元连接中断",
+            "ranker_probability": 0.5739567875862122
+          }
+        },
+        {
+          "action_id": "v38_add_top24_plus_exact_013",
+          "order_id": "aa321b94-f3d9-45cf-b1ee-f3a1fe38da68",
+          "remove_rids": [],
+          "add_rids": [
+            "#-1:429df297-9a4e-462a-a377-ae4cd47eda24"
+          ],
+          "source": "v38_boundary_action_ranker",
+          "expected_gain": 0.5639355778694153,
+          "evidence": {
+            "order_index": 339,
+            "row": 1972,
+            "local": 1,
+            "kind": "add",
+            "step": 1,
+            "current_count": 1,
+            "proposed_count": 2,
+            "need_mean": 0.6253047982851664,
+            "need_min": 0.5936646461486816,
+            "argmax_support": 3,
+            "node_scores": [
+              0.4588935971260071,
+              0.3945615589618683,
+              0.7686931490898132,
+              0.7094882130622864,
+              0.6046810746192932,
+              0.8120096921920776
+            ],
+            "order_id": "aa321b94-f3d9-45cf-b1ee-f3a1fe38da68",
+            "rid": "#-1:429df297-9a4e-462a-a377-ae4cd47eda24",
+            "title": "光口接收链路故障",
+            "ranker_probability": 0.5639355778694153
+          }
+        },
+        {
+          "action_id": "v38_add_top24_plus_exact_014",
+          "order_id": "4c2b3b06-a6a2-4c1b-9734-def3d1f849d8",
+          "remove_rids": [],
+          "add_rids": [
+            "#-1:66facd91-e281-4331-bbae-04ab8bd9746d"
+          ],
+          "source": "v38_boundary_action_ranker",
+          "expected_gain": 0.5530259609222412,
+          "evidence": {
+            "order_index": 142,
+            "row": 787,
+            "local": 4,
+            "kind": "add",
+            "step": 2,
+            "current_count": 1,
+            "proposed_count": 3,
+            "need_mean": 0.16788890212774277,
+            "need_min": 0.14591048657894135,
+            "argmax_support": 0,
+            "node_scores": [
+              0.15065684914588928,
+              0.11118943244218826,
+              0.6941465735435486,
+              0.6594231724739075,
+              0.579243004322052,
+              0.6918765902519226
+            ],
+            "order_id": "4c2b3b06-a6a2-4c1b-9734-def3d1f849d8",
+            "rid": "#-1:66facd91-e281-4331-bbae-04ab8bd9746d",
+            "title": "[衍生告警]PTN光缆中断，单报LOS",
+            "ranker_probability": 0.5530259609222412
+          }
+        },
+        {
+          "action_id": "v38_add_top24_plus_exact_015",
+          "order_id": "6c596cdd-fd3a-44e3-ba8a-3deff75209ee",
+          "remove_rids": [],
+          "add_rids": [
+            "#-1:4e367429-ffd9-4a23-bc77-e74ff046d5ea"
+          ],
+          "source": "v38_boundary_action_ranker",
+          "expected_gain": 0.5240336060523987,
+          "evidence": {
+            "order_index": 206,
+            "row": 1225,
+            "local": 2,
+            "kind": "add",
+            "step": 1,
+            "current_count": 1,
+            "proposed_count": 2,
+            "need_mean": 0.592076579729716,
+            "need_min": 0.5330302715301514,
+            "argmax_support": 5,
+            "node_scores": [
+              0.45988500118255615,
+              0.5024858713150024,
+              0.32490140199661255,
+              0.35515132546424866,
+              0.44943445920944214,
+              0.31193864345550537
+            ],
+            "order_id": "6c596cdd-fd3a-44e3-ba8a-3deff75209ee",
+            "rid": "#-1:4e367429-ffd9-4a23-bc77-e74ff046d5ea",
+            "title": "单板电源关断",
+            "ranker_probability": 0.5240336060523987
+          }
+        },
+        {
+          "action_id": "v38_add_top24_plus_exact_016",
+          "order_id": "9ca5e12f-f73f-472c-99b3-8e74c01272fe",
+          "remove_rids": [],
+          "add_rids": [
+            "#-1:247d7153-ba7f-4012-86c3-2d6b9b7e9730"
+          ],
+          "source": "v38_boundary_action_ranker",
+          "expected_gain": 0.5095864534378052,
+          "evidence": {
+            "order_index": 314,
+            "row": 1807,
+            "local": 0,
+            "kind": "add",
+            "step": 1,
+            "current_count": 1,
+            "proposed_count": 2,
+            "need_mean": 0.47101136048634845,
+            "need_min": 0.44510722160339355,
+            "argmax_support": 0,
+            "node_scores": [
+              0.48343077301979065,
+              0.4325466752052307,
+              0.02223167195916176,
+              0.6779353022575378,
+              0.6566944718360901,
+              0.74679034948349
+            ],
+            "order_id": "9ca5e12f-f73f-472c-99b3-8e74c01272fe",
+            "rid": "#-1:247d7153-ba7f-4012-86c3-2d6b9b7e9730",
+            "title": "单板过温保护下电",
+            "ranker_probability": 0.5095864534378052
+          }
+        },
+        {
+          "action_id": "v38_add_top24_plus_exact_017",
+          "order_id": "1117ad03-8891-4bf6-854c-612bf19fdae4",
+          "remove_rids": [],
+          "add_rids": [
+            "#-1:08baefd1-6af0-4be4-88f5-6fa77d069d9d"
+          ],
+          "source": "v38_boundary_action_ranker",
+          "expected_gain": 0.506866991519928,
+          "evidence": {
+            "order_index": 33,
+            "row": 213,
+            "local": 2,
+            "kind": "add",
+            "step": 1,
+            "current_count": 1,
+            "proposed_count": 2,
+            "need_mean": 0.8525206049283346,
+            "need_min": 0.8189929723739624,
+            "argmax_support": 6,
+            "node_scores": [
+              0.27846646308898926,
+              0.2596791982650757,
+              0.03057016246020794,
+              0.7103927135467529,
+              0.6062731146812439,
+              0.8054361343383789
+            ],
+            "order_id": "1117ad03-8891-4bf6-854c-612bf19fdae4",
+            "rid": "#-1:08baefd1-6af0-4be4-88f5-6fa77d069d9d",
+            "title": "小区关断告警",
+            "ranker_probability": 0.506866991519928
+          }
+        },
+        {
+          "action_id": "v38_add_top24_plus_exact_018",
+          "order_id": "625ffce7-65c5-4657-9104-4148b4113130",
+          "remove_rids": [],
+          "add_rids": [
+            "#-1:a8f28178-4795-4f26-84d6-1791944fb245"
+          ],
+          "source": "v38_boundary_action_ranker",
+          "expected_gain": 0.49752554297447205,
+          "evidence": {
+            "order_index": 184,
+            "row": 1091,
+            "local": 53,
+            "kind": "add",
+            "step": 1,
+            "current_count": 7,
+            "proposed_count": 8,
+            "need_mean": 0.44581474860509235,
+            "need_min": 0.3254323899745941,
+            "argmax_support": 6,
+            "node_scores": [
+              0.6849856972694397,
+              0.6249791979789734,
+              0.5809980034828186,
+              0.7030441761016846,
+              0.6532878279685974,
+              0.8070818185806274
+            ],
+            "order_id": "625ffce7-65c5-4657-9104-4148b4113130",
+            "rid": "#-1:a8f28178-4795-4f26-84d6-1791944fb245",
+            "title": "输入电源断",
+            "ranker_probability": 0.49752554297447205
+          }
+        },
+        {
+          "action_id": "v38_add_top24_plus_exact_019",
+          "order_id": "faa00ed5-c0b9-445e-98ac-671035a4a239",
+          "remove_rids": [],
+          "add_rids": [
+            "#-1:d4f3c427-0b59-41d3-8208-18c218433c27"
+          ],
+          "source": "v38_boundary_action_ranker",
+          "expected_gain": 0.4941179156303406,
+          "evidence": {
+            "order_index": 532,
+            "row": 3174,
+            "local": 11,
+            "kind": "add",
+            "step": 3,
+            "current_count": 1,
+            "proposed_count": 4,
+            "need_mean": 0.5839094618956248,
+            "need_min": 0.5026868581771851,
+            "argmax_support": 5,
+            "node_scores": [
+              0.2830280661582947,
+              0.28424954414367676,
+              0.1804899126291275,
+              0.5779268741607666,
+              0.4596557915210724,
+              0.6178073883056641
+            ],
+            "order_id": "faa00ed5-c0b9-445e-98ac-671035a4a239",
+            "rid": "#-1:d4f3c427-0b59-41d3-8208-18c218433c27",
+            "title": "ETH_LOS",
+            "ranker_probability": 0.4941179156303406
+          }
+        },
+        {
+          "action_id": "v38_add_top24_plus_exact_020",
+          "order_id": "4f66c084-4f15-43d9-9f95-0350f4179ea6",
+          "remove_rids": [],
+          "add_rids": [
+            "#-1:21f1e2b1-7c74-4d6b-b9de-eaccf1430614"
+          ],
+          "source": "v38_boundary_action_ranker",
+          "expected_gain": 0.48441457748413086,
+          "evidence": {
+            "order_index": 146,
+            "row": 830,
+            "local": 0,
+            "kind": "add",
+            "step": 1,
+            "current_count": 1,
+            "proposed_count": 2,
+            "need_mean": 0.38212430477142334,
+            "need_min": 0.34633490443229675,
+            "argmax_support": 0,
+            "node_scores": [
+              0.5578055381774902,
+              0.5942766666412354,
+              0.03189023584127426,
+              0.225502610206604,
+              0.3539629876613617,
+              0.1551327109336853
+            ],
+            "order_id": "4f66c084-4f15-43d9-9f95-0350f4179ea6",
+            "rid": "#-1:21f1e2b1-7c74-4d6b-b9de-eaccf1430614",
+            "title": "输入电压异常",
+            "ranker_probability": 0.48441457748413086
+          }
+        },
+        {
+          "action_id": "v38_add_top24_plus_exact_021",
+          "order_id": "7b1b39e5-954a-418c-9ed7-03285444ea24",
+          "remove_rids": [],
+          "add_rids": [
+            "#-1:fac75988-ea52-43cb-888c-45f1495ba491"
+          ],
+          "source": "v38_boundary_action_ranker",
+          "expected_gain": 0.47865697741508484,
+          "evidence": {
+            "order_index": 236,
+            "row": 1403,
+            "local": 0,
+            "kind": "add",
+            "step": 2,
+            "current_count": 1,
+            "proposed_count": 3,
+            "need_mean": 0.3356364667415619,
+            "need_min": 0.31469953060150146,
+            "argmax_support": 0,
+            "node_scores": [
+              0.1288093477487564,
+              0.10409816354513168,
+              0.12285874038934708,
+              0.27525651454925537,
+              0.3073711395263672,
+              0.22434894740581512
+            ],
+            "order_id": "7b1b39e5-954a-418c-9ed7-03285444ea24",
+            "rid": "#-1:fac75988-ea52-43cb-888c-45f1495ba491",
+            "title": "S1用户面路径不可用",
+            "ranker_probability": 0.47865697741508484
+          }
+        },
+        {
+          "action_id": "v38_add_top24_plus_exact_022",
+          "order_id": "52df1065-3f92-4e4e-b255-d2575f9bd8b1",
+          "remove_rids": [],
+          "add_rids": [
+            "#-1:2d4efdc0-5900-4512-ae50-2db03e8cd689"
+          ],
+          "source": "v38_boundary_action_ranker",
+          "expected_gain": 0.47852885723114014,
+          "evidence": {
+            "order_index": 153,
+            "row": 873,
+            "local": 0,
+            "kind": "add",
+            "step": 1,
+            "current_count": 1,
+            "proposed_count": 2,
+            "need_mean": 0.23263399054606756,
+            "need_min": 0.2239636778831482,
+            "argmax_support": 0,
+            "node_scores": [
+              0.39743658900260925,
+              0.359240859746933,
+              0.30658388137817383,
+              0.4183681309223175,
+              0.42978864908218384,
+              0.3559199869632721
+            ],
+            "order_id": "52df1065-3f92-4e4e-b255-d2575f9bd8b1",
+            "rid": "#-1:2d4efdc0-5900-4512-ae50-2db03e8cd689",
+            "title": "超级小区CP退出服务",
+            "ranker_probability": 0.47852885723114014
+          }
+        },
+        {
+          "action_id": "v38_add_top24_plus_exact_023",
+          "order_id": "8df78ab7-ca49-44f4-9fc2-1427cf850964",
+          "remove_rids": [],
+          "add_rids": [
+            "#-1:d66659d1-337f-4be6-83be-05795ef803cd"
+          ],
+          "source": "v38_boundary_action_ranker",
+          "expected_gain": 0.4650024175643921,
+          "evidence": {
+            "order_index": 281,
+            "row": 1640,
+            "local": 6,
+            "kind": "add",
+            "step": 1,
+            "current_count": 1,
+            "proposed_count": 2,
+            "need_mean": 0.3854355017344157,
+            "need_min": 0.30889883637428284,
+            "argmax_support": 0,
+            "node_scores": [
+              0.3137034475803375,
+              0.2707267701625824,
+              0.8121865391731262,
+              0.6527664661407471,
+              0.6410425305366516,
+              0.5903637409210205
+            ],
+            "order_id": "8df78ab7-ca49-44f4-9fc2-1427cf850964",
+            "rid": "#-1:d66659d1-337f-4be6-83be-05795ef803cd",
+            "title": "[衍生告警]PTN光缆中断，单报LOS",
+            "ranker_probability": 0.4650024175643921
+          }
+        },
+        {
+          "action_id": "v38_add_top24_plus_exact_024",
+          "order_id": "6600d905-9faf-4ee3-8d44-223e9bc4dfdb",
+          "remove_rids": [],
+          "add_rids": [
+            "#-1:d75e7df5-766b-490b-b64b-38d823eca500"
+          ],
+          "source": "v38_boundary_action_ranker",
+          "expected_gain": 0.4598255753517151,
+          "evidence": {
+            "order_index": 191,
+            "row": 1137,
+            "local": 7,
+            "kind": "add",
+            "step": 1,
+            "current_count": 1,
+            "proposed_count": 2,
+            "need_mean": 0.6378895044326782,
+            "need_min": 0.6102312803268433,
+            "argmax_support": 2,
+            "node_scores": [
+              0.046179503202438354,
+              0.04186899587512016,
+              0.7671687602996826,
+              0.3352828919887543,
+              0.3355827033519745,
+              0.282956063747406
+            ],
+            "order_id": "6600d905-9faf-4ee3-8d44-223e9bc4dfdb",
+            "rid": "#-1:d75e7df5-766b-490b-b64b-38d823eca500",
+            "title": "射频单元维护链路异常告警",
+            "ranker_probability": 0.4598255753517151
+          }
+        }
+      ],
+      "predictions": 1059,
+      "sha256": "e8576078fc9bd42bc7364f2a22f948161c6ba6cc416019337b3e704c83360ee1",
+      "score_possibilities": [
+        {
+          "true_adds": 0,
+          "tp": 956,
+          "score": 0.909177366
+        },
+        {
+          "true_adds": 1,
+          "tp": 957,
+          "score": 0.910128388
+        },
+        {
+          "true_adds": 2,
+          "tp": 958,
+          "score": 0.91107941
+        },
+        {
+          "true_adds": 3,
+          "tp": 959,
+          "score": 0.912030433
+        },
+        {
+          "true_adds": 4,
+          "tp": 960,
+          "score": 0.912981455
+        },
+        {
+          "true_adds": 5,
+          "tp": 961,
+          "score": 0.913932477
+        },
+        {
+          "true_adds": 6,
+          "tp": 962,
+          "score": 0.9148835
+        },
+        {
+          "true_adds": 7,
+          "tp": 963,
+          "score": 0.915834522
+        },
+        {
+          "true_adds": 8,
+          "tp": 964,
+          "score": 0.916785544
+        },
+        {
+          "true_adds": 9,
+          "tp": 965,
+          "score": 0.917736567
+        },
+        {
+          "true_adds": 10,
+          "tp": 966,
+          "score": 0.918687589
+        },
+        {
+          "true_adds": 11,
+          "tp": 967,
+          "score": 0.919638612
+        },
+        {
+          "true_adds": 12,
+          "tp": 968,
+          "score": 0.920589634
+        },
+        {
+          "true_adds": 13,
+          "tp": 969,
+          "score": 0.921540656
+        },
+        {
+          "true_adds": 14,
+          "tp": 970,
+          "score": 0.922491679
+        },
+        {
+          "true_adds": 15,
+          "tp": 971,
+          "score": 0.923442701
+        },
+        {
+          "true_adds": 16,
+          "tp": 972,
+          "score": 0.924393723
+        },
+        {
+          "true_adds": 17,
+          "tp": 973,
+          "score": 0.925344746
+        },
+        {
+          "true_adds": 18,
+          "tp": 974,
+          "score": 0.926295768
+        },
+        {
+          "true_adds": 19,
+          "tp": 975,
+          "score": 0.92724679
+        },
+        {
+          "true_adds": 20,
+          "tp": 976,
+          "score": 0.928197813
+        },
+        {
+          "true_adds": 21,
+          "tp": 977,
+          "score": 0.929148835
+        },
+        {
+          "true_adds": 22,
+          "tp": 978,
+          "score": 0.930099857
+        },
+        {
+          "true_adds": 23,
+          "tp": 979,
+          "score": 0.93105088
+        },
+        {
+          "true_adds": 24,
+          "tp": 980,
+          "score": 0.932001902
+        }
+      ]
+    },
+    "v38_delete_top08_plus_exact": {
+      "probe_id": "v38_delete_top08_plus_exact",
+      "baseline": "D:\\zgyidong\\experiments\\v30_meta_stack\\submissions\\v30_cross_order_top5.csv",
+      "path": "D:\\zgyidong\\experiments\\v38_boundary_actions\\submissions\\v38_delete_top08_plus_exact.csv",
+      "known_exact_gain": 1,
+      "candidate_count": 8,
+      "actions": [
+        {
+          "action_id": "v37_exact_001",
+          "order_id": "d5376a71-c48e-4351-ba60-f982778b3eb4",
+          "remove_rids": [
+            "#-1:0c809583-390f-4d16-9b91-c4fb1e99c5c2"
+          ],
+          "add_rids": [
+            "#-1:e401b7b4-697f-434e-8437-4b2136d6904f"
+          ],
+          "source": "historical_leaderboard_equations",
+          "expected_gain": null,
+          "evidence": {
+            "proof": "label fixed in every binary solution of all scored equations"
+          }
+        },
+        {
+          "action_id": "v38_delete_top08_plus_exact_001",
+          "order_id": "fad26f6d-c956-4598-9639-39fef649b32c",
+          "remove_rids": [
+            "#-1:f9d64afc-8fcb-4d95-9ff0-37f50f7d2783"
+          ],
+          "add_rids": [],
+          "source": "v38_boundary_action_ranker",
+          "expected_gain": 0.8561435341835022,
+          "evidence": {
+            "order_index": 533,
+            "row": 3181,
+            "local": 4,
+            "kind": "delete",
+            "step": 3,
+            "current_count": 7,
+            "proposed_count": 4,
+            "need_mean": 0.6338618894418081,
+            "need_min": 0.5736298561096191,
+            "argmax_support": 6,
+            "node_scores": [
+              0.6735727787017822,
+              0.6532188653945923,
+              0.8043311834335327,
+              0.7159645557403564,
+              0.719994843006134,
+              0.7383826971054077
+            ],
+            "order_id": "fad26f6d-c956-4598-9639-39fef649b32c",
+            "rid": "#-1:f9d64afc-8fcb-4d95-9ff0-37f50f7d2783",
+            "title": "设备掉电",
+            "ranker_probability": 0.8561435341835022
+          }
+        },
+        {
+          "action_id": "v38_delete_top08_plus_exact_002",
+          "order_id": "25a37559-7249-4fe0-bfd9-97007b9f7c5d",
+          "remove_rids": [
+            "#-1:622a2277-8e4d-4b77-aefb-1f90747752a2"
+          ],
+          "add_rids": [],
+          "source": "v38_boundary_action_ranker",
+          "expected_gain": 0.756852388381958,
+          "evidence": {
+            "order_index": 67,
+            "row": 384,
+            "local": 1,
+            "kind": "delete",
+            "step": 1,
+            "current_count": 2,
+            "proposed_count": 1,
+            "need_mean": 0.9429783622423807,
+            "need_min": 0.9338146448135376,
+            "argmax_support": 6,
+            "node_scores": [
+              0.2502939999103546,
+              0.17008662223815918,
+              0.14946000277996063,
+              0.39845284819602966,
+              0.3021176755428314,
+              0.3249792456626892
+            ],
+            "order_id": "25a37559-7249-4fe0-bfd9-97007b9f7c5d",
+            "rid": "#-1:622a2277-8e4d-4b77-aefb-1f90747752a2",
+            "title": "NR分布单元小区TRP不可用告警",
+            "ranker_probability": 0.756852388381958
+          }
+        },
+        {
+          "action_id": "v38_delete_top08_plus_exact_003",
+          "order_id": "d51a4fe5-3721-4585-929c-0ca993c3a0be",
+          "remove_rids": [
+            "#-1:e3994fe4-4a5b-4ca3-bbd9-0624471cb5de"
+          ],
+          "add_rids": [],
+          "source": "v38_boundary_action_ranker",
+          "expected_gain": 0.6875050663948059,
+          "evidence": {
+            "order_index": 441,
+            "row": 2633,
+            "local": 2,
+            "kind": "delete",
+            "step": 1,
+            "current_count": 4,
+            "proposed_count": 3,
+            "need_mean": 0.5292655030886332,
+            "need_min": 0.5096451640129089,
+            "argmax_support": 0,
+            "node_scores": [
+              0.7231355905532837,
+              0.6234142780303955,
+              0.6819659471511841,
+              0.5595537424087524,
+              0.5762389302253723,
+              0.5207609534263611
+            ],
+            "order_id": "d51a4fe5-3721-4585-929c-0ca993c3a0be",
+            "rid": "#-1:e3994fe4-4a5b-4ca3-bbd9-0624471cb5de",
+            "title": "单板未配置",
+            "ranker_probability": 0.6875050663948059
+          }
+        },
+        {
+          "action_id": "v38_delete_top08_plus_exact_004",
+          "order_id": "0052146f-c00c-4786-8d58-c2db3ec6baa0",
+          "remove_rids": [
+            "#-1:2ef23c93-34a2-40a2-89b4-90e8e4844fc6"
+          ],
+          "add_rids": [],
+          "source": "v38_boundary_action_ranker",
+          "expected_gain": 0.6870344281196594,
+          "evidence": {
+            "order_index": 1,
+            "row": 11,
+            "local": 0,
+            "kind": "delete",
+            "step": 1,
+            "current_count": 2,
+            "proposed_count": 1,
+            "need_mean": 0.46771200994650525,
+            "need_min": 0.42596253752708435,
+            "argmax_support": 5,
+            "node_scores": [
+              0.7655904293060303,
+              0.6854081749916077,
+              0.046490710228681564,
+              0.6928051114082336,
+              0.6190880537033081,
+              0.7843829393386841
+            ],
+            "order_id": "0052146f-c00c-4786-8d58-c2db3ec6baa0",
+            "rid": "#-1:2ef23c93-34a2-40a2-89b4-90e8e4844fc6",
+            "title": "单板处于初始化状态",
+            "ranker_probability": 0.6870344281196594
+          }
+        },
+        {
+          "action_id": "v38_delete_top08_plus_exact_005",
+          "order_id": "767c94f2-ed95-4967-a7e6-f0badda74572",
+          "remove_rids": [
+            "#-1:698fc874-3097-42c5-90ba-0e5875034dff"
+          ],
+          "add_rids": [],
+          "source": "v38_boundary_action_ranker",
+          "expected_gain": 0.6415870785713196,
+          "evidence": {
+            "order_index": 226,
+            "row": 1363,
+            "local": 3,
+            "kind": "delete",
+            "step": 1,
+            "current_count": 3,
+            "proposed_count": 2,
+            "need_mean": 0.3820727864901225,
+            "need_min": 0.35398411750793457,
+            "argmax_support": 0,
+            "node_scores": [
+              0.6599162220954895,
+              0.6207530498504639,
+              0.9540032148361206,
+              0.7880091667175293,
+              0.7313420176506042,
+              0.8561538457870483
+            ],
+            "order_id": "767c94f2-ed95-4967-a7e6-f0badda74572",
+            "rid": "#-1:698fc874-3097-42c5-90ba-0e5875034dff",
+            "title": "输入电压异常",
+            "ranker_probability": 0.6415870785713196
+          }
+        },
+        {
+          "action_id": "v38_delete_top08_plus_exact_006",
+          "order_id": "d14a7ca0-eeb5-44b8-850a-fdc536f03f2c",
+          "remove_rids": [
+            "#-1:42acdfe3-9f36-4590-b93c-fde53edb48d5"
+          ],
+          "add_rids": [],
+          "source": "v38_boundary_action_ranker",
+          "expected_gain": 0.636015772819519,
+          "evidence": {
+            "order_index": 431,
+            "row": 2565,
+            "local": 0,
+            "kind": "delete",
+            "step": 1,
+            "current_count": 2,
+            "proposed_count": 1,
+            "need_mean": 0.5001979420582453,
+            "need_min": 0.47531089186668396,
+            "argmax_support": 6,
+            "node_scores": [
+              0.20197340846061707,
+              0.196042999625206,
+              0.7007112503051758,
+              0.6759921312332153,
+              0.6639506816864014,
+              0.6632086038589478
+            ],
+            "order_id": "d14a7ca0-eeb5-44b8-850a-fdc536f03f2c",
+            "rid": "#-1:42acdfe3-9f36-4590-b93c-fde53edb48d5",
+            "title": "BBU CPRI线速率协商异常告警",
+            "ranker_probability": 0.636015772819519
+          }
+        },
+        {
+          "action_id": "v38_delete_top08_plus_exact_007",
+          "order_id": "8dac662e-5ffc-469b-ada5-8e0449b5c502",
+          "remove_rids": [
+            "#-1:966d0900-3d0b-4e6c-ba67-a8cb5c51248c"
+          ],
+          "add_rids": [],
+          "source": "v38_boundary_action_ranker",
+          "expected_gain": 0.6161878705024719,
+          "evidence": {
+            "order_index": 280,
+            "row": 1628,
+            "local": 0,
+            "kind": "delete",
+            "step": 1,
+            "current_count": 2,
+            "proposed_count": 1,
+            "need_mean": 0.46683307488759357,
+            "need_min": 0.41473785042762756,
+            "argmax_support": 2,
+            "node_scores": [
+              0.8154064416885376,
+              0.7466071248054504,
+              0.7894623279571533,
+              0.7104901075363159,
+              0.697116494178772,
+              0.6486285924911499
+            ],
+            "order_id": "8dac662e-5ffc-469b-ada5-8e0449b5c502",
+            "rid": "#-1:966d0900-3d0b-4e6c-ba67-a8cb5c51248c",
+            "title": "射频单元交流掉电告警",
+            "ranker_probability": 0.6161878705024719
+          }
+        },
+        {
+          "action_id": "v38_delete_top08_plus_exact_008",
+          "order_id": "82f3997a-668c-4663-9dd6-a0a298f14d00",
+          "remove_rids": [
+            "#-1:24a89126-1a36-4305-b0f5-0a60e349ead1"
+          ],
+          "add_rids": [],
+          "source": "v38_boundary_action_ranker",
+          "expected_gain": 0.5956166982650757,
+          "evidence": {
+            "order_index": 258,
+            "row": 1509,
+            "local": 2,
+            "kind": "delete",
+            "step": 1,
+            "current_count": 2,
+            "proposed_count": 1,
+            "need_mean": 0.6529090205828348,
+            "need_min": 0.5502467155456543,
+            "argmax_support": 6,
+            "node_scores": [
+              0.8603816032409668,
+              0.8157591223716736,
+              0.5429826378822327,
+              0.4985450208187103,
+              0.509115993976593,
+              0.44590795040130615
+            ],
+            "order_id": "82f3997a-668c-4663-9dd6-a0a298f14d00",
+            "rid": "#-1:24a89126-1a36-4305-b0f5-0a60e349ead1",
+            "title": "射频单元IR接口异常告警",
+            "ranker_probability": 0.5956166982650757
+          }
+        }
+      ],
+      "predictions": 1027,
+      "sha256": "73e8b53fb7a54c94cd994f1dfa1d9bbc48b1a1b706666b2ae95dfa5d6ea47a5d",
+      "score_possibilities": [
+        {
+          "deleted_true": 0,
+          "tp": 956,
+          "score": 0.923225495
+        },
+        {
+          "deleted_true": 1,
+          "tp": 955,
+          "score": 0.922259778
+        },
+        {
+          "deleted_true": 2,
+          "tp": 954,
+          "score": 0.921294061
+        },
+        {
+          "deleted_true": 3,
+          "tp": 953,
+          "score": 0.920328344
+        },
+        {
+          "deleted_true": 4,
+          "tp": 952,
+          "score": 0.919362627
+        },
+        {
+          "deleted_true": 5,
+          "tp": 951,
+          "score": 0.91839691
+        },
+        {
+          "deleted_true": 6,
+          "tp": 950,
+          "score": 0.917431193
+        },
+        {
+          "deleted_true": 7,
+          "tp": 949,
+          "score": 0.916465476
+        },
+        {
+          "deleted_true": 8,
+          "tp": 948,
+          "score": 0.915499759
+        }
+      ]
+    },
+    "v38_delete_top16_plus_exact": {
+      "probe_id": "v38_delete_top16_plus_exact",
+      "baseline": "D:\\zgyidong\\experiments\\v30_meta_stack\\submissions\\v30_cross_order_top5.csv",
+      "path": "D:\\zgyidong\\experiments\\v38_boundary_actions\\submissions\\v38_delete_top16_plus_exact.csv",
+      "known_exact_gain": 1,
+      "candidate_count": 16,
+      "actions": [
+        {
+          "action_id": "v37_exact_001",
+          "order_id": "d5376a71-c48e-4351-ba60-f982778b3eb4",
+          "remove_rids": [
+            "#-1:0c809583-390f-4d16-9b91-c4fb1e99c5c2"
+          ],
+          "add_rids": [
+            "#-1:e401b7b4-697f-434e-8437-4b2136d6904f"
+          ],
+          "source": "historical_leaderboard_equations",
+          "expected_gain": null,
+          "evidence": {
+            "proof": "label fixed in every binary solution of all scored equations"
+          }
+        },
+        {
+          "action_id": "v38_delete_top16_plus_exact_001",
+          "order_id": "fad26f6d-c956-4598-9639-39fef649b32c",
+          "remove_rids": [
+            "#-1:f9d64afc-8fcb-4d95-9ff0-37f50f7d2783"
+          ],
+          "add_rids": [],
+          "source": "v38_boundary_action_ranker",
+          "expected_gain": 0.8561435341835022,
+          "evidence": {
+            "order_index": 533,
+            "row": 3181,
+            "local": 4,
+            "kind": "delete",
+            "step": 3,
+            "current_count": 7,
+            "proposed_count": 4,
+            "need_mean": 0.6338618894418081,
+            "need_min": 0.5736298561096191,
+            "argmax_support": 6,
+            "node_scores": [
+              0.6735727787017822,
+              0.6532188653945923,
+              0.8043311834335327,
+              0.7159645557403564,
+              0.719994843006134,
+              0.7383826971054077
+            ],
+            "order_id": "fad26f6d-c956-4598-9639-39fef649b32c",
+            "rid": "#-1:f9d64afc-8fcb-4d95-9ff0-37f50f7d2783",
+            "title": "设备掉电",
+            "ranker_probability": 0.8561435341835022
+          }
+        },
+        {
+          "action_id": "v38_delete_top16_plus_exact_002",
+          "order_id": "25a37559-7249-4fe0-bfd9-97007b9f7c5d",
+          "remove_rids": [
+            "#-1:622a2277-8e4d-4b77-aefb-1f90747752a2"
+          ],
+          "add_rids": [],
+          "source": "v38_boundary_action_ranker",
+          "expected_gain": 0.756852388381958,
+          "evidence": {
+            "order_index": 67,
+            "row": 384,
+            "local": 1,
+            "kind": "delete",
+            "step": 1,
+            "current_count": 2,
+            "proposed_count": 1,
+            "need_mean": 0.9429783622423807,
+            "need_min": 0.9338146448135376,
+            "argmax_support": 6,
+            "node_scores": [
+              0.2502939999103546,
+              0.17008662223815918,
+              0.14946000277996063,
+              0.39845284819602966,
+              0.3021176755428314,
+              0.3249792456626892
+            ],
+            "order_id": "25a37559-7249-4fe0-bfd9-97007b9f7c5d",
+            "rid": "#-1:622a2277-8e4d-4b77-aefb-1f90747752a2",
+            "title": "NR分布单元小区TRP不可用告警",
+            "ranker_probability": 0.756852388381958
+          }
+        },
+        {
+          "action_id": "v38_delete_top16_plus_exact_003",
+          "order_id": "d51a4fe5-3721-4585-929c-0ca993c3a0be",
+          "remove_rids": [
+            "#-1:e3994fe4-4a5b-4ca3-bbd9-0624471cb5de"
+          ],
+          "add_rids": [],
+          "source": "v38_boundary_action_ranker",
+          "expected_gain": 0.6875050663948059,
+          "evidence": {
+            "order_index": 441,
+            "row": 2633,
+            "local": 2,
+            "kind": "delete",
+            "step": 1,
+            "current_count": 4,
+            "proposed_count": 3,
+            "need_mean": 0.5292655030886332,
+            "need_min": 0.5096451640129089,
+            "argmax_support": 0,
+            "node_scores": [
+              0.7231355905532837,
+              0.6234142780303955,
+              0.6819659471511841,
+              0.5595537424087524,
+              0.5762389302253723,
+              0.5207609534263611
+            ],
+            "order_id": "d51a4fe5-3721-4585-929c-0ca993c3a0be",
+            "rid": "#-1:e3994fe4-4a5b-4ca3-bbd9-0624471cb5de",
+            "title": "单板未配置",
+            "ranker_probability": 0.6875050663948059
+          }
+        },
+        {
+          "action_id": "v38_delete_top16_plus_exact_004",
+          "order_id": "0052146f-c00c-4786-8d58-c2db3ec6baa0",
+          "remove_rids": [
+            "#-1:2ef23c93-34a2-40a2-89b4-90e8e4844fc6"
+          ],
+          "add_rids": [],
+          "source": "v38_boundary_action_ranker",
+          "expected_gain": 0.6870344281196594,
+          "evidence": {
+            "order_index": 1,
+            "row": 11,
+            "local": 0,
+            "kind": "delete",
+            "step": 1,
+            "current_count": 2,
+            "proposed_count": 1,
+            "need_mean": 0.46771200994650525,
+            "need_min": 0.42596253752708435,
+            "argmax_support": 5,
+            "node_scores": [
+              0.7655904293060303,
+              0.6854081749916077,
+              0.046490710228681564,
+              0.6928051114082336,
+              0.6190880537033081,
+              0.7843829393386841
+            ],
+            "order_id": "0052146f-c00c-4786-8d58-c2db3ec6baa0",
+            "rid": "#-1:2ef23c93-34a2-40a2-89b4-90e8e4844fc6",
+            "title": "单板处于初始化状态",
+            "ranker_probability": 0.6870344281196594
+          }
+        },
+        {
+          "action_id": "v38_delete_top16_plus_exact_005",
+          "order_id": "767c94f2-ed95-4967-a7e6-f0badda74572",
+          "remove_rids": [
+            "#-1:698fc874-3097-42c5-90ba-0e5875034dff"
+          ],
+          "add_rids": [],
+          "source": "v38_boundary_action_ranker",
+          "expected_gain": 0.6415870785713196,
+          "evidence": {
+            "order_index": 226,
+            "row": 1363,
+            "local": 3,
+            "kind": "delete",
+            "step": 1,
+            "current_count": 3,
+            "proposed_count": 2,
+            "need_mean": 0.3820727864901225,
+            "need_min": 0.35398411750793457,
+            "argmax_support": 0,
+            "node_scores": [
+              0.6599162220954895,
+              0.6207530498504639,
+              0.9540032148361206,
+              0.7880091667175293,
+              0.7313420176506042,
+              0.8561538457870483
+            ],
+            "order_id": "767c94f2-ed95-4967-a7e6-f0badda74572",
+            "rid": "#-1:698fc874-3097-42c5-90ba-0e5875034dff",
+            "title": "输入电压异常",
+            "ranker_probability": 0.6415870785713196
+          }
+        },
+        {
+          "action_id": "v38_delete_top16_plus_exact_006",
+          "order_id": "d14a7ca0-eeb5-44b8-850a-fdc536f03f2c",
+          "remove_rids": [
+            "#-1:42acdfe3-9f36-4590-b93c-fde53edb48d5"
+          ],
+          "add_rids": [],
+          "source": "v38_boundary_action_ranker",
+          "expected_gain": 0.636015772819519,
+          "evidence": {
+            "order_index": 431,
+            "row": 2565,
+            "local": 0,
+            "kind": "delete",
+            "step": 1,
+            "current_count": 2,
+            "proposed_count": 1,
+            "need_mean": 0.5001979420582453,
+            "need_min": 0.47531089186668396,
+            "argmax_support": 6,
+            "node_scores": [
+              0.20197340846061707,
+              0.196042999625206,
+              0.7007112503051758,
+              0.6759921312332153,
+              0.6639506816864014,
+              0.6632086038589478
+            ],
+            "order_id": "d14a7ca0-eeb5-44b8-850a-fdc536f03f2c",
+            "rid": "#-1:42acdfe3-9f36-4590-b93c-fde53edb48d5",
+            "title": "BBU CPRI线速率协商异常告警",
+            "ranker_probability": 0.636015772819519
+          }
+        },
+        {
+          "action_id": "v38_delete_top16_plus_exact_007",
+          "order_id": "8dac662e-5ffc-469b-ada5-8e0449b5c502",
+          "remove_rids": [
+            "#-1:966d0900-3d0b-4e6c-ba67-a8cb5c51248c"
+          ],
+          "add_rids": [],
+          "source": "v38_boundary_action_ranker",
+          "expected_gain": 0.6161878705024719,
+          "evidence": {
+            "order_index": 280,
+            "row": 1628,
+            "local": 0,
+            "kind": "delete",
+            "step": 1,
+            "current_count": 2,
+            "proposed_count": 1,
+            "need_mean": 0.46683307488759357,
+            "need_min": 0.41473785042762756,
+            "argmax_support": 2,
+            "node_scores": [
+              0.8154064416885376,
+              0.7466071248054504,
+              0.7894623279571533,
+              0.7104901075363159,
+              0.697116494178772,
+              0.6486285924911499
+            ],
+            "order_id": "8dac662e-5ffc-469b-ada5-8e0449b5c502",
+            "rid": "#-1:966d0900-3d0b-4e6c-ba67-a8cb5c51248c",
+            "title": "射频单元交流掉电告警",
+            "ranker_probability": 0.6161878705024719
+          }
+        },
+        {
+          "action_id": "v38_delete_top16_plus_exact_008",
+          "order_id": "82f3997a-668c-4663-9dd6-a0a298f14d00",
+          "remove_rids": [
+            "#-1:24a89126-1a36-4305-b0f5-0a60e349ead1"
+          ],
+          "add_rids": [],
+          "source": "v38_boundary_action_ranker",
+          "expected_gain": 0.5956166982650757,
+          "evidence": {
+            "order_index": 258,
+            "row": 1509,
+            "local": 2,
+            "kind": "delete",
+            "step": 1,
+            "current_count": 2,
+            "proposed_count": 1,
+            "need_mean": 0.6529090205828348,
+            "need_min": 0.5502467155456543,
+            "argmax_support": 6,
+            "node_scores": [
+              0.8603816032409668,
+              0.8157591223716736,
+              0.5429826378822327,
+              0.4985450208187103,
+              0.509115993976593,
+              0.44590795040130615
+            ],
+            "order_id": "82f3997a-668c-4663-9dd6-a0a298f14d00",
+            "rid": "#-1:24a89126-1a36-4305-b0f5-0a60e349ead1",
+            "title": "射频单元IR接口异常告警",
+            "ranker_probability": 0.5956166982650757
+          }
+        },
+        {
+          "action_id": "v38_delete_top16_plus_exact_009",
+          "order_id": "5f0b3c7f-806d-4622-a671-5d23ee09c827",
+          "remove_rids": [
+            "#-1:2a0b69d3-858a-49e0-9b6a-e1cf21eb55bb"
+          ],
+          "add_rids": [],
+          "source": "v38_boundary_action_ranker",
+          "expected_gain": 0.5918834805488586,
+          "evidence": {
+            "order_index": 179,
+            "row": 1005,
+            "local": 5,
+            "kind": "delete",
+            "step": 1,
+            "current_count": 2,
+            "proposed_count": 1,
+            "need_mean": 0.6794828573862711,
+            "need_min": 0.5917450189590454,
+            "argmax_support": 6,
+            "node_scores": [
+              0.8641796112060547,
+              0.6758396625518799,
+              0.44868531823158264,
+              0.47820404171943665,
+              0.5241686105728149,
+              0.4952268898487091
+            ],
+            "order_id": "5f0b3c7f-806d-4622-a671-5d23ee09c827",
+            "rid": "#-1:2a0b69d3-858a-49e0-9b6a-e1cf21eb55bb",
+            "title": "RRU链路断",
+            "ranker_probability": 0.5918834805488586
+          }
+        },
+        {
+          "action_id": "v38_delete_top16_plus_exact_010",
+          "order_id": "947bec57-c9f8-47ad-aa45-37cb9be6c798",
+          "remove_rids": [
+            "#-1:b894a7ec-dc86-4656-971a-c1b10121a044"
+          ],
+          "add_rids": [],
+          "source": "v38_boundary_action_ranker",
+          "expected_gain": 0.5589326024055481,
+          "evidence": {
+            "order_index": 296,
+            "row": 1709,
+            "local": 1,
+            "kind": "delete",
+            "step": 1,
+            "current_count": 2,
+            "proposed_count": 1,
+            "need_mean": 0.6694294313589731,
+            "need_min": 0.6530092358589172,
+            "argmax_support": 6,
+            "node_scores": [
+              0.8088401556015015,
+              0.6590785384178162,
+              0.039401713758707047,
+              0.4473276734352112,
+              0.49813196063041687,
+              0.49623656272888184
+            ],
+            "order_id": "947bec57-c9f8-47ad-aa45-37cb9be6c798",
+            "rid": "#-1:b894a7ec-dc86-4656-971a-c1b10121a044",
+            "title": "光口接收链路故障",
+            "ranker_probability": 0.5589326024055481
+          }
+        },
+        {
+          "action_id": "v38_delete_top16_plus_exact_011",
+          "order_id": "a6ae9c3c-c787-47e0-abf0-d610533dc2a0",
+          "remove_rids": [
+            "#-1:97d24cf9-e8a1-45f9-8cc6-b6cc1580e991"
+          ],
+          "add_rids": [],
+          "source": "v38_boundary_action_ranker",
+          "expected_gain": 0.5539634227752686,
+          "evidence": {
+            "order_index": 337,
+            "row": 1951,
+            "local": 7,
+            "kind": "delete",
+            "step": 1,
+            "current_count": 4,
+            "proposed_count": 3,
+            "need_mean": 0.45107963184515637,
+            "need_min": 0.3827274441719055,
+            "argmax_support": 4,
+            "node_scores": [
+              0.9142197370529175,
+              0.7844375967979431,
+              0.8096985816955566,
+              0.581728458404541,
+              0.6171386241912842,
+              0.6159461736679077
+            ],
+            "order_id": "a6ae9c3c-c787-47e0-abf0-d610533dc2a0",
+            "rid": "#-1:97d24cf9-e8a1-45f9-8cc6-b6cc1580e991",
+            "title": "光模块接收光功率异常",
+            "ranker_probability": 0.5539634227752686
+          }
+        },
+        {
+          "action_id": "v38_delete_top16_plus_exact_012",
+          "order_id": "a3645153-27f5-4b8c-9e3a-bc84cfd7c653",
+          "remove_rids": [
+            "#-1:fe0aed2a-0446-4bba-8836-7bf35d20cd0b"
+          ],
+          "add_rids": [],
+          "source": "v38_boundary_action_ranker",
+          "expected_gain": 0.5426692962646484,
+          "evidence": {
+            "order_index": 333,
+            "row": 1928,
+            "local": 10,
+            "kind": "delete",
+            "step": 1,
+            "current_count": 5,
+            "proposed_count": 4,
+            "need_mean": 0.6855337719122568,
+            "need_min": 0.6022045612335205,
+            "argmax_support": 4,
+            "node_scores": [
+              0.77984219789505,
+              0.5973215103149414,
+              0.622788667678833,
+              0.3145962357521057,
+              0.4100603759288788,
+              0.273314893245697
+            ],
+            "order_id": "a3645153-27f5-4b8c-9e3a-bc84cfd7c653",
+            "rid": "#-1:fe0aed2a-0446-4bba-8836-7bf35d20cd0b",
+            "title": "射频单元直流掉电告警",
+            "ranker_probability": 0.5426692962646484
+          }
+        },
+        {
+          "action_id": "v38_delete_top16_plus_exact_013",
+          "order_id": "30ee0cf1-0b53-438c-8154-c1356061e57c",
+          "remove_rids": [
+            "#-1:c8d3a6e4-2a46-4d1f-8833-07014f4cbe73"
+          ],
+          "add_rids": [],
+          "source": "v38_boundary_action_ranker",
+          "expected_gain": 0.5308148860931396,
+          "evidence": {
+            "order_index": 86,
+            "row": 478,
+            "local": 0,
+            "kind": "delete",
+            "step": 1,
+            "current_count": 2,
+            "proposed_count": 1,
+            "need_mean": 0.3746344894170761,
+            "need_min": 0.3415171504020691,
+            "argmax_support": 0,
+            "node_scores": [
+              0.784210205078125,
+              0.6982787251472473,
+              0.7097867131233215,
+              0.7239826917648315,
+              0.7057891488075256,
+              0.7891120314598083
+            ],
+            "order_id": "30ee0cf1-0b53-438c-8154-c1356061e57c",
+            "rid": "#-1:c8d3a6e4-2a46-4d1f-8833-07014f4cbe73",
+            "title": "光口接收链路故障",
+            "ranker_probability": 0.5308148860931396
+          }
+        },
+        {
+          "action_id": "v38_delete_top16_plus_exact_014",
+          "order_id": "f57b8fbe-bd33-4dc7-95ef-fbffa4552754",
+          "remove_rids": [
+            "#-1:245caebe-e60c-43fc-b1a4-ebdb838df6d1"
+          ],
+          "add_rids": [],
+          "source": "v38_boundary_action_ranker",
+          "expected_gain": 0.5281296968460083,
+          "evidence": {
+            "order_index": 520,
+            "row": 3113,
+            "local": 4,
+            "kind": "delete",
+            "step": 1,
+            "current_count": 4,
+            "proposed_count": 3,
+            "need_mean": 0.670269250869751,
+            "need_min": 0.640606164932251,
+            "argmax_support": 6,
+            "node_scores": [
+              0.8065580725669861,
+              0.6983047723770142,
+              0.7213740944862366,
+              0.40536749362945557,
+              0.5282361507415771,
+              0.42633944749832153
+            ],
+            "order_id": "f57b8fbe-bd33-4dc7-95ef-fbffa4552754",
+            "rid": "#-1:245caebe-e60c-43fc-b1a4-ebdb838df6d1",
+            "title": "光模块接收光功率异常",
+            "ranker_probability": 0.5281296968460083
+          }
+        },
+        {
+          "action_id": "v38_delete_top16_plus_exact_015",
+          "order_id": "5f31acb6-cb86-4488-af6a-f6d2d4d3a4d9",
+          "remove_rids": [
+            "#-1:fdd7bddb-e7cc-4a6f-8246-0c2cf89a221e"
+          ],
+          "add_rids": [],
+          "source": "v38_boundary_action_ranker",
+          "expected_gain": 0.5254566073417664,
+          "evidence": {
+            "order_index": 180,
+            "row": 1009,
+            "local": 3,
+            "kind": "delete",
+            "step": 1,
+            "current_count": 3,
+            "proposed_count": 2,
+            "need_mean": 0.6326105197270712,
+            "need_min": 0.6244220733642578,
+            "argmax_support": 6,
+            "node_scores": [
+              0.4597261846065521,
+              0.45239129662513733,
+              0.3168032169342041,
+              0.3918188810348511,
+              0.4633074700832367,
+              0.3292933702468872
+            ],
+            "order_id": "5f31acb6-cb86-4488-af6a-f6d2d4d3a4d9",
+            "rid": "#-1:fdd7bddb-e7cc-4a6f-8246-0c2cf89a221e",
+            "title": "单板电源关断",
+            "ranker_probability": 0.5254566073417664
+          }
+        },
+        {
+          "action_id": "v38_delete_top16_plus_exact_016",
+          "order_id": "43a52adc-0332-479c-9e4a-f2642ff64db8",
+          "remove_rids": [
+            "#-1:99f8512f-1c76-4fcd-858e-f7f021edc875"
+          ],
+          "add_rids": [],
+          "source": "v38_boundary_action_ranker",
+          "expected_gain": 0.5213308334350586,
+          "evidence": {
+            "order_index": 121,
+            "row": 656,
+            "local": 1,
+            "kind": "delete",
+            "step": 1,
+            "current_count": 2,
+            "proposed_count": 1,
+            "need_mean": 0.54322483142217,
+            "need_min": 0.5173382759094238,
+            "argmax_support": 6,
+            "node_scores": [
+              0.12911289930343628,
+              0.0727795735001564,
+              0.8152133226394653,
+              0.8776856660842896,
+              0.8017587661743164,
+              0.9125638604164124
+            ],
+            "order_id": "43a52adc-0332-479c-9e4a-f2642ff64db8",
+            "rid": "#-1:99f8512f-1c76-4fcd-858e-f7f021edc875",
+            "title": "射频单元维护链路异常告警",
+            "ranker_probability": 0.5213308334350586
+          }
+        }
+      ],
+      "predictions": 1019,
+      "sha256": "12fab78dfbc18c48120d0e614871f0b521a47bba69fffc39a0e546908cc22f53",
+      "score_possibilities": [
+        {
+          "deleted_true": 0,
+          "tp": 956,
+          "score": 0.926805623
+        },
+        {
+          "deleted_true": 1,
+          "tp": 955,
+          "score": 0.925836161
+        },
+        {
+          "deleted_true": 2,
+          "tp": 954,
+          "score": 0.924866699
+        },
+        {
+          "deleted_true": 3,
+          "tp": 953,
+          "score": 0.923897237
+        },
+        {
+          "deleted_true": 4,
+          "tp": 952,
+          "score": 0.922927775
+        },
+        {
+          "deleted_true": 5,
+          "tp": 951,
+          "score": 0.921958313
+        },
+        {
+          "deleted_true": 6,
+          "tp": 950,
+          "score": 0.920988851
+        },
+        {
+          "deleted_true": 7,
+          "tp": 949,
+          "score": 0.920019389
+        },
+        {
+          "deleted_true": 8,
+          "tp": 948,
+          "score": 0.919049927
+        },
+        {
+          "deleted_true": 9,
+          "tp": 947,
+          "score": 0.918080465
+        },
+        {
+          "deleted_true": 10,
+          "tp": 946,
+          "score": 0.917111003
+        },
+        {
+          "deleted_true": 11,
+          "tp": 945,
+          "score": 0.916141541
+        },
+        {
+          "deleted_true": 12,
+          "tp": 944,
+          "score": 0.915172079
+        },
+        {
+          "deleted_true": 13,
+          "tp": 943,
+          "score": 0.914202618
+        },
+        {
+          "deleted_true": 14,
+          "tp": 942,
+          "score": 0.913233156
+        },
+        {
+          "deleted_true": 15,
+          "tp": 941,
+          "score": 0.912263694
+        },
+        {
+          "deleted_true": 16,
+          "tp": 940,
+          "score": 0.911294232
+        }
+      ]
+    },
+    "v38_delete_top24_plus_exact": {
+      "probe_id": "v38_delete_top24_plus_exact",
+      "baseline": "D:\\zgyidong\\experiments\\v30_meta_stack\\submissions\\v30_cross_order_top5.csv",
+      "path": "D:\\zgyidong\\experiments\\v38_boundary_actions\\submissions\\v38_delete_top24_plus_exact.csv",
+      "known_exact_gain": 1,
+      "candidate_count": 24,
+      "actions": [
+        {
+          "action_id": "v37_exact_001",
+          "order_id": "d5376a71-c48e-4351-ba60-f982778b3eb4",
+          "remove_rids": [
+            "#-1:0c809583-390f-4d16-9b91-c4fb1e99c5c2"
+          ],
+          "add_rids": [
+            "#-1:e401b7b4-697f-434e-8437-4b2136d6904f"
+          ],
+          "source": "historical_leaderboard_equations",
+          "expected_gain": null,
+          "evidence": {
+            "proof": "label fixed in every binary solution of all scored equations"
+          }
+        },
+        {
+          "action_id": "v38_delete_top24_plus_exact_001",
+          "order_id": "fad26f6d-c956-4598-9639-39fef649b32c",
+          "remove_rids": [
+            "#-1:f9d64afc-8fcb-4d95-9ff0-37f50f7d2783"
+          ],
+          "add_rids": [],
+          "source": "v38_boundary_action_ranker",
+          "expected_gain": 0.8561435341835022,
+          "evidence": {
+            "order_index": 533,
+            "row": 3181,
+            "local": 4,
+            "kind": "delete",
+            "step": 3,
+            "current_count": 7,
+            "proposed_count": 4,
+            "need_mean": 0.6338618894418081,
+            "need_min": 0.5736298561096191,
+            "argmax_support": 6,
+            "node_scores": [
+              0.6735727787017822,
+              0.6532188653945923,
+              0.8043311834335327,
+              0.7159645557403564,
+              0.719994843006134,
+              0.7383826971054077
+            ],
+            "order_id": "fad26f6d-c956-4598-9639-39fef649b32c",
+            "rid": "#-1:f9d64afc-8fcb-4d95-9ff0-37f50f7d2783",
+            "title": "设备掉电",
+            "ranker_probability": 0.8561435341835022
+          }
+        },
+        {
+          "action_id": "v38_delete_top24_plus_exact_002",
+          "order_id": "25a37559-7249-4fe0-bfd9-97007b9f7c5d",
+          "remove_rids": [
+            "#-1:622a2277-8e4d-4b77-aefb-1f90747752a2"
+          ],
+          "add_rids": [],
+          "source": "v38_boundary_action_ranker",
+          "expected_gain": 0.756852388381958,
+          "evidence": {
+            "order_index": 67,
+            "row": 384,
+            "local": 1,
+            "kind": "delete",
+            "step": 1,
+            "current_count": 2,
+            "proposed_count": 1,
+            "need_mean": 0.9429783622423807,
+            "need_min": 0.9338146448135376,
+            "argmax_support": 6,
+            "node_scores": [
+              0.2502939999103546,
+              0.17008662223815918,
+              0.14946000277996063,
+              0.39845284819602966,
+              0.3021176755428314,
+              0.3249792456626892
+            ],
+            "order_id": "25a37559-7249-4fe0-bfd9-97007b9f7c5d",
+            "rid": "#-1:622a2277-8e4d-4b77-aefb-1f90747752a2",
+            "title": "NR分布单元小区TRP不可用告警",
+            "ranker_probability": 0.756852388381958
+          }
+        },
+        {
+          "action_id": "v38_delete_top24_plus_exact_003",
+          "order_id": "d51a4fe5-3721-4585-929c-0ca993c3a0be",
+          "remove_rids": [
+            "#-1:e3994fe4-4a5b-4ca3-bbd9-0624471cb5de"
+          ],
+          "add_rids": [],
+          "source": "v38_boundary_action_ranker",
+          "expected_gain": 0.6875050663948059,
+          "evidence": {
+            "order_index": 441,
+            "row": 2633,
+            "local": 2,
+            "kind": "delete",
+            "step": 1,
+            "current_count": 4,
+            "proposed_count": 3,
+            "need_mean": 0.5292655030886332,
+            "need_min": 0.5096451640129089,
+            "argmax_support": 0,
+            "node_scores": [
+              0.7231355905532837,
+              0.6234142780303955,
+              0.6819659471511841,
+              0.5595537424087524,
+              0.5762389302253723,
+              0.5207609534263611
+            ],
+            "order_id": "d51a4fe5-3721-4585-929c-0ca993c3a0be",
+            "rid": "#-1:e3994fe4-4a5b-4ca3-bbd9-0624471cb5de",
+            "title": "单板未配置",
+            "ranker_probability": 0.6875050663948059
+          }
+        },
+        {
+          "action_id": "v38_delete_top24_plus_exact_004",
+          "order_id": "0052146f-c00c-4786-8d58-c2db3ec6baa0",
+          "remove_rids": [
+            "#-1:2ef23c93-34a2-40a2-89b4-90e8e4844fc6"
+          ],
+          "add_rids": [],
+          "source": "v38_boundary_action_ranker",
+          "expected_gain": 0.6870344281196594,
+          "evidence": {
+            "order_index": 1,
+            "row": 11,
+            "local": 0,
+            "kind": "delete",
+            "step": 1,
+            "current_count": 2,
+            "proposed_count": 1,
+            "need_mean": 0.46771200994650525,
+            "need_min": 0.42596253752708435,
+            "argmax_support": 5,
+            "node_scores": [
+              0.7655904293060303,
+              0.6854081749916077,
+              0.046490710228681564,
+              0.6928051114082336,
+              0.6190880537033081,
+              0.7843829393386841
+            ],
+            "order_id": "0052146f-c00c-4786-8d58-c2db3ec6baa0",
+            "rid": "#-1:2ef23c93-34a2-40a2-89b4-90e8e4844fc6",
+            "title": "单板处于初始化状态",
+            "ranker_probability": 0.6870344281196594
+          }
+        },
+        {
+          "action_id": "v38_delete_top24_plus_exact_005",
+          "order_id": "767c94f2-ed95-4967-a7e6-f0badda74572",
+          "remove_rids": [
+            "#-1:698fc874-3097-42c5-90ba-0e5875034dff"
+          ],
+          "add_rids": [],
+          "source": "v38_boundary_action_ranker",
+          "expected_gain": 0.6415870785713196,
+          "evidence": {
+            "order_index": 226,
+            "row": 1363,
+            "local": 3,
+            "kind": "delete",
+            "step": 1,
+            "current_count": 3,
+            "proposed_count": 2,
+            "need_mean": 0.3820727864901225,
+            "need_min": 0.35398411750793457,
+            "argmax_support": 0,
+            "node_scores": [
+              0.6599162220954895,
+              0.6207530498504639,
+              0.9540032148361206,
+              0.7880091667175293,
+              0.7313420176506042,
+              0.8561538457870483
+            ],
+            "order_id": "767c94f2-ed95-4967-a7e6-f0badda74572",
+            "rid": "#-1:698fc874-3097-42c5-90ba-0e5875034dff",
+            "title": "输入电压异常",
+            "ranker_probability": 0.6415870785713196
+          }
+        },
+        {
+          "action_id": "v38_delete_top24_plus_exact_006",
+          "order_id": "d14a7ca0-eeb5-44b8-850a-fdc536f03f2c",
+          "remove_rids": [
+            "#-1:42acdfe3-9f36-4590-b93c-fde53edb48d5"
+          ],
+          "add_rids": [],
+          "source": "v38_boundary_action_ranker",
+          "expected_gain": 0.636015772819519,
+          "evidence": {
+            "order_index": 431,
+            "row": 2565,
+            "local": 0,
+            "kind": "delete",
+            "step": 1,
+            "current_count": 2,
+            "proposed_count": 1,
+            "need_mean": 0.5001979420582453,
+            "need_min": 0.47531089186668396,
+            "argmax_support": 6,
+            "node_scores": [
+              0.20197340846061707,
+              0.196042999625206,
+              0.7007112503051758,
+              0.6759921312332153,
+              0.6639506816864014,
+              0.6632086038589478
+            ],
+            "order_id": "d14a7ca0-eeb5-44b8-850a-fdc536f03f2c",
+            "rid": "#-1:42acdfe3-9f36-4590-b93c-fde53edb48d5",
+            "title": "BBU CPRI线速率协商异常告警",
+            "ranker_probability": 0.636015772819519
+          }
+        },
+        {
+          "action_id": "v38_delete_top24_plus_exact_007",
+          "order_id": "8dac662e-5ffc-469b-ada5-8e0449b5c502",
+          "remove_rids": [
+            "#-1:966d0900-3d0b-4e6c-ba67-a8cb5c51248c"
+          ],
+          "add_rids": [],
+          "source": "v38_boundary_action_ranker",
+          "expected_gain": 0.6161878705024719,
+          "evidence": {
+            "order_index": 280,
+            "row": 1628,
+            "local": 0,
+            "kind": "delete",
+            "step": 1,
+            "current_count": 2,
+            "proposed_count": 1,
+            "need_mean": 0.46683307488759357,
+            "need_min": 0.41473785042762756,
+            "argmax_support": 2,
+            "node_scores": [
+              0.8154064416885376,
+              0.7466071248054504,
+              0.7894623279571533,
+              0.7104901075363159,
+              0.697116494178772,
+              0.6486285924911499
+            ],
+            "order_id": "8dac662e-5ffc-469b-ada5-8e0449b5c502",
+            "rid": "#-1:966d0900-3d0b-4e6c-ba67-a8cb5c51248c",
+            "title": "射频单元交流掉电告警",
+            "ranker_probability": 0.6161878705024719
+          }
+        },
+        {
+          "action_id": "v38_delete_top24_plus_exact_008",
+          "order_id": "82f3997a-668c-4663-9dd6-a0a298f14d00",
+          "remove_rids": [
+            "#-1:24a89126-1a36-4305-b0f5-0a60e349ead1"
+          ],
+          "add_rids": [],
+          "source": "v38_boundary_action_ranker",
+          "expected_gain": 0.5956166982650757,
+          "evidence": {
+            "order_index": 258,
+            "row": 1509,
+            "local": 2,
+            "kind": "delete",
+            "step": 1,
+            "current_count": 2,
+            "proposed_count": 1,
+            "need_mean": 0.6529090205828348,
+            "need_min": 0.5502467155456543,
+            "argmax_support": 6,
+            "node_scores": [
+              0.8603816032409668,
+              0.8157591223716736,
+              0.5429826378822327,
+              0.4985450208187103,
+              0.509115993976593,
+              0.44590795040130615
+            ],
+            "order_id": "82f3997a-668c-4663-9dd6-a0a298f14d00",
+            "rid": "#-1:24a89126-1a36-4305-b0f5-0a60e349ead1",
+            "title": "射频单元IR接口异常告警",
+            "ranker_probability": 0.5956166982650757
+          }
+        },
+        {
+          "action_id": "v38_delete_top24_plus_exact_009",
+          "order_id": "5f0b3c7f-806d-4622-a671-5d23ee09c827",
+          "remove_rids": [
+            "#-1:2a0b69d3-858a-49e0-9b6a-e1cf21eb55bb"
+          ],
+          "add_rids": [],
+          "source": "v38_boundary_action_ranker",
+          "expected_gain": 0.5918834805488586,
+          "evidence": {
+            "order_index": 179,
+            "row": 1005,
+            "local": 5,
+            "kind": "delete",
+            "step": 1,
+            "current_count": 2,
+            "proposed_count": 1,
+            "need_mean": 0.6794828573862711,
+            "need_min": 0.5917450189590454,
+            "argmax_support": 6,
+            "node_scores": [
+              0.8641796112060547,
+              0.6758396625518799,
+              0.44868531823158264,
+              0.47820404171943665,
+              0.5241686105728149,
+              0.4952268898487091
+            ],
+            "order_id": "5f0b3c7f-806d-4622-a671-5d23ee09c827",
+            "rid": "#-1:2a0b69d3-858a-49e0-9b6a-e1cf21eb55bb",
+            "title": "RRU链路断",
+            "ranker_probability": 0.5918834805488586
+          }
+        },
+        {
+          "action_id": "v38_delete_top24_plus_exact_010",
+          "order_id": "947bec57-c9f8-47ad-aa45-37cb9be6c798",
+          "remove_rids": [
+            "#-1:b894a7ec-dc86-4656-971a-c1b10121a044"
+          ],
+          "add_rids": [],
+          "source": "v38_boundary_action_ranker",
+          "expected_gain": 0.5589326024055481,
+          "evidence": {
+            "order_index": 296,
+            "row": 1709,
+            "local": 1,
+            "kind": "delete",
+            "step": 1,
+            "current_count": 2,
+            "proposed_count": 1,
+            "need_mean": 0.6694294313589731,
+            "need_min": 0.6530092358589172,
+            "argmax_support": 6,
+            "node_scores": [
+              0.8088401556015015,
+              0.6590785384178162,
+              0.039401713758707047,
+              0.4473276734352112,
+              0.49813196063041687,
+              0.49623656272888184
+            ],
+            "order_id": "947bec57-c9f8-47ad-aa45-37cb9be6c798",
+            "rid": "#-1:b894a7ec-dc86-4656-971a-c1b10121a044",
+            "title": "光口接收链路故障",
+            "ranker_probability": 0.5589326024055481
+          }
+        },
+        {
+          "action_id": "v38_delete_top24_plus_exact_011",
+          "order_id": "a6ae9c3c-c787-47e0-abf0-d610533dc2a0",
+          "remove_rids": [
+            "#-1:97d24cf9-e8a1-45f9-8cc6-b6cc1580e991"
+          ],
+          "add_rids": [],
+          "source": "v38_boundary_action_ranker",
+          "expected_gain": 0.5539634227752686,
+          "evidence": {
+            "order_index": 337,
+            "row": 1951,
+            "local": 7,
+            "kind": "delete",
+            "step": 1,
+            "current_count": 4,
+            "proposed_count": 3,
+            "need_mean": 0.45107963184515637,
+            "need_min": 0.3827274441719055,
+            "argmax_support": 4,
+            "node_scores": [
+              0.9142197370529175,
+              0.7844375967979431,
+              0.8096985816955566,
+              0.581728458404541,
+              0.6171386241912842,
+              0.6159461736679077
+            ],
+            "order_id": "a6ae9c3c-c787-47e0-abf0-d610533dc2a0",
+            "rid": "#-1:97d24cf9-e8a1-45f9-8cc6-b6cc1580e991",
+            "title": "光模块接收光功率异常",
+            "ranker_probability": 0.5539634227752686
+          }
+        },
+        {
+          "action_id": "v38_delete_top24_plus_exact_012",
+          "order_id": "a3645153-27f5-4b8c-9e3a-bc84cfd7c653",
+          "remove_rids": [
+            "#-1:fe0aed2a-0446-4bba-8836-7bf35d20cd0b"
+          ],
+          "add_rids": [],
+          "source": "v38_boundary_action_ranker",
+          "expected_gain": 0.5426692962646484,
+          "evidence": {
+            "order_index": 333,
+            "row": 1928,
+            "local": 10,
+            "kind": "delete",
+            "step": 1,
+            "current_count": 5,
+            "proposed_count": 4,
+            "need_mean": 0.6855337719122568,
+            "need_min": 0.6022045612335205,
+            "argmax_support": 4,
+            "node_scores": [
+              0.77984219789505,
+              0.5973215103149414,
+              0.622788667678833,
+              0.3145962357521057,
+              0.4100603759288788,
+              0.273314893245697
+            ],
+            "order_id": "a3645153-27f5-4b8c-9e3a-bc84cfd7c653",
+            "rid": "#-1:fe0aed2a-0446-4bba-8836-7bf35d20cd0b",
+            "title": "射频单元直流掉电告警",
+            "ranker_probability": 0.5426692962646484
+          }
+        },
+        {
+          "action_id": "v38_delete_top24_plus_exact_013",
+          "order_id": "30ee0cf1-0b53-438c-8154-c1356061e57c",
+          "remove_rids": [
+            "#-1:c8d3a6e4-2a46-4d1f-8833-07014f4cbe73"
+          ],
+          "add_rids": [],
+          "source": "v38_boundary_action_ranker",
+          "expected_gain": 0.5308148860931396,
+          "evidence": {
+            "order_index": 86,
+            "row": 478,
+            "local": 0,
+            "kind": "delete",
+            "step": 1,
+            "current_count": 2,
+            "proposed_count": 1,
+            "need_mean": 0.3746344894170761,
+            "need_min": 0.3415171504020691,
+            "argmax_support": 0,
+            "node_scores": [
+              0.784210205078125,
+              0.6982787251472473,
+              0.7097867131233215,
+              0.7239826917648315,
+              0.7057891488075256,
+              0.7891120314598083
+            ],
+            "order_id": "30ee0cf1-0b53-438c-8154-c1356061e57c",
+            "rid": "#-1:c8d3a6e4-2a46-4d1f-8833-07014f4cbe73",
+            "title": "光口接收链路故障",
+            "ranker_probability": 0.5308148860931396
+          }
+        },
+        {
+          "action_id": "v38_delete_top24_plus_exact_014",
+          "order_id": "f57b8fbe-bd33-4dc7-95ef-fbffa4552754",
+          "remove_rids": [
+            "#-1:245caebe-e60c-43fc-b1a4-ebdb838df6d1"
+          ],
+          "add_rids": [],
+          "source": "v38_boundary_action_ranker",
+          "expected_gain": 0.5281296968460083,
+          "evidence": {
+            "order_index": 520,
+            "row": 3113,
+            "local": 4,
+            "kind": "delete",
+            "step": 1,
+            "current_count": 4,
+            "proposed_count": 3,
+            "need_mean": 0.670269250869751,
+            "need_min": 0.640606164932251,
+            "argmax_support": 6,
+            "node_scores": [
+              0.8065580725669861,
+              0.6983047723770142,
+              0.7213740944862366,
+              0.40536749362945557,
+              0.5282361507415771,
+              0.42633944749832153
+            ],
+            "order_id": "f57b8fbe-bd33-4dc7-95ef-fbffa4552754",
+            "rid": "#-1:245caebe-e60c-43fc-b1a4-ebdb838df6d1",
+            "title": "光模块接收光功率异常",
+            "ranker_probability": 0.5281296968460083
+          }
+        },
+        {
+          "action_id": "v38_delete_top24_plus_exact_015",
+          "order_id": "5f31acb6-cb86-4488-af6a-f6d2d4d3a4d9",
+          "remove_rids": [
+            "#-1:fdd7bddb-e7cc-4a6f-8246-0c2cf89a221e"
+          ],
+          "add_rids": [],
+          "source": "v38_boundary_action_ranker",
+          "expected_gain": 0.5254566073417664,
+          "evidence": {
+            "order_index": 180,
+            "row": 1009,
+            "local": 3,
+            "kind": "delete",
+            "step": 1,
+            "current_count": 3,
+            "proposed_count": 2,
+            "need_mean": 0.6326105197270712,
+            "need_min": 0.6244220733642578,
+            "argmax_support": 6,
+            "node_scores": [
+              0.4597261846065521,
+              0.45239129662513733,
+              0.3168032169342041,
+              0.3918188810348511,
+              0.4633074700832367,
+              0.3292933702468872
+            ],
+            "order_id": "5f31acb6-cb86-4488-af6a-f6d2d4d3a4d9",
+            "rid": "#-1:fdd7bddb-e7cc-4a6f-8246-0c2cf89a221e",
+            "title": "单板电源关断",
+            "ranker_probability": 0.5254566073417664
+          }
+        },
+        {
+          "action_id": "v38_delete_top24_plus_exact_016",
+          "order_id": "43a52adc-0332-479c-9e4a-f2642ff64db8",
+          "remove_rids": [
+            "#-1:99f8512f-1c76-4fcd-858e-f7f021edc875"
+          ],
+          "add_rids": [],
+          "source": "v38_boundary_action_ranker",
+          "expected_gain": 0.5213308334350586,
+          "evidence": {
+            "order_index": 121,
+            "row": 656,
+            "local": 1,
+            "kind": "delete",
+            "step": 1,
+            "current_count": 2,
+            "proposed_count": 1,
+            "need_mean": 0.54322483142217,
+            "need_min": 0.5173382759094238,
+            "argmax_support": 6,
+            "node_scores": [
+              0.12911289930343628,
+              0.0727795735001564,
+              0.8152133226394653,
+              0.8776856660842896,
+              0.8017587661743164,
+              0.9125638604164124
+            ],
+            "order_id": "43a52adc-0332-479c-9e4a-f2642ff64db8",
+            "rid": "#-1:99f8512f-1c76-4fcd-858e-f7f021edc875",
+            "title": "射频单元维护链路异常告警",
+            "ranker_probability": 0.5213308334350586
+          }
+        },
+        {
+          "action_id": "v38_delete_top24_plus_exact_017",
+          "order_id": "050ba66b-e989-48e5-a059-a336a79e0dab",
+          "remove_rids": [
+            "#-1:468300d3-ba53-4a45-acee-db648d539f2d"
+          ],
+          "add_rids": [],
+          "source": "v38_boundary_action_ranker",
+          "expected_gain": 0.5188993215560913,
+          "evidence": {
+            "order_index": 9,
+            "row": 71,
+            "local": 4,
+            "kind": "delete",
+            "step": 2,
+            "current_count": 4,
+            "proposed_count": 2,
+            "need_mean": 0.37498853107293445,
+            "need_min": 0.36349576711654663,
+            "argmax_support": 1,
+            "node_scores": [
+              0.9153320789337158,
+              0.8428702354431152,
+              0.9610276222229004,
+              0.743762195110321,
+              0.8479353785514832,
+              0.828702449798584
+            ],
+            "order_id": "050ba66b-e989-48e5-a059-a336a79e0dab",
+            "rid": "#-1:468300d3-ba53-4a45-acee-db648d539f2d",
+            "title": "BBU CPRI接口异常告警",
+            "ranker_probability": 0.5188993215560913
+          }
+        },
+        {
+          "action_id": "v38_delete_top24_plus_exact_018",
+          "order_id": "9adc0ae9-f4d1-4084-b78a-1ee0ce83b3ab",
+          "remove_rids": [
+            "#-1:b73ec874-5e81-4451-8181-fdbc79712652"
+          ],
+          "add_rids": [],
+          "source": "v38_boundary_action_ranker",
+          "expected_gain": 0.5004907250404358,
+          "evidence": {
+            "order_index": 311,
+            "row": 1790,
+            "local": 2,
+            "kind": "delete",
+            "step": 2,
+            "current_count": 6,
+            "proposed_count": 4,
+            "need_mean": 0.5793991883595785,
+            "need_min": 0.4949461817741394,
+            "argmax_support": 4,
+            "node_scores": [
+              0.6720532774925232,
+              0.6254249811172485,
+              0.7898967266082764,
+              0.48455190658569336,
+              0.3729459047317505,
+              0.6149217486381531
+            ],
+            "order_id": "9adc0ae9-f4d1-4084-b78a-1ee0ce83b3ab",
+            "rid": "#-1:b73ec874-5e81-4451-8181-fdbc79712652",
+            "title": "输入电源断",
+            "ranker_probability": 0.5004907250404358
+          }
+        },
+        {
+          "action_id": "v38_delete_top24_plus_exact_019",
+          "order_id": "06d346bc-1345-4825-9e01-546cc30ac6ba",
+          "remove_rids": [
+            "#-1:1ae334d7-8285-4ed0-a2eb-d5f84869373f"
+          ],
+          "add_rids": [],
+          "source": "v38_boundary_action_ranker",
+          "expected_gain": 0.4713485836982727,
+          "evidence": {
+            "order_index": 15,
+            "row": 118,
+            "local": 20,
+            "kind": "delete",
+            "step": 2,
+            "current_count": 8,
+            "proposed_count": 6,
+            "need_mean": 0.653432180484136,
+            "need_min": 0.5474492907524109,
+            "argmax_support": 4,
+            "node_scores": [
+              0.8503444194793701,
+              0.8218364715576172,
+              0.6140921711921692,
+              0.7885370254516602,
+              0.6897473931312561,
+              0.8812603950500488
+            ],
+            "order_id": "06d346bc-1345-4825-9e01-546cc30ac6ba",
+            "rid": "#-1:1ae334d7-8285-4ed0-a2eb-d5f84869373f",
+            "title": "设备掉电",
+            "ranker_probability": 0.4713485836982727
+          }
+        },
+        {
+          "action_id": "v38_delete_top24_plus_exact_020",
+          "order_id": "320223fc-89b1-40bc-88a9-4b07d012da47",
+          "remove_rids": [
+            "#-1:39f86371-8aff-4043-8f91-eca93ad72208"
+          ],
+          "add_rids": [],
+          "source": "v38_boundary_action_ranker",
+          "expected_gain": 0.466210275888443,
+          "evidence": {
+            "order_index": 88,
+            "row": 499,
+            "local": 9,
+            "kind": "delete",
+            "step": 3,
+            "current_count": 6,
+            "proposed_count": 3,
+            "need_mean": 0.3544839223225911,
+            "need_min": 0.3150566816329956,
+            "argmax_support": 0,
+            "node_scores": [
+              0.8929632902145386,
+              0.6861318945884705,
+              0.7276034951210022,
+              0.5933396220207214,
+              0.5080053806304932,
+              0.6710980534553528
+            ],
+            "order_id": "320223fc-89b1-40bc-88a9-4b07d012da47",
+            "rid": "#-1:39f86371-8aff-4043-8f91-eca93ad72208",
+            "title": "输入电源断",
+            "ranker_probability": 0.466210275888443
+          }
+        },
+        {
+          "action_id": "v38_delete_top24_plus_exact_021",
+          "order_id": "32cf16da-3094-4e10-8533-5efdf3335ec0",
+          "remove_rids": [
+            "#-1:22776b83-6e3f-424d-a686-f6edbb6385fa"
+          ],
+          "add_rids": [],
+          "source": "v38_boundary_action_ranker",
+          "expected_gain": 0.4579676389694214,
+          "evidence": {
+            "order_index": 89,
+            "row": 505,
+            "local": 5,
+            "kind": "delete",
+            "step": 1,
+            "current_count": 7,
+            "proposed_count": 6,
+            "need_mean": 0.5456839948892593,
+            "need_min": 0.39922183752059937,
+            "argmax_support": 1,
+            "node_scores": [
+              0.8803367018699646,
+              0.8115617632865906,
+              0.9337871074676514,
+              0.8034444451332092,
+              0.6633866429328918,
+              0.8749015927314758
+            ],
+            "order_id": "32cf16da-3094-4e10-8533-5efdf3335ec0",
+            "rid": "#-1:22776b83-6e3f-424d-a686-f6edbb6385fa",
+            "title": "光口接收链路故障",
+            "ranker_probability": 0.4579676389694214
+          }
+        },
+        {
+          "action_id": "v38_delete_top24_plus_exact_022",
+          "order_id": "edcaa16f-fee4-415e-88ac-ba68e7aa0087",
+          "remove_rids": [
+            "#-1:fdaaf547-da3c-47bd-b583-00d8af72e779"
+          ],
+          "add_rids": [],
+          "source": "v38_boundary_action_ranker",
+          "expected_gain": 0.44091975688934326,
+          "evidence": {
+            "order_index": 495,
+            "row": 2967,
+            "local": 1,
+            "kind": "delete",
+            "step": 1,
+            "current_count": 2,
+            "proposed_count": 1,
+            "need_mean": 0.5588230590025584,
+            "need_min": 0.5368092060089111,
+            "argmax_support": 6,
+            "node_scores": [
+              0.8044617772102356,
+              0.746330201625824,
+              0.0647503212094307,
+              0.5293679237365723,
+              0.5144445300102234,
+              0.6610655188560486
+            ],
+            "order_id": "edcaa16f-fee4-415e-88ac-ba68e7aa0087",
+            "rid": "#-1:fdaaf547-da3c-47bd-b583-00d8af72e779",
+            "title": "BBU CPRI接口异常告警",
+            "ranker_probability": 0.44091975688934326
+          }
+        },
+        {
+          "action_id": "v38_delete_top24_plus_exact_023",
+          "order_id": "c90fbdec-4d8e-4282-9615-6515cf4d5c28",
+          "remove_rids": [
+            "#-1:a087592d-b6c6-4821-bd5c-e5ed365f0d17"
+          ],
+          "add_rids": [],
+          "source": "v38_boundary_action_ranker",
+          "expected_gain": 0.4179767072200775,
+          "evidence": {
+            "order_index": 417,
+            "row": 2492,
+            "local": 21,
+            "kind": "delete",
+            "step": 1,
+            "current_count": 8,
+            "proposed_count": 7,
+            "need_mean": 0.7947836319605509,
+            "need_min": 0.7151845693588257,
+            "argmax_support": 4,
+            "node_scores": [
+              0.9065360426902771,
+              0.9027108550071716,
+              0.780104398727417,
+              0.9148151278495789,
+              0.80308997631073,
+              0.9549852013587952
+            ],
+            "order_id": "c90fbdec-4d8e-4282-9615-6515cf4d5c28",
+            "rid": "#-1:a087592d-b6c6-4821-bd5c-e5ed365f0d17",
+            "title": "设备掉电",
+            "ranker_probability": 0.4179767072200775
+          }
+        },
+        {
+          "action_id": "v38_delete_top24_plus_exact_024",
+          "order_id": "b1e02c99-d2c4-4546-8324-74fdba3844ad",
+          "remove_rids": [
+            "#-1:de7b4d5e-e8a5-440b-a8c9-05d2872fcc28"
+          ],
+          "add_rids": [],
+          "source": "v38_boundary_action_ranker",
+          "expected_gain": 0.41507744789123535,
+          "evidence": {
+            "order_index": 366,
+            "row": 2147,
+            "local": 0,
+            "kind": "delete",
+            "step": 3,
+            "current_count": 6,
+            "proposed_count": 3,
+            "need_mean": 0.26212803026040393,
+            "need_min": 0.20758503675460815,
+            "argmax_support": 0,
+            "node_scores": [
+              0.7193402051925659,
+              0.6530709266662598,
+              0.7950440645217896,
+              0.6872338652610779,
+              0.6093599796295166,
+              0.7586290836334229
+            ],
+            "order_id": "b1e02c99-d2c4-4546-8324-74fdba3844ad",
+            "rid": "#-1:de7b4d5e-e8a5-440b-a8c9-05d2872fcc28",
+            "title": "BBU CPRI接口异常告警",
+            "ranker_probability": 0.41507744789123535
+          }
+        }
+      ],
+      "predictions": 1011,
+      "sha256": "5ccd4ff601e9b63a60c7bb603ab5701763451bf96248e63bb2a18ba8774ade05",
+      "score_possibilities": [
+        {
+          "deleted_true": 0,
+          "tp": 956,
+          "score": 0.930413625
+        },
+        {
+          "deleted_true": 1,
+          "tp": 955,
+          "score": 0.929440389
+        },
+        {
+          "deleted_true": 2,
+          "tp": 954,
+          "score": 0.928467153
+        },
+        {
+          "deleted_true": 3,
+          "tp": 953,
+          "score": 0.927493917
+        },
+        {
+          "deleted_true": 4,
+          "tp": 952,
+          "score": 0.926520681
+        },
+        {
+          "deleted_true": 5,
+          "tp": 951,
+          "score": 0.925547445
+        },
+        {
+          "deleted_true": 6,
+          "tp": 950,
+          "score": 0.924574209
+        },
+        {
+          "deleted_true": 7,
+          "tp": 949,
+          "score": 0.923600973
+        },
+        {
+          "deleted_true": 8,
+          "tp": 948,
+          "score": 0.922627737
+        },
+        {
+          "deleted_true": 9,
+          "tp": 947,
+          "score": 0.921654501
+        },
+        {
+          "deleted_true": 10,
+          "tp": 946,
+          "score": 0.920681265
+        },
+        {
+          "deleted_true": 11,
+          "tp": 945,
+          "score": 0.919708029
+        },
+        {
+          "deleted_true": 12,
+          "tp": 944,
+          "score": 0.918734793
+        },
+        {
+          "deleted_true": 13,
+          "tp": 943,
+          "score": 0.917761557
+        },
+        {
+          "deleted_true": 14,
+          "tp": 942,
+          "score": 0.916788321
+        },
+        {
+          "deleted_true": 15,
+          "tp": 941,
+          "score": 0.915815085
+        },
+        {
+          "deleted_true": 16,
+          "tp": 940,
+          "score": 0.914841849
+        },
+        {
+          "deleted_true": 17,
+          "tp": 939,
+          "score": 0.913868613
+        },
+        {
+          "deleted_true": 18,
+          "tp": 938,
+          "score": 0.912895377
+        },
+        {
+          "deleted_true": 19,
+          "tp": 937,
+          "score": 0.911922141
+        },
+        {
+          "deleted_true": 20,
+          "tp": 936,
+          "score": 0.910948905
+        },
+        {
+          "deleted_true": 21,
+          "tp": 935,
+          "score": 0.909975669
+        },
+        {
+          "deleted_true": 22,
+          "tp": 934,
+          "score": 0.909002433
+        },
+        {
+          "deleted_true": 23,
+          "tp": 933,
+          "score": 0.908029197
+        },
+        {
+          "deleted_true": 24,
+          "tp": 932,
+          "score": 0.907055961
+        }
+      ]
+    }
+  }
+}

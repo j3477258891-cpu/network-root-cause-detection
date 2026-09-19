@@ -1,0 +1,681 @@
+{
+  "version": 1,
+  "test_dir": "D:\\zgyidong\\test",
+  "true_roots": 1044,
+  "target_score": 0.94,
+  "submission_budget": 20,
+  "champion": {
+    "path": "D:\\zgyidong\\experiments\\v28_ten_day_campaign\\submissions\\highest_verified_checkpoint.csv",
+    "score": 0.9138755980861244,
+    "tp": 955,
+    "predictions": 1046,
+    "sha256": "05156a21ceea56601052c94c07d720326fa716069e317b3fed52aeb954c96b25"
+  },
+  "batches": [
+    {
+      "batch_id": "day02_consensus_swap4",
+      "kind": "ten_day_probe",
+      "parent": null,
+      "status": "scored",
+      "decision": "reject",
+      "action_ids": [
+        "v28_consensus_01_abe0d010"
+      ],
+      "actions": [
+        {
+          "action_id": "v28_consensus_01_abe0d010",
+          "order_id": "abe0d010-6809-4a4d-9ae6-ee7f320f699d",
+          "remove_rids": [
+            "#-1:4a00b491-52e2-45cb-ae01-72137e3fe6a4"
+          ],
+          "add_rids": [
+            "#-1:275f37ad-3297-49f6-82d2-57406a713ac1"
+          ],
+          "source": "v28_consensus",
+          "subtype": "majority_swap",
+          "expected_gain": 0.5,
+          "evidence": {
+            "add_votes": 4,
+            "remove_votes": 1,
+            "models": [
+              "D:\\zgyidong\\codexgz\\v14\\result_record_v14_final.csv",
+              "D:\\zgyidong\\codexgz\\v13\\result_record_v13_meta_1059.csv",
+              "D:\\zgyidong\\codexgz\\v12\\v12_candidate_1059.csv",
+              "D:\\zgyidong\\experiments\\submissions\\result_record_simple_alarm_prior_1059.csv",
+              "D:\\zgyidong\\experiments\\v25_semantic_router\\submissions\\result_record_pure_statistical_p1059.csv",
+              "D:\\zgyidong\\experiments\\v26_selective_router\\submissions\\v26_selective_error_router_p1059.csv"
+            ]
+          }
+        }
+      ],
+      "validation": {
+        "actions": 1,
+        "orders": 1,
+        "removed": 1,
+        "added": 1,
+        "prediction_delta": 0,
+        "sources": {
+          "v28_consensus": 1
+        }
+      },
+      "predictions": 1046,
+      "prediction_delta": 0,
+      "submission": "experiments\\v28_ten_day_campaign\\submissions\\day02_consensus_swap4.csv",
+      "manifest": "experiments\\v28_ten_day_campaign\\manifests\\day02_consensus_swap4.json",
+      "sha256": "bad4edf82eec99ea23d17cf29345770e76a6e48cd085cacb09fcbbb986c14c84",
+      "score_possibilities": [
+        {
+          "delta_tp": -1,
+          "tp": 954,
+          "score": 0.91291866
+        },
+        {
+          "delta_tp": 0,
+          "tp": 955,
+          "score": 0.913875598
+        },
+        {
+          "delta_tp": 1,
+          "tp": 956,
+          "score": 0.914832536
+        }
+      ],
+      "score": 0.912919,
+      "reconstructed_score": 0.9129186602870814,
+      "tp": 954,
+      "delta_tp": -1,
+      "score_gain": -0.000956937799043045
+    },
+    {
+      "batch_id": "day02_consensus_swap_next4",
+      "kind": "ten_day_probe",
+      "parent": null,
+      "status": "scored",
+      "decision": "split",
+      "action_ids": [
+        "v28_consensus2_625ffce7_24e66b",
+        "v28_consensus2_aa54ba78_7891ac",
+        "v28_consensus2_abe0d010_713ac1",
+        "v28_consensus2_d5376a71_d6904f"
+      ],
+      "actions": [
+        {
+          "action_id": "v28_consensus2_625ffce7_24e66b",
+          "order_id": "625ffce7-65c5-4657-9104-4148b4113130",
+          "remove_rids": [
+            "#-1:9dbca98a-9929-421b-806d-644e232bb68f"
+          ],
+          "add_rids": [
+            "#-1:224b57dc-60c0-4fc8-a6ab-ad594824e66b"
+          ],
+          "source": "v28_consensus2",
+          "subtype": "majority_swap",
+          "expected_gain": 0.5,
+          "evidence": {
+            "add_votes": 5,
+            "remove_votes": 2
+          }
+        },
+        {
+          "action_id": "v28_consensus2_aa54ba78_7891ac",
+          "order_id": "aa54ba78-924a-45c7-a182-d8d100b3d130",
+          "remove_rids": [
+            "#-1:072cd141-f607-4e6c-aa6f-97d204285259"
+          ],
+          "add_rids": [
+            "#-1:a04e72e5-9609-4cf5-99b1-55d93a7891ac"
+          ],
+          "source": "v28_consensus2",
+          "subtype": "majority_swap",
+          "expected_gain": 0.3333333333333333,
+          "evidence": {
+            "add_votes": 4,
+            "remove_votes": 2
+          }
+        },
+        {
+          "action_id": "v28_consensus2_abe0d010_713ac1",
+          "order_id": "abe0d010-6809-4a4d-9ae6-ee7f320f699d",
+          "remove_rids": [
+            "#-1:0890a904-295a-4684-991e-5bfabd668f46"
+          ],
+          "add_rids": [
+            "#-1:275f37ad-3297-49f6-82d2-57406a713ac1"
+          ],
+          "source": "v28_consensus2",
+          "subtype": "majority_swap",
+          "expected_gain": 0.3333333333333333,
+          "evidence": {
+            "add_votes": 4,
+            "remove_votes": 2
+          }
+        },
+        {
+          "action_id": "v28_consensus2_d5376a71_d6904f",
+          "order_id": "d5376a71-c48e-4351-ba60-f982778b3eb4",
+          "remove_rids": [
+            "#-1:0c809583-390f-4d16-9b91-c4fb1e99c5c2"
+          ],
+          "add_rids": [
+            "#-1:e401b7b4-697f-434e-8437-4b2136d6904f"
+          ],
+          "source": "v28_consensus2",
+          "subtype": "majority_swap",
+          "expected_gain": 0.3333333333333333,
+          "evidence": {
+            "add_votes": 3,
+            "remove_votes": 1
+          }
+        }
+      ],
+      "validation": {
+        "actions": 4,
+        "orders": 4,
+        "removed": 4,
+        "added": 4,
+        "prediction_delta": 0,
+        "sources": {
+          "v28_consensus2": 4
+        }
+      },
+      "predictions": 1046,
+      "prediction_delta": 0,
+      "submission": "experiments\\v28_ten_day_campaign\\submissions\\day02_consensus_swap_next4.csv",
+      "manifest": "experiments\\v28_ten_day_campaign\\manifests\\day02_consensus_swap_next4.json",
+      "sha256": "4f2c4e9e3b2af97c452ff68b2bc0e927d614b70d57cf7d5886e117af3993e988",
+      "score_possibilities": [
+        {
+          "delta_tp": -4,
+          "tp": 951,
+          "score": 0.910047847
+        },
+        {
+          "delta_tp": -3,
+          "tp": 952,
+          "score": 0.911004785
+        },
+        {
+          "delta_tp": -2,
+          "tp": 953,
+          "score": 0.911961722
+        },
+        {
+          "delta_tp": -1,
+          "tp": 954,
+          "score": 0.91291866
+        },
+        {
+          "delta_tp": 0,
+          "tp": 955,
+          "score": 0.913875598
+        },
+        {
+          "delta_tp": 1,
+          "tp": 956,
+          "score": 0.914832536
+        },
+        {
+          "delta_tp": 2,
+          "tp": 957,
+          "score": 0.915789474
+        },
+        {
+          "delta_tp": 3,
+          "tp": 958,
+          "score": 0.916746411
+        },
+        {
+          "delta_tp": 4,
+          "tp": 959,
+          "score": 0.917703349
+        }
+      ],
+      "score": 0.912919,
+      "reconstructed_score": 0.9129186602870814,
+      "tp": 954,
+      "delta_tp": -1,
+      "score_gain": -0.000956937799043045
+    },
+    {
+      "batch_id": "day02_consensus_swap_next4_a",
+      "kind": "adaptive_split",
+      "parent": "day02_consensus_swap_next4",
+      "status": "scored",
+      "decision": "split",
+      "action_ids": [
+        "v28_consensus2_625ffce7_24e66b",
+        "v28_consensus2_aa54ba78_7891ac"
+      ],
+      "actions": [
+        {
+          "action_id": "v28_consensus2_625ffce7_24e66b",
+          "order_id": "625ffce7-65c5-4657-9104-4148b4113130",
+          "remove_rids": [
+            "#-1:9dbca98a-9929-421b-806d-644e232bb68f"
+          ],
+          "add_rids": [
+            "#-1:224b57dc-60c0-4fc8-a6ab-ad594824e66b"
+          ],
+          "source": "v28_consensus2",
+          "subtype": "majority_swap",
+          "expected_gain": 0.5,
+          "evidence": {
+            "add_votes": 5,
+            "remove_votes": 2
+          }
+        },
+        {
+          "action_id": "v28_consensus2_aa54ba78_7891ac",
+          "order_id": "aa54ba78-924a-45c7-a182-d8d100b3d130",
+          "remove_rids": [
+            "#-1:072cd141-f607-4e6c-aa6f-97d204285259"
+          ],
+          "add_rids": [
+            "#-1:a04e72e5-9609-4cf5-99b1-55d93a7891ac"
+          ],
+          "source": "v28_consensus2",
+          "subtype": "majority_swap",
+          "expected_gain": 0.3333333333333333,
+          "evidence": {
+            "add_votes": 4,
+            "remove_votes": 2
+          }
+        }
+      ],
+      "validation": {
+        "actions": 2,
+        "orders": 2,
+        "removed": 2,
+        "added": 2,
+        "prediction_delta": 0,
+        "sources": {
+          "v28_consensus2": 2
+        }
+      },
+      "predictions": 1046,
+      "prediction_delta": 0,
+      "submission": "experiments\\v28_ten_day_campaign\\submissions\\day02_consensus_swap_next4_a.csv",
+      "manifest": "experiments\\v28_ten_day_campaign\\manifests\\day02_consensus_swap_next4_a.json",
+      "sha256": "160874153340332cd59e4e2477b0fef6320e2860cb34fc4cbed2990ec2da5c06",
+      "score_possibilities": [
+        {
+          "delta_tp": -2,
+          "tp": 953,
+          "score": 0.911961722
+        },
+        {
+          "delta_tp": -1,
+          "tp": 954,
+          "score": 0.91291866
+        },
+        {
+          "delta_tp": 0,
+          "tp": 955,
+          "score": 0.913875598
+        },
+        {
+          "delta_tp": 1,
+          "tp": 956,
+          "score": 0.914832536
+        },
+        {
+          "delta_tp": 2,
+          "tp": 957,
+          "score": 0.915789474
+        }
+      ],
+      "score": 0.912919,
+      "reconstructed_score": 0.9129186602870814,
+      "tp": 954,
+      "delta_tp": -1,
+      "score_gain": -0.000956937799043045
+    },
+    {
+      "batch_id": "day02_consensus_swap_next4_b",
+      "kind": "adaptive_split",
+      "parent": "day02_consensus_swap_next4",
+      "status": "inferred",
+      "decision": "reject",
+      "action_ids": [
+        "v28_consensus2_abe0d010_713ac1",
+        "v28_consensus2_d5376a71_d6904f"
+      ],
+      "actions": [
+        {
+          "action_id": "v28_consensus2_abe0d010_713ac1",
+          "order_id": "abe0d010-6809-4a4d-9ae6-ee7f320f699d",
+          "remove_rids": [
+            "#-1:0890a904-295a-4684-991e-5bfabd668f46"
+          ],
+          "add_rids": [
+            "#-1:275f37ad-3297-49f6-82d2-57406a713ac1"
+          ],
+          "source": "v28_consensus2",
+          "subtype": "majority_swap",
+          "expected_gain": 0.3333333333333333,
+          "evidence": {
+            "add_votes": 4,
+            "remove_votes": 2
+          }
+        },
+        {
+          "action_id": "v28_consensus2_d5376a71_d6904f",
+          "order_id": "d5376a71-c48e-4351-ba60-f982778b3eb4",
+          "remove_rids": [
+            "#-1:0c809583-390f-4d16-9b91-c4fb1e99c5c2"
+          ],
+          "add_rids": [
+            "#-1:e401b7b4-697f-434e-8437-4b2136d6904f"
+          ],
+          "source": "v28_consensus2",
+          "subtype": "majority_swap",
+          "expected_gain": 0.3333333333333333,
+          "evidence": {
+            "add_votes": 3,
+            "remove_votes": 1
+          }
+        }
+      ],
+      "validation": {
+        "actions": 2,
+        "orders": 2,
+        "removed": 2,
+        "added": 2,
+        "prediction_delta": 0,
+        "sources": {
+          "v28_consensus2": 2
+        }
+      },
+      "predictions": 1046,
+      "prediction_delta": 0,
+      "submission": "experiments\\v28_ten_day_campaign\\submissions\\day02_consensus_swap_next4_b.csv",
+      "manifest": "experiments\\v28_ten_day_campaign\\manifests\\day02_consensus_swap_next4_b.json",
+      "sha256": "601d18b07e2ccadbf8147b23fdadaaa0253b6e897099c64b305b7d639c5c211c",
+      "score_possibilities": [
+        {
+          "delta_tp": -2,
+          "tp": 953,
+          "score": 0.911961722
+        },
+        {
+          "delta_tp": -1,
+          "tp": 954,
+          "score": 0.91291866
+        },
+        {
+          "delta_tp": 0,
+          "tp": 955,
+          "score": 0.913875598
+        },
+        {
+          "delta_tp": 1,
+          "tp": 956,
+          "score": 0.914832536
+        },
+        {
+          "delta_tp": 2,
+          "tp": 957,
+          "score": 0.915789474
+        }
+      ],
+      "score": 0.9138755980861244,
+      "reconstructed_score": 0.9138755980861244,
+      "tp": 955,
+      "delta_tp": 0,
+      "score_gain": 0.0,
+      "inferred_from": [
+        "day02_consensus_swap_next4",
+        "day02_consensus_swap_next4_a"
+      ]
+    },
+    {
+      "batch_id": "day03_precision_remaining_single",
+      "kind": "ten_day_probe",
+      "parent": null,
+      "status": "scored",
+      "decision": "reject",
+      "action_ids": [
+        "v28_precision_remaining_single_01"
+      ],
+      "actions": [
+        {
+          "action_id": "v28_precision_remaining_single_01",
+          "order_id": "9adc0ae9-f4d1-4084-b78a-1ee0ce83b3ab",
+          "remove_rids": [
+            "#-1:67086994-ef16-4d8b-8924-c32f100f6178"
+          ],
+          "add_rids": [],
+          "source": "v28_precision_remaining",
+          "subtype": "one_false_among_four",
+          "expected_gain": 0.3288898093671184,
+          "evidence": {
+            "v11_score": 0.6711101906328816,
+            "rank": 5,
+            "unseen_order": true
+          }
+        }
+      ],
+      "validation": {
+        "actions": 1,
+        "orders": 1,
+        "removed": 1,
+        "added": 0,
+        "prediction_delta": -1,
+        "sources": {
+          "v28_precision_remaining": 1
+        }
+      },
+      "predictions": 1045,
+      "prediction_delta": -1,
+      "submission": "experiments\\v28_ten_day_campaign\\submissions\\day03_precision_remaining_single.csv",
+      "manifest": "experiments\\v28_ten_day_campaign\\manifests\\day03_precision_remaining_single.json",
+      "sha256": "43c53e5c05a3048b8bd0ce927062b421d9c08f9751d8491deeed36d6fd0da15b",
+      "score_possibilities": [
+        {
+          "delta_tp": -1,
+          "tp": 954,
+          "score": 0.913355673
+        },
+        {
+          "delta_tp": 0,
+          "tp": 955,
+          "score": 0.914313068
+        }
+      ],
+      "score": 0.913356,
+      "reconstructed_score": 0.9133556725706079,
+      "tp": 954,
+      "delta_tp": -1,
+      "score_gain": -0.000519925515516495
+    },
+    {
+      "batch_id": "day03_precision_remaining_single2",
+      "kind": "ten_day_probe",
+      "parent": null,
+      "status": "scored",
+      "decision": "reject",
+      "action_ids": [
+        "v28_precision_remaining_single_02"
+      ],
+      "actions": [
+        {
+          "action_id": "v28_precision_remaining_single_02",
+          "order_id": "d51a4fe5-3721-4585-929c-0ca993c3a0be",
+          "remove_rids": [
+            "#-1:7abefa77-6c6a-437f-9c2c-e4530545181a"
+          ],
+          "add_rids": [],
+          "source": "v28_precision_remaining",
+          "subtype": "one_false_among_three",
+          "expected_gain": 0.3249517079395392,
+          "evidence": {
+            "v11_score": 0.6750482920604608,
+            "rank": 6,
+            "unseen_order": true
+          }
+        }
+      ],
+      "validation": {
+        "actions": 1,
+        "orders": 1,
+        "removed": 1,
+        "added": 0,
+        "prediction_delta": -1,
+        "sources": {
+          "v28_precision_remaining": 1
+        }
+      },
+      "predictions": 1045,
+      "prediction_delta": -1,
+      "submission": "experiments\\v28_ten_day_campaign\\submissions\\day03_precision_remaining_single2.csv",
+      "manifest": "experiments\\v28_ten_day_campaign\\manifests\\day03_precision_remaining_single2.json",
+      "sha256": "706855918af6a5b1ea0bd722946ff353ffa792b602dfd81b8ab4786bcac20210",
+      "score_possibilities": [
+        {
+          "delta_tp": -1,
+          "tp": 954,
+          "score": 0.913355673
+        },
+        {
+          "delta_tp": 0,
+          "tp": 955,
+          "score": 0.914313068
+        }
+      ],
+      "score": 0.913356,
+      "reconstructed_score": 0.9133556725706079,
+      "tp": 954,
+      "delta_tp": -1,
+      "score_gain": -0.000519925515516495
+    },
+    {
+      "batch_id": "day04_precision_remaining_single3",
+      "kind": "ten_day_probe",
+      "parent": null,
+      "status": "scored",
+      "decision": "reject",
+      "action_ids": [
+        "v28_precision_remaining_single_03"
+      ],
+      "actions": [
+        {
+          "action_id": "v28_precision_remaining_single_03",
+          "order_id": "4bc34075-c7db-40a9-9c7e-920c0d401a48",
+          "remove_rids": [
+            "#-1:04f5d847-c9d7-4f45-a9e2-933a3a021bf0"
+          ],
+          "add_rids": [],
+          "source": "v28_precision_remaining",
+          "subtype": "one_false_among_two",
+          "expected_gain": 0.31968964017158263,
+          "evidence": {
+            "v11_score": 0.6803103598284174,
+            "rank": 7,
+            "unseen_order": true
+          }
+        }
+      ],
+      "validation": {
+        "actions": 1,
+        "orders": 1,
+        "removed": 1,
+        "added": 0,
+        "prediction_delta": -1,
+        "sources": {
+          "v28_precision_remaining": 1
+        }
+      },
+      "predictions": 1045,
+      "prediction_delta": -1,
+      "submission": "experiments\\v28_ten_day_campaign\\submissions\\day04_precision_remaining_single3.csv",
+      "manifest": "experiments\\v28_ten_day_campaign\\manifests\\day04_precision_remaining_single3.json",
+      "sha256": "2e1b50e3bd39b11f1bf3308a3efbe93e1e5a3abf038eedf20d8c63f4585adcfe",
+      "score_possibilities": [
+        {
+          "delta_tp": -1,
+          "tp": 954,
+          "score": 0.913355673
+        },
+        {
+          "delta_tp": 0,
+          "tp": 955,
+          "score": 0.914313068
+        }
+      ],
+      "score": 0.913356,
+      "reconstructed_score": 0.9133556725706079,
+      "tp": 954,
+      "delta_tp": -1,
+      "score_gain": -0.000519925515516495
+    },
+    {
+      "batch_id": "day04_precision_inferred_false",
+      "kind": "inferred_precision",
+      "parent": null,
+      "status": "inferred",
+      "decision": "accept",
+      "action_ids": [
+        "v28_precision_remaining_inferred_false"
+      ],
+      "actions": [
+        {
+          "action_id": "v28_precision_remaining_inferred_false",
+          "order_id": "625ffce7-65c5-4657-9104-4148b4113130",
+          "remove_rids": [
+            "#-1:4b6983f7-ec6d-4d11-9e4f-9c12c47dd998"
+          ],
+          "add_rids": [],
+          "source": "v28_precision_remaining",
+          "subtype": "inferred_false_of_four",
+          "expected_gain": 0.3059362005342182,
+          "evidence": {
+            "inferred_from": [
+              "day01_precision_a8_b",
+              "day03_precision_remaining_single",
+              "day03_precision_remaining_single2",
+              "day04_precision_remaining_single3"
+            ]
+          }
+        }
+      ],
+      "validation": {
+        "actions": 1,
+        "orders": 1,
+        "removed": 1,
+        "added": 0,
+        "prediction_delta": -1,
+        "sources": {
+          "v28_precision_remaining": 1
+        }
+      },
+      "predictions": 1045,
+      "prediction_delta": -1,
+      "submission": "experiments\\v28_ten_day_campaign\\submissions\\day04_precision_inferred_false.csv",
+      "manifest": "experiments\\v28_ten_day_campaign\\manifests\\day04_precision_inferred_false.json",
+      "sha256": "58d4b3ca09ef6423e9d788a1c854140a4beb0a65c094040e53e8553a23cd2a29",
+      "score_possibilities": [
+        {
+          "delta_tp": -1,
+          "tp": 954,
+          "score": 0.913355673
+        },
+        {
+          "delta_tp": 0,
+          "tp": 955,
+          "score": 0.914313068
+        }
+      ],
+      "score": 0.914313068,
+      "reconstructed_score": 0.914313068,
+      "tp": 955,
+      "delta_tp": 0,
+      "score_gain": 0.0004374699138756,
+      "inferred_from": [
+        "day01_precision_a8_b",
+        "day03_precision_remaining_single",
+        "day03_precision_remaining_single2",
+        "day04_precision_remaining_single3"
+      ]
+    }
+  ]
+}

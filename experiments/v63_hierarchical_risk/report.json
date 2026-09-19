@@ -1,0 +1,42 @@
+{
+  "version": "v63-hierarchical-risk-audit-1",
+  "candidate_count": 290,
+  "target": 0.95,
+  "model": "Shared Beta-Binomial rates by OOF rank band or matched rule.",
+  "scenarios": {
+    "hierarchical_calibrated": {
+      "trials": 100000,
+      "stress_multiplier": 1.0,
+      "group_count": 36,
+      "mean": 0.8845933530280651,
+      "p01": 0.8616445100935499,
+      "p05": 0.8685376661742984,
+      "median": 0.8842934515017233,
+      "p95": 0.9010339734121122,
+      "probability_reach_0_95": 0.0
+    },
+    "hierarchical_10pct_adverse": {
+      "trials": 100000,
+      "stress_multiplier": 0.9,
+      "group_count": 36,
+      "mean": 0.8736611816838996,
+      "p01": 0.8527818808468735,
+      "p05": 0.8586903003446578,
+      "median": 0.8734613490891187,
+      "p95": 0.8892171344165436,
+      "probability_reach_0_95": 0.0
+    },
+    "hierarchical_20pct_adverse": {
+      "trials": 100000,
+      "stress_multiplier": 0.8,
+      "group_count": 36,
+      "mean": 0.862668330871492,
+      "p01": 0.8429345150172329,
+      "p05": 0.8478581979320532,
+      "median": 0.8626292466765141,
+      "p95": 0.8774002954209749,
+      "probability_reach_0_95": 0.0
+    }
+  },
+  "interpretation": "This models correlated calibration error; it is still a statistical audit, not a leaderboard guarantee."
+}

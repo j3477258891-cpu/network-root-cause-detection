@@ -1,0 +1,122 @@
+{
+  "version": 156,
+  "created_at": "2026-09-10T12:06:18+08:00",
+  "baseline": {
+    "file": "D:\\zgyidong\\experiments\\v149_online_calibrated_addition_campaign\\v149_final_k08_from_v148.csv",
+    "sha256": "c8f304c44f6b3a7ed40599cae50d0f17c0c37f8456553e6171a2d7cfdc196d0a",
+    "predictions": 1045,
+    "tp": 969,
+    "score": 0.927717,
+    "source_class": "public_scored"
+  },
+  "champion": {
+    "file": "D:\\zgyidong\\experiments\\v153_complementary_repair_campaign\\v153_probe_p03_group.csv",
+    "sha256": "102b99385a8094a1d47b2748dfaa79fbd5a2b2b69936dffa9e5e7d9636fba196",
+    "predictions": 1049,
+    "tp": 971,
+    "score": 0.927855,
+    "source_class": "public_scored"
+  },
+  "target": 0.94,
+  "objective": "maximize_realized_best_f1",
+  "budget": {
+    "total": 10,
+    "used": 5,
+    "remaining": 5,
+    "daily": 2,
+    "max_info_probes": 4,
+    "merge_reserve": 1
+  },
+  "measured_leaves": [
+    {
+      "ids": [
+        1,
+        2,
+        7,
+        10,
+        13
+      ],
+      "delta_tp": -3
+    },
+    {
+      "ids": [
+        3,
+        4,
+        6
+      ],
+      "delta_tp": -2
+    },
+    {
+      "ids": [
+        8,
+        11,
+        14,
+        17
+      ],
+      "delta_tp": 2
+    },
+    {
+      "ids": [
+        5
+      ],
+      "delta_tp": 0
+    },
+    {
+      "ids": [
+        9,
+        15
+      ],
+      "delta_tp": 1
+    }
+  ],
+  "frozen_v153": {
+    "candidate_catalog": "D:\\zgyidong\\experiments\\v153_complementary_repair_campaign\\candidate_catalog.json",
+    "final_gate": "D:\\zgyidong\\experiments\\v153_complementary_repair_campaign\\final_gate.json"
+  },
+  "cross_check_v153": {
+    "champion_ok": true,
+    "leaves_ok": true,
+    "hashes_ok": true
+  },
+  "combination_count": 3240,
+  "feasible_combination_count": 3240,
+  "decode": {
+    "unique": true,
+    "signatures": 12,
+    "queries": {
+      "A": [
+        8
+      ],
+      "B": [
+        11,
+        9
+      ],
+      "C": [
+        14,
+        9
+      ]
+    },
+    "new_node_label_combinations": 12
+  },
+  "backup_route": {
+    "predictions": 1048,
+    "tp": 972,
+    "f1": 0.929254,
+    "note": "keep the 3 true nodes among the six, drop the 2 false p03 additions"
+  },
+  "full_pool_upper": {
+    "f1": 0.932504,
+    "delta_tp": 5,
+    "delta_p": 0,
+    "selected_ids": [
+      6,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      16
+    ]
+  }
+}

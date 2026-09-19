@@ -1,0 +1,975 @@
+{
+  "version": "v29-topology-actions-1",
+  "baseline": {
+    "path": "D:\\zgyidong\\experiments\\v28_ten_day_campaign\\submissions\\day04_verified_checkpoint.csv",
+    "tp": 955,
+    "predictions": 1045,
+    "score": 0.9143130684538057,
+    "sha256": "58d4b3ca09ef6423e9d788a1c854140a4beb0a65c094040e53e8553a23cd2a29"
+  },
+  "touched_orders_excluded": 11,
+  "features": 282,
+  "quick": false,
+  "oof": {
+    "delete": {
+      "candidate_rows": 2830,
+      "positive_targets": 267,
+      "curve": {
+        "5": {
+          "beneficial": 4,
+          "harmful": 1,
+          "minimum_score": 0.9898913502693176
+        },
+        "8": {
+          "beneficial": 6,
+          "harmful": 2,
+          "minimum_score": 0.9895395040512085
+        },
+        "10": {
+          "beneficial": 8,
+          "harmful": 2,
+          "minimum_score": 0.9889553785324097
+        },
+        "12": {
+          "beneficial": 10,
+          "harmful": 2,
+          "minimum_score": 0.988696277141571
+        },
+        "15": {
+          "beneficial": 13,
+          "harmful": 2,
+          "minimum_score": 0.9840210676193237
+        },
+        "20": {
+          "beneficial": 16,
+          "harmful": 4,
+          "minimum_score": 0.9769277572631836
+        },
+        "30": {
+          "beneficial": 23,
+          "harmful": 7,
+          "minimum_score": 0.9565216302871704
+        },
+        "40": {
+          "beneficial": 33,
+          "harmful": 7,
+          "minimum_score": 0.9284043908119202
+        },
+        "50": {
+          "beneficial": 41,
+          "harmful": 9,
+          "minimum_score": 0.9038790464401245
+        },
+        "75": {
+          "beneficial": 59,
+          "harmful": 16,
+          "minimum_score": 0.8147836923599243
+        },
+        "100": {
+          "beneficial": 71,
+          "harmful": 29,
+          "minimum_score": 0.7419715523719788
+        }
+      },
+      "test_split_correlation": 0.9880369682853307
+    },
+    "add": {
+      "candidate_rows": 3312,
+      "positive_targets": 168,
+      "curve": {
+        "5": {
+          "beneficial": 3,
+          "harmful": 2,
+          "minimum_score": 0.973669171333313
+        },
+        "8": {
+          "beneficial": 4,
+          "harmful": 4,
+          "minimum_score": 0.9517369270324707
+        },
+        "10": {
+          "beneficial": 5,
+          "harmful": 5,
+          "minimum_score": 0.9482378959655762
+        },
+        "12": {
+          "beneficial": 7,
+          "harmful": 5,
+          "minimum_score": 0.9239789843559265
+        },
+        "15": {
+          "beneficial": 9,
+          "harmful": 6,
+          "minimum_score": 0.9201407432556152
+        },
+        "20": {
+          "beneficial": 12,
+          "harmful": 8,
+          "minimum_score": 0.8918880224227905
+        },
+        "30": {
+          "beneficial": 17,
+          "harmful": 13,
+          "minimum_score": 0.8353338241577148
+        },
+        "40": {
+          "beneficial": 25,
+          "harmful": 15,
+          "minimum_score": 0.778733491897583
+        },
+        "50": {
+          "beneficial": 31,
+          "harmful": 19,
+          "minimum_score": 0.7271018028259277
+        },
+        "75": {
+          "beneficial": 42,
+          "harmful": 33,
+          "minimum_score": 0.6028117537498474
+        },
+        "100": {
+          "beneficial": 55,
+          "harmful": 45,
+          "minimum_score": 0.4770961403846741
+        }
+      },
+      "test_split_correlation": 0.9832036245295823
+    },
+    "swap": {
+      "5": {
+        "delta_tp": 4,
+        "positive": 4,
+        "neutral": 1,
+        "negative": 0,
+        "minimum_utility": 0.9890918135643005
+      },
+      "8": {
+        "delta_tp": 6,
+        "positive": 6,
+        "neutral": 2,
+        "negative": 0,
+        "minimum_utility": 0.9506462216377258
+      },
+      "10": {
+        "delta_tp": 6,
+        "positive": 7,
+        "neutral": 2,
+        "negative": 1,
+        "minimum_utility": 0.8673551082611084
+      },
+      "12": {
+        "delta_tp": 6,
+        "positive": 7,
+        "neutral": 4,
+        "negative": 1,
+        "minimum_utility": 0.8218957185745239
+      },
+      "15": {
+        "delta_tp": 4,
+        "positive": 7,
+        "neutral": 5,
+        "negative": 3,
+        "minimum_utility": 0.7611994743347168
+      },
+      "20": {
+        "delta_tp": 7,
+        "positive": 10,
+        "neutral": 7,
+        "negative": 3,
+        "minimum_utility": 0.610889732837677
+      },
+      "30": {
+        "delta_tp": 5,
+        "positive": 13,
+        "neutral": 9,
+        "negative": 8,
+        "minimum_utility": 0.436833918094635
+      },
+      "40": {
+        "delta_tp": 4,
+        "positive": 15,
+        "neutral": 14,
+        "negative": 11,
+        "minimum_utility": 0.27260494232177734
+      },
+      "50": {
+        "delta_tp": -1,
+        "positive": 17,
+        "neutral": 15,
+        "negative": 18,
+        "minimum_utility": 0.1410607397556305
+      }
+    }
+  },
+  "gate": {
+    "delete": true,
+    "add": false,
+    "swap": true
+  },
+  "actions": {
+    "delete": [
+      {
+        "action_id": "v29_delete_01_c6f82f1f",
+        "order_id": "c6f82f1f-0479-48b7-a2a6-deb0d9a3acf0",
+        "remove_rids": [
+          "#-1:8280ee97-b280-4406-9ef8-0cf632aea79c"
+        ],
+        "add_rids": [],
+        "source": "v29_topology_boundary",
+        "expected_gain": 0.9888455867767334,
+        "evidence": {
+          "consensus_probability": 0.9888455867767334,
+          "station_probability": 0.9945255517959595,
+          "template_probability": 0.9831656217575073,
+          "title": "[衍生告警]PTN光缆中断，单报LOS"
+        }
+      },
+      {
+        "action_id": "v29_delete_02_d450cd63",
+        "order_id": "d450cd63-3e5d-4c67-b11a-517c03d7e3e0",
+        "remove_rids": [
+          "#-1:48efcb47-2887-4583-b31a-654c0a75cfef"
+        ],
+        "add_rids": [],
+        "source": "v29_topology_boundary",
+        "expected_gain": 0.9707392454147339,
+        "evidence": {
+          "consensus_probability": 0.9707392454147339,
+          "station_probability": 0.9729828834533691,
+          "template_probability": 0.9684956669807434,
+          "title": "天馈驻波比异常"
+        }
+      },
+      {
+        "action_id": "v29_delete_03_f6a6325f",
+        "order_id": "f6a6325f-450b-426e-a0d9-505b9996adfc",
+        "remove_rids": [
+          "#-1:fb6f2b00-97c0-41b9-8de4-1b234b2cc853"
+        ],
+        "add_rids": [],
+        "source": "v29_topology_boundary",
+        "expected_gain": 0.9661642909049988,
+        "evidence": {
+          "consensus_probability": 0.9661642909049988,
+          "station_probability": 0.9535268545150757,
+          "template_probability": 0.9788017272949219,
+          "title": "射频单元交流掉电告警"
+        }
+      },
+      {
+        "action_id": "v29_delete_04_b1e02c99",
+        "order_id": "b1e02c99-d2c4-4546-8324-74fdba3844ad",
+        "remove_rids": [
+          "#-1:6321b4e6-4c58-4c07-9ed3-ff1d86091d06"
+        ],
+        "add_rids": [],
+        "source": "v29_topology_boundary",
+        "expected_gain": 0.9605576992034912,
+        "evidence": {
+          "consensus_probability": 0.9605576992034912,
+          "station_probability": 0.9638274312019348,
+          "template_probability": 0.9572879076004028,
+          "title": "射频单元输入电源能力不足告警"
+        }
+      },
+      {
+        "action_id": "v29_delete_05_a3645153",
+        "order_id": "a3645153-27f5-4b8c-9e3a-bc84cfd7c653",
+        "remove_rids": [
+          "#-1:3a8f96aa-2921-40b6-aafe-19d93e9c762a"
+        ],
+        "add_rids": [],
+        "source": "v29_topology_boundary",
+        "expected_gain": 0.9588958024978638,
+        "evidence": {
+          "consensus_probability": 0.9588958024978638,
+          "station_probability": 0.9704625010490417,
+          "template_probability": 0.9473291635513306,
+          "title": "射频单元直流掉电告警"
+        }
+      },
+      {
+        "action_id": "v29_delete_06_53aa2dc8",
+        "order_id": "53aa2dc8-1861-4faa-8d25-3847c8e392bb",
+        "remove_rids": [
+          "#-1:4e8373ef-5afc-45ed-8abf-09e4d5ac6b67"
+        ],
+        "add_rids": [],
+        "source": "v29_topology_boundary",
+        "expected_gain": 0.9422366619110107,
+        "evidence": {
+          "consensus_probability": 0.9422366619110107,
+          "station_probability": 0.9661906361579895,
+          "template_probability": 0.918282687664032,
+          "title": "输入电源断"
+        }
+      },
+      {
+        "action_id": "v29_delete_07_a6ae9c3c",
+        "order_id": "a6ae9c3c-c787-47e0-abf0-d610533dc2a0",
+        "remove_rids": [
+          "#-1:f4748a81-f1ce-4c63-b92b-571fb125ef8b"
+        ],
+        "add_rids": [],
+        "source": "v29_topology_boundary",
+        "expected_gain": 0.9364757537841797,
+        "evidence": {
+          "consensus_probability": 0.9364757537841797,
+          "station_probability": 0.9344826936721802,
+          "template_probability": 0.9384688138961792,
+          "title": "光模块接收光功率异常"
+        }
+      },
+      {
+        "action_id": "v29_delete_08_81e47a27",
+        "order_id": "81e47a27-a3f2-41ee-863e-36a27b36e510",
+        "remove_rids": [
+          "#-1:c930a772-2aec-456e-aa3c-6cee41ceaeea"
+        ],
+        "add_rids": [],
+        "source": "v29_topology_boundary",
+        "expected_gain": 0.9151421785354614,
+        "evidence": {
+          "consensus_probability": 0.9151421785354614,
+          "station_probability": 0.9506279826164246,
+          "template_probability": 0.8796563148498535,
+          "title": "RRU链路断"
+        }
+      },
+      {
+        "action_id": "v29_delete_09_e7700f4a",
+        "order_id": "e7700f4a-e97e-40ad-bda5-afd0f92e7509",
+        "remove_rids": [
+          "#-1:009af8ca-5650-48c1-ac34-dd48826a16df"
+        ],
+        "add_rids": [],
+        "source": "v29_topology_boundary",
+        "expected_gain": 0.8972110152244568,
+        "evidence": {
+          "consensus_probability": 0.8972110152244568,
+          "station_probability": 0.8979076147079468,
+          "template_probability": 0.8965144157409668,
+          "title": "RRU链路断"
+        }
+      },
+      {
+        "action_id": "v29_delete_10_38fa907e",
+        "order_id": "38fa907e-772c-484c-bab4-8227025e3b49",
+        "remove_rids": [
+          "#-1:9fe1a5d2-ce44-4bec-b975-5e3d4a072afa"
+        ],
+        "add_rids": [],
+        "source": "v29_topology_boundary",
+        "expected_gain": 0.8889696598052979,
+        "evidence": {
+          "consensus_probability": 0.8889696598052979,
+          "station_probability": 0.9121149778366089,
+          "template_probability": 0.8658243417739868,
+          "title": "射频单元CPRI接口异常告警"
+        }
+      }
+    ],
+    "swap": [
+      {
+        "action_id": "v29_swap_01_8df78ab7",
+        "order_id": "8df78ab7-ca49-44f4-9fc2-1427cf850964",
+        "remove_rids": [
+          "#-1:035c60d5-eab4-43c9-ab1f-920eca60a16b"
+        ],
+        "add_rids": [
+          "#-1:d66659d1-337f-4be6-83be-05795ef803cd"
+        ],
+        "source": "v29_topology_pair",
+        "expected_gain": 0.9967883209254531,
+        "evidence": {
+          "expected_tp_utility": 0.9967883209254531,
+          "remove_title": "网元连接中断",
+          "add_title": "[衍生告警]PTN光缆中断，单报LOS"
+        }
+      },
+      {
+        "action_id": "v29_swap_02_4c2b3b06",
+        "order_id": "4c2b3b06-a6a2-4c1b-9734-def3d1f849d8",
+        "remove_rids": [
+          "#-1:478860c0-cfb6-4e87-8e69-14f09e94b850"
+        ],
+        "add_rids": [
+          "#-1:aee1adf1-be6a-4986-bd73-4fda938342fc"
+        ],
+        "source": "v29_topology_pair",
+        "expected_gain": 0.985861487600674,
+        "evidence": {
+          "expected_tp_utility": 0.985861487600674,
+          "remove_title": "网元链路断",
+          "add_title": "[衍生告警]PTN光缆中断，单报LOS"
+        }
+      },
+      {
+        "action_id": "v29_swap_03_aa321b94",
+        "order_id": "aa321b94-f3d9-45cf-b1ee-f3a1fe38da68",
+        "remove_rids": [
+          "#-1:dab0445c-e5d2-4336-8694-4e271b8b1117"
+        ],
+        "add_rids": [
+          "#-1:429df297-9a4e-462a-a377-ae4cd47eda24"
+        ],
+        "source": "v29_topology_pair",
+        "expected_gain": 0.9793663380908555,
+        "evidence": {
+          "expected_tp_utility": 0.9793663380908555,
+          "remove_title": "RRU链路断",
+          "add_title": "光口接收链路故障"
+        }
+      },
+      {
+        "action_id": "v29_swap_04_06d84a90",
+        "order_id": "06d84a90-670f-4ccb-b482-9afdb874d164",
+        "remove_rids": [
+          "#-1:d1c9980d-85c4-40db-9036-f831f95a0aa7"
+        ],
+        "add_rids": [
+          "#-1:00a6ec40-ea39-40f7-9a99-456ee3f07e4f"
+        ],
+        "source": "v29_topology_pair",
+        "expected_gain": 0.9348395803780596,
+        "evidence": {
+          "expected_tp_utility": 0.9348395803780596,
+          "remove_title": "网元连接中断",
+          "add_title": "[衍生告警]PTN光缆中断，单报LOS"
+        }
+      },
+      {
+        "action_id": "v29_swap_05_7b1b39e5",
+        "order_id": "7b1b39e5-954a-418c-9ed7-03285444ea24",
+        "remove_rids": [
+          "#-1:552046b6-e16f-4a58-90d4-bb2c3433ccb4"
+        ],
+        "add_rids": [
+          "#-1:fac75988-ea52-43cb-888c-45f1495ba491"
+        ],
+        "source": "v29_topology_pair",
+        "expected_gain": 0.9249396765816098,
+        "evidence": {
+          "expected_tp_utility": 0.9249396765816098,
+          "remove_title": "[衍生告警]设备商甲4G基站退服",
+          "add_title": "S1用户面路径不可用"
+        }
+      },
+      {
+        "action_id": "v29_swap_06_b92c1c42",
+        "order_id": "b92c1c42-bc69-48fa-b5c6-7bbd2635a15b",
+        "remove_rids": [
+          "#-1:46dad958-ef00-43e3-9cc6-b2312a363aea"
+        ],
+        "add_rids": [
+          "#-1:e98f47f3-1430-4bab-bd66-cd79564e73e6"
+        ],
+        "source": "v29_topology_pair",
+        "expected_gain": 0.7364448881521937,
+        "evidence": {
+          "expected_tp_utility": 0.7364448881521937,
+          "remove_title": "光口接收链路故障",
+          "add_title": "光口接收链路故障"
+        }
+      },
+      {
+        "action_id": "v29_swap_07_441995e6",
+        "order_id": "441995e6-e153-4e40-af0f-d0eb20ddcfa5",
+        "remove_rids": [
+          "#-1:63de300f-5195-4f21-8e5d-244d93516979"
+        ],
+        "add_rids": [
+          "#-1:53f23b3e-c801-45d7-8d31-1cb8b8809946"
+        ],
+        "source": "v29_topology_pair",
+        "expected_gain": 0.6742098739435294,
+        "evidence": {
+          "expected_tp_utility": 0.6742098739435294,
+          "remove_title": "BBU单板维护链路异常告警",
+          "add_title": "单板输入电压异常告警"
+        }
+      },
+      {
+        "action_id": "v29_swap_08_12fb9fb0",
+        "order_id": "12fb9fb0-19b0-4b39-b037-f2e479fadb8a",
+        "remove_rids": [
+          "#-1:251f48e8-6196-43d0-8eff-fb6cb233a58f"
+        ],
+        "add_rids": [
+          "#-1:48898139-e173-42c6-ba9d-9b2408fdebbd"
+        ],
+        "source": "v29_topology_pair",
+        "expected_gain": 0.5078943348740903,
+        "evidence": {
+          "expected_tp_utility": 0.5078943348740903,
+          "remove_title": "BBU IR接口异常告警",
+          "add_title": "射频单元IR接口异常告警"
+        }
+      }
+    ]
+  },
+  "probes": {
+    "delete": {
+      "path": "D:\\zgyidong\\experiments\\v29_domain_ranker\\submissions\\v29_delete_top10.csv",
+      "probe_id": "v29_delete_top10",
+      "baseline": "D:\\zgyidong\\experiments\\v28_ten_day_campaign\\submissions\\day04_verified_checkpoint.csv",
+      "kind": "delete",
+      "actions": [
+        {
+          "action_id": "v29_delete_01_c6f82f1f",
+          "order_id": "c6f82f1f-0479-48b7-a2a6-deb0d9a3acf0",
+          "remove_rids": [
+            "#-1:8280ee97-b280-4406-9ef8-0cf632aea79c"
+          ],
+          "add_rids": [],
+          "source": "v29_topology_boundary",
+          "expected_gain": 0.9888455867767334,
+          "evidence": {
+            "consensus_probability": 0.9888455867767334,
+            "station_probability": 0.9945255517959595,
+            "template_probability": 0.9831656217575073,
+            "title": "[衍生告警]PTN光缆中断，单报LOS"
+          }
+        },
+        {
+          "action_id": "v29_delete_02_d450cd63",
+          "order_id": "d450cd63-3e5d-4c67-b11a-517c03d7e3e0",
+          "remove_rids": [
+            "#-1:48efcb47-2887-4583-b31a-654c0a75cfef"
+          ],
+          "add_rids": [],
+          "source": "v29_topology_boundary",
+          "expected_gain": 0.9707392454147339,
+          "evidence": {
+            "consensus_probability": 0.9707392454147339,
+            "station_probability": 0.9729828834533691,
+            "template_probability": 0.9684956669807434,
+            "title": "天馈驻波比异常"
+          }
+        },
+        {
+          "action_id": "v29_delete_03_f6a6325f",
+          "order_id": "f6a6325f-450b-426e-a0d9-505b9996adfc",
+          "remove_rids": [
+            "#-1:fb6f2b00-97c0-41b9-8de4-1b234b2cc853"
+          ],
+          "add_rids": [],
+          "source": "v29_topology_boundary",
+          "expected_gain": 0.9661642909049988,
+          "evidence": {
+            "consensus_probability": 0.9661642909049988,
+            "station_probability": 0.9535268545150757,
+            "template_probability": 0.9788017272949219,
+            "title": "射频单元交流掉电告警"
+          }
+        },
+        {
+          "action_id": "v29_delete_04_b1e02c99",
+          "order_id": "b1e02c99-d2c4-4546-8324-74fdba3844ad",
+          "remove_rids": [
+            "#-1:6321b4e6-4c58-4c07-9ed3-ff1d86091d06"
+          ],
+          "add_rids": [],
+          "source": "v29_topology_boundary",
+          "expected_gain": 0.9605576992034912,
+          "evidence": {
+            "consensus_probability": 0.9605576992034912,
+            "station_probability": 0.9638274312019348,
+            "template_probability": 0.9572879076004028,
+            "title": "射频单元输入电源能力不足告警"
+          }
+        },
+        {
+          "action_id": "v29_delete_05_a3645153",
+          "order_id": "a3645153-27f5-4b8c-9e3a-bc84cfd7c653",
+          "remove_rids": [
+            "#-1:3a8f96aa-2921-40b6-aafe-19d93e9c762a"
+          ],
+          "add_rids": [],
+          "source": "v29_topology_boundary",
+          "expected_gain": 0.9588958024978638,
+          "evidence": {
+            "consensus_probability": 0.9588958024978638,
+            "station_probability": 0.9704625010490417,
+            "template_probability": 0.9473291635513306,
+            "title": "射频单元直流掉电告警"
+          }
+        },
+        {
+          "action_id": "v29_delete_06_53aa2dc8",
+          "order_id": "53aa2dc8-1861-4faa-8d25-3847c8e392bb",
+          "remove_rids": [
+            "#-1:4e8373ef-5afc-45ed-8abf-09e4d5ac6b67"
+          ],
+          "add_rids": [],
+          "source": "v29_topology_boundary",
+          "expected_gain": 0.9422366619110107,
+          "evidence": {
+            "consensus_probability": 0.9422366619110107,
+            "station_probability": 0.9661906361579895,
+            "template_probability": 0.918282687664032,
+            "title": "输入电源断"
+          }
+        },
+        {
+          "action_id": "v29_delete_07_a6ae9c3c",
+          "order_id": "a6ae9c3c-c787-47e0-abf0-d610533dc2a0",
+          "remove_rids": [
+            "#-1:f4748a81-f1ce-4c63-b92b-571fb125ef8b"
+          ],
+          "add_rids": [],
+          "source": "v29_topology_boundary",
+          "expected_gain": 0.9364757537841797,
+          "evidence": {
+            "consensus_probability": 0.9364757537841797,
+            "station_probability": 0.9344826936721802,
+            "template_probability": 0.9384688138961792,
+            "title": "光模块接收光功率异常"
+          }
+        },
+        {
+          "action_id": "v29_delete_08_81e47a27",
+          "order_id": "81e47a27-a3f2-41ee-863e-36a27b36e510",
+          "remove_rids": [
+            "#-1:c930a772-2aec-456e-aa3c-6cee41ceaeea"
+          ],
+          "add_rids": [],
+          "source": "v29_topology_boundary",
+          "expected_gain": 0.9151421785354614,
+          "evidence": {
+            "consensus_probability": 0.9151421785354614,
+            "station_probability": 0.9506279826164246,
+            "template_probability": 0.8796563148498535,
+            "title": "RRU链路断"
+          }
+        },
+        {
+          "action_id": "v29_delete_09_e7700f4a",
+          "order_id": "e7700f4a-e97e-40ad-bda5-afd0f92e7509",
+          "remove_rids": [
+            "#-1:009af8ca-5650-48c1-ac34-dd48826a16df"
+          ],
+          "add_rids": [],
+          "source": "v29_topology_boundary",
+          "expected_gain": 0.8972110152244568,
+          "evidence": {
+            "consensus_probability": 0.8972110152244568,
+            "station_probability": 0.8979076147079468,
+            "template_probability": 0.8965144157409668,
+            "title": "RRU链路断"
+          }
+        },
+        {
+          "action_id": "v29_delete_10_38fa907e",
+          "order_id": "38fa907e-772c-484c-bab4-8227025e3b49",
+          "remove_rids": [
+            "#-1:9fe1a5d2-ce44-4bec-b975-5e3d4a072afa"
+          ],
+          "add_rids": [],
+          "source": "v29_topology_boundary",
+          "expected_gain": 0.8889696598052979,
+          "evidence": {
+            "consensus_probability": 0.8889696598052979,
+            "station_probability": 0.9121149778366089,
+            "template_probability": 0.8658243417739868,
+            "title": "射频单元CPRI接口异常告警"
+          }
+        }
+      ],
+      "predictions": 1035,
+      "prediction_delta": -10,
+      "sha256": "bec7c56dfa4205a5a7077d6c5d9ee908649156fb205d2f9abf80c78fdc5b3d8d",
+      "score_possibilities": [
+        {
+          "delta_tp": -10,
+          "tp": 945,
+          "score": 0.909090909
+        },
+        {
+          "delta_tp": -9,
+          "tp": 946,
+          "score": 0.91005291
+        },
+        {
+          "delta_tp": -8,
+          "tp": 947,
+          "score": 0.911014911
+        },
+        {
+          "delta_tp": -7,
+          "tp": 948,
+          "score": 0.911976912
+        },
+        {
+          "delta_tp": -6,
+          "tp": 949,
+          "score": 0.912938913
+        },
+        {
+          "delta_tp": -5,
+          "tp": 950,
+          "score": 0.913900914
+        },
+        {
+          "delta_tp": -4,
+          "tp": 951,
+          "score": 0.914862915
+        },
+        {
+          "delta_tp": -3,
+          "tp": 952,
+          "score": 0.915824916
+        },
+        {
+          "delta_tp": -2,
+          "tp": 953,
+          "score": 0.916786917
+        },
+        {
+          "delta_tp": -1,
+          "tp": 954,
+          "score": 0.917748918
+        },
+        {
+          "delta_tp": 0,
+          "tp": 955,
+          "score": 0.918710919
+        }
+      ]
+    },
+    "swap": {
+      "path": "D:\\zgyidong\\experiments\\v29_domain_ranker\\submissions\\v29_swap_top8.csv",
+      "probe_id": "v29_swap_top8",
+      "baseline": "D:\\zgyidong\\experiments\\v28_ten_day_campaign\\submissions\\day04_verified_checkpoint.csv",
+      "kind": "swap",
+      "actions": [
+        {
+          "action_id": "v29_swap_01_8df78ab7",
+          "order_id": "8df78ab7-ca49-44f4-9fc2-1427cf850964",
+          "remove_rids": [
+            "#-1:035c60d5-eab4-43c9-ab1f-920eca60a16b"
+          ],
+          "add_rids": [
+            "#-1:d66659d1-337f-4be6-83be-05795ef803cd"
+          ],
+          "source": "v29_topology_pair",
+          "expected_gain": 0.9967883209254531,
+          "evidence": {
+            "expected_tp_utility": 0.9967883209254531,
+            "remove_title": "网元连接中断",
+            "add_title": "[衍生告警]PTN光缆中断，单报LOS"
+          }
+        },
+        {
+          "action_id": "v29_swap_02_4c2b3b06",
+          "order_id": "4c2b3b06-a6a2-4c1b-9734-def3d1f849d8",
+          "remove_rids": [
+            "#-1:478860c0-cfb6-4e87-8e69-14f09e94b850"
+          ],
+          "add_rids": [
+            "#-1:aee1adf1-be6a-4986-bd73-4fda938342fc"
+          ],
+          "source": "v29_topology_pair",
+          "expected_gain": 0.985861487600674,
+          "evidence": {
+            "expected_tp_utility": 0.985861487600674,
+            "remove_title": "网元链路断",
+            "add_title": "[衍生告警]PTN光缆中断，单报LOS"
+          }
+        },
+        {
+          "action_id": "v29_swap_03_aa321b94",
+          "order_id": "aa321b94-f3d9-45cf-b1ee-f3a1fe38da68",
+          "remove_rids": [
+            "#-1:dab0445c-e5d2-4336-8694-4e271b8b1117"
+          ],
+          "add_rids": [
+            "#-1:429df297-9a4e-462a-a377-ae4cd47eda24"
+          ],
+          "source": "v29_topology_pair",
+          "expected_gain": 0.9793663380908555,
+          "evidence": {
+            "expected_tp_utility": 0.9793663380908555,
+            "remove_title": "RRU链路断",
+            "add_title": "光口接收链路故障"
+          }
+        },
+        {
+          "action_id": "v29_swap_04_06d84a90",
+          "order_id": "06d84a90-670f-4ccb-b482-9afdb874d164",
+          "remove_rids": [
+            "#-1:d1c9980d-85c4-40db-9036-f831f95a0aa7"
+          ],
+          "add_rids": [
+            "#-1:00a6ec40-ea39-40f7-9a99-456ee3f07e4f"
+          ],
+          "source": "v29_topology_pair",
+          "expected_gain": 0.9348395803780596,
+          "evidence": {
+            "expected_tp_utility": 0.9348395803780596,
+            "remove_title": "网元连接中断",
+            "add_title": "[衍生告警]PTN光缆中断，单报LOS"
+          }
+        },
+        {
+          "action_id": "v29_swap_05_7b1b39e5",
+          "order_id": "7b1b39e5-954a-418c-9ed7-03285444ea24",
+          "remove_rids": [
+            "#-1:552046b6-e16f-4a58-90d4-bb2c3433ccb4"
+          ],
+          "add_rids": [
+            "#-1:fac75988-ea52-43cb-888c-45f1495ba491"
+          ],
+          "source": "v29_topology_pair",
+          "expected_gain": 0.9249396765816098,
+          "evidence": {
+            "expected_tp_utility": 0.9249396765816098,
+            "remove_title": "[衍生告警]设备商甲4G基站退服",
+            "add_title": "S1用户面路径不可用"
+          }
+        },
+        {
+          "action_id": "v29_swap_06_b92c1c42",
+          "order_id": "b92c1c42-bc69-48fa-b5c6-7bbd2635a15b",
+          "remove_rids": [
+            "#-1:46dad958-ef00-43e3-9cc6-b2312a363aea"
+          ],
+          "add_rids": [
+            "#-1:e98f47f3-1430-4bab-bd66-cd79564e73e6"
+          ],
+          "source": "v29_topology_pair",
+          "expected_gain": 0.7364448881521937,
+          "evidence": {
+            "expected_tp_utility": 0.7364448881521937,
+            "remove_title": "光口接收链路故障",
+            "add_title": "光口接收链路故障"
+          }
+        },
+        {
+          "action_id": "v29_swap_07_441995e6",
+          "order_id": "441995e6-e153-4e40-af0f-d0eb20ddcfa5",
+          "remove_rids": [
+            "#-1:63de300f-5195-4f21-8e5d-244d93516979"
+          ],
+          "add_rids": [
+            "#-1:53f23b3e-c801-45d7-8d31-1cb8b8809946"
+          ],
+          "source": "v29_topology_pair",
+          "expected_gain": 0.6742098739435294,
+          "evidence": {
+            "expected_tp_utility": 0.6742098739435294,
+            "remove_title": "BBU单板维护链路异常告警",
+            "add_title": "单板输入电压异常告警"
+          }
+        },
+        {
+          "action_id": "v29_swap_08_12fb9fb0",
+          "order_id": "12fb9fb0-19b0-4b39-b037-f2e479fadb8a",
+          "remove_rids": [
+            "#-1:251f48e8-6196-43d0-8eff-fb6cb233a58f"
+          ],
+          "add_rids": [
+            "#-1:48898139-e173-42c6-ba9d-9b2408fdebbd"
+          ],
+          "source": "v29_topology_pair",
+          "expected_gain": 0.5078943348740903,
+          "evidence": {
+            "expected_tp_utility": 0.5078943348740903,
+            "remove_title": "BBU IR接口异常告警",
+            "add_title": "射频单元IR接口异常告警"
+          }
+        }
+      ],
+      "predictions": 1045,
+      "prediction_delta": 0,
+      "sha256": "ba5c3e407eb3133b17ec076a22a79577a095ce8d8e82ed6038a77dcf81d4760f",
+      "score_possibilities": [
+        {
+          "delta_tp": -8,
+          "tp": 947,
+          "score": 0.906653901
+        },
+        {
+          "delta_tp": -7,
+          "tp": 948,
+          "score": 0.907611297
+        },
+        {
+          "delta_tp": -6,
+          "tp": 949,
+          "score": 0.908568693
+        },
+        {
+          "delta_tp": -5,
+          "tp": 950,
+          "score": 0.909526089
+        },
+        {
+          "delta_tp": -4,
+          "tp": 951,
+          "score": 0.910483485
+        },
+        {
+          "delta_tp": -3,
+          "tp": 952,
+          "score": 0.911440881
+        },
+        {
+          "delta_tp": -2,
+          "tp": 953,
+          "score": 0.912398277
+        },
+        {
+          "delta_tp": -1,
+          "tp": 954,
+          "score": 0.913355673
+        },
+        {
+          "delta_tp": 0,
+          "tp": 955,
+          "score": 0.914313068
+        },
+        {
+          "delta_tp": 1,
+          "tp": 956,
+          "score": 0.915270464
+        },
+        {
+          "delta_tp": 2,
+          "tp": 957,
+          "score": 0.91622786
+        },
+        {
+          "delta_tp": 3,
+          "tp": 958,
+          "score": 0.917185256
+        },
+        {
+          "delta_tp": 4,
+          "tp": 959,
+          "score": 0.918142652
+        },
+        {
+          "delta_tp": 5,
+          "tp": 960,
+          "score": 0.919100048
+        },
+        {
+          "delta_tp": 6,
+          "tp": 961,
+          "score": 0.920057444
+        },
+        {
+          "delta_tp": 7,
+          "tp": 962,
+          "score": 0.92101484
+        },
+        {
+          "delta_tp": 8,
+          "tp": 963,
+          "score": 0.921972236
+        }
+      ]
+    }
+  }
+}

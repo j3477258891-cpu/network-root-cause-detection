@@ -1,0 +1,94 @@
+{
+  "complete": true,
+  "families": [
+    "v38_control",
+    "catboost"
+  ],
+  "source_class": "nested_group_oof_not_public",
+  "metrics": {
+    "v38_control": {
+      "16": {
+        "f1": 0.8599380401108756,
+        "base_f1": 0.8573743922204214,
+        "delta_tp": -8,
+        "delta_p": -37,
+        "positive_folds": 4,
+        "worst_fold_gain": -0.00021645244745871484,
+        "actions": 47
+      },
+      "32": {
+        "f1": 0.8615031178208074,
+        "base_f1": 0.8573743922204214,
+        "delta_tp": -20,
+        "delta_p": -76,
+        "positive_folds": 4,
+        "worst_fold_gain": -0.001091191593080354,
+        "actions": 88
+      },
+      "64": {
+        "f1": 0.8598873799271282,
+        "base_f1": 0.8573743922204214,
+        "delta_tp": -49,
+        "delta_p": -132,
+        "positive_folds": 4,
+        "worst_fold_gain": -0.007346955876367578,
+        "actions": 144
+      }
+    },
+    "catboost": {
+      "16": {
+        "f1": 0.8586814621409922,
+        "base_f1": 0.8573743922204214,
+        "delta_tp": -14,
+        "delta_p": -42,
+        "positive_folds": 4,
+        "worst_fold_gain": -0.0009815112579109053,
+        "actions": 42
+      },
+      "32": {
+        "f1": 0.8594390683942923,
+        "base_f1": 0.8573743922204214,
+        "delta_tp": -25,
+        "delta_p": -73,
+        "positive_folds": 4,
+        "worst_fold_gain": -0.0007061203377266567,
+        "actions": 73
+      },
+      "64": {
+        "f1": 0.8609053497942387,
+        "base_f1": 0.8573743922204214,
+        "delta_tp": -30,
+        "delta_p": -95,
+        "positive_folds": 4,
+        "worst_fold_gain": -0.0007061203377266567,
+        "actions": 95
+      }
+    }
+  },
+  "input_hashes": {
+    "D:\\zgyidong\\experiments\\v25_semantic_router\\cloud_dataset\\v25_semantic_router.npz": "3795d60c612650696a4c9aa3450a3f73dd9a73754b5bc98199c58cb7881e3b4a",
+    "D:\\zgyidong\\experiments\\v25_semantic_router\\cloud_dataset\\semantic_records.json.gz": "c1f588f4b960d2d827e0c30d68f24ac7f7c22edb31731ab3b517421a7fd186e2",
+    "D:\\zgyidong\\experiments\\v16\\v16_train_features.npy": "91e9ab4a8dd6609a1aaf99847073dbeea5508c2eb51e10779adc6e59b3ebffdf",
+    "D:\\zgyidong\\experiments\\v16\\v16_test_features.npy": "da36eba1ca4be9e97358d7e79940ee9f17b327689693a08ba7d82806829de901",
+    "D:\\zgyidong\\experiments\\v152_error_repair_campaign\\training.py": "4cb5f72320d8dc4b06cc45d2f6c4246cc12f54730ff98f27e58b8e780fe7a784",
+    "D:\\zgyidong\\experiments\\v152_error_repair_campaign\\core.py": "6aa177503a59c7aa68f3bd5365375fc67a43b1ffd0c7ee833d0a07567924e655"
+  },
+  "tabpfn": {
+    "model_version": "v2_explicit_not_package_default",
+    "permission": "user confirmed public pretrained models allowed; not independent rule verification",
+    "status": "dependency_unavailable",
+    "local_only": true,
+    "checked_at": "2026-09-07T16:48:25+08:00",
+    "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU, 8188 MiB, 7119 MiB",
+    "missing": [
+      "torch",
+      "tabpfn"
+    ],
+    "reason": "Optional challenger unavailable in this runtime; do not alter V152 environment"
+  },
+  "source_report": "D:\\zgyidong\\experiments\\v152_error_repair_campaign\\model_comparison.json",
+  "source_report_sha256": "fb36db200a2c3da79c60c64b10b11b30b3a061e21af248f1ff39ef0f0e4d4c67",
+  "deadline_at": "2026-09-08T22:06:57+08:00",
+  "completed_at": "2026-09-07T16:48:25+08:00",
+  "warning": "OOF baseline .857374 is not an offline reconstruction of public .927717"
+}

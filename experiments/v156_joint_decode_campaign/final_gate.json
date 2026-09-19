@@ -1,0 +1,258 @@
+{
+  "decision": "submit_probe",
+  "allow_submission": true,
+  "actual_champion": {
+    "file": "D:\\zgyidong\\experiments\\v153_complementary_repair_campaign\\v153_probe_p03_group.csv",
+    "sha256": "102b99385a8094a1d47b2748dfaa79fbd5a2b2b69936dffa9e5e7d9636fba196",
+    "predictions": 1049,
+    "tp": 971,
+    "score": 0.927855,
+    "source_class": "public_scored"
+  },
+  "remaining_submissions": 5,
+  "attempts_used": 5,
+  "info_probes_allowed": 4,
+  "max_info_probes": 4,
+  "merge_reserve": 1,
+  "decode": {
+    "unique": true,
+    "signatures": 12,
+    "queries": {
+      "A": [
+        8
+      ],
+      "B": [
+        11,
+        9
+      ],
+      "C": [
+        14,
+        9
+      ]
+    },
+    "new_node_label_combinations": 12
+  },
+  "decode_plan": {
+    "queries": [
+      [
+        8
+      ],
+      [
+        11,
+        9
+      ],
+      [
+        14,
+        9
+      ]
+    ],
+    "phases": [
+      {
+        "query": [
+          8
+        ],
+        "branches": [
+          {
+            "feedback": 0,
+            "combos_remaining": 6,
+            "decoded": false,
+            "true_nodes_known": null
+          },
+          {
+            "feedback": 1,
+            "combos_remaining": 6,
+            "decoded": false,
+            "true_nodes_known": null
+          }
+        ]
+      },
+      {
+        "query": [
+          11,
+          9
+        ],
+        "branches": [
+          {
+            "feedback": 0,
+            "combos_remaining": 3,
+            "decoded": false,
+            "true_nodes_known": null
+          },
+          {
+            "feedback": 1,
+            "combos_remaining": 6,
+            "decoded": false,
+            "true_nodes_known": null
+          },
+          {
+            "feedback": 2,
+            "combos_remaining": 3,
+            "decoded": false,
+            "true_nodes_known": null
+          }
+        ]
+      },
+      {
+        "query": [
+          14,
+          9
+        ],
+        "branches": [
+          {
+            "feedback": 0,
+            "combos_remaining": 3,
+            "decoded": false,
+            "true_nodes_known": null
+          },
+          {
+            "feedback": 1,
+            "combos_remaining": 6,
+            "decoded": false,
+            "true_nodes_known": null
+          },
+          {
+            "feedback": 2,
+            "combos_remaining": 3,
+            "decoded": false,
+            "true_nodes_known": null
+          }
+        ]
+      }
+    ]
+  },
+  "fallback_safety": {
+    "fixed_plan_probes_needed": 3,
+    "budget": 4,
+    "safe": true
+  },
+  "adaptive_safety": {
+    "safe": true,
+    "worst_branch_probes": 2,
+    "remaining_decode_budget": 3,
+    "branches": [
+      {
+        "feedback": 0,
+        "combos_remaining": 1,
+        "probes_needed": 0
+      },
+      {
+        "feedback": 1,
+        "combos_remaining": 5,
+        "probes_needed": 2
+      },
+      {
+        "feedback": 2,
+        "combos_remaining": 5,
+        "probes_needed": 2
+      },
+      {
+        "feedback": 3,
+        "combos_remaining": 1,
+        "probes_needed": 0
+      }
+    ]
+  },
+  "values": {
+    "actual_score": {
+      "champion_f1": 0.927855,
+      "champion": {
+        "file": "D:\\zgyidong\\experiments\\v153_complementary_repair_campaign\\v153_probe_p03_group.csv",
+        "sha256": "102b99385a8094a1d47b2748dfaa79fbd5a2b2b69936dffa9e5e7d9636fba196",
+        "predictions": 1049,
+        "tp": 971,
+        "score": 0.927855,
+        "source_class": "public_scored"
+      },
+      "source_class": "public_scored"
+    },
+    "equation_inferred": {
+      "backup_merge_f1": 0.929254,
+      "predictions": 1048,
+      "tp": 972,
+      "note": "determined only once the six nodes are decoded; not yet scored"
+    },
+    "model_conditional_expectation": {
+      "mixture_expected_final_f1": 0.929494,
+      "uniform_expected_final_f1": 0.929494,
+      "search_truncated": false,
+      "used_fixed_fallback": false,
+      "probability_warning": "Equal-prior model mixture over the two frozen V153 reward models (catboost and v38_control), conditioned on measured count equations and the feasible 3240-combination support. NOT an exact label posterior, calibrated target probability, or global optimum guarantee."
+    },
+    "theoretical_upper": {
+      "full_pool_f1": 0.932504,
+      "delta_tp": 5,
+      "delta_p": 0,
+      "selected_ids": [
+        6,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        16
+      ],
+      "source_class": "optimistic_integer_oracle_not_forecast"
+    }
+  },
+  "strategy": {
+    "model_mixture": {
+      "expected_final_f1": 0.929494,
+      "worst_branch_f1": 0.929343,
+      "next_action": {
+        "kind": "probe",
+        "ids": [
+          8,
+          9,
+          11
+        ]
+      },
+      "branches": [
+        {
+          "feedback": 0,
+          "weight": 0.027055,
+          "continuation_f1": 0.9299931516137206,
+          "combos_remaining": 1
+        },
+        {
+          "feedback": 1,
+          "weight": 0.290374,
+          "continuation_f1": 0.9293674502085434,
+          "combos_remaining": 5
+        },
+        {
+          "feedback": 2,
+          "weight": 0.489023,
+          "continuation_f1": 0.929343085949286,
+          "combos_remaining": 5
+        },
+        {
+          "feedback": 3,
+          "weight": 0.193548,
+          "continuation_f1": 0.9299931516137206,
+          "combos_remaining": 1
+        }
+      ],
+      "truncated": false,
+      "nodes": 2258,
+      "probability_warning": "Equal-prior model mixture over the two frozen V153 reward models (catboost and v38_control), conditioned on measured count equations and the feasible 3240-combination support. NOT an exact label posterior, calibrated target probability, or global optimum guarantee."
+    },
+    "uniform_sensitivity": {
+      "expected_final_f1": 0.929494,
+      "worst_branch_f1": 0.929382,
+      "next_action": {
+        "kind": "probe",
+        "ids": [
+          8,
+          9,
+          11
+        ]
+      },
+      "truncated": false,
+      "nodes": 2258,
+      "probability_warning": "Uniform distribution over the feasible combinations (sensitivity check). NOT a calibrated posterior."
+    }
+  },
+  "probability_warning": "Equal-prior model mixture over the two frozen V153 reward models (catboost and v38_control), conditioned on measured count equations and the feasible 3240-combination support. NOT an exact label posterior, calibrated target probability, or global optimum guarantee.",
+  "platform_quota_live_checked": false
+}

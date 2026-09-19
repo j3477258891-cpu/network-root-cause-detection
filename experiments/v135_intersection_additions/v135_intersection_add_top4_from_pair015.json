@@ -1,0 +1,61 @@
+{
+  "version": "v135-top10-model-intersection",
+  "base": "D:\\zgyidong\\experiments\\v124_campaign\\v124_single_pair_015_from_probe13.csv",
+  "base_sha256": "31131129bba8363fcf1df2c053f836102e8f209640164c2c4c7eedb431447c6c",
+  "models": [
+    "station_extra_trees",
+    "template_extra_trees",
+    "v30_consensus"
+  ],
+  "topn_each": 10,
+  "blocked_known_false": 5,
+  "available_intersection": 9,
+  "slice_size": 4,
+  "selected": [
+    {
+      "order_id": "441995e6-e153-4e40-af0f-d0eb20ddcfa5",
+      "add_rid": "#-1:53f23b3e-c801-45d7-8d31-1cb8b8809946",
+      "mean_score": 0.8489944140116373,
+      "model_scores": {
+        "station_extra_trees": 0.821563720703125,
+        "template_extra_trees": 0.8358808755874634,
+        "v30_consensus": 0.8895386457443237
+      }
+    },
+    {
+      "order_id": "af26c607-3f9d-4a37-8d4d-a809bfccd1f6",
+      "add_rid": "#-1:21b56b75-9b57-4986-9f58-9f1e28c2c979",
+      "mean_score": 0.7495587468147278,
+      "model_scores": {
+        "station_extra_trees": 0.7195209860801697,
+        "template_extra_trees": 0.699417233467102,
+        "v30_consensus": 0.8297380208969116
+      }
+    },
+    {
+      "order_id": "9f309a7d-e211-451b-975d-f25463fff535",
+      "add_rid": "#-1:76e9f86f-70ab-40c3-8072-731bbc9e9486",
+      "mean_score": 0.7437025904655457,
+      "model_scores": {
+        "station_extra_trees": 0.7262709736824036,
+        "template_extra_trees": 0.7184572815895081,
+        "v30_consensus": 0.7863795161247253
+      }
+    },
+    {
+      "order_id": "eac28a99-2650-4dee-9f74-7054f480be19",
+      "add_rid": "#-1:a9cc9261-661b-41a3-89dd-0aee4886d4be",
+      "mean_score": 0.7430290778477987,
+      "model_scores": {
+        "station_extra_trees": 0.7304747104644775,
+        "template_extra_trees": 0.7257430553436279,
+        "v30_consensus": 0.7728694677352905
+      }
+    }
+  ],
+  "predictions": 1039,
+  "orders": 546,
+  "sha256": "c23705fd67942bf89e0099754f2040e8df765594d0f377c9f22af49c0fa02ce5",
+  "status": "exploratory_not_scored",
+  "warning": "Intersection is model-derived; no online score yet."
+}

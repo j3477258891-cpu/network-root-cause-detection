@@ -1,0 +1,67 @@
+{
+  "probe_id": "v35_stable_single2",
+  "baseline": "D:\\zgyidong\\experiments\\v30_meta_stack\\submissions\\v30_cross_order_top5.csv",
+  "path": "D:\\zgyidong\\experiments\\v35_stable_swaps\\submissions\\v35_stable_single2.csv",
+  "kind": "swap",
+  "actions": [
+    {
+      "action_id": "v35_stable_001_9738b42a",
+      "order_id": "9738b42a-7360-4763-8895-0e84599b4d60",
+      "remove_rids": [
+        "#-1:18d342c5-d25e-45f4-9b1d-dcbdba1120bc"
+      ],
+      "add_rids": [
+        "#-1:7feea0e0-d89e-47b4-98e7-836da80b44cf"
+      ],
+      "source": "v35_multi_model_stable_swap",
+      "expected_gain": 0.02947854995727539,
+      "evidence": {
+        "order_index": 303,
+        "order_id": "9738b42a-7360-4763-8895-0e84599b4d60",
+        "remove_rids": [
+          "#-1:18d342c5-d25e-45f4-9b1d-dcbdba1120bc"
+        ],
+        "add_rids": [
+          "#-1:7feea0e0-d89e-47b4-98e7-836da80b44cf"
+        ],
+        "model_utility_min": 0.02947854995727539,
+        "model_utility_mean": 0.04170352220535278,
+        "model_utility_values": [
+          0.05042213201522827,
+          0.02947854995727539,
+          0.032750487327575684,
+          0.05416291952133179
+        ],
+        "supporting_model_indices": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "count": 3
+      }
+    }
+  ],
+  "predictions": 1035,
+  "prediction_delta": 0,
+  "sha256": "8e1c27a1ae457d102d2866042720c2dd78e90cf61d0f58e073a5fd2cc9f6fa5f",
+  "excluded_orders": 129,
+  "protected_nodes": 64,
+  "score_possibilities": [
+    {
+      "delta_tp": -1,
+      "tp": 954,
+      "score": 0.917748918
+    },
+    {
+      "delta_tp": 0,
+      "tp": 955,
+      "score": 0.918710919
+    },
+    {
+      "delta_tp": 1,
+      "tp": 956,
+      "score": 0.91967292
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "batch_id": "day01_precision_a8_a_a",
+  "kind": "adaptive_split",
+  "parent": "day01_precision_a8_a",
+  "status": "scored",
+  "decision": "accept",
+  "action_ids": [
+    "v28_precision_a_01_8b6e841a",
+    "v28_precision_a_02_fad26f6d"
+  ],
+  "actions": [
+    {
+      "action_id": "v28_precision_a_01_8b6e841a",
+      "order_id": "8b6e841a-d9e6-4b0d-ad7d-935807539c7e",
+      "remove_rids": [
+        "#-1:e0cfe958-c013-42ca-87b7-7810b0dd90c6"
+      ],
+      "add_rids": [],
+      "source": "v28_precision",
+      "subtype": "precision_remove_unseen",
+      "expected_gain": 0.3349805638345972,
+      "evidence": {
+        "v11_score": 0.6650194361654028,
+        "rank": 1,
+        "unseen_order": true
+      }
+    },
+    {
+      "action_id": "v28_precision_a_02_fad26f6d",
+      "order_id": "fad26f6d-c956-4598-9639-39fef649b32c",
+      "remove_rids": [
+        "#-1:a6f7eb99-a84e-41d4-a903-5e31451dc4d8"
+      ],
+      "add_rids": [],
+      "source": "v28_precision",
+      "subtype": "precision_remove_unseen",
+      "expected_gain": 0.3326651303923214,
+      "evidence": {
+        "v11_score": 0.6673348696076786,
+        "rank": 2,
+        "unseen_order": true
+      }
+    }
+  ],
+  "validation": {
+    "actions": 2,
+    "orders": 2,
+    "removed": 2,
+    "added": 0,
+    "prediction_delta": -2,
+    "sources": {
+      "v28_precision": 2
+    }
+  },
+  "predictions": 1047,
+  "prediction_delta": -2,
+  "submission": "experiments\\v28_ten_day_campaign\\submissions\\day01_precision_a8_a_a.csv",
+  "manifest": "experiments\\v28_ten_day_campaign\\manifests\\day01_precision_a8_a_a.json",
+  "sha256": "89d4228f6f980f16fc2190c541639c149080cb3b57266dc45db4971ec3ceaa80",
+  "score_possibilities": [
+    {
+      "delta_tp": -2,
+      "tp": 953,
+      "score": 0.911525586
+    },
+    {
+      "delta_tp": -1,
+      "tp": 954,
+      "score": 0.912482066
+    },
+    {
+      "delta_tp": 0,
+      "tp": 955,
+      "score": 0.913438546
+    }
+  ],
+  "score": 0.913439,
+  "reconstructed_score": 0.9134385461501674,
+  "tp": 955,
+  "delta_tp": 0,
+  "score_gain": 0.0008725461501674081
+}

@@ -1,0 +1,91 @@
+{
+  "train_orders": 1634,
+  "test_orders": 546,
+  "train_rows": 9334,
+  "positives": 3041,
+  "group_count": 1040,
+  "repeated_orders": 762,
+  "fold_sizes": [
+    327,
+    327,
+    327,
+    327,
+    326
+  ],
+  "seeds": [
+    20260801,
+    20260817,
+    20260831
+  ],
+  "fold_metrics": [
+    {
+      "fold": 0,
+      "weight": 0.75,
+      "threshold": 0.6021468072345464,
+      "baseline_f1": 0.9144338807260155,
+      "candidate_f1": 0.9148753224419605,
+      "gain": 0.00044144171594495685
+    },
+    {
+      "fold": 1,
+      "weight": 0.75,
+      "threshold": 0.6021468072345464,
+      "baseline_f1": 0.913767019667171,
+      "candidate_f1": 0.9216867469879518,
+      "gain": 0.007919727320780834
+    },
+    {
+      "fold": 2,
+      "weight": 0.75,
+      "threshold": 0.6220369357525486,
+      "baseline_f1": 0.893760539629005,
+      "candidate_f1": 0.907861369399831,
+      "gain": 0.01410082977082594
+    },
+    {
+      "fold": 3,
+      "weight": 0.75,
+      "threshold": 0.6021468072345464,
+      "baseline_f1": 0.9176276771004942,
+      "candidate_f1": 0.9164598842018197,
+      "gain": -0.0011677928986745245
+    },
+    {
+      "fold": 4,
+      "weight": 0.75,
+      "threshold": 0.6002159053382269,
+      "baseline_f1": 0.8810437452033768,
+      "candidate_f1": 0.8931591083781706,
+      "gain": 0.01211536317479378
+    }
+  ],
+  "nested_baseline": [
+    0.9039145907473309,
+    2794,
+    347,
+    247,
+    3141
+  ],
+  "nested_candidate": [
+    0.9107373868046572,
+    2816,
+    327,
+    225,
+    3143
+  ],
+  "nested_gain": 0.006822796057326275,
+  "improved_folds": 4,
+  "final_weight": 0.75,
+  "final_threshold": 0.6021468072345464,
+  "global_oof": [
+    0.9124111182934712,
+    2823,
+    324,
+    218,
+    3147,
+    0.6021468072345464
+  ],
+  "threshold_test_count": 1050,
+  "fixed_test_count": 1059,
+  "gate_passed": true
+}

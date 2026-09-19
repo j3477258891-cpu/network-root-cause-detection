@@ -1,0 +1,60 @@
+{
+  "batch_id": "day04_precision_remaining_single3",
+  "kind": "ten_day_probe",
+  "parent": null,
+  "status": "scored",
+  "decision": "reject",
+  "action_ids": [
+    "v28_precision_remaining_single_03"
+  ],
+  "actions": [
+    {
+      "action_id": "v28_precision_remaining_single_03",
+      "order_id": "4bc34075-c7db-40a9-9c7e-920c0d401a48",
+      "remove_rids": [
+        "#-1:04f5d847-c9d7-4f45-a9e2-933a3a021bf0"
+      ],
+      "add_rids": [],
+      "source": "v28_precision_remaining",
+      "subtype": "one_false_among_two",
+      "expected_gain": 0.31968964017158263,
+      "evidence": {
+        "v11_score": 0.6803103598284174,
+        "rank": 7,
+        "unseen_order": true
+      }
+    }
+  ],
+  "validation": {
+    "actions": 1,
+    "orders": 1,
+    "removed": 1,
+    "added": 0,
+    "prediction_delta": -1,
+    "sources": {
+      "v28_precision_remaining": 1
+    }
+  },
+  "predictions": 1045,
+  "prediction_delta": -1,
+  "submission": "experiments\\v28_ten_day_campaign\\submissions\\day04_precision_remaining_single3.csv",
+  "manifest": "experiments\\v28_ten_day_campaign\\manifests\\day04_precision_remaining_single3.json",
+  "sha256": "2e1b50e3bd39b11f1bf3308a3efbe93e1e5a3abf038eedf20d8c63f4585adcfe",
+  "score_possibilities": [
+    {
+      "delta_tp": -1,
+      "tp": 954,
+      "score": 0.913355673
+    },
+    {
+      "delta_tp": 0,
+      "tp": 955,
+      "score": 0.914313068
+    }
+  ],
+  "score": 0.913356,
+  "reconstructed_score": 0.9133556725706079,
+  "tp": 954,
+  "delta_tp": -1,
+  "score_gain": -0.000519925515516495
+}

@@ -1,0 +1,111 @@
+{
+  "fn_positive": 215,
+  "unselected": 6165,
+  "base_tp": 2826,
+  "budgets_per_546": [
+    8,
+    16,
+    32,
+    64
+  ],
+  "comparisons": [
+    {
+      "name": "control",
+      "budgets": {
+        "8": {
+          "delta_f1": -0.00382287,
+          "nodes_added": 24
+        },
+        "16": {
+          "delta_f1": -0.00572517,
+          "nodes_added": 48
+        },
+        "32": {
+          "delta_f1": -0.01039451,
+          "nodes_added": 96
+        },
+        "64": {
+          "delta_f1": -0.0271464,
+          "nodes_added": 192
+        }
+      }
+    },
+    {
+      "name": "control+disagreement",
+      "budgets": {
+        "8": {
+          "delta_f1": -0.00193474,
+          "nodes_added": 24
+        },
+        "16": {
+          "delta_f1": -0.00384768,
+          "nodes_added": 48
+        },
+        "32": {
+          "delta_f1": -0.01178694,
+          "nodes_added": 96
+        },
+        "64": {
+          "delta_f1": -0.02941654,
+          "nodes_added": 192
+        }
+      }
+    },
+    {
+      "name": "control+graph",
+      "budgets": {
+        "8": {
+          "delta_f1": -0.00051864,
+          "nodes_added": 24
+        },
+        "16": {
+          "delta_f1": -0.00150081,
+          "nodes_added": 48
+        },
+        "32": {
+          "delta_f1": -0.00714549,
+          "nodes_added": 96
+        },
+        "64": {
+          "delta_f1": -0.02215207,
+          "nodes_added": 192
+        }
+      }
+    },
+    {
+      "name": "combined",
+      "budgets": {
+        "8": {
+          "delta_f1": -0.00193474,
+          "nodes_added": 24
+        },
+        "16": {
+          "delta_f1": -0.00150081,
+          "nodes_added": 48
+        },
+        "32": {
+          "delta_f1": -0.00900207,
+          "nodes_added": 96
+        },
+        "64": {
+          "delta_f1": -0.02351416,
+          "nodes_added": 192
+        }
+      }
+    }
+  ],
+  "elapsed_s": 33.8,
+  "gate": {
+    "passed": false,
+    "fails": [
+      "pooled_gain_not_positive"
+    ],
+    "best_candidate": {
+      "feature_set": "control+graph",
+      "budget": "8",
+      "delta_f1": -0.00051864
+    },
+    "control_best_delta_f1": -0.00382287,
+    "decision": "no_submit_quota_returns_to_pool"
+  }
+}

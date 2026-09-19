@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "source_class": "nested_group_oof",
+  "started_at": "2026-09-07T11:04:05+08:00",
+  "complete": false,
+  "protocol": {
+    "outer_folds": 5,
+    "inner_folds": 2,
+    "node_crossfit_folds": 2,
+    "primary_budget_per_546_orders": 64,
+    "features": "raw V16 graph/time + fixed text hashing; no saved supervised scores",
+    "controls": "V30-style node ET/HGB and V38-style retrained action ET/HGB, not unchanged historical artifacts",
+    "base_proxy": "cross-fitted node ensemble at V149 prediction density; NOT an offline reproduction of its corrected labels",
+    "grouping": "existing station/template connected components; shared-station and exact-template checks passed",
+    "node_model": {
+      "et_trees": 160,
+      "hgb_iterations": 100
+    },
+    "catboost": {
+      "depth_grid": [
+        4,
+        6
+      ],
+      "iterations": 240
+    }
+  },
+  "input_hashes": {
+    "D:\\zgyidong\\experiments\\v25_semantic_router\\cloud_dataset\\v25_semantic_router.npz": "3795d60c612650696a4c9aa3450a3f73dd9a73754b5bc98199c58cb7881e3b4a",
+    "D:\\zgyidong\\experiments\\v25_semantic_router\\cloud_dataset\\semantic_records.json.gz": "c1f588f4b960d2d827e0c30d68f24ac7f7c22edb31731ab3b517421a7fd186e2",
+    "D:\\zgyidong\\experiments\\v16\\v16_train_features.npy": "91e9ab4a8dd6609a1aaf99847073dbeea5508c2eb51e10779adc6e59b3ebffdf",
+    "D:\\zgyidong\\experiments\\v16\\v16_test_features.npy": "da36eba1ca4be9e97358d7e79940ee9f17b327689693a08ba7d82806829de901",
+    "D:\\zgyidong\\experiments\\v152_error_repair_campaign\\training.py": "9046c9ca79f74d9a869c243da334b41a9ce0304033d255d7146793e053546462",
+    "D:\\zgyidong\\experiments\\v152_error_repair_campaign\\core.py": "6aa177503a59c7aa68f3bd5365375fc67a43b1ffd0c7ee833d0a07567924e655"
+  },
+  "tabpfn": {
+    "status": "not_run",
+    "reason": "competition permission for external pretrained weights not found; supply --tabpfn-rules-evidence"
+  },
+  "smoke_only": false,
+  "folds": [],
+  "warnings": [
+    "OOF model selection is not a calibrated probability of reaching 0.94",
+    "Legacy best public champion is not reconstructible as an honest train-set oracle"
+  ]
+}

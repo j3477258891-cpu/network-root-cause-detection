@@ -1,0 +1,441 @@
+{
+  "version": "v127-v30-cross-order-current-base",
+  "base": "D:\\zgyidong\\experiments\\v124_campaign\\v124_single_pair_015_from_probe13.csv",
+  "base_sha256": "31131129bba8363fcf1df2c053f836102e8f209640164c2c4c7eedb431447c6c",
+  "base_public_f1": 0.921597,
+  "base_tp": 958,
+  "source_scores": "D:\\zgyidong\\experiments\\v30_meta_stack\\v30_consensus_test.npy",
+  "excluded_orders": 11,
+  "available_pairs": 19,
+  "pair_count": 10,
+  "pairs": [
+    {
+      "pair_id": "v30_pair_001",
+      "margin": 0.6917364001274109,
+      "add_order_index": 125,
+      "remove_order_index": 254,
+      "add_row": 688,
+      "remove_row": 1485,
+      "add_score": 0.8895386457443237,
+      "remove_score": 0.19780226051807404
+    },
+    {
+      "pair_id": "v30_pair_002",
+      "margin": 0.5564231276512146,
+      "add_order_index": 359,
+      "remove_order_index": 333,
+      "add_row": 2081,
+      "remove_row": 1928,
+      "add_score": 0.8297380208969116,
+      "remove_score": 0.273314893245697
+    },
+    {
+      "pair_id": "v30_pair_003",
+      "margin": 0.49287182092666626,
+      "add_order_index": 184,
+      "remove_order_index": 303,
+      "add_row": 1091,
+      "remove_row": 1742,
+      "add_score": 0.8070818185806274,
+      "remove_score": 0.3142099976539612
+    },
+    {
+      "pair_id": "v30_pair_004",
+      "margin": 0.4804568886756897,
+      "add_order_index": 33,
+      "remove_order_index": 67,
+      "add_row": 213,
+      "remove_row": 384,
+      "add_score": 0.8054361343383789,
+      "remove_score": 0.3249792456626892
+    },
+    {
+      "pair_id": "v30_pair_005",
+      "margin": 0.45708614587783813,
+      "add_order_index": 325,
+      "remove_order_index": 180,
+      "add_row": 1886,
+      "remove_row": 1009,
+      "add_score": 0.7863795161247253,
+      "remove_score": 0.3292933702468872
+    },
+    {
+      "pair_id": "v30_pair_006",
+      "margin": 0.41210323572158813,
+      "add_order_index": 492,
+      "remove_order_index": 44,
+      "add_row": 2946,
+      "remove_row": 250,
+      "add_score": 0.7728694677352905,
+      "remove_score": 0.3607662320137024
+    },
+    {
+      "pair_id": "v30_pair_007",
+      "margin": 0.32045090198516846,
+      "add_order_index": 314,
+      "remove_order_index": 520,
+      "add_row": 1807,
+      "remove_row": 3113,
+      "add_score": 0.74679034948349,
+      "remove_score": 0.42633944749832153
+    },
+    {
+      "pair_id": "v30_pair_008",
+      "margin": 0.28874069452285767,
+      "add_order_index": 533,
+      "remove_order_index": 258,
+      "add_row": 3184,
+      "remove_row": 1509,
+      "add_score": 0.7346486449241638,
+      "remove_score": 0.44590795040130615
+    },
+    {
+      "pair_id": "v30_pair_009",
+      "margin": 0.2275756299495697,
+      "add_order_index": 281,
+      "remove_order_index": 179,
+      "add_row": 1634,
+      "remove_row": 1005,
+      "add_score": 0.7228025197982788,
+      "remove_score": 0.4952268898487091
+    },
+    {
+      "pair_id": "v30_pair_010",
+      "margin": 0.21277987957000732,
+      "add_order_index": 532,
+      "remove_order_index": 296,
+      "add_row": 3175,
+      "remove_row": 1709,
+      "add_score": 0.7090164422988892,
+      "remove_score": 0.49623656272888184
+    }
+  ],
+  "actions": [
+    {
+      "action_id": "v30_pair_001_add",
+      "order_id": "441995e6-e153-4e40-af0f-d0eb20ddcfa5",
+      "remove_rids": [],
+      "add_rids": [
+        "#-1:53f23b3e-c801-45d7-8d31-1cb8b8809946"
+      ],
+      "source": "v30_cross_order_meta",
+      "expected_gain": 0.6917364001274109,
+      "evidence": {
+        "pair_id": "v30_pair_001",
+        "node_score": 0.8895386457443237,
+        "pair_margin": 0.6917364001274109,
+        "title": "单板输入电压异常告警"
+      }
+    },
+    {
+      "action_id": "v30_pair_001_remove",
+      "order_id": "8106c960-6510-43b1-af25-b3c91388c598",
+      "remove_rids": [
+        "#-1:d1108dd6-92f1-4970-9cd2-912857e84b72"
+      ],
+      "add_rids": [],
+      "source": "v30_cross_order_meta",
+      "expected_gain": 0.6917364001274109,
+      "evidence": {
+        "pair_id": "v30_pair_001",
+        "node_score": 0.19780226051807404,
+        "pair_margin": 0.6917364001274109,
+        "title": "射频单元IR接口异常告警"
+      }
+    },
+    {
+      "action_id": "v30_pair_002_add",
+      "order_id": "af26c607-3f9d-4a37-8d4d-a809bfccd1f6",
+      "remove_rids": [],
+      "add_rids": [
+        "#-1:21b56b75-9b57-4986-9f58-9f1e28c2c979"
+      ],
+      "source": "v30_cross_order_meta",
+      "expected_gain": 0.5564231276512146,
+      "evidence": {
+        "pair_id": "v30_pair_002",
+        "node_score": 0.8297380208969116,
+        "pair_margin": 0.5564231276512146,
+        "title": "小区关断告警"
+      }
+    },
+    {
+      "action_id": "v30_pair_002_remove",
+      "order_id": "a3645153-27f5-4b8c-9e3a-bc84cfd7c653",
+      "remove_rids": [
+        "#-1:fe0aed2a-0446-4bba-8836-7bf35d20cd0b"
+      ],
+      "add_rids": [],
+      "source": "v30_cross_order_meta",
+      "expected_gain": 0.5564231276512146,
+      "evidence": {
+        "pair_id": "v30_pair_002",
+        "node_score": 0.273314893245697,
+        "pair_margin": 0.5564231276512146,
+        "title": "射频单元直流掉电告警"
+      }
+    },
+    {
+      "action_id": "v30_pair_003_add",
+      "order_id": "625ffce7-65c5-4657-9104-4148b4113130",
+      "remove_rids": [],
+      "add_rids": [
+        "#-1:a8f28178-4795-4f26-84d6-1791944fb245"
+      ],
+      "source": "v30_cross_order_meta",
+      "expected_gain": 0.49287182092666626,
+      "evidence": {
+        "pair_id": "v30_pair_003",
+        "node_score": 0.8070818185806274,
+        "pair_margin": 0.49287182092666626,
+        "title": "输入电源断"
+      }
+    },
+    {
+      "action_id": "v30_pair_003_remove",
+      "order_id": "9738b42a-7360-4763-8895-0e84599b4d60",
+      "remove_rids": [
+        "#-1:18d342c5-d25e-45f4-9b1d-dcbdba1120bc"
+      ],
+      "add_rids": [],
+      "source": "v30_cross_order_meta",
+      "expected_gain": 0.49287182092666626,
+      "evidence": {
+        "pair_id": "v30_pair_003",
+        "node_score": 0.3142099976539612,
+        "pair_margin": 0.49287182092666626,
+        "title": "BBU CPRI接口异常告警"
+      }
+    },
+    {
+      "action_id": "v30_pair_004_add",
+      "order_id": "1117ad03-8891-4bf6-854c-612bf19fdae4",
+      "remove_rids": [],
+      "add_rids": [
+        "#-1:08baefd1-6af0-4be4-88f5-6fa77d069d9d"
+      ],
+      "source": "v30_cross_order_meta",
+      "expected_gain": 0.4804568886756897,
+      "evidence": {
+        "pair_id": "v30_pair_004",
+        "node_score": 0.8054361343383789,
+        "pair_margin": 0.4804568886756897,
+        "title": "小区关断告警"
+      }
+    },
+    {
+      "action_id": "v30_pair_004_remove",
+      "order_id": "25a37559-7249-4fe0-bfd9-97007b9f7c5d",
+      "remove_rids": [
+        "#-1:622a2277-8e4d-4b77-aefb-1f90747752a2"
+      ],
+      "add_rids": [],
+      "source": "v30_cross_order_meta",
+      "expected_gain": 0.4804568886756897,
+      "evidence": {
+        "pair_id": "v30_pair_004",
+        "node_score": 0.3249792456626892,
+        "pair_margin": 0.4804568886756897,
+        "title": "NR分布单元小区TRP不可用告警"
+      }
+    },
+    {
+      "action_id": "v30_pair_005_add",
+      "order_id": "9f309a7d-e211-451b-975d-f25463fff535",
+      "remove_rids": [],
+      "add_rids": [
+        "#-1:76e9f86f-70ab-40c3-8072-731bbc9e9486"
+      ],
+      "source": "v30_cross_order_meta",
+      "expected_gain": 0.45708614587783813,
+      "evidence": {
+        "pair_id": "v30_pair_005",
+        "node_score": 0.7863795161247253,
+        "pair_margin": 0.45708614587783813,
+        "title": "射频单元IR接口异常告警"
+      }
+    },
+    {
+      "action_id": "v30_pair_005_remove",
+      "order_id": "5f31acb6-cb86-4488-af6a-f6d2d4d3a4d9",
+      "remove_rids": [
+        "#-1:fdd7bddb-e7cc-4a6f-8246-0c2cf89a221e"
+      ],
+      "add_rids": [],
+      "source": "v30_cross_order_meta",
+      "expected_gain": 0.45708614587783813,
+      "evidence": {
+        "pair_id": "v30_pair_005",
+        "node_score": 0.3292933702468872,
+        "pair_margin": 0.45708614587783813,
+        "title": "单板电源关断"
+      }
+    },
+    {
+      "action_id": "v30_pair_006_add",
+      "order_id": "eac28a99-2650-4dee-9f74-7054f480be19",
+      "remove_rids": [],
+      "add_rids": [
+        "#-1:a9cc9261-661b-41a3-89dd-0aee4886d4be"
+      ],
+      "source": "v30_cross_order_meta",
+      "expected_gain": 0.41210323572158813,
+      "evidence": {
+        "pair_id": "v30_pair_006",
+        "node_score": 0.7728694677352905,
+        "pair_margin": 0.41210323572158813,
+        "title": "以太网物理接口(ETPI) 信号丢失(LOS)"
+      }
+    },
+    {
+      "action_id": "v30_pair_006_remove",
+      "order_id": "1600d318-ecdc-4d10-816f-9f2c6987eb9f",
+      "remove_rids": [
+        "#-1:bc774a67-51fc-4c30-8eb8-1dd39cd33cf6"
+      ],
+      "add_rids": [],
+      "source": "v30_cross_order_meta",
+      "expected_gain": 0.41210323572158813,
+      "evidence": {
+        "pair_id": "v30_pair_006",
+        "node_score": 0.3607662320137024,
+        "pair_margin": 0.41210323572158813,
+        "title": "RRU链路断"
+      }
+    },
+    {
+      "action_id": "v30_pair_007_add",
+      "order_id": "9ca5e12f-f73f-472c-99b3-8e74c01272fe",
+      "remove_rids": [],
+      "add_rids": [
+        "#-1:247d7153-ba7f-4012-86c3-2d6b9b7e9730"
+      ],
+      "source": "v30_cross_order_meta",
+      "expected_gain": 0.32045090198516846,
+      "evidence": {
+        "pair_id": "v30_pair_007",
+        "node_score": 0.74679034948349,
+        "pair_margin": 0.32045090198516846,
+        "title": "单板过温保护下电"
+      }
+    },
+    {
+      "action_id": "v30_pair_007_remove",
+      "order_id": "f57b8fbe-bd33-4dc7-95ef-fbffa4552754",
+      "remove_rids": [
+        "#-1:245caebe-e60c-43fc-b1a4-ebdb838df6d1"
+      ],
+      "add_rids": [],
+      "source": "v30_cross_order_meta",
+      "expected_gain": 0.32045090198516846,
+      "evidence": {
+        "pair_id": "v30_pair_007",
+        "node_score": 0.42633944749832153,
+        "pair_margin": 0.32045090198516846,
+        "title": "光模块接收光功率异常"
+      }
+    },
+    {
+      "action_id": "v30_pair_008_add",
+      "order_id": "fad26f6d-c956-4598-9639-39fef649b32c",
+      "remove_rids": [],
+      "add_rids": [
+        "#-1:d779f103-178f-4a59-8d44-e8a5ee182ba1"
+      ],
+      "source": "v30_cross_order_meta",
+      "expected_gain": 0.28874069452285767,
+      "evidence": {
+        "pair_id": "v30_pair_008",
+        "node_score": 0.7346486449241638,
+        "pair_margin": 0.28874069452285767,
+        "title": "设备掉电"
+      }
+    },
+    {
+      "action_id": "v30_pair_008_remove",
+      "order_id": "82f3997a-668c-4663-9dd6-a0a298f14d00",
+      "remove_rids": [
+        "#-1:24a89126-1a36-4305-b0f5-0a60e349ead1"
+      ],
+      "add_rids": [],
+      "source": "v30_cross_order_meta",
+      "expected_gain": 0.28874069452285767,
+      "evidence": {
+        "pair_id": "v30_pair_008",
+        "node_score": 0.44590795040130615,
+        "pair_margin": 0.28874069452285767,
+        "title": "射频单元IR接口异常告警"
+      }
+    },
+    {
+      "action_id": "v30_pair_009_add",
+      "order_id": "8df78ab7-ca49-44f4-9fc2-1427cf850964",
+      "remove_rids": [],
+      "add_rids": [
+        "#-1:035c60d5-eab4-43c9-ab1f-920eca60a16b"
+      ],
+      "source": "v30_cross_order_meta",
+      "expected_gain": 0.2275756299495697,
+      "evidence": {
+        "pair_id": "v30_pair_009",
+        "node_score": 0.7228025197982788,
+        "pair_margin": 0.2275756299495697,
+        "title": "网元连接中断"
+      }
+    },
+    {
+      "action_id": "v30_pair_009_remove",
+      "order_id": "5f0b3c7f-806d-4622-a671-5d23ee09c827",
+      "remove_rids": [
+        "#-1:2a0b69d3-858a-49e0-9b6a-e1cf21eb55bb"
+      ],
+      "add_rids": [],
+      "source": "v30_cross_order_meta",
+      "expected_gain": 0.2275756299495697,
+      "evidence": {
+        "pair_id": "v30_pair_009",
+        "node_score": 0.4952268898487091,
+        "pair_margin": 0.2275756299495697,
+        "title": "RRU链路断"
+      }
+    },
+    {
+      "action_id": "v30_pair_010_add",
+      "order_id": "faa00ed5-c0b9-445e-98ac-671035a4a239",
+      "remove_rids": [],
+      "add_rids": [
+        "#-1:76e3a0a3-1943-4a4c-ad08-d31dc732cb73"
+      ],
+      "source": "v30_cross_order_meta",
+      "expected_gain": 0.21277987957000732,
+      "evidence": {
+        "pair_id": "v30_pair_010",
+        "node_score": 0.7090164422988892,
+        "pair_margin": 0.21277987957000732,
+        "title": "ETH_LOS"
+      }
+    },
+    {
+      "action_id": "v30_pair_010_remove",
+      "order_id": "947bec57-c9f8-47ad-aa45-37cb9be6c798",
+      "remove_rids": [
+        "#-1:b894a7ec-dc86-4656-971a-c1b10121a044"
+      ],
+      "add_rids": [],
+      "source": "v30_cross_order_meta",
+      "expected_gain": 0.21277987957000732,
+      "evidence": {
+        "pair_id": "v30_pair_010",
+        "node_score": 0.49623656272888184,
+        "pair_margin": 0.21277987957000732,
+        "title": "光口接收链路故障"
+      }
+    }
+  ],
+  "predictions": 1035,
+  "orders": 546,
+  "sha256": "beff344841df5a6f1393c9161529b700d15971a2d3ab414985fa1ff2b36609af",
+  "status": "exploratory_not_scored",
+  "target_condition": "all 10 pairs net +1 gives TP=968, F1=0.931217",
+  "warning": "V30 OOF/public results used an older base; this current-base rebuild is unscored."
+}

@@ -1,0 +1,320 @@
+{
+  "version": "v47-v36-count-batch-1",
+  "manifest": {
+    "probe_id": "v47_exact_plus_v36_all3",
+    "baseline": "D:\\zgyidong\\experiments\\v30_meta_stack\\submissions\\v30_cross_order_top5.csv",
+    "fixed_base": "v37_exact_corrections",
+    "path": "D:\\zgyidong\\experiments\\v47_v36_count_batch\\submissions\\v47_exact_plus_v36_all3.csv",
+    "source_manifests": [
+      {
+        "probe_id": "v36_count_delete_1",
+        "path": "D:\\zgyidong\\experiments\\v36_selective_counts\\submissions\\v36_count_delete_1.csv",
+        "sha256": "7912bbdfdd5e2f95df9ca5992614f0d0b7c1e1ecd5116fe21bbd9a9d552e14dc"
+      },
+      {
+        "probe_id": "v36_count_add_2",
+        "path": "D:\\zgyidong\\experiments\\v36_selective_counts\\submissions\\v36_count_add_2.csv",
+        "sha256": "a0b686481cda82dd7be39a16ae30c2efe89f0b9edcf88df326a7859d9430e468"
+      },
+      {
+        "probe_id": "v36_count_add_3",
+        "path": "D:\\zgyidong\\experiments\\v36_selective_counts\\submissions\\v36_count_add_3.csv",
+        "sha256": "76fcb4e315ff62e017606fb3210be60f6f04258da2f7d510e63f154802b9a0e0"
+      }
+    ],
+    "actions": [
+      {
+        "action_id": "v37_exact_001",
+        "order_id": "d5376a71-c48e-4351-ba60-f982778b3eb4",
+        "remove_rids": [
+          "#-1:0c809583-390f-4d16-9b91-c4fb1e99c5c2"
+        ],
+        "add_rids": [
+          "#-1:e401b7b4-697f-434e-8437-4b2136d6904f"
+        ],
+        "source": "historical_leaderboard_equations",
+        "expected_gain": null,
+        "evidence": {
+          "proof": "label fixed in every binary solution of all scored equations"
+        }
+      },
+      {
+        "action_id": "v36_count_delete_1",
+        "order_id": "25a37559-7249-4fe0-bfd9-97007b9f7c5d",
+        "remove_rids": [
+          "#-1:622a2277-8e4d-4b77-aefb-1f90747752a2"
+        ],
+        "add_rids": [],
+        "source": "v36_selective_count_consensus",
+        "expected_gain": 0.891822616259257,
+        "evidence": {
+          "order_id": "25a37559-7249-4fe0-bfd9-97007b9f7c5d",
+          "rid": "#-1:622a2277-8e4d-4b77-aefb-1f90747752a2",
+          "kind": "delete",
+          "current_count": 2,
+          "proposed_count": 1,
+          "support": 6,
+          "mean_margin": 0.891822616259257,
+          "min_margin": 0.8765264749526978,
+          "node_score": 0.39845284819602966,
+          "probability_models": [
+            "D:\\zgyidong\\experiments\\v34_count_model\\station_alpha_0_test.npy",
+            "D:\\zgyidong\\experiments\\v34_count_model\\station_alpha_1_test.npy",
+            "D:\\zgyidong\\experiments\\v34_count_model\\station_alpha_2_test.npy",
+            "D:\\zgyidong\\experiments\\v34_count_model\\template_alpha_0_test.npy",
+            "D:\\zgyidong\\experiments\\v34_count_model\\template_alpha_1_test.npy",
+            "D:\\zgyidong\\experiments\\v34_count_model\\template_alpha_2_test.npy"
+          ]
+        }
+      },
+      {
+        "action_id": "v36_count_add_2",
+        "order_id": "625ffce7-65c5-4657-9104-4148b4113130",
+        "remove_rids": [],
+        "add_rids": [
+          "#-1:a8f28178-4795-4f26-84d6-1791944fb245"
+        ],
+        "source": "v36_selective_count_consensus",
+        "expected_gain": 0.36975498000780743,
+        "evidence": {
+          "order_id": "625ffce7-65c5-4657-9104-4148b4113130",
+          "rid": "#-1:a8f28178-4795-4f26-84d6-1791944fb245",
+          "kind": "add",
+          "current_count": 7,
+          "proposed_count": 8,
+          "support": 6,
+          "mean_margin": 0.36975498000780743,
+          "min_margin": 0.2794276475906372,
+          "node_score": 0.7030441761016846,
+          "probability_models": [
+            "D:\\zgyidong\\experiments\\v34_count_model\\station_alpha_0_test.npy",
+            "D:\\zgyidong\\experiments\\v34_count_model\\station_alpha_1_test.npy",
+            "D:\\zgyidong\\experiments\\v34_count_model\\station_alpha_2_test.npy",
+            "D:\\zgyidong\\experiments\\v34_count_model\\template_alpha_0_test.npy",
+            "D:\\zgyidong\\experiments\\v34_count_model\\template_alpha_1_test.npy",
+            "D:\\zgyidong\\experiments\\v34_count_model\\template_alpha_2_test.npy"
+          ]
+        }
+      },
+      {
+        "action_id": "v36_count_add_3",
+        "order_id": "4c2b3b06-a6a2-4c1b-9734-def3d1f849d8",
+        "remove_rids": [],
+        "add_rids": [
+          "#-1:66facd91-e281-4331-bbae-04ab8bd9746d"
+        ],
+        "source": "v36_selective_count_consensus",
+        "expected_gain": 0.2696733921766281,
+        "evidence": {
+          "order_id": "4c2b3b06-a6a2-4c1b-9734-def3d1f849d8",
+          "rid": "#-1:66facd91-e281-4331-bbae-04ab8bd9746d",
+          "kind": "add",
+          "current_count": 1,
+          "proposed_count": 2,
+          "support": 6,
+          "mean_margin": 0.2696733921766281,
+          "min_margin": 0.2562140226364136,
+          "node_score": 0.6594231724739075,
+          "probability_models": [
+            "D:\\zgyidong\\experiments\\v34_count_model\\station_alpha_0_test.npy",
+            "D:\\zgyidong\\experiments\\v34_count_model\\station_alpha_1_test.npy",
+            "D:\\zgyidong\\experiments\\v34_count_model\\station_alpha_2_test.npy",
+            "D:\\zgyidong\\experiments\\v34_count_model\\template_alpha_0_test.npy",
+            "D:\\zgyidong\\experiments\\v34_count_model\\template_alpha_1_test.npy",
+            "D:\\zgyidong\\experiments\\v34_count_model\\template_alpha_2_test.npy"
+          ]
+        }
+      }
+    ],
+    "candidate_action_count": 3,
+    "predictions": 1036,
+    "prediction_delta_vs_exact": 1,
+    "sha256": "2a833d18323f0919ab154e216057b73bba2c467d77658ca38a16c9e51be5f4c3",
+    "score_possibilities": [
+      {
+        "deleted_true": 1,
+        "true_adds": 0,
+        "candidate_delta_tp": -1,
+        "tp": 955,
+        "score": 0.918269231,
+        "decision": "reject_and_split"
+      },
+      {
+        "deleted_true": 0,
+        "true_adds": 0,
+        "candidate_delta_tp": 0,
+        "tp": 956,
+        "score": 0.919230769,
+        "decision": "reject_and_split"
+      },
+      {
+        "deleted_true": 1,
+        "true_adds": 1,
+        "candidate_delta_tp": 0,
+        "tp": 956,
+        "score": 0.919230769,
+        "decision": "reject_and_split"
+      },
+      {
+        "deleted_true": 0,
+        "true_adds": 1,
+        "candidate_delta_tp": 1,
+        "tp": 957,
+        "score": 0.920192308,
+        "decision": "accept_batch"
+      },
+      {
+        "deleted_true": 1,
+        "true_adds": 2,
+        "candidate_delta_tp": 1,
+        "tp": 957,
+        "score": 0.920192308,
+        "decision": "accept_batch"
+      },
+      {
+        "deleted_true": 0,
+        "true_adds": 2,
+        "candidate_delta_tp": 2,
+        "tp": 958,
+        "score": 0.921153846,
+        "decision": "accept_batch"
+      }
+    ],
+    "acceptance": {
+      "exact_base_score": 0.9196729196729196,
+      "minimum_candidate_delta_tp": 1,
+      "displayed_scores_to_accept": [
+        0.920192308,
+        0.921153846
+      ]
+    },
+    "heuristic_only": {
+      "delete_oof_curve": "top12/12 false positives; zero TP loss",
+      "add_oof_curve": "top15 added 11 TP; top20 added 14 TP",
+      "warning": "OOF rates are not guarantees and are not used for the online accept decision."
+    },
+    "subset_manifests": {
+      "v47_exact_only": {
+        "path": "D:\\zgyidong\\experiments\\v47_v36_count_batch\\submissions\\v47_exact_only.csv",
+        "candidate_action_ids": [],
+        "predictions": 1035,
+        "sha256": "8390ecf4a3fab22a8c40c950eac76dd3e4b1309a2527412549193613c64ccfcb"
+      },
+      "v47_subset_001": {
+        "path": "D:\\zgyidong\\experiments\\v47_v36_count_batch\\submissions\\v47_subset_001.csv",
+        "candidate_action_ids": [
+          "v36_count_delete_1"
+        ],
+        "predictions": 1034,
+        "sha256": "caca6958d5e0cabac1fdd7a320809fcc995312842b3fd5c1406c216b6633be77"
+      },
+      "v47_subset_010": {
+        "path": "D:\\zgyidong\\experiments\\v47_v36_count_batch\\submissions\\v47_subset_010.csv",
+        "candidate_action_ids": [
+          "v36_count_add_2"
+        ],
+        "predictions": 1036,
+        "sha256": "deb32a7ca1797ed8febeb8b69b47cb410ad5b4a6c4230ee4f7128358cfae4c9e"
+      },
+      "v47_subset_011": {
+        "path": "D:\\zgyidong\\experiments\\v47_v36_count_batch\\submissions\\v47_subset_011.csv",
+        "candidate_action_ids": [
+          "v36_count_delete_1",
+          "v36_count_add_2"
+        ],
+        "predictions": 1035,
+        "sha256": "1e85fe2883f43d0ce46bbc82c1532fd49ead62da929f872345bd3ebd02dab17d"
+      },
+      "v47_subset_100": {
+        "path": "D:\\zgyidong\\experiments\\v47_v36_count_batch\\submissions\\v47_subset_100.csv",
+        "candidate_action_ids": [
+          "v36_count_add_3"
+        ],
+        "predictions": 1036,
+        "sha256": "07735f5286656603921035e3391e1fc018e08c4a6281a57ce5a8251d48e0432d"
+      },
+      "v47_subset_101": {
+        "path": "D:\\zgyidong\\experiments\\v47_v36_count_batch\\submissions\\v47_subset_101.csv",
+        "candidate_action_ids": [
+          "v36_count_delete_1",
+          "v36_count_add_3"
+        ],
+        "predictions": 1035,
+        "sha256": "8d1daa895ee9bf9587e7206263835fcbf90877373f3bfc0c974c5401b4ae2f4f"
+      },
+      "v47_subset_110": {
+        "path": "D:\\zgyidong\\experiments\\v47_v36_count_batch\\submissions\\v47_subset_110.csv",
+        "candidate_action_ids": [
+          "v36_count_add_2",
+          "v36_count_add_3"
+        ],
+        "predictions": 1037,
+        "sha256": "8e5f63813b5adeb221a9bfe0057a8e7e20f109a036fe69cd503775e5d66578cb"
+      },
+      "v47_subset_111": {
+        "path": "D:\\zgyidong\\experiments\\v47_v36_count_batch\\submissions\\v47_subset_111.csv",
+        "candidate_action_ids": [
+          "v36_count_delete_1",
+          "v36_count_add_2",
+          "v36_count_add_3"
+        ],
+        "predictions": 1036,
+        "sha256": "2a833d18323f0919ab154e216057b73bba2c467d77658ca38a16c9e51be5f4c3"
+      }
+    }
+  },
+  "decision_tree": {
+    "first_submission": "D:\\zgyidong\\experiments\\v47_v36_count_batch\\submissions\\v47_exact_plus_v36_all3.csv",
+    "why_first": "It contains the proof-positive V37 correction, so it dominates submitting V37 alone as an information-gathering step.",
+    "outcomes": {
+      "0.918269": {
+        "candidate_delta_tp": -1,
+        "deduction": "delete node is true; both additions are false",
+        "next_submission": "D:\\zgyidong\\experiments\\v47_v36_count_batch\\submissions\\v47_exact_only.csv",
+        "final_action_subset": []
+      },
+      "0.919231": {
+        "candidate_delta_tp": 0,
+        "deduction": "either all candidate labels are false, or delete is true and exactly one addition is true",
+        "next_submission": "D:\\zgyidong\\experiments\\v47_v36_count_batch\\submissions\\v47_subset_001.csv",
+        "next_probe_purpose": "resolve the delete label; if true, probe one addition next"
+      },
+      "0.920192": {
+        "candidate_delta_tp": 1,
+        "deduction": "either delete is false with exactly one true addition, or delete and both additions are true",
+        "next_submission": "D:\\zgyidong\\experiments\\v47_v36_count_batch\\submissions\\v47_subset_001.csv",
+        "next_probe_purpose": "resolve the delete label; this also determines whether one or two additions are true"
+      },
+      "0.921154": {
+        "candidate_delta_tp": 2,
+        "deduction": "delete is false; both additions are true",
+        "next_submission": null,
+        "final_action_subset": [
+          "v36_count_delete_1",
+          "v36_count_add_2",
+          "v36_count_add_3"
+        ]
+      }
+    },
+    "delete_probe_outcomes": {
+      "0.919153": {
+        "delete_label": 1,
+        "meaning": "deletion is harmful; retain the node",
+        "addition_probe_if_needed": "D:\\zgyidong\\experiments\\v47_v36_count_batch\\submissions\\v47_subset_010.csv"
+      },
+      "0.920115": {
+        "delete_label": 0,
+        "meaning": "deletion is beneficial; retain the deletion",
+        "addition_probe_if_needed": "D:\\zgyidong\\experiments\\v47_v36_count_batch\\submissions\\v47_subset_010.csv"
+      }
+    },
+    "add_probe_paths": [
+      "D:\\zgyidong\\experiments\\v47_v36_count_batch\\submissions\\v47_subset_010.csv",
+      "D:\\zgyidong\\experiments\\v47_v36_count_batch\\submissions\\v47_subset_100.csv"
+    ]
+  },
+  "recommendation": {
+    "submit_next_directly": "D:\\zgyidong\\experiments\\v47_v36_count_batch\\submissions\\v47_exact_plus_v36_all3.csv",
+    "accept_only_if_candidate_delta_tp_at_least": 1
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "batch_id": "day02_consensus_swap4",
+  "kind": "ten_day_probe",
+  "parent": null,
+  "status": "scored",
+  "decision": "reject",
+  "action_ids": [
+    "v28_consensus_01_abe0d010"
+  ],
+  "actions": [
+    {
+      "action_id": "v28_consensus_01_abe0d010",
+      "order_id": "abe0d010-6809-4a4d-9ae6-ee7f320f699d",
+      "remove_rids": [
+        "#-1:4a00b491-52e2-45cb-ae01-72137e3fe6a4"
+      ],
+      "add_rids": [
+        "#-1:275f37ad-3297-49f6-82d2-57406a713ac1"
+      ],
+      "source": "v28_consensus",
+      "subtype": "majority_swap",
+      "expected_gain": 0.5,
+      "evidence": {
+        "add_votes": 4,
+        "remove_votes": 1,
+        "models": [
+          "D:\\zgyidong\\codexgz\\v14\\result_record_v14_final.csv",
+          "D:\\zgyidong\\codexgz\\v13\\result_record_v13_meta_1059.csv",
+          "D:\\zgyidong\\codexgz\\v12\\v12_candidate_1059.csv",
+          "D:\\zgyidong\\experiments\\submissions\\result_record_simple_alarm_prior_1059.csv",
+          "D:\\zgyidong\\experiments\\v25_semantic_router\\submissions\\result_record_pure_statistical_p1059.csv",
+          "D:\\zgyidong\\experiments\\v26_selective_router\\submissions\\v26_selective_error_router_p1059.csv"
+        ]
+      }
+    }
+  ],
+  "validation": {
+    "actions": 1,
+    "orders": 1,
+    "removed": 1,
+    "added": 1,
+    "prediction_delta": 0,
+    "sources": {
+      "v28_consensus": 1
+    }
+  },
+  "predictions": 1046,
+  "prediction_delta": 0,
+  "submission": "experiments\\v28_ten_day_campaign\\submissions\\day02_consensus_swap4.csv",
+  "manifest": "experiments\\v28_ten_day_campaign\\manifests\\day02_consensus_swap4.json",
+  "sha256": "bad4edf82eec99ea23d17cf29345770e76a6e48cd085cacb09fcbbb986c14c84",
+  "score_possibilities": [
+    {
+      "delta_tp": -1,
+      "tp": 954,
+      "score": 0.91291866
+    },
+    {
+      "delta_tp": 0,
+      "tp": 955,
+      "score": 0.913875598
+    },
+    {
+      "delta_tp": 1,
+      "tp": 956,
+      "score": 0.914832536
+    }
+  ],
+  "score": 0.912919,
+  "reconstructed_score": 0.9129186602870814,
+  "tp": 954,
+  "delta_tp": -1,
+  "score_gain": -0.000956937799043045
+}

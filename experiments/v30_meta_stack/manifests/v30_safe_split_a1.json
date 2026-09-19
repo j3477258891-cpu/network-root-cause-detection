@@ -1,0 +1,421 @@
+{
+  "probe_id": "v30_safe_split_a1",
+  "path": "D:\\zgyidong\\experiments\\v30_meta_stack\\submissions\\v30_safe_split_a1.csv",
+  "original_baseline": "D:\\zgyidong\\experiments\\v29_domain_ranker\\submissions\\day05_delete_verified.csv",
+  "verified_base_probe": "v30_cross_order_top5",
+  "verified_base_tp": 955,
+  "verified_base_actions": [
+    {
+      "action_id": "v30_pair_001_add",
+      "order_id": "35dcec5d-5286-4e33-bd22-42708535b5c8",
+      "remove_rids": [],
+      "add_rids": [
+        "#-1:969993f8-2571-4163-9b32-4b676304a6c9"
+      ],
+      "source": "v30_cross_order_meta",
+      "expected_gain": 0.8584081530570984,
+      "evidence": {
+        "pair_id": "v30_pair_001",
+        "node_score": 0.9443436861038208,
+        "pair_margin": 0.8584081530570984,
+        "title": "ETH_LOS"
+      }
+    },
+    {
+      "action_id": "v30_pair_001_remove",
+      "order_id": "49c5da74-b725-475e-a6b5-024685ac2658",
+      "remove_rids": [
+        "#-1:13f10988-2d6b-4080-be1b-771d9a74e377"
+      ],
+      "add_rids": [],
+      "source": "v30_cross_order_meta",
+      "expected_gain": 0.8584081530570984,
+      "evidence": {
+        "pair_id": "v30_pair_001",
+        "node_score": 0.08593551069498062,
+        "pair_margin": 0.8584081530570984,
+        "title": "射频单元驻波告警"
+      }
+    },
+    {
+      "action_id": "v30_pair_002_add",
+      "order_id": "25a37559-7249-4fe0-bfd9-97007b9f7c5d",
+      "remove_rids": [],
+      "add_rids": [
+        "#-1:08c72d0d-bea2-430a-b3ae-84deb00b3a99"
+      ],
+      "source": "v30_cross_order_meta",
+      "expected_gain": 0.6483882665634155,
+      "evidence": {
+        "pair_id": "v30_pair_002",
+        "node_score": 0.9176504611968994,
+        "pair_margin": 0.6483882665634155,
+        "title": "射频单元时钟异常告警"
+      }
+    },
+    {
+      "action_id": "v30_pair_002_remove",
+      "order_id": "bb26e0b0-996a-42cf-ba23-b62c3335e5fb",
+      "remove_rids": [
+        "#-1:8715562f-9fea-408e-b718-f46aa53162bd"
+      ],
+      "add_rids": [],
+      "source": "v30_cross_order_meta",
+      "expected_gain": 0.6483882665634155,
+      "evidence": {
+        "pair_id": "v30_pair_002",
+        "node_score": 0.2692621648311615,
+        "pair_margin": 0.6483882665634155,
+        "title": "单板电源关断"
+      }
+    },
+    {
+      "action_id": "v30_pair_003_add",
+      "order_id": "43a52adc-0332-479c-9e4a-f2642ff64db8",
+      "remove_rids": [],
+      "add_rids": [
+        "#-1:99f8512f-1c76-4fcd-858e-f7f021edc875"
+      ],
+      "source": "v30_cross_order_meta",
+      "expected_gain": 0.6287355422973633,
+      "evidence": {
+        "pair_id": "v30_pair_003",
+        "node_score": 0.9125638604164124,
+        "pair_margin": 0.6287355422973633,
+        "title": "射频单元维护链路异常告警"
+      }
+    },
+    {
+      "action_id": "v30_pair_003_remove",
+      "order_id": "edf35c43-b3c6-4ee0-b82e-b19e942bec89",
+      "remove_rids": [
+        "#-1:0e1fd653-10ea-45f9-a6f4-d6150bfbbb02"
+      ],
+      "add_rids": [],
+      "source": "v30_cross_order_meta",
+      "expected_gain": 0.6287355422973633,
+      "evidence": {
+        "pair_id": "v30_pair_003",
+        "node_score": 0.2838282883167267,
+        "pair_margin": 0.6287355422973633,
+        "title": "射频单元直流掉电告警"
+      }
+    },
+    {
+      "action_id": "v30_pair_004_add",
+      "order_id": "d14a7ca0-eeb5-44b8-850a-fdc536f03f2c",
+      "remove_rids": [],
+      "add_rids": [
+        "#-1:43925f7b-78f6-4739-95a6-06ff16cf31a1"
+      ],
+      "source": "v30_cross_order_meta",
+      "expected_gain": 0.5877954959869385,
+      "evidence": {
+        "pair_id": "v30_pair_004",
+        "node_score": 0.8959628343582153,
+        "pair_margin": 0.5877954959869385,
+        "title": "射频单元维护链路异常告警"
+      }
+    },
+    {
+      "action_id": "v30_pair_004_remove",
+      "order_id": "e8dcd7dc-771c-4366-a5b1-8a1ea25c54e3",
+      "remove_rids": [
+        "#-1:8bb1ab76-3bd2-4b57-b3ab-bfae954998f8"
+      ],
+      "add_rids": [],
+      "source": "v30_cross_order_meta",
+      "expected_gain": 0.5877954959869385,
+      "evidence": {
+        "pair_id": "v30_pair_004",
+        "node_score": 0.30816733837127686,
+        "pair_margin": 0.5877954959869385,
+        "title": "BBU CPRI接口异常告警"
+      }
+    },
+    {
+      "action_id": "v30_pair_005_add",
+      "order_id": "0052146f-c00c-4786-8d58-c2db3ec6baa0",
+      "remove_rids": [],
+      "add_rids": [
+        "#-1:4ca39af0-1573-4ce4-8a37-ea354c733cd9"
+      ],
+      "source": "v30_cross_order_meta",
+      "expected_gain": 0.5642058849334717,
+      "evidence": {
+        "pair_id": "v30_pair_005",
+        "node_score": 0.876144528388977,
+        "pair_margin": 0.5642058849334717,
+        "title": "单板不在位"
+      }
+    },
+    {
+      "action_id": "v30_pair_005_remove",
+      "order_id": "6c596cdd-fd3a-44e3-ba8a-3deff75209ee",
+      "remove_rids": [
+        "#-1:4e367429-ffd9-4a23-bc77-e74ff046d5ea"
+      ],
+      "add_rids": [],
+      "source": "v30_cross_order_meta",
+      "expected_gain": 0.5642058849334717,
+      "evidence": {
+        "pair_id": "v30_pair_005",
+        "node_score": 0.31193864345550537,
+        "pair_margin": 0.5642058849334717,
+        "title": "单板电源关断"
+      }
+    }
+  ],
+  "source_scored_probe": "v30_top5_verified_plus_safe5",
+  "source_extension_delta_tp": -1,
+  "subset_pair_ids": [
+    "v30_safe_ext_001"
+  ],
+  "subset_actions": [
+    {
+      "action_id": "v30_safe_ext_001_add",
+      "order_id": "1117ad03-8891-4bf6-854c-612bf19fdae4",
+      "remove_rids": [],
+      "add_rids": [
+        "#-1:bea1860d-537e-4e4b-ba53-08f5ce0bd7dc"
+      ],
+      "source": "v30_cross_order_meta",
+      "expected_gain": 0.479153037071228,
+      "evidence": {
+        "pair_id": "v30_safe_ext_001",
+        "node_score": 0.7933630347251892,
+        "pair_margin": 0.479153037071228,
+        "title": "小区关断告警"
+      }
+    },
+    {
+      "action_id": "v30_safe_ext_001_remove",
+      "order_id": "9738b42a-7360-4763-8895-0e84599b4d60",
+      "remove_rids": [
+        "#-1:18d342c5-d25e-45f4-9b1d-dcbdba1120bc"
+      ],
+      "add_rids": [],
+      "source": "v30_cross_order_meta",
+      "expected_gain": 0.479153037071228,
+      "evidence": {
+        "pair_id": "v30_safe_ext_001",
+        "node_score": 0.3142099976539612,
+        "pair_margin": 0.479153037071228,
+        "title": "BBU CPRI接口异常告警"
+      }
+    }
+  ],
+  "actions": [
+    {
+      "action_id": "v30_pair_001_add",
+      "order_id": "35dcec5d-5286-4e33-bd22-42708535b5c8",
+      "remove_rids": [],
+      "add_rids": [
+        "#-1:969993f8-2571-4163-9b32-4b676304a6c9"
+      ],
+      "source": "v30_cross_order_meta",
+      "expected_gain": 0.8584081530570984,
+      "evidence": {
+        "pair_id": "v30_pair_001",
+        "node_score": 0.9443436861038208,
+        "pair_margin": 0.8584081530570984,
+        "title": "ETH_LOS"
+      }
+    },
+    {
+      "action_id": "v30_pair_001_remove",
+      "order_id": "49c5da74-b725-475e-a6b5-024685ac2658",
+      "remove_rids": [
+        "#-1:13f10988-2d6b-4080-be1b-771d9a74e377"
+      ],
+      "add_rids": [],
+      "source": "v30_cross_order_meta",
+      "expected_gain": 0.8584081530570984,
+      "evidence": {
+        "pair_id": "v30_pair_001",
+        "node_score": 0.08593551069498062,
+        "pair_margin": 0.8584081530570984,
+        "title": "射频单元驻波告警"
+      }
+    },
+    {
+      "action_id": "v30_pair_002_add",
+      "order_id": "25a37559-7249-4fe0-bfd9-97007b9f7c5d",
+      "remove_rids": [],
+      "add_rids": [
+        "#-1:08c72d0d-bea2-430a-b3ae-84deb00b3a99"
+      ],
+      "source": "v30_cross_order_meta",
+      "expected_gain": 0.6483882665634155,
+      "evidence": {
+        "pair_id": "v30_pair_002",
+        "node_score": 0.9176504611968994,
+        "pair_margin": 0.6483882665634155,
+        "title": "射频单元时钟异常告警"
+      }
+    },
+    {
+      "action_id": "v30_pair_002_remove",
+      "order_id": "bb26e0b0-996a-42cf-ba23-b62c3335e5fb",
+      "remove_rids": [
+        "#-1:8715562f-9fea-408e-b718-f46aa53162bd"
+      ],
+      "add_rids": [],
+      "source": "v30_cross_order_meta",
+      "expected_gain": 0.6483882665634155,
+      "evidence": {
+        "pair_id": "v30_pair_002",
+        "node_score": 0.2692621648311615,
+        "pair_margin": 0.6483882665634155,
+        "title": "单板电源关断"
+      }
+    },
+    {
+      "action_id": "v30_pair_003_add",
+      "order_id": "43a52adc-0332-479c-9e4a-f2642ff64db8",
+      "remove_rids": [],
+      "add_rids": [
+        "#-1:99f8512f-1c76-4fcd-858e-f7f021edc875"
+      ],
+      "source": "v30_cross_order_meta",
+      "expected_gain": 0.6287355422973633,
+      "evidence": {
+        "pair_id": "v30_pair_003",
+        "node_score": 0.9125638604164124,
+        "pair_margin": 0.6287355422973633,
+        "title": "射频单元维护链路异常告警"
+      }
+    },
+    {
+      "action_id": "v30_pair_003_remove",
+      "order_id": "edf35c43-b3c6-4ee0-b82e-b19e942bec89",
+      "remove_rids": [
+        "#-1:0e1fd653-10ea-45f9-a6f4-d6150bfbbb02"
+      ],
+      "add_rids": [],
+      "source": "v30_cross_order_meta",
+      "expected_gain": 0.6287355422973633,
+      "evidence": {
+        "pair_id": "v30_pair_003",
+        "node_score": 0.2838282883167267,
+        "pair_margin": 0.6287355422973633,
+        "title": "射频单元直流掉电告警"
+      }
+    },
+    {
+      "action_id": "v30_pair_004_add",
+      "order_id": "d14a7ca0-eeb5-44b8-850a-fdc536f03f2c",
+      "remove_rids": [],
+      "add_rids": [
+        "#-1:43925f7b-78f6-4739-95a6-06ff16cf31a1"
+      ],
+      "source": "v30_cross_order_meta",
+      "expected_gain": 0.5877954959869385,
+      "evidence": {
+        "pair_id": "v30_pair_004",
+        "node_score": 0.8959628343582153,
+        "pair_margin": 0.5877954959869385,
+        "title": "射频单元维护链路异常告警"
+      }
+    },
+    {
+      "action_id": "v30_pair_004_remove",
+      "order_id": "e8dcd7dc-771c-4366-a5b1-8a1ea25c54e3",
+      "remove_rids": [
+        "#-1:8bb1ab76-3bd2-4b57-b3ab-bfae954998f8"
+      ],
+      "add_rids": [],
+      "source": "v30_cross_order_meta",
+      "expected_gain": 0.5877954959869385,
+      "evidence": {
+        "pair_id": "v30_pair_004",
+        "node_score": 0.30816733837127686,
+        "pair_margin": 0.5877954959869385,
+        "title": "BBU CPRI接口异常告警"
+      }
+    },
+    {
+      "action_id": "v30_pair_005_add",
+      "order_id": "0052146f-c00c-4786-8d58-c2db3ec6baa0",
+      "remove_rids": [],
+      "add_rids": [
+        "#-1:4ca39af0-1573-4ce4-8a37-ea354c733cd9"
+      ],
+      "source": "v30_cross_order_meta",
+      "expected_gain": 0.5642058849334717,
+      "evidence": {
+        "pair_id": "v30_pair_005",
+        "node_score": 0.876144528388977,
+        "pair_margin": 0.5642058849334717,
+        "title": "单板不在位"
+      }
+    },
+    {
+      "action_id": "v30_pair_005_remove",
+      "order_id": "6c596cdd-fd3a-44e3-ba8a-3deff75209ee",
+      "remove_rids": [
+        "#-1:4e367429-ffd9-4a23-bc77-e74ff046d5ea"
+      ],
+      "add_rids": [],
+      "source": "v30_cross_order_meta",
+      "expected_gain": 0.5642058849334717,
+      "evidence": {
+        "pair_id": "v30_pair_005",
+        "node_score": 0.31193864345550537,
+        "pair_margin": 0.5642058849334717,
+        "title": "单板电源关断"
+      }
+    },
+    {
+      "action_id": "v30_safe_ext_001_add",
+      "order_id": "1117ad03-8891-4bf6-854c-612bf19fdae4",
+      "remove_rids": [],
+      "add_rids": [
+        "#-1:bea1860d-537e-4e4b-ba53-08f5ce0bd7dc"
+      ],
+      "source": "v30_cross_order_meta",
+      "expected_gain": 0.479153037071228,
+      "evidence": {
+        "pair_id": "v30_safe_ext_001",
+        "node_score": 0.7933630347251892,
+        "pair_margin": 0.479153037071228,
+        "title": "小区关断告警"
+      }
+    },
+    {
+      "action_id": "v30_safe_ext_001_remove",
+      "order_id": "9738b42a-7360-4763-8895-0e84599b4d60",
+      "remove_rids": [
+        "#-1:18d342c5-d25e-45f4-9b1d-dcbdba1120bc"
+      ],
+      "add_rids": [],
+      "source": "v30_cross_order_meta",
+      "expected_gain": 0.479153037071228,
+      "evidence": {
+        "pair_id": "v30_safe_ext_001",
+        "node_score": 0.3142099976539612,
+        "pair_margin": 0.479153037071228,
+        "title": "BBU CPRI接口异常告警"
+      }
+    }
+  ],
+  "predictions": 1035,
+  "sha256": "454ba310a3e0563612cdffa1053604bc04c6146288407c4294b3e68aca573527",
+  "score_possibilities": [
+    {
+      "subset_delta_tp": -1,
+      "tp": 954,
+      "score": 0.917748918
+    },
+    {
+      "subset_delta_tp": 0,
+      "tp": 955,
+      "score": 0.918710919
+    },
+    {
+      "subset_delta_tp": 1,
+      "tp": 956,
+      "score": 0.91967292
+    }
+  ]
+}

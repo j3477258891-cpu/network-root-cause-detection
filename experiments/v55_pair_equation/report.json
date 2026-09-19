@@ -1,0 +1,1292 @@
+{
+  "version": "v55-pair-equation-1",
+  "system": {
+    "equations": 32,
+    "variables": 138,
+    "rank": 30,
+    "fixed": 29
+  },
+  "eligible": {
+    "adds": 54,
+    "deletes": 29,
+    "pairs_screened": 1554,
+    "pairs_detailed": 12
+  },
+  "selection_rule": [
+    "maximize expected newly fixed labels",
+    "maximize expected TP delta",
+    "maximize resulting fixed labels"
+  ],
+  "selected": {
+    "add": {
+      "key": [
+        "625ffce7-65c5-4657-9104-4148b4113130",
+        "#-1:224b57dc-60c0-4fc8-a6ab-ad594824e66b"
+      ],
+      "index": 44,
+      "selected": false,
+      "probability": 0.6157292275842884
+    },
+    "delete": {
+      "key": [
+        "25a37559-7249-4fe0-bfd9-97007b9f7c5d",
+        "#-1:622a2277-8e4d-4b77-aefb-1f90747752a2"
+      ],
+      "index": 17,
+      "selected": true,
+      "probability": 0.2700153259611445
+    },
+    "possible": [
+      -1,
+      0,
+      1
+    ],
+    "expected_delta_tp": 0.34571390162314386,
+    "rank_gain": 1,
+    "actions": [
+      {
+        "action_id": "v55_pair_1_delete",
+        "order_id": "25a37559-7249-4fe0-bfd9-97007b9f7c5d",
+        "remove_rids": [
+          "#-1:622a2277-8e4d-4b77-aefb-1f90747752a2"
+        ],
+        "add_rids": [],
+        "source": "historical_equation_active_pair",
+        "expected_gain": 0.7299846740388555,
+        "evidence": {
+          "calibrated_label_probability": 0.2700153259611445,
+          "selected_by_champion": true
+        }
+      },
+      {
+        "action_id": "v55_pair_2_add",
+        "order_id": "625ffce7-65c5-4657-9104-4148b4113130",
+        "remove_rids": [],
+        "add_rids": [
+          "#-1:224b57dc-60c0-4fc8-a6ab-ad594824e66b"
+        ],
+        "source": "historical_equation_active_pair",
+        "expected_gain": 0.6157292275842884,
+        "evidence": {
+          "calibrated_label_probability": 0.6157292275842884,
+          "selected_by_champion": false
+        }
+      }
+    ],
+    "stats": {
+      "possible": [
+        -1,
+        0,
+        1
+      ],
+      "outcomes": [
+        {
+          "delta": -1,
+          "prior_probability": 0.10375899787116916,
+          "fixed": 31,
+          "new_fixed": 2
+        },
+        {
+          "delta": 0,
+          "prior_probability": 0.4467681026345178,
+          "fixed": 29,
+          "new_fixed": 0
+        },
+        {
+          "delta": 1,
+          "prior_probability": 0.449472899494313,
+          "fixed": 34,
+          "new_fixed": 5
+        }
+      ],
+      "expected_new_fixed": 2.454882493213903,
+      "minimum_new_fixed": 0,
+      "expected_delta_tp": 0.34571390162314386,
+      "maximum_fixed": 34
+    }
+  },
+  "top_pairs": [
+    {
+      "add": {
+        "key": [
+          "625ffce7-65c5-4657-9104-4148b4113130",
+          "#-1:224b57dc-60c0-4fc8-a6ab-ad594824e66b"
+        ],
+        "index": 44,
+        "selected": false,
+        "probability": 0.6157292275842884
+      },
+      "delete": {
+        "key": [
+          "25a37559-7249-4fe0-bfd9-97007b9f7c5d",
+          "#-1:622a2277-8e4d-4b77-aefb-1f90747752a2"
+        ],
+        "index": 17,
+        "selected": true,
+        "probability": 0.2700153259611445
+      },
+      "possible": [
+        -1,
+        0,
+        1
+      ],
+      "expected_delta_tp": 0.34571390162314386,
+      "rank_gain": 1,
+      "actions": [
+        {
+          "action_id": "v55_pair_1_delete",
+          "order_id": "25a37559-7249-4fe0-bfd9-97007b9f7c5d",
+          "remove_rids": [
+            "#-1:622a2277-8e4d-4b77-aefb-1f90747752a2"
+          ],
+          "add_rids": [],
+          "source": "historical_equation_active_pair",
+          "expected_gain": 0.7299846740388555,
+          "evidence": {
+            "calibrated_label_probability": 0.2700153259611445,
+            "selected_by_champion": true
+          }
+        },
+        {
+          "action_id": "v55_pair_2_add",
+          "order_id": "625ffce7-65c5-4657-9104-4148b4113130",
+          "remove_rids": [],
+          "add_rids": [
+            "#-1:224b57dc-60c0-4fc8-a6ab-ad594824e66b"
+          ],
+          "source": "historical_equation_active_pair",
+          "expected_gain": 0.6157292275842884,
+          "evidence": {
+            "calibrated_label_probability": 0.6157292275842884,
+            "selected_by_champion": false
+          }
+        }
+      ],
+      "stats": {
+        "possible": [
+          -1,
+          0,
+          1
+        ],
+        "outcomes": [
+          {
+            "delta": -1,
+            "prior_probability": 0.10375899787116916,
+            "fixed": 31,
+            "new_fixed": 2
+          },
+          {
+            "delta": 0,
+            "prior_probability": 0.4467681026345178,
+            "fixed": 29,
+            "new_fixed": 0
+          },
+          {
+            "delta": 1,
+            "prior_probability": 0.449472899494313,
+            "fixed": 34,
+            "new_fixed": 5
+          }
+        ],
+        "expected_new_fixed": 2.454882493213903,
+        "minimum_new_fixed": 0,
+        "expected_delta_tp": 0.34571390162314386,
+        "maximum_fixed": 34
+      }
+    },
+    {
+      "add": {
+        "key": [
+          "441995e6-e153-4e40-af0f-d0eb20ddcfa5",
+          "#-1:53f23b3e-c801-45d7-8d31-1cb8b8809946"
+        ],
+        "index": 28,
+        "selected": false,
+        "probability": 0.782291678608904
+      },
+      "delete": {
+        "key": [
+          "25a37559-7249-4fe0-bfd9-97007b9f7c5d",
+          "#-1:622a2277-8e4d-4b77-aefb-1f90747752a2"
+        ],
+        "index": 17,
+        "selected": true,
+        "probability": 0.2700153259611445
+      },
+      "possible": [
+        -1,
+        0,
+        1
+      ],
+      "expected_delta_tp": 0.5122763526477595,
+      "rank_gain": 1,
+      "actions": [
+        {
+          "action_id": "v55_pair_1_delete",
+          "order_id": "25a37559-7249-4fe0-bfd9-97007b9f7c5d",
+          "remove_rids": [
+            "#-1:622a2277-8e4d-4b77-aefb-1f90747752a2"
+          ],
+          "add_rids": [],
+          "source": "historical_equation_active_pair",
+          "expected_gain": 0.7299846740388555,
+          "evidence": {
+            "calibrated_label_probability": 0.2700153259611445,
+            "selected_by_champion": true
+          }
+        },
+        {
+          "action_id": "v55_pair_2_add",
+          "order_id": "441995e6-e153-4e40-af0f-d0eb20ddcfa5",
+          "remove_rids": [],
+          "add_rids": [
+            "#-1:53f23b3e-c801-45d7-8d31-1cb8b8809946"
+          ],
+          "source": "historical_equation_active_pair",
+          "expected_gain": 0.782291678608904,
+          "evidence": {
+            "calibrated_label_probability": 0.782291678608904,
+            "selected_by_champion": false
+          }
+        }
+      ],
+      "stats": {
+        "possible": [
+          -1,
+          0,
+          1
+        ],
+        "outcomes": [
+          {
+            "delta": -1,
+            "prior_probability": 0.05878458336487039,
+            "fixed": 31,
+            "new_fixed": 2
+          },
+          {
+            "delta": 0,
+            "prior_probability": 0.3701544806224997,
+            "fixed": 29,
+            "new_fixed": 0
+          },
+          {
+            "delta": 1,
+            "prior_probability": 0.5710609360126299,
+            "fixed": 31,
+            "new_fixed": 2
+          }
+        ],
+        "expected_new_fixed": 1.2596910387550004,
+        "minimum_new_fixed": 0,
+        "expected_delta_tp": 0.5122763526477595,
+        "maximum_fixed": 31
+      }
+    },
+    {
+      "add": {
+        "key": [
+          "9f309a7d-e211-451b-975d-f25463fff535",
+          "#-1:76e9f86f-70ab-40c3-8072-731bbc9e9486"
+        ],
+        "index": 72,
+        "selected": false,
+        "probability": 0.6861163646880952
+      },
+      "delete": {
+        "key": [
+          "25a37559-7249-4fe0-bfd9-97007b9f7c5d",
+          "#-1:622a2277-8e4d-4b77-aefb-1f90747752a2"
+        ],
+        "index": 17,
+        "selected": true,
+        "probability": 0.2700153259611445
+      },
+      "possible": [
+        -1,
+        0,
+        1
+      ],
+      "expected_delta_tp": 0.4161010387269507,
+      "rank_gain": 1,
+      "actions": [
+        {
+          "action_id": "v55_pair_1_delete",
+          "order_id": "25a37559-7249-4fe0-bfd9-97007b9f7c5d",
+          "remove_rids": [
+            "#-1:622a2277-8e4d-4b77-aefb-1f90747752a2"
+          ],
+          "add_rids": [],
+          "source": "historical_equation_active_pair",
+          "expected_gain": 0.7299846740388555,
+          "evidence": {
+            "calibrated_label_probability": 0.2700153259611445,
+            "selected_by_champion": true
+          }
+        },
+        {
+          "action_id": "v55_pair_2_add",
+          "order_id": "9f309a7d-e211-451b-975d-f25463fff535",
+          "remove_rids": [],
+          "add_rids": [
+            "#-1:76e9f86f-70ab-40c3-8072-731bbc9e9486"
+          ],
+          "source": "historical_equation_active_pair",
+          "expected_gain": 0.6861163646880952,
+          "evidence": {
+            "calibrated_label_probability": 0.6861163646880952,
+            "selected_by_champion": false
+          }
+        }
+      ],
+      "stats": {
+        "possible": [
+          -1,
+          0,
+          1
+        ],
+        "outcomes": [
+          {
+            "delta": -1,
+            "prior_probability": 0.08475339210261298,
+            "fixed": 31,
+            "new_fixed": 2
+          },
+          {
+            "delta": 0,
+            "prior_probability": 0.41439217706782333,
+            "fixed": 29,
+            "new_fixed": 0
+          },
+          {
+            "delta": 1,
+            "prior_probability": 0.5008544308295637,
+            "fixed": 31,
+            "new_fixed": 2
+          }
+        ],
+        "expected_new_fixed": 1.1712156458643534,
+        "minimum_new_fixed": 0,
+        "expected_delta_tp": 0.4161010387269507,
+        "maximum_fixed": 31
+      }
+    },
+    {
+      "add": {
+        "key": [
+          "441995e6-e153-4e40-af0f-d0eb20ddcfa5",
+          "#-1:53f23b3e-c801-45d7-8d31-1cb8b8809946"
+        ],
+        "index": 28,
+        "selected": false,
+        "probability": 0.782291678608904
+      },
+      "delete": {
+        "key": [
+          "5f31acb6-cb86-4488-af6a-f6d2d4d3a4d9",
+          "#-1:fdd7bddb-e7cc-4a6f-8246-0c2cf89a221e"
+        ],
+        "index": 43,
+        "selected": true,
+        "probability": 0.3587365076813835
+      },
+      "possible": [
+        -1,
+        0,
+        1
+      ],
+      "expected_delta_tp": 0.4235551709275205,
+      "rank_gain": 1,
+      "actions": [
+        {
+          "action_id": "v55_pair_1_delete",
+          "order_id": "5f31acb6-cb86-4488-af6a-f6d2d4d3a4d9",
+          "remove_rids": [
+            "#-1:fdd7bddb-e7cc-4a6f-8246-0c2cf89a221e"
+          ],
+          "add_rids": [],
+          "source": "historical_equation_active_pair",
+          "expected_gain": 0.6412634923186165,
+          "evidence": {
+            "calibrated_label_probability": 0.3587365076813835,
+            "selected_by_champion": true
+          }
+        },
+        {
+          "action_id": "v55_pair_2_add",
+          "order_id": "441995e6-e153-4e40-af0f-d0eb20ddcfa5",
+          "remove_rids": [],
+          "add_rids": [
+            "#-1:53f23b3e-c801-45d7-8d31-1cb8b8809946"
+          ],
+          "source": "historical_equation_active_pair",
+          "expected_gain": 0.782291678608904,
+          "evidence": {
+            "calibrated_label_probability": 0.782291678608904,
+            "selected_by_champion": false
+          }
+        }
+      ],
+      "stats": {
+        "possible": [
+          -1,
+          0,
+          1
+        ],
+        "outcomes": [
+          {
+            "delta": -1,
+            "prior_probability": 0.078099922909018,
+            "fixed": 31,
+            "new_fixed": 2
+          },
+          {
+            "delta": 0,
+            "prior_probability": 0.4202449832544434,
+            "fixed": 29,
+            "new_fixed": 0
+          },
+          {
+            "delta": 1,
+            "prior_probability": 0.5016550938365385,
+            "fixed": 31,
+            "new_fixed": 2
+          }
+        ],
+        "expected_new_fixed": 1.159510033491113,
+        "minimum_new_fixed": 0,
+        "expected_delta_tp": 0.4235551709275205,
+        "maximum_fixed": 31
+      }
+    },
+    {
+      "add": {
+        "key": [
+          "eac28a99-2650-4dee-9f74-7054f480be19",
+          "#-1:a9cc9261-661b-41a3-89dd-0aee4886d4be"
+        ],
+        "index": 121,
+        "selected": false,
+        "probability": 0.6449298673552566
+      },
+      "delete": {
+        "key": [
+          "25a37559-7249-4fe0-bfd9-97007b9f7c5d",
+          "#-1:622a2277-8e4d-4b77-aefb-1f90747752a2"
+        ],
+        "index": 17,
+        "selected": true,
+        "probability": 0.2700153259611445
+      },
+      "possible": [
+        -1,
+        0,
+        1
+      ],
+      "expected_delta_tp": 0.37491454139411207,
+      "rank_gain": 1,
+      "actions": [
+        {
+          "action_id": "v55_pair_1_delete",
+          "order_id": "25a37559-7249-4fe0-bfd9-97007b9f7c5d",
+          "remove_rids": [
+            "#-1:622a2277-8e4d-4b77-aefb-1f90747752a2"
+          ],
+          "add_rids": [],
+          "source": "historical_equation_active_pair",
+          "expected_gain": 0.7299846740388555,
+          "evidence": {
+            "calibrated_label_probability": 0.2700153259611445,
+            "selected_by_champion": true
+          }
+        },
+        {
+          "action_id": "v55_pair_2_add",
+          "order_id": "eac28a99-2650-4dee-9f74-7054f480be19",
+          "remove_rids": [],
+          "add_rids": [
+            "#-1:a9cc9261-661b-41a3-89dd-0aee4886d4be"
+          ],
+          "source": "historical_equation_active_pair",
+          "expected_gain": 0.6449298673552566,
+          "evidence": {
+            "calibrated_label_probability": 0.6449298673552566,
+            "selected_by_champion": false
+          }
+        }
+      ],
+      "stats": {
+        "possible": [
+          -1,
+          0,
+          1
+        ],
+        "outcomes": [
+          {
+            "delta": -1,
+            "prior_probability": 0.09587437760513721,
+            "fixed": 31,
+            "new_fixed": 2
+          },
+          {
+            "delta": 0,
+            "prior_probability": 0.4333367033956135,
+            "fixed": 29,
+            "new_fixed": 0
+          },
+          {
+            "delta": 1,
+            "prior_probability": 0.4707889189992493,
+            "fixed": 31,
+            "new_fixed": 2
+          }
+        ],
+        "expected_new_fixed": 1.133326593208773,
+        "minimum_new_fixed": 0,
+        "expected_delta_tp": 0.37491454139411207,
+        "maximum_fixed": 31
+      }
+    },
+    {
+      "add": {
+        "key": [
+          "9ca5e12f-f73f-472c-99b3-8e74c01272fe",
+          "#-1:247d7153-ba7f-4012-86c3-2d6b9b7e9730"
+        ],
+        "index": 71,
+        "selected": false,
+        "probability": 0.627991383947411
+      },
+      "delete": {
+        "key": [
+          "25a37559-7249-4fe0-bfd9-97007b9f7c5d",
+          "#-1:622a2277-8e4d-4b77-aefb-1f90747752a2"
+        ],
+        "index": 17,
+        "selected": true,
+        "probability": 0.2700153259611445
+      },
+      "possible": [
+        -1,
+        0,
+        1
+      ],
+      "expected_delta_tp": 0.3579760579862665,
+      "rank_gain": 1,
+      "actions": [
+        {
+          "action_id": "v55_pair_1_delete",
+          "order_id": "25a37559-7249-4fe0-bfd9-97007b9f7c5d",
+          "remove_rids": [
+            "#-1:622a2277-8e4d-4b77-aefb-1f90747752a2"
+          ],
+          "add_rids": [],
+          "source": "historical_equation_active_pair",
+          "expected_gain": 0.7299846740388555,
+          "evidence": {
+            "calibrated_label_probability": 0.2700153259611445,
+            "selected_by_champion": true
+          }
+        },
+        {
+          "action_id": "v55_pair_2_add",
+          "order_id": "9ca5e12f-f73f-472c-99b3-8e74c01272fe",
+          "remove_rids": [],
+          "add_rids": [
+            "#-1:247d7153-ba7f-4012-86c3-2d6b9b7e9730"
+          ],
+          "source": "historical_equation_active_pair",
+          "expected_gain": 0.627991383947411,
+          "evidence": {
+            "calibrated_label_probability": 0.627991383947411,
+            "selected_by_champion": false
+          }
+        }
+      ],
+      "stats": {
+        "possible": [
+          -1,
+          0,
+          1
+        ],
+        "outcomes": [
+          {
+            "delta": -1,
+            "prior_probability": 0.10044802772379406,
+            "fixed": 31,
+            "new_fixed": 2
+          },
+          {
+            "delta": 0,
+            "prior_probability": 0.4411278865661453,
+            "fixed": 29,
+            "new_fixed": 0
+          },
+          {
+            "delta": 1,
+            "prior_probability": 0.4584240857100606,
+            "fixed": 31,
+            "new_fixed": 2
+          }
+        ],
+        "expected_new_fixed": 1.1177442268677094,
+        "minimum_new_fixed": 0,
+        "expected_delta_tp": 0.3579760579862665,
+        "maximum_fixed": 31
+      }
+    },
+    {
+      "add": {
+        "key": [
+          "fad26f6d-c956-4598-9639-39fef649b32c",
+          "#-1:d779f103-178f-4a59-8d44-e8a5ee182ba1"
+        ],
+        "index": 131,
+        "selected": false,
+        "probability": 0.620063525296837
+      },
+      "delete": {
+        "key": [
+          "25a37559-7249-4fe0-bfd9-97007b9f7c5d",
+          "#-1:622a2277-8e4d-4b77-aefb-1f90747752a2"
+        ],
+        "index": 17,
+        "selected": true,
+        "probability": 0.2700153259611445
+      },
+      "possible": [
+        -1,
+        0,
+        1
+      ],
+      "expected_delta_tp": 0.3500481993356924,
+      "rank_gain": 1,
+      "actions": [
+        {
+          "action_id": "v55_pair_1_delete",
+          "order_id": "25a37559-7249-4fe0-bfd9-97007b9f7c5d",
+          "remove_rids": [
+            "#-1:622a2277-8e4d-4b77-aefb-1f90747752a2"
+          ],
+          "add_rids": [],
+          "source": "historical_equation_active_pair",
+          "expected_gain": 0.7299846740388555,
+          "evidence": {
+            "calibrated_label_probability": 0.2700153259611445,
+            "selected_by_champion": true
+          }
+        },
+        {
+          "action_id": "v55_pair_2_add",
+          "order_id": "fad26f6d-c956-4598-9639-39fef649b32c",
+          "remove_rids": [],
+          "add_rids": [
+            "#-1:d779f103-178f-4a59-8d44-e8a5ee182ba1"
+          ],
+          "source": "historical_equation_active_pair",
+          "expected_gain": 0.620063525296837,
+          "evidence": {
+            "calibrated_label_probability": 0.620063525296837,
+            "selected_by_champion": false
+          }
+        }
+      ],
+      "stats": {
+        "possible": [
+          -1,
+          0,
+          1
+        ],
+        "outcomes": [
+          {
+            "delta": -1,
+            "prior_probability": 0.10258867106150271,
+            "fixed": 31,
+            "new_fixed": 2
+          },
+          {
+            "delta": 0,
+            "prior_probability": 0.44477445854130215,
+            "fixed": 29,
+            "new_fixed": 0
+          },
+          {
+            "delta": 1,
+            "prior_probability": 0.45263687039719513,
+            "fixed": 31,
+            "new_fixed": 2
+          }
+        ],
+        "expected_new_fixed": 1.1104510829173957,
+        "minimum_new_fixed": 0,
+        "expected_delta_tp": 0.3500481993356924,
+        "maximum_fixed": 31
+      }
+    },
+    {
+      "add": {
+        "key": [
+          "441995e6-e153-4e40-af0f-d0eb20ddcfa5",
+          "#-1:53f23b3e-c801-45d7-8d31-1cb8b8809946"
+        ],
+        "index": 28,
+        "selected": false,
+        "probability": 0.782291678608904
+      },
+      "delete": {
+        "key": [
+          "f57b8fbe-bd33-4dc7-95ef-fbffa4552754",
+          "#-1:245caebe-e60c-43fc-b1a4-ebdb838df6d1"
+        ],
+        "index": 124,
+        "selected": true,
+        "probability": 0.4057489330550994
+      },
+      "possible": [
+        -1,
+        0,
+        1
+      ],
+      "expected_delta_tp": 0.3765427455538046,
+      "rank_gain": 1,
+      "actions": [
+        {
+          "action_id": "v55_pair_1_delete",
+          "order_id": "f57b8fbe-bd33-4dc7-95ef-fbffa4552754",
+          "remove_rids": [
+            "#-1:245caebe-e60c-43fc-b1a4-ebdb838df6d1"
+          ],
+          "add_rids": [],
+          "source": "historical_equation_active_pair",
+          "expected_gain": 0.5942510669449006,
+          "evidence": {
+            "calibrated_label_probability": 0.4057489330550994,
+            "selected_by_champion": true
+          }
+        },
+        {
+          "action_id": "v55_pair_2_add",
+          "order_id": "441995e6-e153-4e40-af0f-d0eb20ddcfa5",
+          "remove_rids": [],
+          "add_rids": [
+            "#-1:53f23b3e-c801-45d7-8d31-1cb8b8809946"
+          ],
+          "source": "historical_equation_active_pair",
+          "expected_gain": 0.782291678608904,
+          "evidence": {
+            "calibrated_label_probability": 0.782291678608904,
+            "selected_by_champion": false
+          }
+        }
+      ],
+      "stats": {
+        "possible": [
+          -1,
+          0,
+          1
+        ],
+        "outcomes": [
+          {
+            "delta": -1,
+            "prior_probability": 0.08833491912165387,
+            "fixed": 31,
+            "new_fixed": 2
+          },
+          {
+            "delta": 0,
+            "prior_probability": 0.44678741620288764,
+            "fixed": 29,
+            "new_fixed": 0
+          },
+          {
+            "delta": 1,
+            "prior_probability": 0.4648776646754585,
+            "fixed": 31,
+            "new_fixed": 2
+          }
+        ],
+        "expected_new_fixed": 1.1064251675942247,
+        "minimum_new_fixed": 0,
+        "expected_delta_tp": 0.3765427455538046,
+        "maximum_fixed": 31
+      }
+    },
+    {
+      "add": {
+        "key": [
+          "441995e6-e153-4e40-af0f-d0eb20ddcfa5",
+          "#-1:53f23b3e-c801-45d7-8d31-1cb8b8809946"
+        ],
+        "index": 28,
+        "selected": false,
+        "probability": 0.782291678608904
+      },
+      "delete": {
+        "key": [
+          "947bec57-c9f8-47ad-aa45-37cb9be6c798",
+          "#-1:b894a7ec-dc86-4656-971a-c1b10121a044"
+        ],
+        "index": 64,
+        "selected": true,
+        "probability": 0.4065633755424179
+      },
+      "possible": [
+        -1,
+        0,
+        1
+      ],
+      "expected_delta_tp": 0.3757283030664862,
+      "rank_gain": 1,
+      "actions": [
+        {
+          "action_id": "v55_pair_1_delete",
+          "order_id": "947bec57-c9f8-47ad-aa45-37cb9be6c798",
+          "remove_rids": [
+            "#-1:b894a7ec-dc86-4656-971a-c1b10121a044"
+          ],
+          "add_rids": [],
+          "source": "historical_equation_active_pair",
+          "expected_gain": 0.5934366244575822,
+          "evidence": {
+            "calibrated_label_probability": 0.4065633755424179,
+            "selected_by_champion": true
+          }
+        },
+        {
+          "action_id": "v55_pair_2_add",
+          "order_id": "441995e6-e153-4e40-af0f-d0eb20ddcfa5",
+          "remove_rids": [],
+          "add_rids": [
+            "#-1:53f23b3e-c801-45d7-8d31-1cb8b8809946"
+          ],
+          "source": "historical_equation_active_pair",
+          "expected_gain": 0.782291678608904,
+          "evidence": {
+            "calibrated_label_probability": 0.782291678608904,
+            "selected_by_champion": false
+          }
+        }
+      ],
+      "stats": {
+        "possible": [
+          -1,
+          0,
+          1
+        ],
+        "outcomes": [
+          {
+            "delta": -1,
+            "prior_probability": 0.08851223002843756,
+            "fixed": 31,
+            "new_fixed": 2
+          },
+          {
+            "delta": 0,
+            "prior_probability": 0.44724723687663875,
+            "fixed": 29,
+            "new_fixed": 0
+          },
+          {
+            "delta": 1,
+            "prior_probability": 0.46424053309492375,
+            "fixed": 31,
+            "new_fixed": 2
+          }
+        ],
+        "expected_new_fixed": 1.1055055262467226,
+        "minimum_new_fixed": 0,
+        "expected_delta_tp": 0.3757283030664862,
+        "maximum_fixed": 31
+      }
+    },
+    {
+      "add": {
+        "key": [
+          "1117ad03-8891-4bf6-854c-612bf19fdae4",
+          "#-1:08baefd1-6af0-4be4-88f5-6fa77d069d9d"
+        ],
+        "index": 9,
+        "selected": false,
+        "probability": 0.6137260149446091
+      },
+      "delete": {
+        "key": [
+          "25a37559-7249-4fe0-bfd9-97007b9f7c5d",
+          "#-1:622a2277-8e4d-4b77-aefb-1f90747752a2"
+        ],
+        "index": 17,
+        "selected": true,
+        "probability": 0.2700153259611445
+      },
+      "possible": [
+        -1,
+        0,
+        1
+      ],
+      "expected_delta_tp": 0.3437106889834646,
+      "rank_gain": 1,
+      "actions": [
+        {
+          "action_id": "v55_pair_1_delete",
+          "order_id": "25a37559-7249-4fe0-bfd9-97007b9f7c5d",
+          "remove_rids": [
+            "#-1:622a2277-8e4d-4b77-aefb-1f90747752a2"
+          ],
+          "add_rids": [],
+          "source": "historical_equation_active_pair",
+          "expected_gain": 0.7299846740388555,
+          "evidence": {
+            "calibrated_label_probability": 0.2700153259611445,
+            "selected_by_champion": true
+          }
+        },
+        {
+          "action_id": "v55_pair_2_add",
+          "order_id": "1117ad03-8891-4bf6-854c-612bf19fdae4",
+          "remove_rids": [],
+          "add_rids": [
+            "#-1:08baefd1-6af0-4be4-88f5-6fa77d069d9d"
+          ],
+          "source": "historical_equation_active_pair",
+          "expected_gain": 0.6137260149446091,
+          "evidence": {
+            "calibrated_label_probability": 0.6137260149446091,
+            "selected_by_champion": false
+          }
+        }
+      ],
+      "stats": {
+        "possible": [
+          -1,
+          0,
+          1
+        ],
+        "outcomes": [
+          {
+            "delta": -1,
+            "prior_probability": 0.10429989598504165,
+            "fixed": 31,
+            "new_fixed": 2
+          },
+          {
+            "delta": 0,
+            "prior_probability": 0.44768951904645216,
+            "fixed": 29,
+            "new_fixed": 0
+          },
+          {
+            "delta": 1,
+            "prior_probability": 0.4480105849685062,
+            "fixed": 31,
+            "new_fixed": 2
+          }
+        ],
+        "expected_new_fixed": 1.1046209619070957,
+        "minimum_new_fixed": 0,
+        "expected_delta_tp": 0.3437106889834646,
+        "maximum_fixed": 31
+      }
+    },
+    {
+      "add": {
+        "key": [
+          "441995e6-e153-4e40-af0f-d0eb20ddcfa5",
+          "#-1:53f23b3e-c801-45d7-8d31-1cb8b8809946"
+        ],
+        "index": 28,
+        "selected": false,
+        "probability": 0.782291678608904
+      },
+      "delete": {
+        "key": [
+          "9738b42a-7360-4763-8895-0e84599b4d60",
+          "#-1:18d342c5-d25e-45f4-9b1d-dcbdba1120bc"
+        ],
+        "index": 65,
+        "selected": true,
+        "probability": 0.42439213113156327
+      },
+      "possible": [
+        -1,
+        0,
+        1
+      ],
+      "expected_delta_tp": 0.35789954747734076,
+      "rank_gain": 1,
+      "actions": [
+        {
+          "action_id": "v55_pair_1_delete",
+          "order_id": "9738b42a-7360-4763-8895-0e84599b4d60",
+          "remove_rids": [
+            "#-1:18d342c5-d25e-45f4-9b1d-dcbdba1120bc"
+          ],
+          "add_rids": [],
+          "source": "historical_equation_active_pair",
+          "expected_gain": 0.5756078688684367,
+          "evidence": {
+            "calibrated_label_probability": 0.42439213113156327,
+            "selected_by_champion": true
+          }
+        },
+        {
+          "action_id": "v55_pair_2_add",
+          "order_id": "441995e6-e153-4e40-af0f-d0eb20ddcfa5",
+          "remove_rids": [],
+          "add_rids": [
+            "#-1:53f23b3e-c801-45d7-8d31-1cb8b8809946"
+          ],
+          "source": "historical_equation_active_pair",
+          "expected_gain": 0.782291678608904,
+          "evidence": {
+            "calibrated_label_probability": 0.782291678608904,
+            "selected_by_champion": false
+          }
+        }
+      ],
+      "stats": {
+        "possible": [
+          -1,
+          0,
+          1
+        ],
+        "outcomes": [
+          {
+            "delta": -1,
+            "prior_probability": 0.09239369848024252,
+            "fixed": 31,
+            "new_fixed": 2
+          },
+          {
+            "delta": 0,
+            "prior_probability": 0.45731305556217416,
+            "fixed": 29,
+            "new_fixed": 0
+          },
+          {
+            "delta": 1,
+            "prior_probability": 0.4502932459575833,
+            "fixed": 31,
+            "new_fixed": 2
+          }
+        ],
+        "expected_new_fixed": 1.0853738888756517,
+        "minimum_new_fixed": 0,
+        "expected_delta_tp": 0.35789954747734076,
+        "maximum_fixed": 31
+      }
+    },
+    {
+      "add": {
+        "key": [
+          "441995e6-e153-4e40-af0f-d0eb20ddcfa5",
+          "#-1:53f23b3e-c801-45d7-8d31-1cb8b8809946"
+        ],
+        "index": 28,
+        "selected": false,
+        "probability": 0.782291678608904
+      },
+      "delete": {
+        "key": [
+          "82f3997a-668c-4663-9dd6-a0a298f14d00",
+          "#-1:24a89126-1a36-4305-b0f5-0a60e349ead1"
+        ],
+        "index": 59,
+        "selected": true,
+        "probability": 0.4385055533394684
+      },
+      "possible": [
+        -1,
+        0,
+        1
+      ],
+      "expected_delta_tp": 0.34378612526943564,
+      "rank_gain": 1,
+      "actions": [
+        {
+          "action_id": "v55_pair_1_delete",
+          "order_id": "82f3997a-668c-4663-9dd6-a0a298f14d00",
+          "remove_rids": [
+            "#-1:24a89126-1a36-4305-b0f5-0a60e349ead1"
+          ],
+          "add_rids": [],
+          "source": "historical_equation_active_pair",
+          "expected_gain": 0.5614944466605316,
+          "evidence": {
+            "calibrated_label_probability": 0.4385055533394684,
+            "selected_by_champion": true
+          }
+        },
+        {
+          "action_id": "v55_pair_2_add",
+          "order_id": "441995e6-e153-4e40-af0f-d0eb20ddcfa5",
+          "remove_rids": [],
+          "add_rids": [
+            "#-1:53f23b3e-c801-45d7-8d31-1cb8b8809946"
+          ],
+          "source": "historical_equation_active_pair",
+          "expected_gain": 0.782291678608904,
+          "evidence": {
+            "calibrated_label_probability": 0.782291678608904,
+            "selected_by_champion": false
+          }
+        }
+      ],
+      "stats": {
+        "possible": [
+          -1,
+          0,
+          1
+        ],
+        "outcomes": [
+          {
+            "delta": -1,
+            "prior_probability": 0.09546630793820936,
+            "fixed": 31,
+            "new_fixed": 2
+          },
+          {
+            "delta": 0,
+            "prior_probability": 0.4652812588541456,
+            "fixed": 29,
+            "new_fixed": 0
+          },
+          {
+            "delta": 1,
+            "prior_probability": 0.439252433207645,
+            "fixed": 31,
+            "new_fixed": 2
+          }
+        ],
+        "expected_new_fixed": 1.0694374822917088,
+        "minimum_new_fixed": 0,
+        "expected_delta_tp": 0.34378612526943564,
+        "maximum_fixed": 31
+      }
+    }
+  ],
+  "probe": {
+    "probe_id": "v55_pair_equation_probe",
+    "path": "D:\\zgyidong\\experiments\\v55_pair_equation\\submissions\\v55_pair_equation_probe.csv",
+    "baseline": "D:\\zgyidong\\experiments\\v30_meta_stack\\submissions\\v30_cross_order_top5.csv",
+    "fixed_base": "v37_exact_corrections",
+    "candidate_actions": [
+      {
+        "action_id": "v55_pair_1_delete",
+        "order_id": "25a37559-7249-4fe0-bfd9-97007b9f7c5d",
+        "remove_rids": [
+          "#-1:622a2277-8e4d-4b77-aefb-1f90747752a2"
+        ],
+        "add_rids": [],
+        "source": "historical_equation_active_pair",
+        "expected_gain": 0.7299846740388555,
+        "evidence": {
+          "calibrated_label_probability": 0.2700153259611445,
+          "selected_by_champion": true
+        }
+      },
+      {
+        "action_id": "v55_pair_2_add",
+        "order_id": "625ffce7-65c5-4657-9104-4148b4113130",
+        "remove_rids": [],
+        "add_rids": [
+          "#-1:224b57dc-60c0-4fc8-a6ab-ad594824e66b"
+        ],
+        "source": "historical_equation_active_pair",
+        "expected_gain": 0.6157292275842884,
+        "evidence": {
+          "calibrated_label_probability": 0.6157292275842884,
+          "selected_by_champion": false
+        }
+      }
+    ],
+    "actions": [
+      {
+        "action_id": "v37_exact_001",
+        "order_id": "d5376a71-c48e-4351-ba60-f982778b3eb4",
+        "remove_rids": [
+          "#-1:0c809583-390f-4d16-9b91-c4fb1e99c5c2"
+        ],
+        "add_rids": [
+          "#-1:e401b7b4-697f-434e-8437-4b2136d6904f"
+        ],
+        "source": "historical_leaderboard_equations",
+        "expected_gain": null,
+        "evidence": {
+          "proof": "label fixed in every binary solution of all scored equations"
+        }
+      },
+      {
+        "action_id": "v55_pair_1_delete",
+        "order_id": "25a37559-7249-4fe0-bfd9-97007b9f7c5d",
+        "remove_rids": [
+          "#-1:622a2277-8e4d-4b77-aefb-1f90747752a2"
+        ],
+        "add_rids": [],
+        "source": "historical_equation_active_pair",
+        "expected_gain": 0.7299846740388555,
+        "evidence": {
+          "calibrated_label_probability": 0.2700153259611445,
+          "selected_by_champion": true
+        }
+      },
+      {
+        "action_id": "v55_pair_2_add",
+        "order_id": "625ffce7-65c5-4657-9104-4148b4113130",
+        "remove_rids": [],
+        "add_rids": [
+          "#-1:224b57dc-60c0-4fc8-a6ab-ad594824e66b"
+        ],
+        "source": "historical_equation_active_pair",
+        "expected_gain": 0.6157292275842884,
+        "evidence": {
+          "calibrated_label_probability": 0.6157292275842884,
+          "selected_by_champion": false
+        }
+      }
+    ],
+    "predictions": 1035,
+    "sha256": "b42d2daa452c17123f2e3fd6d74a3684f5867174a930d40514c7d020fd5dc48b",
+    "score_possibilities": [
+      {
+        "query_delta_tp": -1,
+        "tp": 955,
+        "score": 0.918710919
+      },
+      {
+        "query_delta_tp": 0,
+        "tp": 956,
+        "score": 0.91967292
+      },
+      {
+        "query_delta_tp": 1,
+        "tp": 957,
+        "score": 0.920634921
+      }
+    ]
+  },
+  "outcome_files": {
+    "-1": {
+      "path": "D:\\zgyidong\\experiments\\v55_pair_equation\\outcomes\\v55_checkpoint_delta_m1.csv",
+      "tp": 956,
+      "predictions": 1035,
+      "score": 0.9196729196729196,
+      "sha256": "8390ecf4a3fab22a8c40c950eac76dd3e4b1309a2527412549193613c64ccfcb",
+      "fixed_label_count": 31
+    },
+    "0": {
+      "path": "D:\\zgyidong\\experiments\\v55_pair_equation\\outcomes\\v55_checkpoint_delta_p0.csv",
+      "tp": 956,
+      "predictions": 1035,
+      "score": 0.9196729196729196,
+      "sha256": "b42d2daa452c17123f2e3fd6d74a3684f5867174a930d40514c7d020fd5dc48b",
+      "fixed_label_count": 29
+    },
+    "1": {
+      "path": "D:\\zgyidong\\experiments\\v55_pair_equation\\outcomes\\v55_checkpoint_delta_p1.csv",
+      "tp": 957,
+      "predictions": 1035,
+      "score": 0.9206349206349206,
+      "sha256": "b42d2daa452c17123f2e3fd6d74a3684f5867174a930d40514c7d020fd5dc48b",
+      "fixed_label_count": 34
+    }
+  }
+}

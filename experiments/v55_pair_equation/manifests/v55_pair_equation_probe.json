@@ -1,0 +1,100 @@
+{
+  "probe_id": "v55_pair_equation_probe",
+  "path": "D:\\zgyidong\\experiments\\v55_pair_equation\\submissions\\v55_pair_equation_probe.csv",
+  "baseline": "D:\\zgyidong\\experiments\\v30_meta_stack\\submissions\\v30_cross_order_top5.csv",
+  "fixed_base": "v37_exact_corrections",
+  "candidate_actions": [
+    {
+      "action_id": "v55_pair_1_delete",
+      "order_id": "25a37559-7249-4fe0-bfd9-97007b9f7c5d",
+      "remove_rids": [
+        "#-1:622a2277-8e4d-4b77-aefb-1f90747752a2"
+      ],
+      "add_rids": [],
+      "source": "historical_equation_active_pair",
+      "expected_gain": 0.7299846740388555,
+      "evidence": {
+        "calibrated_label_probability": 0.2700153259611445,
+        "selected_by_champion": true
+      }
+    },
+    {
+      "action_id": "v55_pair_2_add",
+      "order_id": "625ffce7-65c5-4657-9104-4148b4113130",
+      "remove_rids": [],
+      "add_rids": [
+        "#-1:224b57dc-60c0-4fc8-a6ab-ad594824e66b"
+      ],
+      "source": "historical_equation_active_pair",
+      "expected_gain": 0.6157292275842884,
+      "evidence": {
+        "calibrated_label_probability": 0.6157292275842884,
+        "selected_by_champion": false
+      }
+    }
+  ],
+  "actions": [
+    {
+      "action_id": "v37_exact_001",
+      "order_id": "d5376a71-c48e-4351-ba60-f982778b3eb4",
+      "remove_rids": [
+        "#-1:0c809583-390f-4d16-9b91-c4fb1e99c5c2"
+      ],
+      "add_rids": [
+        "#-1:e401b7b4-697f-434e-8437-4b2136d6904f"
+      ],
+      "source": "historical_leaderboard_equations",
+      "expected_gain": null,
+      "evidence": {
+        "proof": "label fixed in every binary solution of all scored equations"
+      }
+    },
+    {
+      "action_id": "v55_pair_1_delete",
+      "order_id": "25a37559-7249-4fe0-bfd9-97007b9f7c5d",
+      "remove_rids": [
+        "#-1:622a2277-8e4d-4b77-aefb-1f90747752a2"
+      ],
+      "add_rids": [],
+      "source": "historical_equation_active_pair",
+      "expected_gain": 0.7299846740388555,
+      "evidence": {
+        "calibrated_label_probability": 0.2700153259611445,
+        "selected_by_champion": true
+      }
+    },
+    {
+      "action_id": "v55_pair_2_add",
+      "order_id": "625ffce7-65c5-4657-9104-4148b4113130",
+      "remove_rids": [],
+      "add_rids": [
+        "#-1:224b57dc-60c0-4fc8-a6ab-ad594824e66b"
+      ],
+      "source": "historical_equation_active_pair",
+      "expected_gain": 0.6157292275842884,
+      "evidence": {
+        "calibrated_label_probability": 0.6157292275842884,
+        "selected_by_champion": false
+      }
+    }
+  ],
+  "predictions": 1035,
+  "sha256": "b42d2daa452c17123f2e3fd6d74a3684f5867174a930d40514c7d020fd5dc48b",
+  "score_possibilities": [
+    {
+      "query_delta_tp": -1,
+      "tp": 955,
+      "score": 0.918710919
+    },
+    {
+      "query_delta_tp": 0,
+      "tp": 956,
+      "score": 0.91967292
+    },
+    {
+      "query_delta_tp": 1,
+      "tp": 957,
+      "score": 0.920634921
+    }
+  ]
+}

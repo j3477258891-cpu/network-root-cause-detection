@@ -1,0 +1,56 @@
+{
+  "version": "v136-three-model-positive-swap",
+  "base": "D:\\zgyidong\\experiments\\v124_campaign\\v124_single_pair_015_from_probe13.csv",
+  "base_sha256": "31131129bba8363fcf1df2c053f836102e8f209640164c2c4c7eedb431447c6c",
+  "models": [
+    "station_extra_trees",
+    "template_extra_trees",
+    "v30_consensus"
+  ],
+  "minimum_margin": 0.2,
+  "available_orders": 3,
+  "slice_size": 3,
+  "selected": [
+    {
+      "order_id": "441995e6-e153-4e40-af0f-d0eb20ddcfa5",
+      "remove_rid": "#-1:63de300f-5195-4f21-8e5d-244d93516979",
+      "add_rid": "#-1:53f23b3e-c801-45d7-8d31-1cb8b8809946",
+      "min_margin": 0.5050566792488098,
+      "mean_margin": 0.5412185788154602,
+      "model_margins": {
+        "station_extra_trees": 0.5050566792488098,
+        "template_extra_trees": 0.5172724723815918,
+        "v30_consensus": 0.601326584815979
+      }
+    },
+    {
+      "order_id": "faa00ed5-c0b9-445e-98ac-671035a4a239",
+      "remove_rid": "#-1:5173cc70-f178-481c-865b-a5a5f0d3c249",
+      "add_rid": "#-1:76e3a0a3-1943-4a4c-ad08-d31dc732cb73",
+      "min_margin": 0.2118082046508789,
+      "mean_margin": 0.2400553673505783,
+      "model_margins": {
+        "station_extra_trees": 0.2118082046508789,
+        "template_extra_trees": 0.2215537130832672,
+        "v30_consensus": 0.28680419921875
+      }
+    },
+    {
+      "order_id": "4c2b3b06-a6a2-4c1b-9734-def3d1f849d8",
+      "remove_rid": "#-1:478860c0-cfb6-4e87-8e69-14f09e94b850",
+      "add_rid": "#-1:66facd91-e281-4331-bbae-04ab8bd9746d",
+      "min_margin": 0.20947912335395813,
+      "mean_margin": 0.24772365391254425,
+      "model_margins": {
+        "station_extra_trees": 0.20947912335395813,
+        "template_extra_trees": 0.21923592686653137,
+        "v30_consensus": 0.31445592641830444
+      }
+    }
+  ],
+  "predictions": 1035,
+  "orders": 546,
+  "sha256": "ac003d42777340b266dbdee0912bd0ca57502af49d6e490cce7c1547db544c91",
+  "status": "exploratory_not_scored",
+  "warning": "All-model margins are model-derived; no online score yet."
+}

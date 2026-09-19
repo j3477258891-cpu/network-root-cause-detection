@@ -1,0 +1,595 @@
+{
+  "method": "V22 nested dual-head boundary utility with exact DP",
+  "group_count": 1040,
+  "fold_sizes": [
+    327,
+    327,
+    327,
+    327,
+    326
+  ],
+  "baseline": {
+    "tp": 2826,
+    "predictions": 3169
+  },
+  "mean": {
+    "tp_delta": 12,
+    "fold_deltas": [
+      -1,
+      4,
+      0,
+      5,
+      4
+    ],
+    "changed_orders": 107,
+    "bootstrap_95_lower": -5.0,
+    "choices": [
+      {
+        "heldout": 0,
+        "cap": 2,
+        "penalty": 0.02,
+        "sum": 17,
+        "worst": 0,
+        "fold_deltas": [
+          8,
+          0,
+          5,
+          4
+        ],
+        "heldout_delta": -1
+      },
+      {
+        "heldout": 1,
+        "cap": 1,
+        "penalty": 0.05,
+        "sum": 9,
+        "worst": 0,
+        "fold_deltas": [
+          1,
+          0,
+          5,
+          3
+        ],
+        "heldout_delta": 4
+      },
+      {
+        "heldout": 2,
+        "cap": 2,
+        "penalty": 0.02,
+        "sum": 16,
+        "worst": -1,
+        "fold_deltas": [
+          -1,
+          8,
+          5,
+          4
+        ],
+        "heldout_delta": 0
+      },
+      {
+        "heldout": 3,
+        "cap": 2,
+        "penalty": 0.02,
+        "sum": 11,
+        "worst": -1,
+        "fold_deltas": [
+          -1,
+          8,
+          0,
+          4
+        ],
+        "heldout_delta": 5
+      },
+      {
+        "heldout": 4,
+        "cap": 2,
+        "penalty": 0.02,
+        "sum": 12,
+        "worst": -1,
+        "fold_deltas": [
+          -1,
+          8,
+          0,
+          5
+        ],
+        "heldout_delta": 4
+      }
+    ],
+    "action_distribution": {
+      "add2": 20,
+      "remove1": 37,
+      "remove2": 14,
+      "add1": 25,
+      "swap1": 11
+    }
+  },
+  "seeds": [
+    {
+      "tp_delta": 15,
+      "fold_deltas": [
+        1,
+        6,
+        0,
+        5,
+        3
+      ],
+      "changed_orders": 104,
+      "bootstrap_95_lower": -1.0,
+      "choices": [
+        {
+          "heldout": 0,
+          "cap": 2,
+          "penalty": 0.05,
+          "sum": 16,
+          "worst": 2,
+          "fold_deltas": [
+            6,
+            2,
+            5,
+            3
+          ],
+          "heldout_delta": 1
+        },
+        {
+          "heldout": 1,
+          "cap": 2,
+          "penalty": 0.05,
+          "sum": 11,
+          "worst": 1,
+          "fold_deltas": [
+            1,
+            2,
+            5,
+            3
+          ],
+          "heldout_delta": 6
+        },
+        {
+          "heldout": 2,
+          "cap": 1,
+          "penalty": 0.0,
+          "sum": 15,
+          "worst": 2,
+          "fold_deltas": [
+            2,
+            6,
+            4,
+            3
+          ],
+          "heldout_delta": 0
+        },
+        {
+          "heldout": 3,
+          "cap": 2,
+          "penalty": 0.05,
+          "sum": 12,
+          "worst": 1,
+          "fold_deltas": [
+            1,
+            6,
+            2,
+            3
+          ],
+          "heldout_delta": 5
+        },
+        {
+          "heldout": 4,
+          "cap": 2,
+          "penalty": 0.05,
+          "sum": 14,
+          "worst": 1,
+          "fold_deltas": [
+            1,
+            6,
+            2,
+            5
+          ],
+          "heldout_delta": 3
+        }
+      ],
+      "seed": 20260803,
+      "action_distribution": {
+        "add2": 15,
+        "remove1": 44,
+        "add1": 28,
+        "remove2": 7,
+        "swap1": 10
+      }
+    },
+    {
+      "tp_delta": 13,
+      "fold_deltas": [
+        -1,
+        6,
+        0,
+        5,
+        3
+      ],
+      "changed_orders": 107,
+      "bootstrap_95_lower": -5.0,
+      "choices": [
+        {
+          "heldout": 0,
+          "cap": 2,
+          "penalty": 0.02,
+          "sum": 17,
+          "worst": 0,
+          "fold_deltas": [
+            9,
+            0,
+            5,
+            3
+          ],
+          "heldout_delta": -1
+        },
+        {
+          "heldout": 1,
+          "cap": 2,
+          "penalty": 0.05,
+          "sum": 11,
+          "worst": 1,
+          "fold_deltas": [
+            1,
+            2,
+            5,
+            3
+          ],
+          "heldout_delta": 6
+        },
+        {
+          "heldout": 2,
+          "cap": 2,
+          "penalty": 0.02,
+          "sum": 16,
+          "worst": -1,
+          "fold_deltas": [
+            -1,
+            9,
+            5,
+            3
+          ],
+          "heldout_delta": 0
+        },
+        {
+          "heldout": 3,
+          "cap": 2,
+          "penalty": 0.05,
+          "sum": 12,
+          "worst": 1,
+          "fold_deltas": [
+            1,
+            6,
+            2,
+            3
+          ],
+          "heldout_delta": 5
+        },
+        {
+          "heldout": 4,
+          "cap": 2,
+          "penalty": 0.05,
+          "sum": 14,
+          "worst": 1,
+          "fold_deltas": [
+            1,
+            6,
+            2,
+            5
+          ],
+          "heldout_delta": 3
+        }
+      ],
+      "seed": 20260817,
+      "action_distribution": {
+        "add2": 22,
+        "remove1": 40,
+        "remove2": 13,
+        "add1": 22,
+        "swap1": 10
+      }
+    },
+    {
+      "tp_delta": 9,
+      "fold_deltas": [
+        -2,
+        4,
+        -1,
+        4,
+        4
+      ],
+      "changed_orders": 105,
+      "bootstrap_95_lower": -8.0,
+      "choices": [
+        {
+          "heldout": 0,
+          "cap": 2,
+          "penalty": 0.05,
+          "sum": 16,
+          "worst": 1,
+          "fold_deltas": [
+            7,
+            1,
+            4,
+            4
+          ],
+          "heldout_delta": -2
+        },
+        {
+          "heldout": 1,
+          "cap": 1,
+          "penalty": 0.05,
+          "sum": 8,
+          "worst": -1,
+          "fold_deltas": [
+            1,
+            -1,
+            5,
+            3
+          ],
+          "heldout_delta": 4
+        },
+        {
+          "heldout": 2,
+          "cap": 2,
+          "penalty": 0.0,
+          "sum": 16,
+          "worst": -1,
+          "fold_deltas": [
+            -1,
+            8,
+            5,
+            4
+          ],
+          "heldout_delta": -1
+        },
+        {
+          "heldout": 3,
+          "cap": 2,
+          "penalty": 0.02,
+          "sum": 10,
+          "worst": -1,
+          "fold_deltas": [
+            -1,
+            7,
+            0,
+            4
+          ],
+          "heldout_delta": 4
+        },
+        {
+          "heldout": 4,
+          "cap": 2,
+          "penalty": 0.0,
+          "sum": 11,
+          "worst": -1,
+          "fold_deltas": [
+            -1,
+            8,
+            -1,
+            5
+          ],
+          "heldout_delta": 4
+        }
+      ],
+      "seed": 20260831,
+      "action_distribution": {
+        "add2": 19,
+        "remove1": 36,
+        "remove2": 14,
+        "add1": 26,
+        "swap1": 10
+      }
+    }
+  ],
+  "model_reports": [
+    {
+      "seed": 20260803,
+      "heads": {
+        "add": {
+          "outer_choices": [
+            {
+              "fold": 0,
+              "definition": "et16_hgb25",
+              "inner_brier": 0.044067323509225084
+            },
+            {
+              "fold": 1,
+              "definition": "et16_hgb25",
+              "inner_brier": 0.0441166815393696
+            },
+            {
+              "fold": 2,
+              "definition": "et16",
+              "inner_brier": 0.043652309585598244
+            },
+            {
+              "fold": 3,
+              "definition": "et16_hgb25",
+              "inner_brier": 0.03832056528739474
+            },
+            {
+              "fold": 4,
+              "definition": "et16_hgb25",
+              "inner_brier": 0.0421082492130403
+            }
+          ],
+          "final_definition": "et16_hgb25",
+          "final_brier": 0.04142067975234797
+        },
+        "remove": {
+          "outer_choices": [
+            {
+              "fold": 0,
+              "definition": "et16_hgb25",
+              "inner_brier": 0.06388731832174975
+            },
+            {
+              "fold": 1,
+              "definition": "et16_hgb25",
+              "inner_brier": 0.06615768685752814
+            },
+            {
+              "fold": 2,
+              "definition": "et16_hgb25",
+              "inner_brier": 0.0624508843867953
+            },
+            {
+              "fold": 3,
+              "definition": "et16_hgb25",
+              "inner_brier": 0.06553496304707955
+            },
+            {
+              "fold": 4,
+              "definition": "et16_hgb25",
+              "inner_brier": 0.061563340332425553
+            }
+          ],
+          "final_definition": "et16_hgb25",
+          "final_brier": 0.06291863887295321
+        }
+      }
+    },
+    {
+      "seed": 20260817,
+      "heads": {
+        "add": {
+          "outer_choices": [
+            {
+              "fold": 0,
+              "definition": "et16_hgb25",
+              "inner_brier": 0.043754679603863214
+            },
+            {
+              "fold": 1,
+              "definition": "et16_hgb25",
+              "inner_brier": 0.04459853556210202
+            },
+            {
+              "fold": 2,
+              "definition": "et16",
+              "inner_brier": 0.043346341810454034
+            },
+            {
+              "fold": 3,
+              "definition": "et16_hgb25",
+              "inner_brier": 0.038488344685581995
+            },
+            {
+              "fold": 4,
+              "definition": "et16_hgb25",
+              "inner_brier": 0.042168900485910855
+            }
+          ],
+          "final_definition": "et16_hgb25",
+          "final_brier": 0.04092912499451576
+        },
+        "remove": {
+          "outer_choices": [
+            {
+              "fold": 0,
+              "definition": "et16_hgb25",
+              "inner_brier": 0.0636641568939379
+            },
+            {
+              "fold": 1,
+              "definition": "et16_hgb25",
+              "inner_brier": 0.06611139349718297
+            },
+            {
+              "fold": 2,
+              "definition": "et16_hgb25",
+              "inner_brier": 0.062282600447925565
+            },
+            {
+              "fold": 3,
+              "definition": "et16_hgb25",
+              "inner_brier": 0.06583347260617041
+            },
+            {
+              "fold": 4,
+              "definition": "et16_hgb25",
+              "inner_brier": 0.06124570196029469
+            }
+          ],
+          "final_definition": "et16_hgb25",
+          "final_brier": 0.06280097849079436
+        }
+      }
+    },
+    {
+      "seed": 20260831,
+      "heads": {
+        "add": {
+          "outer_choices": [
+            {
+              "fold": 0,
+              "definition": "et16",
+              "inner_brier": 0.04344580402099796
+            },
+            {
+              "fold": 1,
+              "definition": "et16_hgb25",
+              "inner_brier": 0.044502454290451125
+            },
+            {
+              "fold": 2,
+              "definition": "et16",
+              "inner_brier": 0.04360054871747077
+            },
+            {
+              "fold": 3,
+              "definition": "et16_hgb25",
+              "inner_brier": 0.03859805831395218
+            },
+            {
+              "fold": 4,
+              "definition": "et16_hgb25",
+              "inner_brier": 0.04236768124951367
+            }
+          ],
+          "final_definition": "et16_hgb25",
+          "final_brier": 0.04073451471768285
+        },
+        "remove": {
+          "outer_choices": [
+            {
+              "fold": 0,
+              "definition": "et16_hgb25",
+              "inner_brier": 0.06422530421326529
+            },
+            {
+              "fold": 1,
+              "definition": "et16_hgb25",
+              "inner_brier": 0.06601010914711423
+            },
+            {
+              "fold": 2,
+              "definition": "et16_hgb25",
+              "inner_brier": 0.0617675592597919
+            },
+            {
+              "fold": 3,
+              "definition": "et16_hgb25",
+              "inner_brier": 0.06602278987160777
+            },
+            {
+              "fold": 4,
+              "definition": "et16_hgb25",
+              "inner_brier": 0.06151166793744658
+            }
+          ],
+          "final_definition": "et16_hgb25",
+          "final_brier": 0.06273191522405427
+        }
+      }
+    }
+  ],
+  "gate": {
+    "mean_tp_delta_min": 30,
+    "each_seed_tp_delta_min": 24,
+    "worst_fold_min": -2,
+    "bootstrap_lower_strictly_positive": true,
+    "passed": false
+  },
+  "generated_submissions": []
+}

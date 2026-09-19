@@ -1,0 +1,136 @@
+{
+  "labeled_orders": 1634,
+  "target_task_orders": 546,
+  "order_only_disjoint_task_upper": 2,
+  "task_upper_ignores_station_constraints": true,
+  "complete_comparable_observed_campaign_trials": 0,
+  "observed_success_rate": null,
+  "observed_success_interval": null,
+  "minimum_independent_all_success_trials": 17,
+  "best_case_interval_at_capacity": [
+    0.15811388300841897,
+    1.0
+  ],
+  "five_perfect_trials_counterfactual": [
+    0.4781762498950185,
+    1.0
+  ],
+  "capacity_sufficient": false,
+  "station_cross_fold_count": 0,
+  "template_cross_fold_count": 0,
+  "folds": [
+    {
+      "fold": 0,
+      "valid_orders": 782,
+      "fit_orders": 852,
+      "actions": 3997,
+      "families": {
+        "catboost": {
+          "rows": 3997,
+          "aligned": true
+        },
+        "v38_control": {
+          "rows": 3997,
+          "aligned": true
+        },
+        "v30_control": {
+          "rows": 3997,
+          "aligned": true
+        }
+      },
+      "signature": "a2aa21e4fa0b3929ae34475f8386e3b0c87b921309135493681fb7e693d82a71",
+      "source_class": "cached_outer_fold_not_full_campaign_trial"
+    },
+    {
+      "fold": 1,
+      "valid_orders": 213,
+      "fit_orders": 1421,
+      "actions": 744,
+      "families": {
+        "catboost": {
+          "rows": 744,
+          "aligned": true
+        },
+        "v38_control": {
+          "rows": 744,
+          "aligned": true
+        },
+        "v30_control": {
+          "rows": 744,
+          "aligned": true
+        }
+      },
+      "signature": "a2aa21e4fa0b3929ae34475f8386e3b0c87b921309135493681fb7e693d82a71",
+      "source_class": "cached_outer_fold_not_full_campaign_trial"
+    },
+    {
+      "fold": 2,
+      "valid_orders": 213,
+      "fit_orders": 1421,
+      "actions": 825,
+      "families": {
+        "catboost": {
+          "rows": 825,
+          "aligned": true
+        },
+        "v38_control": {
+          "rows": 825,
+          "aligned": true
+        },
+        "v30_control": {
+          "rows": 825,
+          "aligned": true
+        }
+      },
+      "signature": "a2aa21e4fa0b3929ae34475f8386e3b0c87b921309135493681fb7e693d82a71",
+      "source_class": "cached_outer_fold_not_full_campaign_trial"
+    },
+    {
+      "fold": 3,
+      "valid_orders": 213,
+      "fit_orders": 1421,
+      "actions": 802,
+      "families": {
+        "catboost": {
+          "rows": 802,
+          "aligned": true
+        },
+        "v38_control": {
+          "rows": 802,
+          "aligned": true
+        },
+        "v30_control": {
+          "rows": 802,
+          "aligned": true
+        }
+      },
+      "signature": "a2aa21e4fa0b3929ae34475f8386e3b0c87b921309135493681fb7e693d82a71",
+      "source_class": "cached_outer_fold_not_full_campaign_trial"
+    },
+    {
+      "fold": 4,
+      "valid_orders": 213,
+      "fit_orders": 1421,
+      "actions": 1017,
+      "families": {
+        "catboost": {
+          "rows": 1017,
+          "aligned": true
+        },
+        "v38_control": {
+          "rows": 1017,
+          "aligned": true
+        },
+        "v30_control": {
+          "rows": 1017,
+          "aligned": true
+        }
+      },
+      "signature": "a2aa21e4fa0b3929ae34475f8386e3b0c87b921309135493681fb7e693d82a71",
+      "source_class": "cached_outer_fold_not_full_campaign_trial"
+    }
+  ],
+  "integrity_errors": [],
+  "scope": "Specified V150/V152/V158 data and cached predictions. Not an assertion about unavailable external datasets.",
+  "warning": "Counterfactual intervals are sample-size bounds, not measured strategy success rates. Cached folds and resampling are not independent campaign trials."
+}

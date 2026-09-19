@@ -1,0 +1,50 @@
+{
+  "base_file": "D:\\zgyidong\\experiments\\v149_online_calibrated_addition_campaign\\v149_final_k08_from_v148.csv",
+  "base_sha256": "c8f304c44f6b3a7ed40599cae50d0f17c0c37f8456553e6171a2d7cfdc196d0a",
+  "output_file": "D:\\zgyidong\\experiments\\v153_complementary_repair_campaign\\v153_probe_p05_split.csv",
+  "preview_file": "D:\\zgyidong\\experiments\\v153_complementary_repair_campaign\\previews\\p05.png",
+  "actions": [
+    {
+      "order_index": 236,
+      "order_id": "7b1b39e5-954a-418c-9ed7-03285444ea24",
+      "kind": "add",
+      "delta_p": 1,
+      "add_rid": "#-1:fac75988-ea52-43cb-888c-45f1495ba491",
+      "remove_rid": null,
+      "node": {
+        "@rid": "#-1:fac75988-ea52-43cb-888c-45f1495ba491",
+        "title": "S1用户面路径不可用",
+        "location": "sbn=0,NodeMe=532639,Equipment=1,rack=1,shelf=1,board=1",
+        "reason": "1.eNodeB路由错误。\n2.XGW故障。\n3.eNodeB与XGW之间的传输链路故障。"
+      },
+      "probabilities": {
+        "0": 0.3212110949022483,
+        "1": 0.6787889050977517
+      },
+      "source_model": "v38_control",
+      "candidate_id": 5,
+      "model_probabilities": {
+        "v38_control": {
+          "0": 0.24415650414182913,
+          "1": 0.7558434958581709
+        },
+        "catboost": {
+          "0": 0.3982656856626675,
+          "1": 0.6017343143373325
+        }
+      },
+      "primary_source": "v38_control",
+      "full_legal_ranks": {
+        "v38_control": 5,
+        "catboost": 9
+      },
+      "rrf": 0.029877369007803793,
+      "v152_anchor": true,
+      "delta_tp_bounds": {
+        "max": 1,
+        "min": 0
+      },
+      "expected_f1": 0.9279222860335864
+    }
+  ]
+}

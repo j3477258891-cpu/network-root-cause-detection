@@ -1,41 +1,39 @@
-# Python cache
+# Dependencies and caches
+.deps/
+node_modules/
 __pycache__/
 *.pyc
-*.pyo
+.venv/
+venv/
+.codex_tmp/
+.codex/
+.agents/
 
-# Secrets
+# Credentials
 .env
 .env.*
 *.key
 *.pem
 
-# Competition data
-train/
-test/
-Data/
-.deps/
-*.zip
-
-# Generated submissions and state
-**/submissions/
-**/manifests/
-**/reports/
-**/backup/
-state.json
-ledger.csv
-
-# Models
-*.pt
-*.pth
-*.pkl
-*.joblib
-
-# Large/generated data
-*.csv
-*.parquet
-*.npy
-*.npz
-
-# Editors
+# Editor settings
 .vscode/
 .idea/
+
+
+# Local conversation exports and upload helper
+/2026/
+rollout-*.jsonl
+/h -u origin main
+/github-upload.ps1
+.deps/
+node_modules/
+__pycache__/
+.venv/
+venv/
+.codex_tmp/
+.codex/
+.agents/
+.env
+.env.*
+*.key
+*.pem

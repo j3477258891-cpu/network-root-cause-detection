@@ -1,0 +1,592 @@
+{
+  "dataset": "D:\\zgyidong\\experiments\\v25_semantic_router\\cloud_dataset\\v25_semantic_router.npz",
+  "embedding_source": "D:\\zgyidong\\experiments\\v25_semantic_router\\cloud_outputs\\semantic_seed_20260803_fold_0.npz",
+  "available_embedding_bundles": [
+    "D:\\zgyidong\\experiments\\v25_semantic_router\\cloud_outputs\\semantic_seed_20260803_fold_0.npz",
+    "D:\\zgyidong\\experiments\\v25_semantic_router\\cloud_outputs\\semantic_seed_20260803_fold_1.npz"
+  ],
+  "train_rows": 9334,
+  "target_train_predictions": 3169,
+  "baseline_tp": 2826,
+  "settings": [
+    {
+      "k": 5,
+      "weight": "cosine_rank"
+    },
+    {
+      "k": 10,
+      "weight": "cosine_rank"
+    },
+    {
+      "k": 20,
+      "weight": "cosine_rank"
+    },
+    {
+      "k": 50,
+      "weight": "cosine_rank"
+    },
+    {
+      "k": 100,
+      "weight": "cosine_rank"
+    }
+  ],
+  "folds": {
+    "5": {
+      "0": {
+        "fixed_count": {
+          "predictions": 600,
+          "tp": 339,
+          "baseline_predictions": 600,
+          "baseline_tp": 532,
+          "delta_tp": -193,
+          "added": 228,
+          "removed": 228
+        },
+        "exact_global": {
+          "predictions": 581,
+          "tp": 284,
+          "baseline_predictions": 600,
+          "baseline_tp": 532,
+          "delta_tp": -248,
+          "added": 274,
+          "removed": 293
+        }
+      },
+      "1": {
+        "fixed_count": {
+          "predictions": 665,
+          "tp": 440,
+          "baseline_predictions": 665,
+          "baseline_tp": 612,
+          "delta_tp": -172,
+          "added": 198,
+          "removed": 198
+        },
+        "exact_global": {
+          "predictions": 676,
+          "tp": 314,
+          "baseline_predictions": 665,
+          "baseline_tp": 612,
+          "delta_tp": -298,
+          "added": 360,
+          "removed": 349
+        }
+      },
+      "2": {
+        "fixed_count": {
+          "predictions": 609,
+          "tp": 332,
+          "baseline_predictions": 609,
+          "baseline_tp": 545,
+          "delta_tp": -213,
+          "added": 253,
+          "removed": 253
+        },
+        "exact_global": {
+          "predictions": 686,
+          "tp": 292,
+          "baseline_predictions": 609,
+          "baseline_tp": 545,
+          "delta_tp": -253,
+          "added": 378,
+          "removed": 301
+        }
+      },
+      "3": {
+        "fixed_count": {
+          "predictions": 611,
+          "tp": 380,
+          "baseline_predictions": 611,
+          "baseline_tp": 555,
+          "delta_tp": -175,
+          "added": 218,
+          "removed": 218
+        },
+        "exact_global": {
+          "predictions": 596,
+          "tp": 286,
+          "baseline_predictions": 611,
+          "baseline_tp": 555,
+          "delta_tp": -269,
+          "added": 311,
+          "removed": 326
+        }
+      },
+      "4": {
+        "fixed_count": {
+          "predictions": 684,
+          "tp": 355,
+          "baseline_predictions": 684,
+          "baseline_tp": 582,
+          "delta_tp": -227,
+          "added": 300,
+          "removed": 300
+        },
+        "exact_global": {
+          "predictions": 630,
+          "tp": 286,
+          "baseline_predictions": 684,
+          "baseline_tp": 582,
+          "delta_tp": -296,
+          "added": 324,
+          "removed": 378
+        }
+      }
+    },
+    "10": {
+      "0": {
+        "fixed_count": {
+          "predictions": 600,
+          "tp": 339,
+          "baseline_predictions": 600,
+          "baseline_tp": 532,
+          "delta_tp": -193,
+          "added": 228,
+          "removed": 228
+        },
+        "exact_global": {
+          "predictions": 581,
+          "tp": 284,
+          "baseline_predictions": 600,
+          "baseline_tp": 532,
+          "delta_tp": -248,
+          "added": 274,
+          "removed": 293
+        }
+      },
+      "1": {
+        "fixed_count": {
+          "predictions": 665,
+          "tp": 440,
+          "baseline_predictions": 665,
+          "baseline_tp": 612,
+          "delta_tp": -172,
+          "added": 198,
+          "removed": 198
+        },
+        "exact_global": {
+          "predictions": 676,
+          "tp": 314,
+          "baseline_predictions": 665,
+          "baseline_tp": 612,
+          "delta_tp": -298,
+          "added": 360,
+          "removed": 349
+        }
+      },
+      "2": {
+        "fixed_count": {
+          "predictions": 609,
+          "tp": 332,
+          "baseline_predictions": 609,
+          "baseline_tp": 545,
+          "delta_tp": -213,
+          "added": 253,
+          "removed": 253
+        },
+        "exact_global": {
+          "predictions": 686,
+          "tp": 292,
+          "baseline_predictions": 609,
+          "baseline_tp": 545,
+          "delta_tp": -253,
+          "added": 378,
+          "removed": 301
+        }
+      },
+      "3": {
+        "fixed_count": {
+          "predictions": 611,
+          "tp": 380,
+          "baseline_predictions": 611,
+          "baseline_tp": 555,
+          "delta_tp": -175,
+          "added": 218,
+          "removed": 218
+        },
+        "exact_global": {
+          "predictions": 596,
+          "tp": 286,
+          "baseline_predictions": 611,
+          "baseline_tp": 555,
+          "delta_tp": -269,
+          "added": 311,
+          "removed": 326
+        }
+      },
+      "4": {
+        "fixed_count": {
+          "predictions": 684,
+          "tp": 355,
+          "baseline_predictions": 684,
+          "baseline_tp": 582,
+          "delta_tp": -227,
+          "added": 300,
+          "removed": 300
+        },
+        "exact_global": {
+          "predictions": 630,
+          "tp": 286,
+          "baseline_predictions": 684,
+          "baseline_tp": 582,
+          "delta_tp": -296,
+          "added": 324,
+          "removed": 378
+        }
+      }
+    },
+    "20": {
+      "0": {
+        "fixed_count": {
+          "predictions": 600,
+          "tp": 339,
+          "baseline_predictions": 600,
+          "baseline_tp": 532,
+          "delta_tp": -193,
+          "added": 229,
+          "removed": 229
+        },
+        "exact_global": {
+          "predictions": 581,
+          "tp": 284,
+          "baseline_predictions": 600,
+          "baseline_tp": 532,
+          "delta_tp": -248,
+          "added": 274,
+          "removed": 293
+        }
+      },
+      "1": {
+        "fixed_count": {
+          "predictions": 665,
+          "tp": 440,
+          "baseline_predictions": 665,
+          "baseline_tp": 612,
+          "delta_tp": -172,
+          "added": 198,
+          "removed": 198
+        },
+        "exact_global": {
+          "predictions": 676,
+          "tp": 314,
+          "baseline_predictions": 665,
+          "baseline_tp": 612,
+          "delta_tp": -298,
+          "added": 360,
+          "removed": 349
+        }
+      },
+      "2": {
+        "fixed_count": {
+          "predictions": 609,
+          "tp": 332,
+          "baseline_predictions": 609,
+          "baseline_tp": 545,
+          "delta_tp": -213,
+          "added": 253,
+          "removed": 253
+        },
+        "exact_global": {
+          "predictions": 686,
+          "tp": 292,
+          "baseline_predictions": 609,
+          "baseline_tp": 545,
+          "delta_tp": -253,
+          "added": 378,
+          "removed": 301
+        }
+      },
+      "3": {
+        "fixed_count": {
+          "predictions": 611,
+          "tp": 378,
+          "baseline_predictions": 611,
+          "baseline_tp": 555,
+          "delta_tp": -177,
+          "added": 221,
+          "removed": 221
+        },
+        "exact_global": {
+          "predictions": 596,
+          "tp": 286,
+          "baseline_predictions": 611,
+          "baseline_tp": 555,
+          "delta_tp": -269,
+          "added": 311,
+          "removed": 326
+        }
+      },
+      "4": {
+        "fixed_count": {
+          "predictions": 684,
+          "tp": 355,
+          "baseline_predictions": 684,
+          "baseline_tp": 582,
+          "delta_tp": -227,
+          "added": 300,
+          "removed": 300
+        },
+        "exact_global": {
+          "predictions": 630,
+          "tp": 286,
+          "baseline_predictions": 684,
+          "baseline_tp": 582,
+          "delta_tp": -296,
+          "added": 324,
+          "removed": 378
+        }
+      }
+    },
+    "50": {
+      "0": {
+        "fixed_count": {
+          "predictions": 600,
+          "tp": 337,
+          "baseline_predictions": 600,
+          "baseline_tp": 532,
+          "delta_tp": -195,
+          "added": 231,
+          "removed": 231
+        },
+        "exact_global": {
+          "predictions": 581,
+          "tp": 284,
+          "baseline_predictions": 600,
+          "baseline_tp": 532,
+          "delta_tp": -248,
+          "added": 274,
+          "removed": 293
+        }
+      },
+      "1": {
+        "fixed_count": {
+          "predictions": 665,
+          "tp": 438,
+          "baseline_predictions": 665,
+          "baseline_tp": 612,
+          "delta_tp": -174,
+          "added": 200,
+          "removed": 200
+        },
+        "exact_global": {
+          "predictions": 676,
+          "tp": 314,
+          "baseline_predictions": 665,
+          "baseline_tp": 612,
+          "delta_tp": -298,
+          "added": 360,
+          "removed": 349
+        }
+      },
+      "2": {
+        "fixed_count": {
+          "predictions": 609,
+          "tp": 332,
+          "baseline_predictions": 609,
+          "baseline_tp": 545,
+          "delta_tp": -213,
+          "added": 253,
+          "removed": 253
+        },
+        "exact_global": {
+          "predictions": 686,
+          "tp": 292,
+          "baseline_predictions": 609,
+          "baseline_tp": 545,
+          "delta_tp": -253,
+          "added": 378,
+          "removed": 301
+        }
+      },
+      "3": {
+        "fixed_count": {
+          "predictions": 611,
+          "tp": 378,
+          "baseline_predictions": 611,
+          "baseline_tp": 555,
+          "delta_tp": -177,
+          "added": 221,
+          "removed": 221
+        },
+        "exact_global": {
+          "predictions": 596,
+          "tp": 286,
+          "baseline_predictions": 611,
+          "baseline_tp": 555,
+          "delta_tp": -269,
+          "added": 311,
+          "removed": 326
+        }
+      },
+      "4": {
+        "fixed_count": {
+          "predictions": 684,
+          "tp": 353,
+          "baseline_predictions": 684,
+          "baseline_tp": 582,
+          "delta_tp": -229,
+          "added": 302,
+          "removed": 302
+        },
+        "exact_global": {
+          "predictions": 630,
+          "tp": 285,
+          "baseline_predictions": 684,
+          "baseline_tp": 582,
+          "delta_tp": -297,
+          "added": 325,
+          "removed": 379
+        }
+      }
+    },
+    "100": {
+      "0": {
+        "fixed_count": {
+          "predictions": 600,
+          "tp": 334,
+          "baseline_predictions": 600,
+          "baseline_tp": 532,
+          "delta_tp": -198,
+          "added": 235,
+          "removed": 235
+        },
+        "exact_global": {
+          "predictions": 581,
+          "tp": 284,
+          "baseline_predictions": 600,
+          "baseline_tp": 532,
+          "delta_tp": -248,
+          "added": 274,
+          "removed": 293
+        }
+      },
+      "1": {
+        "fixed_count": {
+          "predictions": 665,
+          "tp": 435,
+          "baseline_predictions": 665,
+          "baseline_tp": 612,
+          "delta_tp": -177,
+          "added": 204,
+          "removed": 204
+        },
+        "exact_global": {
+          "predictions": 676,
+          "tp": 313,
+          "baseline_predictions": 665,
+          "baseline_tp": 612,
+          "delta_tp": -299,
+          "added": 360,
+          "removed": 349
+        }
+      },
+      "2": {
+        "fixed_count": {
+          "predictions": 609,
+          "tp": 323,
+          "baseline_predictions": 609,
+          "baseline_tp": 545,
+          "delta_tp": -222,
+          "added": 262,
+          "removed": 262
+        },
+        "exact_global": {
+          "predictions": 686,
+          "tp": 291,
+          "baseline_predictions": 609,
+          "baseline_tp": 545,
+          "delta_tp": -254,
+          "added": 379,
+          "removed": 302
+        }
+      },
+      "3": {
+        "fixed_count": {
+          "predictions": 611,
+          "tp": 377,
+          "baseline_predictions": 611,
+          "baseline_tp": 555,
+          "delta_tp": -178,
+          "added": 223,
+          "removed": 223
+        },
+        "exact_global": {
+          "predictions": 596,
+          "tp": 286,
+          "baseline_predictions": 611,
+          "baseline_tp": 555,
+          "delta_tp": -269,
+          "added": 311,
+          "removed": 326
+        }
+      },
+      "4": {
+        "fixed_count": {
+          "predictions": 684,
+          "tp": 350,
+          "baseline_predictions": 684,
+          "baseline_tp": 582,
+          "delta_tp": -232,
+          "added": 304,
+          "removed": 304
+        },
+        "exact_global": {
+          "predictions": 630,
+          "tp": 284,
+          "baseline_predictions": 684,
+          "baseline_tp": 582,
+          "delta_tp": -298,
+          "added": 325,
+          "removed": 379
+        }
+      }
+    }
+  },
+  "all_fixed_count": {
+    "5": {
+      "predictions": 3169,
+      "tp": 1846,
+      "baseline_predictions": 3169,
+      "baseline_tp": 2826,
+      "delta_tp": -980,
+      "added": 1197,
+      "removed": 1197
+    },
+    "10": {
+      "predictions": 3169,
+      "tp": 1846,
+      "baseline_predictions": 3169,
+      "baseline_tp": 2826,
+      "delta_tp": -980,
+      "added": 1197,
+      "removed": 1197
+    },
+    "20": {
+      "predictions": 3169,
+      "tp": 1844,
+      "baseline_predictions": 3169,
+      "baseline_tp": 2826,
+      "delta_tp": -982,
+      "added": 1201,
+      "removed": 1201
+    },
+    "50": {
+      "predictions": 3169,
+      "tp": 1838,
+      "baseline_predictions": 3169,
+      "baseline_tp": 2826,
+      "delta_tp": -988,
+      "added": 1207,
+      "removed": 1207
+    },
+    "100": {
+      "predictions": 3169,
+      "tp": 1819,
+      "baseline_predictions": 3169,
+      "baseline_tp": 2826,
+      "delta_tp": -1007,
+      "added": 1228,
+      "removed": 1228
+    }
+  }
+}

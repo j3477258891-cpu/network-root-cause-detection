@@ -1,0 +1,834 @@
+{
+  "version": 1,
+  "champion": "D:\\zgyidong\\experiments\\v30_meta_stack\\submissions\\v30_cross_order_top5.csv",
+  "champion_sha256": "f777ecfb50801a93419c9975c2273b0aeb566b0b1a31ed31deb15c9aaa873a32",
+  "constraints": {
+    "min_support": 5,
+    "min_sites": 3,
+    "consistency": 1.0,
+    "max_roots": 8,
+    "one_action_per_order": true
+  },
+  "discovered": {
+    "group_rules": 18,
+    "pair_rules": 44,
+    "strict_templates": 22,
+    "raw_candidates": 84,
+    "protected_forced_in": 12,
+    "protected_forced_out": 12,
+    "accepted_actions": 41,
+    "rejected_actions": 43
+  },
+  "actions": [
+    {
+      "action_id": "group_full_625ffce7",
+      "order_id": "625ffce7-65c5-4657-9104-4148b4113130",
+      "remove_rids": [],
+      "add_rids": [
+        "#-1:db7a57de-40b0-4ac4-b03b-d4c2cb610499"
+      ],
+      "source": "group_rule",
+      "subtype": "group_full",
+      "expected_gain": 1.0,
+      "evidence": {
+        "subtype": "group_full",
+        "support": 5,
+        "sites": 5,
+        "domains": [
+          [
+            "设备商甲",
+            ""
+          ]
+        ],
+        "loo_non_degrading": true,
+        "consistency": 1.0
+      },
+      "probe_batch": null,
+      "online_delta_tp": null
+    },
+    {
+      "action_id": "group_pair_53aa2dc8",
+      "order_id": "53aa2dc8-1861-4faa-8d25-3847c8e392bb",
+      "remove_rids": [],
+      "add_rids": [
+        "#-1:4e8373ef-5afc-45ed-8abf-09e4d5ac6b67"
+      ],
+      "source": "group_rule",
+      "subtype": "group_pair",
+      "expected_gain": 1.0,
+      "evidence": {
+        "subtype": "group_pair",
+        "pattern": [
+          0,
+          1
+        ],
+        "support": 15,
+        "sites": 11,
+        "domains": [
+          [
+            [
+              "设备商甲",
+              ""
+            ],
+            [
+              "设备商甲",
+              ""
+            ]
+          ]
+        ],
+        "consistency": 1.0,
+        "loo_non_degrading": true
+      },
+      "probe_batch": null,
+      "online_delta_tp": null
+    },
+    {
+      "action_id": "group_pair_776e95ea",
+      "order_id": "776e95ea-48dd-4b17-b609-b8eb83c0cedd",
+      "remove_rids": [],
+      "add_rids": [
+        "#-1:daf7d2fb-9101-4088-be70-18fe2dd58594"
+      ],
+      "source": "group_rule",
+      "subtype": "group_pair",
+      "expected_gain": 1.0,
+      "evidence": {
+        "subtype": "group_pair",
+        "pattern": [
+          0,
+          1
+        ],
+        "support": 18,
+        "sites": 14,
+        "domains": [
+          [
+            [
+              "设备商甲",
+              ""
+            ],
+            [
+              "设备商甲",
+              ""
+            ]
+          ]
+        ],
+        "consistency": 1.0,
+        "loo_non_degrading": true
+      },
+      "probe_batch": null,
+      "online_delta_tp": null
+    },
+    {
+      "action_id": "group_pair_8b6e841a",
+      "order_id": "8b6e841a-d9e6-4b0d-ad7d-935807539c7e",
+      "remove_rids": [],
+      "add_rids": [
+        "#-1:e0cfe958-c013-42ca-87b7-7810b0dd90c6"
+      ],
+      "source": "group_rule",
+      "subtype": "group_pair",
+      "expected_gain": 1.0,
+      "evidence": {
+        "subtype": "group_pair",
+        "pattern": [
+          0,
+          1
+        ],
+        "support": 23,
+        "sites": 20,
+        "domains": [
+          [
+            [
+              "设备商甲",
+              ""
+            ],
+            [
+              "设备商甲",
+              ""
+            ]
+          ]
+        ],
+        "consistency": 1.0,
+        "loo_non_degrading": true
+      },
+      "probe_batch": null,
+      "online_delta_tp": null
+    },
+    {
+      "action_id": "group_pair_a6ae9c3c",
+      "order_id": "a6ae9c3c-c787-47e0-abf0-d610533dc2a0",
+      "remove_rids": [],
+      "add_rids": [
+        "#-1:b5c750a8-72e9-4e7c-8016-b079fbd6291d"
+      ],
+      "source": "group_rule",
+      "subtype": "group_pair",
+      "expected_gain": 1.0,
+      "evidence": {
+        "subtype": "group_pair",
+        "pattern": [
+          0,
+          1
+        ],
+        "support": 7,
+        "sites": 6,
+        "domains": [
+          [
+            [
+              "设备商甲",
+              ""
+            ],
+            [
+              "设备商甲",
+              ""
+            ]
+          ]
+        ],
+        "consistency": 1.0,
+        "loo_non_degrading": true
+      },
+      "probe_batch": null,
+      "online_delta_tp": null
+    },
+    {
+      "action_id": "group_pair_b92c1c42",
+      "order_id": "b92c1c42-bc69-48fa-b5c6-7bbd2635a15b",
+      "remove_rids": [],
+      "add_rids": [
+        "#-1:d5352c07-f1c9-4944-a708-21a2b6c2d5e5"
+      ],
+      "source": "group_rule",
+      "subtype": "group_pair",
+      "expected_gain": 1.0,
+      "evidence": {
+        "subtype": "group_pair",
+        "pattern": [
+          0,
+          1
+        ],
+        "support": 23,
+        "sites": 20,
+        "domains": [
+          [
+            [
+              "设备商甲",
+              ""
+            ],
+            [
+              "设备商甲",
+              ""
+            ]
+          ]
+        ],
+        "consistency": 1.0,
+        "loo_non_degrading": true
+      },
+      "probe_batch": null,
+      "online_delta_tp": null
+    },
+    {
+      "action_id": "group_pair_f57b8fbe",
+      "order_id": "f57b8fbe-bd33-4dc7-95ef-fbffa4552754",
+      "remove_rids": [],
+      "add_rids": [
+        "#-1:27418203-8811-4a2d-a93c-ab2673631312"
+      ],
+      "source": "group_rule",
+      "subtype": "group_pair",
+      "expected_gain": 1.0,
+      "evidence": {
+        "subtype": "group_pair",
+        "pattern": [
+          0,
+          1
+        ],
+        "support": 18,
+        "sites": 14,
+        "domains": [
+          [
+            [
+              "设备商甲",
+              ""
+            ],
+            [
+              "设备商甲",
+              ""
+            ]
+          ]
+        ],
+        "consistency": 1.0,
+        "loo_non_degrading": true
+      },
+      "probe_batch": null,
+      "online_delta_tp": null
+    },
+    {
+      "action_id": "v26_router_0052146f",
+      "order_id": "0052146f-c00c-4786-8d58-c2db3ec6baa0",
+      "remove_rids": [
+        "#-1:4ca39af0-1573-4ce4-8a37-ea354c733cd9"
+      ],
+      "add_rids": [],
+      "source": "v26_router",
+      "subtype": "v26_router",
+      "expected_gain": 0.5,
+      "evidence": {
+        "candidate": "D:\\zgyidong\\experiments\\v26_selective_router\\submissions\\v26_selective_error_router_p1059.csv"
+      },
+      "probe_batch": null,
+      "online_delta_tp": null
+    },
+    {
+      "action_id": "v26_router_06d346bc",
+      "order_id": "06d346bc-1345-4825-9e01-546cc30ac6ba",
+      "remove_rids": [
+        "#-1:1ae334d7-8285-4ed0-a2eb-d5f84869373f"
+      ],
+      "add_rids": [
+        "#-1:a8f691fe-fb68-4083-bc58-267227343e3c"
+      ],
+      "source": "v26_router",
+      "subtype": "v26_router",
+      "expected_gain": 0.5,
+      "evidence": {
+        "candidate": "D:\\zgyidong\\experiments\\v26_selective_router\\submissions\\v26_selective_error_router_p1059.csv"
+      },
+      "probe_batch": null,
+      "online_delta_tp": null
+    },
+    {
+      "action_id": "v26_router_06d84a90",
+      "order_id": "06d84a90-670f-4ccb-b482-9afdb874d164",
+      "remove_rids": [],
+      "add_rids": [
+        "#-1:acdac9bd-c2ff-4da6-8bc7-8b07c1bc3304"
+      ],
+      "source": "v26_router",
+      "subtype": "v26_router",
+      "expected_gain": 0.5,
+      "evidence": {
+        "candidate": "D:\\zgyidong\\experiments\\v26_selective_router\\submissions\\v26_selective_error_router_p1059.csv"
+      },
+      "probe_batch": null,
+      "online_delta_tp": null
+    },
+    {
+      "action_id": "v26_router_0a884a84",
+      "order_id": "0a884a84-bd68-4390-906e-67cbbfe80c74",
+      "remove_rids": [],
+      "add_rids": [
+        "#-1:8ccc422f-b059-4c99-8625-b0cafee07add"
+      ],
+      "source": "v26_router",
+      "subtype": "v26_router",
+      "expected_gain": 0.5,
+      "evidence": {
+        "candidate": "D:\\zgyidong\\experiments\\v26_selective_router\\submissions\\v26_selective_error_router_p1059.csv"
+      },
+      "probe_batch": null,
+      "online_delta_tp": null
+    },
+    {
+      "action_id": "v26_router_138d35bb",
+      "order_id": "138d35bb-8cc4-43c2-bd1b-60e657611f51",
+      "remove_rids": [],
+      "add_rids": [
+        "#-1:2f464ba0-0005-41ad-8c63-4e8877c88093"
+      ],
+      "source": "v26_router",
+      "subtype": "v26_router",
+      "expected_gain": 0.5,
+      "evidence": {
+        "candidate": "D:\\zgyidong\\experiments\\v26_selective_router\\submissions\\v26_selective_error_router_p1059.csv"
+      },
+      "probe_batch": null,
+      "online_delta_tp": null
+    },
+    {
+      "action_id": "v26_router_1600d318",
+      "order_id": "1600d318-ecdc-4d10-816f-9f2c6987eb9f",
+      "remove_rids": [
+        "#-1:bc774a67-51fc-4c30-8eb8-1dd39cd33cf6"
+      ],
+      "add_rids": [],
+      "source": "v26_router",
+      "subtype": "v26_router",
+      "expected_gain": 0.5,
+      "evidence": {
+        "candidate": "D:\\zgyidong\\experiments\\v26_selective_router\\submissions\\v26_selective_error_router_p1059.csv"
+      },
+      "probe_batch": null,
+      "online_delta_tp": null
+    },
+    {
+      "action_id": "v26_router_25a37559",
+      "order_id": "25a37559-7249-4fe0-bfd9-97007b9f7c5d",
+      "remove_rids": [
+        "#-1:08c72d0d-bea2-430a-b3ae-84deb00b3a99"
+      ],
+      "add_rids": [],
+      "source": "v26_router",
+      "subtype": "v26_router",
+      "expected_gain": 0.5,
+      "evidence": {
+        "candidate": "D:\\zgyidong\\experiments\\v26_selective_router\\submissions\\v26_selective_error_router_p1059.csv"
+      },
+      "probe_batch": null,
+      "online_delta_tp": null
+    },
+    {
+      "action_id": "v26_router_35dcec5d",
+      "order_id": "35dcec5d-5286-4e33-bd22-42708535b5c8",
+      "remove_rids": [
+        "#-1:969993f8-2571-4163-9b32-4b676304a6c9"
+      ],
+      "add_rids": [],
+      "source": "v26_router",
+      "subtype": "v26_router",
+      "expected_gain": 0.5,
+      "evidence": {
+        "candidate": "D:\\zgyidong\\experiments\\v26_selective_router\\submissions\\v26_selective_error_router_p1059.csv"
+      },
+      "probe_batch": null,
+      "online_delta_tp": null
+    },
+    {
+      "action_id": "v26_router_38fa907e",
+      "order_id": "38fa907e-772c-484c-bab4-8227025e3b49",
+      "remove_rids": [],
+      "add_rids": [
+        "#-1:9fe1a5d2-ce44-4bec-b975-5e3d4a072afa"
+      ],
+      "source": "v26_router",
+      "subtype": "v26_router",
+      "expected_gain": 0.5,
+      "evidence": {
+        "candidate": "D:\\zgyidong\\experiments\\v26_selective_router\\submissions\\v26_selective_error_router_p1059.csv"
+      },
+      "probe_batch": null,
+      "online_delta_tp": null
+    },
+    {
+      "action_id": "v26_router_43a52adc",
+      "order_id": "43a52adc-0332-479c-9e4a-f2642ff64db8",
+      "remove_rids": [
+        "#-1:99f8512f-1c76-4fcd-858e-f7f021edc875"
+      ],
+      "add_rids": [],
+      "source": "v26_router",
+      "subtype": "v26_router",
+      "expected_gain": 0.5,
+      "evidence": {
+        "candidate": "D:\\zgyidong\\experiments\\v26_selective_router\\submissions\\v26_selective_error_router_p1059.csv"
+      },
+      "probe_batch": null,
+      "online_delta_tp": null
+    },
+    {
+      "action_id": "v26_router_441995e6",
+      "order_id": "441995e6-e153-4e40-af0f-d0eb20ddcfa5",
+      "remove_rids": [
+        "#-1:63de300f-5195-4f21-8e5d-244d93516979"
+      ],
+      "add_rids": [
+        "#-1:53f23b3e-c801-45d7-8d31-1cb8b8809946"
+      ],
+      "source": "v26_router",
+      "subtype": "v26_router",
+      "expected_gain": 0.5,
+      "evidence": {
+        "candidate": "D:\\zgyidong\\experiments\\v26_selective_router\\submissions\\v26_selective_error_router_p1059.csv"
+      },
+      "probe_batch": null,
+      "online_delta_tp": null
+    },
+    {
+      "action_id": "v26_router_49c5da74",
+      "order_id": "49c5da74-b725-475e-a6b5-024685ac2658",
+      "remove_rids": [],
+      "add_rids": [
+        "#-1:13f10988-2d6b-4080-be1b-771d9a74e377"
+      ],
+      "source": "v26_router",
+      "subtype": "v26_router",
+      "expected_gain": 0.5,
+      "evidence": {
+        "candidate": "D:\\zgyidong\\experiments\\v26_selective_router\\submissions\\v26_selective_error_router_p1059.csv"
+      },
+      "probe_batch": null,
+      "online_delta_tp": null
+    },
+    {
+      "action_id": "v26_router_5b2934e0",
+      "order_id": "5b2934e0-b8fd-4f39-9287-15c201fd4c08",
+      "remove_rids": [
+        "#-1:ce2058ba-e040-4db7-8ec3-d790adbc0695"
+      ],
+      "add_rids": [
+        "#-1:7616f447-bb42-4ee1-9ca0-2f3a563f143d"
+      ],
+      "source": "v26_router",
+      "subtype": "v26_router",
+      "expected_gain": 0.5,
+      "evidence": {
+        "candidate": "D:\\zgyidong\\experiments\\v26_selective_router\\submissions\\v26_selective_error_router_p1059.csv"
+      },
+      "probe_batch": null,
+      "online_delta_tp": null
+    },
+    {
+      "action_id": "v26_router_7b56b02c",
+      "order_id": "7b56b02c-061a-443f-8977-17ad3f65f9cf",
+      "remove_rids": [],
+      "add_rids": [
+        "#-1:a1e01065-1f62-4a52-b4ce-7dfad17b952f"
+      ],
+      "source": "v26_router",
+      "subtype": "v26_router",
+      "expected_gain": 0.5,
+      "evidence": {
+        "candidate": "D:\\zgyidong\\experiments\\v26_selective_router\\submissions\\v26_selective_error_router_p1059.csv"
+      },
+      "probe_batch": null,
+      "online_delta_tp": null
+    },
+    {
+      "action_id": "v26_router_8106c960",
+      "order_id": "8106c960-6510-43b1-af25-b3c91388c598",
+      "remove_rids": [],
+      "add_rids": [
+        "#-1:17cbacb0-d3fe-45b8-8627-2cb9afedb0ab"
+      ],
+      "source": "v26_router",
+      "subtype": "v26_router",
+      "expected_gain": 0.5,
+      "evidence": {
+        "candidate": "D:\\zgyidong\\experiments\\v26_selective_router\\submissions\\v26_selective_error_router_p1059.csv"
+      },
+      "probe_batch": null,
+      "online_delta_tp": null
+    },
+    {
+      "action_id": "v26_router_81e47a27",
+      "order_id": "81e47a27-a3f2-41ee-863e-36a27b36e510",
+      "remove_rids": [],
+      "add_rids": [
+        "#-1:c930a772-2aec-456e-aa3c-6cee41ceaeea"
+      ],
+      "source": "v26_router",
+      "subtype": "v26_router",
+      "expected_gain": 0.5,
+      "evidence": {
+        "candidate": "D:\\zgyidong\\experiments\\v26_selective_router\\submissions\\v26_selective_error_router_p1059.csv"
+      },
+      "probe_batch": null,
+      "online_delta_tp": null
+    },
+    {
+      "action_id": "v26_router_9738b42a",
+      "order_id": "9738b42a-7360-4763-8895-0e84599b4d60",
+      "remove_rids": [],
+      "add_rids": [
+        "#-1:7feea0e0-d89e-47b4-98e7-836da80b44cf"
+      ],
+      "source": "v26_router",
+      "subtype": "v26_router",
+      "expected_gain": 0.5,
+      "evidence": {
+        "candidate": "D:\\zgyidong\\experiments\\v26_selective_router\\submissions\\v26_selective_error_router_p1059.csv"
+      },
+      "probe_batch": null,
+      "online_delta_tp": null
+    },
+    {
+      "action_id": "v26_router_a1aec670",
+      "order_id": "a1aec670-550d-4abb-bd10-dadfd29f6635",
+      "remove_rids": [],
+      "add_rids": [
+        "#-1:8c6f24ed-6585-4aad-acc0-748df15529fb"
+      ],
+      "source": "v26_router",
+      "subtype": "v26_router",
+      "expected_gain": 0.5,
+      "evidence": {
+        "candidate": "D:\\zgyidong\\experiments\\v26_selective_router\\submissions\\v26_selective_error_router_p1059.csv"
+      },
+      "probe_batch": null,
+      "online_delta_tp": null
+    },
+    {
+      "action_id": "v26_router_a3645153",
+      "order_id": "a3645153-27f5-4b8c-9e3a-bc84cfd7c653",
+      "remove_rids": [],
+      "add_rids": [
+        "#-1:3a8f96aa-2921-40b6-aafe-19d93e9c762a"
+      ],
+      "source": "v26_router",
+      "subtype": "v26_router",
+      "expected_gain": 0.5,
+      "evidence": {
+        "candidate": "D:\\zgyidong\\experiments\\v26_selective_router\\submissions\\v26_selective_error_router_p1059.csv"
+      },
+      "probe_batch": null,
+      "online_delta_tp": null
+    },
+    {
+      "action_id": "v26_router_aa54ba78",
+      "order_id": "aa54ba78-924a-45c7-a182-d8d100b3d130",
+      "remove_rids": [
+        "#-1:299f8f5c-85c1-42d5-9896-4ff07da6751b"
+      ],
+      "add_rids": [
+        "#-1:13b01a84-3dbb-4865-adfb-6dc028159154"
+      ],
+      "source": "v26_router",
+      "subtype": "v26_router",
+      "expected_gain": 0.5,
+      "evidence": {
+        "candidate": "D:\\zgyidong\\experiments\\v26_selective_router\\submissions\\v26_selective_error_router_p1059.csv"
+      },
+      "probe_batch": null,
+      "online_delta_tp": null
+    },
+    {
+      "action_id": "v26_router_b1e02c99",
+      "order_id": "b1e02c99-d2c4-4546-8324-74fdba3844ad",
+      "remove_rids": [],
+      "add_rids": [
+        "#-1:6321b4e6-4c58-4c07-9ed3-ff1d86091d06"
+      ],
+      "source": "v26_router",
+      "subtype": "v26_router",
+      "expected_gain": 0.5,
+      "evidence": {
+        "candidate": "D:\\zgyidong\\experiments\\v26_selective_router\\submissions\\v26_selective_error_router_p1059.csv"
+      },
+      "probe_batch": null,
+      "online_delta_tp": null
+    },
+    {
+      "action_id": "v26_router_c2f7c036",
+      "order_id": "c2f7c036-aaf0-4a95-9bf4-3cae57b6e7d5",
+      "remove_rids": [],
+      "add_rids": [
+        "#-1:544c9a02-cf1c-41da-a398-c495142bca71"
+      ],
+      "source": "v26_router",
+      "subtype": "v26_router",
+      "expected_gain": 0.5,
+      "evidence": {
+        "candidate": "D:\\zgyidong\\experiments\\v26_selective_router\\submissions\\v26_selective_error_router_p1059.csv"
+      },
+      "probe_batch": null,
+      "online_delta_tp": null
+    },
+    {
+      "action_id": "v26_router_c6f82f1f",
+      "order_id": "c6f82f1f-0479-48b7-a2a6-deb0d9a3acf0",
+      "remove_rids": [],
+      "add_rids": [
+        "#-1:8280ee97-b280-4406-9ef8-0cf632aea79c"
+      ],
+      "source": "v26_router",
+      "subtype": "v26_router",
+      "expected_gain": 0.5,
+      "evidence": {
+        "candidate": "D:\\zgyidong\\experiments\\v26_selective_router\\submissions\\v26_selective_error_router_p1059.csv"
+      },
+      "probe_batch": null,
+      "online_delta_tp": null
+    },
+    {
+      "action_id": "v26_router_d14a7ca0",
+      "order_id": "d14a7ca0-eeb5-44b8-850a-fdc536f03f2c",
+      "remove_rids": [
+        "#-1:43925f7b-78f6-4739-95a6-06ff16cf31a1"
+      ],
+      "add_rids": [],
+      "source": "v26_router",
+      "subtype": "v26_router",
+      "expected_gain": 0.5,
+      "evidence": {
+        "candidate": "D:\\zgyidong\\experiments\\v26_selective_router\\submissions\\v26_selective_error_router_p1059.csv"
+      },
+      "probe_batch": null,
+      "online_delta_tp": null
+    },
+    {
+      "action_id": "v26_router_d450cd63",
+      "order_id": "d450cd63-3e5d-4c67-b11a-517c03d7e3e0",
+      "remove_rids": [],
+      "add_rids": [
+        "#-1:48efcb47-2887-4583-b31a-654c0a75cfef"
+      ],
+      "source": "v26_router",
+      "subtype": "v26_router",
+      "expected_gain": 0.5,
+      "evidence": {
+        "candidate": "D:\\zgyidong\\experiments\\v26_selective_router\\submissions\\v26_selective_error_router_p1059.csv"
+      },
+      "probe_batch": null,
+      "online_delta_tp": null
+    },
+    {
+      "action_id": "v26_router_d5376a71",
+      "order_id": "d5376a71-c48e-4351-ba60-f982778b3eb4",
+      "remove_rids": [],
+      "add_rids": [
+        "#-1:e401b7b4-697f-434e-8437-4b2136d6904f"
+      ],
+      "source": "v26_router",
+      "subtype": "v26_router",
+      "expected_gain": 0.5,
+      "evidence": {
+        "candidate": "D:\\zgyidong\\experiments\\v26_selective_router\\submissions\\v26_selective_error_router_p1059.csv"
+      },
+      "probe_batch": null,
+      "online_delta_tp": null
+    },
+    {
+      "action_id": "v26_router_e7700f4a",
+      "order_id": "e7700f4a-e97e-40ad-bda5-afd0f92e7509",
+      "remove_rids": [],
+      "add_rids": [
+        "#-1:009af8ca-5650-48c1-ac34-dd48826a16df"
+      ],
+      "source": "v26_router",
+      "subtype": "v26_router",
+      "expected_gain": 0.5,
+      "evidence": {
+        "candidate": "D:\\zgyidong\\experiments\\v26_selective_router\\submissions\\v26_selective_error_router_p1059.csv"
+      },
+      "probe_batch": null,
+      "online_delta_tp": null
+    },
+    {
+      "action_id": "v26_router_e8dcd7dc",
+      "order_id": "e8dcd7dc-771c-4366-a5b1-8a1ea25c54e3",
+      "remove_rids": [],
+      "add_rids": [
+        "#-1:8bb1ab76-3bd2-4b57-b3ab-bfae954998f8"
+      ],
+      "source": "v26_router",
+      "subtype": "v26_router",
+      "expected_gain": 0.5,
+      "evidence": {
+        "candidate": "D:\\zgyidong\\experiments\\v26_selective_router\\submissions\\v26_selective_error_router_p1059.csv"
+      },
+      "probe_batch": null,
+      "online_delta_tp": null
+    },
+    {
+      "action_id": "v26_router_eaad37d6",
+      "order_id": "eaad37d6-1779-4a23-9ba8-620008df08ce",
+      "remove_rids": [],
+      "add_rids": [
+        "#-1:d60160a4-edcb-45ae-9f3c-bd2de04b90e2"
+      ],
+      "source": "v26_router",
+      "subtype": "v26_router",
+      "expected_gain": 0.5,
+      "evidence": {
+        "candidate": "D:\\zgyidong\\experiments\\v26_selective_router\\submissions\\v26_selective_error_router_p1059.csv"
+      },
+      "probe_batch": null,
+      "online_delta_tp": null
+    },
+    {
+      "action_id": "v26_router_f1f18c6f",
+      "order_id": "f1f18c6f-7dd9-4ca9-b882-258667ae03d4",
+      "remove_rids": [],
+      "add_rids": [
+        "#-1:f097b0ce-88af-41f5-8831-da05b17894fc"
+      ],
+      "source": "v26_router",
+      "subtype": "v26_router",
+      "expected_gain": 0.5,
+      "evidence": {
+        "candidate": "D:\\zgyidong\\experiments\\v26_selective_router\\submissions\\v26_selective_error_router_p1059.csv"
+      },
+      "probe_batch": null,
+      "online_delta_tp": null
+    },
+    {
+      "action_id": "v26_router_f6a6325f",
+      "order_id": "f6a6325f-450b-426e-a0d9-505b9996adfc",
+      "remove_rids": [],
+      "add_rids": [
+        "#-1:fb6f2b00-97c0-41b9-8de4-1b234b2cc853"
+      ],
+      "source": "v26_router",
+      "subtype": "v26_router",
+      "expected_gain": 0.5,
+      "evidence": {
+        "candidate": "D:\\zgyidong\\experiments\\v26_selective_router\\submissions\\v26_selective_error_router_p1059.csv"
+      },
+      "probe_batch": null,
+      "online_delta_tp": null
+    },
+    {
+      "action_id": "v26_router_fad26f6d",
+      "order_id": "fad26f6d-c956-4598-9639-39fef649b32c",
+      "remove_rids": [],
+      "add_rids": [
+        "#-1:a6f7eb99-a84e-41d4-a903-5e31451dc4d8"
+      ],
+      "source": "v26_router",
+      "subtype": "v26_router",
+      "expected_gain": 0.5,
+      "evidence": {
+        "candidate": "D:\\zgyidong\\experiments\\v26_selective_router\\submissions\\v26_selective_error_router_p1059.csv"
+      },
+      "probe_batch": null,
+      "online_delta_tp": null
+    },
+    {
+      "action_id": "v26_router_fcead0b1",
+      "order_id": "fcead0b1-a014-4436-9e49-8041559471da",
+      "remove_rids": [],
+      "add_rids": [
+        "#-1:21222fdd-69d7-49f4-89b9-859eb41b9002",
+        "#-1:315e5a21-3eed-4e39-a635-b1b366642426",
+        "#-1:3ac6fa2b-8553-4ab3-b7d9-4404a68bfeef"
+      ],
+      "source": "v26_router",
+      "subtype": "v26_router",
+      "expected_gain": 0.5,
+      "evidence": {
+        "candidate": "D:\\zgyidong\\experiments\\v26_selective_router\\submissions\\v26_selective_error_router_p1059.csv"
+      },
+      "probe_batch": null,
+      "online_delta_tp": null
+    },
+    {
+      "action_id": "consensus_abe0d010",
+      "order_id": "abe0d010-6809-4a4d-9ae6-ee7f320f699d",
+      "remove_rids": [
+        "#-1:4a00b491-52e2-45cb-ae01-72137e3fe6a4"
+      ],
+      "add_rids": [
+        "#-1:275f37ad-3297-49f6-82d2-57406a713ac1"
+      ],
+      "source": "consensus",
+      "subtype": "consensus_swap",
+      "expected_gain": 0.5,
+      "evidence": {
+        "models": [
+          "D:\\zgyidong\\codexgz\\v14\\result_record_v14_final.csv",
+          "D:\\zgyidong\\codexgz\\v13\\result_record_v13_meta_1059.csv",
+          "D:\\zgyidong\\codexgz\\v12\\v12_candidate_1059.csv",
+          "D:\\zgyidong\\experiments\\submissions\\result_record_simple_alarm_prior_1059.csv",
+          "D:\\zgyidong\\experiments\\v25_semantic_router\\submissions\\result_record_pure_statistical_p1059.csv",
+          "D:\\zgyidong\\experiments\\v26_selective_router\\submissions\\v26_selective_error_router_p1059.csv"
+        ],
+        "votes": {
+          "#-1:4a00b491-52e2-45cb-ae01-72137e3fe6a4": 1,
+          "#-1:275f37ad-3297-49f6-82d2-57406a713ac1": 4
+        },
+        "vote_margin": 3
+      },
+      "probe_batch": null,
+      "online_delta_tp": null
+    }
+  ]
+}

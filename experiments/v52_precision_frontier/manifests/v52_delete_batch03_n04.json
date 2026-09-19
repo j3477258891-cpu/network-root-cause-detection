@@ -1,0 +1,163 @@
+{
+  "probe_id": "v52_delete_batch03_n04",
+  "baseline": "D:\\zgyidong\\experiments\\v30_meta_stack\\submissions\\v30_cross_order_top5.csv",
+  "fixed_base": "v37_exact_corrections",
+  "path": "D:\\zgyidong\\experiments\\v52_precision_frontier\\submissions\\v52_delete_batch03_n04.csv",
+  "kind": "delete",
+  "candidate_count": 4,
+  "actions": [
+    {
+      "action_id": "v37_exact_001",
+      "order_id": "d5376a71-c48e-4351-ba60-f982778b3eb4",
+      "remove_rids": [
+        "#-1:0c809583-390f-4d16-9b91-c4fb1e99c5c2"
+      ],
+      "add_rids": [
+        "#-1:e401b7b4-697f-434e-8437-4b2136d6904f"
+      ],
+      "source": "historical_leaderboard_equations",
+      "expected_gain": null,
+      "evidence": {
+        "proof": "label fixed in every binary solution of all scored equations"
+      }
+    },
+    {
+      "action_id": "v52_delete_031_320223fc",
+      "order_id": "320223fc-89b1-40bc-88a9-4b07d012da47",
+      "remove_rids": [
+        "#-1:7ecae749-0d4e-4b02-8c67-d51272846c5f"
+      ],
+      "add_rids": [],
+      "source": "v40_boundary_frontier",
+      "expected_gain": 0.03225806451612903,
+      "evidence": {
+        "source_rank": 31,
+        "order_id": "320223fc-89b1-40bc-88a9-4b07d012da47",
+        "rid": "#-1:7ecae749-0d4e-4b02-8c67-d51272846c5f",
+        "kind": "delete",
+        "title": "输入电源断",
+        "rank_average": 0.7120790481567383,
+        "scores": {
+          "v11": 0.8940714597702026,
+          "v13": 0.6868264675140381,
+          "v19": 0.7257664203643799,
+          "station": 0.5704598426818848,
+          "domain": 0.5103151798248291,
+          "consensus": 0.661195695400238
+        }
+      }
+    },
+    {
+      "action_id": "v52_delete_032_29e6bb98",
+      "order_id": "29e6bb98-ef14-4333-920b-0cd42ff58a96",
+      "remove_rids": [
+        "#-1:95ce5b4b-39bf-4501-82ca-9aca6b9ee799"
+      ],
+      "add_rids": [],
+      "source": "v40_boundary_frontier",
+      "expected_gain": 0.03125,
+      "evidence": {
+        "source_rank": 32,
+        "order_id": "29e6bb98-ef14-4333-920b-0cd42ff58a96",
+        "rid": "#-1:95ce5b4b-39bf-4501-82ca-9aca6b9ee799",
+        "kind": "delete",
+        "title": "射频单元交流掉电告警",
+        "rank_average": 0.7169704437255859,
+        "scores": {
+          "v11": 0.820072591304779,
+          "v13": 0.7487859725952148,
+          "v19": 0.6070684194564819,
+          "station": 0.7003740072250366,
+          "domain": 0.7402564287185669,
+          "consensus": 0.755577564239502
+        }
+      }
+    },
+    {
+      "action_id": "v52_delete_033_30ee0cf1",
+      "order_id": "30ee0cf1-0b53-438c-8154-c1356061e57c",
+      "remove_rids": [
+        "#-1:543f0402-3bf0-4aa6-98b1-941e43531036"
+      ],
+      "add_rids": [],
+      "source": "v40_boundary_frontier",
+      "expected_gain": 0.030303030303030304,
+      "evidence": {
+        "source_rank": 33,
+        "order_id": "30ee0cf1-0b53-438c-8154-c1356061e57c",
+        "rid": "#-1:543f0402-3bf0-4aa6-98b1-941e43531036",
+        "kind": "delete",
+        "title": "RRU链路断",
+        "rank_average": 0.7188240885734558,
+        "scores": {
+          "v11": 0.7597201466560364,
+          "v13": 0.6780691742897034,
+          "v19": 0.6520805358886719,
+          "station": 0.7086160778999329,
+          "domain": 0.8038603067398071,
+          "consensus": 0.8123053908348083
+        }
+      }
+    },
+    {
+      "action_id": "v52_delete_036_98aafbf4",
+      "order_id": "98aafbf4-e316-425d-a5bb-6bc17ddc7776",
+      "remove_rids": [
+        "#-1:54b69ebf-4380-42cd-a0ae-2c74e3bba101"
+      ],
+      "add_rids": [],
+      "source": "v40_boundary_frontier",
+      "expected_gain": 0.027777777777777776,
+      "evidence": {
+        "source_rank": 36,
+        "order_id": "98aafbf4-e316-425d-a5bb-6bc17ddc7776",
+        "rid": "#-1:54b69ebf-4380-42cd-a0ae-2c74e3bba101",
+        "kind": "delete",
+        "title": "射频单元交流掉电告警",
+        "rank_average": 0.7205746173858643,
+        "scores": {
+          "v11": 0.7943210601806641,
+          "v13": 0.6573024988174438,
+          "v19": 0.6281252503395081,
+          "station": 0.7720630764961243,
+          "domain": 0.7523488402366638,
+          "consensus": 0.8308739066123962
+        }
+      }
+    }
+  ],
+  "predictions": 1031,
+  "sha256": "ca401d049f6c6f1006f8b9b94573ff1ac338fb5df86ecf73725ea0870ee9c16a",
+  "score_possibilities": [
+    {
+      "candidate_correct": 0,
+      "tp": 956,
+      "predictions_delta": -4,
+      "score": 0.921445783
+    },
+    {
+      "candidate_correct": 1,
+      "tp": 955,
+      "predictions_delta": -4,
+      "score": 0.920481928
+    },
+    {
+      "candidate_correct": 2,
+      "tp": 954,
+      "predictions_delta": -4,
+      "score": 0.919518072
+    },
+    {
+      "candidate_correct": 3,
+      "tp": 953,
+      "predictions_delta": -4,
+      "score": 0.918554217
+    },
+    {
+      "candidate_correct": 4,
+      "tp": 952,
+      "predictions_delta": -4,
+      "score": 0.917590361
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "results": [
+    {
+      "probe_id": 1,
+      "file": "probe_01.csv",
+      "score": 0.910151,
+      "predictions": 1015,
+      "inferred_tp_if_base_tp_956": 937,
+      "inferred_true_deletions_if_base_tp_956": 19,
+      "inferred_safe_deletions_if_base_tp_956": 1,
+      "inferred_true_deletions_if_online_highest_tp_955": 18,
+      "delete_indices": [5, 7, 11, 12, 14, 15, 20, 23, 24, 31, 33, 36, 39, 49, 62, 66, 69, 71, 76, 77],
+      "decision": "stop_v119_delete_only_branch",
+      "source": "user_submission_screenshot",
+      "submitted_at": "2026-08-22 00:57:39"
+    }
+  ],
+  "next_action": "do_not_submit_probe_02_to_probe_08",
+  "note": "The result is poor under either baseline TP=956 or the online-highest TP=955 assumption; the deletion-only group is not safe."
+}

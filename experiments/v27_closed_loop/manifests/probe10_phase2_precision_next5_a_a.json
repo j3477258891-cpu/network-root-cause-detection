@@ -1,0 +1,82 @@
+{
+  "batch_id": "probe10_phase2_precision_next5_a_a",
+  "kind": "adaptive_split",
+  "parent": "probe10_phase2_precision_next5_a",
+  "status": "scored",
+  "decision": "split",
+  "action_ids": [
+    "phase2_precision_01_5f31acb6",
+    "phase2_precision_02_767c94f2"
+  ],
+  "actions": [
+    {
+      "action_id": "phase2_precision_01_5f31acb6",
+      "order_id": "5f31acb6-cb86-4488-af6a-f6d2d4d3a4d9",
+      "remove_rids": [
+        "#-1:4bc7a677-2371-4b87-906a-85155eca4496"
+      ],
+      "add_rids": [],
+      "source": "phase2_precision",
+      "subtype": "precision_remove_next",
+      "expected_gain": 0.3516964197911533,
+      "evidence": {
+        "v11_score": 0.6483035802088467,
+        "rank": 1,
+        "independent_unseen_order": true
+      }
+    },
+    {
+      "action_id": "phase2_precision_02_767c94f2",
+      "order_id": "767c94f2-ed95-4967-a7e6-f0badda74572",
+      "remove_rids": [
+        "#-1:698fc874-3097-42c5-90ba-0e5875034dff"
+      ],
+      "add_rids": [],
+      "source": "phase2_precision",
+      "subtype": "precision_remove_next",
+      "expected_gain": 0.3400837530822274,
+      "evidence": {
+        "v11_score": 0.6599162469177726,
+        "rank": 2,
+        "independent_unseen_order": true
+      }
+    }
+  ],
+  "validation": {
+    "actions": 2,
+    "orders": 2,
+    "removed": 2,
+    "added": 0,
+    "prediction_delta": -2,
+    "sources": {
+      "phase2_precision": 2
+    }
+  },
+  "predictions": 1057,
+  "prediction_delta": -2,
+  "submission": "D:\\zgyidong\\experiments\\v27_closed_loop\\submissions\\probe10_phase2_precision_next5_a_a.csv",
+  "manifest": "D:\\zgyidong\\experiments\\v27_closed_loop\\manifests\\probe10_phase2_precision_next5_a_a.json",
+  "sha256": "e587d2128e6b04eeda013bf07ec0ee83d0d39b8ca3851f9ed83c283b4b5702b4",
+  "score_possibilities": [
+    {
+      "delta_tp": -2,
+      "tp": 951,
+      "score": 0.905283198
+    },
+    {
+      "delta_tp": -1,
+      "tp": 952,
+      "score": 0.906235126
+    },
+    {
+      "delta_tp": 0,
+      "tp": 953,
+      "score": 0.907187054
+    }
+  ],
+  "score": 0.906235,
+  "reconstructed_score": 0.9062351261304141,
+  "tp": 952,
+  "delta_tp": -1,
+  "score_gain": -8.88738695858926e-05
+}

@@ -1,0 +1,63 @@
+{
+  "version": "v127-v30-cross-order-current-base",
+  "base": "D:\\zgyidong\\experiments\\v124_campaign\\v124_single_pair_015_from_probe13.csv",
+  "base_sha256": "31131129bba8363fcf1df2c053f836102e8f209640164c2c4c7eedb431447c6c",
+  "base_public_f1": 0.921597,
+  "base_tp": 958,
+  "source_scores": "D:\\zgyidong\\experiments\\v30_meta_stack\\v30_consensus_test.npy",
+  "excluded_orders": 11,
+  "available_pairs": 19,
+  "pair_count": 1,
+  "pairs": [
+    {
+      "pair_id": "v30_pair_001",
+      "margin": 0.6917364001274109,
+      "add_order_index": 125,
+      "remove_order_index": 254,
+      "add_row": 688,
+      "remove_row": 1485,
+      "add_score": 0.8895386457443237,
+      "remove_score": 0.19780226051807404
+    }
+  ],
+  "actions": [
+    {
+      "action_id": "v30_pair_001_add",
+      "order_id": "441995e6-e153-4e40-af0f-d0eb20ddcfa5",
+      "remove_rids": [],
+      "add_rids": [
+        "#-1:53f23b3e-c801-45d7-8d31-1cb8b8809946"
+      ],
+      "source": "v30_cross_order_meta",
+      "expected_gain": 0.6917364001274109,
+      "evidence": {
+        "pair_id": "v30_pair_001",
+        "node_score": 0.8895386457443237,
+        "pair_margin": 0.6917364001274109,
+        "title": "单板输入电压异常告警"
+      }
+    },
+    {
+      "action_id": "v30_pair_001_remove",
+      "order_id": "8106c960-6510-43b1-af25-b3c91388c598",
+      "remove_rids": [
+        "#-1:d1108dd6-92f1-4970-9cd2-912857e84b72"
+      ],
+      "add_rids": [],
+      "source": "v30_cross_order_meta",
+      "expected_gain": 0.6917364001274109,
+      "evidence": {
+        "pair_id": "v30_pair_001",
+        "node_score": 0.19780226051807404,
+        "pair_margin": 0.6917364001274109,
+        "title": "射频单元IR接口异常告警"
+      }
+    }
+  ],
+  "predictions": 1035,
+  "orders": 546,
+  "sha256": "2caee9870eadb591af57009a5f2a047d7e05cbd8c3e02a9699e6542d89c6b297",
+  "status": "exploratory_not_scored",
+  "target_condition": "all 1 pairs net +1 gives TP=959, F1=0.922559",
+  "warning": "V30 OOF/public results used an older base; this current-base rebuild is unscored."
+}

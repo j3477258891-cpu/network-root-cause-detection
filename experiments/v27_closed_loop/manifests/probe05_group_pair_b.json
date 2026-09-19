@@ -1,0 +1,164 @@
+{
+  "batch_id": "probe05_group_pair_b",
+  "kind": "adaptive_split",
+  "parent": "probe05_group_pair",
+  "status": "scored",
+  "decision": "split",
+  "action_ids": [
+    "group_pair_b92c1c42",
+    "group_pair_f57b8fbe",
+    "group_pair_0a884a84"
+  ],
+  "actions": [
+    {
+      "action_id": "group_pair_b92c1c42",
+      "order_id": "b92c1c42-bc69-48fa-b5c6-7bbd2635a15b",
+      "remove_rids": [],
+      "add_rids": [
+        "#-1:d5352c07-f1c9-4944-a708-21a2b6c2d5e5"
+      ],
+      "source": "group_rule",
+      "subtype": "group_pair",
+      "expected_gain": 1.0,
+      "evidence": {
+        "subtype": "group_pair",
+        "pattern": [
+          0,
+          1
+        ],
+        "support": 23,
+        "sites": 20,
+        "domains": [
+          [
+            [
+              "设备商甲",
+              ""
+            ],
+            [
+              "设备商甲",
+              ""
+            ]
+          ]
+        ],
+        "consistency": 1.0,
+        "loo_non_degrading": true
+      },
+      "probe_batch": null,
+      "online_delta_tp": null
+    },
+    {
+      "action_id": "group_pair_f57b8fbe",
+      "order_id": "f57b8fbe-bd33-4dc7-95ef-fbffa4552754",
+      "remove_rids": [],
+      "add_rids": [
+        "#-1:27418203-8811-4a2d-a93c-ab2673631312"
+      ],
+      "source": "group_rule",
+      "subtype": "group_pair",
+      "expected_gain": 1.0,
+      "evidence": {
+        "subtype": "group_pair",
+        "pattern": [
+          0,
+          1
+        ],
+        "support": 18,
+        "sites": 14,
+        "domains": [
+          [
+            [
+              "设备商甲",
+              ""
+            ],
+            [
+              "设备商甲",
+              ""
+            ]
+          ]
+        ],
+        "consistency": 1.0,
+        "loo_non_degrading": true
+      },
+      "probe_batch": null,
+      "online_delta_tp": null
+    },
+    {
+      "action_id": "group_pair_0a884a84",
+      "order_id": "0a884a84-bd68-4390-906e-67cbbfe80c74",
+      "remove_rids": [
+        "#-1:8ccc422f-b059-4c99-8625-b0cafee07add"
+      ],
+      "add_rids": [],
+      "source": "group_rule",
+      "subtype": "group_pair",
+      "expected_gain": 0.5,
+      "evidence": {
+        "subtype": "group_pair",
+        "pattern": [
+          0,
+          1
+        ],
+        "support": 6,
+        "sites": 3,
+        "domains": [
+          [
+            [
+              "设备商甲",
+              ""
+            ],
+            [
+              "设备商甲",
+              ""
+            ]
+          ]
+        ],
+        "consistency": 1.0,
+        "loo_non_degrading": true
+      },
+      "probe_batch": null,
+      "online_delta_tp": null
+    }
+  ],
+  "validation": {
+    "actions": 3,
+    "orders": 3,
+    "removed": 1,
+    "added": 2,
+    "prediction_delta": 1,
+    "sources": {
+      "group_rule": 3
+    }
+  },
+  "predictions": 1060,
+  "prediction_delta": 1,
+  "submission": "D:\\zgyidong\\experiments\\v27_closed_loop\\submissions\\probe05_group_pair_b.csv",
+  "manifest": "D:\\zgyidong\\experiments\\v27_closed_loop\\manifests\\probe05_group_pair_b.json",
+  "sha256": "a46580dadf6e4a830c986323fb3e95e7925389066f674bb1eb4ccffc7134ceca",
+  "score_possibilities": [
+    {
+      "delta_tp": -1,
+      "tp": 952,
+      "score": 0.904942966
+    },
+    {
+      "delta_tp": 0,
+      "tp": 953,
+      "score": 0.905893536
+    },
+    {
+      "delta_tp": 1,
+      "tp": 954,
+      "score": 0.906844106
+    },
+    {
+      "delta_tp": 2,
+      "tp": 955,
+      "score": 0.907794677
+    }
+  ],
+  "score": 0.905894,
+  "reconstructed_score": 0.905893536121673,
+  "tp": 953,
+  "delta_tp": 0,
+  "score_gain": -0.00043046387832701427
+}

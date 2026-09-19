@@ -1,0 +1,145 @@
+{
+  "probe_id": "v53_active_equation_probe",
+  "path": "D:\\zgyidong\\experiments\\v53_active_equation\\submissions\\v53_active_equation_probe.csv",
+  "baseline": "D:\\zgyidong\\experiments\\v30_meta_stack\\submissions\\v30_cross_order_top5.csv",
+  "fixed_base": "v37_exact_corrections",
+  "query_source_id": "v45_map_prefix_02",
+  "actions": [
+    {
+      "action_id": "v37_exact_001",
+      "order_id": "d5376a71-c48e-4351-ba60-f982778b3eb4",
+      "remove_rids": [
+        "#-1:0c809583-390f-4d16-9b91-c4fb1e99c5c2"
+      ],
+      "add_rids": [
+        "#-1:e401b7b4-697f-434e-8437-4b2136d6904f"
+      ],
+      "source": "historical_leaderboard_equations",
+      "expected_gain": null,
+      "evidence": {
+        "proof": "label fixed in every binary solution of all scored equations"
+      }
+    },
+    {
+      "action_id": "v45_map_001",
+      "order_id": "5f31acb6-cb86-4488-af6a-f6d2d4d3a4d9",
+      "remove_rids": [
+        "#-1:4bc7a677-2371-4b87-906a-85155eca4496"
+      ],
+      "add_rids": [],
+      "source": "v45_constrained_map",
+      "expected_gain": null,
+      "evidence": {
+        "minimum_force_flip_gap": 1.6470027944293406,
+        "nodes": [
+          {
+            "key": [
+              "5f31acb6-cb86-4488-af6a-f6d2d4d3a4d9",
+              "#-1:4bc7a677-2371-4b87-906a-85155eca4496"
+            ],
+            "index": 42,
+            "map_label": 0,
+            "selected_by_champion": true,
+            "force_flip_gap": 1.6470027944293406
+          }
+        ]
+      }
+    },
+    {
+      "action_id": "v45_map_002",
+      "order_id": "eac28a99-2650-4dee-9f74-7054f480be19",
+      "remove_rids": [],
+      "add_rids": [
+        "#-1:a9cc9261-661b-41a3-89dd-0aee4886d4be"
+      ],
+      "source": "v45_constrained_map",
+      "expected_gain": null,
+      "evidence": {
+        "minimum_force_flip_gap": 1.1798708142203296,
+        "nodes": [
+          {
+            "key": [
+              "eac28a99-2650-4dee-9f74-7054f480be19",
+              "#-1:a9cc9261-661b-41a3-89dd-0aee4886d4be"
+            ],
+            "index": 121,
+            "map_label": 1,
+            "selected_by_champion": false,
+            "force_flip_gap": 1.1798708142203296
+          }
+        ]
+      }
+    }
+  ],
+  "candidate_actions": [
+    {
+      "action_id": "v45_map_001",
+      "order_id": "5f31acb6-cb86-4488-af6a-f6d2d4d3a4d9",
+      "remove_rids": [
+        "#-1:4bc7a677-2371-4b87-906a-85155eca4496"
+      ],
+      "add_rids": [],
+      "source": "v45_constrained_map",
+      "expected_gain": null,
+      "evidence": {
+        "minimum_force_flip_gap": 1.6470027944293406,
+        "nodes": [
+          {
+            "key": [
+              "5f31acb6-cb86-4488-af6a-f6d2d4d3a4d9",
+              "#-1:4bc7a677-2371-4b87-906a-85155eca4496"
+            ],
+            "index": 42,
+            "map_label": 0,
+            "selected_by_champion": true,
+            "force_flip_gap": 1.6470027944293406
+          }
+        ]
+      }
+    },
+    {
+      "action_id": "v45_map_002",
+      "order_id": "eac28a99-2650-4dee-9f74-7054f480be19",
+      "remove_rids": [],
+      "add_rids": [
+        "#-1:a9cc9261-661b-41a3-89dd-0aee4886d4be"
+      ],
+      "source": "v45_constrained_map",
+      "expected_gain": null,
+      "evidence": {
+        "minimum_force_flip_gap": 1.1798708142203296,
+        "nodes": [
+          {
+            "key": [
+              "eac28a99-2650-4dee-9f74-7054f480be19",
+              "#-1:a9cc9261-661b-41a3-89dd-0aee4886d4be"
+            ],
+            "index": 121,
+            "map_label": 1,
+            "selected_by_champion": false,
+            "force_flip_gap": 1.1798708142203296
+          }
+        ]
+      }
+    }
+  ],
+  "predictions": 1035,
+  "sha256": "bd4cbfc546db716f43e27f728585b33b6601259dcbcc85fdd72f7f1c3c0ac064",
+  "score_possibilities": [
+    {
+      "query_delta_tp": -1,
+      "tp": 955,
+      "score": 0.918710919
+    },
+    {
+      "query_delta_tp": 0,
+      "tp": 956,
+      "score": 0.91967292
+    },
+    {
+      "query_delta_tp": 1,
+      "tp": 957,
+      "score": 0.920634921
+    }
+  ]
+}

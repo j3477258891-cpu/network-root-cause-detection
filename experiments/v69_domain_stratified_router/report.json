@@ -1,0 +1,978 @@
+{
+  "version": "v69-domain-stratified-router-audit-1",
+  "method": "V33 versus V30 ranking at oracle per-order counts; station-cross-fitted predictions only.",
+  "warning": "Oracle counts isolate ranking and cannot be submitted without a count policy.",
+  "orders": {
+    "train": 1634,
+    "test": 546
+  },
+  "overall": {
+    "changed_orders": 52,
+    "delta_tp": -5,
+    "station_fold_delta_tp": [
+      3,
+      -4,
+      -1,
+      0,
+      -3
+    ]
+  },
+  "one_way_strata": [
+    {
+      "stratum": "domain_bin",
+      "value": "q4",
+      "orders": 327,
+      "changed_orders": 21,
+      "delta_tp": 1,
+      "station_fold_delta_tp": [
+        1,
+        -1,
+        -2,
+        1,
+        2
+      ],
+      "nonnegative_folds": 3,
+      "strictly_positive_folds": 3
+    },
+    {
+      "stratum": "domain_bin",
+      "value": "q1",
+      "orders": 327,
+      "changed_orders": 7,
+      "delta_tp": 1,
+      "station_fold_delta_tp": [
+        1,
+        0,
+        0,
+        1,
+        -1
+      ],
+      "nonnegative_folds": 4,
+      "strictly_positive_folds": 2
+    },
+    {
+      "stratum": "domain_bin",
+      "value": "q3",
+      "orders": 327,
+      "changed_orders": 14,
+      "delta_tp": -2,
+      "station_fold_delta_tp": [
+        1,
+        -3,
+        0,
+        1,
+        -1
+      ],
+      "nonnegative_folds": 3,
+      "strictly_positive_folds": 2
+    },
+    {
+      "stratum": "domain_bin",
+      "value": "q2",
+      "orders": 326,
+      "changed_orders": 9,
+      "delta_tp": -5,
+      "station_fold_delta_tp": [
+        0,
+        0,
+        1,
+        -3,
+        -3
+      ],
+      "nonnegative_folds": 3,
+      "strictly_positive_folds": 1
+    },
+    {
+      "stratum": "domain_bin",
+      "value": "q0",
+      "orders": 327,
+      "changed_orders": 1,
+      "delta_tp": 0,
+      "station_fold_delta_tp": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "nonnegative_folds": 5,
+      "strictly_positive_folds": 0
+    },
+    {
+      "stratum": "alarm_bin",
+      "value": "le4",
+      "orders": 836,
+      "changed_orders": 4,
+      "delta_tp": 2,
+      "station_fold_delta_tp": [
+        -1,
+        1,
+        0,
+        1,
+        1
+      ],
+      "nonnegative_folds": 4,
+      "strictly_positive_folds": 3
+    },
+    {
+      "stratum": "alarm_bin",
+      "value": "9_16",
+      "orders": 272,
+      "changed_orders": 17,
+      "delta_tp": 2,
+      "station_fold_delta_tp": [
+        4,
+        -1,
+        2,
+        0,
+        -3
+      ],
+      "nonnegative_folds": 3,
+      "strictly_positive_folds": 2
+    },
+    {
+      "stratum": "alarm_bin",
+      "value": "5_8",
+      "orders": 469,
+      "changed_orders": 14,
+      "delta_tp": -4,
+      "station_fold_delta_tp": [
+        1,
+        -1,
+        -1,
+        -1,
+        -2
+      ],
+      "nonnegative_folds": 1,
+      "strictly_positive_folds": 1
+    },
+    {
+      "stratum": "alarm_bin",
+      "value": "gt16",
+      "orders": 57,
+      "changed_orders": 17,
+      "delta_tp": -5,
+      "station_fold_delta_tp": [
+        -1,
+        -3,
+        -2,
+        0,
+        1
+      ],
+      "nonnegative_folds": 2,
+      "strictly_positive_folds": 1
+    },
+    {
+      "stratum": "vendor",
+      "value": "设备商乙",
+      "orders": 705,
+      "changed_orders": 21,
+      "delta_tp": -3,
+      "station_fold_delta_tp": [
+        2,
+        -1,
+        1,
+        -1,
+        -4
+      ],
+      "nonnegative_folds": 2,
+      "strictly_positive_folds": 2
+    },
+    {
+      "stratum": "vendor",
+      "value": "设备商甲",
+      "orders": 696,
+      "changed_orders": 20,
+      "delta_tp": -3,
+      "station_fold_delta_tp": [
+        -1,
+        -2,
+        -2,
+        1,
+        1
+      ],
+      "nonnegative_folds": 2,
+      "strictly_positive_folds": 2
+    },
+    {
+      "stratum": "vendor",
+      "value": "mixed_or_missing",
+      "orders": 233,
+      "changed_orders": 11,
+      "delta_tp": 1,
+      "station_fold_delta_tp": [
+        2,
+        -1,
+        0,
+        0,
+        0
+      ],
+      "nonnegative_folds": 4,
+      "strictly_positive_folds": 1
+    },
+    {
+      "stratum": "v30_v33_top1_same",
+      "value": "True",
+      "orders": 1391,
+      "changed_orders": 21,
+      "delta_tp": -2,
+      "station_fold_delta_tp": [
+        2,
+        -2,
+        -1,
+        1,
+        -2
+      ],
+      "nonnegative_folds": 2,
+      "strictly_positive_folds": 2
+    },
+    {
+      "stratum": "v30_v33_top1_same",
+      "value": "False",
+      "orders": 243,
+      "changed_orders": 31,
+      "delta_tp": -3,
+      "station_fold_delta_tp": [
+        1,
+        -2,
+        0,
+        -1,
+        -1
+      ],
+      "nonnegative_folds": 2,
+      "strictly_positive_folds": 1
+    }
+  ],
+  "interaction_strata": [
+    {
+      "stratum": "domain_bin+vendor",
+      "value": [
+        "q4",
+        "设备商乙"
+      ],
+      "orders": 140,
+      "changed_orders": 4,
+      "delta_tp": 3,
+      "station_fold_delta_tp": [
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      "nonnegative_folds": 5,
+      "strictly_positive_folds": 3
+    },
+    {
+      "stratum": "alarm_bin+v30_v33_top1_same",
+      "value": [
+        "le4",
+        "False"
+      ],
+      "orders": 32,
+      "changed_orders": 4,
+      "delta_tp": 2,
+      "station_fold_delta_tp": [
+        -1,
+        1,
+        0,
+        1,
+        1
+      ],
+      "nonnegative_folds": 4,
+      "strictly_positive_folds": 3
+    },
+    {
+      "stratum": "alarm_bin+v30_v33_top1_same",
+      "value": [
+        "9_16",
+        "True"
+      ],
+      "orders": 185,
+      "changed_orders": 7,
+      "delta_tp": 3,
+      "station_fold_delta_tp": [
+        3,
+        -1,
+        0,
+        1,
+        0
+      ],
+      "nonnegative_folds": 4,
+      "strictly_positive_folds": 2
+    },
+    {
+      "stratum": "domain_bin+vendor",
+      "value": [
+        "q4",
+        "mixed_or_missing"
+      ],
+      "orders": 60,
+      "changed_orders": 5,
+      "delta_tp": 3,
+      "station_fold_delta_tp": [
+        2,
+        0,
+        0,
+        1,
+        0
+      ],
+      "nonnegative_folds": 5,
+      "strictly_positive_folds": 2
+    },
+    {
+      "stratum": "domain_bin+vendor",
+      "value": [
+        "q1",
+        "设备商甲"
+      ],
+      "orders": 145,
+      "changed_orders": 4,
+      "delta_tp": 2,
+      "station_fold_delta_tp": [
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      "nonnegative_folds": 5,
+      "strictly_positive_folds": 2
+    },
+    {
+      "stratum": "domain_bin+alarm_bin",
+      "value": [
+        "q3",
+        "9_16"
+      ],
+      "orders": 46,
+      "changed_orders": 4,
+      "delta_tp": 2,
+      "station_fold_delta_tp": [
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      "nonnegative_folds": 5,
+      "strictly_positive_folds": 2
+    },
+    {
+      "stratum": "domain_bin+alarm_bin",
+      "value": [
+        "q4",
+        "le4"
+      ],
+      "orders": 168,
+      "changed_orders": 3,
+      "delta_tp": 1,
+      "station_fold_delta_tp": [
+        -1,
+        1,
+        0,
+        0,
+        1
+      ],
+      "nonnegative_folds": 4,
+      "strictly_positive_folds": 2
+    },
+    {
+      "stratum": "alarm_bin+v30_v33_top1_same",
+      "value": [
+        "9_16",
+        "False"
+      ],
+      "orders": 87,
+      "changed_orders": 10,
+      "delta_tp": -1,
+      "station_fold_delta_tp": [
+        1,
+        0,
+        2,
+        -1,
+        -3
+      ],
+      "nonnegative_folds": 3,
+      "strictly_positive_folds": 2
+    },
+    {
+      "stratum": "domain_bin+alarm_bin",
+      "value": [
+        "q1",
+        "le4"
+      ],
+      "orders": 186,
+      "changed_orders": 1,
+      "delta_tp": 1,
+      "station_fold_delta_tp": [
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "nonnegative_folds": 5,
+      "strictly_positive_folds": 1
+    },
+    {
+      "stratum": "domain_bin+vendor",
+      "value": [
+        "q3",
+        "设备商甲"
+      ],
+      "orders": 114,
+      "changed_orders": 3,
+      "delta_tp": 1,
+      "station_fold_delta_tp": [
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "nonnegative_folds": 5,
+      "strictly_positive_folds": 1
+    },
+    {
+      "stratum": "domain_bin+alarm_bin",
+      "value": [
+        "q1",
+        "9_16"
+      ],
+      "orders": 55,
+      "changed_orders": 2,
+      "delta_tp": 1,
+      "station_fold_delta_tp": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "nonnegative_folds": 5,
+      "strictly_positive_folds": 1
+    },
+    {
+      "stratum": "domain_bin+alarm_bin",
+      "value": [
+        "q4",
+        "9_16"
+      ],
+      "orders": 50,
+      "changed_orders": 7,
+      "delta_tp": 1,
+      "station_fold_delta_tp": [
+        3,
+        -1,
+        0,
+        0,
+        -1
+      ],
+      "nonnegative_folds": 3,
+      "strictly_positive_folds": 1
+    },
+    {
+      "stratum": "domain_bin+alarm_bin",
+      "value": [
+        "q4",
+        "5_8"
+      ],
+      "orders": 97,
+      "changed_orders": 4,
+      "delta_tp": 0,
+      "station_fold_delta_tp": [
+        0,
+        0,
+        -1,
+        1,
+        0
+      ],
+      "nonnegative_folds": 4,
+      "strictly_positive_folds": 1
+    },
+    {
+      "stratum": "domain_bin+alarm_bin",
+      "value": [
+        "q3",
+        "5_8"
+      ],
+      "orders": 84,
+      "changed_orders": 4,
+      "delta_tp": -1,
+      "station_fold_delta_tp": [
+        1,
+        -1,
+        0,
+        0,
+        -1
+      ],
+      "nonnegative_folds": 3,
+      "strictly_positive_folds": 1
+    },
+    {
+      "stratum": "domain_bin+vendor",
+      "value": [
+        "q3",
+        "设备商乙"
+      ],
+      "orders": 168,
+      "changed_orders": 8,
+      "delta_tp": -2,
+      "station_fold_delta_tp": [
+        1,
+        -2,
+        0,
+        0,
+        -1
+      ],
+      "nonnegative_folds": 3,
+      "strictly_positive_folds": 1
+    },
+    {
+      "stratum": "alarm_bin+v30_v33_top1_same",
+      "value": [
+        "5_8",
+        "False"
+      ],
+      "orders": 102,
+      "changed_orders": 7,
+      "delta_tp": -2,
+      "station_fold_delta_tp": [
+        1,
+        -1,
+        0,
+        -1,
+        -1
+      ],
+      "nonnegative_folds": 2,
+      "strictly_positive_folds": 1
+    },
+    {
+      "stratum": "domain_bin+alarm_bin",
+      "value": [
+        "q2",
+        "9_16"
+      ],
+      "orders": 54,
+      "changed_orders": 4,
+      "delta_tp": -2,
+      "station_fold_delta_tp": [
+        0,
+        0,
+        1,
+        -1,
+        -2
+      ],
+      "nonnegative_folds": 3,
+      "strictly_positive_folds": 1
+    },
+    {
+      "stratum": "alarm_bin+v30_v33_top1_same",
+      "value": [
+        "gt16",
+        "False"
+      ],
+      "orders": 22,
+      "changed_orders": 10,
+      "delta_tp": -2,
+      "station_fold_delta_tp": [
+        0,
+        -2,
+        -2,
+        0,
+        2
+      ],
+      "nonnegative_folds": 3,
+      "strictly_positive_folds": 1
+    },
+    {
+      "stratum": "domain_bin+vendor",
+      "value": [
+        "q2",
+        "设备商乙"
+      ],
+      "orders": 163,
+      "changed_orders": 7,
+      "delta_tp": -3,
+      "station_fold_delta_tp": [
+        0,
+        0,
+        1,
+        -1,
+        -3
+      ],
+      "nonnegative_folds": 3,
+      "strictly_positive_folds": 1
+    },
+    {
+      "stratum": "domain_bin+vendor",
+      "value": [
+        "q4",
+        "设备商甲"
+      ],
+      "orders": 127,
+      "changed_orders": 12,
+      "delta_tp": -5,
+      "station_fold_delta_tp": [
+        -2,
+        -2,
+        -2,
+        0,
+        1
+      ],
+      "nonnegative_folds": 2,
+      "strictly_positive_folds": 1
+    },
+    {
+      "stratum": "alarm_bin+v30_v33_top1_same",
+      "value": [
+        "le4",
+        "True"
+      ],
+      "orders": 804,
+      "changed_orders": 0,
+      "delta_tp": 0,
+      "station_fold_delta_tp": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "nonnegative_folds": 5,
+      "strictly_positive_folds": 0
+    },
+    {
+      "stratum": "domain_bin+vendor",
+      "value": [
+        "q0",
+        "设备商甲"
+      ],
+      "orders": 192,
+      "changed_orders": 0,
+      "delta_tp": 0,
+      "station_fold_delta_tp": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "nonnegative_folds": 5,
+      "strictly_positive_folds": 0
+    },
+    {
+      "stratum": "domain_bin+alarm_bin",
+      "value": [
+        "q3",
+        "le4"
+      ],
+      "orders": 180,
+      "changed_orders": 0,
+      "delta_tp": 0,
+      "station_fold_delta_tp": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "nonnegative_folds": 5,
+      "strictly_positive_folds": 0
+    },
+    {
+      "stratum": "domain_bin+alarm_bin",
+      "value": [
+        "q2",
+        "le4"
+      ],
+      "orders": 162,
+      "changed_orders": 0,
+      "delta_tp": 0,
+      "station_fold_delta_tp": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "nonnegative_folds": 5,
+      "strictly_positive_folds": 0
+    },
+    {
+      "stratum": "domain_bin+alarm_bin",
+      "value": [
+        "q0",
+        "le4"
+      ],
+      "orders": 140,
+      "changed_orders": 0,
+      "delta_tp": 0,
+      "station_fold_delta_tp": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "nonnegative_folds": 5,
+      "strictly_positive_folds": 0
+    },
+    {
+      "stratum": "domain_bin+alarm_bin",
+      "value": [
+        "q0",
+        "5_8"
+      ],
+      "orders": 118,
+      "changed_orders": 1,
+      "delta_tp": 0,
+      "station_fold_delta_tp": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "nonnegative_folds": 5,
+      "strictly_positive_folds": 0
+    },
+    {
+      "stratum": "domain_bin+vendor",
+      "value": [
+        "q0",
+        "设备商乙"
+      ],
+      "orders": 91,
+      "changed_orders": 1,
+      "delta_tp": 0,
+      "station_fold_delta_tp": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "nonnegative_folds": 5,
+      "strictly_positive_folds": 0
+    },
+    {
+      "stratum": "domain_bin+alarm_bin",
+      "value": [
+        "q1",
+        "5_8"
+      ],
+      "orders": 71,
+      "changed_orders": 1,
+      "delta_tp": 0,
+      "station_fold_delta_tp": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "nonnegative_folds": 5,
+      "strictly_positive_folds": 0
+    },
+    {
+      "stratum": "domain_bin+alarm_bin",
+      "value": [
+        "q0",
+        "9_16"
+      ],
+      "orders": 67,
+      "changed_orders": 0,
+      "delta_tp": 0,
+      "station_fold_delta_tp": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "nonnegative_folds": 5,
+      "strictly_positive_folds": 0
+    },
+    {
+      "stratum": "domain_bin+vendor",
+      "value": [
+        "q0",
+        "mixed_or_missing"
+      ],
+      "orders": 44,
+      "changed_orders": 0,
+      "delta_tp": 0,
+      "station_fold_delta_tp": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "nonnegative_folds": 5,
+      "strictly_positive_folds": 0
+    },
+    {
+      "stratum": "domain_bin+vendor",
+      "value": [
+        "q1",
+        "mixed_or_missing"
+      ],
+      "orders": 39,
+      "changed_orders": 2,
+      "delta_tp": 0,
+      "station_fold_delta_tp": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "nonnegative_folds": 5,
+      "strictly_positive_folds": 0
+    },
+    {
+      "stratum": "domain_bin+vendor",
+      "value": [
+        "q1",
+        "设备商乙"
+      ],
+      "orders": 143,
+      "changed_orders": 1,
+      "delta_tp": -1,
+      "station_fold_delta_tp": [
+        0,
+        0,
+        0,
+        0,
+        -1
+      ],
+      "nonnegative_folds": 4,
+      "strictly_positive_folds": 0
+    },
+    {
+      "stratum": "domain_bin+vendor",
+      "value": [
+        "q2",
+        "设备商甲"
+      ],
+      "orders": 118,
+      "changed_orders": 1,
+      "delta_tp": -1,
+      "station_fold_delta_tp": [
+        0,
+        0,
+        0,
+        -1,
+        0
+      ],
+      "nonnegative_folds": 4,
+      "strictly_positive_folds": 0
+    },
+    {
+      "stratum": "domain_bin+vendor",
+      "value": [
+        "q2",
+        "mixed_or_missing"
+      ],
+      "orders": 45,
+      "changed_orders": 1,
+      "delta_tp": -1,
+      "station_fold_delta_tp": [
+        0,
+        0,
+        0,
+        -1,
+        0
+      ],
+      "nonnegative_folds": 4,
+      "strictly_positive_folds": 0
+    },
+    {
+      "stratum": "domain_bin+vendor",
+      "value": [
+        "q3",
+        "mixed_or_missing"
+      ],
+      "orders": 45,
+      "changed_orders": 3,
+      "delta_tp": -1,
+      "station_fold_delta_tp": [
+        0,
+        -1,
+        0,
+        0,
+        0
+      ],
+      "nonnegative_folds": 4,
+      "strictly_positive_folds": 0
+    },
+    {
+      "stratum": "alarm_bin+v30_v33_top1_same",
+      "value": [
+        "5_8",
+        "True"
+      ],
+      "orders": 367,
+      "changed_orders": 7,
+      "delta_tp": -2,
+      "station_fold_delta_tp": [
+        0,
+        0,
+        -1,
+        0,
+        -1
+      ],
+      "nonnegative_folds": 3,
+      "strictly_positive_folds": 0
+    },
+    {
+      "stratum": "domain_bin+alarm_bin",
+      "value": [
+        "q2",
+        "5_8"
+      ],
+      "orders": 99,
+      "changed_orders": 4,
+      "delta_tp": -3,
+      "station_fold_delta_tp": [
+        0,
+        0,
+        0,
+        -2,
+        -1
+      ],
+      "nonnegative_folds": 3,
+      "strictly_positive_folds": 0
+    },
+    {
+      "stratum": "alarm_bin+v30_v33_top1_same",
+      "value": [
+        "gt16",
+        "True"
+      ],
+      "orders": 35,
+      "changed_orders": 7,
+      "delta_tp": -3,
+      "station_fold_delta_tp": [
+        -1,
+        -1,
+        0,
+        0,
+        -1
+      ],
+      "nonnegative_folds": 2,
+      "strictly_positive_folds": 0
+    }
+  ],
+  "strict_stable_candidates": [],
+  "gate": {
+    "requires_strictly_positive_all_station_folds": true,
+    "requires_at_least_20_train_orders": true,
+    "requires_at_least_8_changed_train_orders": true,
+    "passed": false,
+    "note": "Passing only identifies a ranking stratum; it does not solve count allocation or prove public-board gain."
+  }
+}

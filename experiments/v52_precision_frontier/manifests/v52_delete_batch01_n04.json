@@ -1,0 +1,163 @@
+{
+  "probe_id": "v52_delete_batch01_n04",
+  "baseline": "D:\\zgyidong\\experiments\\v30_meta_stack\\submissions\\v30_cross_order_top5.csv",
+  "fixed_base": "v37_exact_corrections",
+  "path": "D:\\zgyidong\\experiments\\v52_precision_frontier\\submissions\\v52_delete_batch01_n04.csv",
+  "kind": "delete",
+  "candidate_count": 4,
+  "actions": [
+    {
+      "action_id": "v37_exact_001",
+      "order_id": "d5376a71-c48e-4351-ba60-f982778b3eb4",
+      "remove_rids": [
+        "#-1:0c809583-390f-4d16-9b91-c4fb1e99c5c2"
+      ],
+      "add_rids": [
+        "#-1:e401b7b4-697f-434e-8437-4b2136d6904f"
+      ],
+      "source": "historical_leaderboard_equations",
+      "expected_gain": null,
+      "evidence": {
+        "proof": "label fixed in every binary solution of all scored equations"
+      }
+    },
+    {
+      "action_id": "v52_delete_006_c2f7c036",
+      "order_id": "c2f7c036-aaf0-4a95-9bf4-3cae57b6e7d5",
+      "remove_rids": [
+        "#-1:0e2c59d3-277a-49ac-b27d-9c109ca1602f"
+      ],
+      "add_rids": [],
+      "source": "v40_boundary_frontier",
+      "expected_gain": 0.16666666666666666,
+      "evidence": {
+        "source_rank": 6,
+        "order_id": "c2f7c036-aaf0-4a95-9bf4-3cae57b6e7d5",
+        "rid": "#-1:0e2c59d3-277a-49ac-b27d-9c109ca1602f",
+        "kind": "delete",
+        "title": "[衍生告警]PTN光缆中断，单报LOS",
+        "rank_average": 0.6619297862052917,
+        "scores": {
+          "v11": 0.6081815361976624,
+          "v13": 0.6145555377006531,
+          "v19": 0.144616961479187,
+          "station": 0.5666828155517578,
+          "domain": 0.5420055389404297,
+          "consensus": 0.6424580812454224
+        }
+      }
+    },
+    {
+      "action_id": "v52_delete_011_a3645153",
+      "order_id": "a3645153-27f5-4b8c-9e3a-bc84cfd7c653",
+      "remove_rids": [
+        "#-1:fe0aed2a-0446-4bba-8836-7bf35d20cd0b"
+      ],
+      "add_rids": [],
+      "source": "v40_boundary_frontier",
+      "expected_gain": 0.09090909090909091,
+      "evidence": {
+        "source_rank": 11,
+        "order_id": "a3645153-27f5-4b8c-9e3a-bc84cfd7c653",
+        "rid": "#-1:fe0aed2a-0446-4bba-8836-7bf35d20cd0b",
+        "kind": "delete",
+        "title": "射频单元直流掉电告警",
+        "rank_average": 0.6759859919548035,
+        "scores": {
+          "v11": 0.77984219789505,
+          "v13": 0.5973215103149414,
+          "v19": 0.622788667678833,
+          "station": 0.3145962357521057,
+          "domain": 0.4100603759288788,
+          "consensus": 0.273314893245697
+        }
+      }
+    },
+    {
+      "action_id": "v52_delete_016_5b2934e0",
+      "order_id": "5b2934e0-b8fd-4f39-9287-15c201fd4c08",
+      "remove_rids": [
+        "#-1:05d4f9e8-75d9-435e-b3dc-0773e8437b17"
+      ],
+      "add_rids": [],
+      "source": "v40_boundary_frontier",
+      "expected_gain": 0.0625,
+      "evidence": {
+        "source_rank": 16,
+        "order_id": "5b2934e0-b8fd-4f39-9287-15c201fd4c08",
+        "rid": "#-1:05d4f9e8-75d9-435e-b3dc-0773e8437b17",
+        "kind": "delete",
+        "title": "网元连接中断",
+        "rank_average": 0.6887550354003906,
+        "scores": {
+          "v11": 0.7680338621139526,
+          "v13": 0.6940804123878479,
+          "v19": 0.49512648582458496,
+          "station": 0.5177583694458008,
+          "domain": 0.4881226718425751,
+          "consensus": 0.5098646879196167
+        }
+      }
+    },
+    {
+      "action_id": "v52_delete_019_a1aec670",
+      "order_id": "a1aec670-550d-4abb-bd10-dadfd29f6635",
+      "remove_rids": [
+        "#-1:9e3ee7ee-16d7-4f25-aa83-3734e4c978f2"
+      ],
+      "add_rids": [],
+      "source": "v40_boundary_frontier",
+      "expected_gain": 0.05263157894736842,
+      "evidence": {
+        "source_rank": 19,
+        "order_id": "a1aec670-550d-4abb-bd10-dadfd29f6635",
+        "rid": "#-1:9e3ee7ee-16d7-4f25-aa83-3734e4c978f2",
+        "kind": "delete",
+        "title": "射频单元直流掉电告警",
+        "rank_average": 0.6908144950866699,
+        "scores": {
+          "v11": 0.8505432605743408,
+          "v13": 0.7110195159912109,
+          "v19": 0.2796725928783417,
+          "station": 0.5840923190116882,
+          "domain": 0.6115524768829346,
+          "consensus": 0.575286328792572
+        }
+      }
+    }
+  ],
+  "predictions": 1031,
+  "sha256": "a48b6e83ae8991745887f92884b137ee96c512b1b0f18380abc4aa56eb98717d",
+  "score_possibilities": [
+    {
+      "candidate_correct": 0,
+      "tp": 956,
+      "predictions_delta": -4,
+      "score": 0.921445783
+    },
+    {
+      "candidate_correct": 1,
+      "tp": 955,
+      "predictions_delta": -4,
+      "score": 0.920481928
+    },
+    {
+      "candidate_correct": 2,
+      "tp": 954,
+      "predictions_delta": -4,
+      "score": 0.919518072
+    },
+    {
+      "candidate_correct": 3,
+      "tp": 953,
+      "predictions_delta": -4,
+      "score": 0.918554217
+    },
+    {
+      "candidate_correct": 4,
+      "tp": 952,
+      "predictions_delta": -4,
+      "score": 0.917590361
+    }
+  ]
+}

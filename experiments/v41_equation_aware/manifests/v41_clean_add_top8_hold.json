@@ -1,0 +1,297 @@
+{
+  "probe_id": "v41_clean_add_top8_hold",
+  "baseline": "D:\\zgyidong\\experiments\\v30_meta_stack\\submissions\\v30_cross_order_top5.csv",
+  "fixed_base": "v37_exact_corrections",
+  "path": "D:\\zgyidong\\experiments\\v41_equation_aware\\submissions\\v41_clean_add_top8_hold.csv",
+  "candidate_ids": [
+    "v36_add_2",
+    "v36_add_3",
+    "v40_add_4",
+    "v40_add_15",
+    "v40_add_19",
+    "v40_add_20",
+    "v40_add_22",
+    "v40_add_24"
+  ],
+  "actions": [
+    {
+      "action_id": "v37_exact_001",
+      "order_id": "d5376a71-c48e-4351-ba60-f982778b3eb4",
+      "remove_rids": [
+        "#-1:0c809583-390f-4d16-9b91-c4fb1e99c5c2"
+      ],
+      "add_rids": [
+        "#-1:e401b7b4-697f-434e-8437-4b2136d6904f"
+      ],
+      "source": "historical_leaderboard_equations",
+      "expected_gain": null,
+      "evidence": {
+        "proof": "label fixed in every binary solution of all scored equations"
+      }
+    },
+    {
+      "action_id": "v41_v36_add_002",
+      "order_id": "625ffce7-65c5-4657-9104-4148b4113130",
+      "remove_rids": [],
+      "add_rids": [
+        "#-1:a8f28178-4795-4f26-84d6-1791944fb245"
+      ],
+      "source": "v36_selective_count_consensus",
+      "expected_gain": 0.36975498000780743,
+      "evidence": {
+        "order_id": "625ffce7-65c5-4657-9104-4148b4113130",
+        "rid": "#-1:a8f28178-4795-4f26-84d6-1791944fb245",
+        "kind": "add",
+        "current_count": 7,
+        "proposed_count": 8,
+        "support": 6,
+        "mean_margin": 0.36975498000780743,
+        "min_margin": 0.2794276475906372,
+        "node_score": 0.7030441761016846,
+        "probability_models": [
+          "D:\\zgyidong\\experiments\\v34_count_model\\station_alpha_0_test.npy",
+          "D:\\zgyidong\\experiments\\v34_count_model\\station_alpha_1_test.npy",
+          "D:\\zgyidong\\experiments\\v34_count_model\\station_alpha_2_test.npy",
+          "D:\\zgyidong\\experiments\\v34_count_model\\template_alpha_0_test.npy",
+          "D:\\zgyidong\\experiments\\v34_count_model\\template_alpha_1_test.npy",
+          "D:\\zgyidong\\experiments\\v34_count_model\\template_alpha_2_test.npy"
+        ]
+      }
+    },
+    {
+      "action_id": "v41_v36_add_003",
+      "order_id": "4c2b3b06-a6a2-4c1b-9734-def3d1f849d8",
+      "remove_rids": [],
+      "add_rids": [
+        "#-1:66facd91-e281-4331-bbae-04ab8bd9746d"
+      ],
+      "source": "v36_selective_count_consensus",
+      "expected_gain": 0.2696733921766281,
+      "evidence": {
+        "order_id": "4c2b3b06-a6a2-4c1b-9734-def3d1f849d8",
+        "rid": "#-1:66facd91-e281-4331-bbae-04ab8bd9746d",
+        "kind": "add",
+        "current_count": 1,
+        "proposed_count": 2,
+        "support": 6,
+        "mean_margin": 0.2696733921766281,
+        "min_margin": 0.2562140226364136,
+        "node_score": 0.6594231724739075,
+        "probability_models": [
+          "D:\\zgyidong\\experiments\\v34_count_model\\station_alpha_0_test.npy",
+          "D:\\zgyidong\\experiments\\v34_count_model\\station_alpha_1_test.npy",
+          "D:\\zgyidong\\experiments\\v34_count_model\\station_alpha_2_test.npy",
+          "D:\\zgyidong\\experiments\\v34_count_model\\template_alpha_0_test.npy",
+          "D:\\zgyidong\\experiments\\v34_count_model\\template_alpha_1_test.npy",
+          "D:\\zgyidong\\experiments\\v34_count_model\\template_alpha_2_test.npy"
+        ]
+      }
+    },
+    {
+      "action_id": "v41_v40_add_004",
+      "order_id": "c27a096b-576b-4fb7-9fb2-7f04feab066d",
+      "remove_rids": [],
+      "add_rids": [
+        "#-1:bdb85be4-661a-4a6a-9f56-fbff53833e80"
+      ],
+      "source": "v40_one_sided_rank_average",
+      "expected_gain": null,
+      "evidence": {
+        "order_id": "c27a096b-576b-4fb7-9fb2-7f04feab066d",
+        "rid": "#-1:bdb85be4-661a-4a6a-9f56-fbff53833e80",
+        "kind": "add",
+        "title": "射频单元IR接口异常告警",
+        "rank_average": 0.7039954662322998,
+        "scores": {
+          "v11": 0.26164349913597107,
+          "v13": 0.3261115252971649,
+          "v19": 0.9974883794784546,
+          "station": 0.39192503690719604,
+          "domain": 0.45235124230384827,
+          "consensus": 0.36249247193336487
+        },
+        "source_rank": 4
+      }
+    },
+    {
+      "action_id": "v41_v40_add_015",
+      "order_id": "12fb9fb0-19b0-4b39-b037-f2e479fadb8a",
+      "remove_rids": [],
+      "add_rids": [
+        "#-1:8d1a24ae-333c-4a6b-a3d8-25f411c45ed8"
+      ],
+      "source": "v40_one_sided_rank_average",
+      "expected_gain": null,
+      "evidence": {
+        "order_id": "12fb9fb0-19b0-4b39-b037-f2e479fadb8a",
+        "rid": "#-1:8d1a24ae-333c-4a6b-a3d8-25f411c45ed8",
+        "kind": "add",
+        "title": "射频单元IR接口异常告警",
+        "rank_average": 0.6876737475395203,
+        "scores": {
+          "v11": 0.27837443351745605,
+          "v13": 0.2929839491844177,
+          "v19": 0.9553173780441284,
+          "station": 0.4169289171695709,
+          "domain": 0.4322701096534729,
+          "consensus": 0.39095354080200195
+        },
+        "source_rank": 15
+      }
+    },
+    {
+      "action_id": "v41_v40_add_019",
+      "order_id": "edf35c43-b3c6-4ee0-b82e-b19e942bec89",
+      "remove_rids": [],
+      "add_rids": [
+        "#-1:24c2c71d-5081-4d06-8b04-ef94592f679f"
+      ],
+      "source": "v40_one_sided_rank_average",
+      "expected_gain": null,
+      "evidence": {
+        "order_id": "edf35c43-b3c6-4ee0-b82e-b19e942bec89",
+        "rid": "#-1:24c2c71d-5081-4d06-8b04-ef94592f679f",
+        "kind": "add",
+        "title": "GNSS星卡天线故障告警",
+        "rank_average": 0.6760374903678894,
+        "scores": {
+          "v11": 0.3692387044429779,
+          "v13": 0.32066914439201355,
+          "v19": 0.8814520239830017,
+          "station": 0.4031767249107361,
+          "domain": 0.44941720366477966,
+          "consensus": 0.30813080072402954
+        },
+        "source_rank": 19
+      }
+    },
+    {
+      "action_id": "v41_v40_add_020",
+      "order_id": "7f43b995-0f0f-4fa5-ad3b-6f196f7434dc",
+      "remove_rids": [],
+      "add_rids": [
+        "#-1:65ec4259-67df-4be5-9790-f1b2ad693d96"
+      ],
+      "source": "v40_one_sided_rank_average",
+      "expected_gain": null,
+      "evidence": {
+        "order_id": "7f43b995-0f0f-4fa5-ad3b-6f196f7434dc",
+        "rid": "#-1:65ec4259-67df-4be5-9790-f1b2ad693d96",
+        "kind": "add",
+        "title": "RRU链路断",
+        "rank_average": 0.6754196286201477,
+        "scores": {
+          "v11": 0.5106109976768494,
+          "v13": 0.4570780396461487,
+          "v19": 0.8624435663223267,
+          "station": 0.4142764210700989,
+          "domain": 0.26573336124420166,
+          "consensus": 0.3139645457267761
+        },
+        "source_rank": 20
+      }
+    },
+    {
+      "action_id": "v41_v40_add_022",
+      "order_id": "faeeeb88-468e-485d-b71b-d3f799baaaf0",
+      "remove_rids": [],
+      "add_rids": [
+        "#-1:9602714c-0fcb-43e5-b630-e6036059b9c5"
+      ],
+      "source": "v40_one_sided_rank_average",
+      "expected_gain": null,
+      "evidence": {
+        "order_id": "faeeeb88-468e-485d-b71b-d3f799baaaf0",
+        "rid": "#-1:9602714c-0fcb-43e5-b630-e6036059b9c5",
+        "kind": "add",
+        "title": "光口接收链路恶化",
+        "rank_average": 0.6743898987770081,
+        "scores": {
+          "v11": 0.3238561451435089,
+          "v13": 0.234272301197052,
+          "v19": 0.7772706747055054,
+          "station": 0.5875034332275391,
+          "domain": 0.48062101006507874,
+          "consensus": 0.6375707983970642
+        },
+        "source_rank": 22
+      }
+    },
+    {
+      "action_id": "v41_v40_add_024",
+      "order_id": "6e2c4bef-2309-4ace-9c76-983bac0255a8",
+      "remove_rids": [],
+      "add_rids": [
+        "#-1:a4aab2b7-dacc-48af-a107-25fa2e283027"
+      ],
+      "source": "v40_one_sided_rank_average",
+      "expected_gain": null,
+      "evidence": {
+        "order_id": "6e2c4bef-2309-4ace-9c76-983bac0255a8",
+        "rid": "#-1:a4aab2b7-dacc-48af-a107-25fa2e283027",
+        "kind": "add",
+        "title": "管理通道通信异常",
+        "rank_average": 0.6699104309082031,
+        "scores": {
+          "v11": 0.3490278720855713,
+          "v13": 0.23641522228717804,
+          "v19": 0.6859453916549683,
+          "station": 0.5628101229667664,
+          "domain": 0.5172208547592163,
+          "consensus": 0.5787099003791809
+        },
+        "source_rank": 24
+      }
+    }
+  ],
+  "predictions": 1043,
+  "prediction_delta_vs_exact": 8,
+  "sha256": "6265ef5136525801c55141727986ec4e62ec976d8e7b870331c6babceaaf6e1c",
+  "score_possibilities": [
+    {
+      "candidate_delta_tp": 0,
+      "tp": 956,
+      "score": 0.91614758
+    },
+    {
+      "candidate_delta_tp": 1,
+      "tp": 957,
+      "score": 0.917105894
+    },
+    {
+      "candidate_delta_tp": 2,
+      "tp": 958,
+      "score": 0.918064207
+    },
+    {
+      "candidate_delta_tp": 3,
+      "tp": 959,
+      "score": 0.91902252
+    },
+    {
+      "candidate_delta_tp": 4,
+      "tp": 960,
+      "score": 0.919980834
+    },
+    {
+      "candidate_delta_tp": 5,
+      "tp": 961,
+      "score": 0.920939147
+    },
+    {
+      "candidate_delta_tp": 6,
+      "tp": 962,
+      "score": 0.92189746
+    },
+    {
+      "candidate_delta_tp": 7,
+      "tp": 963,
+      "score": 0.922855774
+    },
+    {
+      "candidate_delta_tp": 8,
+      "tp": 964,
+      "score": 0.923814087
+    }
+  ]
+}

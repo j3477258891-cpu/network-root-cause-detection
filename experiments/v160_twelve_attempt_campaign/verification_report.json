@@ -1,0 +1,183 @@
+{
+  "at": "2026-09-14T11:19:53.829629+08:00",
+  "tests_passed": 17,
+  "test_exit_code": 0,
+  "test_elapsed_seconds": 146.731,
+  "protected_sources_verified": 230,
+  "all_protected_sources_unchanged": true,
+  "full_configuration_software_validation": {
+    "evidence_class": "synthetic software verification, not OOF or online scores",
+    "elapsed_seconds": 48.29700000002049,
+    "full_configuration": true,
+    "scenario_samples_per_family": 256,
+    "rollout_count_requested": 256,
+    "top_queries_requested": 24,
+    "search_decision": "probe",
+    "search_method": "finite fixed-library receding-horizon rollout, not global optimality",
+    "unique_scenarios": 768,
+    "evaluated_queries": 24,
+    "rollout_count": 256,
+    "maximum_probe_depth": 9,
+    "fallback_reason": null,
+    "model_assisted_final": {
+      "ids": [
+        5,
+        8,
+        10,
+        15,
+        20,
+        22,
+        23,
+        26,
+        27,
+        28,
+        31,
+        33,
+        41,
+        43,
+        54,
+        58,
+        71,
+        75,
+        76,
+        77,
+        78,
+        80,
+        81,
+        82,
+        83,
+        84,
+        87,
+        89,
+        90
+      ],
+      "predictions": 1054,
+      "tp_range": [
+        969,
+        992
+      ],
+      "worst_feasible_f1": 0.9237368922783603,
+      "best_feasible_f1": 0.9456625357483317,
+      "conditional_expected_raw_f1": 0.9302857880521133,
+      "conditional_expected_retained_f1": 0.9337695226470067,
+      "conditional_target_frequency": 0.0013020833333333333,
+      "evidence": "finite feasible perturb-and-MAP ensemble; not a calibrated online forecast",
+      "guaranteed": false,
+      "known_merge": {
+        "ids": [
+          75,
+          76,
+          77,
+          78,
+          79,
+          80,
+          81,
+          82,
+          83,
+          84,
+          85,
+          86,
+          87,
+          88,
+          89,
+          90,
+          91
+        ],
+        "delta_tp": 0,
+        "delta_p": -10,
+        "tp": 972,
+        "predictions": 1035,
+        "f1": 0.935064935064935,
+        "evidence": "exact optimum over disjoint count-known groups"
+      }
+    },
+    "final_csv_validated": true,
+    "actual_ledger_untouched": true,
+    "temporary_artifacts_retained": false
+  },
+  "first_file": "D:\\zgyidong\\experiments\\v160_twelve_attempt_campaign\\v160_probe01_aux05_utf8.csv",
+  "first_validation": {
+    "orders": 546,
+    "predictions": 1042,
+    "sha256": "d87dfda4ce1db5d9b8ab422a0635a0e00fdf7fe96af6283f5b7fda686dbfe8ff",
+    "exact_difference": true,
+    "root_counts_1_to_8": true,
+    "duplicates": 0,
+    "encoding": "utf-8-no-bom"
+  },
+  "first_score_lookup": [
+    {
+      "score": "0.927133",
+      "tp": 967,
+      "delta_tp": -5,
+      "predictions": 1042
+    },
+    {
+      "score": "0.928092",
+      "tp": 968,
+      "delta_tp": -4,
+      "predictions": 1042
+    },
+    {
+      "score": "0.929051",
+      "tp": 969,
+      "delta_tp": -3,
+      "predictions": 1042
+    },
+    {
+      "score": "0.930010",
+      "tp": 970,
+      "delta_tp": -2,
+      "predictions": 1042
+    },
+    {
+      "score": "0.930968",
+      "tp": 971,
+      "delta_tp": -1,
+      "predictions": 1042
+    },
+    {
+      "score": "0.931927",
+      "tp": 972,
+      "delta_tp": 0,
+      "predictions": 1042
+    },
+    {
+      "score": "0.932886",
+      "tp": 973,
+      "delta_tp": 1,
+      "predictions": 1042
+    },
+    {
+      "score": "0.933845",
+      "tp": 974,
+      "delta_tp": 2,
+      "predictions": 1042
+    }
+  ],
+  "actual_champion": {
+    "file": "D:\\zgyidong\\experiments\\v158_eight_attempt_campaign\\v158_safe_final_utf8.csv",
+    "sha256": "ca38eca42a56ee36bab244639bb8c7d1f61dfebc3fa56d1ef8dfc51587b6fc4e",
+    "tp": 972,
+    "predictions": 1045,
+    "score": "0.930589",
+    "source_class": "user_reported_online"
+  },
+  "new_attempts_used": 0,
+  "remaining_submissions": 12,
+  "second_file_prepared": false,
+  "uploaded_by_tool": false,
+  "target_reached": false,
+  "implementation_hashes": {
+    "campaign.py": "c1eea378893fe306b96a08a36c37910a4f9c9971049cc5bdfda1128eafbeb064",
+    "engine.py": "b279d9dc132e56c46768f66bf87c6b8e5c66e3b3da1330d4bf15e6c58dde2a89",
+    "policy.py": "ed964c17cb37a17a53eb3e793cdc8f4fb140f7696e4ab69713409e349bb7a61d",
+    "support.py": "cd0230bd3169fbcf79597fdeac74ee5524ca27fe51f0c4c44ce4faf091aa691c",
+    "test_campaign.py": "4df8105b78d8341b6e7309801206f8f457d35a4479e50657489d99b959368620"
+  },
+  "limitations": [
+    "Perturb-and-MAP finite ensemble is not calibrated posterior sampling.",
+    "Rollouts use a finite current query/final library and are not globally optimal.",
+    "Independent holdout validation did not pass; user explicitly authorized unvalidated risk."
+  ]
+}

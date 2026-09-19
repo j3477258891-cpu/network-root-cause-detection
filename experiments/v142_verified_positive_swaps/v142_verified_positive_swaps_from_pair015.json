@@ -1,0 +1,31 @@
+{
+  "version": "v142-neutral-swap-combination",
+  "base": "D:\\zgyidong\\experiments\\v124_campaign\\v124_single_pair_015_from_probe13.csv",
+  "base_sha256": "31131129bba8363fcf1df2c053f836102e8f209640164c2c4c7eedb431447c6c",
+  "actions": [
+    {
+      "order_id": "06d84a90-670f-4ccb-b482-9afdb874d164",
+      "remove_rid": "#-1:d1c9980d-85c4-40db-9036-f831f95a0aa7",
+      "add_rid": "#-1:00a6ec40-ea39-40f7-9a99-456ee3f07e4f",
+      "online_source": "v124_single_pair_008_from_probe13.csv",
+      "source_tp": 957,
+      "verified_delta_tp_vs_probe13": 0
+    },
+    {
+      "order_id": "b92c1c42-bc69-48fa-b5c6-7bbd2635a15b",
+      "remove_rid": "#-1:46dad958-ef00-43e3-9cc6-b2312a363aea",
+      "add_rid": "#-1:e98f47f3-1430-4bab-bd66-cd79564e73e6",
+      "online_source": "v124_single_pair_049_from_probe13.csv",
+      "source_tp": 957,
+      "verified_delta_tp_vs_probe13": 0
+    }
+  ],
+  "orders": 546,
+  "predictions": 1035,
+  "expected_tp": 958,
+  "expected_f1": 0.921597,
+  "sha256": "d8e7a41fae6162256b2d9ea52711da6c2e79105d38670364e157738d26c6ffde",
+  "status": "rejected_do_not_submit",
+  "evidence": "Both component files scored TP=957, equal to probe-13 TP=957; no verified positive gain.",
+  "warning": "Do not submit this combination as a gain candidate; preserve the current champion."
+}

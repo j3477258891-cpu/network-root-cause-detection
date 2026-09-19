@@ -1,0 +1,2207 @@
+{
+  "version": "v43-low-dim-calibration-1",
+  "score_source_count": 27,
+  "meta_feature_count": 142,
+  "budget": 3032,
+  "baseline": {
+    "name": "v30_station_extra_trees",
+    "tp": 2803,
+    "predictions": 3032,
+    "f1": 0.9231022558867117,
+    "folds": {
+      "station": [
+        {
+          "fold": 0,
+          "tp": 558,
+          "predictions": 603,
+          "truth": 604,
+          "f1": 0.9246064623032312
+        },
+        {
+          "fold": 1,
+          "tp": 567,
+          "predictions": 621,
+          "truth": 622,
+          "f1": 0.912308930008045
+        },
+        {
+          "fold": 2,
+          "tp": 545,
+          "predictions": 583,
+          "truth": 583,
+          "f1": 0.934819897084048
+        },
+        {
+          "fold": 3,
+          "tp": 588,
+          "predictions": 630,
+          "truth": 632,
+          "f1": 0.9318541996830428
+        },
+        {
+          "fold": 4,
+          "tp": 548,
+          "predictions": 595,
+          "truth": 600,
+          "f1": 0.9171548117154812
+        }
+      ],
+      "template": [
+        {
+          "fold": 0,
+          "tp": 524,
+          "predictions": 566,
+          "truth": 566,
+          "f1": 0.9257950530035336
+        },
+        {
+          "fold": 1,
+          "tp": 625,
+          "predictions": 664,
+          "truth": 666,
+          "f1": 0.9398496240601504
+        },
+        {
+          "fold": 2,
+          "tp": 528,
+          "predictions": 578,
+          "truth": 582,
+          "f1": 0.9103448275862069
+        },
+        {
+          "fold": 3,
+          "tp": 562,
+          "predictions": 598,
+          "truth": 600,
+          "f1": 0.9382303839732888
+        },
+        {
+          "fold": 4,
+          "tp": 565,
+          "predictions": 626,
+          "truth": 627,
+          "f1": 0.9018355945730248
+        }
+      ]
+    }
+  },
+  "source_ranking": [
+    {
+      "name": "v33_station_alpha_2",
+      "f1": 0.924090235468467,
+      "tp": 2806
+    },
+    {
+      "name": "v33_station_alpha_0",
+      "f1": 0.9237609089412152,
+      "tp": 2805
+    },
+    {
+      "name": "v30_station_extra_trees",
+      "f1": 0.9231022558867117,
+      "tp": 2803
+    },
+    {
+      "name": "v33_station_alpha_1",
+      "f1": 0.9224436028322082,
+      "tp": 2801
+    },
+    {
+      "name": "v33_station_alpha_4",
+      "f1": 0.9224436028322082,
+      "tp": 2801
+    },
+    {
+      "name": "v33_station_alpha_0.25",
+      "f1": 0.9221142763049563,
+      "tp": 2800
+    },
+    {
+      "name": "v33_station_alpha_0.5",
+      "f1": 0.9221142763049563,
+      "tp": 2800
+    },
+    {
+      "name": "v30_v30_consensus",
+      "f1": 0.9204676436686975,
+      "tp": 2795
+    },
+    {
+      "name": "v30_station_hist_gradient",
+      "f1": 0.9201383171414458,
+      "tp": 2794
+    },
+    {
+      "name": "v30_template_hist_gradient",
+      "f1": 0.9188210110324386,
+      "tp": 2790
+    },
+    {
+      "name": "v33_template_alpha_2",
+      "f1": 0.9181623579779351,
+      "tp": 2788
+    },
+    {
+      "name": "v33_template_alpha_0.25",
+      "f1": 0.9178330314506834,
+      "tp": 2787
+    },
+    {
+      "name": "v33_template_alpha_1",
+      "f1": 0.9178330314506834,
+      "tp": 2787
+    },
+    {
+      "name": "v33_template_alpha_0",
+      "f1": 0.9168450518689281,
+      "tp": 2784
+    },
+    {
+      "name": "v33_template_alpha_0.5",
+      "f1": 0.9168450518689281,
+      "tp": 2784
+    },
+    {
+      "name": "v33_template_alpha_4",
+      "f1": 0.9168450518689281,
+      "tp": 2784
+    },
+    {
+      "name": "v30_template_extra_trees",
+      "f1": 0.9165157253416762,
+      "tp": 2783
+    },
+    {
+      "name": "v25_stack",
+      "f1": 0.9138811131236622,
+      "tp": 2775
+    },
+    {
+      "name": "v25_M4",
+      "f1": 0.9095998682693891,
+      "tp": 2762
+    },
+    {
+      "name": "v13",
+      "f1": 0.9089412152148856,
+      "tp": 2760
+    },
+    {
+      "name": "v11",
+      "f1": 0.9059772764696197,
+      "tp": 2751
+    },
+    {
+      "name": "v16",
+      "f1": 0.886876337889017,
+      "tp": 2693
+    },
+    {
+      "name": "v25_M1",
+      "f1": 0.8737032767989461,
+      "tp": 2653
+    },
+    {
+      "name": "v19",
+      "f1": 0.8690927054174213,
+      "tp": 2639
+    },
+    {
+      "name": "v16_graph_time",
+      "f1": 0.8674460727811625,
+      "tp": 2634
+    },
+    {
+      "name": "v25_M3",
+      "f1": 0.7831384818047094,
+      "tp": 2378
+    },
+    {
+      "name": "v25_M2",
+      "f1": 0.6800592787749054,
+      "tp": 2065
+    }
+  ],
+  "best_blends": [
+    {
+      "source": "v11",
+      "station_weight": 1.0,
+      "f1": 0.9231022558867117,
+      "tp": 2803,
+      "minimum_fold_delta_f1": 0.0
+    },
+    {
+      "source": "v13",
+      "station_weight": 1.0,
+      "f1": 0.9231022558867117,
+      "tp": 2803,
+      "minimum_fold_delta_f1": 0.0
+    },
+    {
+      "source": "v19",
+      "station_weight": 1.0,
+      "f1": 0.9231022558867117,
+      "tp": 2803,
+      "minimum_fold_delta_f1": 0.0
+    },
+    {
+      "source": "v16",
+      "station_weight": 1.0,
+      "f1": 0.9231022558867117,
+      "tp": 2803,
+      "minimum_fold_delta_f1": 0.0
+    },
+    {
+      "source": "v16_graph_time",
+      "station_weight": 1.0,
+      "f1": 0.9231022558867117,
+      "tp": 2803,
+      "minimum_fold_delta_f1": 0.0
+    },
+    {
+      "source": "v25_M1",
+      "station_weight": 1.0,
+      "f1": 0.9231022558867117,
+      "tp": 2803,
+      "minimum_fold_delta_f1": 0.0
+    },
+    {
+      "source": "v25_M2",
+      "station_weight": 1.0,
+      "f1": 0.9231022558867117,
+      "tp": 2803,
+      "minimum_fold_delta_f1": 0.0
+    },
+    {
+      "source": "v25_M3",
+      "station_weight": 1.0,
+      "f1": 0.9231022558867117,
+      "tp": 2803,
+      "minimum_fold_delta_f1": 0.0
+    },
+    {
+      "source": "v25_M4",
+      "station_weight": 1.0,
+      "f1": 0.9231022558867117,
+      "tp": 2803,
+      "minimum_fold_delta_f1": 0.0
+    },
+    {
+      "source": "v25_stack",
+      "station_weight": 1.0,
+      "f1": 0.9231022558867117,
+      "tp": 2803,
+      "minimum_fold_delta_f1": 0.0
+    },
+    {
+      "source": "v30_station_hist_gradient",
+      "station_weight": 1.0,
+      "f1": 0.9231022558867117,
+      "tp": 2803,
+      "minimum_fold_delta_f1": 0.0
+    },
+    {
+      "source": "v30_template_extra_trees",
+      "station_weight": 1.0,
+      "f1": 0.9231022558867117,
+      "tp": 2803,
+      "minimum_fold_delta_f1": 0.0
+    },
+    {
+      "source": "v30_template_hist_gradient",
+      "station_weight": 1.0,
+      "f1": 0.9231022558867117,
+      "tp": 2803,
+      "minimum_fold_delta_f1": 0.0
+    },
+    {
+      "source": "v30_v30_consensus",
+      "station_weight": 1.0,
+      "f1": 0.9231022558867117,
+      "tp": 2803,
+      "minimum_fold_delta_f1": 0.0
+    },
+    {
+      "source": "v33_station_alpha_0",
+      "station_weight": 1.0,
+      "f1": 0.9231022558867117,
+      "tp": 2803,
+      "minimum_fold_delta_f1": 0.0
+    },
+    {
+      "source": "v33_station_alpha_0.25",
+      "station_weight": 1.0,
+      "f1": 0.9231022558867117,
+      "tp": 2803,
+      "minimum_fold_delta_f1": 0.0
+    },
+    {
+      "source": "v33_station_alpha_0.5",
+      "station_weight": 1.0,
+      "f1": 0.9231022558867117,
+      "tp": 2803,
+      "minimum_fold_delta_f1": 0.0
+    },
+    {
+      "source": "v33_station_alpha_1",
+      "station_weight": 1.0,
+      "f1": 0.9231022558867117,
+      "tp": 2803,
+      "minimum_fold_delta_f1": 0.0
+    },
+    {
+      "source": "v33_station_alpha_2",
+      "station_weight": 1.0,
+      "f1": 0.9231022558867117,
+      "tp": 2803,
+      "minimum_fold_delta_f1": 0.0
+    },
+    {
+      "source": "v33_station_alpha_4",
+      "station_weight": 1.0,
+      "f1": 0.9231022558867117,
+      "tp": 2803,
+      "minimum_fold_delta_f1": 0.0
+    },
+    {
+      "source": "v33_template_alpha_0",
+      "station_weight": 1.0,
+      "f1": 0.9231022558867117,
+      "tp": 2803,
+      "minimum_fold_delta_f1": 0.0
+    },
+    {
+      "source": "v33_template_alpha_0.25",
+      "station_weight": 1.0,
+      "f1": 0.9231022558867117,
+      "tp": 2803,
+      "minimum_fold_delta_f1": 0.0
+    },
+    {
+      "source": "v33_template_alpha_0.5",
+      "station_weight": 1.0,
+      "f1": 0.9231022558867117,
+      "tp": 2803,
+      "minimum_fold_delta_f1": 0.0
+    },
+    {
+      "source": "v33_template_alpha_1",
+      "station_weight": 1.0,
+      "f1": 0.9231022558867117,
+      "tp": 2803,
+      "minimum_fold_delta_f1": 0.0
+    },
+    {
+      "source": "v33_template_alpha_2",
+      "station_weight": 1.0,
+      "f1": 0.9231022558867117,
+      "tp": 2803,
+      "minimum_fold_delta_f1": 0.0
+    },
+    {
+      "source": "v33_template_alpha_4",
+      "station_weight": 1.0,
+      "f1": 0.9231022558867117,
+      "tp": 2803,
+      "minimum_fold_delta_f1": 0.0
+    },
+    {
+      "source": "v33_station_alpha_0",
+      "station_weight": 0.9500000000000001,
+      "f1": 0.9227729293594599,
+      "tp": 2802,
+      "minimum_fold_delta_f1": 0.0
+    },
+    {
+      "source": "v33_station_alpha_2",
+      "station_weight": 0.4,
+      "f1": 0.9254075415774741,
+      "tp": 2810,
+      "minimum_fold_delta_f1": -0.0035335689045936647
+    },
+    {
+      "source": "v33_station_alpha_2",
+      "station_weight": 0.35000000000000003,
+      "f1": 0.9247488885229705,
+      "tp": 2808,
+      "minimum_fold_delta_f1": -0.0035335689045936647
+    },
+    {
+      "source": "v33_station_alpha_2",
+      "station_weight": 0.5,
+      "f1": 0.9247488885229705,
+      "tp": 2808,
+      "minimum_fold_delta_f1": -0.0035335689045936647
+    }
+  ],
+  "best_meta": [
+    {
+      "name": "station_c0.01_a0",
+      "f1": 0.9227729293594599,
+      "tp": 2802,
+      "minimum_fold_delta_f1": -0.015437392795883298
+    },
+    {
+      "name": "station_c0.3_a0",
+      "f1": 0.9227729293594599,
+      "tp": 2802,
+      "minimum_fold_delta_f1": -0.015437392795883298
+    },
+    {
+      "name": "station_c0.03_a0",
+      "f1": 0.9224436028322082,
+      "tp": 2801,
+      "minimum_fold_delta_f1": -0.012006861063464824
+    },
+    {
+      "name": "template_c0.1_a0",
+      "f1": 0.9221142763049563,
+      "tp": 2800,
+      "minimum_fold_delta_f1": -0.015437392795883298
+    },
+    {
+      "name": "station_c0.003_a1",
+      "f1": 0.9217849497777046,
+      "tp": 2799,
+      "minimum_fold_delta_f1": -0.013722126929674117
+    },
+    {
+      "name": "station_c0.1_a0",
+      "f1": 0.9217849497777046,
+      "tp": 2799,
+      "minimum_fold_delta_f1": -0.013722126929674117
+    },
+    {
+      "name": "template_c0.03_a0",
+      "f1": 0.9214556232504528,
+      "tp": 2798,
+      "minimum_fold_delta_f1": -0.010291595197255532
+    },
+    {
+      "name": "template_c0.01_a0",
+      "f1": 0.921126296723201,
+      "tp": 2797,
+      "minimum_fold_delta_f1": -0.013722126929674117
+    },
+    {
+      "name": "station_c0.003_a0",
+      "f1": 0.9207969701959493,
+      "tp": 2796,
+      "minimum_fold_delta_f1": -0.010291595197255532
+    },
+    {
+      "name": "station_c0.01_a1",
+      "f1": 0.9207969701959493,
+      "tp": 2796,
+      "minimum_fold_delta_f1": -0.018867924528301883
+    },
+    {
+      "name": "template_c0.003_a1",
+      "f1": 0.9201383171414458,
+      "tp": 2794,
+      "minimum_fold_delta_f1": -0.010291595197255532
+    },
+    {
+      "name": "template_c0.01_a1",
+      "f1": 0.9201383171414458,
+      "tp": 2794,
+      "minimum_fold_delta_f1": -0.013722126929674117
+    },
+    {
+      "name": "template_c0.003_a0",
+      "f1": 0.919808990614194,
+      "tp": 2793,
+      "minimum_fold_delta_f1": -0.012006861063464824
+    },
+    {
+      "name": "template_c0.3_a0",
+      "f1": 0.9194796640869422,
+      "tp": 2792,
+      "minimum_fold_delta_f1": -0.01715265866209259
+    },
+    {
+      "name": "station_c0.03_a1",
+      "f1": 0.9194796640869422,
+      "tp": 2792,
+      "minimum_fold_delta_f1": -0.022298456260720356
+    },
+    {
+      "name": "station_c0.1_a1",
+      "f1": 0.9191503375596904,
+      "tp": 2791,
+      "minimum_fold_delta_f1": -0.02572898799313894
+    },
+    {
+      "name": "template_c0.03_a1",
+      "f1": 0.9171743783961798,
+      "tp": 2785,
+      "minimum_fold_delta_f1": -0.018867924528301883
+    },
+    {
+      "name": "template_c0.1_a1",
+      "f1": 0.9165157253416762,
+      "tp": 2783,
+      "minimum_fold_delta_f1": -0.02572898799313894
+    },
+    {
+      "name": "template_c0.3_a1",
+      "f1": 0.9161863988144245,
+      "tp": 2782,
+      "minimum_fold_delta_f1": -0.030874785591766707
+    },
+    {
+      "name": "station_c0.3_a1",
+      "f1": 0.9145397661781657,
+      "tp": 2777,
+      "minimum_fold_delta_f1": -0.02401372212692965
+    }
+  ],
+  "meta_results": {
+    "station_c0.003_a0": {
+      "tp": 2796,
+      "predictions": 3032,
+      "f1": 0.9207969701959493,
+      "folds": {
+        "station": [
+          {
+            "fold": 0,
+            "tp": 558,
+            "predictions": 603,
+            "truth": 604,
+            "f1": 0.9246064623032312
+          },
+          {
+            "fold": 1,
+            "tp": 563,
+            "predictions": 621,
+            "truth": 622,
+            "f1": 0.9058728881737731
+          },
+          {
+            "fold": 2,
+            "tp": 539,
+            "predictions": 583,
+            "truth": 583,
+            "f1": 0.9245283018867925
+          },
+          {
+            "fold": 3,
+            "tp": 587,
+            "predictions": 630,
+            "truth": 632,
+            "f1": 0.93026941362916
+          },
+          {
+            "fold": 4,
+            "tp": 549,
+            "predictions": 595,
+            "truth": 600,
+            "f1": 0.9188284518828452
+          }
+        ],
+        "template": [
+          {
+            "fold": 0,
+            "tp": 524,
+            "predictions": 566,
+            "truth": 566,
+            "f1": 0.9257950530035336
+          },
+          {
+            "fold": 1,
+            "tp": 625,
+            "predictions": 664,
+            "truth": 666,
+            "f1": 0.9398496240601504
+          },
+          {
+            "fold": 2,
+            "tp": 527,
+            "predictions": 578,
+            "truth": 582,
+            "f1": 0.9086206896551724
+          },
+          {
+            "fold": 3,
+            "tp": 557,
+            "predictions": 598,
+            "truth": 600,
+            "f1": 0.9298831385642737
+          },
+          {
+            "fold": 4,
+            "tp": 563,
+            "predictions": 626,
+            "truth": 627,
+            "f1": 0.8986432561851556
+          }
+        ]
+      },
+      "minimum_fold_delta_f1": -0.010291595197255532
+    },
+    "station_c0.003_a1": {
+      "tp": 2799,
+      "predictions": 3032,
+      "f1": 0.9217849497777046,
+      "folds": {
+        "station": [
+          {
+            "fold": 0,
+            "tp": 557,
+            "predictions": 603,
+            "truth": 604,
+            "f1": 0.9229494614747308
+          },
+          {
+            "fold": 1,
+            "tp": 568,
+            "predictions": 621,
+            "truth": 622,
+            "f1": 0.913917940466613
+          },
+          {
+            "fold": 2,
+            "tp": 537,
+            "predictions": 583,
+            "truth": 583,
+            "f1": 0.9210977701543739
+          },
+          {
+            "fold": 3,
+            "tp": 587,
+            "predictions": 630,
+            "truth": 632,
+            "f1": 0.93026941362916
+          },
+          {
+            "fold": 4,
+            "tp": 548,
+            "predictions": 595,
+            "truth": 600,
+            "f1": 0.9171548117154812
+          }
+        ],
+        "template": [
+          {
+            "fold": 0,
+            "tp": 523,
+            "predictions": 566,
+            "truth": 566,
+            "f1": 0.9240282685512368
+          },
+          {
+            "fold": 1,
+            "tp": 623,
+            "predictions": 664,
+            "truth": 666,
+            "f1": 0.9368421052631579
+          },
+          {
+            "fold": 2,
+            "tp": 527,
+            "predictions": 578,
+            "truth": 582,
+            "f1": 0.9086206896551724
+          },
+          {
+            "fold": 3,
+            "tp": 560,
+            "predictions": 598,
+            "truth": 600,
+            "f1": 0.9348914858096828
+          },
+          {
+            "fold": 4,
+            "tp": 561,
+            "predictions": 626,
+            "truth": 627,
+            "f1": 0.8954509177972865
+          }
+        ]
+      },
+      "minimum_fold_delta_f1": -0.013722126929674117
+    },
+    "station_c0.01_a0": {
+      "tp": 2802,
+      "predictions": 3032,
+      "f1": 0.9227729293594599,
+      "folds": {
+        "station": [
+          {
+            "fold": 0,
+            "tp": 559,
+            "predictions": 603,
+            "truth": 604,
+            "f1": 0.9262634631317316
+          },
+          {
+            "fold": 1,
+            "tp": 564,
+            "predictions": 621,
+            "truth": 622,
+            "f1": 0.9074818986323411
+          },
+          {
+            "fold": 2,
+            "tp": 536,
+            "predictions": 583,
+            "truth": 583,
+            "f1": 0.9193825042881647
+          },
+          {
+            "fold": 3,
+            "tp": 586,
+            "predictions": 630,
+            "truth": 632,
+            "f1": 0.9286846275752774
+          },
+          {
+            "fold": 4,
+            "tp": 551,
+            "predictions": 595,
+            "truth": 600,
+            "f1": 0.9221757322175732
+          }
+        ],
+        "template": [
+          {
+            "fold": 0,
+            "tp": 524,
+            "predictions": 566,
+            "truth": 566,
+            "f1": 0.9257950530035336
+          },
+          {
+            "fold": 1,
+            "tp": 625,
+            "predictions": 664,
+            "truth": 666,
+            "f1": 0.9398496240601504
+          },
+          {
+            "fold": 2,
+            "tp": 528,
+            "predictions": 578,
+            "truth": 582,
+            "f1": 0.9103448275862069
+          },
+          {
+            "fold": 3,
+            "tp": 561,
+            "predictions": 598,
+            "truth": 600,
+            "f1": 0.9365609348914858
+          },
+          {
+            "fold": 4,
+            "tp": 563,
+            "predictions": 626,
+            "truth": 627,
+            "f1": 0.8986432561851556
+          }
+        ]
+      },
+      "minimum_fold_delta_f1": -0.015437392795883298
+    },
+    "station_c0.01_a1": {
+      "tp": 2796,
+      "predictions": 3032,
+      "f1": 0.9207969701959493,
+      "folds": {
+        "station": [
+          {
+            "fold": 0,
+            "tp": 557,
+            "predictions": 603,
+            "truth": 604,
+            "f1": 0.9229494614747308
+          },
+          {
+            "fold": 1,
+            "tp": 567,
+            "predictions": 621,
+            "truth": 622,
+            "f1": 0.912308930008045
+          },
+          {
+            "fold": 2,
+            "tp": 534,
+            "predictions": 583,
+            "truth": 583,
+            "f1": 0.9159519725557461
+          },
+          {
+            "fold": 3,
+            "tp": 586,
+            "predictions": 630,
+            "truth": 632,
+            "f1": 0.9286846275752774
+          },
+          {
+            "fold": 4,
+            "tp": 548,
+            "predictions": 595,
+            "truth": 600,
+            "f1": 0.9171548117154812
+          }
+        ],
+        "template": [
+          {
+            "fold": 0,
+            "tp": 523,
+            "predictions": 566,
+            "truth": 566,
+            "f1": 0.9240282685512368
+          },
+          {
+            "fold": 1,
+            "tp": 625,
+            "predictions": 664,
+            "truth": 666,
+            "f1": 0.9398496240601504
+          },
+          {
+            "fold": 2,
+            "tp": 525,
+            "predictions": 578,
+            "truth": 582,
+            "f1": 0.9051724137931034
+          },
+          {
+            "fold": 3,
+            "tp": 562,
+            "predictions": 598,
+            "truth": 600,
+            "f1": 0.9382303839732888
+          },
+          {
+            "fold": 4,
+            "tp": 560,
+            "predictions": 626,
+            "truth": 627,
+            "f1": 0.8938547486033519
+          }
+        ]
+      },
+      "minimum_fold_delta_f1": -0.018867924528301883
+    },
+    "station_c0.03_a0": {
+      "tp": 2801,
+      "predictions": 3032,
+      "f1": 0.9224436028322082,
+      "folds": {
+        "station": [
+          {
+            "fold": 0,
+            "tp": 561,
+            "predictions": 603,
+            "truth": 604,
+            "f1": 0.9295774647887324
+          },
+          {
+            "fold": 1,
+            "tp": 566,
+            "predictions": 621,
+            "truth": 622,
+            "f1": 0.910699919549477
+          },
+          {
+            "fold": 2,
+            "tp": 538,
+            "predictions": 583,
+            "truth": 583,
+            "f1": 0.9228130360205832
+          },
+          {
+            "fold": 3,
+            "tp": 588,
+            "predictions": 630,
+            "truth": 632,
+            "f1": 0.9318541996830428
+          },
+          {
+            "fold": 4,
+            "tp": 549,
+            "predictions": 595,
+            "truth": 600,
+            "f1": 0.9188284518828452
+          }
+        ],
+        "template": [
+          {
+            "fold": 0,
+            "tp": 525,
+            "predictions": 566,
+            "truth": 566,
+            "f1": 0.9275618374558304
+          },
+          {
+            "fold": 1,
+            "tp": 625,
+            "predictions": 664,
+            "truth": 666,
+            "f1": 0.9398496240601504
+          },
+          {
+            "fold": 2,
+            "tp": 530,
+            "predictions": 578,
+            "truth": 582,
+            "f1": 0.9137931034482759
+          },
+          {
+            "fold": 3,
+            "tp": 562,
+            "predictions": 598,
+            "truth": 600,
+            "f1": 0.9382303839732888
+          },
+          {
+            "fold": 4,
+            "tp": 561,
+            "predictions": 626,
+            "truth": 627,
+            "f1": 0.8954509177972865
+          }
+        ]
+      },
+      "minimum_fold_delta_f1": -0.012006861063464824
+    },
+    "station_c0.03_a1": {
+      "tp": 2792,
+      "predictions": 3032,
+      "f1": 0.9194796640869422,
+      "folds": {
+        "station": [
+          {
+            "fold": 0,
+            "tp": 558,
+            "predictions": 603,
+            "truth": 604,
+            "f1": 0.9246064623032312
+          },
+          {
+            "fold": 1,
+            "tp": 565,
+            "predictions": 621,
+            "truth": 622,
+            "f1": 0.9090909090909091
+          },
+          {
+            "fold": 2,
+            "tp": 532,
+            "predictions": 583,
+            "truth": 583,
+            "f1": 0.9125214408233276
+          },
+          {
+            "fold": 3,
+            "tp": 584,
+            "predictions": 630,
+            "truth": 632,
+            "f1": 0.9255150554675119
+          },
+          {
+            "fold": 4,
+            "tp": 549,
+            "predictions": 595,
+            "truth": 600,
+            "f1": 0.9188284518828452
+          }
+        ],
+        "template": [
+          {
+            "fold": 0,
+            "tp": 525,
+            "predictions": 566,
+            "truth": 566,
+            "f1": 0.9275618374558304
+          },
+          {
+            "fold": 1,
+            "tp": 626,
+            "predictions": 664,
+            "truth": 666,
+            "f1": 0.9413533834586466
+          },
+          {
+            "fold": 2,
+            "tp": 525,
+            "predictions": 578,
+            "truth": 582,
+            "f1": 0.9051724137931034
+          },
+          {
+            "fold": 3,
+            "tp": 560,
+            "predictions": 598,
+            "truth": 600,
+            "f1": 0.9348914858096828
+          },
+          {
+            "fold": 4,
+            "tp": 558,
+            "predictions": 626,
+            "truth": 627,
+            "f1": 0.8906624102154829
+          }
+        ]
+      },
+      "minimum_fold_delta_f1": -0.022298456260720356
+    },
+    "station_c0.1_a0": {
+      "tp": 2799,
+      "predictions": 3032,
+      "f1": 0.9217849497777046,
+      "folds": {
+        "station": [
+          {
+            "fold": 0,
+            "tp": 561,
+            "predictions": 603,
+            "truth": 604,
+            "f1": 0.9295774647887324
+          },
+          {
+            "fold": 1,
+            "tp": 569,
+            "predictions": 621,
+            "truth": 622,
+            "f1": 0.915526950925181
+          },
+          {
+            "fold": 2,
+            "tp": 537,
+            "predictions": 583,
+            "truth": 583,
+            "f1": 0.9210977701543739
+          },
+          {
+            "fold": 3,
+            "tp": 588,
+            "predictions": 630,
+            "truth": 632,
+            "f1": 0.9318541996830428
+          },
+          {
+            "fold": 4,
+            "tp": 550,
+            "predictions": 595,
+            "truth": 600,
+            "f1": 0.9205020920502092
+          }
+        ],
+        "template": [
+          {
+            "fold": 0,
+            "tp": 527,
+            "predictions": 566,
+            "truth": 566,
+            "f1": 0.931095406360424
+          },
+          {
+            "fold": 1,
+            "tp": 625,
+            "predictions": 664,
+            "truth": 666,
+            "f1": 0.9398496240601504
+          },
+          {
+            "fold": 2,
+            "tp": 530,
+            "predictions": 578,
+            "truth": 582,
+            "f1": 0.9137931034482759
+          },
+          {
+            "fold": 3,
+            "tp": 563,
+            "predictions": 598,
+            "truth": 600,
+            "f1": 0.9398998330550918
+          },
+          {
+            "fold": 4,
+            "tp": 559,
+            "predictions": 626,
+            "truth": 627,
+            "f1": 0.8922585794094174
+          }
+        ]
+      },
+      "minimum_fold_delta_f1": -0.013722126929674117
+    },
+    "station_c0.1_a1": {
+      "tp": 2791,
+      "predictions": 3032,
+      "f1": 0.9191503375596904,
+      "folds": {
+        "station": [
+          {
+            "fold": 0,
+            "tp": 560,
+            "predictions": 603,
+            "truth": 604,
+            "f1": 0.927920463960232
+          },
+          {
+            "fold": 1,
+            "tp": 566,
+            "predictions": 621,
+            "truth": 622,
+            "f1": 0.910699919549477
+          },
+          {
+            "fold": 2,
+            "tp": 530,
+            "predictions": 583,
+            "truth": 583,
+            "f1": 0.9090909090909091
+          },
+          {
+            "fold": 3,
+            "tp": 586,
+            "predictions": 630,
+            "truth": 632,
+            "f1": 0.9286846275752774
+          },
+          {
+            "fold": 4,
+            "tp": 550,
+            "predictions": 595,
+            "truth": 600,
+            "f1": 0.9205020920502092
+          }
+        ],
+        "template": [
+          {
+            "fold": 0,
+            "tp": 523,
+            "predictions": 566,
+            "truth": 566,
+            "f1": 0.9240282685512368
+          },
+          {
+            "fold": 1,
+            "tp": 625,
+            "predictions": 664,
+            "truth": 666,
+            "f1": 0.9398496240601504
+          },
+          {
+            "fold": 2,
+            "tp": 528,
+            "predictions": 578,
+            "truth": 582,
+            "f1": 0.9103448275862069
+          },
+          {
+            "fold": 3,
+            "tp": 558,
+            "predictions": 598,
+            "truth": 600,
+            "f1": 0.9315525876460768
+          },
+          {
+            "fold": 4,
+            "tp": 556,
+            "predictions": 626,
+            "truth": 627,
+            "f1": 0.8874700718276137
+          }
+        ]
+      },
+      "minimum_fold_delta_f1": -0.02572898799313894
+    },
+    "station_c0.3_a0": {
+      "tp": 2802,
+      "predictions": 3032,
+      "f1": 0.9227729293594599,
+      "folds": {
+        "station": [
+          {
+            "fold": 0,
+            "tp": 563,
+            "predictions": 603,
+            "truth": 604,
+            "f1": 0.9328914664457332
+          },
+          {
+            "fold": 1,
+            "tp": 571,
+            "predictions": 621,
+            "truth": 622,
+            "f1": 0.918744971842317
+          },
+          {
+            "fold": 2,
+            "tp": 536,
+            "predictions": 583,
+            "truth": 583,
+            "f1": 0.9193825042881647
+          },
+          {
+            "fold": 3,
+            "tp": 589,
+            "predictions": 630,
+            "truth": 632,
+            "f1": 0.9334389857369255
+          },
+          {
+            "fold": 4,
+            "tp": 548,
+            "predictions": 595,
+            "truth": 600,
+            "f1": 0.9171548117154812
+          }
+        ],
+        "template": [
+          {
+            "fold": 0,
+            "tp": 526,
+            "predictions": 566,
+            "truth": 566,
+            "f1": 0.9293286219081273
+          },
+          {
+            "fold": 1,
+            "tp": 625,
+            "predictions": 664,
+            "truth": 666,
+            "f1": 0.9398496240601504
+          },
+          {
+            "fold": 2,
+            "tp": 526,
+            "predictions": 578,
+            "truth": 582,
+            "f1": 0.906896551724138
+          },
+          {
+            "fold": 3,
+            "tp": 563,
+            "predictions": 598,
+            "truth": 600,
+            "f1": 0.9398998330550918
+          },
+          {
+            "fold": 4,
+            "tp": 560,
+            "predictions": 626,
+            "truth": 627,
+            "f1": 0.8938547486033519
+          }
+        ]
+      },
+      "minimum_fold_delta_f1": -0.015437392795883298
+    },
+    "station_c0.3_a1": {
+      "tp": 2777,
+      "predictions": 3032,
+      "f1": 0.9145397661781657,
+      "folds": {
+        "station": [
+          {
+            "fold": 0,
+            "tp": 556,
+            "predictions": 603,
+            "truth": 604,
+            "f1": 0.9212924606462303
+          },
+          {
+            "fold": 1,
+            "tp": 569,
+            "predictions": 621,
+            "truth": 622,
+            "f1": 0.915526950925181
+          },
+          {
+            "fold": 2,
+            "tp": 531,
+            "predictions": 583,
+            "truth": 583,
+            "f1": 0.9108061749571184
+          },
+          {
+            "fold": 3,
+            "tp": 585,
+            "predictions": 630,
+            "truth": 632,
+            "f1": 0.9270998415213946
+          },
+          {
+            "fold": 4,
+            "tp": 547,
+            "predictions": 595,
+            "truth": 600,
+            "f1": 0.9154811715481171
+          }
+        ],
+        "template": [
+          {
+            "fold": 0,
+            "tp": 522,
+            "predictions": 566,
+            "truth": 566,
+            "f1": 0.9222614840989399
+          },
+          {
+            "fold": 1,
+            "tp": 621,
+            "predictions": 664,
+            "truth": 666,
+            "f1": 0.9338345864661655
+          },
+          {
+            "fold": 2,
+            "tp": 529,
+            "predictions": 578,
+            "truth": 582,
+            "f1": 0.9120689655172414
+          },
+          {
+            "fold": 3,
+            "tp": 555,
+            "predictions": 598,
+            "truth": 600,
+            "f1": 0.9265442404006677
+          },
+          {
+            "fold": 4,
+            "tp": 552,
+            "predictions": 626,
+            "truth": 627,
+            "f1": 0.8810853950518756
+          }
+        ]
+      },
+      "minimum_fold_delta_f1": -0.02401372212692965
+    },
+    "template_c0.003_a0": {
+      "tp": 2793,
+      "predictions": 3032,
+      "f1": 0.919808990614194,
+      "folds": {
+        "station": [
+          {
+            "fold": 0,
+            "tp": 557,
+            "predictions": 603,
+            "truth": 604,
+            "f1": 0.9229494614747308
+          },
+          {
+            "fold": 1,
+            "tp": 562,
+            "predictions": 621,
+            "truth": 622,
+            "f1": 0.9042638777152051
+          },
+          {
+            "fold": 2,
+            "tp": 538,
+            "predictions": 583,
+            "truth": 583,
+            "f1": 0.9228130360205832
+          },
+          {
+            "fold": 3,
+            "tp": 586,
+            "predictions": 630,
+            "truth": 632,
+            "f1": 0.9286846275752774
+          },
+          {
+            "fold": 4,
+            "tp": 547,
+            "predictions": 595,
+            "truth": 600,
+            "f1": 0.9154811715481171
+          }
+        ],
+        "template": [
+          {
+            "fold": 0,
+            "tp": 522,
+            "predictions": 566,
+            "truth": 566,
+            "f1": 0.9222614840989399
+          },
+          {
+            "fold": 1,
+            "tp": 625,
+            "predictions": 664,
+            "truth": 666,
+            "f1": 0.9398496240601504
+          },
+          {
+            "fold": 2,
+            "tp": 528,
+            "predictions": 578,
+            "truth": 582,
+            "f1": 0.9103448275862069
+          },
+          {
+            "fold": 3,
+            "tp": 559,
+            "predictions": 598,
+            "truth": 600,
+            "f1": 0.9332220367278798
+          },
+          {
+            "fold": 4,
+            "tp": 561,
+            "predictions": 626,
+            "truth": 627,
+            "f1": 0.8954509177972865
+          }
+        ]
+      },
+      "minimum_fold_delta_f1": -0.012006861063464824
+    },
+    "template_c0.003_a1": {
+      "tp": 2794,
+      "predictions": 3032,
+      "f1": 0.9201383171414458,
+      "folds": {
+        "station": [
+          {
+            "fold": 0,
+            "tp": 557,
+            "predictions": 603,
+            "truth": 604,
+            "f1": 0.9229494614747308
+          },
+          {
+            "fold": 1,
+            "tp": 567,
+            "predictions": 621,
+            "truth": 622,
+            "f1": 0.912308930008045
+          },
+          {
+            "fold": 2,
+            "tp": 539,
+            "predictions": 583,
+            "truth": 583,
+            "f1": 0.9245283018867925
+          },
+          {
+            "fold": 3,
+            "tp": 583,
+            "predictions": 630,
+            "truth": 632,
+            "f1": 0.9239302694136292
+          },
+          {
+            "fold": 4,
+            "tp": 547,
+            "predictions": 595,
+            "truth": 600,
+            "f1": 0.9154811715481171
+          }
+        ],
+        "template": [
+          {
+            "fold": 0,
+            "tp": 524,
+            "predictions": 566,
+            "truth": 566,
+            "f1": 0.9257950530035336
+          },
+          {
+            "fold": 1,
+            "tp": 622,
+            "predictions": 664,
+            "truth": 666,
+            "f1": 0.9353383458646617
+          },
+          {
+            "fold": 2,
+            "tp": 527,
+            "predictions": 578,
+            "truth": 582,
+            "f1": 0.9086206896551724
+          },
+          {
+            "fold": 3,
+            "tp": 559,
+            "predictions": 598,
+            "truth": 600,
+            "f1": 0.9332220367278798
+          },
+          {
+            "fold": 4,
+            "tp": 562,
+            "predictions": 626,
+            "truth": 627,
+            "f1": 0.897047086991221
+          }
+        ]
+      },
+      "minimum_fold_delta_f1": -0.010291595197255532
+    },
+    "template_c0.01_a0": {
+      "tp": 2797,
+      "predictions": 3032,
+      "f1": 0.921126296723201,
+      "folds": {
+        "station": [
+          {
+            "fold": 0,
+            "tp": 558,
+            "predictions": 603,
+            "truth": 604,
+            "f1": 0.9246064623032312
+          },
+          {
+            "fold": 1,
+            "tp": 564,
+            "predictions": 621,
+            "truth": 622,
+            "f1": 0.9074818986323411
+          },
+          {
+            "fold": 2,
+            "tp": 537,
+            "predictions": 583,
+            "truth": 583,
+            "f1": 0.9210977701543739
+          },
+          {
+            "fold": 3,
+            "tp": 587,
+            "predictions": 630,
+            "truth": 632,
+            "f1": 0.93026941362916
+          },
+          {
+            "fold": 4,
+            "tp": 548,
+            "predictions": 595,
+            "truth": 600,
+            "f1": 0.9171548117154812
+          }
+        ],
+        "template": [
+          {
+            "fold": 0,
+            "tp": 524,
+            "predictions": 566,
+            "truth": 566,
+            "f1": 0.9257950530035336
+          },
+          {
+            "fold": 1,
+            "tp": 625,
+            "predictions": 664,
+            "truth": 666,
+            "f1": 0.9398496240601504
+          },
+          {
+            "fold": 2,
+            "tp": 527,
+            "predictions": 578,
+            "truth": 582,
+            "f1": 0.9086206896551724
+          },
+          {
+            "fold": 3,
+            "tp": 559,
+            "predictions": 598,
+            "truth": 600,
+            "f1": 0.9332220367278798
+          },
+          {
+            "fold": 4,
+            "tp": 562,
+            "predictions": 626,
+            "truth": 627,
+            "f1": 0.897047086991221
+          }
+        ]
+      },
+      "minimum_fold_delta_f1": -0.013722126929674117
+    },
+    "template_c0.01_a1": {
+      "tp": 2794,
+      "predictions": 3032,
+      "f1": 0.9201383171414458,
+      "folds": {
+        "station": [
+          {
+            "fold": 0,
+            "tp": 555,
+            "predictions": 603,
+            "truth": 604,
+            "f1": 0.9196354598177299
+          },
+          {
+            "fold": 1,
+            "tp": 565,
+            "predictions": 621,
+            "truth": 622,
+            "f1": 0.9090909090909091
+          },
+          {
+            "fold": 2,
+            "tp": 537,
+            "predictions": 583,
+            "truth": 583,
+            "f1": 0.9210977701543739
+          },
+          {
+            "fold": 3,
+            "tp": 582,
+            "predictions": 630,
+            "truth": 632,
+            "f1": 0.9223454833597464
+          },
+          {
+            "fold": 4,
+            "tp": 546,
+            "predictions": 595,
+            "truth": 600,
+            "f1": 0.9138075313807531
+          }
+        ],
+        "template": [
+          {
+            "fold": 0,
+            "tp": 525,
+            "predictions": 566,
+            "truth": 566,
+            "f1": 0.9275618374558304
+          },
+          {
+            "fold": 1,
+            "tp": 622,
+            "predictions": 664,
+            "truth": 666,
+            "f1": 0.9353383458646617
+          },
+          {
+            "fold": 2,
+            "tp": 525,
+            "predictions": 578,
+            "truth": 582,
+            "f1": 0.9051724137931034
+          },
+          {
+            "fold": 3,
+            "tp": 560,
+            "predictions": 598,
+            "truth": 600,
+            "f1": 0.9348914858096828
+          },
+          {
+            "fold": 4,
+            "tp": 559,
+            "predictions": 626,
+            "truth": 627,
+            "f1": 0.8922585794094174
+          }
+        ]
+      },
+      "minimum_fold_delta_f1": -0.013722126929674117
+    },
+    "template_c0.03_a0": {
+      "tp": 2798,
+      "predictions": 3032,
+      "f1": 0.9214556232504528,
+      "folds": {
+        "station": [
+          {
+            "fold": 0,
+            "tp": 560,
+            "predictions": 603,
+            "truth": 604,
+            "f1": 0.927920463960232
+          },
+          {
+            "fold": 1,
+            "tp": 566,
+            "predictions": 621,
+            "truth": 622,
+            "f1": 0.910699919549477
+          },
+          {
+            "fold": 2,
+            "tp": 539,
+            "predictions": 583,
+            "truth": 583,
+            "f1": 0.9245283018867925
+          },
+          {
+            "fold": 3,
+            "tp": 588,
+            "predictions": 630,
+            "truth": 632,
+            "f1": 0.9318541996830428
+          },
+          {
+            "fold": 4,
+            "tp": 546,
+            "predictions": 595,
+            "truth": 600,
+            "f1": 0.9138075313807531
+          }
+        ],
+        "template": [
+          {
+            "fold": 0,
+            "tp": 525,
+            "predictions": 566,
+            "truth": 566,
+            "f1": 0.9275618374558304
+          },
+          {
+            "fold": 1,
+            "tp": 624,
+            "predictions": 664,
+            "truth": 666,
+            "f1": 0.9383458646616541
+          },
+          {
+            "fold": 2,
+            "tp": 527,
+            "predictions": 578,
+            "truth": 582,
+            "f1": 0.9086206896551724
+          },
+          {
+            "fold": 3,
+            "tp": 561,
+            "predictions": 598,
+            "truth": 600,
+            "f1": 0.9365609348914858
+          },
+          {
+            "fold": 4,
+            "tp": 562,
+            "predictions": 626,
+            "truth": 627,
+            "f1": 0.897047086991221
+          }
+        ]
+      },
+      "minimum_fold_delta_f1": -0.010291595197255532
+    },
+    "template_c0.03_a1": {
+      "tp": 2785,
+      "predictions": 3032,
+      "f1": 0.9171743783961798,
+      "folds": {
+        "station": [
+          {
+            "fold": 0,
+            "tp": 557,
+            "predictions": 603,
+            "truth": 604,
+            "f1": 0.9229494614747308
+          },
+          {
+            "fold": 1,
+            "tp": 564,
+            "predictions": 621,
+            "truth": 622,
+            "f1": 0.9074818986323411
+          },
+          {
+            "fold": 2,
+            "tp": 534,
+            "predictions": 583,
+            "truth": 583,
+            "f1": 0.9159519725557461
+          },
+          {
+            "fold": 3,
+            "tp": 582,
+            "predictions": 630,
+            "truth": 632,
+            "f1": 0.9223454833597464
+          },
+          {
+            "fold": 4,
+            "tp": 545,
+            "predictions": 595,
+            "truth": 600,
+            "f1": 0.9121338912133892
+          }
+        ],
+        "template": [
+          {
+            "fold": 0,
+            "tp": 524,
+            "predictions": 566,
+            "truth": 566,
+            "f1": 0.9257950530035336
+          },
+          {
+            "fold": 1,
+            "tp": 624,
+            "predictions": 664,
+            "truth": 666,
+            "f1": 0.9383458646616541
+          },
+          {
+            "fold": 2,
+            "tp": 523,
+            "predictions": 578,
+            "truth": 582,
+            "f1": 0.9017241379310345
+          },
+          {
+            "fold": 3,
+            "tp": 561,
+            "predictions": 598,
+            "truth": 600,
+            "f1": 0.9365609348914858
+          },
+          {
+            "fold": 4,
+            "tp": 556,
+            "predictions": 626,
+            "truth": 627,
+            "f1": 0.8874700718276137
+          }
+        ]
+      },
+      "minimum_fold_delta_f1": -0.018867924528301883
+    },
+    "template_c0.1_a0": {
+      "tp": 2800,
+      "predictions": 3032,
+      "f1": 0.9221142763049563,
+      "folds": {
+        "station": [
+          {
+            "fold": 0,
+            "tp": 561,
+            "predictions": 603,
+            "truth": 604,
+            "f1": 0.9295774647887324
+          },
+          {
+            "fold": 1,
+            "tp": 568,
+            "predictions": 621,
+            "truth": 622,
+            "f1": 0.913917940466613
+          },
+          {
+            "fold": 2,
+            "tp": 536,
+            "predictions": 583,
+            "truth": 583,
+            "f1": 0.9193825042881647
+          },
+          {
+            "fold": 3,
+            "tp": 587,
+            "predictions": 630,
+            "truth": 632,
+            "f1": 0.93026941362916
+          },
+          {
+            "fold": 4,
+            "tp": 547,
+            "predictions": 595,
+            "truth": 600,
+            "f1": 0.9154811715481171
+          }
+        ],
+        "template": [
+          {
+            "fold": 0,
+            "tp": 526,
+            "predictions": 566,
+            "truth": 566,
+            "f1": 0.9293286219081273
+          },
+          {
+            "fold": 1,
+            "tp": 624,
+            "predictions": 664,
+            "truth": 666,
+            "f1": 0.9383458646616541
+          },
+          {
+            "fold": 2,
+            "tp": 528,
+            "predictions": 578,
+            "truth": 582,
+            "f1": 0.9103448275862069
+          },
+          {
+            "fold": 3,
+            "tp": 561,
+            "predictions": 598,
+            "truth": 600,
+            "f1": 0.9365609348914858
+          },
+          {
+            "fold": 4,
+            "tp": 560,
+            "predictions": 626,
+            "truth": 627,
+            "f1": 0.8938547486033519
+          }
+        ]
+      },
+      "minimum_fold_delta_f1": -0.015437392795883298
+    },
+    "template_c0.1_a1": {
+      "tp": 2783,
+      "predictions": 3032,
+      "f1": 0.9165157253416762,
+      "folds": {
+        "station": [
+          {
+            "fold": 0,
+            "tp": 561,
+            "predictions": 603,
+            "truth": 604,
+            "f1": 0.9295774647887324
+          },
+          {
+            "fold": 1,
+            "tp": 567,
+            "predictions": 621,
+            "truth": 622,
+            "f1": 0.912308930008045
+          },
+          {
+            "fold": 2,
+            "tp": 530,
+            "predictions": 583,
+            "truth": 583,
+            "f1": 0.9090909090909091
+          },
+          {
+            "fold": 3,
+            "tp": 583,
+            "predictions": 630,
+            "truth": 632,
+            "f1": 0.9239302694136292
+          },
+          {
+            "fold": 4,
+            "tp": 543,
+            "predictions": 595,
+            "truth": 600,
+            "f1": 0.9087866108786611
+          }
+        ],
+        "template": [
+          {
+            "fold": 0,
+            "tp": 525,
+            "predictions": 566,
+            "truth": 566,
+            "f1": 0.9275618374558304
+          },
+          {
+            "fold": 1,
+            "tp": 624,
+            "predictions": 664,
+            "truth": 666,
+            "f1": 0.9383458646616541
+          },
+          {
+            "fold": 2,
+            "tp": 524,
+            "predictions": 578,
+            "truth": 582,
+            "f1": 0.903448275862069
+          },
+          {
+            "fold": 3,
+            "tp": 556,
+            "predictions": 598,
+            "truth": 600,
+            "f1": 0.9282136894824707
+          },
+          {
+            "fold": 4,
+            "tp": 553,
+            "predictions": 626,
+            "truth": 627,
+            "f1": 0.88268156424581
+          }
+        ]
+      },
+      "minimum_fold_delta_f1": -0.02572898799313894
+    },
+    "template_c0.3_a0": {
+      "tp": 2792,
+      "predictions": 3032,
+      "f1": 0.9194796640869422,
+      "folds": {
+        "station": [
+          {
+            "fold": 0,
+            "tp": 563,
+            "predictions": 603,
+            "truth": 604,
+            "f1": 0.9328914664457332
+          },
+          {
+            "fold": 1,
+            "tp": 568,
+            "predictions": 621,
+            "truth": 622,
+            "f1": 0.913917940466613
+          },
+          {
+            "fold": 2,
+            "tp": 535,
+            "predictions": 583,
+            "truth": 583,
+            "f1": 0.9176672384219554
+          },
+          {
+            "fold": 3,
+            "tp": 585,
+            "predictions": 630,
+            "truth": 632,
+            "f1": 0.9270998415213946
+          },
+          {
+            "fold": 4,
+            "tp": 546,
+            "predictions": 595,
+            "truth": 600,
+            "f1": 0.9138075313807531
+          }
+        ],
+        "template": [
+          {
+            "fold": 0,
+            "tp": 526,
+            "predictions": 566,
+            "truth": 566,
+            "f1": 0.9293286219081273
+          },
+          {
+            "fold": 1,
+            "tp": 623,
+            "predictions": 664,
+            "truth": 666,
+            "f1": 0.9368421052631579
+          },
+          {
+            "fold": 2,
+            "tp": 526,
+            "predictions": 578,
+            "truth": 582,
+            "f1": 0.906896551724138
+          },
+          {
+            "fold": 3,
+            "tp": 560,
+            "predictions": 598,
+            "truth": 600,
+            "f1": 0.9348914858096828
+          },
+          {
+            "fold": 4,
+            "tp": 559,
+            "predictions": 626,
+            "truth": 627,
+            "f1": 0.8922585794094174
+          }
+        ]
+      },
+      "minimum_fold_delta_f1": -0.01715265866209259
+    },
+    "template_c0.3_a1": {
+      "tp": 2782,
+      "predictions": 3032,
+      "f1": 0.9161863988144245,
+      "folds": {
+        "station": [
+          {
+            "fold": 0,
+            "tp": 562,
+            "predictions": 603,
+            "truth": 604,
+            "f1": 0.9312344656172328
+          },
+          {
+            "fold": 1,
+            "tp": 567,
+            "predictions": 621,
+            "truth": 622,
+            "f1": 0.912308930008045
+          },
+          {
+            "fold": 2,
+            "tp": 527,
+            "predictions": 583,
+            "truth": 583,
+            "f1": 0.9039451114922813
+          },
+          {
+            "fold": 3,
+            "tp": 584,
+            "predictions": 630,
+            "truth": 632,
+            "f1": 0.9255150554675119
+          },
+          {
+            "fold": 4,
+            "tp": 542,
+            "predictions": 595,
+            "truth": 600,
+            "f1": 0.907112970711297
+          }
+        ],
+        "template": [
+          {
+            "fold": 0,
+            "tp": 528,
+            "predictions": 566,
+            "truth": 566,
+            "f1": 0.9328621908127208
+          },
+          {
+            "fold": 1,
+            "tp": 623,
+            "predictions": 664,
+            "truth": 666,
+            "f1": 0.9368421052631579
+          },
+          {
+            "fold": 2,
+            "tp": 523,
+            "predictions": 578,
+            "truth": 582,
+            "f1": 0.9017241379310345
+          },
+          {
+            "fold": 3,
+            "tp": 555,
+            "predictions": 598,
+            "truth": 600,
+            "f1": 0.9265442404006677
+          },
+          {
+            "fold": 4,
+            "tp": 551,
+            "predictions": 626,
+            "truth": 627,
+            "f1": 0.879489225857941
+          }
+        ]
+      },
+      "minimum_fold_delta_f1": -0.030874785591766707
+    }
+  },
+  "gate": {
+    "required_f1": 0.94,
+    "requires_minimum_fold_delta_nonnegative": true,
+    "passed": false
+  },
+  "submission": null
+}

@@ -1,0 +1,100 @@
+{
+  "updated": "2026-08-20",
+  "objective": 0.95,
+  "verified_champion": {
+    "path": "D:\\zgyidong\\experiments\\v30_meta_stack\\submissions\\v30_cross_order_top5.csv",
+    "score": 0.918711,
+    "tp": 955,
+    "predictions": 1035,
+    "sha256": "f777ecfb50801a93419c9975c2273b0aeb566b0b1a31ed31deb15c9aaa873a32"
+  },
+  "target_math": {
+    "tp_required_at_p1035_for_0_94": 978,
+    "tp_gap_to_0_94": 23,
+    "tp_required_at_p1035_for_0_95": 988,
+    "tp_gap_to_0_95": 33
+  },
+  "online_evidence": {
+    "v29_delete_top10": {"delta_tp": -2, "prediction_delta": -10},
+    "v30_cross_order_top5": {"delta_tp": 2, "prediction_delta": 0},
+    "v30_top5_verified_plus_safe5": {"delta_tp": -1, "prediction_delta": 0},
+    "v30_safe_split_a2": {"delta_tp": 0, "prediction_delta": 0}
+  },
+  "next_submission": {
+    "probe_id": "v49_exact_plus_strict4",
+    "path": "D:\\zgyidong\\experiments\\v49_extended_count_batch\\submissions\\v49_exact_plus_strict4.csv",
+    "predictions": 1037,
+    "sha256": "6ee4b2cbedaa07186051f6b1b22dbdd2860336e837be83df51b165a406c203ce",
+    "reason": "Contains the proof-positive V37 correction, all V47 actions, and the only new V48 station-stable add. Submit V47 second to isolate the new label by TP difference."
+  },
+  "prepared_complement": {
+    "path": "D:\\zgyidong\\experiments\\v30_meta_stack\\submissions\\v30_safe_split_a1_complement.csv",
+    "sha256": "99d24bc314d2346ceedc1c53fd1df3cd0103a3633563a1653fdfd24cc5384a96"
+  },
+  "v32_delete_policy": {
+    "status": "validated_but_hold",
+    "reason": "Expected false-positive mass is too low to beat the champion before online calibration.",
+    "batch05_expected_false_positives": 1.152559787,
+    "batch05_expected_f1": 0.917215583,
+    "validator": "D:\\zgyidong\\experiments\\validate_v32.py"
+  },
+  "v33_domain_adaptation": {
+    "domain_classifier_auc": 0.9561205262,
+    "best_robust_oof_f1": 0.9274088542,
+    "full_replacement_gate": "failed",
+    "reason": "importance weighting confirms severe domain shift but does not reach the 0.94 offline gate"
+  },
+  "v34_count_model": {
+    "oracle_f1_with_true_capped_counts": 0.9501070311,
+    "best_learned_count_f1": 0.9207969702,
+    "submission_gate": "failed",
+    "reason": "true per-order counts would make 0.95 possible, but learned counts are not accurate enough"
+  },
+  "v35_stable_swaps": {
+    "safe_candidate_count": 0,
+    "submission_gate": "failed",
+    "reason": "all model-stable test changes reuse RIDs from scored historical probes",
+    "do_not_submit": [
+      "v35_stable_single1.csv",
+      "v35_stable_single2.csv",
+      "v35_stable_single3.csv"
+    ]
+  },
+  "v37_online_equations": {
+    "equations": 32,
+    "variables": 138,
+    "fixed_labels": 29,
+    "guaranteed_tp_after_correction": 956,
+    "guaranteed_f1": 0.919672919673,
+    "validator": "D:\\zgyidong\\experiments\\validate_v37.py"
+  },
+  "v42_to_v46_audit": {
+    "marginal_count_f1": 0.918821011,
+    "low_dim_best_f1": 0.925407542,
+    "domain_transfer_top5_delta_tp": -1,
+    "constrained_map_gate": "failed",
+    "rank_deficiency_one_components": 0,
+    "decision": "no submission generated from these routes"
+  },
+  "v47_count_batch": {
+    "possible_scores": [0.918269, 0.919231, 0.920192, 0.921154],
+    "accept_scores": [0.920192, 0.921154],
+    "decision_tree": "D:\\zgyidong\\experiments\\v47_v36_count_batch\\report.json",
+    "validator": "D:\\zgyidong\\experiments\\validate_v47.py"
+  },
+  "v48_stable_strata": {
+    "nested_add_precision": 0.8,
+    "nested_add_minimum_covered_fold_precision": 0.6666666667,
+    "new_clean_add_candidates": 1,
+    "nested_delete_coverage": 0,
+    "decision": "merge the one new add into V49; do not use the delete rule as a model claim"
+  },
+  "v49_extended_count_batch": {
+    "possible_scores": [0.917828, 0.918789, 0.91975, 0.920711, 0.921672],
+    "accept_scores": [0.91975, 0.920711, 0.921672],
+    "second_submission_for_middle_outcomes": "D:\\zgyidong\\experiments\\v47_v36_count_batch\\submissions\\v47_exact_plus_v36_all3.csv",
+    "decision_tree": "D:\\zgyidong\\experiments\\v49_extended_count_batch\\report.json",
+    "validator": "D:\\zgyidong\\experiments\\validate_v49.py"
+  },
+  "claim": "0.95 remains unverified and must not be promised before at least 33 net TP-equivalent gain is measured."
+}

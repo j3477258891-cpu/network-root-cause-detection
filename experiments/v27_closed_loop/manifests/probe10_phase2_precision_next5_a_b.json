@@ -1,0 +1,64 @@
+{
+  "batch_id": "probe10_phase2_precision_next5_a_b",
+  "kind": "adaptive_split",
+  "parent": "probe10_phase2_precision_next5_a",
+  "status": "inferred",
+  "decision": "accept",
+  "action_ids": [
+    "phase2_precision_03_9738b42a"
+  ],
+  "actions": [
+    {
+      "action_id": "phase2_precision_03_9738b42a",
+      "order_id": "9738b42a-7360-4763-8895-0e84599b4d60",
+      "remove_rids": [
+        "#-1:7feea0e0-d89e-47b4-98e7-836da80b44cf"
+      ],
+      "add_rids": [],
+      "source": "phase2_precision",
+      "subtype": "precision_remove_next",
+      "expected_gain": 0.33989658975038184,
+      "evidence": {
+        "v11_score": 0.6601034102496182,
+        "rank": 3,
+        "independent_unseen_order": true
+      }
+    }
+  ],
+  "validation": {
+    "actions": 1,
+    "orders": 1,
+    "removed": 1,
+    "added": 0,
+    "prediction_delta": -1,
+    "sources": {
+      "phase2_precision": 1
+    }
+  },
+  "predictions": 1058,
+  "prediction_delta": -1,
+  "submission": "D:\\zgyidong\\experiments\\v27_closed_loop\\submissions\\probe10_phase2_precision_next5_a_b.csv",
+  "manifest": "D:\\zgyidong\\experiments\\v27_closed_loop\\manifests\\probe10_phase2_precision_next5_a_b.json",
+  "sha256": "c38e8611679a422b376d4ec32e1bed4b4b27d65472af39aebf90633a31896acc",
+  "score_possibilities": [
+    {
+      "delta_tp": -1,
+      "tp": 952,
+      "score": 0.905803996
+    },
+    {
+      "delta_tp": 0,
+      "tp": 953,
+      "score": 0.906755471
+    }
+  ],
+  "score": 0.9067554709800191,
+  "reconstructed_score": 0.9067554709800191,
+  "tp": 953,
+  "delta_tp": 0,
+  "score_gain": 0.00043147098001905526,
+  "inferred_from": [
+    "probe10_phase2_precision_next5_a",
+    "probe10_phase2_precision_next5_a_a"
+  ]
+}

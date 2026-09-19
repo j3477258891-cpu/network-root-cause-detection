@@ -1,0 +1,348 @@
+{
+  "feature_policy": {
+    "excluded": [
+      "title value",
+      "location value",
+      "vendor value"
+    ],
+    "included": [
+      "directed graph role",
+      "PageRank",
+      "timeLists",
+      "time rank",
+      "parsed addInfo",
+      "same-title group size"
+    ]
+  },
+  "train_orders": 1634,
+  "test_orders": 546,
+  "train_rows": 9334,
+  "feature_dim": 252,
+  "positive_labels": 3041,
+  "group_count": 1040,
+  "fold_sizes": [
+    327,
+    327,
+    327,
+    327,
+    326
+  ],
+  "target_train_count": 3169,
+  "correlation": {
+    "pearson": 0.9257853272440703,
+    "spearman": 0.8176434981583811
+  },
+  "v11_exact": {
+    "f1": 0.9101449275362319,
+    "tp": 2826,
+    "fp": 343,
+    "fn": 215,
+    "predictions": 3169
+  },
+  "structure_exact": {
+    "f1": 0.8882447665056361,
+    "tp": 2758,
+    "fp": 411,
+    "fn": 283,
+    "predictions": 3169
+  },
+  "structure_fixed_v11_k": {
+    "f1": 0.8985507246376812,
+    "tp": 2790,
+    "fp": 379,
+    "fn": 251,
+    "predictions": 3169
+  },
+  "weight_scan": [
+    {
+      "weight": 0.0,
+      "global": {
+        "f1": 0.9101449275362319,
+        "tp": 2826,
+        "fp": 343,
+        "fn": 215,
+        "predictions": 3169
+      },
+      "fixed_k": {
+        "f1": 0.9101449275362319,
+        "tp": 2826,
+        "fp": 343,
+        "fn": 215,
+        "predictions": 3169
+      }
+    },
+    {
+      "weight": 0.049999999999999996,
+      "global": {
+        "f1": 0.9111111111111111,
+        "tp": 2829,
+        "fp": 340,
+        "fn": 212,
+        "predictions": 3169
+      },
+      "fixed_k": {
+        "f1": 0.9098228663446055,
+        "tp": 2825,
+        "fp": 344,
+        "fn": 216,
+        "predictions": 3169
+      }
+    },
+    {
+      "weight": 0.09999999999999999,
+      "global": {
+        "f1": 0.9104669887278583,
+        "tp": 2827,
+        "fp": 342,
+        "fn": 214,
+        "predictions": 3169
+      },
+      "fixed_k": {
+        "f1": 0.909500805152979,
+        "tp": 2824,
+        "fp": 345,
+        "fn": 217,
+        "predictions": 3169
+      }
+    },
+    {
+      "weight": 0.15,
+      "global": {
+        "f1": 0.9120772946859903,
+        "tp": 2832,
+        "fp": 337,
+        "fn": 209,
+        "predictions": 3169
+      },
+      "fixed_k": {
+        "f1": 0.9104669887278583,
+        "tp": 2827,
+        "fp": 342,
+        "fn": 214,
+        "predictions": 3169
+      }
+    },
+    {
+      "weight": 0.19999999999999998,
+      "global": {
+        "f1": 0.9127214170692431,
+        "tp": 2834,
+        "fp": 335,
+        "fn": 207,
+        "predictions": 3169
+      },
+      "fixed_k": {
+        "f1": 0.9104669887278583,
+        "tp": 2827,
+        "fp": 342,
+        "fn": 214,
+        "predictions": 3169
+      }
+    },
+    {
+      "weight": 0.24999999999999997,
+      "global": {
+        "f1": 0.9143317230273752,
+        "tp": 2839,
+        "fp": 330,
+        "fn": 202,
+        "predictions": 3169
+      },
+      "fixed_k": {
+        "f1": 0.9101449275362319,
+        "tp": 2826,
+        "fp": 343,
+        "fn": 215,
+        "predictions": 3169
+      }
+    },
+    {
+      "weight": 0.3,
+      "global": {
+        "f1": 0.9146537842190016,
+        "tp": 2840,
+        "fp": 329,
+        "fn": 201,
+        "predictions": 3169
+      },
+      "fixed_k": {
+        "f1": 0.9098228663446055,
+        "tp": 2825,
+        "fp": 344,
+        "fn": 216,
+        "predictions": 3169
+      }
+    },
+    {
+      "weight": 0.35,
+      "global": {
+        "f1": 0.9162640901771336,
+        "tp": 2845,
+        "fp": 324,
+        "fn": 196,
+        "predictions": 3169
+      },
+      "fixed_k": {
+        "f1": 0.9111111111111111,
+        "tp": 2829,
+        "fp": 340,
+        "fn": 212,
+        "predictions": 3169
+      }
+    },
+    {
+      "weight": 0.39999999999999997,
+      "global": {
+        "f1": 0.9159420289855073,
+        "tp": 2844,
+        "fp": 325,
+        "fn": 197,
+        "predictions": 3169
+      },
+      "fixed_k": {
+        "f1": 0.9120772946859903,
+        "tp": 2832,
+        "fp": 337,
+        "fn": 209,
+        "predictions": 3169
+      }
+    },
+    {
+      "weight": 0.44999999999999996,
+      "global": {
+        "f1": 0.9146537842190016,
+        "tp": 2840,
+        "fp": 329,
+        "fn": 201,
+        "predictions": 3169
+      },
+      "fixed_k": {
+        "f1": 0.9123993558776168,
+        "tp": 2833,
+        "fp": 336,
+        "fn": 208,
+        "predictions": 3169
+      }
+    },
+    {
+      "weight": 0.49999999999999994,
+      "global": {
+        "f1": 0.9146537842190016,
+        "tp": 2840,
+        "fp": 329,
+        "fn": 201,
+        "predictions": 3169
+      },
+      "fixed_k": {
+        "f1": 0.9123993558776168,
+        "tp": 2833,
+        "fp": 336,
+        "fn": 208,
+        "predictions": 3169
+      }
+    },
+    {
+      "weight": 0.5499999999999999,
+      "global": {
+        "f1": 0.9127214170692431,
+        "tp": 2834,
+        "fp": 335,
+        "fn": 207,
+        "predictions": 3169
+      },
+      "fixed_k": {
+        "f1": 0.9123993558776168,
+        "tp": 2833,
+        "fp": 336,
+        "fn": 208,
+        "predictions": 3169
+      }
+    },
+    {
+      "weight": 0.6,
+      "global": {
+        "f1": 0.907890499194847,
+        "tp": 2819,
+        "fp": 350,
+        "fn": 222,
+        "predictions": 3169
+      },
+      "fixed_k": {
+        "f1": 0.9120772946859903,
+        "tp": 2832,
+        "fp": 337,
+        "fn": 209,
+        "predictions": 3169
+      }
+    }
+  ],
+  "raw_margin_swap_validation": {
+    "5": {
+      "fold_deltas": [
+        -1,
+        0,
+        -5,
+        5,
+        0
+      ],
+      "net_delta": -1
+    },
+    "10": {
+      "fold_deltas": [
+        -5,
+        0,
+        -6,
+        2,
+        2
+      ],
+      "net_delta": -7
+    },
+    "20": {
+      "fold_deltas": [
+        -10,
+        0,
+        -12,
+        0,
+        0
+      ],
+      "net_delta": -22
+    }
+  },
+  "meta_swap_validation": {
+    "5": {
+      "fold_deltas": [
+        -3,
+        0,
+        -2,
+        3,
+        2
+      ],
+      "net_delta": 0
+    },
+    "10": {
+      "fold_deltas": [
+        -5,
+        1,
+        -4,
+        2,
+        4
+      ],
+      "net_delta": -2
+    },
+    "20": {
+      "fold_deltas": [
+        -6,
+        2,
+        -8,
+        -3,
+        4
+      ],
+      "net_delta": -11
+    }
+  },
+  "swap_label_distribution": {
+    "-1": 1126,
+    "0": 155,
+    "1": 46
+  }
+}

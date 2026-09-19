@@ -1,0 +1,59 @@
+{
+  "updated": "2026-08-20",
+  "true_roots": 1044,
+  "champion": {
+    "probe_id": "v30_cross_order_top5",
+    "path": "D:\\zgyidong\\experiments\\v30_meta_stack\\submissions\\v30_cross_order_top5.csv",
+    "score": 0.918711,
+    "tp": 955,
+    "predictions": 1035,
+    "delta_tp_vs_previous": 2,
+    "sha256": "f777ecfb50801a93419c9975c2273b0aeb566b0b1a31ed31deb15c9aaa873a32"
+  },
+  "verified": [
+    {
+      "probe_id": "v30_cross_order_top5",
+      "score": 0.918711,
+      "reconstructed_score": 0.918710918711,
+      "tp": 955,
+      "predictions": 1035,
+      "delta_tp_vs_v29_champion": 2,
+      "decision": "accept"
+    },
+    {
+      "probe_id": "v30_top5_verified_plus_safe5",
+      "score": 0.917749,
+      "reconstructed_score": 0.917748917749,
+      "tp": 954,
+      "predictions": 1035,
+      "delta_tp_vs_champion": -1,
+      "decision": "reject_and_split"
+    },
+    {
+      "probe_id": "v30_safe_split_a2",
+      "score": 0.918711,
+      "reconstructed_score": 0.918710918711,
+      "tp": 955,
+      "predictions": 1035,
+      "delta_tp_vs_champion": 0,
+      "subset_pair_ids": [
+        "v30_safe_ext_001",
+        "v30_safe_ext_002"
+      ],
+      "decision": "neutral_split_to_single_pair"
+    }
+  ],
+  "next_probe": {
+    "probe_id": "v30_safe_split_a1",
+    "path": "D:\\zgyidong\\experiments\\v30_meta_stack\\submissions\\v30_safe_split_a1.csv",
+    "predictions": 1035,
+    "sha256": "454ba310a3e0563612cdffa1053604bc04c6146288407c4294b3e68aca573527"
+  },
+  "do_not_submit": [
+    "v30_cross_order_top10.csv",
+    "v30_cross_order_top15.csv",
+    "v30_cross_order_top16.csv",
+    "v30_cross_order_top20.csv",
+    "v30_cross_order_top50.csv"
+  ]
+}

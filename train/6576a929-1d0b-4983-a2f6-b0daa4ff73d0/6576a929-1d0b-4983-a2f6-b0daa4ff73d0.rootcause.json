@@ -1,0 +1,22 @@
+{
+    "rootcause": [
+        {
+            "@rid": "#-1:9a72be11-faf2-4ffe-9258-f87dc5041737",
+            "title": "单板不在位",
+            "location": "SubNetwork=5303,ManagedElement=374206,Equipment=1,Rack=1,SubRack=1,Slot=11,PlugInUnit=1,SdrDeviceGroup=1",
+            "reason": "1. OMC有配置的槽位，但实际没有插单板。\n2. OMC有配置的槽位，但单板没有插紧。\n3. OMC有配置的槽位，但接插件物理损坏。"
+        },
+        {
+            "@rid": "#-1:a72249e5-73a2-4f4c-aa12-25d180d3ba62",
+            "title": "单板处于初始化状态",
+            "location": "SubNetwork=5303,ManagedElement=374206,Equipment=1,Rack=1,SubRack=1,Slot=11,PlugInUnit=1,SdrDeviceGroup=1",
+            "reason": "1. 用户执行复位单板命令。\n2. 单板上电自启动。\n3. 软件异常导致单板自动复位。"
+        },
+        {
+            "@rid": "#-1:9c337340-db4c-4e32-8379-0b46055b5fef",
+            "title": "单板未配置",
+            "location": "SubNetwork=5303,ManagedElement=374206,Equipment=1,Rack=1,SubRack=1",
+            "reason": "1. OMC未配置单板。\n2. OMC配置的槽位和单板实际插入槽位不一致。"
+        }
+    ]
+}

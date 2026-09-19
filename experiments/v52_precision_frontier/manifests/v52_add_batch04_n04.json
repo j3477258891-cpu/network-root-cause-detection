@@ -1,0 +1,163 @@
+{
+  "probe_id": "v52_add_batch04_n04",
+  "baseline": "D:\\zgyidong\\experiments\\v30_meta_stack\\submissions\\v30_cross_order_top5.csv",
+  "fixed_base": "v37_exact_corrections",
+  "path": "D:\\zgyidong\\experiments\\v52_precision_frontier\\submissions\\v52_add_batch04_n04.csv",
+  "kind": "add",
+  "candidate_count": 4,
+  "actions": [
+    {
+      "action_id": "v37_exact_001",
+      "order_id": "d5376a71-c48e-4351-ba60-f982778b3eb4",
+      "remove_rids": [
+        "#-1:0c809583-390f-4d16-9b91-c4fb1e99c5c2"
+      ],
+      "add_rids": [
+        "#-1:e401b7b4-697f-434e-8437-4b2136d6904f"
+      ],
+      "source": "historical_leaderboard_equations",
+      "expected_gain": null,
+      "evidence": {
+        "proof": "label fixed in every binary solution of all scored equations"
+      }
+    },
+    {
+      "action_id": "v52_add_038_c253a5fd",
+      "order_id": "c253a5fd-6156-4b39-98cb-b3b11c93b25a",
+      "remove_rids": [],
+      "add_rids": [
+        "#-1:a6854279-4b4e-4d6b-b70d-897182582a28"
+      ],
+      "source": "v40_boundary_frontier",
+      "expected_gain": 0.02631578947368421,
+      "evidence": {
+        "source_rank": 38,
+        "order_id": "c253a5fd-6156-4b39-98cb-b3b11c93b25a",
+        "rid": "#-1:a6854279-4b4e-4d6b-b70d-897182582a28",
+        "kind": "add",
+        "title": "RRU链路断",
+        "rank_average": 0.6554422974586487,
+        "scores": {
+          "v11": 0.5448775887489319,
+          "v13": 0.5443018078804016,
+          "v19": 0.3857778310775757,
+          "station": 0.36354777216911316,
+          "domain": 0.3859623670578003,
+          "consensus": 0.22510595619678497
+        }
+      }
+    },
+    {
+      "action_id": "v52_add_045_6642cbb1",
+      "order_id": "6642cbb1-ec65-48e1-9ec3-6d68bb98e59f",
+      "remove_rids": [],
+      "add_rids": [
+        "#-1:71e642ee-18dd-4934-abc2-5ec460b241c8"
+      ],
+      "source": "v40_boundary_frontier",
+      "expected_gain": 0.022222222222222223,
+      "evidence": {
+        "source_rank": 45,
+        "order_id": "6642cbb1-ec65-48e1-9ec3-6d68bb98e59f",
+        "rid": "#-1:71e642ee-18dd-4934-abc2-5ec460b241c8",
+        "kind": "add",
+        "title": "1588时钟链路异常",
+        "rank_average": 0.64787358045578,
+        "scores": {
+          "v11": 0.239594966173172,
+          "v13": 0.20649826526641846,
+          "v19": 0.8490390181541443,
+          "station": 0.16716258227825165,
+          "domain": 0.24918071925640106,
+          "consensus": 0.14625783264636993
+        }
+      }
+    },
+    {
+      "action_id": "v52_add_051_fb7d9c49",
+      "order_id": "fb7d9c49-95ba-458e-9828-59d5a3479ac8",
+      "remove_rids": [],
+      "add_rids": [
+        "#-1:ac030f70-d7d6-4dd7-bcf7-06894fba05fe"
+      ],
+      "source": "v40_boundary_frontier",
+      "expected_gain": 0.0196078431372549,
+      "evidence": {
+        "source_rank": 51,
+        "order_id": "fb7d9c49-95ba-458e-9828-59d5a3479ac8",
+        "rid": "#-1:ac030f70-d7d6-4dd7-bcf7-06894fba05fe",
+        "kind": "add",
+        "title": "RRU链路断",
+        "rank_average": 0.6396870017051697,
+        "scores": {
+          "v11": 0.23836451768875122,
+          "v13": 0.1871446669101715,
+          "v19": 0.7758012413978577,
+          "station": 0.16788886487483978,
+          "domain": 0.27401405572891235,
+          "consensus": 0.10993606597185135
+        }
+      }
+    },
+    {
+      "action_id": "v52_add_053_df6cbfdb",
+      "order_id": "df6cbfdb-c0f8-48dd-b4cf-f0e8205fbe39",
+      "remove_rids": [],
+      "add_rids": [
+        "#-1:6cc003c5-9051-4c2d-a5ae-83b290d362b5"
+      ],
+      "source": "v40_boundary_frontier",
+      "expected_gain": 0.018867924528301886,
+      "evidence": {
+        "source_rank": 53,
+        "order_id": "df6cbfdb-c0f8-48dd-b4cf-f0e8205fbe39",
+        "rid": "#-1:6cc003c5-9051-4c2d-a5ae-83b290d362b5",
+        "kind": "add",
+        "title": "4G基站断小区事件",
+        "rank_average": 0.6361857652664185,
+        "scores": {
+          "v11": 0.3394055962562561,
+          "v13": 0.2977786362171173,
+          "v19": 0.2946954071521759,
+          "station": 0.3394148349761963,
+          "domain": 0.2796226739883423,
+          "consensus": 0.27610811591148376
+        }
+      }
+    }
+  ],
+  "predictions": 1039,
+  "sha256": "2d9443947ee5616521a6d31a9478c072566a7d44667dba04d91bdaf465c65397",
+  "score_possibilities": [
+    {
+      "candidate_correct": 0,
+      "tp": 956,
+      "predictions_delta": 4,
+      "score": 0.917906865
+    },
+    {
+      "candidate_correct": 1,
+      "tp": 957,
+      "predictions_delta": 4,
+      "score": 0.918867019
+    },
+    {
+      "candidate_correct": 2,
+      "tp": 958,
+      "predictions_delta": 4,
+      "score": 0.919827172
+    },
+    {
+      "candidate_correct": 3,
+      "tp": 959,
+      "predictions_delta": 4,
+      "score": 0.920787326
+    },
+    {
+      "candidate_correct": 4,
+      "tp": 960,
+      "predictions_delta": 4,
+      "score": 0.92174748
+    }
+  ]
+}

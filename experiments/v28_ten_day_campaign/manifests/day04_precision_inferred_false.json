@@ -1,0 +1,69 @@
+{
+  "batch_id": "day04_precision_inferred_false",
+  "kind": "inferred_precision",
+  "parent": null,
+  "status": "inferred",
+  "decision": "accept",
+  "action_ids": [
+    "v28_precision_remaining_inferred_false"
+  ],
+  "actions": [
+    {
+      "action_id": "v28_precision_remaining_inferred_false",
+      "order_id": "625ffce7-65c5-4657-9104-4148b4113130",
+      "remove_rids": [
+        "#-1:4b6983f7-ec6d-4d11-9e4f-9c12c47dd998"
+      ],
+      "add_rids": [],
+      "source": "v28_precision_remaining",
+      "subtype": "inferred_false_of_four",
+      "expected_gain": 0.3059362005342182,
+      "evidence": {
+        "inferred_from": [
+          "day01_precision_a8_b",
+          "day03_precision_remaining_single",
+          "day03_precision_remaining_single2",
+          "day04_precision_remaining_single3"
+        ]
+      }
+    }
+  ],
+  "validation": {
+    "actions": 1,
+    "orders": 1,
+    "removed": 1,
+    "added": 0,
+    "prediction_delta": -1,
+    "sources": {
+      "v28_precision_remaining": 1
+    }
+  },
+  "predictions": 1045,
+  "prediction_delta": -1,
+  "submission": "experiments\\v28_ten_day_campaign\\submissions\\day04_precision_inferred_false.csv",
+  "manifest": "experiments\\v28_ten_day_campaign\\manifests\\day04_precision_inferred_false.json",
+  "sha256": "58d4b3ca09ef6423e9d788a1c854140a4beb0a65c094040e53e8553a23cd2a29",
+  "score_possibilities": [
+    {
+      "delta_tp": -1,
+      "tp": 954,
+      "score": 0.913355673
+    },
+    {
+      "delta_tp": 0,
+      "tp": 955,
+      "score": 0.914313068
+    }
+  ],
+  "score": 0.914313068,
+  "reconstructed_score": 0.914313068,
+  "tp": 955,
+  "delta_tp": 0,
+  "score_gain": 0.0004374699138756,
+  "inferred_from": [
+    "day01_precision_a8_b",
+    "day03_precision_remaining_single",
+    "day03_precision_remaining_single2",
+    "day04_precision_remaining_single3"
+  ]
+}

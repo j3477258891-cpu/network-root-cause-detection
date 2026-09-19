@@ -1,0 +1,16 @@
+{
+    "rootcause": [
+        {
+            "title": "单板电源关断",
+            "reason": "1. 单板过温。\n2. 单板过流。\n3. OMC发起关断。\n4. 软件异常关电。",
+            "location": "SubNetwork=1002,ManagedElement=82367,Equipment=1,Rack=1,SubRack=1,Slot=3,PlugInUnit=1,SdrDeviceGroup=1",
+            "@rid": "#-1:645c15f6-1af2-4af5-a071-d682a417cade"
+        },
+        {
+            "title": "输入电压异常",
+            "reason": "过压：外部电源系统的输入电压超过高门限。\n欠压：外部电源系统的输入电压低于低门限，可能原因包括：市电供电不够，空开容量不够，电源线线径不够，电源线过长等。\n掉电：外部电源系统的输入电压中断。\n供电能力不足：外部电源柜或者蓄电池带载能力不足，欠压导致定标失败，上报供电能力不足。可能原因包括市电供电不够，空开容量不够，电源线线径不够，电源线过长等。",
+            "location": "SubNetwork=1002,ManagedElement=82367,Equipment=1,Rack=1,SubRack=1,Slot=17,PlugInUnit=1,SdrDeviceGroup=1",
+            "@rid": "#-1:132c5a49-31fd-4066-b952-75465c323062"
+        }
+    ]
+}

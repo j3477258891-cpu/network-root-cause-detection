@@ -1,0 +1,60 @@
+{
+  "version": 153,
+  "created_at": "2026-09-07T17:11:29+08:00",
+  "baseline": {
+    "file": "D:\\zgyidong\\experiments\\v149_online_calibrated_addition_campaign\\v149_final_k08_from_v148.csv",
+    "sha256": "c8f304c44f6b3a7ed40599cae50d0f17c0c37f8456553e6171a2d7cfdc196d0a",
+    "predictions": 1045,
+    "tp": 969,
+    "score": 0.927717,
+    "source_class": "public_scored",
+    "submitted_at": "2026-09-06T10:52:05+08:00"
+  },
+  "target": 0.94,
+  "objective": "maximize_realized_best_f1",
+  "budget": {
+    "total": 10,
+    "daily": 2,
+    "max_probes": 8,
+    "merge_reserve": 1,
+    "anomaly_or_risk": 1
+  },
+  "frozen_files": {
+    "candidate_catalog.json": "82be5ed43ee89de2e942d115cd8658a734085e846371b6f61a8609bd00bc7279",
+    "equation_system.json": "9dd4d38564e1aea10a65ac7bbe9a6bdf7cc7581813b31d5b650568680faf3f04",
+    "model_comparison.json": "27a93466759ea1a60c877aee12017b1d2deef48beb282c558e11f86b5664cc98",
+    "training_candidates.json": "3da66c5eaa265c53d54f207c869524efc68b60fad4b33f4b6c8715892546d2ea"
+  },
+  "historical_ledger_hashes": {
+    "D:\\zgyidong\\experiments\\v152_error_repair_campaign\\online_scores.json": "9a19db5222e3eb5c408d6baeae42c47c2841b43f110a6abbe1c0317f2612a365",
+    "D:\\zgyidong\\experiments\\v149_online_calibrated_addition_campaign\\online_scores.json": "ee17b2836b821024cc7b87539470f63c8731a1b4822235aef000bc02a0ac9fd3",
+    "D:\\zgyidong\\experiments\\v150_adaptive_addition_campaign\\online_scores.json": "014649258f615eebab7532b98d95111d68dda58a79d079691f317b7bfa93a066"
+  },
+  "initial_oracle": {
+    "f1_upper": 0.9367816091954023,
+    "target_possible_under_equations": false,
+    "selected_ids": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17
+    ],
+    "delta_tp": 9,
+    "delta_p": -1,
+    "source_class": "optimistic_integer_oracle_not_forecast"
+  },
+  "note": "An optimistic cap below .94 does not prohibit incremental gain"
+}

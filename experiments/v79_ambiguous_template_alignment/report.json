@@ -1,0 +1,73 @@
+{
+  "version": "v79-ambiguous-template-alignment-1",
+  "train_orders": 1634,
+  "test_orders": 546,
+  "audit": {
+    "all_template_orders": {
+      "template": {
+        "orders": 301,
+        "tp": 440,
+        "fp": 3,
+        "fn": 0,
+        "f1": 0.9966024915062288,
+        "exact_orders": 299,
+        "exact_rate": 0.9933554817275747
+      },
+      "v30_oracle_count": {
+        "orders": 301,
+        "tp": 439,
+        "fp": 1,
+        "fn": 1,
+        "f1": 0.9977272727272727,
+        "exact_orders": 300,
+        "exact_rate": 0.9966777408637874
+      }
+    },
+    "ambiguous_template_orders": {
+      "template": {
+        "orders": 0,
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "f1": 0.0,
+        "exact_orders": 0,
+        "exact_rate": 0.0
+      },
+      "v30_oracle_count": {
+        "orders": 0,
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "f1": 0.0,
+        "exact_orders": 0,
+        "exact_rate": 0.0
+      }
+    }
+  },
+  "test_predicted_orders": 87,
+  "test_ambiguous_orders": 3,
+  "test_changed_orders": 1,
+  "test_total_removes": 1,
+  "test_total_adds": 1,
+  "changed": [
+    {
+      "order_id": "6c596cdd-fd3a-44e3-ba8a-3deff75209ee",
+      "current": [
+        "#-1:4448672c-0b96-477e-919e-c11fe7e0dca3"
+      ],
+      "selected": [
+        "#-1:4e367429-ffd9-4a23-bc77-e74ff046d5ea"
+      ],
+      "remove": [
+        "#-1:4448672c-0b96-477e-919e-c11fe7e0dca3"
+      ],
+      "add": [
+        "#-1:4e367429-ffd9-4a23-bc77-e74ff046d5ea"
+      ],
+      "support": 3,
+      "ambiguous_keys": 1,
+      "expected_k": 1
+    }
+  ],
+  "warning": "OOF audit uses true per-order count for the V30 comparator; test labels remain unknown."
+}

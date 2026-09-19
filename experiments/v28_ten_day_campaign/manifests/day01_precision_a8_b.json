@@ -1,0 +1,130 @@
+{
+  "batch_id": "day01_precision_a8_b",
+  "kind": "adaptive_split",
+  "parent": "day01_precision_a8",
+  "status": "inferred",
+  "decision": "reject",
+  "action_ids": [
+    "v28_precision_a_05_9adc0ae9",
+    "v28_precision_a_06_d51a4fe5",
+    "v28_precision_a_07_4bc34075",
+    "v28_precision_a_08_625ffce7"
+  ],
+  "actions": [
+    {
+      "action_id": "v28_precision_a_05_9adc0ae9",
+      "order_id": "9adc0ae9-f4d1-4084-b78a-1ee0ce83b3ab",
+      "remove_rids": [
+        "#-1:67086994-ef16-4d8b-8924-c32f100f6178"
+      ],
+      "add_rids": [],
+      "source": "v28_precision",
+      "subtype": "precision_remove_unseen",
+      "expected_gain": 0.3288898093671184,
+      "evidence": {
+        "v11_score": 0.6711101906328816,
+        "rank": 5,
+        "unseen_order": true
+      }
+    },
+    {
+      "action_id": "v28_precision_a_06_d51a4fe5",
+      "order_id": "d51a4fe5-3721-4585-929c-0ca993c3a0be",
+      "remove_rids": [
+        "#-1:7abefa77-6c6a-437f-9c2c-e4530545181a"
+      ],
+      "add_rids": [],
+      "source": "v28_precision",
+      "subtype": "precision_remove_unseen",
+      "expected_gain": 0.3249517079395392,
+      "evidence": {
+        "v11_score": 0.6750482920604608,
+        "rank": 6,
+        "unseen_order": true
+      }
+    },
+    {
+      "action_id": "v28_precision_a_07_4bc34075",
+      "order_id": "4bc34075-c7db-40a9-9c7e-920c0d401a48",
+      "remove_rids": [
+        "#-1:04f5d847-c9d7-4f45-a9e2-933a3a021bf0"
+      ],
+      "add_rids": [],
+      "source": "v28_precision",
+      "subtype": "precision_remove_unseen",
+      "expected_gain": 0.31968964017158263,
+      "evidence": {
+        "v11_score": 0.6803103598284174,
+        "rank": 7,
+        "unseen_order": true
+      }
+    },
+    {
+      "action_id": "v28_precision_a_08_625ffce7",
+      "order_id": "625ffce7-65c5-4657-9104-4148b4113130",
+      "remove_rids": [
+        "#-1:4b6983f7-ec6d-4d11-9e4f-9c12c47dd998"
+      ],
+      "add_rids": [],
+      "source": "v28_precision",
+      "subtype": "precision_remove_unseen",
+      "expected_gain": 0.3059362005342182,
+      "evidence": {
+        "v11_score": 0.6940637994657818,
+        "rank": 8,
+        "unseen_order": true
+      }
+    }
+  ],
+  "validation": {
+    "actions": 4,
+    "orders": 4,
+    "removed": 4,
+    "added": 0,
+    "prediction_delta": -4,
+    "sources": {
+      "v28_precision": 4
+    }
+  },
+  "predictions": 1045,
+  "prediction_delta": -4,
+  "submission": "experiments\\v28_ten_day_campaign\\submissions\\day01_precision_a8_b.csv",
+  "manifest": "experiments\\v28_ten_day_campaign\\manifests\\day01_precision_a8_b.json",
+  "sha256": "f57fa37d525dace32efd53705f6c70d245cde6067e3d3ebdf6103d43c40786f6",
+  "score_possibilities": [
+    {
+      "delta_tp": -4,
+      "tp": 951,
+      "score": 0.910483485
+    },
+    {
+      "delta_tp": -3,
+      "tp": 952,
+      "score": 0.911440881
+    },
+    {
+      "delta_tp": -2,
+      "tp": 953,
+      "score": 0.912398277
+    },
+    {
+      "delta_tp": -1,
+      "tp": 954,
+      "score": 0.913355673
+    },
+    {
+      "delta_tp": 0,
+      "tp": 955,
+      "score": 0.914313068
+    }
+  ],
+  "score": 0.9114408808042126,
+  "reconstructed_score": 0.9114408808042126,
+  "tp": 952,
+  "delta_tp": -3,
+  "score_gain": -0.001125119195787394,
+  "inferred_from": [
+    "day01_precision_a8",
+    "day01_precision_a8_a"
+  ]
+}

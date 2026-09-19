@@ -1,0 +1,54 @@
+{
+  "probe_id": "v36_count_delete_1",
+  "baseline": "D:\\zgyidong\\experiments\\v30_meta_stack\\submissions\\v30_cross_order_top5.csv",
+  "path": "D:\\zgyidong\\experiments\\v36_selective_counts\\submissions\\v36_count_delete_1.csv",
+  "kind": "delete",
+  "actions": [
+    {
+      "action_id": "v36_count_delete_1",
+      "order_id": "25a37559-7249-4fe0-bfd9-97007b9f7c5d",
+      "remove_rids": [
+        "#-1:622a2277-8e4d-4b77-aefb-1f90747752a2"
+      ],
+      "add_rids": [],
+      "source": "v36_selective_count_consensus",
+      "expected_gain": 0.891822616259257,
+      "evidence": {
+        "order_id": "25a37559-7249-4fe0-bfd9-97007b9f7c5d",
+        "rid": "#-1:622a2277-8e4d-4b77-aefb-1f90747752a2",
+        "kind": "delete",
+        "current_count": 2,
+        "proposed_count": 1,
+        "support": 6,
+        "mean_margin": 0.891822616259257,
+        "min_margin": 0.8765264749526978,
+        "node_score": 0.39845284819602966,
+        "probability_models": [
+          "D:\\zgyidong\\experiments\\v34_count_model\\station_alpha_0_test.npy",
+          "D:\\zgyidong\\experiments\\v34_count_model\\station_alpha_1_test.npy",
+          "D:\\zgyidong\\experiments\\v34_count_model\\station_alpha_2_test.npy",
+          "D:\\zgyidong\\experiments\\v34_count_model\\template_alpha_0_test.npy",
+          "D:\\zgyidong\\experiments\\v34_count_model\\template_alpha_1_test.npy",
+          "D:\\zgyidong\\experiments\\v34_count_model\\template_alpha_2_test.npy"
+        ]
+      }
+    }
+  ],
+  "predictions": 1034,
+  "prediction_delta": -1,
+  "sha256": "7912bbdfdd5e2f95df9ca5992614f0d0b7c1e1ecd5116fe21bbd9a9d552e14dc",
+  "score_possibilities": [
+    {
+      "delta_tp": -1,
+      "tp": 954,
+      "predictions": 1034,
+      "score": 0.918190568
+    },
+    {
+      "delta_tp": 0,
+      "tp": 955,
+      "predictions": 1034,
+      "score": 0.919153032
+    }
+  ]
+}

@@ -1,0 +1,163 @@
+{
+  "probe_id": "v52_delete_batch08_n04",
+  "baseline": "D:\\zgyidong\\experiments\\v30_meta_stack\\submissions\\v30_cross_order_top5.csv",
+  "fixed_base": "v37_exact_corrections",
+  "path": "D:\\zgyidong\\experiments\\v52_precision_frontier\\submissions\\v52_delete_batch08_n04.csv",
+  "kind": "delete",
+  "candidate_count": 4,
+  "actions": [
+    {
+      "action_id": "v37_exact_001",
+      "order_id": "d5376a71-c48e-4351-ba60-f982778b3eb4",
+      "remove_rids": [
+        "#-1:0c809583-390f-4d16-9b91-c4fb1e99c5c2"
+      ],
+      "add_rids": [
+        "#-1:e401b7b4-697f-434e-8437-4b2136d6904f"
+      ],
+      "source": "historical_leaderboard_equations",
+      "expected_gain": null,
+      "evidence": {
+        "proof": "label fixed in every binary solution of all scored equations"
+      }
+    },
+    {
+      "action_id": "v52_delete_071_30e36e69",
+      "order_id": "30e36e69-1c92-47dd-8202-86ffbd6d3fd7",
+      "remove_rids": [
+        "#-1:dfcbcadb-7de8-4fca-92dd-959516b0a019"
+      ],
+      "add_rids": [],
+      "source": "v40_boundary_frontier",
+      "expected_gain": 0.014084507042253521,
+      "evidence": {
+        "source_rank": 71,
+        "order_id": "30e36e69-1c92-47dd-8202-86ffbd6d3fd7",
+        "rid": "#-1:dfcbcadb-7de8-4fca-92dd-959516b0a019",
+        "kind": "delete",
+        "title": "光口链路故障",
+        "rank_average": 0.7712388038635254,
+        "scores": {
+          "v11": 0.8357347249984741,
+          "v13": 0.7527700066566467,
+          "v19": 0.9467904567718506,
+          "station": 0.8240264058113098,
+          "domain": 0.8861249089241028,
+          "consensus": 0.9036339521408081
+        }
+      }
+    },
+    {
+      "action_id": "v52_delete_073_dc8df7d5",
+      "order_id": "dc8df7d5-edb9-4849-a7d5-f34a911a3107",
+      "remove_rids": [
+        "#-1:093f68ee-a160-4cc0-8508-36d378df4dfc"
+      ],
+      "add_rids": [],
+      "source": "v40_boundary_frontier",
+      "expected_gain": 0.0136986301369863,
+      "evidence": {
+        "source_rank": 73,
+        "order_id": "dc8df7d5-edb9-4849-a7d5-f34a911a3107",
+        "rid": "#-1:093f68ee-a160-4cc0-8508-36d378df4dfc",
+        "kind": "delete",
+        "title": "射频单元IR接口异常告警",
+        "rank_average": 0.7735557556152344,
+        "scores": {
+          "v11": 0.9048027992248535,
+          "v13": 0.781167209148407,
+          "v19": 0.9387219548225403,
+          "station": 0.8220725655555725,
+          "domain": 0.8496766686439514,
+          "consensus": 0.8861308097839355
+        }
+      }
+    },
+    {
+      "action_id": "v52_delete_074_d37febdc",
+      "order_id": "d37febdc-5e69-4246-80b1-d2a0e0a8d3d8",
+      "remove_rids": [
+        "#-1:30da8373-f169-4ba9-bd99-acc20586ebb7"
+      ],
+      "add_rids": [],
+      "source": "v40_boundary_frontier",
+      "expected_gain": 0.013513513513513514,
+      "evidence": {
+        "source_rank": 74,
+        "order_id": "d37febdc-5e69-4246-80b1-d2a0e0a8d3d8",
+        "rid": "#-1:30da8373-f169-4ba9-bd99-acc20586ebb7",
+        "kind": "delete",
+        "title": "设备掉电",
+        "rank_average": 0.7748944759368896,
+        "scores": {
+          "v11": 0.9558188319206238,
+          "v13": 0.9002657532691956,
+          "v19": 0.30663084983825684,
+          "station": 0.8666612505912781,
+          "domain": 0.7496166229248047,
+          "consensus": 0.92479008436203
+        }
+      }
+    },
+    {
+      "action_id": "v52_delete_075_d62da5f0",
+      "order_id": "d62da5f0-d182-404f-89d9-d9e4812d96c0",
+      "remove_rids": [
+        "#-1:a01a0e11-88bc-411d-9d33-565e93d4ec14"
+      ],
+      "add_rids": [],
+      "source": "v40_boundary_frontier",
+      "expected_gain": 0.013333333333333334,
+      "evidence": {
+        "source_rank": 75,
+        "order_id": "d62da5f0-d182-404f-89d9-d9e4812d96c0",
+        "rid": "#-1:a01a0e11-88bc-411d-9d33-565e93d4ec14",
+        "kind": "delete",
+        "title": "输入电源断",
+        "rank_average": 0.779219388961792,
+        "scores": {
+          "v11": 0.943884015083313,
+          "v13": 0.9036396145820618,
+          "v19": 0.7401382327079773,
+          "station": 0.6972774863243103,
+          "domain": 0.841638445854187,
+          "consensus": 0.808000922203064
+        }
+      }
+    }
+  ],
+  "predictions": 1031,
+  "sha256": "c4feb7ab54ed2219be175b89ebd1071d559e602054a976e995da118e9afcfaca",
+  "score_possibilities": [
+    {
+      "candidate_correct": 0,
+      "tp": 956,
+      "predictions_delta": -4,
+      "score": 0.921445783
+    },
+    {
+      "candidate_correct": 1,
+      "tp": 955,
+      "predictions_delta": -4,
+      "score": 0.920481928
+    },
+    {
+      "candidate_correct": 2,
+      "tp": 954,
+      "predictions_delta": -4,
+      "score": 0.919518072
+    },
+    {
+      "candidate_correct": 3,
+      "tp": 953,
+      "predictions_delta": -4,
+      "score": 0.918554217
+    },
+    {
+      "candidate_correct": 4,
+      "tp": 952,
+      "predictions_delta": -4,
+      "score": 0.917590361
+    }
+  ]
+}

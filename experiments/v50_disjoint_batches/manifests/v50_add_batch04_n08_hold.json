@@ -1,0 +1,590 @@
+{
+  "probe_id": "v50_add_batch04_n08_hold",
+  "baseline": "D:\\zgyidong\\experiments\\v30_meta_stack\\submissions\\v30_cross_order_top5.csv",
+  "fixed_base": "v37_exact_corrections",
+  "path": "D:\\zgyidong\\experiments\\v50_disjoint_batches\\submissions\\v50_add_batch04_n08_hold.csv",
+  "kind": "add",
+  "candidate_count": 8,
+  "actions": [
+    {
+      "action_id": "v37_exact_001",
+      "order_id": "d5376a71-c48e-4351-ba60-f982778b3eb4",
+      "remove_rids": [
+        "#-1:0c809583-390f-4d16-9b91-c4fb1e99c5c2"
+      ],
+      "add_rids": [
+        "#-1:e401b7b4-697f-434e-8437-4b2136d6904f"
+      ],
+      "source": "historical_leaderboard_equations",
+      "expected_gain": null,
+      "evidence": {
+        "proof": "label fixed in every binary solution of all scored equations"
+      }
+    },
+    {
+      "action_id": "v50_add_batch04_n08_hold_001",
+      "order_id": "e3fac97b-b244-438e-b6e4-7bd8dce938e0",
+      "remove_rids": [],
+      "add_rids": [
+        "#-1:67dc4805-7fae-4cc8-a7cc-2b1123940417"
+      ],
+      "source": "v50_empirical_bayes_stratum",
+      "expected_gain": 0.011078527207559419,
+      "evidence": {
+        "row": 2842,
+        "rank": 79,
+        "rank_bin": "r51_100",
+        "order_index": 473,
+        "order_id": "e3fac97b-b244-438e-b6e4-7bd8dce938e0",
+        "rid": "#-1:67dc4805-7fae-4cc8-a7cc-2b1123940417",
+        "kind": "add",
+        "title": "射频单元时钟异常告警",
+        "vendor": "设备商乙",
+        "device_type": "",
+        "deployment": "",
+        "radio": "",
+        "timeline": "111111",
+        "current_count": 1,
+        "alarm_count": 6,
+        "rank_average": 0.6268149614334106,
+        "score_median": 0.1667582020163536,
+        "agreement": 1,
+        "scores": {
+          "v11": 0.2223563939332962,
+          "v13": 0.19641175866127014,
+          "v19": 0.7934413552284241,
+          "station": 0.08553551882505417,
+          "domain": 0.13710464537143707,
+          "consensus": 0.05407421663403511
+        },
+        "matched_rule": {
+          "fields": [
+            "vendor",
+            "rank_bin"
+          ],
+          "values": [
+            "设备商乙",
+            "r51_100"
+          ],
+          "support": 21,
+          "correct": 10,
+          "precision": 0.47619047619047616,
+          "fold_count": 4,
+          "fold_precision": {
+            "0": 0.5,
+            "1": 0.6666666666666666,
+            "2": 0.3333333333333333,
+            "4": 0.6
+          },
+          "posterior_mean": 0.47091498704401924,
+          "beta_lower_75": 0.41352505951768576,
+          "advantage": 0.011078527207559419
+        },
+        "estimated_advantage": 0.011078527207559419
+      }
+    },
+    {
+      "action_id": "v50_add_batch04_n08_hold_002",
+      "order_id": "14a00e87-f9cf-4ae1-81d7-bed3cb9b5869",
+      "remove_rids": [],
+      "add_rids": [
+        "#-1:8970a2b0-64eb-44b0-8bf9-2396370216fa"
+      ],
+      "source": "v50_empirical_bayes_stratum",
+      "expected_gain": 0.011078527207559419,
+      "evidence": {
+        "row": 238,
+        "rank": 81,
+        "rank_bin": "r51_100",
+        "order_index": 40,
+        "order_id": "14a00e87-f9cf-4ae1-81d7-bed3cb9b5869",
+        "rid": "#-1:8970a2b0-64eb-44b0-8bf9-2396370216fa",
+        "kind": "add",
+        "title": "射频单元时钟异常告警",
+        "vendor": "设备商乙",
+        "device_type": "",
+        "deployment": "",
+        "radio": "",
+        "timeline": "000111",
+        "current_count": 1,
+        "alarm_count": 4,
+        "rank_average": 0.6252703070640564,
+        "score_median": 0.20149247348308563,
+        "agreement": 0,
+        "scores": {
+          "v11": 0.42689749598503113,
+          "v13": 0.41700127720832825,
+          "v19": 0.21213501691818237,
+          "station": 0.1870795637369156,
+          "domain": 0.1908499300479889,
+          "consensus": 0.152517169713974
+        },
+        "matched_rule": {
+          "fields": [
+            "vendor",
+            "rank_bin"
+          ],
+          "values": [
+            "设备商乙",
+            "r51_100"
+          ],
+          "support": 21,
+          "correct": 10,
+          "precision": 0.47619047619047616,
+          "fold_count": 4,
+          "fold_precision": {
+            "0": 0.5,
+            "1": 0.6666666666666666,
+            "2": 0.3333333333333333,
+            "4": 0.6
+          },
+          "posterior_mean": 0.47091498704401924,
+          "beta_lower_75": 0.41352505951768576,
+          "advantage": 0.011078527207559419
+        },
+        "estimated_advantage": 0.011078527207559419
+      }
+    },
+    {
+      "action_id": "v50_add_batch04_n08_hold_003",
+      "order_id": "07c300f7-bf9e-46bc-88de-ce7ad5276010",
+      "remove_rids": [],
+      "add_rids": [
+        "#-1:d19addfb-0596-471b-9de4-73608beec537"
+      ],
+      "source": "v50_empirical_bayes_stratum",
+      "expected_gain": 0.011078527207559419,
+      "evidence": {
+        "row": 145,
+        "rank": 83,
+        "rank_bin": "r51_100",
+        "order_index": 19,
+        "order_id": "07c300f7-bf9e-46bc-88de-ce7ad5276010",
+        "rid": "#-1:d19addfb-0596-471b-9de4-73608beec537",
+        "kind": "add",
+        "title": "BBU CPRI接口异常告警",
+        "vendor": "设备商乙",
+        "device_type": "",
+        "deployment": "",
+        "radio": "",
+        "timeline": "111111",
+        "current_count": 1,
+        "alarm_count": 3,
+        "rank_average": 0.6242405772209167,
+        "score_median": 0.23959705978631973,
+        "agreement": 0,
+        "scores": {
+          "v11": 0.2974521815776825,
+          "v13": 0.2942827641963959,
+          "v19": 0.345644474029541,
+          "station": 0.1849113553762436,
+          "domain": 0.17247843742370605,
+          "consensus": 0.10825391858816147
+        },
+        "matched_rule": {
+          "fields": [
+            "vendor",
+            "rank_bin"
+          ],
+          "values": [
+            "设备商乙",
+            "r51_100"
+          ],
+          "support": 21,
+          "correct": 10,
+          "precision": 0.47619047619047616,
+          "fold_count": 4,
+          "fold_precision": {
+            "0": 0.5,
+            "1": 0.6666666666666666,
+            "2": 0.3333333333333333,
+            "4": 0.6
+          },
+          "posterior_mean": 0.47091498704401924,
+          "beta_lower_75": 0.41352505951768576,
+          "advantage": 0.011078527207559419
+        },
+        "estimated_advantage": 0.011078527207559419
+      }
+    },
+    {
+      "action_id": "v50_add_batch04_n08_hold_004",
+      "order_id": "09bfca5b-75c1-42c2-b5fd-5d6d7822d71e",
+      "remove_rids": [],
+      "add_rids": [
+        "#-1:37b4ea8d-3d81-42e2-8ad4-f43f498415e9"
+      ],
+      "source": "v50_empirical_bayes_stratum",
+      "expected_gain": 0.011078527207559419,
+      "evidence": {
+        "row": 157,
+        "rank": 87,
+        "rank_bin": "r51_100",
+        "order_index": 22,
+        "order_id": "09bfca5b-75c1-42c2-b5fd-5d6d7822d71e",
+        "rid": "#-1:37b4ea8d-3d81-42e2-8ad4-f43f498415e9",
+        "kind": "add",
+        "title": "射频单元维护链路异常告警",
+        "vendor": "设备商乙",
+        "device_type": "",
+        "deployment": "",
+        "radio": "",
+        "timeline": "111111",
+        "current_count": 1,
+        "alarm_count": 4,
+        "rank_average": 0.6211512684822083,
+        "score_median": 0.2094985470175743,
+        "agreement": 0,
+        "scores": {
+          "v11": 0.23210954666137695,
+          "v13": 0.23091965913772583,
+          "v19": 0.4435389041900635,
+          "station": 0.1581358164548874,
+          "domain": 0.1880774348974228,
+          "consensus": 0.09439291059970856
+        },
+        "matched_rule": {
+          "fields": [
+            "vendor",
+            "rank_bin"
+          ],
+          "values": [
+            "设备商乙",
+            "r51_100"
+          ],
+          "support": 21,
+          "correct": 10,
+          "precision": 0.47619047619047616,
+          "fold_count": 4,
+          "fold_precision": {
+            "0": 0.5,
+            "1": 0.6666666666666666,
+            "2": 0.3333333333333333,
+            "4": 0.6
+          },
+          "posterior_mean": 0.47091498704401924,
+          "beta_lower_75": 0.41352505951768576,
+          "advantage": 0.011078527207559419
+        },
+        "estimated_advantage": 0.011078527207559419
+      }
+    },
+    {
+      "action_id": "v50_add_batch04_n08_hold_005",
+      "order_id": "599a8ce2-c4f0-453c-b951-105fb1067e7e",
+      "remove_rids": [],
+      "add_rids": [
+        "#-1:0091f234-51c0-487f-bf31-c3c4bd3dd33e"
+      ],
+      "source": "v50_empirical_bayes_stratum",
+      "expected_gain": 0.011078527207559419,
+      "evidence": {
+        "row": 933,
+        "rank": 90,
+        "rank_bin": "r51_100",
+        "order_index": 166,
+        "order_id": "599a8ce2-c4f0-453c-b951-105fb1067e7e",
+        "rid": "#-1:0091f234-51c0-487f-bf31-c3c4bd3dd33e",
+        "kind": "add",
+        "title": "射频单元维护链路异常告警",
+        "vendor": "设备商乙",
+        "device_type": "",
+        "deployment": "",
+        "radio": "",
+        "timeline": "000110",
+        "current_count": 1,
+        "alarm_count": 4,
+        "rank_average": 0.6195036768913269,
+        "score_median": 0.11222229152917862,
+        "agreement": 1,
+        "scores": {
+          "v11": 0.07889927923679352,
+          "v13": 0.06099973991513252,
+          "v19": 0.9153483510017395,
+          "station": 0.1416931450366974,
+          "domain": 0.18679533898830414,
+          "consensus": 0.08275143802165985
+        },
+        "matched_rule": {
+          "fields": [
+            "vendor",
+            "rank_bin"
+          ],
+          "values": [
+            "设备商乙",
+            "r51_100"
+          ],
+          "support": 21,
+          "correct": 10,
+          "precision": 0.47619047619047616,
+          "fold_count": 4,
+          "fold_precision": {
+            "0": 0.5,
+            "1": 0.6666666666666666,
+            "2": 0.3333333333333333,
+            "4": 0.6
+          },
+          "posterior_mean": 0.47091498704401924,
+          "beta_lower_75": 0.41352505951768576,
+          "advantage": 0.011078527207559419
+        },
+        "estimated_advantage": 0.011078527207559419
+      }
+    },
+    {
+      "action_id": "v50_add_batch04_n08_hold_006",
+      "order_id": "ed52fdc5-fce4-4fb1-a76e-bf6732d6360f",
+      "remove_rids": [],
+      "add_rids": [
+        "#-1:760b3b8a-4628-4ad9-9b3c-02accd3b3280"
+      ],
+      "source": "v50_empirical_bayes_stratum",
+      "expected_gain": 0.011078527207559419,
+      "evidence": {
+        "row": 2961,
+        "rank": 92,
+        "rank_bin": "r51_100",
+        "order_index": 494,
+        "order_id": "ed52fdc5-fce4-4fb1-a76e-bf6732d6360f",
+        "rid": "#-1:760b3b8a-4628-4ad9-9b3c-02accd3b3280",
+        "kind": "add",
+        "title": "时钟参考源异常告警",
+        "vendor": "设备商乙",
+        "device_type": "",
+        "deployment": "",
+        "radio": "",
+        "timeline": "000111",
+        "current_count": 7,
+        "alarm_count": 16,
+        "rank_average": 0.6184223890304565,
+        "score_median": 0.16457615047693253,
+        "agreement": 1,
+        "scores": {
+          "v11": 0.24964484572410583,
+          "v13": 0.20162567496299744,
+          "v19": 0.5589994788169861,
+          "station": 0.1114773079752922,
+          "domain": 0.12752662599086761,
+          "consensus": 0.08039561659097672
+        },
+        "matched_rule": {
+          "fields": [
+            "vendor",
+            "rank_bin"
+          ],
+          "values": [
+            "设备商乙",
+            "r51_100"
+          ],
+          "support": 21,
+          "correct": 10,
+          "precision": 0.47619047619047616,
+          "fold_count": 4,
+          "fold_precision": {
+            "0": 0.5,
+            "1": 0.6666666666666666,
+            "2": 0.3333333333333333,
+            "4": 0.6
+          },
+          "posterior_mean": 0.47091498704401924,
+          "beta_lower_75": 0.41352505951768576,
+          "advantage": 0.011078527207559419
+        },
+        "estimated_advantage": 0.011078527207559419
+      }
+    },
+    {
+      "action_id": "v50_add_batch04_n08_hold_007",
+      "order_id": "66ee1170-8f45-43ec-a392-426aaac31f7b",
+      "remove_rids": [],
+      "add_rids": [
+        "#-1:05da9895-4431-4714-a9c5-10b181dd5684"
+      ],
+      "source": "v50_empirical_bayes_stratum",
+      "expected_gain": 0.011078527207559419,
+      "evidence": {
+        "row": 1150,
+        "rank": 93,
+        "rank_bin": "r51_100",
+        "order_index": 194,
+        "order_id": "66ee1170-8f45-43ec-a392-426aaac31f7b",
+        "rid": "#-1:05da9895-4431-4714-a9c5-10b181dd5684",
+        "kind": "add",
+        "title": "射频单元维护链路异常告警",
+        "vendor": "设备商乙",
+        "device_type": "",
+        "deployment": "",
+        "radio": "",
+        "timeline": "000011",
+        "current_count": 1,
+        "alarm_count": 4,
+        "rank_average": 0.6179590225219727,
+        "score_median": 0.09066081792116165,
+        "agreement": 1,
+        "scores": {
+          "v11": 0.08899973332881927,
+          "v13": 0.0745445042848587,
+          "v19": 0.920583963394165,
+          "station": 0.14199164509773254,
+          "domain": 0.07828975468873978,
+          "consensus": 0.09232190251350403
+        },
+        "matched_rule": {
+          "fields": [
+            "vendor",
+            "rank_bin"
+          ],
+          "values": [
+            "设备商乙",
+            "r51_100"
+          ],
+          "support": 21,
+          "correct": 10,
+          "precision": 0.47619047619047616,
+          "fold_count": 4,
+          "fold_precision": {
+            "0": 0.5,
+            "1": 0.6666666666666666,
+            "2": 0.3333333333333333,
+            "4": 0.6
+          },
+          "posterior_mean": 0.47091498704401924,
+          "beta_lower_75": 0.41352505951768576,
+          "advantage": 0.011078527207559419
+        },
+        "estimated_advantage": 0.011078527207559419
+      }
+    },
+    {
+      "action_id": "v50_add_batch04_n08_hold_008",
+      "order_id": "7002339b-8846-40ad-a1be-8b837008e2aa",
+      "remove_rids": [],
+      "add_rids": [
+        "#-1:ab40c757-c0ae-4f62-bf9b-7070e7d36a7c"
+      ],
+      "source": "v50_empirical_bayes_stratum",
+      "expected_gain": 0.011078527207559419,
+      "evidence": {
+        "row": 1268,
+        "rank": 96,
+        "rank_bin": "r51_100",
+        "order_index": 212,
+        "order_id": "7002339b-8846-40ad-a1be-8b837008e2aa",
+        "rid": "#-1:ab40c757-c0ae-4f62-bf9b-7070e7d36a7c",
+        "kind": "add",
+        "title": "射频单元维护链路异常告警",
+        "vendor": "设备商乙",
+        "device_type": "",
+        "deployment": "",
+        "radio": "",
+        "timeline": "000111",
+        "current_count": 1,
+        "alarm_count": 3,
+        "rank_average": 0.6154361367225647,
+        "score_median": 0.11561835184693336,
+        "agreement": 1,
+        "scores": {
+          "v11": 0.06659320741891861,
+          "v13": 0.05078893527388573,
+          "v19": 0.9106209874153137,
+          "station": 0.14607903361320496,
+          "domain": 0.22750194370746613,
+          "consensus": 0.08515767008066177
+        },
+        "matched_rule": {
+          "fields": [
+            "vendor",
+            "rank_bin"
+          ],
+          "values": [
+            "设备商乙",
+            "r51_100"
+          ],
+          "support": 21,
+          "correct": 10,
+          "precision": 0.47619047619047616,
+          "fold_count": 4,
+          "fold_precision": {
+            "0": 0.5,
+            "1": 0.6666666666666666,
+            "2": 0.3333333333333333,
+            "4": 0.6
+          },
+          "posterior_mean": 0.47091498704401924,
+          "beta_lower_75": 0.41352505951768576,
+          "advantage": 0.011078527207559419
+        },
+        "estimated_advantage": 0.011078527207559419
+      }
+    }
+  ],
+  "predictions": 1043,
+  "sha256": "92b7e3c05ac42e4885878f088cb102f02bab5d8464c53e7b55984f199e9d7bd9",
+  "estimated_correct": 3.767319896352154,
+  "estimated_advantage": 0.08862821766047535,
+  "score_possibilities": [
+    {
+      "true_adds": 0,
+      "batch_delta_tp": 0,
+      "tp": 956,
+      "score": 0.91614758,
+      "improves_exact_base": false
+    },
+    {
+      "true_adds": 1,
+      "batch_delta_tp": 1,
+      "tp": 957,
+      "score": 0.917105894,
+      "improves_exact_base": false
+    },
+    {
+      "true_adds": 2,
+      "batch_delta_tp": 2,
+      "tp": 958,
+      "score": 0.918064207,
+      "improves_exact_base": false
+    },
+    {
+      "true_adds": 3,
+      "batch_delta_tp": 3,
+      "tp": 959,
+      "score": 0.91902252,
+      "improves_exact_base": false
+    },
+    {
+      "true_adds": 4,
+      "batch_delta_tp": 4,
+      "tp": 960,
+      "score": 0.919980834,
+      "improves_exact_base": true
+    },
+    {
+      "true_adds": 5,
+      "batch_delta_tp": 5,
+      "tp": 961,
+      "score": 0.920939147,
+      "improves_exact_base": true
+    },
+    {
+      "true_adds": 6,
+      "batch_delta_tp": 6,
+      "tp": 962,
+      "score": 0.92189746,
+      "improves_exact_base": true
+    },
+    {
+      "true_adds": 7,
+      "batch_delta_tp": 7,
+      "tp": 963,
+      "score": 0.922855774,
+      "improves_exact_base": true
+    },
+    {
+      "true_adds": 8,
+      "batch_delta_tp": 8,
+      "tp": 964,
+      "score": 0.923814087,
+      "improves_exact_base": true
+    }
+  ]
+}

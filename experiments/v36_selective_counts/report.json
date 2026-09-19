@@ -1,0 +1,540 @@
+{
+  "version": "v36-selective-counts-1",
+  "baseline": "D:\\zgyidong\\experiments\\v30_meta_stack\\submissions\\v30_cross_order_top5.csv",
+  "oof_frozen_thresholds": {
+    "delete_mean_margin": 0.72,
+    "delete_curve": "top12/12 false positives; zero TP loss",
+    "add_mean_margin": 0.21,
+    "add_curve": "top15 added 11 TP; top20 added 14 TP",
+    "minimum_model_support": 5
+  },
+  "historical_nodes_excluded": 164,
+  "protected_nodes": 64,
+  "accepted_candidates": [
+    {
+      "order_id": "25a37559-7249-4fe0-bfd9-97007b9f7c5d",
+      "rid": "#-1:622a2277-8e4d-4b77-aefb-1f90747752a2",
+      "kind": "delete",
+      "current_count": 2,
+      "proposed_count": 1,
+      "support": 6,
+      "mean_margin": 0.891822616259257,
+      "min_margin": 0.8765264749526978,
+      "node_score": 0.39845284819602966,
+      "probability_models": [
+        "D:\\zgyidong\\experiments\\v34_count_model\\station_alpha_0_test.npy",
+        "D:\\zgyidong\\experiments\\v34_count_model\\station_alpha_1_test.npy",
+        "D:\\zgyidong\\experiments\\v34_count_model\\station_alpha_2_test.npy",
+        "D:\\zgyidong\\experiments\\v34_count_model\\template_alpha_0_test.npy",
+        "D:\\zgyidong\\experiments\\v34_count_model\\template_alpha_1_test.npy",
+        "D:\\zgyidong\\experiments\\v34_count_model\\template_alpha_2_test.npy"
+      ]
+    },
+    {
+      "order_id": "625ffce7-65c5-4657-9104-4148b4113130",
+      "rid": "#-1:a8f28178-4795-4f26-84d6-1791944fb245",
+      "kind": "add",
+      "current_count": 7,
+      "proposed_count": 8,
+      "support": 6,
+      "mean_margin": 0.36975498000780743,
+      "min_margin": 0.2794276475906372,
+      "node_score": 0.7030441761016846,
+      "probability_models": [
+        "D:\\zgyidong\\experiments\\v34_count_model\\station_alpha_0_test.npy",
+        "D:\\zgyidong\\experiments\\v34_count_model\\station_alpha_1_test.npy",
+        "D:\\zgyidong\\experiments\\v34_count_model\\station_alpha_2_test.npy",
+        "D:\\zgyidong\\experiments\\v34_count_model\\template_alpha_0_test.npy",
+        "D:\\zgyidong\\experiments\\v34_count_model\\template_alpha_1_test.npy",
+        "D:\\zgyidong\\experiments\\v34_count_model\\template_alpha_2_test.npy"
+      ]
+    },
+    {
+      "order_id": "4c2b3b06-a6a2-4c1b-9734-def3d1f849d8",
+      "rid": "#-1:66facd91-e281-4331-bbae-04ab8bd9746d",
+      "kind": "add",
+      "current_count": 1,
+      "proposed_count": 2,
+      "support": 6,
+      "mean_margin": 0.2696733921766281,
+      "min_margin": 0.2562140226364136,
+      "node_score": 0.6594231724739075,
+      "probability_models": [
+        "D:\\zgyidong\\experiments\\v34_count_model\\station_alpha_0_test.npy",
+        "D:\\zgyidong\\experiments\\v34_count_model\\station_alpha_1_test.npy",
+        "D:\\zgyidong\\experiments\\v34_count_model\\station_alpha_2_test.npy",
+        "D:\\zgyidong\\experiments\\v34_count_model\\template_alpha_0_test.npy",
+        "D:\\zgyidong\\experiments\\v34_count_model\\template_alpha_1_test.npy",
+        "D:\\zgyidong\\experiments\\v34_count_model\\template_alpha_2_test.npy"
+      ]
+    }
+  ],
+  "rejected_candidates": [
+    {
+      "order_id": "0052146f-c00c-4786-8d58-c2db3ec6baa0",
+      "rid": "#-1:2ef23c93-34a2-40a2-89b4-90e8e4844fc6",
+      "kind": "delete",
+      "current_count": 2,
+      "proposed_count": 1,
+      "support": 5,
+      "mean_margin": 0.05507955948511759,
+      "min_margin": -0.03100109100341797,
+      "node_score": 0.6928051114082336,
+      "probability_models": [
+        "D:\\zgyidong\\experiments\\v34_count_model\\station_alpha_0_test.npy",
+        "D:\\zgyidong\\experiments\\v34_count_model\\station_alpha_1_test.npy",
+        "D:\\zgyidong\\experiments\\v34_count_model\\station_alpha_2_test.npy",
+        "D:\\zgyidong\\experiments\\v34_count_model\\template_alpha_0_test.npy",
+        "D:\\zgyidong\\experiments\\v34_count_model\\template_alpha_1_test.npy",
+        "D:\\zgyidong\\experiments\\v34_count_model\\template_alpha_2_test.npy"
+      ],
+      "reason": "below_oof_frozen_threshold"
+    },
+    {
+      "order_id": "1600d318-ecdc-4d10-816f-9f2c6987eb9f",
+      "rid": "#-1:bc774a67-51fc-4c30-8eb8-1dd39cd33cf6",
+      "kind": "delete",
+      "current_count": 2,
+      "proposed_count": 1,
+      "support": 6,
+      "mean_margin": 0.7786949972311655,
+      "min_margin": 0.754516065120697,
+      "node_score": 0.3317995071411133,
+      "probability_models": [
+        "D:\\zgyidong\\experiments\\v34_count_model\\station_alpha_0_test.npy",
+        "D:\\zgyidong\\experiments\\v34_count_model\\station_alpha_1_test.npy",
+        "D:\\zgyidong\\experiments\\v34_count_model\\station_alpha_2_test.npy",
+        "D:\\zgyidong\\experiments\\v34_count_model\\template_alpha_0_test.npy",
+        "D:\\zgyidong\\experiments\\v34_count_model\\template_alpha_1_test.npy",
+        "D:\\zgyidong\\experiments\\v34_count_model\\template_alpha_2_test.npy"
+      ],
+      "reason": "historical_probe_node"
+    },
+    {
+      "order_id": "43a52adc-0332-479c-9e4a-f2642ff64db8",
+      "rid": "#-1:99f8512f-1c76-4fcd-858e-f7f021edc875",
+      "kind": "delete",
+      "current_count": 2,
+      "proposed_count": 1,
+      "support": 6,
+      "mean_margin": 0.17393519481023154,
+      "min_margin": 0.11577481031417847,
+      "node_score": 0.8776856660842896,
+      "probability_models": [
+        "D:\\zgyidong\\experiments\\v34_count_model\\station_alpha_0_test.npy",
+        "D:\\zgyidong\\experiments\\v34_count_model\\station_alpha_1_test.npy",
+        "D:\\zgyidong\\experiments\\v34_count_model\\station_alpha_2_test.npy",
+        "D:\\zgyidong\\experiments\\v34_count_model\\template_alpha_0_test.npy",
+        "D:\\zgyidong\\experiments\\v34_count_model\\template_alpha_1_test.npy",
+        "D:\\zgyidong\\experiments\\v34_count_model\\template_alpha_2_test.npy"
+      ],
+      "reason": "below_oof_frozen_threshold"
+    },
+    {
+      "order_id": "5f0b3c7f-806d-4622-a671-5d23ee09c827",
+      "rid": "#-1:2a0b69d3-858a-49e0-9b6a-e1cf21eb55bb",
+      "kind": "delete",
+      "current_count": 2,
+      "proposed_count": 1,
+      "support": 6,
+      "mean_margin": 0.4064542253812154,
+      "min_margin": 0.2336616814136505,
+      "node_score": 0.47820404171943665,
+      "probability_models": [
+        "D:\\zgyidong\\experiments\\v34_count_model\\station_alpha_0_test.npy",
+        "D:\\zgyidong\\experiments\\v34_count_model\\station_alpha_1_test.npy",
+        "D:\\zgyidong\\experiments\\v34_count_model\\station_alpha_2_test.npy",
+        "D:\\zgyidong\\experiments\\v34_count_model\\template_alpha_0_test.npy",
+        "D:\\zgyidong\\experiments\\v34_count_model\\template_alpha_1_test.npy",
+        "D:\\zgyidong\\experiments\\v34_count_model\\template_alpha_2_test.npy"
+      ],
+      "reason": "below_oof_frozen_threshold"
+    },
+    {
+      "order_id": "5f31acb6-cb86-4488-af6a-f6d2d4d3a4d9",
+      "rid": "#-1:fdd7bddb-e7cc-4a6f-8246-0c2cf89a221e",
+      "kind": "delete",
+      "current_count": 3,
+      "proposed_count": 2,
+      "support": 5,
+      "mean_margin": 0.16343248387177786,
+      "min_margin": 0.15229961276054382,
+      "node_score": 0.3918188810348511,
+      "probability_models": [
+        "D:\\zgyidong\\experiments\\v34_count_model\\station_alpha_0_test.npy",
+        "D:\\zgyidong\\experiments\\v34_count_model\\station_alpha_1_test.npy",
+        "D:\\zgyidong\\experiments\\v34_count_model\\station_alpha_2_test.npy",
+        "D:\\zgyidong\\experiments\\v34_count_model\\template_alpha_0_test.npy",
+        "D:\\zgyidong\\experiments\\v34_count_model\\template_alpha_1_test.npy",
+        "D:\\zgyidong\\experiments\\v34_count_model\\template_alpha_2_test.npy"
+      ],
+      "reason": "below_oof_frozen_threshold"
+    },
+    {
+      "order_id": "6c596cdd-fd3a-44e3-ba8a-3deff75209ee",
+      "rid": "#-1:4e367429-ffd9-4a23-bc77-e74ff046d5ea",
+      "kind": "add",
+      "current_count": 1,
+      "proposed_count": 2,
+      "support": 5,
+      "mean_margin": 0.07025531431039174,
+      "min_margin": -0.02138170599937439,
+      "node_score": 0.35515132546424866,
+      "probability_models": [
+        "D:\\zgyidong\\experiments\\v34_count_model\\station_alpha_0_test.npy",
+        "D:\\zgyidong\\experiments\\v34_count_model\\station_alpha_1_test.npy",
+        "D:\\zgyidong\\experiments\\v34_count_model\\station_alpha_2_test.npy",
+        "D:\\zgyidong\\experiments\\v34_count_model\\template_alpha_0_test.npy",
+        "D:\\zgyidong\\experiments\\v34_count_model\\template_alpha_1_test.npy",
+        "D:\\zgyidong\\experiments\\v34_count_model\\template_alpha_2_test.npy"
+      ],
+      "reason": "below_oof_frozen_threshold"
+    },
+    {
+      "order_id": "6e2c4bef-2309-4ace-9c76-983bac0255a8",
+      "rid": "#-1:0b1419ea-df28-4dce-aa17-bc13ff702e95",
+      "kind": "add",
+      "current_count": 1,
+      "proposed_count": 2,
+      "support": 5,
+      "mean_margin": 0.057241239895423256,
+      "min_margin": 0.047712668776512146,
+      "node_score": 0.5779388546943665,
+      "probability_models": [
+        "D:\\zgyidong\\experiments\\v34_count_model\\station_alpha_0_test.npy",
+        "D:\\zgyidong\\experiments\\v34_count_model\\station_alpha_1_test.npy",
+        "D:\\zgyidong\\experiments\\v34_count_model\\station_alpha_2_test.npy",
+        "D:\\zgyidong\\experiments\\v34_count_model\\template_alpha_0_test.npy",
+        "D:\\zgyidong\\experiments\\v34_count_model\\template_alpha_1_test.npy",
+        "D:\\zgyidong\\experiments\\v34_count_model\\template_alpha_2_test.npy"
+      ],
+      "reason": "below_oof_frozen_threshold"
+    },
+    {
+      "order_id": "8106c960-6510-43b1-af25-b3c91388c598",
+      "rid": "#-1:d1108dd6-92f1-4970-9cd2-912857e84b72",
+      "kind": "delete",
+      "current_count": 4,
+      "proposed_count": 2,
+      "support": 6,
+      "mean_margin": 0.19716979066530863,
+      "min_margin": 0.11849324405193329,
+      "node_score": 0.3271384537220001,
+      "probability_models": [
+        "D:\\zgyidong\\experiments\\v34_count_model\\station_alpha_0_test.npy",
+        "D:\\zgyidong\\experiments\\v34_count_model\\station_alpha_1_test.npy",
+        "D:\\zgyidong\\experiments\\v34_count_model\\station_alpha_2_test.npy",
+        "D:\\zgyidong\\experiments\\v34_count_model\\template_alpha_0_test.npy",
+        "D:\\zgyidong\\experiments\\v34_count_model\\template_alpha_1_test.npy",
+        "D:\\zgyidong\\experiments\\v34_count_model\\template_alpha_2_test.npy"
+      ],
+      "reason": "below_oof_frozen_threshold"
+    },
+    {
+      "order_id": "82f3997a-668c-4663-9dd6-a0a298f14d00",
+      "rid": "#-1:24a89126-1a36-4305-b0f5-0a60e349ead1",
+      "kind": "delete",
+      "current_count": 2,
+      "proposed_count": 1,
+      "support": 6,
+      "mean_margin": 0.3259870211283366,
+      "min_margin": 0.13002315163612366,
+      "node_score": 0.4985450208187103,
+      "probability_models": [
+        "D:\\zgyidong\\experiments\\v34_count_model\\station_alpha_0_test.npy",
+        "D:\\zgyidong\\experiments\\v34_count_model\\station_alpha_1_test.npy",
+        "D:\\zgyidong\\experiments\\v34_count_model\\station_alpha_2_test.npy",
+        "D:\\zgyidong\\experiments\\v34_count_model\\template_alpha_0_test.npy",
+        "D:\\zgyidong\\experiments\\v34_count_model\\template_alpha_1_test.npy",
+        "D:\\zgyidong\\experiments\\v34_count_model\\template_alpha_2_test.npy"
+      ],
+      "reason": "below_oof_frozen_threshold"
+    },
+    {
+      "order_id": "947bec57-c9f8-47ad-aa45-37cb9be6c798",
+      "rid": "#-1:b894a7ec-dc86-4656-971a-c1b10121a044",
+      "kind": "delete",
+      "current_count": 2,
+      "proposed_count": 1,
+      "support": 6,
+      "mean_margin": 0.36291580895582837,
+      "min_margin": 0.32560133934020996,
+      "node_score": 0.4473276734352112,
+      "probability_models": [
+        "D:\\zgyidong\\experiments\\v34_count_model\\station_alpha_0_test.npy",
+        "D:\\zgyidong\\experiments\\v34_count_model\\station_alpha_1_test.npy",
+        "D:\\zgyidong\\experiments\\v34_count_model\\station_alpha_2_test.npy",
+        "D:\\zgyidong\\experiments\\v34_count_model\\template_alpha_0_test.npy",
+        "D:\\zgyidong\\experiments\\v34_count_model\\template_alpha_1_test.npy",
+        "D:\\zgyidong\\experiments\\v34_count_model\\template_alpha_2_test.npy"
+      ],
+      "reason": "below_oof_frozen_threshold"
+    },
+    {
+      "order_id": "9edf5fc9-4ffc-4b68-8dae-cc1ca97b41f3",
+      "rid": "#-1:efa0e091-a821-49e8-b504-cca305d34efc",
+      "kind": "delete",
+      "current_count": 3,
+      "proposed_count": 2,
+      "support": 5,
+      "mean_margin": 0.03088181217511495,
+      "min_margin": -0.038695693016052246,
+      "node_score": 0.6136745810508728,
+      "probability_models": [
+        "D:\\zgyidong\\experiments\\v34_count_model\\station_alpha_0_test.npy",
+        "D:\\zgyidong\\experiments\\v34_count_model\\station_alpha_1_test.npy",
+        "D:\\zgyidong\\experiments\\v34_count_model\\station_alpha_2_test.npy",
+        "D:\\zgyidong\\experiments\\v34_count_model\\template_alpha_0_test.npy",
+        "D:\\zgyidong\\experiments\\v34_count_model\\template_alpha_1_test.npy",
+        "D:\\zgyidong\\experiments\\v34_count_model\\template_alpha_2_test.npy"
+      ],
+      "reason": "below_oof_frozen_threshold"
+    },
+    {
+      "order_id": "af374848-7bd9-44f9-bfb8-4c087a74d016",
+      "rid": "#-1:84951a88-f1b5-42a0-b848-bd9160c75b73",
+      "kind": "add",
+      "current_count": 4,
+      "proposed_count": 6,
+      "support": 5,
+      "mean_margin": 0.01747296005487442,
+      "min_margin": -0.02085009217262268,
+      "node_score": 0.5115490555763245,
+      "probability_models": [
+        "D:\\zgyidong\\experiments\\v34_count_model\\station_alpha_0_test.npy",
+        "D:\\zgyidong\\experiments\\v34_count_model\\station_alpha_1_test.npy",
+        "D:\\zgyidong\\experiments\\v34_count_model\\station_alpha_2_test.npy",
+        "D:\\zgyidong\\experiments\\v34_count_model\\template_alpha_0_test.npy",
+        "D:\\zgyidong\\experiments\\v34_count_model\\template_alpha_1_test.npy",
+        "D:\\zgyidong\\experiments\\v34_count_model\\template_alpha_2_test.npy"
+      ],
+      "reason": "below_oof_frozen_threshold"
+    },
+    {
+      "order_id": "b92c1c42-bc69-48fa-b5c6-7bbd2635a15b",
+      "rid": "#-1:e98f47f3-1430-4bab-bd66-cd79564e73e6",
+      "kind": "add",
+      "current_count": 1,
+      "proposed_count": 2,
+      "support": 6,
+      "mean_margin": 0.2363820324341456,
+      "min_margin": 0.20165979862213135,
+      "node_score": 0.5610470175743103,
+      "probability_models": [
+        "D:\\zgyidong\\experiments\\v34_count_model\\station_alpha_0_test.npy",
+        "D:\\zgyidong\\experiments\\v34_count_model\\station_alpha_1_test.npy",
+        "D:\\zgyidong\\experiments\\v34_count_model\\station_alpha_2_test.npy",
+        "D:\\zgyidong\\experiments\\v34_count_model\\template_alpha_0_test.npy",
+        "D:\\zgyidong\\experiments\\v34_count_model\\template_alpha_1_test.npy",
+        "D:\\zgyidong\\experiments\\v34_count_model\\template_alpha_2_test.npy"
+      ],
+      "reason": "v11_protected_node"
+    },
+    {
+      "order_id": "bb26e0b0-996a-42cf-ba23-b62c3335e5fb",
+      "rid": "#-1:3e424697-f9ca-4d54-9cca-8b3e5914facb",
+      "kind": "add",
+      "current_count": 1,
+      "proposed_count": 2,
+      "support": 6,
+      "mean_margin": 0.10706540942192078,
+      "min_margin": 0.0027556121349334717,
+      "node_score": 0.3371710181236267,
+      "probability_models": [
+        "D:\\zgyidong\\experiments\\v34_count_model\\station_alpha_0_test.npy",
+        "D:\\zgyidong\\experiments\\v34_count_model\\station_alpha_1_test.npy",
+        "D:\\zgyidong\\experiments\\v34_count_model\\station_alpha_2_test.npy",
+        "D:\\zgyidong\\experiments\\v34_count_model\\template_alpha_0_test.npy",
+        "D:\\zgyidong\\experiments\\v34_count_model\\template_alpha_1_test.npy",
+        "D:\\zgyidong\\experiments\\v34_count_model\\template_alpha_2_test.npy"
+      ],
+      "reason": "below_oof_frozen_threshold"
+    },
+    {
+      "order_id": "c2f7c036-aaf0-4a95-9bf4-3cae57b6e7d5",
+      "rid": "#-1:544c9a02-cf1c-41da-a398-c495142bca71",
+      "kind": "add",
+      "current_count": 3,
+      "proposed_count": 5,
+      "support": 5,
+      "mean_margin": 0.15643468499183655,
+      "min_margin": 0.08100822567939758,
+      "node_score": 0.5164362192153931,
+      "probability_models": [
+        "D:\\zgyidong\\experiments\\v34_count_model\\station_alpha_0_test.npy",
+        "D:\\zgyidong\\experiments\\v34_count_model\\station_alpha_1_test.npy",
+        "D:\\zgyidong\\experiments\\v34_count_model\\station_alpha_2_test.npy",
+        "D:\\zgyidong\\experiments\\v34_count_model\\template_alpha_0_test.npy",
+        "D:\\zgyidong\\experiments\\v34_count_model\\template_alpha_1_test.npy",
+        "D:\\zgyidong\\experiments\\v34_count_model\\template_alpha_2_test.npy"
+      ],
+      "reason": "below_oof_frozen_threshold"
+    },
+    {
+      "order_id": "d14a7ca0-eeb5-44b8-850a-fdc536f03f2c",
+      "rid": "#-1:42acdfe3-9f36-4590-b93c-fde53edb48d5",
+      "kind": "delete",
+      "current_count": 2,
+      "proposed_count": 1,
+      "support": 6,
+      "mean_margin": 0.14969298243522644,
+      "min_margin": 0.09704828262329102,
+      "node_score": 0.6759921312332153,
+      "probability_models": [
+        "D:\\zgyidong\\experiments\\v34_count_model\\station_alpha_0_test.npy",
+        "D:\\zgyidong\\experiments\\v34_count_model\\station_alpha_1_test.npy",
+        "D:\\zgyidong\\experiments\\v34_count_model\\station_alpha_2_test.npy",
+        "D:\\zgyidong\\experiments\\v34_count_model\\template_alpha_0_test.npy",
+        "D:\\zgyidong\\experiments\\v34_count_model\\template_alpha_1_test.npy",
+        "D:\\zgyidong\\experiments\\v34_count_model\\template_alpha_2_test.npy"
+      ],
+      "reason": "below_oof_frozen_threshold"
+    },
+    {
+      "order_id": "d793d532-08ad-4410-a3fd-c09844eb67d0",
+      "rid": "#-1:20b04ec9-5805-4030-82a0-bf14861d1cd8",
+      "kind": "add",
+      "current_count": 4,
+      "proposed_count": 6,
+      "support": 6,
+      "mean_margin": 0.05299481749534607,
+      "min_margin": 0.013408675789833069,
+      "node_score": 0.568822979927063,
+      "probability_models": [
+        "D:\\zgyidong\\experiments\\v34_count_model\\station_alpha_0_test.npy",
+        "D:\\zgyidong\\experiments\\v34_count_model\\station_alpha_1_test.npy",
+        "D:\\zgyidong\\experiments\\v34_count_model\\station_alpha_2_test.npy",
+        "D:\\zgyidong\\experiments\\v34_count_model\\template_alpha_0_test.npy",
+        "D:\\zgyidong\\experiments\\v34_count_model\\template_alpha_1_test.npy",
+        "D:\\zgyidong\\experiments\\v34_count_model\\template_alpha_2_test.npy"
+      ],
+      "reason": "below_oof_frozen_threshold"
+    },
+    {
+      "order_id": "e7c0c3fe-f81e-494f-8faa-edcee9a23ce3",
+      "rid": "#-1:db4bd4d4-5e9c-4cf2-8d26-d69a1dc99950",
+      "kind": "add",
+      "current_count": 1,
+      "proposed_count": 3,
+      "support": 6,
+      "mean_margin": 0.1556017945210139,
+      "min_margin": 0.07004952430725098,
+      "node_score": 0.5232401490211487,
+      "probability_models": [
+        "D:\\zgyidong\\experiments\\v34_count_model\\station_alpha_0_test.npy",
+        "D:\\zgyidong\\experiments\\v34_count_model\\station_alpha_1_test.npy",
+        "D:\\zgyidong\\experiments\\v34_count_model\\station_alpha_2_test.npy",
+        "D:\\zgyidong\\experiments\\v34_count_model\\template_alpha_0_test.npy",
+        "D:\\zgyidong\\experiments\\v34_count_model\\template_alpha_1_test.npy",
+        "D:\\zgyidong\\experiments\\v34_count_model\\template_alpha_2_test.npy"
+      ],
+      "reason": "below_oof_frozen_threshold"
+    },
+    {
+      "order_id": "edcaa16f-fee4-415e-88ac-ba68e7aa0087",
+      "rid": "#-1:fdaaf547-da3c-47bd-b583-00d8af72e779",
+      "kind": "delete",
+      "current_count": 2,
+      "proposed_count": 1,
+      "support": 6,
+      "mean_margin": 0.1517325242360433,
+      "min_margin": 0.11952608823776245,
+      "node_score": 0.5293679237365723,
+      "probability_models": [
+        "D:\\zgyidong\\experiments\\v34_count_model\\station_alpha_0_test.npy",
+        "D:\\zgyidong\\experiments\\v34_count_model\\station_alpha_1_test.npy",
+        "D:\\zgyidong\\experiments\\v34_count_model\\station_alpha_2_test.npy",
+        "D:\\zgyidong\\experiments\\v34_count_model\\template_alpha_0_test.npy",
+        "D:\\zgyidong\\experiments\\v34_count_model\\template_alpha_1_test.npy",
+        "D:\\zgyidong\\experiments\\v34_count_model\\template_alpha_2_test.npy"
+      ],
+      "reason": "below_oof_frozen_threshold"
+    },
+    {
+      "order_id": "f57b8fbe-bd33-4dc7-95ef-fbffa4552754",
+      "rid": "#-1:245caebe-e60c-43fc-b1a4-ebdb838df6d1",
+      "kind": "delete",
+      "current_count": 4,
+      "proposed_count": 2,
+      "support": 5,
+      "mean_margin": 0.0775050421555837,
+      "min_margin": 0.054946184158325195,
+      "node_score": 0.40536749362945557,
+      "probability_models": [
+        "D:\\zgyidong\\experiments\\v34_count_model\\station_alpha_0_test.npy",
+        "D:\\zgyidong\\experiments\\v34_count_model\\station_alpha_1_test.npy",
+        "D:\\zgyidong\\experiments\\v34_count_model\\station_alpha_2_test.npy",
+        "D:\\zgyidong\\experiments\\v34_count_model\\template_alpha_0_test.npy",
+        "D:\\zgyidong\\experiments\\v34_count_model\\template_alpha_1_test.npy",
+        "D:\\zgyidong\\experiments\\v34_count_model\\template_alpha_2_test.npy"
+      ],
+      "reason": "below_oof_frozen_threshold"
+    },
+    {
+      "order_id": "faa00ed5-c0b9-445e-98ac-671035a4a239",
+      "rid": "#-1:76e3a0a3-1943-4a4c-ad08-d31dc732cb73",
+      "kind": "add",
+      "current_count": 1,
+      "proposed_count": 4,
+      "support": 5,
+      "mean_margin": 0.09875319401423137,
+      "min_margin": 0.04441098868846893,
+      "node_score": 0.5900029540061951,
+      "probability_models": [
+        "D:\\zgyidong\\experiments\\v34_count_model\\station_alpha_0_test.npy",
+        "D:\\zgyidong\\experiments\\v34_count_model\\station_alpha_1_test.npy",
+        "D:\\zgyidong\\experiments\\v34_count_model\\station_alpha_2_test.npy",
+        "D:\\zgyidong\\experiments\\v34_count_model\\template_alpha_0_test.npy",
+        "D:\\zgyidong\\experiments\\v34_count_model\\template_alpha_1_test.npy",
+        "D:\\zgyidong\\experiments\\v34_count_model\\template_alpha_2_test.npy"
+      ],
+      "reason": "below_oof_frozen_threshold"
+    },
+    {
+      "order_id": "fcead0b1-a014-4436-9e49-8041559471da",
+      "rid": "#-1:3ac6fa2b-8553-4ab3-b7d9-4404a68bfeef",
+      "kind": "add",
+      "current_count": 1,
+      "proposed_count": 2,
+      "support": 5,
+      "mean_margin": 0.09868067254622777,
+      "min_margin": 0.05748036503791809,
+      "node_score": 0.6468364596366882,
+      "probability_models": [
+        "D:\\zgyidong\\experiments\\v34_count_model\\station_alpha_0_test.npy",
+        "D:\\zgyidong\\experiments\\v34_count_model\\station_alpha_1_test.npy",
+        "D:\\zgyidong\\experiments\\v34_count_model\\station_alpha_2_test.npy",
+        "D:\\zgyidong\\experiments\\v34_count_model\\template_alpha_0_test.npy",
+        "D:\\zgyidong\\experiments\\v34_count_model\\template_alpha_1_test.npy",
+        "D:\\zgyidong\\experiments\\v34_count_model\\template_alpha_2_test.npy"
+      ],
+      "reason": "below_oof_frozen_threshold"
+    }
+  ],
+  "probes": {
+    "v36_count_delete_1": {
+      "path": "D:\\zgyidong\\experiments\\v36_selective_counts\\submissions\\v36_count_delete_1.csv",
+      "kind": "delete",
+      "order_id": "25a37559-7249-4fe0-bfd9-97007b9f7c5d",
+      "rid": "#-1:622a2277-8e4d-4b77-aefb-1f90747752a2",
+      "predictions": 1034,
+      "sha256": "7912bbdfdd5e2f95df9ca5992614f0d0b7c1e1ecd5116fe21bbd9a9d552e14dc"
+    },
+    "v36_count_add_2": {
+      "path": "D:\\zgyidong\\experiments\\v36_selective_counts\\submissions\\v36_count_add_2.csv",
+      "kind": "add",
+      "order_id": "625ffce7-65c5-4657-9104-4148b4113130",
+      "rid": "#-1:a8f28178-4795-4f26-84d6-1791944fb245",
+      "predictions": 1036,
+      "sha256": "a0b686481cda82dd7be39a16ae30c2efe89f0b9edcf88df326a7859d9430e468"
+    },
+    "v36_count_add_3": {
+      "path": "D:\\zgyidong\\experiments\\v36_selective_counts\\submissions\\v36_count_add_3.csv",
+      "kind": "add",
+      "order_id": "4c2b3b06-a6a2-4c1b-9734-def3d1f849d8",
+      "rid": "#-1:66facd91-e281-4331-bbae-04ab8bd9746d",
+      "predictions": 1036,
+      "sha256": "76fcb4e315ff62e017606fb3210be60f6f04258da2f7d510e63f154802b9a0e0"
+    }
+  }
+}

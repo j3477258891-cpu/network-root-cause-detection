@@ -1,0 +1,16 @@
+{
+    "rootcause": [
+        {
+            "@rid": "#-1:8cfe6c3d-8728-4374-923a-167c6ce26210",
+            "title": "1588时钟源异常",
+            "location": "SubNetwork=5305,ManagedElement=176866,Equipment=1,Rack=1,SubRack=1,Slot=1,PlugInUnit=1,SdrDeviceGroup=1",
+            "reason": "1. 无可用1588时钟链路通道。\n2. 无法跟1588时钟链路的主时钟取得联系。\n3. 1588时钟链路的网络拥塞比较严重。\n4. 启用了标准报文格式支持，可是链路主时钟的时钟源不可跟踪。"
+        },
+        {
+            "@rid": "#-1:de085be8-3c87-4360-97b9-c7cc8a5ec8c0",
+            "title": "1PPS+TOD时钟源异常",
+            "location": "SubNetwork=5305,ManagedElement=176866,Equipment=1,Rack=1,SubRack=1,Slot=1,PlugInUnit=1,SdrDeviceGroup=1",
+            "reason": "1. 上级时钟源不可用。\n2. 与上级相连的HDMI时钟级联线缆接触不良或损坏。\n3. 接收波特率与上级设备的发送波特率不一致。\n4. 身份信息认证失败。"
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+{
+  "status": "failed_early_stop_gate",
+  "completed_at": "2026-08-03",
+  "seed": 20260803,
+  "completed_folds": [0, 1, 2, 3, 4],
+  "honest_outer_fold_tp_deltas": [-2, 0, -16, -3, 3],
+  "total_tp_delta": -18,
+  "decision": "terminate_remaining_seeds",
+  "submission_generated": false,
+  "champion_sha256": "6b59ad62b5d1c3d5153a91309f514532228f72a5498a591bf56c86913c703e93",
+  "notes": [
+    "V17 rank-only +16 TP was invalidated because checkpoint epochs were selected on the outer fold.",
+    "V18 selected epochs on a separate inner fold and evaluated the outer fold only after refitting.",
+    "The honest result fails the per-seed +24 TP gate and does not justify an online candidate."
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "version": "v131-station-single-swap",
+  "base": "D:\\zgyidong\\experiments\\v124_campaign\\v124_single_pair_015_from_probe13.csv",
+  "base_sha256": "31131129bba8363fcf1df2c053f836102e8f209640164c2c4c7eedb431447c6c",
+  "source_full_rerank": "D:\\zgyidong\\experiments\\v129_station_rerank\\v129_station_samecount_rerank_from_pair015.csv",
+  "source_scores": "D:\\zgyidong\\experiments\\v30_meta_stack\\station_extra_trees_test.npy",
+  "slice_size": 3,
+  "available_single_swaps": 15,
+  "selected": [
+    {
+      "order_id": "441995e6-e153-4e40-af0f-d0eb20ddcfa5",
+      "removed": [
+        "#-1:63de300f-5195-4f21-8e5d-244d93516979"
+      ],
+      "added": [
+        "#-1:53f23b3e-c801-45d7-8d31-1cb8b8809946"
+      ],
+      "score_gain": 0.5050566792488098
+    },
+    {
+      "order_id": "faa00ed5-c0b9-445e-98ac-671035a4a239",
+      "removed": [
+        "#-1:5173cc70-f178-481c-865b-a5a5f0d3c249"
+      ],
+      "added": [
+        "#-1:76e3a0a3-1943-4a4c-ad08-d31dc732cb73"
+      ],
+      "score_gain": 0.2118082046508789
+    },
+    {
+      "order_id": "4c2b3b06-a6a2-4c1b-9734-def3d1f849d8",
+      "removed": [
+        "#-1:478860c0-cfb6-4e87-8e69-14f09e94b850"
+      ],
+      "added": [
+        "#-1:66facd91-e281-4331-bbae-04ab8bd9746d"
+      ],
+      "score_gain": 0.20947912335395813
+    }
+  ],
+  "oof_single_swap_curve": {
+    "1": {
+      "net_delta_tp": 1,
+      "positive": 1,
+      "zero": 0,
+      "negative": 0
+    },
+    "3": {
+      "net_delta_tp": 2,
+      "positive": 2,
+      "zero": 1,
+      "negative": 0
+    },
+    "5": {
+      "net_delta_tp": 2,
+      "positive": 3,
+      "zero": 1,
+      "negative": 1
+    },
+    "8": {
+      "net_delta_tp": 3,
+      "positive": 4,
+      "zero": 3,
+      "negative": 1
+    },
+    "10": {
+      "net_delta_tp": 3,
+      "positive": 4,
+      "zero": 5,
+      "negative": 1
+    },
+    "15": {
+      "net_delta_tp": 4,
+      "positive": 6,
+      "zero": 7,
+      "negative": 2
+    }
+  },
+  "predictions": 1035,
+  "orders": 546,
+  "sha256": "ac003d42777340b266dbdee0912bd0ca57502af49d6e490cce7c1547db544c91",
+  "status": "exploratory_not_scored",
+  "warning": "Model-derived only; no online score yet."
+}

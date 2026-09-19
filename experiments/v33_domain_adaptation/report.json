@@ -1,0 +1,250 @@
+{
+  "version": "v33-domain-adaptation-1",
+  "target_train_predictions": 3103,
+  "train_positive_count": 3041,
+  "base_tp": 2796,
+  "base_f1": 0.91015625,
+  "domain_classifier": {
+    "fold_auc": [
+      0.9367080345651775,
+      0.9514945548956784,
+      0.9588719817378355,
+      0.9647471634621673,
+      0.968780896327917
+    ],
+    "mean_auc": 0.9561205261977552,
+    "train_probability_quantiles": {
+      "0": 0.0007358924485743046,
+      "0.1": 0.003173760138452053,
+      "0.25": 0.007349878549575806,
+      "0.5": 0.03611094504594803,
+      "0.75": 0.14390090107917786,
+      "0.9": 0.3684079647064209,
+      "1": 0.9919061064720154
+    },
+    "weight_quantiles": {
+      "0": 0.11192414164543152,
+      "0.1": 0.11192414164543152,
+      "0.25": 0.11192414164543152,
+      "0.5": 0.11192414164543152,
+      "0.75": 0.3762644827365875,
+      "0.9": 1.3057081699371338,
+      "0.99": 24.618253707885742,
+      "1": 44.769657135009766
+    }
+  },
+  "results": {
+    "station_alpha_0": {
+      "tp": 2845,
+      "delta_tp": 49,
+      "f1": 0.9261067708333334,
+      "station_fold_delta_tp": [
+        11,
+        11,
+        19,
+        13,
+        -5
+      ],
+      "nonnegative_station_folds": 4,
+      "fixed_count_testlike_quartile_delta_tp": 9,
+      "fixed_count_other_orders_delta_tp": -4,
+      "testlike_threshold": 0.1580023691058159
+    },
+    "station_alpha_0.25": {
+      "tp": 2842,
+      "delta_tp": 46,
+      "f1": 0.9251302083333334,
+      "station_fold_delta_tp": [
+        10,
+        14,
+        17,
+        13,
+        -8
+      ],
+      "nonnegative_station_folds": 4,
+      "fixed_count_testlike_quartile_delta_tp": 9,
+      "fixed_count_other_orders_delta_tp": -5,
+      "testlike_threshold": 0.1580023691058159
+    },
+    "station_alpha_0.5": {
+      "tp": 2843,
+      "delta_tp": 47,
+      "f1": 0.9254557291666666,
+      "station_fold_delta_tp": [
+        7,
+        15,
+        15,
+        16,
+        -6
+      ],
+      "nonnegative_station_folds": 4,
+      "fixed_count_testlike_quartile_delta_tp": 12,
+      "fixed_count_other_orders_delta_tp": -6,
+      "testlike_threshold": 0.1580023691058159
+    },
+    "station_alpha_1": {
+      "tp": 2844,
+      "delta_tp": 48,
+      "f1": 0.92578125,
+      "station_fold_delta_tp": [
+        6,
+        18,
+        15,
+        17,
+        -8
+      ],
+      "nonnegative_station_folds": 4,
+      "fixed_count_testlike_quartile_delta_tp": 10,
+      "fixed_count_other_orders_delta_tp": -2,
+      "testlike_threshold": 0.1580023691058159
+    },
+    "station_alpha_2": {
+      "tp": 2849,
+      "delta_tp": 53,
+      "f1": 0.9274088541666666,
+      "station_fold_delta_tp": [
+        10,
+        16,
+        17,
+        14,
+        -4
+      ],
+      "nonnegative_station_folds": 4,
+      "fixed_count_testlike_quartile_delta_tp": 9,
+      "fixed_count_other_orders_delta_tp": -4,
+      "testlike_threshold": 0.1580023691058159
+    },
+    "station_alpha_4": {
+      "tp": 2843,
+      "delta_tp": 47,
+      "f1": 0.9254557291666666,
+      "station_fold_delta_tp": [
+        7,
+        19,
+        15,
+        10,
+        -4
+      ],
+      "nonnegative_station_folds": 4,
+      "fixed_count_testlike_quartile_delta_tp": 7,
+      "fixed_count_other_orders_delta_tp": -2,
+      "testlike_threshold": 0.1580023691058159
+    },
+    "template_alpha_0": {
+      "tp": 2823,
+      "delta_tp": 27,
+      "f1": 0.9189453125,
+      "station_fold_delta_tp": [
+        8,
+        7,
+        11,
+        6,
+        -5
+      ],
+      "nonnegative_station_folds": 4,
+      "fixed_count_testlike_quartile_delta_tp": 5,
+      "fixed_count_other_orders_delta_tp": -7,
+      "testlike_threshold": 0.1580023691058159
+    },
+    "template_alpha_0.25": {
+      "tp": 2824,
+      "delta_tp": 28,
+      "f1": 0.9192708333333334,
+      "station_fold_delta_tp": [
+        8,
+        9,
+        11,
+        7,
+        -7
+      ],
+      "nonnegative_station_folds": 4,
+      "fixed_count_testlike_quartile_delta_tp": 8,
+      "fixed_count_other_orders_delta_tp": -7,
+      "testlike_threshold": 0.1580023691058159
+    },
+    "template_alpha_0.5": {
+      "tp": 2824,
+      "delta_tp": 28,
+      "f1": 0.9192708333333334,
+      "station_fold_delta_tp": [
+        9,
+        9,
+        11,
+        4,
+        -5
+      ],
+      "nonnegative_station_folds": 4,
+      "fixed_count_testlike_quartile_delta_tp": 8,
+      "fixed_count_other_orders_delta_tp": -2,
+      "testlike_threshold": 0.1580023691058159
+    },
+    "template_alpha_1": {
+      "tp": 2827,
+      "delta_tp": 31,
+      "f1": 0.9202473958333334,
+      "station_fold_delta_tp": [
+        6,
+        17,
+        6,
+        7,
+        -5
+      ],
+      "nonnegative_station_folds": 4,
+      "fixed_count_testlike_quartile_delta_tp": 8,
+      "fixed_count_other_orders_delta_tp": -5,
+      "testlike_threshold": 0.1580023691058159
+    },
+    "template_alpha_2": {
+      "tp": 2826,
+      "delta_tp": 30,
+      "f1": 0.919921875,
+      "station_fold_delta_tp": [
+        6,
+        14,
+        8,
+        10,
+        -8
+      ],
+      "nonnegative_station_folds": 4,
+      "fixed_count_testlike_quartile_delta_tp": 9,
+      "fixed_count_other_orders_delta_tp": -6,
+      "testlike_threshold": 0.1580023691058159
+    },
+    "template_alpha_4": {
+      "tp": 2821,
+      "delta_tp": 25,
+      "f1": 0.9182942708333334,
+      "station_fold_delta_tp": [
+        6,
+        14,
+        5,
+        8,
+        -8
+      ],
+      "nonnegative_station_folds": 4,
+      "fixed_count_testlike_quartile_delta_tp": 10,
+      "fixed_count_other_orders_delta_tp": -6,
+      "testlike_threshold": 0.1580023691058159
+    }
+  },
+  "eligible_models": [
+    "station_alpha_2",
+    "station_alpha_0",
+    "station_alpha_1",
+    "station_alpha_0.5",
+    "station_alpha_4",
+    "station_alpha_0.25",
+    "template_alpha_1",
+    "template_alpha_2",
+    "template_alpha_0.25",
+    "template_alpha_0.5",
+    "template_alpha_0",
+    "template_alpha_4"
+  ],
+  "best_eligible": "station_alpha_2",
+  "gate": {
+    "requires_f1": 0.94,
+    "passed": false,
+    "reason": "full candidate is withheld unless robust OOF reaches 0.94"
+  }
+}

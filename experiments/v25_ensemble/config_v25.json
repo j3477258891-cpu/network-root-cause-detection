@@ -1,0 +1,118 @@
+{
+  "version": "v25-ensemble",
+  "champion": {
+    "f1": 0.906324,
+    "tp": 953,
+    "predictions": 1059,
+    "sha256": "6b59ad62b5d1c3d5153a91309f514532228f72a5498a591bf56c86913c703e93"
+  },
+  "target": {
+    "f1": 0.946,
+    "tp_delta": 42,
+    "oof_tp_delta": 125,
+    "predictions": 1059
+  },
+  "paths": {
+    "train_dir": "D:/zgyidong/train",
+    "test_dir": "D:/zgyidong/test",
+    "v11_dir": "D:/zgyidong/codexgz/v11",
+    "v16_dir": "D:/zgyidong/experiments/v16",
+    "v10_module": "D:/zgyidong/codexgz/work",
+    "output_dir": "D:/zgyidong/experiments/v25_ensemble/outputs",
+    "submission_dir": "D:/zgyidong/experiments/v25_ensemble/submissions"
+  },
+  "folds": 5,
+  "seeds": [20260801, 20260817, 20260831],
+  "max_rootcauses": 8,
+  "models": {
+    "M1": {
+      "name": "LightGBM-context",
+      "algorithm": "lgb",
+      "features": "context",
+      "params": {
+        "n_estimators": 400,
+        "max_depth": 12,
+        "num_leaves": 64,
+        "learning_rate": 0.03,
+        "subsample": 0.8,
+        "colsample_bytree": 0.8,
+        "min_child_samples": 8,
+        "reg_alpha": 0.5,
+        "reg_lambda": 0.5
+      }
+    },
+    "M2": {
+      "name": "CatBoost-meta",
+      "algorithm": "catboost",
+      "features": "meta",
+      "params": {
+        "iterations": 500,
+        "depth": 8,
+        "learning_rate": 0.03,
+        "l2_leaf_reg": 2.0,
+        "border_count": 128,
+        "random_strength": 0.5,
+        "bagging_temperature": 0.5
+      }
+    },
+    "M3": {
+      "name": "XGBoost-graph",
+      "algorithm": "xgb",
+      "features": "graph",
+      "params": {
+        "n_estimators": 400,
+        "max_depth": 10,
+        "learning_rate": 0.03,
+        "subsample": 0.8,
+        "colsample_bytree": 0.7,
+        "min_child_weight": 3,
+        "reg_alpha": 0.3,
+        "reg_lambda": 1.0,
+        "scale_pos_weight": 2.5
+      }
+    },
+    "M4": {
+      "name": "LR-correct",
+      "algorithm": "lr",
+      "features": "correct",
+      "params": {
+        "C": 0.5,
+        "max_iter": 2000,
+        "class_weight": "balanced"
+      }
+    }
+  },
+  "stacking": {
+    "algorithm": "lgb-ranker",
+    "n_folds": 3,
+    "params": {
+      "n_estimators": 200,
+      "max_depth": 6,
+      "num_leaves": 32,
+      "learning_rate": 0.02,
+      "min_child_samples": 12,
+      "reg_alpha": 1.0,
+      "reg_lambda": 1.0
+    }
+  },
+  "dp": {
+    "cap": 8,
+    "actions": [-2, -1, 0, 1, 2],
+    "max_delta_k": 16
+  },
+  "gate": {
+    "min_oof_tp_delta": 20,
+    "min_improved_folds": 3,
+    "min_fold_tp_delta": -3,
+    "bootstrap_lower_bound": 5,
+    "min_fn_fix_rate": 0.15,
+    "max_tp_loss_rate": 0.05,
+    "min_seed_tp": 15
+  },
+  "template_transfer": {
+    "min_support": 3,
+    "min_consistency": 0.95,
+    "max_per_order": 1,
+    "max_orders_covered": 0.20
+  }
+}

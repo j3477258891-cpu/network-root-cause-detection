@@ -1,0 +1,98 @@
+{
+  "batch_id": "day02_consensus_swap_next4_b",
+  "kind": "adaptive_split",
+  "parent": "day02_consensus_swap_next4",
+  "status": "inferred",
+  "decision": "reject",
+  "action_ids": [
+    "v28_consensus2_abe0d010_713ac1",
+    "v28_consensus2_d5376a71_d6904f"
+  ],
+  "actions": [
+    {
+      "action_id": "v28_consensus2_abe0d010_713ac1",
+      "order_id": "abe0d010-6809-4a4d-9ae6-ee7f320f699d",
+      "remove_rids": [
+        "#-1:0890a904-295a-4684-991e-5bfabd668f46"
+      ],
+      "add_rids": [
+        "#-1:275f37ad-3297-49f6-82d2-57406a713ac1"
+      ],
+      "source": "v28_consensus2",
+      "subtype": "majority_swap",
+      "expected_gain": 0.3333333333333333,
+      "evidence": {
+        "add_votes": 4,
+        "remove_votes": 2
+      }
+    },
+    {
+      "action_id": "v28_consensus2_d5376a71_d6904f",
+      "order_id": "d5376a71-c48e-4351-ba60-f982778b3eb4",
+      "remove_rids": [
+        "#-1:0c809583-390f-4d16-9b91-c4fb1e99c5c2"
+      ],
+      "add_rids": [
+        "#-1:e401b7b4-697f-434e-8437-4b2136d6904f"
+      ],
+      "source": "v28_consensus2",
+      "subtype": "majority_swap",
+      "expected_gain": 0.3333333333333333,
+      "evidence": {
+        "add_votes": 3,
+        "remove_votes": 1
+      }
+    }
+  ],
+  "validation": {
+    "actions": 2,
+    "orders": 2,
+    "removed": 2,
+    "added": 2,
+    "prediction_delta": 0,
+    "sources": {
+      "v28_consensus2": 2
+    }
+  },
+  "predictions": 1046,
+  "prediction_delta": 0,
+  "submission": "experiments\\v28_ten_day_campaign\\submissions\\day02_consensus_swap_next4_b.csv",
+  "manifest": "experiments\\v28_ten_day_campaign\\manifests\\day02_consensus_swap_next4_b.json",
+  "sha256": "601d18b07e2ccadbf8147b23fdadaaa0253b6e897099c64b305b7d639c5c211c",
+  "score_possibilities": [
+    {
+      "delta_tp": -2,
+      "tp": 953,
+      "score": 0.911961722
+    },
+    {
+      "delta_tp": -1,
+      "tp": 954,
+      "score": 0.91291866
+    },
+    {
+      "delta_tp": 0,
+      "tp": 955,
+      "score": 0.913875598
+    },
+    {
+      "delta_tp": 1,
+      "tp": 956,
+      "score": 0.914832536
+    },
+    {
+      "delta_tp": 2,
+      "tp": 957,
+      "score": 0.915789474
+    }
+  ],
+  "score": 0.9138755980861244,
+  "reconstructed_score": 0.9138755980861244,
+  "tp": 955,
+  "delta_tp": 0,
+  "score_gain": 0.0,
+  "inferred_from": [
+    "day02_consensus_swap_next4",
+    "day02_consensus_swap_next4_a"
+  ]
+}

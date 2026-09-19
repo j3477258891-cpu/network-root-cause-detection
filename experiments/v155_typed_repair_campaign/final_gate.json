@@ -1,0 +1,89 @@
+{
+  "training_complete": true,
+  "eligible_families": [],
+  "main_control": "control_v38",
+  "summary32": {
+    "control_catboost": {
+      "actions": 68,
+      "orders": 1634,
+      "g": 3041,
+      "base_p": 3138,
+      "base_tp": 2649,
+      "delta_p": -67,
+      "delta_tp": -26,
+      "u": 10.836285,
+      "positive_folds": 4,
+      "worst_fold_u": -4.237220000000001,
+      "f1": 0.8583115183246073,
+      "base_f1": 0.8574202945460431
+    },
+    "control_v38": {
+      "actions": 88,
+      "orders": 1634,
+      "g": 3041,
+      "base_p": 3138,
+      "base_tp": 2649,
+      "delta_p": -75,
+      "delta_tp": -22,
+      "u": 26.339125000000003,
+      "positive_folds": 5,
+      "worst_fold_u": 1.5142000000000024,
+      "f1": 0.8607470511140236,
+      "base_f1": 0.8574202945460431
+    },
+    "typed_catboost": {
+      "actions": 88,
+      "orders": 1634,
+      "g": 3041,
+      "base_p": 3138,
+      "base_tp": 2649,
+      "delta_p": -78,
+      "delta_tp": -22,
+      "u": 29.152689999999996,
+      "positive_folds": 4,
+      "worst_fold_u": -0.8586700000000036,
+      "f1": 0.8611702999508277,
+      "base_f1": 0.8574202945460431
+    },
+    "typed_v38": {
+      "actions": 91,
+      "orders": 1634,
+      "g": 3041,
+      "base_p": 3138,
+      "base_tp": 2649,
+      "delta_p": -77,
+      "delta_tp": -25,
+      "u": 22.214835,
+      "positive_folds": 4,
+      "worst_fold_u": -6.734380000000002,
+      "f1": 0.8600458865945592,
+      "base_f1": 0.8574202945460431
+    }
+  },
+  "allow_submission": false,
+  "actual_champion": {
+    "file": "D:\\zgyidong\\experiments\\v153_complementary_repair_campaign\\v153_probe_p03_group.csv",
+    "sha256": "102b99385a8094a1d47b2748dfaa79fbd5a2b2b69936dffa9e5e7d9636fba196",
+    "predictions": 1049,
+    "tp": 971,
+    "score": "0.927855",
+    "source_class": "public_scored"
+  },
+  "competition_submitted": false,
+  "criteria_by_family": {
+    "typed_catboost": {
+      "positive_total_u": true,
+      "beats_both_controls": true,
+      "at_least_three_positive_u_folds": true,
+      "worst_fold_not_worse_than_main_control": false
+    },
+    "typed_v38": {
+      "positive_total_u": true,
+      "beats_both_controls": false,
+      "at_least_three_positive_u_folds": true,
+      "worst_fold_not_worse_than_main_control": false
+    }
+  },
+  "evidence_class": "nested_group_validation_target_utility_not_online_gain",
+  "decision": "stop_training_gate_failed_no_csv"
+}

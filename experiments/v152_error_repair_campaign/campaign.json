@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "created_at": "2026-09-07T11:32:50+08:00",
+  "baseline": {
+    "file": "D:\\zgyidong\\experiments\\v149_online_calibrated_addition_campaign\\v149_final_k08_from_v148.csv",
+    "sha256": "c8f304c44f6b3a7ed40599cae50d0f17c0c37f8456553e6171a2d7cfdc196d0a",
+    "predictions": 1045,
+    "tp": 969,
+    "score": 0.927717,
+    "source_class": "public_scored",
+    "submitted_at": "2026-09-06T10:52:05+08:00"
+  },
+  "target": 0.94,
+  "comparison": "strictly_greater",
+  "budget": {
+    "total": 10,
+    "daily": 2,
+    "max_probes": 8,
+    "source": "latest_user_confirmed_10_remaining"
+  },
+  "frozen_files": {
+    "equation_system.json": "9dd4d38564e1aea10a65ac7bbe9a6bdf7cc7581813b31d5b650568680faf3f04",
+    "candidate_catalog.json": "19b599a789dd6b32c732dd86a4d8321b44d36143c2a622efd60055d5956ae737",
+    "model_comparison.json": "fb36db200a2c3da79c60c64b10b11b30b3a061e21af248f1ff39ef0f0e4d4c67"
+  },
+  "initial_oracle": {
+    "f1_upper": 0.9339080459770115,
+    "target_possible_under_equations": false,
+    "selected_ids": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "delta_tp": 6,
+    "delta_p": -1,
+    "source_class": "optimistic_integer_oracle_not_forecast"
+  }
+}

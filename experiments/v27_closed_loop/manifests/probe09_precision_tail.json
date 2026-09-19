@@ -1,0 +1,107 @@
+{
+  "batch_id": "probe09_precision_tail",
+  "kind": "planned_probe",
+  "parent": null,
+  "status": "scored",
+  "decision": "accept",
+  "action_ids": [
+    "precision_tail_06d84a90",
+    "precision_tail_a1aec670",
+    "precision_tail_f1f18c6f"
+  ],
+  "actions": [
+    {
+      "action_id": "precision_tail_06d84a90",
+      "order_id": "06d84a90-670f-4ccb-b482-9afdb874d164",
+      "remove_rids": [
+        "#-1:acdac9bd-c2ff-4da6-8bc7-8b07c1bc3304"
+      ],
+      "add_rids": [],
+      "source": "precision_tail",
+      "subtype": "precision_tail",
+      "expected_gain": 0.3901592357618713,
+      "evidence": {
+        "v11_score": 0.6098407642381287,
+        "exploratory": true
+      },
+      "probe_batch": null,
+      "online_delta_tp": null
+    },
+    {
+      "action_id": "precision_tail_a1aec670",
+      "order_id": "a1aec670-550d-4abb-bd10-dadfd29f6635",
+      "remove_rids": [
+        "#-1:8c6f24ed-6585-4aad-acc0-748df15529fb"
+      ],
+      "add_rids": [],
+      "source": "precision_tail",
+      "subtype": "precision_tail",
+      "expected_gain": 0.36828216981474504,
+      "evidence": {
+        "v11_score": 0.631717830185255,
+        "exploratory": true
+      },
+      "probe_batch": null,
+      "online_delta_tp": null
+    },
+    {
+      "action_id": "precision_tail_f1f18c6f",
+      "order_id": "f1f18c6f-7dd9-4ca9-b882-258667ae03d4",
+      "remove_rids": [
+        "#-1:f097b0ce-88af-41f5-8831-da05b17894fc"
+      ],
+      "add_rids": [],
+      "source": "precision_tail",
+      "subtype": "precision_tail",
+      "expected_gain": 0.3623366226329783,
+      "evidence": {
+        "v11_score": 0.6376633773670217,
+        "exploratory": true
+      },
+      "probe_batch": null,
+      "online_delta_tp": null
+    }
+  ],
+  "validation": {
+    "actions": 3,
+    "orders": 3,
+    "removed": 3,
+    "added": 0,
+    "prediction_delta": -3,
+    "sources": {
+      "precision_tail": 3
+    }
+  },
+  "predictions": 1056,
+  "prediction_delta": -3,
+  "submission": "D:\\zgyidong\\experiments\\v27_closed_loop\\submissions\\probe09_precision_tail.csv",
+  "manifest": "D:\\zgyidong\\experiments\\v27_closed_loop\\manifests\\probe09_precision_tail.json",
+  "sha256": "b860991d201e9480b8be777db3290ee47cf9cf457dc540640220ae8f22b152e7",
+  "score_possibilities": [
+    {
+      "delta_tp": -3,
+      "tp": 950,
+      "score": 0.904761905
+    },
+    {
+      "delta_tp": -2,
+      "tp": 951,
+      "score": 0.905714286
+    },
+    {
+      "delta_tp": -1,
+      "tp": 952,
+      "score": 0.906666667
+    },
+    {
+      "delta_tp": 0,
+      "tp": 953,
+      "score": 0.907619048
+    }
+  ],
+  "score": 0.907619,
+  "reconstructed_score": 0.9076190476190477,
+  "tp": 953,
+  "delta_tp": 0,
+  "score_gain": 0.00129504761904764
+}
